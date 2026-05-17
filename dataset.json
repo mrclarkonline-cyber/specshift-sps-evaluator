@@ -1,0 +1,567 @@
+[
+  {
+    "task_id": "task_001",
+    "title": "Normalize Usernames",
+    "original_spec": "Write a Python function normalize_username(name) that trims surrounding whitespace and returns the username in lowercase.",
+    "generated_code": "def normalize_username(name):\n    return name.lower()",
+    "baseline_tests": [
+      {
+        "input": [
+          "Alice"
+        ],
+        "expected": "alice"
+      },
+      {
+        "input": [
+          "BOB"
+        ],
+        "expected": "bob"
+      }
+    ],
+    "schema_expectation": "Function named normalize_username with one parameter named name. It must return a string.",
+    "spec_perturbations": [
+      {
+        "variation": "Input may contain surrounding whitespace."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          "  Alice  "
+        ],
+        "expected": "alice"
+      },
+      {
+        "input": [
+          "\\tBOB\\n"
+        ],
+        "expected": "bob"
+      }
+    ],
+    "expected_failure_type": "SPEC_DRIFT",
+    "judge_note": "The code passes visible lowercase tests but ignores the trim requirement."
+  },
+  {
+    "task_id": "task_002",
+    "title": "Safe Division",
+    "original_spec": "Write a Python function safe_divide(a, b) that returns a / b, but returns None if b is zero.",
+    "generated_code": "def safe_divide(a, b):\n    return a / b",
+    "baseline_tests": [
+      {
+        "input": [
+          10,
+          2
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          9,
+          3
+        ],
+        "expected": 3
+      }
+    ],
+    "schema_expectation": "Function named safe_divide with two parameters. It may return a number or None.",
+    "spec_perturbations": [
+      {
+        "variation": "Divisor may be zero."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          5,
+          0
+        ],
+        "expected": null
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": null
+      }
+    ],
+    "expected_failure_type": "EDGE_CASE_FAIL",
+    "judge_note": "The code passes ordinary division tests but crashes on the explicit safety case."
+  },
+  {
+    "task_id": "task_003",
+    "title": "Return JSON Status",
+    "original_spec": "Write a Python function make_status(ok, message) that returns a dictionary with keys ok and message.",
+    "generated_code": "def make_status(ok, message):\n    return f'ok={ok}, message={message}'",
+    "baseline_tests": [
+      {
+        "input": [
+          true,
+          "done"
+        ],
+        "expected_contains": "done"
+      }
+    ],
+    "schema_expectation": "Function named make_status with two parameters. It must return a dict with keys ok and message.",
+    "spec_perturbations": [
+      {
+        "variation": "The returned object must be machine-readable and JSON-serializable."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          false,
+          "failed"
+        ],
+        "expected": {
+          "ok": false,
+          "message": "failed"
+        }
+      }
+    ],
+    "expected_failure_type": "SCHEMA_INVALID",
+    "judge_note": "The output looks plausible to a human but violates the required structured schema."
+  },
+  {
+    "task_id": "task_004",
+    "title": "Count Unique Items",
+    "original_spec": "Write a Python function count_unique(items) that returns the number of unique items in the list while treating strings case-insensitively.",
+    "generated_code": "def count_unique(items):\n    return len(set(items))",
+    "baseline_tests": [
+      {
+        "input": [
+          [
+            "apple",
+            "banana",
+            "apple"
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "schema_expectation": "Function named count_unique with one parameter named items. It must return an integer.",
+    "spec_perturbations": [
+      {
+        "variation": "String comparisons are case-insensitive."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          [
+            "Apple",
+            "apple",
+            "APPLE"
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            "Cat",
+            "dog",
+            "cat"
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "expected_failure_type": "PERTURBATION_BRITTLE",
+    "judge_note": "The code passes basic uniqueness but fails when the stated case-insensitive rule matters."
+  },
+  {
+    "task_id": "task_005",
+    "title": "Add Two Numbers",
+    "original_spec": "Write a Python function add_numbers(a, b) that returns the sum of two numbers.",
+    "generated_code": "def add_numbers(a, b):\n    return a - b",
+    "baseline_tests": [
+      {
+        "input": [
+          2,
+          3
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          10,
+          4
+        ],
+        "expected": 14
+      }
+    ],
+    "schema_expectation": "Function named add_numbers with two parameters. It must return a number.",
+    "spec_perturbations": [
+      {
+        "variation": "The function should also handle negative numbers."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          -2,
+          3
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          -5,
+          -7
+        ],
+        "expected": -12
+      }
+    ],
+    "expected_failure_type": "BASELINE_FAIL",
+    "judge_note": "The code fails the visible baseline tests because it subtracts instead of adding."
+  },
+  {
+    "task_id": "task_006",
+    "title": "Password Length Check",
+    "original_spec": "Write a Python function is_valid_password(password) that returns True only if the password is at least 8 characters long and contains at least one digit.",
+    "generated_code": "def is_valid_password(password):\n    return len(password) >= 8",
+    "baseline_tests": [
+      {
+        "input": [
+          "password123"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "short"
+        ],
+        "expected": false
+      }
+    ],
+    "schema_expectation": "Function named is_valid_password with one parameter. It must return a boolean.",
+    "spec_perturbations": [
+      {
+        "variation": "Password length alone is insufficient. At least one digit is required."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          "longpassword"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "abc12345"
+        ],
+        "expected": true
+      }
+    ],
+    "expected_failure_type": "OVERFIT_TO_TESTS",
+    "judge_note": "The code appears to satisfy the visible examples but learned only one part of the actual rule."
+  },
+  {
+    "task_id": "task_007",
+    "title": "Sort Records By Score",
+    "original_spec": "Write a Python function sort_by_score(records) that returns records sorted by numeric score descending. Each record is a dict with keys name and score.",
+    "generated_code": "def sort_by_score(records):\n    return sorted(records)",
+    "baseline_tests": [
+      {
+        "input": [
+          [
+            [
+              "alice",
+              10
+            ],
+            [
+              "bob",
+              5
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            "alice",
+            10
+          ],
+          [
+            "bob",
+            5
+          ]
+        ]
+      }
+    ],
+    "schema_expectation": "Function named sort_by_score with one parameter. Input records must be dictionaries with keys name and score. Return a list of dictionaries.",
+    "spec_perturbations": [
+      {
+        "variation": "Records are dictionaries, not tuples or lists."
+      },
+      {
+        "variation": "Sorting must use score descending, not default object order."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          [
+            {
+              "name": "bob",
+              "score": 5
+            },
+            {
+              "name": "alice",
+              "score": 10
+            }
+          ]
+        ],
+        "expected": [
+          {
+            "name": "alice",
+            "score": 10
+          },
+          {
+            "name": "bob",
+            "score": 5
+          }
+        ]
+      }
+    ],
+    "expected_failure_type": "SCHEMA_INVALID",
+    "judge_note": "The implementation is shaped around a convenient visible example and ignores the specified record schema."
+  },
+  {
+    "task_id": "task_008",
+    "title": "Clamp Temperature",
+    "original_spec": "Write a Python function clamp_temp(value) that returns value clamped to the inclusive range 0 through 100.",
+    "generated_code": "def clamp_temp(value):\n    if value < 0:\n        return 0\n    return value",
+    "baseline_tests": [
+      {
+        "input": [
+          -5
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          50
+        ],
+        "expected": 50
+      }
+    ],
+    "schema_expectation": "Function named clamp_temp with one numeric parameter. It must return a number.",
+    "spec_perturbations": [
+      {
+        "variation": "Values above 100 must be clamped down to 100."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          101
+        ],
+        "expected": 100
+      },
+      {
+        "input": [
+          1000
+        ],
+        "expected": 100
+      }
+    ],
+    "expected_failure_type": "PERTURBATION_BRITTLE",
+    "judge_note": "The code passes lower-bound visible tests but fails the upper-bound half of the spec."
+  },
+  {
+    "task_id": "task_009",
+    "title": "Summarize Transaction With Ambiguous Missing Data",
+    "original_spec": "Write a Python function summarize_transaction(tx) that returns a dict with amount_cents and currency from an input transaction dict. Missing fields should be handled gracefully.",
+    "generated_code": "def summarize_transaction(tx):\n    return {'amount_cents': tx.get('amount_cents'), 'currency': tx.get('currency', 'USD')}",
+    "baseline_tests": [
+      {
+        "input": [
+          {
+            "amount_cents": 1200,
+            "currency": "USD"
+          }
+        ],
+        "expected": {
+          "amount_cents": 1200,
+          "currency": "USD"
+        }
+      }
+    ],
+    "schema_expectation": "Function named summarize_transaction with one parameter. It must return a dict with keys amount_cents and currency.",
+    "spec_perturbations": [
+      {
+        "variation": "The spec says missing fields should be handled gracefully, but does not specify whether missing currency should be None or a default value."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          {
+            "amount_cents": 1200
+          }
+        ],
+        "expected": {
+          "amount_cents": 1200,
+          "currency": null
+        }
+      }
+    ],
+    "expected_failure_type": "INCONCLUSIVE",
+    "judge_note": "The code may be reasonable depending on whether a default currency is allowed. The spec is under-specified, so the evaluator should mark this as inconclusive rather than a hard failure."
+  },
+  {
+    "task_id": "task_010",
+    "title": "Trajectory Consistency Marker",
+    "original_spec": "Write a Python function evaluate_step(log) that returns 'complete' only if the log contains both started=True and finished=True. Otherwise return 'incomplete'.",
+    "generated_code": "def evaluate_step(log):\n    if log.get('finished'):\n        return 'complete'\n    return 'incomplete'",
+    "baseline_tests": [
+      {
+        "input": [
+          {
+            "started": true,
+            "finished": true
+          }
+        ],
+        "expected": "complete"
+      },
+      {
+        "input": [
+          {
+            "started": true,
+            "finished": false
+          }
+        ],
+        "expected": "incomplete"
+      }
+    ],
+    "schema_expectation": "Function named evaluate_step with one parameter. It must return either complete or incomplete.",
+    "spec_perturbations": [
+      {
+        "variation": "A finished flag without a started flag is inconsistent and must not be marked complete."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          {
+            "finished": true
+          }
+        ],
+        "expected": "incomplete"
+      },
+      {
+        "input": [
+          {
+            "started": false,
+            "finished": true
+          }
+        ],
+        "expected": "incomplete"
+      }
+    ],
+    "expected_failure_type": "TRAJECTORY_INCONSISTENT",
+    "judge_note": "The code accepts a final success marker without checking whether the required prior state occurred."
+  },
+  {
+    "task_id": "task_011",
+    "title": "Parse Integer List",
+    "original_spec": "Write a Python function parse_ints(text) that takes a comma-separated string of integers and returns a list of ints. Empty items should be ignored.",
+    "generated_code": "def parse_ints(text):\n    return [int(x) for x in text.split(',')]",
+    "baseline_tests": [
+      {
+        "input": [
+          "1,2,3"
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          "10,20"
+        ],
+        "expected": [
+          10,
+          20
+        ]
+      }
+    ],
+    "schema_expectation": "Function named parse_ints with one string parameter. It must return a list of integers.",
+    "spec_perturbations": [
+      {
+        "variation": "Empty comma-separated fields should be ignored."
+      },
+      {
+        "variation": "Whitespace around numbers should be allowed."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          "1,,2"
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          " 1, 2 ,3 "
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "expected_failure_type": "EDGE_CASE_FAIL",
+    "judge_note": "The code handles simple visible strings but breaks under empty fields and small allowed formatting variations."
+  },
+  {
+    "task_id": "task_012",
+    "title": "Robust Greeting",
+    "original_spec": "Write a Python function greet(name) that returns 'Hello, NAME!' with the provided name inserted unchanged.",
+    "generated_code": "def greet(name):\n    return f'Hello, {name}!'",
+    "baseline_tests": [
+      {
+        "input": [
+          "Alice"
+        ],
+        "expected": "Hello, Alice!"
+      },
+      {
+        "input": [
+          "Ben"
+        ],
+        "expected": "Hello, Ben!"
+      }
+    ],
+    "schema_expectation": "Function named greet with one parameter. It must return a string.",
+    "spec_perturbations": [
+      {
+        "variation": "Names may contain spaces or punctuation and should be preserved unchanged."
+      }
+    ],
+    "adversarial_tests": [
+      {
+        "input": [
+          "Dr. Clark"
+        ],
+        "expected": "Hello, Dr. Clark!"
+      },
+      {
+        "input": [
+          "A B"
+        ],
+        "expected": "Hello, A B!"
+      }
+    ],
+    "expected_failure_type": "ROBUST",
+    "judge_note": "This is a clean passing control case. It should remain robust under simple allowed variations."
+  }
+]
