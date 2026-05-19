@@ -63,3 +63,15 @@ class NormalisedCheck(BaseModel):
         "adversarial_tests",
         "schema_expectation",
     ]
+
+
+class TaskAggregation(BaseModel):
+    task_id: str
+    title: str
+    expected_failure_type: str
+    baseline_count: int
+    schema_count: int
+    spec_perturbation_count: int
+    adversarial_count: int
+    total_checks: int
+    judge_note: str
