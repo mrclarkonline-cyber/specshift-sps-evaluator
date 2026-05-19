@@ -5,51 +5,10 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-from typing import Any, Literal, TypedDict
-
 from langgraph.graph import END, StateGraph
-from pydantic import BaseModel, ValidationError
 
-
-FailureType = Literal[
-    "SCHEMA_INVALID",
-    "BASELINE_FAIL",
-    "SPEC_DRIFT",
-    "PERTURBATION_BRITTLE",
-    "EDGE_CASE_FAIL",
-    "TRAJECTORY_INCONSISTENT",
-    "OVERFIT_TO_TESTS",
-    "ROBUST",
-    "INCONCLUSIVE",
-]
-
-
-class EvaluatorInput(BaseModel):
-    task_id: str
-    title: str
-    original_spec: str
-    generated_code: str
-    baseline_tests: list[dict[str, Any]]
-    schema_expectation: str
-    spec_perturbations: list[dict[str, Any]]
-    adversarial_tests: list[dict[str, Any]]
-    expected_failure_type: FailureType
-    judge_note: str
-
-
-class EvaluatorOutput(BaseModel):
-    baseline_passed: bool = False
-    schema_passed: bool = False
-    perturbation_passed: bool = False
-    adversarial_passed: bool = False
-    failure_type: FailureType = "INCONCLUSIVE"
-    short_explanation: str = ""
-    overall_verdict: str = "inconclusive"
-
-
-class GraphState(TypedDict):
-    input_data: EvaluatorInput
-    output_data: EvaluatorOutput
+from pydantic import ValidationError
+from schema import GraphState, EvaluatorInput, EvaluatorOutput
 
 
 def node_ingest_and_baseline(state: GraphState) -> GraphState:
@@ -119,10 +78,16 @@ def load_dataset(file_path: Path) -> list[EvaluatorInput]:
     with file_path.open("r", encoding="utf-8") as handle:
         raw_data = json.load(handle)
 
-    raw_tasks = raw_data["tasks"] if isinstance(raw_data, dict) and "tasks" in raw_data else raw_data
+    raw_tasks = (
+        raw_data["tasks"]
+        if isinstance(raw_data, dict) and "tasks" in raw_data
+        else raw_data
+    )
 
     if not isinstance(raw_tasks, list):
-        raise ValueError("Dataset must be a JSON list or an object with a 'tasks' list.")
+        raise ValueError(
+            "Dataset must be a JSON list or an object with a 'tasks' list."
+        )
 
     return [EvaluatorInput.model_validate(task) for task in raw_tasks]
 
