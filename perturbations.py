@@ -4,23 +4,22 @@ This file is reserved for generating and applying simple spec perturbations and
 adversarial variants for sprint-safe evaluation tasks.
 """
 
-from typing import Literal, Any
+from typing import Literal, Any, Optional
 from pydantic import BaseModel
 from main import EvaluatorInput
 
 class NormalisedCheck(BaseModel):
     task_id: str
     title: str
-    original_spec: str
-    generated_code: str
-    check_type: Literal['baseline', 'spec_perturbation', 'adversarial']
-    schema_expectation: str
-    input: Any | None
-    expected: Any | None
-    variation: str | None
-    expected_failure_type: str | None # not check level but still adds context, keep?
-    judge_note: str | None
-    source_field: Literal['baseline_tests', 'spec_perturbations', 'adversarial_tests']
+    check_type: Literal['baseline', 'spec_perturbation', 'adversarial', 'schema']
+    schema_expectation: Optional[str] = None
+    input: Optional[list] = None
+    expected: Optional[Any] = None
+    expected_contains: Optional[str] = None
+    variation: Optional[str] = None
+    expected_failure_type: str
+    judge_note: str
+    source_field: Literal['baseline_tests', 'spec_perturbations', 'adversarial_tests', 'schema_expectation']
 
 def normalise_task_checks(task: EvaluatorInput) -> list[NormalisedCheck]:
     checks = []
@@ -28,9 +27,6 @@ def normalise_task_checks(task: EvaluatorInput) -> list[NormalisedCheck]:
     shared_fields = {
         "task_id": task.task_id,
         "title": task.title,
-        "original_spec": task.original_spec,
-        "generated_code": task.generated_code,
-        "schema_expectation": task.schema_expectation,
         "expected_failure_type": task.expected_failure_type,
         "judge_note": task.judge_note,
     }
@@ -40,8 +36,8 @@ def normalise_task_checks(task: EvaluatorInput) -> list[NormalisedCheck]:
             **shared_fields,
             check_type = 'baseline',
             input = entry.get('input'),
+            expected_contains = entry.get('expected_contains'),
             expected = entry.get('expected'),
-            variation = None,
             source_field = 'baseline_tests'
         ))
 
@@ -49,8 +45,6 @@ def normalise_task_checks(task: EvaluatorInput) -> list[NormalisedCheck]:
         checks.append(NormalisedCheck(
             **shared_fields,
             check_type = 'spec_perturbation',
-            input = None,
-            expected = None,
             variation = entry.get('variation'),
             source_field = 'spec_perturbations'
         ))
@@ -61,8 +55,15 @@ def normalise_task_checks(task: EvaluatorInput) -> list[NormalisedCheck]:
             check_type = 'adversarial',
             input = entry.get('input'),
             expected = entry.get('expected'),
-            variation = None,
             source_field = 'adversarial_tests'
+        ))
+
+    if task.schema_expectation:
+        checks.append(NormalisedCheck(
+            **shared_fields,
+            check_type = 'schema',
+            schema_expectation = task.schema_expectation,
+            source_field = 'schema_expectation'
         ))
 
     return checks
