@@ -17,6 +17,14 @@ Many generated-code workflows treat passing visible tests as the main success si
 
 The current prototype takes a small synthetic dataset of generated-code tasks and normalizes each task’s baseline tests, schema expectations, spec perturbations, and adversarial cases into a consistent audit/reporting structure.
 
+## Setup
+
+Install the sprint dependencies first:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
 ## Preferred demo command
 
 ```bash
@@ -122,6 +130,16 @@ OVERFIT_TO_TESTS
 ROBUST
 INCONCLUSIVE
 ```
+
+## Two-minute demo
+
+1. Run `python3 runner.py --file dataset.json`.
+2. Confirm the runner loads 12 tasks and generates 67 check cases.
+3. Read the global check counts.
+4. Read the per-task aggregation blocks.
+5. Notice that the report separates visible baseline tests from schema expectations, spec perturbations, and adversarial cases.
+
+The point of the demo is not to prove final correctness. The point is to show a small, runnable scaffold for reviewing generated-code tasks beyond visible test success.
 
 ## Demo interpretation
 
