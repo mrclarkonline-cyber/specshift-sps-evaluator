@@ -1,6 +1,6 @@
 # SpecShift SPS Evaluator
 
-A small Secure Program Synthesis sprint prototype for turning generated-code tasks into normalized audit checks across baseline tests, schema expectations, spec perturbations, and adversarial cases.
+A Secure Program Synthesis sprint prototype for turning generated-code tasks into normalized audit checks across baseline tests, schema expectations, spec perturbations, and adversarial cases.
 
 Core claim:
 
@@ -15,7 +15,7 @@ Many generated-code workflows treat passing visible tests as the main success si
 3. spec perturbations
 4. adversarial cases
 
-The current prototype does not execute generated code. It normalizes dataset checks into a consistent audit/reporting structure, prints a readable per-task report, and writes a JSON artifact for review. Execution and scoring can be added later.
+The current prototype takes a small synthetic dataset of generated-code tasks and normalizes each task’s baseline tests, schema expectations, spec perturbations, and adversarial cases into a consistent audit/reporting structure.
 
 ## Preferred demo command
 
@@ -63,6 +63,24 @@ main.py            Older placeholder LangGraph harness, preserved for now
 dataset.json       Twelve sprint-safe generated-code evaluation tasks
 artifacts/         Generated output artifacts
 ```
+
+## Dataset field description
+
+Each item in dataset.json is one evaluation task with the following fields:
+
+| Field | Type | Description |
+|---|---|---|
+| task_id | string | Unique identifier for the task (for example, task_001). |
+| title | string | Human-readable task title shown in summaries. |
+| original_spec | string | Natural-language requirement the generated code is supposed to satisfy. |
+| generated_code | string | Code implementation being reviewed (stored as code text). |
+| baseline_tests | list[object] | Basic visible checks used as initial behavior signal. |
+| schema_expectation | string | Structural/shape expectation for function signature or output format. |
+| spec_perturbations | list[object] | Requirement variations that stress robustness to spec shifts. |
+| adversarial_tests | list[object] | Edge or stress checks designed to reveal brittle behavior. |
+| expected_failure_type | Literal | Intended label for expected outcome category (for example, SPEC_DRIFT). |
+| judge_note | string | Brief human explanation of why the expected label was chosen. |
+
 
 ## Current scope
 
