@@ -139,6 +139,6 @@ private or protected mechanisms
 production reliability claims
 ```
 
-## Next step
+## Demo status
 
-Tighten the final demo story and, if needed, add a small sample-output excerpt for judges.
+The current demo is ready for review as a small sprint prototype. Future work would add generated-code execution, automatic scoring, and richer discrepancy reporting.
