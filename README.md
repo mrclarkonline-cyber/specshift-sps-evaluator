@@ -1,5 +1,37 @@
 # SpecShift SPS Evaluator
 
+
+
+## Why this matters
+
+Modern code-generation systems can pass visible example tests while still violating the intended specification. SpecShift demonstrates this gap using small synthetic tasks that expose schema violations, edge-case failures, perturbation brittleness, and trajectory inconsistencies.
+
+This repository is intentionally designed as a lightweight, judge-readable evaluation scaffold rather than a production verifier. The goal is to make specification robustness failures observable, reproducible, and easy to inspect locally.
+
+## What this is not
+
+SpecShift is not a finished verifier, theorem prover, sandbox, or production security tool. It does not execute generated code, prove correctness, or claim that any implementation is safe. It is a public-safe scaffold for showing how visible-test success can miss important specification failures.
+
+## Expected demo output
+
+Run:
+
+    python3 runner.py --file dataset.json
+
+Expected summary:
+
+- Loaded 12 synthetic tasks
+- Generated 67 check cases
+- baseline: 20
+- schema: 12
+- spec_perturbation: 14
+- adversarial: 21
+
+## Public-scope boundary
+
+This repository is intentionally limited to public, synthetic examples. It does not include private scoring logic, protected methods, bidder materials, valuation language, or commercial negotiation strategy.
+
+
 A Secure Program Synthesis sprint prototype for turning generated-code tasks into normalized audit checks across baseline tests, schema expectations, spec perturbations, and adversarial cases.
 
 Core claim:
