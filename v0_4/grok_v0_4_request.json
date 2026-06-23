@@ -1,0 +1,14 @@
+{
+  "request": "Revise Unknown-Domain Scaffold Adversarial Test Suite v0.3 into v0.4.",
+  "instructions": [
+    "Keep 25 total cases.",
+    "Keep it buyer-safe, anonymized, and labeled as an internal draft stress-test suite, not a benchmark.",
+    "Reduce duplicate agentic workflow cases.",
+    "Add sharper workflow-integrity failure modes: permission drift, stale data acting as current data, silent policy violation, multi-system state mismatch, false final-state claim, rollback failure, human approval laundering, and ambiguous ownership after handoff.",
+    "Preserve scoring dimensions: provenance, observable_anchor, failure_column, proxy_honesty, claim_boundary, implementation_safety, workflow_traceability, human_review_trigger, operational_impact, recovery_path.",
+    "Make at least 15 of the 25 cases directly relevant to enterprise agentic workflow integrity.",
+    "Do not mention named AI models or vendors.",
+    "Do not imply external validation."
+  ],
+  "output_name": "Unknown-Domain Scaffold Adversarial Test Suite v0.4 — Buyer-Safe Draft"
+}

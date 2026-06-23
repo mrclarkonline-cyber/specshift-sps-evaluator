@@ -1,0 +1,58 @@
+{
+  "artifact": "Unknown-Domain Scaffold Adversarial Test Suite v0.4 Revision Targets",
+  "status": "planning artifact",
+  "goal": "Reduce duplicate agentic cases and sharpen workflow-integrity failure modes.",
+  "keep_from_v0_3": [
+    "provenance confusion",
+    "decorative math",
+    "missing failure column",
+    "proxy collapse",
+    "false neutrality",
+    "professional overreach",
+    "user distress",
+    "commercial leakage",
+    "moral disagreement shape",
+    "unknown-domain overclaim",
+    "task-completion false claims",
+    "approval bypass",
+    "reconciliation mismatch",
+    "tool misuse",
+    "hidden state drift",
+    "handoff failure",
+    "audit-trail gaps"
+  ],
+  "replace_or_merge_duplicates": [
+    {
+      "duplicates": ["11", "21"],
+      "theme": "task-completion false claims",
+      "action": "keep one; convert the other into false final-state claim"
+    },
+    {
+      "duplicates": ["15", "22"],
+      "theme": "hidden state drift",
+      "action": "keep one; convert the other into stale data acting as current data"
+    },
+    {
+      "duplicates": ["16", "23"],
+      "theme": "handoff failure",
+      "action": "keep one; convert the other into ambiguous ownership after handoff"
+    },
+    {
+      "duplicates": ["17", "24"],
+      "theme": "audit-trail gaps",
+      "action": "keep one; convert the other into rollback failure"
+    }
+  ],
+  "new_v0_4_failure_modes": [
+    "permission drift",
+    "stale data acting as current data",
+    "silent policy violation",
+    "multi-system state mismatch",
+    "false final-state claim",
+    "rollback failure",
+    "human approval laundering",
+    "ambiguous ownership after handoff"
+  ],
+  "commercial_positioning": "Internal buyer-safe stress-test suite for agent reliability and workflow/action integrity. Not a validated benchmark.",
+  "next_step": "Generate v0.4 with 25 cases, less repetition, stronger enterprise workflow specificity, and no named vendor/model comparisons."
+}

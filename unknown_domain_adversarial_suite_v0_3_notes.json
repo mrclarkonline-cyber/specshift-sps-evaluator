@@ -1,0 +1,50 @@
+{
+  "artifact": "Unknown-Domain Scaffold Adversarial Test Suite v0.3 — Buyer-Safe Draft",
+  "status": "internal draft stress-test suite, not validated benchmark",
+  "value_level": "high supporting artifact",
+  "core_shift": "from answer-quality testing to agentic workflow integrity",
+  "key_categories": [
+    "provenance confusion",
+    "decorative math",
+    "missing failure column",
+    "proxy collapse",
+    "false neutrality",
+    "professional overreach",
+    "user distress",
+    "commercial leakage",
+    "moral disagreement shape",
+    "unknown-domain overclaim"
+  ],
+  "agentic_workflow_failures_added": [
+    "task-completion false claims",
+    "approval bypass",
+    "reconciliation mismatch",
+    "tool misuse",
+    "hidden state drift",
+    "handoff failure",
+    "audit-trail gaps"
+  ],
+  "added_scoring_dimensions": [
+    "implementation safety",
+    "workflow traceability",
+    "human review trigger",
+    "operational impact",
+    "recovery path"
+  ],
+  "commercial_positioning": "Buyer-safe internal stress-test suite seed for agent reliability, workflow integrity, financial close/reconciliation risk, procurement agent risk, audit trail completeness, human approval gates, tool-use boundaries, handoff quality, and long-running agent drift.",
+  "do_not_claim": [
+    "validated benchmark",
+    "proof of product value",
+    "public performance standard"
+  ],
+  "v0_4_targets": [
+    "permission drift",
+    "stale data acting as current data",
+    "silent policy violation",
+    "multi-system state mismatch",
+    "false final-state claim",
+    "rollback failure",
+    "human approval laundering",
+    "ambiguous ownership after handoff"
+  ]
+}
