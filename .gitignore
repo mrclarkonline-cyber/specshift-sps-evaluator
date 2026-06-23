@@ -5,3 +5,4 @@ __pycache__/
 
 # Local recovery archives, do not commit
 artifacts/*.zip
+*.bak.*
