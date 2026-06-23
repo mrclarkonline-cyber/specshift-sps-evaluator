@@ -1,0 +1,65 @@
+SpecShift Pilot Appendix — Guardrail Checklist v0.1
+Pilot appendix draft. Internal review aid. Not a validated scoring instrument.
+
+Boundary:
+This checklist supports pre-deployment and architecture-stage review. It is not a benchmark, certification, compliance audit, security assessment, deployment approval, or replacement for professional review.
+
+Purpose:
+A practical pre-deployment and architecture-stage review aid to help teams identify where reliability scaffolds may be weak in agentic workflows and high-uncertainty tasks. It supports clearer provenance, better boundary setting, and more responsible human-AI collaboration.
+
+How to use:
+- Use this as a structured discussion aid during or after a pilot scoping conversation.
+- Apply it to one proposed AI-agent workflow at a time.
+- Use the questions to identify missing evidence, unclear boundaries, weak escalation paths, and recovery gaps.
+- Treat findings as design-review inputs, not pass/fail certification.
+
+Checklist:
+
+1. Input Provenance & Evidence Handling
+- Is every major input clearly labeled by source type, such as user-provided, system-generated, external document, or proxy?
+- Are assumptions about data freshness, completeness, and authority stated explicitly?
+- Is there a clear separation between raw input and model inference?
+- Are low-fidelity proxies such as screenshots, summaries, or forwarded emails flagged with appropriate caveats?
+Failure column: If provenance is not labeled or proxies are treated as high-fidelity evidence, the review should flag elevated risk of misplaced confidence.
+
+2. Claim Boundary & Limitation Mapping
+- Does the output clearly state what is known, what is inferred, and what remains unknown?
+- Are scope limitations and boundary conditions explicitly listed?
+- Is there a visible failure column: specific conditions where the recommendation or framework would break or become misleading?
+- Are overclaims such as universality, guarantees, or completeness avoided?
+Failure column: If the output presents strong claims without visible boundaries or failure conditions, the scaffold is insufficient for high-stakes use.
+
+3. Agentic Workflow Logic Alignment
+- Are permission levels, data freshness, and policy constraints explicitly checked before action?
+- Is there clear handling for stale data, multi-system mismatches, and state drift?
+- Are handoffs between agents or to humans well-defined with ownership transfer?
+- Is there protection against silent policy violations or approval scope overextension?
+Failure column: If agentic actions can bypass defined controls or create ambiguous ownership, workflow integrity risk is high.
+
+4. Human Review Triggers & Escalation
+- Are clear triggers defined for when human review or approval is required?
+- Is the escalation path explicit for high-value, high-risk, or ambiguous cases?
+- Does the system avoid over-delegation in areas with meaningful consequences?
+- Is there a defined recovery or rollback path when things go wrong?
+Failure column: If human review triggers are vague or missing for material actions, the design carries elevated operational risk.
+
+5. Distress, Safety & Moral Disagreement Handling
+- If user distress or emotional impact is evident, is stabilization prioritized before analysis?
+- Are moral or values-based disagreements diagnosed clearly rather than reduced to technical framing?
+- Is there a responsible hand-off to human professionals when distress, safety, legal, or ethical stakes rise?
+- Does the response avoid performing roles outside its proper scope, such as HR, clinical, or legal functions?
+Failure column: If distress is present but analysis is prioritized, or if the system performs professional roles it should not, the response pattern falls outside appropriate review boundaries.
+
+Use cases:
+- Pre-deployment architecture review of agentic systems
+- Internal evaluation of workflow reliability scaffolds
+- Structured critique of proposed AI-assisted decision processes
+- Team alignment on boundary-setting practices
+
+Not for:
+- This is not a certification, compliance audit, security assessment, or deployment approval tool.
+- It is not intended to replace professional legal, technical, or risk assessment processes.
+- It should not be used as a public benchmark or vendor comparison instrument.
+
+Overall failure column:
+This checklist itself stops fitting if it is treated as a complete or authoritative evaluation method rather than a lightweight internal thinking aid. It is most useful when applied as a conversation starter and gap identifier, not as a scoring system.

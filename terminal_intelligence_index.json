@@ -89,7 +89,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_guardrail_checklist_v0_1.txt",
       "description": "SpecShift Guardrail Checklist v0.1 plain-text copy"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/pilot_appendix_guardrail_checklist_v0_1.json",
+      "description": "Pilot appendix version of SpecShift Guardrail Checklist v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/pilot_appendix_guardrail_checklist_v0_1.txt",
+      "description": "Pilot appendix version of SpecShift Guardrail Checklist v0.1 text"
     }
   ],
-  "next_action": "Review guardrail checklist, then decide whether to fold it into the compact sales narrative or keep it as a pilot appendix."
+  "next_action": "Keep guardrail checklist as pilot appendix. Next optional step: create a one-page outreach email or pilot scoping brief with strict claim boundaries."
 }
