@@ -189,7 +189,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/role_specific_outreach_variants_v0_2.txt",
       "description": "Focused-pilot-first role-specific outreach variants v0.2 text"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_focused_diagnostic_pilot_one_pager_v0_1.pdf",
+      "description": "SpecShift focused diagnostic pilot one-page PDF v0.1"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_focused_diagnostic_pilot_one_pager_v0_1.txt",
+      "description": "SpecShift focused diagnostic pilot one-page text source v0.1"
     }
   ],
-  "next_action": "Use v0.2 focused-pilot-first outreach materials for any first-contact buyer outreach. Run v0_5/claim_scan_git_log.py in future gpb blocks."
+  "next_action": "Use the focused diagnostic pilot one-pager only after buyer interest or in a qualified scoping conversation. Cold outreach should still use v0.2 email first."
 }

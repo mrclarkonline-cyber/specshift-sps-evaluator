@@ -1,0 +1,78 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 3546 >>
+stream
+BT /F2 17 Tf 54 742 Td (SpecShift Architectural Logic Diagnostics) Tj ET
+BT /F1 11 Tf 54 722 Td (Focused Diagnostic Pilot - One-Page Summary) Tj ET
+0.8 w 54 706 m 558 706 l S
+BT /F2 10 Tf 54 688 Td (Boundary) Tj ET
+BT /F1 8.6 Tf 54 675 Td (Pre-deployment diagnostic and architecture-stage review only. Not a benchmark,) Tj ET
+BT /F1 8.6 Tf 54 664 Td (certification, compliance audit, runtime monitor, security tool, deployment approval, or) Tj ET
+BT /F1 8.6 Tf 54 653 Td (guarantee of AI safety.) Tj ET
+BT /F2 10.5 Tf 54 636 Td (What it is) Tj ET
+BT /F1 8.8 Tf 62 623 Td (- A focused paid diagnostic pilot for one concrete AI-agent workflow before broader rollout.) Tj ET
+BT /F1 8.8 Tf 62 612 Td (- The review surfaces candidate failure patterns in evidence handling, scope boundaries,) Tj ET
+BT /F1 8.8 Tf 62 601 Td (  handoffs, escalation thresholds, and recovery paths.) Tj ET
+BT /F1 8.8 Tf 62 590 Td (- The output is a structured first-pass review map for engineering, product, and risk teams.) Tj ET
+BT /F2 10.5 Tf 54 574 Td (Why it matters) Tj ET
+BT /F1 8.8 Tf 62 561 Td (- AI-agent workflows can appear ready while acting on weak evidence, stale system state,) Tj ET
+BT /F1 8.8 Tf 62 550 Td (  unclear authority, or unverified completion claims.) Tj ET
+BT /F1 8.8 Tf 62 539 Td (- Standard tests often check output quality. SpecShift focuses on workflow logic, boundaries,) Tj ET
+BT /F1 8.8 Tf 62 528 Td (  and failure conditions.) Tj ET
+BT /F1 8.8 Tf 62 517 Td (- The goal is to find design-review gaps before they become integration rework, operational) Tj ET
+BT /F1 8.8 Tf 62 506 Td (  risk, or customer-facing failures.) Tj ET
+BT /F2 10.5 Tf 54 490 Td (Pilot scope) Tj ET
+BT /F1 8.8 Tf 62 477 Td (- One high-value AI-agent workflow.) Tj ET
+BT /F1 8.8 Tf 62 466 Td (- Selected synthetic scenarios matched to the workflow's real decision path.) Tj ET
+BT /F1 8.8 Tf 62 455 Td (- Architecture-stage review of inputs, system boundaries, approval points, handoffs,) Tj ET
+BT /F1 8.8 Tf 62 444 Td (  escalation triggers, and recovery paths.) Tj ET
+BT /F2 10.5 Tf 54 428 Td (Core deliverables) Tj ET
+BT /F1 8.8 Tf 62 415 Td (- Executive findings memo.) Tj ET
+BT /F1 8.8 Tf 62 404 Td (- Failure-pattern review against selected scenarios.) Tj ET
+BT /F1 8.8 Tf 62 393 Td (- Limitation and boundary map.) Tj ET
+BT /F1 8.8 Tf 62 382 Td (- Handoff, evidence, escalation, and recovery-path gap list.) Tj ET
+BT /F1 8.8 Tf 62 371 Td (- Recommended design-review next steps.) Tj ET
+BT /F2 10.5 Tf 54 355 Td (Good fit) Tj ET
+BT /F1 8.8 Tf 62 342 Td (- A team has a concrete AI-agent workflow, meaningful downside if it fails silently, and) Tj ET
+BT /F1 8.8 Tf 62 331 Td (  enough workflow context for review.) Tj ET
+BT /F1 8.8 Tf 62 320 Td (- Best fit is a workflow still early enough that design changes are possible.) Tj ET
+BT /F2 10.5 Tf 54 304 Td (Not for) Tj ET
+BT /F1 8.8 Tf 62 291 Td (- Not a runtime protection layer, legal/compliance sign-off, cybersecurity scan, public) Tj ET
+BT /F1 8.8 Tf 62 280 Td (  benchmark, or deployment approval.) Tj ET
+BT /F1 8.8 Tf 62 269 Td (- Not a replacement for professional legal, HR, technical, risk, or security review.) Tj ET
+BT /F2 10.5 Tf 54 253 Td (Next step) Tj ET
+BT /F1 8.8 Tf 62 240 Td (- Select one workflow and schedule a short scoping call to determine whether a bounded) Tj ET
+BT /F1 8.8 Tf 62 229 Td (  diagnostic pilot would create practical value.) Tj ET
+0.5 w 54 42 m 558 42 l S
+BT /F1 7.8 Tf 54 28 Td (SpecShift Labs - Internal outreach one-pager draft v0.1 - Use with claim boundaries) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3994
+%%EOF

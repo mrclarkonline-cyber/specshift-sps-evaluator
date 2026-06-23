@@ -1,0 +1,38 @@
+SpecShift Architectural Logic Diagnostics
+Focused Diagnostic Pilot - One-Page Summary
+
+Boundary:
+Pre-deployment diagnostic and architecture-stage review only. Not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+What it is
+- A focused paid diagnostic pilot for one concrete AI-agent workflow before broader rollout.
+- The review surfaces candidate failure patterns in evidence handling, scope boundaries, handoffs, escalation thresholds, and recovery paths.
+- The output is a structured first-pass review map for engineering, product, and risk teams.
+
+Why it matters
+- AI-agent workflows can appear ready while acting on weak evidence, stale system state, unclear authority, or unverified completion claims.
+- Standard tests often check output quality. SpecShift focuses on workflow logic, boundaries, and failure conditions.
+- The goal is to find design-review gaps before they become integration rework, operational risk, or customer-facing failures.
+
+Pilot scope
+- One high-value AI-agent workflow.
+- Selected synthetic scenarios matched to the workflow's real decision path.
+- Architecture-stage review of inputs, system boundaries, approval points, handoffs, escalation triggers, and recovery paths.
+
+Core deliverables
+- Executive findings memo.
+- Failure-pattern review against selected scenarios.
+- Limitation and boundary map.
+- Handoff, evidence, escalation, and recovery-path gap list.
+- Recommended design-review next steps.
+
+Good fit
+- A team has a concrete AI-agent workflow, meaningful downside if it fails silently, and enough workflow context for review.
+- Best fit is a workflow still early enough that design changes are possible.
+
+Not for
+- Not a runtime protection layer, legal/compliance sign-off, cybersecurity scan, public benchmark, or deployment approval.
+- Not a replacement for professional legal, HR, technical, risk, or security review.
+
+Next step
+- Select one workflow and schedule a short scoping call to determine whether a bounded diagnostic pilot would create practical value.
