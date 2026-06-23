@@ -1,0 +1,70 @@
+Focused Diagnostic Pilot Scoping Call Script v0.1
+Internal call script. Not legal-reviewed. Not buyer-ready final copy.
+
+Purpose:
+Convert a positive outreach reply into a concrete focused diagnostic pilot conversation.
+
+Standing boundary line:
+SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Call length:
+20 minutes.
+
+Call goal:
+Identify one concrete AI-agent workflow where a bounded first-pass diagnostic review could create practical value.
+
+Opening script:
+Thanks for taking the time. The goal today is simple: identify whether there is one concrete AI-agent workflow where a focused diagnostic review would be useful. I am not here to certify anything or ask for production access. I am trying to understand the workflow, the inputs, the handoffs, and where silent failure would be expensive.
+
+Agenda:
+1. Confirm the boundary: pre-deployment diagnostic only.
+2. Identify one candidate workflow.
+3. Map the workflow's inputs, systems, handoffs, and approval points.
+4. Identify where weak evidence, stale state, unclear scope, or false completion would matter.
+5. Decide whether a bounded paid diagnostic pilot is worth scoping.
+
+Scoping questions:
+1. What AI-agent workflow are you considering, prototyping, or already testing?
+2. What systems or data sources does the workflow touch?
+3. What inputs does the agent receive, and which of those inputs are treated as trusted?
+4. What actions can the agent recommend, initiate, or complete?
+5. Where are human approvals, handoffs, or review points currently required?
+6. What happens if data is stale, incomplete, conflicting, or low-fidelity?
+7. How is task completion verified?
+8. What rollback, recovery, or escalation path exists if the workflow fails or becomes ambiguous?
+
+Fit signals:
+- There is one concrete workflow, not just a broad AI strategy discussion.
+- The workflow has meaningful operational, customer, financial, or trust consequences if it fails silently.
+- The buyer can provide enough non-production context to support synthetic review.
+- The workflow is early enough that design changes are still possible.
+- The buyer understands the review is diagnostic, not certification.
+
+No-fit signals:
+- The buyer wants certification, compliance sign-off, runtime monitoring, cybersecurity testing, or deployment approval.
+- There is no concrete workflow to review.
+- The buyer wants free exploratory consulting.
+- The buyer cannot share even bounded workflow context.
+- The buyer expects a guarantee of safety, reliability, or production outcome.
+
+Deliverables preview:
+- Executive findings memo
+- Failure-pattern review against selected synthetic scenarios
+- Limitation and boundary map
+- Handoff, evidence, escalation, and recovery-path gap list
+- Recommended design-review next steps
+
+Business-continuity answer:
+For a pilot, the scope, questions, deliverables, and review outputs are documented and version-controlled. The engagement would be milestone-based, with a defined off-ramp if continuity or scope issues prevent delivery. I would not ask a buyer to rely on an undocumented black box or an open-ended founder-only process.
+
+Pricing language:
+For a first conversation, do not lead with a number. Say: pricing depends on scope, access, and deliverables. The first step is deciding whether there is one workflow worth scoping as a bounded paid diagnostic pilot.
+
+Close script:
+Based on this conversation, the next step would be to select one workflow and define a narrow pilot scope: what materials are available, which failure patterns matter most, what outputs would be useful, and what decision the review needs to support. If that sounds useful, I can send a short pilot scope outline after this call.
+
+Follow-up:
+Send a short follow-up summarizing the selected workflow, likely failure patterns, proposed deliverables, boundary statement, and next step for a pilot scope outline.
+
+Failure column:
+This script stops fitting if the conversation shifts into certification, compliance approval, runtime protection, legal advice, HR decision-making, cybersecurity testing, deployment approval, or guaranteed safety. In those cases, restate the boundary or decline the fit.

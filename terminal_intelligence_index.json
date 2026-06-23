@@ -197,7 +197,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_focused_diagnostic_pilot_one_pager_v0_1.txt",
       "description": "SpecShift focused diagnostic pilot one-page text source v0.1"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/focused_diagnostic_pilot_scoping_call_script_v0_1.json",
+      "description": "Focused Diagnostic Pilot Scoping Call Script v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/focused_diagnostic_pilot_scoping_call_script_v0_1.txt",
+      "description": "Focused Diagnostic Pilot Scoping Call Script v0.1 text"
     }
   ],
-  "next_action": "Use the focused diagnostic pilot one-pager only after buyer interest or in a qualified scoping conversation. Cold outreach should still use v0.2 email first."
+  "next_action": "When a buyer replies, use focused_diagnostic_pilot_scoping_call_script_v0_1 to run a 20-minute scoping call and then draft a narrow pilot scope outline."
 }
