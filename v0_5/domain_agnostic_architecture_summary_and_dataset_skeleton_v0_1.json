@@ -1,0 +1,104 @@
+{
+  "artifact_name": "Domain-Agnostic Architecture Summary and Calibration Dataset Skeleton v0.1",
+  "status": "internal buyer-safe synthesis artifact, not validated product, not benchmark",
+  "source": "DeepSeek-generated synthesis, patched for claim-boundary language",
+  "one_page_architecture_summary_v0_1": {
+    "title": "Reliability Architecture for AI Under Uncertainty — Internal Review Stack v0.1",
+    "status": "internal reliability-review architecture, not a validated product",
+    "plain_english_summary": "This is an internal method for stress-testing AI behavior when facts are incomplete, authority is ambiguous, or physical and digital worlds drift apart. Instead of relying on generic disclaimers, the stack challenges a system with edge-case prompts, reviews its responses for honesty about evidence, failure boundaries, and operational limits, and then feeds those insights back into design. It does not certify a system; it shows where the system's reasoning breaks.",
+    "problem_addressed": "Advanced AI systems can sound confident even when they lack supporting facts, misinterpret context, or fail to notice that a digital record no longer reflects physical reality. Existing testing often focuses on accuracy against a known answer; this stack focuses on epistemic behavior: how a system labels uncertainty, admits proxy use, flags missing authority, handles mismatches, and identifies recovery paths.",
+    "method": "The stack maintains a structured internal adversarial suite with 25 prompts targeting failure families such as synthetic data drift, scope overextension, analog-digital fracture, degraded infrastructure triage, and cross-cultural distress misclassification. Each case includes a visible failure_column and structured review dimensions covering provenance, observable anchors, proxy honesty, claim boundaries, workflow traceability, human-review triggers, operational impact, and recovery paths. Results are not public scores; they are internal maps of where a scaffold fails, used to tighten design before deployment decisions.",
+    "artifact_stack": [
+      "v0.4 adversarial test suite",
+      "Cross-domain failure-family map",
+      "Ontology and negative-space audit",
+      "Implementation and scoring audit",
+      "Claim-boundary review",
+      "v0.5 structured schema packet",
+      "Local v0.5 validator",
+      "Locally schema-validated v0.5 adversarial suite"
+    ],
+    "what_it_can_claim": [
+      "The stack can identify specific, reproducible failure modes in an AI system's handling of incomplete, ambiguous, or cross-context information.",
+      "It provides a structured way to compare a scaffold's claimed reliability behavior against its actual behavior in synthetic edge-case scenarios.",
+      "It generates internal evidence that can guide design improvements, training-data requirements, review thresholds, and escalation policies."
+    ],
+    "what_it_cannot_claim": [
+      "It is not a benchmark, certification, audit replacement, compliance product, security tool, or safety guarantee.",
+      "It does not guarantee safety, security, regulatory compliance, or deployment readiness.",
+      "It does not replace human audit, legal review, professional review, or real-world monitoring.",
+      "It does not measure model accuracy on standard tasks; it reviews reliability-oriented behavior under uncertainty.",
+      "It is not yet a finished commercial product; it is an internal draft review architecture and artifact stack."
+    ],
+    "buyer_safe_description": "Internal reliability-review stack for enterprise AI systems. Designed to surface hidden failure modes when a system must operate with incomplete or conflicting information, dynamic authority structures, or mismatches between digital records and physical reality. Provides a structured method for testing how honestly a system labels evidence, where it sets operational boundaries, and whether it escalates or recovers appropriately.",
+    "failure_column": "This architecture stops being useful if: (a) the target AI system has no scaffold-like structure to test; (b) the prompts require ground-truth answers the evaluator cannot verify; (c) the results are presented publicly as a performance score rather than an internal debugging map; or (d) the adversarial suite becomes static and is no longer updated to reflect emerging failure modes.",
+    "evidence_needed_for_stronger_claims": [
+      "Repeated, independent application of the suite across multiple systems with consistent, interpretable failure patterns.",
+      "Correlation between suite results and observed reliability outcomes in real workflows.",
+      "Review of the failure-family taxonomy and structured review dimensions by reliability engineers, human-factors experts, and domain specialists.",
+      "Demonstration that the suite can be maintained over time without drifting from its intended epistemic targets.",
+      "Controlled studies showing that scaffold improvements driven by suite findings lead to measurable reduction in high-severity incidents."
+    ]
+  },
+  "calibration_dataset_skeleton_v0_1": {
+    "title": "Unknown-Domain AI Reliability Behavior Dataset Skeleton v0.1",
+    "status": "internal draft dataset skeleton, not a validated benchmark",
+    "purpose": "Define a structured data format for testing how AI systems handle epistemic uncertainty, authority gaps, physical-digital drift, and cross-context distress signals in synthetic, domain-agnostic scenarios. Each record is an adversarial prompt paired with target failure modes, structured checks, and a required visible failure_column. The dataset is designed for internal use: it can calibrate scaffold behavior, compare versions, or feed design decisions, but it must not be presented as a public benchmark, leaderboard, certification, or safety guarantee.",
+    "record_schema": {
+      "case_id": "Unique identifier such as synth_01 or fracture_03",
+      "category": "Failure-family label from a controlled vocabulary",
+      "synthetic_context": "Brief scenario background to ground the prompt",
+      "adversarial_prompt": "The exact prompt given to the AI system under test",
+      "target_failure_mode": "Concise description of the specific epistemic or operational failure being tested",
+      "expected_weak_pattern": "Typical weak response pattern used to guide human review, not a machine target answer",
+      "strong_response_checks": [
+        "Atomic, checkable assertions that should be true of a strong response"
+      ],
+      "failure_column": "The visible falsifiable condition that indicates the scaffold has failed in this scenario",
+      "scoring_dimensions": [
+        "provenance",
+        "observable_anchor",
+        "failure_column_quality",
+        "proxy_honesty",
+        "claim_boundary",
+        "implementation_safety",
+        "workflow_traceability",
+        "human_review_trigger",
+        "operational_impact",
+        "recovery_path"
+      ],
+      "human_review_required": "Boolean or threshold-based flag indicating whether this case requires human evaluation",
+      "notes": "Internal-use notes, case-design provenance, or version tracking"
+    },
+    "controlled_categories": [
+      "synthetic_data_drift",
+      "scope_overextension",
+      "upstream_payload_logic_override",
+      "circular_validation_resource_exhaustion",
+      "cross_jurisdictional_policy_collision",
+      "latent_condition_decay",
+      "analog_digital_fracture",
+      "customary_authority_misalignment",
+      "degraded_infrastructure_triage",
+      "cross_cultural_distress_idiom",
+      "provenance_confusion",
+      "proxy_collapse",
+      "false_neutrality",
+      "professional_boundary_overreach",
+      "unknown_domain_overclaim"
+    ],
+    "acceptance_rules": [
+      "All case_id values must be unique.",
+      "category must be one of the controlled categories.",
+      "adversarial_prompt must be a non-empty string.",
+      "target_failure_mode must be a non-empty string.",
+      "failure_column must contain at least one falsifiable condition.",
+      "strong_response_checks must be a non-empty list of atomic checks.",
+      "scoring_dimensions must include failure_column_quality while preserving the visible case-level failure_column.",
+      "human_review_required must be boolean or threshold-based.",
+      "The dataset must not contain references to named AI models or vendors.",
+      "The dataset must not be distributed publicly as a benchmark, leaderboard, certification, compliance product, or safety guarantee."
+    ],
+    "failure_column": "This dataset skeleton stops being useful if: (a) the controlled categories do not cover the main failure families observed in the target scaffold; (b) strong_response_checks become too generic to distinguish weak and strong responses; (c) the dataset is used as a public scoreboard; (d) synthetic contexts become stale; or (e) human reviewers consistently override machine-checkable rules, indicating the checks need recalibration."
+  }
+}

@@ -57,7 +57,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/unknown_domain_adversarial_suite_v0_5.json",
       "description": "Generated Unknown-Domain Scaffold Adversarial Test Suite v0.5, validated by local validator"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/domain_agnostic_architecture_summary_and_dataset_skeleton_v0_1.json",
+      "description": "Buyer-safe domain-agnostic one-page architecture summary and calibration dataset skeleton v0.1"
     }
   ],
-  "next_action": "Review v0.5 suite content for judgment quality, then optionally create a compact buyer-safe summary that preserves draft/non-validated status."
+  "next_action": "Review and optionally produce a compact external-safe one-page summary from the domain-agnostic architecture artifact."
 }
