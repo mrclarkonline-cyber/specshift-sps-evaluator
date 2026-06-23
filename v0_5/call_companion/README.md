@@ -64,3 +64,14 @@ Generated outputs may include:
 - pilot scope outline `.json`
 
 The scope outline is an internal draft only. It is not legal-reviewed and is not a statement of work.
+
+
+## Case-selection helper
+
+The tool now selects candidate v0.5 failure cases from the internal suite based on the buyer workflow notes.
+
+Generated outputs may include:
+- selected v0.5 candidate cases `.txt`
+- selected v0.5 candidate cases `.json`
+
+The case list is an internal scoping aid only. It is not buyer-facing final copy and must be manually reviewed before any proposal.

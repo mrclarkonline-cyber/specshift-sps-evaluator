@@ -15,6 +15,7 @@ SCOPING_SCRIPT = V05 / "focused_diagnostic_pilot_scoping_call_script_v0_1.json"
 ONE_PAGER = V05 / "specshift_focused_diagnostic_pilot_one_pager_v0_1.pdf"
 PILOT_BRIEF_TXT = V05 / "pilot_scoping_brief_v0_1.txt"
 CHECKLIST_TXT = V05 / "pilot_appendix_guardrail_checklist_v0_1.txt"
+SUITE_PATH = V05 / "unknown_domain_adversarial_suite_v0_5.json"
 
 FROM_EMAIL = "ben@specshiftlabs.com"
 
@@ -97,6 +98,158 @@ def choose_attachments(stage):
 
     return attachments, notes
 
+def load_suite_cases():
+    data = json.loads(SUITE_PATH.read_text(encoding="utf-8"))
+    return data.get("test_cases", [])
+
+def select_relevant_cases(contact, limit=7):
+    workflow_text = " ".join([
+        str(contact.get("workflow", "")),
+        str(contact.get("systems", "")),
+        str(contact.get("trusted_inputs", "")),
+        str(contact.get("agent_actions", "")),
+        str(contact.get("human_handoffs", "")),
+        str(contact.get("data_failure_handling", "")),
+        str(contact.get("completion_verification", "")),
+        str(contact.get("recovery_path", "")),
+        str(contact.get("failure_patterns", "")),
+    ]).lower()
+
+    keyword_map = {
+        "provenance": ["unverified", "input", "source", "document", "email", "screenshot", "proxy", "evidence", "trusted", "attachment"],
+        "stale_state": ["stale", "old", "outdated", "cache", "current", "timestamp", "data freshness", "inventory"],
+        "scope": ["permission", "approval", "authorize", "authority", "spending", "procurement", "scope", "limit", "policy"],
+        "handoff": ["handoff", "owner", "ownership", "human", "review", "legal", "finance", "approval"],
+        "completion": ["complete", "final", "done", "archive", "closed", "task completion", "verification"],
+        "recovery": ["rollback", "recover", "recovery", "escalation", "fallback", "error", "wrong payment"],
+        "multi_system": ["crm", "billing", "finance", "inventory", "erp", "systems", "database", "shipping", "reconciliation"],
+        "boundary": ["legal", "hr", "clinical", "distress", "safety", "professional", "high-risk", "consequences"],
+        "pseudo_rigor": ["model", "framework", "math", "prediction", "neutral", "governance", "confidence", "complete"],
+        "infrastructure": ["offline", "network", "low-resource", "manual", "spreadsheet", "physical", "analog"]
+    }
+
+    category_weights = {
+        "provenance": ["provenance", "proxy", "payload"],
+        "stale_state": ["stale", "latent", "state"],
+        "scope": ["scope", "authority", "permission", "policy"],
+        "handoff": ["handoff", "ownership", "human"],
+        "completion": ["completion", "final-state", "false"],
+        "recovery": ["rollback", "recovery", "circular"],
+        "multi_system": ["multi-system", "synchronization", "state", "reconciliation"],
+        "boundary": ["boundary", "professional", "distress", "customary", "cross-cultural"],
+        "pseudo_rigor": ["pseudo", "decorative", "neutral", "moral", "claim"],
+        "infrastructure": ["infrastructure", "analog", "digital", "degraded"]
+    }
+
+    active_signals = []
+    for signal, words in keyword_map.items():
+        if any(word in workflow_text for word in words):
+            active_signals.append(signal)
+
+    if not active_signals:
+        active_signals = ["provenance", "scope", "stale_state", "completion", "handoff", "recovery"]
+
+    scored = []
+    for case in load_suite_cases():
+        haystack = " ".join([
+            str(case.get("id", "")),
+            str(case.get("category", "")),
+            str(case.get("adversarial_prompt", "")),
+            str(case.get("target_failure_mode", "")),
+            str(case.get("failure_column", ""))
+        ]).lower()
+
+        score = 0
+        reasons = []
+
+        for signal in active_signals:
+            for marker in category_weights.get(signal, []):
+                if marker in haystack:
+                    score += 3
+                    reasons.append(signal)
+                    break
+
+        for word in workflow_text.split():
+            if len(word) > 5 and word in haystack:
+                score += 1
+
+        if score > 0:
+            scored.append((score, case, sorted(set(reasons))))
+
+    scored.sort(key=lambda x: (-x[0], x[1].get("id", "")))
+    selected = scored[:limit]
+
+    if len(selected) < min(limit, 5):
+        fallback_ids = {"01", "04", "06", "07", "10", "12", "13", "20", "23", "25"}
+        existing = {item[1].get("id") for item in selected}
+        for case in load_suite_cases():
+            if case.get("id") in fallback_ids and case.get("id") not in existing:
+                selected.append((1, case, ["default_first_pass"]))
+                existing.add(case.get("id"))
+            if len(selected) >= limit:
+                break
+
+    result = []
+    for score, case, reasons in selected:
+        result.append({
+            "id": case.get("id"),
+            "category": case.get("category"),
+            "target_failure_mode": case.get("target_failure_mode"),
+            "failure_column": case.get("failure_column"),
+            "selection_reasons": reasons,
+            "score": score
+        })
+
+    return result
+
+def write_case_selection(contact):
+    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    base_name = f"{stamp}_{slug(contact.get('company', 'unknown'))}_{slug(contact.get('name', 'unknown'))}"
+    cases_txt = OUT / f"{base_name}_selected_v0_5_cases.txt"
+    cases_json = OUT / f"{base_name}_selected_v0_5_cases.json"
+
+    selected = select_relevant_cases(contact)
+
+    lines = [
+        "Selected v0.5 Candidate Cases for Focused Diagnostic Pilot",
+        "Internal case-selection aid. Not buyer-facing final copy.",
+        "",
+        f"Company: {contact.get('company', '')}",
+        f"Workflow: {contact.get('workflow', '')}",
+        "",
+        "Boundary:",
+        BOUNDARY,
+        "",
+        "Selected cases:"
+    ]
+
+    for item in selected:
+        lines.append("")
+        lines.append(f"Case {item['id']} - {item['category']}")
+        lines.append(f"Target failure mode: {item['target_failure_mode']}")
+        lines.append(f"Selection reasons: {', '.join(item['selection_reasons'])}")
+        lines.append(f"Failure column: {item['failure_column']}")
+
+    lines.append("")
+    lines.append("Use note:")
+    lines.append("Use these cases as a starting selection only. Final pilot scope should be manually reviewed and narrowed to match the actual buyer workflow.")
+    lines.append("")
+
+    cases_txt.write_text("\n".join(lines), encoding="utf-8")
+
+    record = {
+        "artifact_name": "Selected v0.5 Candidate Cases for Focused Diagnostic Pilot",
+        "status": "internal case-selection aid, not buyer-facing final copy",
+        "contact": contact,
+        "selected_cases": selected,
+        "boundary": BOUNDARY,
+        "use_note": "Starting selection only; manually review before pilot proposal.",
+        "created_at": datetime.now().isoformat()
+    }
+    cases_json.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    return cases_txt, cases_json
+
 def build_pilot_scope_outline(contact):
     company = contact.get("company") or "the buyer"
     workflow = contact.get("workflow") or "the selected workflow"
@@ -108,6 +261,11 @@ def build_pilot_scope_outline(contact):
     completion_verification = contact.get("completion_verification") or "to be confirmed"
     recovery_path = contact.get("recovery_path") or "to be confirmed"
     failure_patterns = contact.get("failure_patterns") or "evidence handling, scope boundaries, handoffs, escalation thresholds, and recovery paths"
+    selected_cases = select_relevant_cases(contact)
+    selected_case_summary = "\n".join(
+        f"- Case {item['id']} ({item['category']}): {item['target_failure_mode']}"
+        for item in selected_cases
+    ) or "- To be selected after workflow scoping"
 
     return f"""Focused Diagnostic Pilot Scope Outline
 
@@ -128,6 +286,9 @@ Standing boundary:
 
 Candidate failure patterns to review:
 {failure_patterns}
+
+Selected v0.5 candidate cases:
+{selected_case_summary}
 
 Known workflow context:
 - Systems or data sources touched: {systems}
@@ -344,11 +505,16 @@ def call_mode():
     subject, body = build_followup(contact)
     txt, eml, notes_json, attach_txt = write_email_files(contact, subject, body, attachments)
     scope_txt, scope_json = write_scope_outline(contact)
+    cases_txt, cases_json = write_case_selection(contact)
     print_generated(txt, eml, notes_json, attach_txt, attachments, attachment_notes)
     print()
     print("Generated pilot scope outline:")
     print(f"- Scope TXT: {scope_txt}")
     print(f"- Scope JSON: {scope_json}")
+    print()
+    print("Generated selected v0.5 case list:")
+    print(f"- Cases TXT: {cases_txt}")
+    print(f"- Cases JSON: {cases_json}")
     open_outreach_folder()
 
 def email_mode():
@@ -372,11 +538,16 @@ def email_mode():
     subject, body = build_followup(contact)
     txt, eml, notes_json, attach_txt = write_email_files(contact, subject, body, attachments)
     scope_txt, scope_json = write_scope_outline(contact)
+    cases_txt, cases_json = write_case_selection(contact)
     print_generated(txt, eml, notes_json, attach_txt, attachments, attachment_notes)
     print()
     print("Generated pilot scope outline:")
     print(f"- Scope TXT: {scope_txt}")
     print(f"- Scope JSON: {scope_json}")
+    print()
+    print("Generated selected v0.5 case list:")
+    print(f"- Cases TXT: {cases_txt}")
+    print(f"- Cases JSON: {cases_json}")
     open_outreach_folder()
 
 def main():

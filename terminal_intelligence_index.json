@@ -208,12 +208,12 @@
     },
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/call_companion/specshift_call_companion.py",
-      "description": "Interactive terminal call companion with Proton-ready email drafts and pilot scope outline generator"
+      "description": "Interactive terminal call companion with Proton-ready email drafts, pilot scope outline generator, and v0.5 case-selection helper"
     },
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/call_companion/README.md",
       "description": "README for SpecShift Proton-ready call companion with correct signature"
     }
   ],
-  "next_action": "When a buyer call is positive, use call companion to generate Proton-ready follow-up plus pilot scope outline. Convert scope outline into a narrow pilot proposal only after buyer confirms fit."
+  "next_action": "Use call companion after buyer calls to generate Proton-ready follow-up, pilot scope outline, and selected v0.5 candidate cases. Manually review selected cases before proposal."
 }
