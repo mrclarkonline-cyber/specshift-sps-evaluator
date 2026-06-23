@@ -137,7 +137,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/role_specific_outreach_variants_v0_1.txt",
       "description": "Role-specific outreach variants v0.1 plain-text draft"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/git_claim_boundary_clarification_v0_1.json",
+      "description": "Clarifies that prior 'validated v0.5 suite' wording means local schema validation only"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/git_claim_boundary_clarification_v0_1.txt",
+      "description": "Plain-text git claim-boundary clarification"
     }
   ],
-  "next_action": "Review role-specific outreach variants. Next optional step: create named-company targeting notes only after selecting specific companies."
+  "next_action": "Use 'locally schema-validated' for v0.5 suite references. Avoid unqualified 'validated' language."
 }

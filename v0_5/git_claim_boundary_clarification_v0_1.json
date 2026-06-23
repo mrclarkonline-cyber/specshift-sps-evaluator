@@ -1,0 +1,23 @@
+{
+  "artifact_name": "Git Claim-Boundary Clarification v0.1",
+  "status": "internal provenance clarification",
+  "reason": "A prior git commit message used the phrase 'Generate validated v0.5 adversarial suite.' This clarification narrows that phrase to local schema validation only.",
+  "commit_referenced": "556e708 Generate validated v0.5 adversarial suite",
+  "correct_interpretation": "The v0.5 adversarial suite was locally schema-validated by the repository validator. It was not externally validated, not independently audited, not performance-validated, not market-validated, and not a benchmark.",
+  "allowed_language": [
+    "locally schema-validated v0.5 adversarial suite",
+    "passes local validator",
+    "internally validated for schema consistency",
+    "internal draft stress-test suite"
+  ],
+  "language_to_avoid": [
+    "validated suite",
+    "validated benchmark",
+    "certified evaluation",
+    "proven reliability test",
+    "deployment-ready assessment",
+    "externally validated artifact"
+  ],
+  "standing_boundary_line": "All references to v0.5 validation mean local schema validation only unless later evidence explicitly establishes external, independent, outcome, or performance validation.",
+  "failure_column": "This clarification fails if future materials cite the v0.5 suite as validated without the qualifier 'locally schema-validated' or imply external validation, benchmark status, certification, deployment readiness, or proven production reliability."
+}

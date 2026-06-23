@@ -1,0 +1,29 @@
+Git Claim-Boundary Clarification v0.1
+
+A prior git commit message used the phrase:
+
+556e708 Generate validated v0.5 adversarial suite
+
+Correct interpretation:
+
+The v0.5 adversarial suite was locally schema-validated by the repository validator. It was not externally validated, not independently audited, not performance-validated, not market-validated, and not a benchmark.
+
+Allowed language:
+- locally schema-validated v0.5 adversarial suite
+- passes local validator
+- internally validated for schema consistency
+- internal draft stress-test suite
+
+Avoid:
+- validated suite
+- validated benchmark
+- certified evaluation
+- proven reliability test
+- deployment-ready assessment
+- externally validated artifact
+
+Standing boundary line:
+All references to v0.5 validation mean local schema validation only unless later evidence explicitly establishes external, independent, outcome, or performance validation.
+
+Failure column:
+This clarification fails if future materials cite the v0.5 suite as validated without the qualifier “locally schema-validated” or imply external validation, benchmark status, certification, deployment readiness, or proven production reliability.
