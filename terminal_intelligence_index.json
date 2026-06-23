@@ -105,7 +105,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/pilot_scoping_brief_v0_1.txt",
       "description": "SpecShift Pilot Scoping Brief v0.1 plain-text copy"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/strategic_evaluation_package_v0_1.json",
+      "description": "SpecShift Strategic Evaluation Package v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/strategic_evaluation_package_v0_1.txt",
+      "description": "SpecShift Strategic Evaluation Package v0.1 plain-text draft"
     }
   ],
-  "next_action": "Review pilot scoping brief, then optionally create a short outreach email that points to a bounded paid pilot without overclaiming."
+  "next_action": "Run final claim-boundary review on Strategic Evaluation Package before creating outreach email or executive PDF."
 }

@@ -1,0 +1,125 @@
+{
+  "artifact_name": "SpecShift Strategic Evaluation Package v0.1",
+  "status": "internal premium commercial package draft, not buyer-ready final copy",
+  "boundary_statement": "This package describes a pre-deployment diagnostic and architecture-stage review engagement. It is not a benchmark, certification, compliance audit, security assessment, deployment approval, runtime monitor, or guarantee of AI safety.",
+  "premium_positioning": "SpecShift Architectural Logic Diagnostics helps organizations evaluate high-consequence AI-agent workflows before scale by stress-testing where automated reasoning, evidence handling, scope boundaries, handoffs, escalation logic, and recovery paths may fail under synthetic edge-case review.",
+  "executive_thesis": "Enterprise AI-agent risk is no longer only about whether a model can answer correctly. The higher-value risk is whether an agentic workflow acts on weak evidence, stale state, unclear authority, or false completion while sounding operationally confident. SpecShift provides a bounded way to expose those failure patterns before they become expensive integration, governance, customer, or trust problems.",
+  "why_now": [
+    "AI-agent workflows are moving from demos into operational decision paths.",
+    "Standard evaluations often test output quality, not workflow integrity.",
+    "Multi-system agents can fail through stale data, permission overreach, unclear handoffs, and false final-state claims.",
+    "Teams need architecture-stage diagnostics before broad rollout, not after incidents."
+  ],
+  "decision_maker_pain_framing": {
+    "ceo_or_founder": "Avoid scaling an agent workflow that later damages customer trust or enterprise credibility.",
+    "cto_or_vp_engineering": "Find logic, handoff, state, and evidence-handling failures before integration debt compounds.",
+    "chief_product_or_ai_officer": "Define where the workflow is ready for more testing and where the user experience needs guardrails.",
+    "risk_legal_or_governance_lead": "Create a structured internal map of known limitations without pretending it is certification or compliance sign-off.",
+    "enterprise_buyer": "Understand whether a proposed AI-agent workflow has clear review thresholds before committing to broader deployment."
+  },
+  "strategic_offer": {
+    "name": "SpecShift Strategic Workflow Evaluation",
+    "scope": "One high-value AI-agent workflow, reviewed through adversarial stress tests, limitation mapping, workflow logic review, and escalation-path analysis.",
+    "duration": "Typically 4 to 6 weeks depending on workflow complexity and access to materials.",
+    "inputs_needed": [
+      "Workflow description or architecture sketch",
+      "Representative prompts, tasks, or decision paths",
+      "System boundaries and data sources",
+      "Known approval, handoff, and escalation points",
+      "Existing test results, incident examples, or concern areas if available"
+    ],
+    "outputs": [
+      "Executive Findings Memo",
+      "Adversarial Stress-Test Execution Report",
+      "Limitation & Boundary Map",
+      "Agentic Scope & Logic Alignment Review",
+      "Escalation & Human-in-the-Loop Routing Matrix",
+      "Pilot Appendix Guardrail Checklist",
+      "Recommended Design-Review Next Steps"
+    ]
+  },
+  "premium_deliverables_menu": [
+    {
+      "deliverable": "Executive Findings Memo",
+      "buyer_value": "Gives leadership a concise view of where the target workflow appears stable under synthetic review and where risk concentrates."
+    },
+    {
+      "deliverable": "Adversarial Stress-Test Execution Report",
+      "buyer_value": "Shows how the workflow responds to unverified inputs, stale state, ambiguous authority, false completion, handoff gaps, and escalation pressure."
+    },
+    {
+      "deliverable": "Limitation & Boundary Map",
+      "buyer_value": "Documents where automated logic should stop, slow down, ask for confirmation, or route to human review."
+    },
+    {
+      "deliverable": "Agentic Scope & Logic Alignment Review",
+      "buyer_value": "Identifies scope overextension, multi-system inconsistency, stale data assumptions, and unclear ownership transfer."
+    },
+    {
+      "deliverable": "Escalation & Human-in-the-Loop Routing Matrix",
+      "buyer_value": "Turns vague oversight into concrete review triggers and recovery pathways."
+    },
+    {
+      "deliverable": "Strategic Next-Step Roadmap",
+      "buyer_value": "Converts findings into prioritized design-review actions without claiming certification or deployment approval."
+    }
+  ],
+  "pilot_tiers": [
+    {
+      "tier": "Focused Diagnostic Pilot",
+      "price_posture": "$250k–$500k",
+      "fit": "One high-value workflow, bounded access, executive memo plus core diagnostic outputs.",
+      "boundary": "No exclusivity, no production certification, no code transfer, no training rights."
+    },
+    {
+      "tier": "Strategic Evaluation Engagement",
+      "price_posture": "$750k–$1.5M",
+      "fit": "Deeper workflow evaluation, multiple scenario families, expanded leadership readout, and design-review roadmap.",
+      "boundary": "Still diagnostic and architecture-stage; no compliance sign-off or safety guarantee."
+    },
+    {
+      "tier": "Limited Strategic License",
+      "price_posture": "$3M–$5M+",
+      "fit": "Time-bounded, narrow use rights for internal application of selected review structures to approved workflows.",
+      "boundary": "Non-exclusive by default unless specifically priced and constrained; no broad method transfer without separate agreement."
+    }
+  ],
+  "why_this_is_not_ordinary_consulting": [
+    "The method is built around adversarial failure discovery, not generic best-practice commentary.",
+    "Each review asks where the workflow breaks, not only where it performs well.",
+    "The artifact stack includes schema controls, local validation, claim-boundary discipline, and structured failure columns.",
+    "The output is designed to help teams make design decisions, not decorate a slide deck."
+  ],
+  "safe_claims": [
+    "SpecShift provides a structured internal review of AI-agent workflow logic under synthetic stress conditions.",
+    "SpecShift can identify candidate failure modes involving evidence handling, scope boundaries, stale state, handoff gaps, escalation thresholds, and recovery paths.",
+    "SpecShift outputs can support architecture-stage design decisions and paid pilot conversations."
+  ],
+  "forbidden_claims": [
+    "Do not claim benchmark status.",
+    "Do not claim certification.",
+    "Do not claim compliance approval.",
+    "Do not claim runtime monitoring or runtime protection.",
+    "Do not claim deployment readiness.",
+    "Do not claim guaranteed safety, security, or reliability.",
+    "Do not claim validated performance without external evidence."
+  ],
+  "qualification_gate": [
+    "Buyer has a concrete AI-agent workflow or near-term deployment path.",
+    "Buyer has meaningful downside if the workflow fails silently.",
+    "Buyer can provide enough workflow context for synthetic stress review.",
+    "Buyer accepts that the engagement is diagnostic, not certification.",
+    "Buyer is prepared for a paid pilot rather than free exploratory consulting."
+  ],
+  "disqualification_gate": [
+    "Buyer wants a free review.",
+    "Buyer wants certification or compliance sign-off.",
+    "Buyer wants runtime security tooling.",
+    "Buyer wants broad IP transfer or training rights.",
+    "Buyer wants to test vague AI strategy without a concrete workflow.",
+    "Buyer cannot accept strict claim boundaries."
+  ],
+  "suggested_call_to_action": "Select one high-value AI-agent workflow and run a bounded SpecShift diagnostic pilot to map where its automated logic, evidence handling, handoffs, review thresholds, and recovery paths may fail under synthetic stress conditions.",
+  "failure_column": "This strategic package stops fitting if it is used to imply certification, validated performance, compliance sign-off, runtime protection, broad safety claims, or production approval. It also stops fitting if sold to buyers without a concrete workflow, meaningful downside, and willingness to pay for a bounded diagnostic engagement.",
+  "next_internal_step": "Use this package to create an outreach-safe email and a one-page executive PDF only after a final claim-boundary review."
+}

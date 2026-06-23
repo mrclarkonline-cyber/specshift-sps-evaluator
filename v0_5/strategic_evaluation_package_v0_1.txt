@@ -1,0 +1,69 @@
+SpecShift Strategic Evaluation Package v0.1
+Internal premium commercial package draft. Not buyer-ready final copy.
+
+Boundary statement:
+This package describes a pre-deployment diagnostic and architecture-stage review engagement. It is not a benchmark, certification, compliance audit, security assessment, deployment approval, runtime monitor, or guarantee of AI safety.
+
+Premium positioning:
+SpecShift Architectural Logic Diagnostics helps organizations evaluate high-consequence AI-agent workflows before scale by stress-testing where automated reasoning, evidence handling, scope boundaries, handoffs, escalation logic, and recovery paths may fail under synthetic edge-case review.
+
+Executive thesis:
+Enterprise AI-agent risk is no longer only about whether a model can answer correctly. The higher-value risk is whether an agentic workflow acts on weak evidence, stale state, unclear authority, or false completion while sounding operationally confident. SpecShift provides a bounded way to expose those failure patterns before they become expensive integration, governance, customer, or trust problems.
+
+Why now:
+- AI-agent workflows are moving from demos into operational decision paths.
+- Standard evaluations often test output quality, not workflow integrity.
+- Multi-system agents can fail through stale data, permission overreach, unclear handoffs, and false final-state claims.
+- Teams need architecture-stage diagnostics before broad rollout, not after incidents.
+
+Strategic offer:
+SpecShift Strategic Workflow Evaluation
+One high-value AI-agent workflow, reviewed through adversarial stress tests, limitation mapping, workflow logic review, and escalation-path analysis.
+Duration: Typically 4 to 6 weeks depending on workflow complexity and access to materials.
+
+Outputs:
+- Executive Findings Memo
+- Adversarial Stress-Test Execution Report
+- Limitation & Boundary Map
+- Agentic Scope & Logic Alignment Review
+- Escalation & Human-in-the-Loop Routing Matrix
+- Pilot Appendix Guardrail Checklist
+- Recommended Design-Review Next Steps
+
+Pilot tiers:
+- Focused Diagnostic Pilot: $250k–$500k
+  Fit: One high-value workflow, bounded access, executive memo plus core diagnostic outputs.
+  Boundary: No exclusivity, no production certification, no code transfer, no training rights.
+- Strategic Evaluation Engagement: $750k–$1.5M
+  Fit: Deeper workflow evaluation, multiple scenario families, expanded leadership readout, and design-review roadmap.
+  Boundary: Still diagnostic and architecture-stage; no compliance sign-off or safety guarantee.
+- Limited Strategic License: $3M–$5M+
+  Fit: Time-bounded, narrow use rights for internal application of selected review structures to approved workflows.
+  Boundary: Non-exclusive by default unless specifically priced and constrained; no broad method transfer without separate agreement.
+
+Why this is not ordinary consulting:
+- The method is built around adversarial failure discovery, not generic best-practice commentary.
+- Each review asks where the workflow breaks, not only where it performs well.
+- The artifact stack includes schema controls, local validation, claim-boundary discipline, and structured failure columns.
+- The output is designed to help teams make design decisions, not decorate a slide deck.
+
+Qualification gate:
+- Buyer has a concrete AI-agent workflow or near-term deployment path.
+- Buyer has meaningful downside if the workflow fails silently.
+- Buyer can provide enough workflow context for synthetic stress review.
+- Buyer accepts that the engagement is diagnostic, not certification.
+- Buyer is prepared for a paid pilot rather than free exploratory consulting.
+
+Disqualification gate:
+- Buyer wants a free review.
+- Buyer wants certification or compliance sign-off.
+- Buyer wants runtime security tooling.
+- Buyer wants broad IP transfer or training rights.
+- Buyer wants to test vague AI strategy without a concrete workflow.
+- Buyer cannot accept strict claim boundaries.
+
+Suggested call to action:
+Select one high-value AI-agent workflow and run a bounded SpecShift diagnostic pilot to map where its automated logic, evidence handling, handoffs, review thresholds, and recovery paths may fail under synthetic stress conditions.
+
+Failure column:
+This strategic package stops fitting if it is used to imply certification, validated performance, compliance sign-off, runtime protection, broad safety claims, or production approval. It also stops fitting if sold to buyers without a concrete workflow, meaningful downside, and willingness to pay for a bounded diagnostic engagement.
