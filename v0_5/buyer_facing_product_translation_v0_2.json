@@ -1,0 +1,93 @@
+{
+  "artifact_name": "SpecShift Architectural Logic Diagnostics Buyer-Facing Product Translation v0.2",
+  "status": "internal commercial translation artifact, not buyer-ready final copy",
+  "recommended_positioning": "Pre-Deployment Architectural Logic Stress-Testing and Constraint Mapping Framework for Agentic Workflows",
+  "plain_english_positioning": "SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic framework for AI agent workflows. It stress-tests how proposed agentic systems handle unverified inputs, stale or conflicting system states, unclear authority boundaries, and escalation points. The output is a structured internal map of where automated logic appears to hold under synthetic review and where it may need additional design guardrails before scaling.",
+  "product_modules": [
+    {
+      "module_name": "Input Provenance & Evidence Handling Review",
+      "internal_concept": "provenance separation, proxy honesty",
+      "buyer_translation": "Evaluates how an AI workflow distinguishes user-provided claims, system records, and low-fidelity inputs during synthetic review. Checks whether the workflow treats forwarded documents, screenshots, summaries, or generated history as proxies rather than decision-grade evidence."
+    },
+    {
+      "module_name": "Assertion Boundary & Limitation Mapping",
+      "internal_concept": "failure columns, claim boundaries",
+      "buyer_translation": "Reviews whether AI outputs define operational limits and confidence boundaries. Produces limitation maps showing where a workflow's reasoning may degrade or stop fitting under stress conditions."
+    },
+    {
+      "module_name": "Agentic Scope & Multi-System Logic Alignment",
+      "internal_concept": "scope overextension, stale data acting as current, false final-state claims",
+      "buyer_translation": "Evaluates workflow designs for permission overextension, stale-state dependence, inconsistent system records, and unverified completion claims. This is architecture-stage review, not IAM administration or database synchronization tooling."
+    },
+    {
+      "module_name": "Constraint & Escalation Mapping",
+      "internal_concept": "human-review triggers, operational impact, recovery paths",
+      "buyer_translation": "Defines review thresholds, escalation points, and recovery paths for cases where an agentic workflow should pause, route, or require human review. This is a diagnostic design output, not a runtime control layer."
+    }
+  ],
+  "buyer_pain_points": [
+    "AI agents making confident recommendations from unverified, forwarded, generated, or low-fidelity inputs.",
+    "Agent workflows gradually exceeding intended scope because approval boundaries are vague or reused too broadly.",
+    "Actions based on stale data, mismatched system records, or unverified task-complete assertions.",
+    "Difficulty knowing where an AI workflow's reasoning stops fitting under edge-case conditions.",
+    "Escalation and recovery paths that are implied in prose but not structurally defined."
+  ],
+  "safe_use_cases": [
+    "Pre-deployment diagnostic review of proposed AI agent workflows.",
+    "Architecture-stage review of multi-agent orchestration logic.",
+    "Review of AI-generated recommendations for evidence handling, limitation mapping, and escalation points.",
+    "Synthetic stress-testing of workflow assumptions before broader integration."
+  ],
+  "excluded_or_not_yet_supported_use_cases": [
+    "Real-time production monitoring or runtime intervention.",
+    "Legal, regulatory, or compliance certification.",
+    "Cybersecurity penetration testing or vulnerability scanning.",
+    "IAM administration, access-control enforcement, or HR decision tooling.",
+    "Guaranteeing zero hallucination, safety, or deployment readiness.",
+    "Replacing formal human audit, legal review, HR review, or regulated professional judgment."
+  ],
+  "core_deliverables": [
+    "Adversarial Stress-Test Execution Report: Findings from simulated edge-case and failure-mode scenarios.",
+    "Limitation & Boundary Map: Structured inventory of where the AI workflow's reasoning may degrade under synthetic stress conditions.",
+    "Agentic Scope & Logic Alignment Review: Architecture-stage review of scope boundaries, data freshness assumptions, system-record consistency, and handoff logic.",
+    "Escalation & Human-in-the-Loop Routing Matrix: Proposed review thresholds and escalation paths for cases where the workflow should pause, route, or require human review."
+  ],
+  "pilot_framing": "The SpecShift Reliability Baseline Pilot is a bounded, paid diagnostic engagement focused on one high-value AI agent workflow. The workflow is reviewed against an internal adversarial stress-test suite to map operational boundaries, surface evidence-handling failures, identify stale-state and multi-system logic risks, and define review thresholds. The goal is not to certify the AI system; it is to give engineering, product, and risk teams a structured internal map of where the proposed workflow appears stable under synthetic review and where design guardrails may be needed before scaling.",
+  "pricing_posture": "Priced as a professional diagnostic engagement rather than a SaaS subscription. The pilot fee covers structured stress-test execution, limitation mapping, and delivery of architecture-stage review outputs. This supports premium pilot pricing as a risk-reduction and design-review engagement without implying a software guarantee, compliance sign-off, or runtime control layer.",
+  "safe_buyer_language": [
+    "Pre-deployment diagnostic review",
+    "Architectural logic stress-testing",
+    "Operational boundary mapping",
+    "Workflow integrity review",
+    "Agentic scope review",
+    "Multi-system logic alignment",
+    "Limitation and confidence scoping",
+    "Escalation threshold definition",
+    "Structured internal review checklist"
+  ],
+  "language_to_avoid": [
+    "Terminal Intelligence",
+    "Boundary Containment",
+    "Workflow Authority",
+    "State Synchronization",
+    "Benchmark",
+    "Certification",
+    "Guarantee",
+    "Compliance audit",
+    "Security tool",
+    "Runtime guardrail",
+    "Zero hallucination",
+    "Fully autonomous validation",
+    "Deployment-ready",
+    "Proves reliability"
+  ],
+  "failure_column": "This commercial translation stops fitting if the buyer expects a real-time production security filter, legal compliance certification, formal audit replacement, runtime monitoring platform, IAM tool, HR decision tool, or guaranteed measure of AI safety. It is a pre-deployment diagnostic and architecture-stage review framework.",
+  "evidence_needed_for_stronger_claims": [
+    "Longitudinal data showing that workflows reviewed by SpecShift exhibit measurably lower failure rates in production.",
+    "Third-party review of the adversarial suite's coverage against established AI failure-mode taxonomies.",
+    "Case studies showing measurable risk reduction associated with limitation-map findings.",
+    "Inter-rater review showing that independent reviewers score the same cases consistently.",
+    "Evidence that remediation based on findings improves later suite performance and real-world workflow behavior."
+  ],
+  "source_review": "Commercial Red-Team Review v0.1"
+}

@@ -65,7 +65,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/buyer_facing_product_translation_v0_1.json",
       "description": "Internal buyer-facing product translation v0.1 for SpecShift Terminal Intelligence"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/commercial_red_team_review_v0_1.json",
+      "description": "Gemini commercial red-team review v0.1 of buyer-facing product translation"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/buyer_facing_product_translation_v0_2.json",
+      "description": "Patched buyer-facing product translation v0.2 with safer architecture-stage diagnostic positioning"
     }
   ],
-  "next_action": "Review buyer-facing product translation and optionally create a compact one-page sales narrative with strict claim boundaries."
+  "next_action": "Use buyer_facing_product_translation_v0_2.json to create a compact one-page sales narrative with strict claim boundaries."
 }
