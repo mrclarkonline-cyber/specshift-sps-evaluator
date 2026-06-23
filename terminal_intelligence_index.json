@@ -21,7 +21,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_4/ontology_negative_space_audit_v0_1.json",
       "description": "Qwen ontology and negative-space audit v0.1, identifying enterprise/cybernetic blind spots and v0.5/v0.6 expansions"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/v0_5_planning_matrix.json",
+      "description": "v0.5 planning matrix combining v0.4 suite, Gemini failure-family map, and Qwen ontology audit"
     }
   ],
-  "next_action": "Build v0.5 by combining Grok v0.4, Gemini failure families, and Qwen ontology audit: collapse duplicate enterprise cases, add analog-digital fracture, customary authority, degraded infrastructure triage, and cross-cultural distress idiom cases."
+  "next_action": "Draft Unknown-Domain Scaffold Adversarial Test Suite v0.5 with fewer duplicate cases and stronger cross-domain coverage."
 }
