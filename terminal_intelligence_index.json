@@ -45,7 +45,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/claim_boundary_review_v0_1.json",
       "description": "Claude claim-boundary and buyer-facing integrity review v0.1"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/validate_v0_5_suite.py",
+      "description": "Local validator for generated v0.5 adversarial suite"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/v0_5_generation_acceptance_rules.json",
+      "description": "Internal acceptance rules for generated v0.5 suite"
     }
   ],
-  "next_action": "Use v0_5_structured_schema_packet.json for internal v0.5 case generation. Do not use buyer-facing without standing disclosure."
+  "next_action": "Generate v0.5 suite using v0_5_structured_schema_packet.json, then validate with v0_5/validate_v0_5_suite.py before committing."
 }

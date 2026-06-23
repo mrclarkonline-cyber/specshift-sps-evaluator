@@ -1,0 +1,18 @@
+{
+  "artifact_name": "SpecShift Terminal Intelligence v0.5 Generation Acceptance Rules",
+  "status": "internal acceptance rules, not validated benchmark",
+  "purpose": "Define what must be true before accepting a generated v0.5 adversarial suite.",
+  "acceptance_rules": [
+    "Generated suite must pass v0_5/validate_v0_5_suite.py.",
+    "Generated suite must contain exactly 25 test cases.",
+    "Every case must use a controlled category.",
+    "Every case must include a visible case-level failure_column.",
+    "Every scoring_rubric dimension must use expected_behavior, pass_condition, and fail_condition.",
+    "Rubric dimension must be failure_column_quality, not failure_column.",
+    "No benchmark, certification, compliance, security-tool, audit-replacement, or deployment-readiness claims.",
+    "All scenarios must be synthetic and non-operational.",
+    "Buyer-facing language must use structured internal review checklist, not validated scoring system.",
+    "The suite is acceptable for internal generation/review only, not external buyer-facing use."
+  ],
+  "next_action": "Generate v0.5 suite, save as v0_5/unknown_domain_adversarial_suite_v0_5.json, then run validator before committing."
+}
