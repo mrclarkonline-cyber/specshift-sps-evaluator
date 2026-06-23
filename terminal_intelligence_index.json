@@ -61,7 +61,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/domain_agnostic_architecture_summary_and_dataset_skeleton_v0_1.json",
       "description": "Buyer-safe domain-agnostic one-page architecture summary and calibration dataset skeleton v0.1"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/buyer_facing_product_translation_v0_1.json",
+      "description": "Internal buyer-facing product translation v0.1 for SpecShift Terminal Intelligence"
     }
   ],
-  "next_action": "Review and optionally produce a compact external-safe one-page summary from the domain-agnostic architecture artifact."
+  "next_action": "Review buyer-facing product translation and optionally create a compact one-page sales narrative with strict claim boundaries."
 }

@@ -1,0 +1,84 @@
+{
+  "artifact_name": "SpecShift Terminal Intelligence Buyer-Facing Product Translation v0.1",
+  "status": "internal commercial translation artifact, not buyer-ready final copy",
+  "plain_english_positioning": "SpecShift Terminal Intelligence is an enterprise diagnostic and stress-testing framework for AI agent reliability. It evaluates how AI systems handle unverified inputs, state desynchronization, and boundary conditions, providing organizations with a structured internal map of where their AI workflows appear more stable under synthetic stress tests and where they may risk operational drift.",
+  "product_modules": [
+    {
+      "module_name": "Input Provenance & Lineage Integrity",
+      "internal_concept": "provenance separation, proxy honesty",
+      "buyer_translation": "Evaluates how AI agents handle unverified, forwarded, or low-fidelity inputs. Checks whether the system distinguishes between authoritative data and unverified proxies before recommending downstream actions."
+    },
+    {
+      "module_name": "Assertion Boundary & Limitation Mapping",
+      "internal_concept": "failure columns, claim boundaries",
+      "buyer_translation": "Reviews whether AI outputs explicitly define operational limits and confidence boundaries. Replaces unbounded confidence with structured limitation maps that show where a system's reliability may degrade."
+    },
+    {
+      "module_name": "Workflow Authority & State Synchronization",
+      "internal_concept": "scope overextension, stale data acting as current, false final-state claims",
+      "buyer_translation": "Evaluates workflow traces for signs of permission creep, temporal staleness, and unverified completion claims. Checks whether agents expand authority or act on outdated state without explicit re-authorization."
+    },
+    {
+      "module_name": "Escalation & Boundary Containment",
+      "internal_concept": "human-review triggers, operational impact, recovery paths",
+      "buyer_translation": "Defines review thresholds for human-in-the-loop intervention. Maps operational impacts and checks whether the system routes to fallback protocols or human specialists when encountering high-liability or out-of-scope scenarios."
+    }
+  ],
+  "buyer_pain_points": [
+    "AI agents confidently executing decisions based on unverified, forwarded, or low-fidelity data.",
+    "Silent permission creep, where agents gradually expand operational authority or bypass review steps to optimize for speed.",
+    "State desynchronization across multi-agent systems, leading to actions based on stale data or unverified task-complete assertions.",
+    "Inability to know where an AI model's output stops being reliable, resulting in decorative rigor without operational grounding.",
+    "AI systems providing strategic or professional advice outside their structural competence, creating hidden liability risk."
+  ],
+  "safe_use_cases": [
+    "Pre-deployment stress-testing of AI agents in complex, multi-step workflows.",
+    "Evaluating multi-agent orchestration layers for state consistency and handoff integrity.",
+    "Reviewing AI-generated strategic recommendations to identify unverified assumptions and hidden boundary conditions.",
+    "Mapping operational limits and escalation thresholds for AI deployment in regulated or high-liability environments."
+  ],
+  "excluded_or_not_yet_supported_use_cases": [
+    "Real-time production interception or runtime security filtering.",
+    "Legal, regulatory, or compliance certification.",
+    "Cybersecurity penetration testing or vulnerability scanning.",
+    "Guaranteeing zero hallucination or absolute safety in autonomous deployment.",
+    "Replacing formal human audit, legal review, HR review, or regulated professional judgment."
+  ],
+  "core_deliverables": [
+    "Adversarial Stress-Test Execution Report: Findings from simulated edge-case and failure-mode scenarios.",
+    "Limitation & Boundary Map: Structured inventory of where the AI system's reliability may degrade under synthetic stress conditions.",
+    "Workflow State & Authority Drift Assessment: Review of permission boundaries, data freshness checks, and handoff integrity across the agent architecture.",
+    "Escalation & Human-in-the-Loop Routing Matrix: Proposed thresholds and review points for when the system should halt, route, or escalate."
+  ],
+  "pilot_framing": "The SpecShift Reliability Baseline Pilot is a bounded, paid diagnostic engagement focused on a single, high-value enterprise workflow. The target AI workflow is reviewed against an internal adversarial stress-test suite to map operational boundaries, identify state desynchronization risks, and define explicit limitation thresholds. The goal is not to certify the AI, but to provide engineering and risk teams with a structured internal map of where the system appears stable under synthetic review and where it may require additional guardrails before scaling.",
+  "pricing_posture": "Priced as a professional diagnostic engagement rather than a SaaS subscription. The pilot fee covers adversarial suite execution, boundary mapping, and delivery of the limitation map. This positions the engagement as a high-value risk-mitigation and architecture-review exercise without implying an ongoing software guarantee.",
+  "safe_buyer_language": [
+    "Reliability stress-testing",
+    "Operational boundary mapping",
+    "Workflow integrity review",
+    "Agent state synchronization assessment",
+    "Limitation and confidence scoping",
+    "Escalation threshold definition",
+    "Structured internal review checklist"
+  ],
+  "language_to_avoid": [
+    "Benchmark",
+    "Certification",
+    "Guarantee",
+    "Compliance audit",
+    "Security tool",
+    "Runtime guardrail",
+    "Zero hallucination",
+    "Fully autonomous validation",
+    "Deployment-ready",
+    "Proves reliability"
+  ],
+  "failure_column": "This commercial translation stops fitting if the buyer expects SpecShift to act as a real-time production security filter, legal compliance certification, formal audit replacement, or guaranteed measure of AI safety. It is strictly a diagnostic and stress-testing framework for pre-deployment or architecture review.",
+  "evidence_needed_for_stronger_claims": [
+    "Longitudinal data showing that workflows reviewed by SpecShift exhibit measurably lower failure rates in production.",
+    "Third-party review of the adversarial suite's coverage against established AI failure-mode taxonomies.",
+    "Case studies showing measurable risk reduction associated with limitation-map findings.",
+    "Inter-rater review showing that independent reviewers score the same cases consistently.",
+    "Evidence that remediation based on findings improves later suite performance and real-world workflow behavior."
+  ]
+}
