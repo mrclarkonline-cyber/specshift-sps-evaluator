@@ -33,7 +33,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/implementation_scoring_audit_v0_1.json",
       "description": "DeepSeek implementation and scoring audit v0.1 for v0.5 draft request packet"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/v0_5_hardened_schema_packet.json",
+      "description": "v0.5 hardened schema packet incorporating DeepSeek implementation scoring audit"
     }
   ],
-  "next_action": "Build a v0.5 hardened schema packet before generating the actual v0.5 suite. Keep case-level failure_column and rename the rubric dimension to failure_column_quality."
+  "next_action": "Use v0_5_hardened_schema_packet.json to generate the actual v0.5 suite with structured scoring rubrics and controlled categories."
 }
