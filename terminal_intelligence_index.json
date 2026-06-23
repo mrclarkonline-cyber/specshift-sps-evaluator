@@ -153,7 +153,23 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/git_log_claim_language_register_v0_1.txt",
       "description": "Plain-text register clarifying risky historical git commit wording"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/skeptical_buyer_diligence_memo_v0_1.json",
+      "description": "Claude skeptical buyer/investor diligence memo v0.1"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/skeptical_buyer_diligence_memo_v0_1.txt",
+      "description": "Plain-text skeptical buyer/investor diligence memo v0.1"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/focused_paid_pilot_posture_v0_1.json",
+      "description": "Focused pilot-first commercial posture patch v0.1"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/focused_paid_pilot_posture_v0_1.txt",
+      "description": "Plain-text focused pilot-first commercial posture patch v0.1"
     }
   ],
-  "next_action": "Use git log claim-language register when interpreting historical commit messages. Future gpb blocks should include risky commit-message scan."
+  "next_action": "Patch outreach materials to lead with one focused diagnostic pilot and remove upper-tier pricing from first-contact materials."
 }

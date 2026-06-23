@@ -1,0 +1,44 @@
+{
+  "artifact_name": "Focused Paid Pilot Posture v0.1",
+  "status": "internal commercial posture patch, not buyer-ready final copy",
+  "reason": "Skeptical diligence review found that upper-tier pricing and licensing language is ahead of evidence before a completed referenceable pilot.",
+  "external_positioning": "SpecShift Architectural Logic Diagnostics is an early-stage diagnostic framework for surfacing architectural failure patterns in agentic workflows before broader rollout.",
+  "first_outreach_offer": {
+    "name": "Focused Diagnostic Pilot",
+    "scope": "One concrete AI-agent workflow, reviewed against a narrow set of relevant failure patterns.",
+    "price_language": "Pricing discussed after scoping. Do not include $750k-$1.5M or $3M-$5M+ tiers in first outreach.",
+    "deliverables": [
+      "Executive findings memo",
+      "Failure-pattern review against selected scenarios",
+      "Limitation and boundary map",
+      "Handoff, evidence, escalation, and recovery-path gap list",
+      "Recommended design-review next steps"
+    ],
+    "boundary": "Pre-deployment diagnostic and architecture-stage review only. Not benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety."
+  },
+  "language_to_use": [
+    "early-stage diagnostic framework",
+    "first-pass diagnostic lens",
+    "architecture-stage review",
+    "candidate failure patterns",
+    "selected synthetic scenarios",
+    "bounded paid diagnostic pilot",
+    "locally schema-validated internal suite"
+  ],
+  "language_to_avoid_in_first_outreach": [
+    "$3M-$5M+",
+    "$750k-$1.5M",
+    "strategic license",
+    "validated without local schema qualifier",
+    "benchmark",
+    "certification",
+    "compliance audit",
+    "security tool",
+    "deployment-ready",
+    "proven reliability",
+    "hardened"
+  ],
+  "business_continuity_stub": "SpecShift should be prepared to explain continuity in plain terms: pilot scope is documented, deliverables are file-based and version-controlled, and any engagement would include milestone-based delivery and a defined off-ramp if continuity risk affects performance.",
+  "claim_boundary": "This posture fails if first outreach leads with upper-tier license pricing, implies external validation, or presents internal artifact completeness as market validation.",
+  "next_action": "Patch outreach and strategic package references so first-contact materials lead with one focused diagnostic pilot and reserve upper-tier pricing for later qualified conversations."
+}

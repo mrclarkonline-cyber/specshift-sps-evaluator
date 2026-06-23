@@ -1,0 +1,25 @@
+Skeptical Buyer Diligence Memo v0.1
+Internal diligence review. Not buyer-facing copy.
+
+Overall verdict:
+The technical asset is real and differentiated, but the pricing and tiering are ahead of available evidence. Do not lead with upper-tier license language. Lead with one narrow paid diagnostic pilot.
+
+Best defense of value:
+This is a disciplined, structurally rigorous first-pass diagnostic methodology for surfacing failure patterns that many internal review processes do not explicitly check.
+
+Fix now before outreach:
+- Drop the $3M-$5M+ tier from current outreach materials.
+- Lead with one narrow, bounded paid diagnostic pilot only.
+- Add explicit non-certification and non-benchmark disclosure to any proposal or engagement document.
+- Prepare a business-continuity answer for solo-founder risk.
+- Keep internal versioning and schema-iteration issues out of buyer-facing collateral.
+
+Later validation needed:
+- Completed referenceable pilot.
+- Inter-rater reliability or external cross-check.
+- External taxonomy comparison.
+- Vendor procurement readiness if targeting large enterprises.
+- Comparable-price anchor or cost-of-alternative argument.
+
+Failure column:
+This diligence verdict stops holding if a completed referenceable pilot, signed LOI, market validation, or early-access buyer profile already exists and was not included in the source context.
