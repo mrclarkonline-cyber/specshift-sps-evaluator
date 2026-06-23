@@ -37,7 +37,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/v0_5_hardened_schema_packet.json",
       "description": "v0.5 hardened schema packet incorporating DeepSeek implementation scoring audit"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/v0_5_structured_schema_packet.json",
+      "description": "Buyer-safer v0.5 structured schema packet incorporating Claude claim-boundary review"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/claim_boundary_review_v0_1.json",
+      "description": "Claude claim-boundary and buyer-facing integrity review v0.1"
     }
   ],
-  "next_action": "Use v0_5_hardened_schema_packet.json to generate the actual v0.5 suite with structured scoring rubrics and controlled categories."
+  "next_action": "Use v0_5_structured_schema_packet.json for internal v0.5 case generation. Do not use buyer-facing without standing disclosure."
 }

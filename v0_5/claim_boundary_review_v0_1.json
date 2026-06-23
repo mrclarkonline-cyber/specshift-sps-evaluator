@@ -1,0 +1,70 @@
+{
+  "artifact_name": "Claim-Boundary and Buyer-Facing Integrity Review v0.1",
+  "status": "internal claim-boundary audit, not validated benchmark",
+  "allowed_claims": [
+    "This is a structured internal schema for generating adversarial test cases against AI-system scaffolds, designed to surface specific known failure modes.",
+    "The schema enforces structural discipline: every case requires a non-empty conditional failure_column, a controlled category, and a ten-dimension scoring structure with explicit pass/fail conditions.",
+    "The packet explicitly excludes named-model/vendor claims, validated-performance claims, and live-deployment instructions at the schema level.",
+    "This is a draft schema for generating a test suite, not itself a completed suite, result, or finding."
+  ],
+  "weak_claims": [
+    "That the controlled categories constitute a comprehensive or validated taxonomy of failure modes.",
+    "That the ten review dimensions are the right or complete dimensions for evaluating scaffold reliability.",
+    "That buyer-safe language substitutions fully neutralize the underlying risk category rather than just reducing buyer alarm."
+  ],
+  "forbidden_claims": [
+    "That this schema or any suite generated from it constitutes a benchmark, certification, compliance product, audit, or security tool.",
+    "That a generated v0.5 suite would validate, certify, or guarantee the safety, reliability, or compliance posture of any AI system tested against it.",
+    "That passing or failing cases generated from this schema indicates real-world deployment readiness.",
+    "That this artifact has been validated, peer-reviewed, or independently audited.",
+    "That this is HR, security, healthcare-compliance, or legal-compliance tooling."
+  ],
+  "claims_requiring_evidence": [
+    {
+      "claim": "The generated suite meaningfully predicts real-world scaffold failure rates.",
+      "evidence_needed": "Run generated suite against real deployed scaffolds, compare flagged failures to independently observed incidents, and establish correlation."
+    },
+    {
+      "claim": "The review dimensions reliably distinguish strong from weak responses across reviewers.",
+      "evidence_needed": "Inter-rater reliability testing with multiple independent reviewers."
+    },
+    {
+      "claim": "The controlled category list is comprehensive.",
+      "evidence_needed": "Mapping against external failure-mode literature or incident taxonomies."
+    }
+  ],
+  "buyer_misread_risks": [
+    "Schema could be mistaken for a finished, validated test suite rather than a generation template.",
+    "The phrase 'Hardened Schema Packet' could read as a security/compliance claim.",
+    "Categories near HR, clinical, security, or cross-cultural use cases could be misread as domain-certified tooling.",
+    "The AI-generation request section could undercut buyer trust if not framed as a disclosed internal drafting process."
+  ],
+  "language_risk_flags": [
+    {
+      "term": "Hardened",
+      "risk": "Security-connotation overreach.",
+      "fix": "Use Structured or Refined in buyer-facing material."
+    },
+    {
+      "term": "scoring_rubric",
+      "risk": "Can imply validated scoring instrument.",
+      "fix": "Use structured internal review checklist in buyer-facing wording."
+    },
+    {
+      "term": "safety_boundary",
+      "risk": "Can imply safety certification if quoted out of context.",
+      "fix": "Use boundary_condition unless internal-only."
+    }
+  ],
+  "safe_buyer_facing_wording": "SpecShift's internal review process uses a structured schema to generate synthetic adversarial test scenarios that probe how AI-system scaffolds handle specific failure patterns, including overclaiming, missing uncertainty boundaries, and unclear handoffs. This is a draft internal tool, not an industry benchmark, certification, or compliance product, and results from it should not be read as a guarantee of real-world performance.",
+  "safe_technical_wording": "This schema defines a controlled-vocabulary, fixed-field structure for generating an internal adversarial test suite. It enforces structural properties such as case uniqueness, controlled categories, mandatory pass/fail conditions, and case-level failure columns, but does not itself constitute a validated evaluation harness.",
+  "internal_only_wording": "Working schema for v0.5 suite generation. Status: pre-generation, not yet instantiated into actual test cases. Categories and review dimensions are internally generated, not externally validated.",
+  "evidence_needed_for_stronger_claims": [
+    "Generate the actual v0.5 suite and run it against at least one real scaffold to establish baseline signal.",
+    "Independent multi-rater scoring of generated cases to establish review reliability.",
+    "Cross-check the controlled category list against external failure-mode or incident taxonomies.",
+    "Resolve artifact-name security-connotation risk before any external-facing use.",
+    "Apply explicit draft/non-validated disclosure language anywhere the schema or outputs are shown externally."
+  ],
+  "final_verdict": "The schema is structurally sound and ready to proceed to case generation, but not ready for buyer-facing use until artifact naming and disclosure language are cleaned up."
+}
