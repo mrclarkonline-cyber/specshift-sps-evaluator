@@ -25,7 +25,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/v0_5_planning_matrix.json",
       "description": "v0.5 planning matrix combining v0.4 suite, Gemini failure-family map, and Qwen ontology audit"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/v0_5_draft_request_packet.json",
+      "description": "v0.5 draft request packet for generating the next buyer-safe adversarial test suite"
     }
   ],
-  "next_action": "Draft Unknown-Domain Scaffold Adversarial Test Suite v0.5 with fewer duplicate cases and stronger cross-domain coverage."
+  "next_action": "Send v0_5_draft_request_packet.json to a model to generate Unknown-Domain Scaffold Adversarial Test Suite v0.5."
 }
