@@ -1,0 +1,67 @@
+{
+  "artifact_name": "Git Log Claim Language Register v0.1",
+  "status": "internal provenance and claim-language register",
+  "purpose": "Clarify historical git commit messages that contain words with possible external-claim risk. This register does not rewrite history; it establishes the correct internal interpretation.",
+  "standing_rule": "Commit messages are development-history labels, not buyer-facing claims. Any term that could imply external validation, benchmark status, certification, compliance sign-off, security tooling, deployment readiness, proven performance, or safety guarantee must be interpreted through the repo's explicit claim-boundary artifacts.",
+  "flagged_commit_messages": [
+    {
+      "commit": "556e708",
+      "message": "Generate validated v0.5 adversarial suite",
+      "risk_terms": ["validated"],
+      "risk": "Could be misread as external, independent, performance, market, or benchmark validation.",
+      "correct_interpretation": "Locally schema-validated only. The suite passed the repository validator for schema consistency. It was not externally validated, not a benchmark, not performance-validated, and not deployment-ready.",
+      "preferred_future_language": "Generate locally schema-validated v0.5 adversarial suite"
+    },
+    {
+      "commit": "17e2782",
+      "message": "Add v0.5 hardened schema packet",
+      "risk_terms": ["hardened"],
+      "risk": "Could sound like security hardening or production resilience.",
+      "correct_interpretation": "Internally structured and stricter schema packet. Not security hardening, not production hardening, and not validated resilience.",
+      "preferred_future_language": "Add v0.5 structured schema packet"
+    },
+    {
+      "commit": "5c70b7e",
+      "message": "Add v0.5 implementation scoring audit",
+      "risk_terms": ["audit"],
+      "risk": "Could be confused with formal audit, compliance audit, or independent review.",
+      "correct_interpretation": "Internal implementation and scoring review. Not a formal audit, not compliance review, and not independent assurance.",
+      "preferred_future_language": "Add v0.5 implementation scoring review"
+    },
+    {
+      "commit": "5d803c3",
+      "message": "Add v0.4 reliability suite and ontology audits",
+      "risk_terms": ["audit"],
+      "risk": "Could imply formal ontology audit or independent reliability audit.",
+      "correct_interpretation": "Internal ontology and negative-space review artifacts. Not formal audit, not validated reliability proof, and not buyer-facing assurance.",
+      "preferred_future_language": "Add v0.4 reliability suite and ontology reviews"
+    }
+  ],
+  "allowed_future_commit_language": [
+    "review",
+    "register",
+    "clarify",
+    "local validator",
+    "locally schema-validated",
+    "internal draft",
+    "structured schema",
+    "claim-boundary",
+    "pilot draft",
+    "scoping draft"
+  ],
+  "language_to_avoid_in_future_commit_messages": [
+    "validated without qualifier",
+    "benchmark",
+    "certified",
+    "certification",
+    "compliance audit",
+    "security tool",
+    "safety guarantee",
+    "deployment-ready",
+    "proven",
+    "proof",
+    "hardened without qualifier"
+  ],
+  "standing_boundary_line": "Historical commit messages are superseded by this register where wording is ambiguous. All validation references mean local schema validation only unless a later artifact explicitly documents external, independent, outcome, or performance validation.",
+  "failure_column": "This register fails if future repo documentation or buyer-facing material cites flagged commit-message wording as evidence of external validation, formal audit, security hardening, compliance status, deployment readiness, proven reliability, or safety guarantees."
+}

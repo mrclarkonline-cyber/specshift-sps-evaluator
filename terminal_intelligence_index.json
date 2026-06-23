@@ -145,7 +145,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/git_claim_boundary_clarification_v0_1.txt",
       "description": "Plain-text git claim-boundary clarification"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/git_log_claim_language_register_v0_1.json",
+      "description": "Internal register clarifying risky historical git commit wording"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/git_log_claim_language_register_v0_1.txt",
+      "description": "Plain-text register clarifying risky historical git commit wording"
     }
   ],
-  "next_action": "Use 'locally schema-validated' for v0.5 suite references. Avoid unqualified 'validated' language."
+  "next_action": "Use git log claim-language register when interpreting historical commit messages. Future gpb blocks should include risky commit-message scan."
 }

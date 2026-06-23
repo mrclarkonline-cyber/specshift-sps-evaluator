@@ -1,0 +1,36 @@
+Git Log Claim Language Register v0.1
+Internal provenance and claim-language register.
+
+Purpose:
+Clarify historical git commit messages that contain words with possible external-claim risk. This register does not rewrite history; it establishes the correct internal interpretation.
+
+Standing rule:
+Commit messages are development-history labels, not buyer-facing claims. Any term that could imply external validation, benchmark status, certification, compliance sign-off, security tooling, deployment readiness, proven performance, or safety guarantee must be interpreted through the repo's explicit claim-boundary artifacts.
+
+Flagged messages:
+
+1. 556e708 Generate validated v0.5 adversarial suite
+Risk term: validated
+Correct interpretation: locally schema-validated only. The suite passed the repository validator for schema consistency. It was not externally validated, not a benchmark, not performance-validated, and not deployment-ready.
+Preferred future language: Generate locally schema-validated v0.5 adversarial suite
+
+2. 17e2782 Add v0.5 hardened schema packet
+Risk term: hardened
+Correct interpretation: internally structured and stricter schema packet. Not security hardening, not production hardening, and not validated resilience.
+Preferred future language: Add v0.5 structured schema packet
+
+3. 5c70b7e Add v0.5 implementation scoring audit
+Risk term: audit
+Correct interpretation: internal implementation and scoring review. Not a formal audit, not compliance review, and not independent assurance.
+Preferred future language: Add v0.5 implementation scoring review
+
+4. 5d803c3 Add v0.4 reliability suite and ontology audits
+Risk term: audit
+Correct interpretation: internal ontology and negative-space review artifacts. Not formal audit, not validated reliability proof, and not buyer-facing assurance.
+Preferred future language: Add v0.4 reliability suite and ontology reviews
+
+Standing boundary line:
+Historical commit messages are superseded by this register where wording is ambiguous. All validation references mean local schema validation only unless a later artifact explicitly documents external, independent, outcome, or performance validation.
+
+Failure column:
+This register fails if future repo documentation or buyer-facing material cites flagged commit-message wording as evidence of external validation, formal audit, security hardening, compliance status, deployment readiness, proven reliability, or safety guarantees.
