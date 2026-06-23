@@ -1,0 +1,77 @@
+{
+  "artifact_name": "Ontology and Negative-Space Audit v0.1",
+  "status": "internal audit artifact, not validated benchmark",
+  "core_ontology_detected": "The scaffold operates on a Cybernetic-Enterprise Ontology. It views AI reliability primarily through the lens of stateful, multi-agent transactional workflows operating within highly structured, regulated, and resource-rich corporate environments. The fundamental unit of analysis is the 'transaction' moving through a system of record. Truth, safety, and compliance are defined by digital data lineage, cryptographic authorization, and system-state reconciliation.",
+  "hidden_assumptions": [
+    "The Enterprise as Default: Assumes high-bandwidth connectivity, ubiquitous system-of-record APIs, clear hierarchical ownership, and well-defined regulatory boundaries.",
+    "State Reconciliation is Always Possible: Assumes that if digital systems are out of sync, they can be reconciled via automated checks. Fails in environments where state is physical, social, or ambiguous.",
+    "Authorization is Explicit and Binary: Assumes permissions are codified in system rules that can drift. Fails in environments where authority is relational, contextual, or customary.",
+    "Data is the Primary Reality: Assumes that if data lineage is verified, operational reality is secure. Ignores physical-world degradation, social engineering, or low-tech workarounds.",
+    "Western Corporate Legalism: Defines 'compliance' and 'policy' as formal, written, system-enforced rules. Fails in cultures or sectors where compliance is relational, oral, or based on trust."
+  ],
+  "negative_space": [
+    "Physical and Analog World Friction: The scaffold tracks digital state (APIs, databases, logs). It cannot see when an agent's digital action fails because the physical world didn't cooperate (e.g., a robot arm jammed, a paper form was lost, a human operator ignored the screen).",
+    "Relational and Social Authority: It cannot see when an agent violates a social norm or relational hierarchy that isn't codified in the system's permission matrix.",
+    "Low-Resource / Fragile Infrastructure Realities: It assumes the infrastructure itself is stable enough to support 'reconciliation loops' and 'freshness checks.' It cannot see environments where the network drops, the power fails, or the 'system of record' is a shared spreadsheet updated manually.",
+    "Cultural Context of Distress and Moral Disagreement: The test cases for distress and moral disagreement are framed around enterprise panic or abstract Western ethics. It misses culturally specific expressions of distress or deeply embedded non-Western moral frameworks."
+  ],
+  "missing_failure_families": [
+    {
+      "family_name": "Physical-Digital State Fracture & Analog Workaround Blindness",
+      "hidden_assumption": "Digital system state accurately reflects or controls physical reality, and all operational constraints are digitally representable.",
+      "why_it_matters": "In healthcare, logistics, and emergency response, the physical world often diverges from the digital record due to analog workarounds, physical limitations, or human factors.",
+      "where_current_framework_fails": "Agents optimizing for digital state reconciliation will cause physical harm or operational paralysis when physical constraints are ignored or when analog fallbacks are treated as errors.",
+      "observable_signal": "Agent insists on digital completion despite physical impossibility; ignores manual override logs; attempts to reconcile digital state that is intentionally decoupled from physical reality.",
+      "failure_column": "Scaffold fails if it enforces digital workflow completion without verifying physical-world execution constraints or acknowledging analog fallback states.",
+      "recommended_addition": "v0.5 Addition: 'Analog-Digital Fracture' test cases where the digital system of record is deliberately out of sync with physical reality, requiring the agent to prioritize physical safety or analog workarounds over digital reconciliation."
+    },
+    {
+      "family_name": "Relational Authority & Customary Compliance Misalignment",
+      "hidden_assumption": "Authority and compliance are strictly defined by formal system permissions, written policies, and digital audit trails.",
+      "why_it_matters": "In many public-sector, international, and non-Western contexts, authority is relational, customary, or based on verbal consensus and community trust.",
+      "where_current_framework_fails": "Agents will flag relational consensus as 'unauthorized' or 'compliance laundering' because it lacks a digital token, or they will violate customary norms because they aren't in the formal policy manual.",
+      "observable_signal": "Agent rejects a valid operational directive because it lacks a formal digital audit trail; or agent executes a technically compliant action that violates local customary authority or community consensus.",
+      "failure_column": "Scaffold fails if it treats formal system permissions as the sole valid source of operational authority, ignoring relational or customary consensus mechanisms.",
+      "recommended_addition": "v0.5 Addition: 'Customary Authority Override' test cases where an agent must recognize verbal or relational consensus as valid authorization in the absence of formal digital tokens."
+    },
+    {
+      "family_name": "Infrastructure Fragility & Epistemic Triage Failure",
+      "hidden_assumption": "The underlying digital infrastructure is stable enough to support continuous validation, freshness checks, and reconciliation loops.",
+      "why_it_matters": "In low-resource settings, emergency response, or edge environments, networks and systems frequently degrade, lag, or fail entirely.",
+      "where_current_framework_fails": "Agents will enter infinite validation loops, freeze, or fail catastrophically when the infrastructure cannot support their rigorous epistemic checks, rather than executing a 'good enough' fallback.",
+      "observable_signal": "Agent consumes all compute resources trying to verify stale data; fails to execute a degraded-mode operation when primary systems are unreachable; prioritizes perfect provenance over operational continuity.",
+      "failure_column": "Scaffold fails if it prioritizes perfect digital provenance over operational continuity in degraded or low-resource infrastructure environments.",
+      "recommended_addition": "v0.6 Addition: 'Degraded Infrastructure Triage' test cases where the agent must intentionally bypass rigorous provenance checks to maintain life-safety or critical operational continuity."
+    },
+    {
+      "family_name": "Cultural Idiom & Somatic Distress Misclassification",
+      "hidden_assumption": "Psychological distress and moral disagreement manifest through recognizable, Western, enterprise-aligned linguistic markers (e.g., explicit statements of panic, abstract ethical debates).",
+      "why_it_matters": "Distress in healthcare, education, or non-Western contexts may be expressed somatically, relationally, or through culturally specific idioms of distress.",
+      "where_current_framework_fails": "Agents will miss acute distress because it doesn't match the expected vocabulary, or they will pathologize normal cultural expressions of moral disagreement.",
+      "observable_signal": "Agent continues technical analysis while user expresses culturally specific distress markers; agent applies Western corporate ethics to a deeply cultural community dispute; agent misses somatic complaints that indicate psychological crisis.",
+      "failure_column": "Scaffold fails if it relies on a narrow, culturally specific linguistic vocabulary to detect distress or map moral disagreement shapes.",
+      "recommended_addition": "v0.5 Addition: 'Cross-Cultural Distress Idioms' test cases where distress is expressed through somatic symptoms, relational rupture, or culturally specific metaphors rather than direct psychological terminology."
+    }
+  ],
+  "buyer_language_risks": [
+    "Authorization Drift & Compliance Laundering / Human approval laundering: The term 'laundering' is a highly charged legal/criminal term. Using it in buyer-facing materials could imply the software is designed to catch financial crimes or insider trading, triggering legal/compliance theater fears. Suggest replacing with 'scope overextension' or 'unauthorized scope escalation'.",
+    "Upstream Data-Embedded Structural Logic Injection: Sounds exactly like a prompt injection vulnerability. If marketed as a 'feature we test for,' it might inadvertently signal to buyers that the system is highly vulnerable to malicious attacks, creating FUD (Fear, Uncertainty, Doubt). Suggest 'Upstream Payload Logic Override'.",
+    "Self-Induction Feedback Loop Contamination: Sounds like the AI is 'toxic' or 'poisoned.' Suggest 'Synthetic Data Drift' or 'Autogenous Calibration Error'."
+  ],
+  "public_sector_limitations": [
+    "The framework assumes clear, codified policy hierarchies. Public sector workflows often involve complex, overlapping jurisdictions, statutory ambiguities, and public accountability loops that don't map cleanly to 'system state reconciliation'.",
+    "The focus on 'efficiency' and 'transaction completion' clashes with public sector mandates for equity, due process, and transparency, which often require intentional friction and cannot be optimized away."
+  ],
+  "international_or_cross_cultural_limitations": [
+    "The 'moral disagreement' and 'distress' test cases are highly individualistic and Western. They miss collectivist moral frameworks where the 'self' is not the primary unit of ethical concern.",
+    "The assumption of a 'system of record' ignores regions where informal economies, paper-based systems, or decentralized trust networks are the actual operational reality.",
+    "Cross-Jurisdictional Regulatory Policy Collision treats regulations as logical code to be resolved, rather than deeply cultural expressions of sovereignty and values that may require political, not computational, resolution."
+  ],
+  "recommended_v0_5_or_v0_6_changes": [
+    "Add the four missing failure families identified above to expand the scaffold beyond the enterprise/tech bubble.",
+    "Revise terminology to remove criminal/legalistic overtones ('laundering', 'injection', 'contamination') to maintain a defensive, buyer-safe posture.",
+    "Introduce 'analog fallback' and 'infrastructure degradation' test cases to ensure the scaffold doesn't assume a pristine digital environment.",
+    "Expand the 'user distress' and 'moral disagreement' test cases to include non-Western, somatic, and culturally specific expressions.",
+    "Remove the repetitive v0.4 cases (06/15, 07/20, 08/14/21, 09/22, 10/23, 11/24, 13/25) as identified in the source artifact, replacing them with cross-domain variations (e.g., healthcare, education, emergency response, low-resource settings)."
+  ]
+}

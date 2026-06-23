@@ -1,0 +1,27 @@
+{
+  "artifact": "SpecShift Terminal Intelligence Index",
+  "status": "local working index",
+  "items": [
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/unknown_domain_adversarial_suite_v0_3_notes.json",
+      "description": "v0.3 saved notes and commercial positioning"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_4/v0_4_revision_targets.json",
+      "description": "v0.4 duplicate-reduction and new failure-mode targets"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_4/grok_v0_4_request.json",
+      "description": "copy/paste request to Grok for v0.4 generation"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_4/cross_domain_failure_family_map_v0_1.json",
+      "description": "Gemini cross-domain failure family map v0.1, synthesized from v0.4 adversarial suite"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_4/ontology_negative_space_audit_v0_1.json",
+      "description": "Qwen ontology and negative-space audit v0.1, identifying enterprise/cybernetic blind spots and v0.5/v0.6 expansions"
+    }
+  ],
+  "next_action": "Build v0.5 by combining Grok v0.4, Gemini failure families, and Qwen ontology audit: collapse duplicate enterprise cases, add analog-digital fracture, customary authority, degraded infrastructure triage, and cross-cultural distress idiom cases."
+}
