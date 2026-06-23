@@ -81,7 +81,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/compact_sales_narrative_v0_1.txt",
       "description": "Plain-text compact sales narrative v0.1 for easy review and copying"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_guardrail_checklist_v0_1.json",
+      "description": "SpecShift Guardrail Checklist v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_guardrail_checklist_v0_1.txt",
+      "description": "SpecShift Guardrail Checklist v0.1 plain-text copy"
     }
   ],
-  "next_action": "Review compact sales narrative v0.1, then create outreach-safe short email or one-page PDF only after claim-boundary review."
+  "next_action": "Review guardrail checklist, then decide whether to fold it into the compact sales narrative or keep it as a pilot appendix."
 }
