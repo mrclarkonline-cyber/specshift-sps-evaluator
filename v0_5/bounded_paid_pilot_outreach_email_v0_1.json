@@ -1,0 +1,25 @@
+{
+  "artifact_name": "Bounded Paid Pilot Outreach Email v0.1",
+  "status": "internal outreach draft, not legal-reviewed, not buyer-ready final copy",
+  "purpose": "Introduce a bounded paid diagnostic pilot for one high-value AI-agent workflow without attaching the full strategic package or overclaiming.",
+  "standing_boundary_line": "SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.",
+  "subject_options": [
+    "Pre-deployment diagnostic review for AI-agent workflows",
+    "Mapping AI-agent workflow failure points before scale",
+    "Bounded diagnostic pilot for agentic workflow reliability"
+  ],
+  "email_body": "Hi [Name],\n\nAI-agent workflows can appear ready while still acting on weak evidence, stale system state, unclear authority, or unverified completion claims.\n\nSpecShift Architectural Logic Diagnostics offers a bounded paid pilot for one high-value AI-agent workflow. The engagement uses synthetic stress scenarios to map where the workflow's reasoning, evidence handling, handoffs, escalation thresholds, and recovery paths may break before broader rollout.\n\nThis is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.\n\nIf useful, I would be glad to schedule a short scoping call to identify one workflow where this review could create immediate value.\n\nBest,\nBenjamin J. Clark\nFounder, SpecShift Labs",
+  "shorter_email_body": "Hi [Name],\n\nSpecShift Architectural Logic Diagnostics helps teams stress-test one high-value AI-agent workflow before scale, mapping where evidence handling, scope boundaries, handoffs, escalation thresholds, or recovery paths may break under synthetic review.\n\nThis is a bounded pre-deployment diagnostic, not a benchmark, certification, compliance audit, runtime monitor, or safety guarantee.\n\nWould a short scoping call be useful to identify one workflow where this could create immediate value?\n\nBest,\nBenjamin J. Clark\nFounder, SpecShift Labs",
+  "use_when": [
+    "The recipient is involved with AI-agent workflows, automation, product, engineering, risk, or operations.",
+    "The goal is to open a paid pilot conversation, not explain the full stack.",
+    "The recipient has not yet asked for detailed collateral."
+  ],
+  "do_not_attach": [
+    "Do not attach the full Strategic Evaluation Package cold.",
+    "Do not attach the Guardrail Checklist until buyer interest is established.",
+    "Do not include pricing tiers in the first cold email unless the buyer has already asked for commercial structure."
+  ],
+  "follow_up_offer": "If the recipient responds, offer a 20-minute scoping call focused on one workflow, its inputs, system boundaries, approval points, handoffs, and failure consequences.",
+  "claim_boundary": "This outreach email stops fitting if it is edited to imply validated performance, certification, compliance sign-off, runtime protection, deployment readiness, or guaranteed safety."
+}

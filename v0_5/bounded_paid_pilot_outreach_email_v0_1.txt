@@ -1,0 +1,48 @@
+Bounded Paid Pilot Outreach Email v0.1
+Internal outreach draft. Not legal-reviewed. Not buyer-ready final copy.
+
+Subject options:
+1. Pre-deployment diagnostic review for AI-agent workflows
+2. Mapping AI-agent workflow failure points before scale
+3. Bounded diagnostic pilot for agentic workflow reliability
+
+Primary email:
+
+Hi [Name],
+
+AI-agent workflows can appear ready while still acting on weak evidence, stale system state, unclear authority, or unverified completion claims.
+
+SpecShift Architectural Logic Diagnostics offers a bounded paid pilot for one high-value AI-agent workflow. The engagement uses synthetic stress scenarios to map where the workflow's reasoning, evidence handling, handoffs, escalation thresholds, and recovery paths may break before broader rollout.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+If useful, I would be glad to schedule a short scoping call to identify one workflow where this review could create immediate value.
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+Shorter version:
+
+Hi [Name],
+
+SpecShift Architectural Logic Diagnostics helps teams stress-test one high-value AI-agent workflow before scale, mapping where evidence handling, scope boundaries, handoffs, escalation thresholds, or recovery paths may break under synthetic review.
+
+This is a bounded pre-deployment diagnostic, not a benchmark, certification, compliance audit, runtime monitor, or safety guarantee.
+
+Would a short scoping call be useful to identify one workflow where this could create immediate value?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+Do not attach:
+- Do not attach the full Strategic Evaluation Package cold.
+- Do not attach the Guardrail Checklist until buyer interest is established.
+- Do not include pricing tiers in the first cold email unless the buyer has already asked for commercial structure.
+
+Follow-up offer:
+If the recipient responds, offer a 20-minute scoping call focused on one workflow, its inputs, system boundaries, approval points, handoffs, and failure consequences.
+
+Claim boundary:
+This outreach email stops fitting if it is edited to imply validated performance, certification, compliance sign-off, runtime protection, deployment readiness, or guaranteed safety.
