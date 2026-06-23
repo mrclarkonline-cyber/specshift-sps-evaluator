@@ -1,0 +1,57 @@
+SpecShift Pilot Scoping Brief v0.1
+Internal pilot scoping draft. Not buyer-ready final copy.
+
+Boundary statement:
+This brief describes a pre-deployment diagnostic and architecture-stage review engagement. It is not a benchmark, certification, compliance audit, security assessment, deployment approval, runtime monitor, or guarantee of AI safety.
+
+Positioning:
+Pre-Deployment Architectural Logic Stress-Testing and Constraint Mapping Framework for Agentic Workflows
+
+Plain-English offer:
+SpecShift reviews one proposed AI-agent workflow before broader deployment and maps where its reasoning, evidence handling, scope boundaries, handoffs, escalation points, and recovery paths may break under synthetic stress conditions.
+
+Ideal pilot target:
+- One high-value AI-agent workflow with meaningful operational consequences.
+- A workflow involving multiple systems, human approvals, delegated decisions, or handoffs.
+- A workflow where stale data, unclear authority, weak evidence, or false completion claims would create expensive rework or risk.
+- A workflow still early enough that design changes are possible.
+
+Pilot scoping questions:
+- What workflow are you considering or already prototyping?
+- What systems does the workflow touch?
+- Where does the agent receive inputs, and which inputs are trusted?
+- What actions can the agent recommend or initiate?
+- Where are human approvals required?
+- What happens when data is stale, incomplete, or conflicting?
+- How is task completion verified?
+- What rollback, recovery, or escalation path exists if the workflow fails?
+
+Pilot deliverables:
+- Adversarial Stress-Test Execution Report: Findings from simulated edge-case and failure-mode scenarios.
+- Limitation & Boundary Map: Structured inventory of where the AI workflow's reasoning may degrade under synthetic stress conditions.
+- Agentic Scope & Logic Alignment Review: Architecture-stage review of scope boundaries, data freshness assumptions, system-record consistency, and handoff logic.
+- Escalation & Human-in-the-Loop Routing Matrix: Proposed review thresholds and escalation paths for cases where the workflow should pause, route, or require human review.
+- Pilot Appendix Guardrail Checklist: A practical review aid used after initial scoping to identify evidence, boundary, handoff, and recovery gaps.
+
+Not in scope:
+- Real-time production monitoring or runtime intervention.
+- Legal, regulatory, or compliance certification.
+- Cybersecurity penetration testing or vulnerability scanning.
+- IAM administration, access-control enforcement, or HR decision tooling.
+- Guaranteeing zero hallucination, safety, or deployment readiness.
+- Replacing formal human audit, legal review, HR review, or regulated professional judgment.
+
+Pilot success definition:
+- A clear map of where the target workflow appears stable under synthetic stress review.
+- A clear map of where the workflow may require additional guardrails, review thresholds, or design changes.
+- A documented set of unresolved evidence, handoff, authority, data freshness, or recovery-path questions.
+- A practical next-step list for engineering, product, and risk teams.
+
+Pricing posture:
+Priced as a professional diagnostic engagement rather than a SaaS subscription. The pilot fee covers structured stress-test execution, limitation mapping, and delivery of architecture-stage review outputs. This supports premium pilot pricing as a risk-reduction and design-review engagement without implying a software guarantee, compliance sign-off, or runtime control layer.
+
+Claim boundary:
+This scoping brief stops fitting if it is used to imply validated performance, production readiness, formal compliance, runtime protection, or guaranteed safety. It should be used only to frame a bounded paid diagnostic review.
+
+Recommended next step:
+Use this brief to support a paid pilot conversation focused on one concrete workflow, then use the pilot appendix checklist only after buyer interest is established.

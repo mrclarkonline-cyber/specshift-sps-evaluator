@@ -97,7 +97,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/pilot_appendix_guardrail_checklist_v0_1.txt",
       "description": "Pilot appendix version of SpecShift Guardrail Checklist v0.1 text"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/pilot_scoping_brief_v0_1.json",
+      "description": "SpecShift Pilot Scoping Brief v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/pilot_scoping_brief_v0_1.txt",
+      "description": "SpecShift Pilot Scoping Brief v0.1 plain-text copy"
     }
   ],
-  "next_action": "Keep guardrail checklist as pilot appendix. Next optional step: create a one-page outreach email or pilot scoping brief with strict claim boundaries."
+  "next_action": "Review pilot scoping brief, then optionally create a short outreach email that points to a bounded paid pilot without overclaiming."
 }
