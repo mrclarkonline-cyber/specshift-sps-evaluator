@@ -1,0 +1,75 @@
+Role-Specific Outreach Variants v0.1
+Internal outreach draft. Not legal-reviewed. Not buyer-ready final copy.
+
+Standing boundary line:
+SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Usage rule:
+Use only when the recipient role is known. Do not attach the full strategic package cold.
+
+========================================================================
+CTO / VP Engineering
+Subject: Pre-deployment review for AI-agent workflow failure points
+
+Hi [Name],
+
+AI-agent workflows can look ready in demos while still failing at the architecture level: stale state, weak evidence, unclear handoffs, or unverified task-complete claims.
+
+SpecShift Architectural Logic Diagnostics offers a bounded paid pilot for one high-value workflow. The review uses synthetic stress scenarios to map where agent logic, evidence handling, scope boundaries, and recovery paths may break before broader integration.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Would a short scoping call be useful to identify one workflow where this could reduce integration rework?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+========================================================================
+Chief Product Officer / Head of AI Product
+Subject: Mapping agentic workflow limits before customer-facing rollout
+
+Hi [Name],
+
+The hard part of AI-agent productization is not just whether the model responds well. It is whether the workflow knows when evidence is weak, state is stale, authority is unclear, or human review is needed.
+
+SpecShift Architectural Logic Diagnostics offers a bounded paid pilot for one high-value AI-agent workflow. The review maps where the proposed workflow appears stable under synthetic stress and where the product experience may need clearer boundaries, escalation paths, or recovery logic.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Would a short scoping call be useful to identify one workflow where this could create immediate product value?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+========================================================================
+Risk / Governance / Legal-Adjacent Buyer
+Subject: Architecture-stage diagnostic for AI-agent workflow risk
+
+Hi [Name],
+
+AI-agent workflows can create risk when they act on unverified inputs, stale system records, unclear approval boundaries, or incomplete handoffs while appearing operationally confident.
+
+SpecShift Architectural Logic Diagnostics offers a bounded paid pilot for one high-value workflow. The engagement produces a structured internal map of candidate failure modes, review thresholds, limitation boundaries, and recovery-path gaps before broader rollout.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Would a short scoping call be useful to identify one workflow where this review could support internal decision-making?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+========================================================================
+Do not use for:
+- Cold mass outreach
+- Buyers who want certification or compliance sign-off
+- Buyers asking for runtime security tooling
+- Situations where no concrete AI-agent workflow exists
+
+Follow-up rule:
+If a recipient responds, offer a 20-minute scoping call focused on one workflow, its data sources, system boundaries, approval points, handoffs, and failure consequences.
+
+Claim boundary:
+These variants stop fitting if edited to imply validated performance, certification, compliance sign-off, runtime protection, deployment readiness, or guaranteed safety.
