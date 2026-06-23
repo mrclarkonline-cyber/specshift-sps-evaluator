@@ -1,0 +1,56 @@
+Bounded Paid Pilot Outreach Email v0.2
+Internal outreach draft. Not legal-reviewed. Not buyer-ready final copy.
+
+Purpose:
+Introduce one focused paid diagnostic pilot without upper-tier pricing, strategic-license language, or external-validation claims.
+
+Standing boundary line:
+SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Subject options:
+1. Focused diagnostic review for one AI-agent workflow
+2. Mapping AI-agent workflow failure points before scale
+3. Pre-deployment diagnostic for agentic workflow risk
+
+Primary email:
+
+Hi [Name],
+
+AI-agent workflows can appear ready while still acting on weak evidence, stale system state, unclear authority, or unverified completion claims.
+
+SpecShift Architectural Logic Diagnostics offers a focused paid diagnostic pilot for one concrete AI-agent workflow. The review uses selected synthetic scenarios to map where evidence handling, scope boundaries, handoffs, escalation thresholds, and recovery paths may need design attention before broader rollout.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Would a short scoping call be useful to identify one workflow where this first-pass review could create practical value?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+Shorter version:
+
+Hi [Name],
+
+SpecShift Architectural Logic Diagnostics offers a focused paid diagnostic pilot for one concrete AI-agent workflow, mapping where evidence handling, scope boundaries, handoffs, escalation thresholds, or recovery paths may need design attention before broader rollout.
+
+This is a pre-deployment diagnostic, not a benchmark, certification, compliance audit, runtime monitor, or safety guarantee.
+
+Would a short scoping call be useful to identify one workflow worth reviewing?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+Do not include in first outreach:
+- $750k-$1.5M
+- $3M-$5M+
+- strategic license
+- validated without the local schema qualifier
+- benchmark, certification, compliance, security, deployment-ready, proof, or guarantee language
+
+Follow-up offer:
+If the recipient responds, offer a 20-minute scoping call focused on one workflow, its inputs, system boundaries, approval points, handoffs, and failure consequences.
+
+Claim boundary:
+This outreach email stops fitting if it is edited to imply validated performance, certification, compliance sign-off, runtime protection, deployment readiness, strategic licensing, or guaranteed safety.

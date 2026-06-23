@@ -1,0 +1,23 @@
+{
+  "artifact_name": "Bounded Paid Pilot Outreach Email v0.2",
+  "status": "internal outreach draft, not legal-reviewed, not buyer-ready final copy",
+  "purpose": "Introduce one focused paid diagnostic pilot without upper-tier pricing, strategic-license language, or external-validation claims.",
+  "standing_boundary_line": "SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.",
+  "source_patch": "Focused Paid Pilot Posture v0.1",
+  "subject_options": [
+    "Focused diagnostic review for one AI-agent workflow",
+    "Mapping AI-agent workflow failure points before scale",
+    "Pre-deployment diagnostic for agentic workflow risk"
+  ],
+  "email_body": "Hi [Name],\n\nAI-agent workflows can appear ready while still acting on weak evidence, stale system state, unclear authority, or unverified completion claims.\n\nSpecShift Architectural Logic Diagnostics offers a focused paid diagnostic pilot for one concrete AI-agent workflow. The review uses selected synthetic scenarios to map where evidence handling, scope boundaries, handoffs, escalation thresholds, and recovery paths may need design attention before broader rollout.\n\nThis is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.\n\nWould a short scoping call be useful to identify one workflow where this first-pass review could create practical value?\n\nBest,\nBenjamin J. Clark\nFounder, SpecShift Labs",
+  "shorter_email_body": "Hi [Name],\n\nSpecShift Architectural Logic Diagnostics offers a focused paid diagnostic pilot for one concrete AI-agent workflow, mapping where evidence handling, scope boundaries, handoffs, escalation thresholds, or recovery paths may need design attention before broader rollout.\n\nThis is a pre-deployment diagnostic, not a benchmark, certification, compliance audit, runtime monitor, or safety guarantee.\n\nWould a short scoping call be useful to identify one workflow worth reviewing?\n\nBest,\nBenjamin J. Clark\nFounder, SpecShift Labs",
+  "do_not_include_in_first_outreach": [
+    "$750k-$1.5M",
+    "$3M-$5M+",
+    "strategic license",
+    "validated without the local schema qualifier",
+    "benchmark, certification, compliance, security, deployment-ready, proof, or guarantee language"
+  ],
+  "follow_up_offer": "If the recipient responds, offer a 20-minute scoping call focused on one workflow, its inputs, system boundaries, approval points, handoffs, and failure consequences.",
+  "claim_boundary": "This outreach email stops fitting if it is edited to imply validated performance, certification, compliance sign-off, runtime protection, deployment readiness, strategic licensing, or guaranteed safety."
+}

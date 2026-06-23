@@ -1,0 +1,76 @@
+Role-Specific Outreach Variants v0.2
+Internal outreach draft. Not legal-reviewed. Not buyer-ready final copy.
+
+Standing boundary line:
+SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Usage rule:
+Use only when the recipient role is known. Lead with one focused paid diagnostic pilot only. Do not attach the full strategic package cold.
+
+========================================================================
+CTO / VP Engineering
+Subject: Focused diagnostic review for one AI-agent workflow
+
+Hi [Name],
+
+AI-agent workflows can look ready in demos while still failing at the architecture level: stale state, weak evidence, unclear handoffs, or unverified task-complete claims.
+
+SpecShift Architectural Logic Diagnostics offers a focused paid diagnostic pilot for one concrete workflow. The review uses selected synthetic scenarios to map where agent logic, evidence handling, scope boundaries, and recovery paths may need design attention before broader integration.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Would a short scoping call be useful to identify one workflow where this first-pass review could reduce integration rework?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+========================================================================
+Chief Product Officer / Head of AI Product
+Subject: Mapping agentic workflow limits before rollout
+
+Hi [Name],
+
+The hard part of AI-agent productization is not just whether the model responds well. It is whether the workflow knows when evidence is weak, state is stale, authority is unclear, or human review is needed.
+
+SpecShift Architectural Logic Diagnostics offers a focused paid diagnostic pilot for one concrete AI-agent workflow. The review maps where the proposed workflow appears stable under selected synthetic scenarios and where the product experience may need clearer boundaries, escalation paths, or recovery logic.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Would a short scoping call be useful to identify one workflow where this first-pass review could create practical product value?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+========================================================================
+Risk / Governance / Legal-Adjacent Buyer
+Subject: Focused diagnostic for AI-agent workflow risk
+
+Hi [Name],
+
+AI-agent workflows can create risk when they act on unverified inputs, stale system records, unclear approval boundaries, or incomplete handoffs while appearing operationally confident.
+
+SpecShift Architectural Logic Diagnostics offers a focused paid diagnostic pilot for one concrete workflow. The engagement produces a structured internal map of candidate failure patterns, review thresholds, limitation boundaries, and recovery-path gaps before broader rollout.
+
+This is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Would a short scoping call be useful to identify one workflow where this first-pass review could support internal decision-making?
+
+Best,
+Benjamin J. Clark
+Founder, SpecShift Labs
+
+========================================================================
+Do not include in first outreach:
+- $750k-$1.5M
+- $3M-$5M+
+- strategic license
+- validated without the local schema qualifier
+- benchmark, certification, compliance, security, deployment-ready, proof, or guarantee language
+
+Follow-up rule:
+If a recipient responds, offer a 20-minute scoping call focused on one workflow, its data sources, system boundaries, approval points, handoffs, and failure consequences.
+
+Claim boundary:
+These variants stop fitting if edited to imply validated performance, certification, compliance sign-off, runtime protection, deployment readiness, strategic licensing, or guaranteed safety.
