@@ -1,0 +1,40 @@
+Strategic Evaluation Claim-Boundary Review v0.1
+Internal claim-boundary review. Not buyer-ready final copy.
+
+Overall verdict:
+The Strategic Evaluation Package is commercially strong and appropriately premium, but it must keep visible boundaries around diagnostic use, synthetic stress review, non-certification, and non-runtime status before any outreach or executive PDF is created.
+
+Allowed claims:
+- SpecShift provides a pre-deployment diagnostic review for high-consequence AI-agent workflows.
+- SpecShift uses synthetic stress scenarios to identify candidate failure modes in evidence handling, scope boundaries, handoffs, escalation logic, and recovery paths.
+- SpecShift outputs structured internal maps and review materials that can support architecture-stage decision-making.
+- SpecShift can help teams identify where a workflow may need additional design guardrails before scaling.
+
+Claims to avoid:
+- Do not claim certification, compliance approval, safety guarantee, deployment readiness, or benchmark status.
+- Do not imply runtime monitoring, runtime protection, access-control enforcement, HR decision tooling, legal advice, or cybersecurity scanning.
+- Do not claim validated performance, incident reduction, or production reliability without evidence.
+- Do not imply that synthetic stress review proves real-world behavior.
+
+Phrases to keep:
+- pre-deployment diagnostic
+- architecture-stage review
+- synthetic stress review
+- candidate failure modes
+- structured internal map
+- review thresholds
+- recovery paths
+- bounded paid diagnostic engagement
+
+Safe standing boundary line:
+SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Recommended next external artifact:
+Bounded Paid Pilot Outreach Email v0.1
+Create a short email that introduces the diagnostic pilot without attaching the full package or overclaiming.
+
+Failure column:
+This claim-boundary review fails if the Strategic Evaluation Package is sent externally in full before a shorter outreach artifact is created, or if any outward-facing language implies certification, benchmark status, compliance sign-off, runtime protection, deployment readiness, validated performance, or guaranteed safety.
+
+Final recommendation:
+Proceed to a short bounded paid-pilot outreach email. Do not create an executive PDF yet. The PDF should come after one more pass that removes internal pricing tiers or converts them into qualified-discussion language.

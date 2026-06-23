@@ -1,0 +1,68 @@
+{
+  "artifact_name": "Strategic Evaluation Claim-Boundary Review v0.1",
+  "status": "internal claim-boundary review, not buyer-ready final copy",
+  "source_artifact": "SpecShift Strategic Evaluation Package v0.1",
+  "overall_verdict": "The Strategic Evaluation Package is commercially strong and appropriately premium, but it must keep visible boundaries around diagnostic use, synthetic stress review, non-certification, and non-runtime status before any outreach or executive PDF is created.",
+  "allowed_claims": [
+    "SpecShift provides a pre-deployment diagnostic review for high-consequence AI-agent workflows.",
+    "SpecShift uses synthetic stress scenarios to identify candidate failure modes in evidence handling, scope boundaries, handoffs, escalation logic, and recovery paths.",
+    "SpecShift outputs structured internal maps and review materials that can support architecture-stage decision-making.",
+    "SpecShift can help teams identify where a workflow may need additional design guardrails before scaling."
+  ],
+  "claims_to_avoid": [
+    "Do not claim certification, compliance approval, safety guarantee, deployment readiness, or benchmark status.",
+    "Do not imply runtime monitoring, runtime protection, access-control enforcement, HR decision tooling, legal advice, or cybersecurity scanning.",
+    "Do not claim validated performance, incident reduction, or production reliability without evidence.",
+    "Do not imply that synthetic stress review proves real-world behavior."
+  ],
+  "phrases_to_keep": [
+    "pre-deployment diagnostic",
+    "architecture-stage review",
+    "synthetic stress review",
+    "candidate failure modes",
+    "structured internal map",
+    "review thresholds",
+    "recovery paths",
+    "bounded paid diagnostic engagement"
+  ],
+  "phrases_to_restrict": [
+    {
+      "phrase": "high-consequence",
+      "rule": "Allowed when tied to workflow importance, not when implying safety certification."
+    },
+    {
+      "phrase": "stress-testing",
+      "rule": "Allowed when described as synthetic/internal, not as validated benchmark testing."
+    },
+    {
+      "phrase": "strategic license",
+      "rule": "Allowed only as pricing posture or internal commercial structure, not as a promise of broad transfer."
+    },
+    {
+      "phrase": "risk reduction",
+      "rule": "Allowed as buyer value framing, but not as proven production reduction unless evidence exists."
+    }
+  ],
+  "buyer_ready_before_external_use": [
+    "Add a short standing boundary line to every outward-facing version.",
+    "Remove internal-only pricing posture if sending cold outreach; reserve detailed pricing for qualified conversations.",
+    "Keep the first external version focused on one paid diagnostic pilot, not all tiers at once.",
+    "Avoid attaching the guardrail checklist until after buyer interest is established.",
+    "Avoid sending the full strategic package cold; use a shorter outreach note first."
+  ],
+  "safe_standing_boundary_line": "SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.",
+  "recommended_next_external_artifact": {
+    "artifact_name": "Bounded Paid Pilot Outreach Email v0.1",
+    "purpose": "Create a short email that introduces the diagnostic pilot without attaching the full package or overclaiming.",
+    "recommended_length": "150 to 220 words",
+    "must_include": [
+      "One-sentence problem",
+      "One-sentence offer",
+      "Strict boundary line",
+      "Specific ask for a short scoping call",
+      "No certification or guarantee language"
+    ]
+  },
+  "failure_column": "This claim-boundary review fails if the Strategic Evaluation Package is sent externally in full before a shorter outreach artifact is created, or if any outward-facing language implies certification, benchmark status, compliance sign-off, runtime protection, deployment readiness, validated performance, or guaranteed safety.",
+  "final_recommendation": "Proceed to a short bounded paid-pilot outreach email. Do not create an executive PDF yet. The PDF should come after one more pass that removes internal pricing tiers or converts them into qualified-discussion language."
+}

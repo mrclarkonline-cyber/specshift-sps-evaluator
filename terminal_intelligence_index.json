@@ -113,7 +113,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/strategic_evaluation_package_v0_1.txt",
       "description": "SpecShift Strategic Evaluation Package v0.1 plain-text draft"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/strategic_evaluation_claim_boundary_review_v0_1.json",
+      "description": "Strategic Evaluation Claim-Boundary Review v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/strategic_evaluation_claim_boundary_review_v0_1.txt",
+      "description": "Strategic Evaluation Claim-Boundary Review v0.1 plain-text copy"
     }
   ],
-  "next_action": "Run final claim-boundary review on Strategic Evaluation Package before creating outreach email or executive PDF."
+  "next_action": "Create Bounded Paid Pilot Outreach Email v0.1. Keep it short, avoid attaching full package, and include standing boundary line."
 }
