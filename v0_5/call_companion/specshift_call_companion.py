@@ -97,6 +97,103 @@ def choose_attachments(stage):
 
     return attachments, notes
 
+def build_pilot_scope_outline(contact):
+    company = contact.get("company") or "the buyer"
+    workflow = contact.get("workflow") or "the selected workflow"
+    systems = contact.get("systems") or "to be confirmed"
+    trusted_inputs = contact.get("trusted_inputs") or "to be confirmed"
+    agent_actions = contact.get("agent_actions") or "to be confirmed"
+    human_handoffs = contact.get("human_handoffs") or "to be confirmed"
+    data_failure_handling = contact.get("data_failure_handling") or "to be confirmed"
+    completion_verification = contact.get("completion_verification") or "to be confirmed"
+    recovery_path = contact.get("recovery_path") or "to be confirmed"
+    failure_patterns = contact.get("failure_patterns") or "evidence handling, scope boundaries, handoffs, escalation thresholds, and recovery paths"
+
+    return f"""Focused Diagnostic Pilot Scope Outline
+
+Status:
+Internal scope outline draft. Not legal-reviewed. Not a statement of work.
+
+Buyer / organization:
+{company}
+
+Selected workflow:
+{workflow}
+
+Pilot purpose:
+Run a bounded, pre-deployment diagnostic review of one concrete AI-agent workflow using selected synthetic scenarios. The review is intended to surface candidate failure patterns and design-review gaps before broader rollout.
+
+Standing boundary:
+{BOUNDARY}
+
+Candidate failure patterns to review:
+{failure_patterns}
+
+Known workflow context:
+- Systems or data sources touched: {systems}
+- Inputs treated as trusted: {trusted_inputs}
+- Agent actions: {agent_actions}
+- Human approvals, handoffs, or review points: {human_handoffs}
+- Handling for stale, incomplete, conflicting, or low-fidelity data: {data_failure_handling}
+- Task-completion verification: {completion_verification}
+- Escalation, rollback, or recovery path: {recovery_path}
+
+Proposed review focus:
+1. Input evidence and provenance handling
+2. Scope and approval boundary clarity
+3. Multi-system state or handoff gaps
+4. False task-completion or premature closure risk
+5. Escalation and recovery-path adequacy
+
+Expected deliverables:
+- Executive findings memo
+- Failure-pattern review against selected synthetic scenarios
+- Limitation and boundary map
+- Handoff, evidence, escalation, and recovery-path gap list
+- Recommended design-review next steps
+
+Buyer-provided materials needed:
+- Workflow description or architecture sketch
+- Representative prompts, tasks, or decision paths
+- Description of systems, data sources, approvals, and handoffs
+- Any known failure concerns or prior examples, if available
+- Confirmation of what materials can be used for review
+
+Fit gate:
+Green if there is one concrete workflow, meaningful downside if it fails silently, enough bounded context for review, and willingness to treat this as diagnostic rather than certification.
+
+Yellow if the workflow is real but context, access, or decision owner is unclear.
+
+Red if the buyer wants certification, compliance sign-off, runtime protection, cybersecurity testing, deployment approval, free consulting, or guaranteed safety.
+
+Next step:
+Confirm whether this scope is accurate. If yes, convert this outline into a narrow pilot proposal with milestones, deliverables, non-certification language, and an off-ramp condition.
+
+Failure column:
+This scope outline stops fitting if the buyer expects certification, compliance approval, runtime monitoring, security testing, deployment approval, legal advice, HR decision-making, or guaranteed safety.
+"""
+
+def write_scope_outline(contact):
+    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    base_name = f"{stamp}_{slug(contact.get('company', 'unknown'))}_{slug(contact.get('name', 'unknown'))}"
+    scope_txt = OUT / f"{base_name}_pilot_scope_outline.txt"
+    scope_json = OUT / f"{base_name}_pilot_scope_outline.json"
+
+    outline = build_pilot_scope_outline(contact)
+    scope_txt.write_text(outline, encoding="utf-8")
+
+    record = {
+        "artifact_name": "Focused Diagnostic Pilot Scope Outline",
+        "status": "internal scope outline draft, not legal-reviewed, not statement of work",
+        "contact": contact,
+        "outline": outline,
+        "created_at": datetime.now().isoformat(),
+        "boundary": BOUNDARY
+    }
+    scope_json.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    return scope_txt, scope_json
+
 def build_followup(contact):
     name = contact.get("name") or "there"
     company = contact.get("company") or "your team"
@@ -246,7 +343,12 @@ def call_mode():
     attachments, attachment_notes = choose_attachments(stage)
     subject, body = build_followup(contact)
     txt, eml, notes_json, attach_txt = write_email_files(contact, subject, body, attachments)
+    scope_txt, scope_json = write_scope_outline(contact)
     print_generated(txt, eml, notes_json, attach_txt, attachments, attachment_notes)
+    print()
+    print("Generated pilot scope outline:")
+    print(f"- Scope TXT: {scope_txt}")
+    print(f"- Scope JSON: {scope_json}")
     open_outreach_folder()
 
 def email_mode():
@@ -269,14 +371,19 @@ def email_mode():
     attachments, attachment_notes = choose_attachments(stage)
     subject, body = build_followup(contact)
     txt, eml, notes_json, attach_txt = write_email_files(contact, subject, body, attachments)
+    scope_txt, scope_json = write_scope_outline(contact)
     print_generated(txt, eml, notes_json, attach_txt, attachments, attachment_notes)
+    print()
+    print("Generated pilot scope outline:")
+    print(f"- Scope TXT: {scope_txt}")
+    print(f"- Scope JSON: {scope_json}")
     open_outreach_folder()
 
 def main():
     print("SpecShift Call Companion v0.1 - Proton Mail Manual Draft Workflow")
     print("1. Show scoping script only")
-    print("2. Run call mode: script + notes + Proton-ready follow-up draft")
-    print("3. Email mode: create Proton-ready follow-up draft from typed contact/workflow")
+    print("2. Run call mode: script + notes + Proton-ready follow-up draft + scope outline")
+    print("3. Email mode: create Proton-ready follow-up draft + scope outline")
     choice = ask("Choose 1/2/3", "1")
 
     if choice == "1":

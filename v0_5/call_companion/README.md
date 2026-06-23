@@ -49,3 +49,18 @@ Deep interest:
 - One-Pager PDF
 - Pilot Scoping Brief text
 - Guardrail Checklist appendix text
+
+
+## Pilot scope outline generator
+
+The tool now creates a pilot scope outline alongside the Proton-ready email draft.
+
+Generated outputs may include:
+- Proton-ready follow-up email text
+- reference `.eml`
+- call notes JSON
+- attachment path list
+- pilot scope outline `.txt`
+- pilot scope outline `.json`
+
+The scope outline is an internal draft only. It is not legal-reviewed and is not a statement of work.
