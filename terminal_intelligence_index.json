@@ -73,7 +73,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/buyer_facing_product_translation_v0_2.json",
       "description": "Patched buyer-facing product translation v0.2 with safer architecture-stage diagnostic positioning"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/compact_sales_narrative_v0_1.json",
+      "description": "Compact internal sales narrative v0.1 for SpecShift Architectural Logic Diagnostics"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/compact_sales_narrative_v0_1.txt",
+      "description": "Plain-text compact sales narrative v0.1 for easy review and copying"
     }
   ],
-  "next_action": "Use buyer_facing_product_translation_v0_2.json to create a compact one-page sales narrative with strict claim boundaries."
+  "next_action": "Review compact sales narrative v0.1, then create outreach-safe short email or one-page PDF only after claim-boundary review."
 }

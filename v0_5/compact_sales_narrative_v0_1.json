@@ -1,0 +1,46 @@
+{
+  "artifact_name": "SpecShift Compact Sales Narrative v0.1",
+  "status": "internal sales narrative draft, not buyer-ready final copy",
+  "positioning": "Pre-Deployment Architectural Logic Stress-Testing and Constraint Mapping Framework for Agentic Workflows",
+  "one_sentence": "SpecShift Architectural Logic Diagnostics helps teams stress-test proposed AI agent workflows before deployment by mapping where automated reasoning, evidence handling, scope boundaries, and escalation logic may break under synthetic edge-case review.",
+  "short_pitch": "AI agents can sound confident while acting on weak evidence, stale records, unclear authority, or incomplete handoffs. SpecShift provides a pre-deployment diagnostic review that surfaces those failure patterns before broader rollout. The output is not a certification or runtime control system; it is a structured internal map of where the workflow appears stable under synthetic stress and where design guardrails may be needed.",
+  "buyer_problem": [
+    "AI agents may treat forwarded documents, screenshots, summaries, or generated history as decision-grade evidence.",
+    "Agent workflows may exceed intended scope when approval boundaries are vague.",
+    "Multi-system workflows may act on stale records, mismatched states, or unverified completion claims.",
+    "Teams may lack clear escalation thresholds for when an AI workflow should pause, route, or require human review."
+  ],
+  "what_specshift_delivers": [
+    "Adversarial Stress-Test Execution Report: Findings from simulated edge-case and failure-mode scenarios.",
+    "Limitation & Boundary Map: Structured inventory of where the AI workflow's reasoning may degrade under synthetic stress conditions.",
+    "Agentic Scope & Logic Alignment Review: Architecture-stage review of scope boundaries, data freshness assumptions, system-record consistency, and handoff logic.",
+    "Escalation & Human-in-the-Loop Routing Matrix: Proposed review thresholds and escalation paths for cases where the workflow should pause, route, or require human review."
+  ],
+  "pilot_offer": "A bounded paid diagnostic engagement focused on one high-value AI agent workflow. SpecShift reviews the workflow against an internal adversarial stress-test suite, maps operational boundaries, identifies evidence-handling and state-alignment risks, and delivers architecture-stage review outputs for engineering, product, and risk teams.",
+  "safe_exclusions": [
+    "Real-time production monitoring or runtime intervention.",
+    "Legal, regulatory, or compliance certification.",
+    "Cybersecurity penetration testing or vulnerability scanning.",
+    "IAM administration, access-control enforcement, or HR decision tooling.",
+    "Guaranteeing zero hallucination, safety, or deployment readiness.",
+    "Replacing formal human audit, legal review, HR review, or regulated professional judgment."
+  ],
+  "pricing_posture": "Priced as a professional diagnostic engagement rather than a SaaS subscription. The pilot fee covers structured stress-test execution, limitation mapping, and delivery of architecture-stage review outputs. This supports premium pilot pricing as a risk-reduction and design-review engagement without implying a software guarantee, compliance sign-off, or runtime control layer.",
+  "claim_boundary": "This narrative stops fitting if it is used to imply certification, compliance sign-off, runtime monitoring, deployment readiness, or guaranteed AI safety. It should be used only to describe a pre-deployment diagnostic and architecture-stage review engagement.",
+  "language_to_avoid": [
+    "Terminal Intelligence",
+    "Boundary Containment",
+    "Workflow Authority",
+    "State Synchronization",
+    "Benchmark",
+    "Certification",
+    "Guarantee",
+    "Compliance audit",
+    "Security tool",
+    "Runtime guardrail",
+    "Zero hallucination",
+    "Fully autonomous validation",
+    "Deployment-ready",
+    "Proves reliability"
+  ]
+}
