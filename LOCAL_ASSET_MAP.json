@@ -121,5 +121,11 @@
     "raw_input": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/gemini_raw_unverified_company_targets_v0_1.csv",
     "sanitized_output": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
     "rule": "Company targets only; all unverified; no outreach until independent contact verification."
+  },
+  "choice_c_lead_storage": {
+    "incoming_private_folder": "/Users/benjaminjustinclark/.specshift/incoming_lead_lists",
+    "company_targets_repo": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
+    "private_contacts_local": "/Users/benjaminjustinclark/.specshift/prospect_contacts_unverified.csv",
+    "rule": "Companies/workflows are repo intelligence. Names/titles/emails are preserved privately outside repo. All contacts unverified; outreach_allowed=no until independent verification."
   }
 }

@@ -387,5 +387,5 @@
       "description": "Report for sanitized company target output"
     }
   ],
-  "next_action": "Paste Gemini company-level CSV into gemini_raw_unverified_company_targets_v0_1.csv, run sanitizer, then verify contacts independently before any outreach."
+  "next_action": "Choice C lead workflow active: company targets in repo; unverified contacts preserved privately under ~/.specshift/prospect_contacts_unverified.csv; verify independently before outreach."
 }
