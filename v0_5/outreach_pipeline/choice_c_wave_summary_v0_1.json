@@ -1,6 +1,6 @@
 {
   "artifact_name": "Choice C Wave Summary v0.1",
-  "created_at": "2026-06-24T15:55:22.155396",
+  "created_at": "2026-06-24T16:00:18.696443",
   "rule": "No email sent. Wave 0 is hygiene only. Every company assigned exactly once to Wave 1-6. Private contacts stay local.",
   "private_contact_rows": 1051,
   "private_contact_companies": 997,
@@ -12,16 +12,16 @@
   "private_email_citation_artifacts_removed": 0,
   "private_invalid_or_missing_email_rows_after_cleanup": 1,
   "company_wave_counts": {
-    "Wave 1": 16,
+    "Wave 1": 25,
     "Wave 2": 46,
     "Wave 3": 57,
     "Wave 4": 42,
-    "Wave 5": 184,
-    "Wave 6": 661
+    "Wave 5": 182,
+    "Wave 6": 654
   },
   "private_contact_wave_counts": {
     "Wave 0": 1051,
-    "Wave 1": 19,
+    "Wave 1": 28,
     "Wave 2": 50,
     "Wave 3": 61,
     "Wave 4": 47,

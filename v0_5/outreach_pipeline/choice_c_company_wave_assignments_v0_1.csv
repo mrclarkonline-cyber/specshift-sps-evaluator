@@ -46,7 +46,7 @@ Akamai,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specifi
 Alan,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Alchemer,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Aleph Alpha,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
-Alibaba,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
+Alibaba,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Alibaba Cloud,Wave 6,Reserve pool,Reserve pool with manual-review flag,yes,manual_individual_review_only,Sensitive or strategic company. Do not include in batch send.
 Alibaba DAMO Academy,Wave 6,Reserve pool,Reserve pool with manual-review flag,yes,manual_individual_review_only,Sensitive or strategic company. Do not include in batch send.
 Alignment Healthcare,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
@@ -368,7 +368,7 @@ Globant,Wave 4,"Category validators, partners, and adjacent evaluators",Validato
 GoGuardian,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Goldman Sachs,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 Gong,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
-Google / Alphabet,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
+Google / Alphabet,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Google Classroom,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Google Cloud,Wave 6,Reserve pool,Reserve pool with manual-review flag,yes,manual_individual_review_only,Sensitive or strategic company. Do not include in batch send.
 Google DeepMind,Wave 6,Reserve pool,Reserve pool with manual-review flag,yes,manual_individual_review_only,Sensitive or strategic company. Do not include in batch send.
@@ -419,7 +419,7 @@ Holistic AI,Wave 4,"Category validators, partners, and adjacent evaluators",Vali
 Home Depot,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 Honda Research Institute,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Honeycomb,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
-Huawei,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
+Huawei,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Huawei Cloud,Wave 6,Reserve pool,Reserve pool with manual-review flag,yes,manual_individual_review_only,Sensitive or strategic company. Do not include in batch send.
 Huawei Noah’s Ark Lab,Wave 6,Reserve pool,Reserve pool with manual-review flag,yes,manual_individual_review_only,Sensitive or strategic company. Do not include in batch send.
 HubSpot,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
@@ -452,7 +452,7 @@ Intact Financial,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated
 Intel,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 Intercom,Wave 3,"Support, procurement, and incident-response buyers",Support / procurement / incident-response buyer,no,not_allowed_until_verified,"Good vertical-pack fit with workflow handoff, false-completion, escalation, and recovery-path review."
 Intuit,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
-Intuit / QuickBooks,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
+Intuit / QuickBooks,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Invisible Technologies,Wave 4,"Category validators, partners, and adjacent evaluators",Validator / partner / category reader,no,not_allowed_until_verified,"Adjacent evaluator, consultant, governance, security, or AI assurance category reader."
 Ironclad,Wave 3,"Support, procurement, and incident-response buyers",Support / procurement / incident-response buyer,no,not_allowed_until_verified,"Good vertical-pack fit with workflow handoff, false-completion, escalation, and recovery-path review."
 Ironclad AI,Wave 3,"Support, procurement, and incident-response buyers",Support / procurement / incident-response buyer,no,not_allowed_until_verified,"Good vertical-pack fit with workflow handoff, false-completion, escalation, and recovery-path review."
@@ -498,7 +498,7 @@ Ladder,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specifi
 Lakera,Wave 4,"Category validators, partners, and adjacent evaluators",Validator / partner / category reader,no,not_allowed_until_verified,"Adjacent evaluator, consultant, governance, security, or AI assurance category reader."
 Lambda,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 LangChain,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
-LangChain / LangSmith,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
+LangChain / LangSmith,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 LangSmith,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Langfuse,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Laserfiche,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
@@ -642,7 +642,7 @@ Oracle CX,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_spec
 Oracle Eloqua,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Oracle HCM,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Oracle Health,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
-Oracle NetSuite,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
+Oracle NetSuite,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Oracle Procurement Cloud,Wave 3,"Support, procurement, and incident-response buyers",Support / procurement / incident-response buyer,no,not_allowed_until_verified,"Good vertical-pack fit with workflow handoff, false-completion, escalation, and recovery-path review."
 Orange,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Oscar Health,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
@@ -859,7 +859,7 @@ Taikang Insurance,Wave 5,"Regulated, critical, and long-cycle sectors","Regulate
 Talanx,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Talkdesk,Wave 3,"Support, procurement, and incident-response buyers",Support / procurement / incident-response buyer,no,not_allowed_until_verified,"Good vertical-pack fit with workflow handoff, false-completion, escalation, and recovery-path review."
 TalkingPoints,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
-Target,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
+Target,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Target Tech,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 Tata AIG,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 Taulia,Wave 2,Finance and devtools expansion,Finance / reconciliation or devtools expansion,no,not_allowed_until_verified,"Strong buyer fit, likely operational pain, but should follow Wave 1 learning."
@@ -949,7 +949,7 @@ Vodafone,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critic
 Volvo Cars,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 W. R. Berkley,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 WTW,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
-Walmart,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
+Walmart,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Walmart Global Tech,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 Waymo,Wave 5,"Regulated, critical, and long-cycle sectors","Regulated, critical, infrastructure, or long-cycle sector",no,slow_verified_only,"Large budget but slower procurement, higher compliance load, or sensitive operational context."
 Weaviate,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
@@ -981,7 +981,7 @@ Zendesk,Wave 3,"Support, procurement, and incident-response buyers",Support / pr
 Zendesk Sell,Wave 3,"Support, procurement, and incident-response buyers",Support / procurement / incident-response buyer,no,not_allowed_until_verified,"Good vertical-pack fit with workflow handoff, false-completion, escalation, and recovery-path review."
 Zhipu AI,Wave 6,Reserve pool,Reserve pool with manual-review flag,yes,manual_individual_review_only,Sensitive or strategic company. Do not include in batch send.
 Zilliz,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
-Zilliz / Milvus,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
+Zilliz / Milvus,Wave 1,Precision pilot seekers,Precision pilot seeker,no,not_allowed_until_verified,"Highest-fit near-term pilot target: agentic workflow, devtool, finance/reconciliation, or support automation pain."
 Zillow,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Zinnia,Wave 6,Reserve pool,Reserve pool,no,hold_until_better_evidence_or_specific_signal,"Valid company target, but not the strongest first-wave fit."
 Zip,Wave 2,Finance and devtools expansion,Finance / reconciliation or devtools expansion,no,not_allowed_until_verified,"Strong buyer fit, likely operational pain, but should follow Wave 1 learning."

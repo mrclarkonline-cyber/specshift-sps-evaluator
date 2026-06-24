@@ -71,6 +71,12 @@ WAVE1_EXACT = {
     "Cognition AI", "Anysphere", "Cursor", "Glean", "Sierra", "Decagon", "Cresta",
     "LangChain", "LangSmith", "LlamaIndex", "Harvey",
     "Modern Treasury", "Ramp", "Stripe", "BlackLine", "Workiva",
+
+    # Company-only strategic targets found by coverage audit.
+    # These need contact gathering before any outreach.
+    "Alibaba", "Google / Alphabet", "Huawei", "Intuit / QuickBooks",
+    "LangChain / LangSmith", "Oracle NetSuite", "Target", "Walmart",
+    "Zilliz / Milvus",
 }
 
 WAVE2_EXACT = {
@@ -299,10 +305,14 @@ def main():
     wave_rows = defaultdict(list)
     invalid_contacts = 0
 
+    contact_companies_seen = set()
+
     for r in contacts:
         company = (r.get("company") or "").strip()
         if not company:
             continue
+
+        contact_companies_seen.add(company)
 
         a = assignment_by_company.get(company)
         if not a:
@@ -339,6 +349,31 @@ def main():
         })
 
         wave_rows[a["outreach_wave"]].append(base)
+
+    # Add placeholder private rows for company-only targets with no private contact yet.
+    for company in sorted(set(all_companies) - contact_companies_seen):
+        a = assignment_by_company.get(company)
+        if not a:
+            raise SystemExit(f"Missing assignment for placeholder company: {company}")
+
+        placeholder = {
+            "company": company,
+            "contact_name": "",
+            "title": "",
+            "email": "",
+            "outreach_wave": a["outreach_wave"],
+            "wave_name": a["wave_name"],
+            "classification_category": a["classification_category"],
+            "manual_review": "yes",
+            "send_policy": "needs_contact_before_outreach",
+            "verification_status": "needs_contact",
+            "outreach_allowed": "no",
+            "wave_reason": a["wave_reason"],
+            "source_file": "repo_company_target_only",
+            "notes": "Company-only placeholder. Gather and verify contact before outreach."
+        }
+
+        wave_rows[a["outreach_wave"]].append(placeholder)
 
     for wave, filename in WAVE_FILES.items():
         path = OUTDIR / filename
