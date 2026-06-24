@@ -4,7 +4,10 @@ Health check:
 cd ~/specshift_terminal_intelligence
 python3 v0_5/ops/specshift_ops_dashboard.py
 python3 v0_5/claim_scan_git_log.py
+echo "== Working tree status =="
 git status --short
+echo "== Recent commits =="
+git log --oneline --max-count=5
 
 Buyer call companion:
 cd ~/specshift_terminal_intelligence
