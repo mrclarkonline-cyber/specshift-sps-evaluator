@@ -165,5 +165,11 @@
     "private_prep_queue": "/Users/benjaminjustinclark/.specshift/private_outreach_prep_queue.csv",
     "repo_company_targets": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
     "rule": "Append only. Prep only. No email sent."
+  },
+  "choice_c_wave_system_v0_1": {
+    "repo_company_assignments": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/choice_c_company_wave_assignments_v0_1.csv",
+    "repo_wave_summary": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/choice_c_wave_summary_v0_1.json",
+    "private_wave_dir": "/Users/benjaminjustinclark/.specshift/private_wave_queues_v0_1",
+    "rule": "Wave 0 hygiene only. Waves 1-6 company assignment complete. No email sent."
   }
 }
