@@ -395,5 +395,5 @@
       "description": "Builds private outreach shortlist from company targets and private contacts"
     }
   ],
-  "next_action": "Use private_shortlist.py to pick first verification targets, then verify contacts one at a time before guarded outreach."
+  "next_action": "Prep queue built only. Gather more emails, verify contacts independently, and do not send until explicitly approved."
 }

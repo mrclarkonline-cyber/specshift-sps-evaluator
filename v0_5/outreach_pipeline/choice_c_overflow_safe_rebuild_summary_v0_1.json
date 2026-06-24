@@ -1,0 +1,14 @@
+{
+  "artifact_name": "Choice C Overflow-Safe Rebuild Summary v0.1",
+  "created_at": "2026-06-24T13:26:29.937849",
+  "source_files": [
+    "/Users/benjaminjustinclark/.specshift/incoming_lead_lists/gemini-code-1782321032078.txt",
+    "/Users/benjaminjustinclark/.specshift/incoming_lead_lists/gemini-code-1782321056788.txt"
+  ],
+  "private_contacts_total": 663,
+  "company_targets_total": 662,
+  "invalid_non_na_email_rows": 0,
+  "private_contacts_file": "/Users/benjaminjustinclark/.specshift/prospect_contacts_unverified.csv",
+  "repo_company_targets_file": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/gemini_raw_unverified_company_targets_v0_1.csv",
+  "rule": "Private contacts rebuilt from source using overflow-safe parse. No email sent. Company targets only in repo."
+}

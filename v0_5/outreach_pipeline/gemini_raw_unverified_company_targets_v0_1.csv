@@ -20,7 +20,7 @@ SAP,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, h
 Adobe,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Databricks,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Snowflake,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
-Palantir,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Palantir,Hold Review,Licensing-boundary review required before any outreach or engagement,HOLD_REVIEW,hold_review,unverified
 Cohere,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Mistral AI,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Aleph Alpha,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
@@ -108,7 +108,7 @@ Zoom,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, 
 GitHub,DevTools,"Agentic software, code-generation, task-completion, handoff, and evidence-boundary review",Core Agentic Workflow Diagnostic,High,unverified
 GitLab,DevTools,"Agentic software, code-generation, task-completion, handoff, and evidence-boundary review",Core Agentic Workflow Diagnostic,High,unverified
 JetBrains,DevTools,"Agentic software, code-generation, task-completion, handoff, and evidence-boundary review",Core Agentic Workflow Diagnostic,High,unverified
-Sourcegraph,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Sourcegraph,DevTools,"Agentic software, code-generation, task-completion, handoff, and evidence-boundary review",Core Agentic Workflow Diagnostic,High,unverified
 Harness,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,Medium,unverified
 Linear,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 PagerDuty,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
@@ -141,7 +141,7 @@ Robinhood,Core AI / Enterprise,"Agentic workflow, evidence handling, scope bound
 Coinbase,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Chainalysis,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 FIS,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
-Fiserv,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Fiserv,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
 Jack Henry,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
 Intuit,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 QuickBooks,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
@@ -149,7 +149,7 @@ Xero,Finance,"Financial workflow, reconciliation, evidence handling, escalation,
 BlackLine,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Workiva,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 FloQast,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
-Anrok,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Anrok,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
 Zuora,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Chargebee,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
 Leapfin,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
@@ -166,13 +166,13 @@ DISCO,Legal Operations,"Legal-operations intake, document-routing, provenance, h
 Thomson Reuters,Legal Operations,"Legal-operations intake, document-routing, provenance, handoff, and boundary review",Legal Operations Workflow Diagnostic Pack candidate skin,High,unverified
 LexisNexis,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Casetext,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
-Evisort,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Evisort,Legal Operations,"Legal-operations intake, document-routing, provenance, handoff, and boundary review",Legal Operations Workflow Diagnostic Pack candidate skin,High,unverified
 Ironclad AI,Legal Operations,"Legal-operations intake, document-routing, provenance, handoff, and boundary review",Legal Operations Workflow Diagnostic Pack candidate skin,High,unverified
 ServiceTitan,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Toast,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Shopify,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Uber,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
-DoorDash,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+DoorDash,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,Medium,unverified
 Airbnb,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Instacart,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,Medium,unverified
 Walmart Global Tech,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
@@ -185,7 +185,7 @@ UPS,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff,
 DHL,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Maersk,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,Medium,unverified
 Flexport,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,Medium,unverified
-C.H. Robinson,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+C.H. Robinson,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,Medium,unverified
 project44,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 FourKites,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Samsara,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
@@ -208,7 +208,7 @@ Skild AI,Core AI / Enterprise,"Agentic workflow, evidence handling, scope bounda
 Physical Intelligence,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 World Labs,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Runway,DevTools,"Agentic software, code-generation, task-completion, handoff, and evidence-boundary review",Core Agentic Workflow Diagnostic,High,unverified
-Pika,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Pika,DevTools,"Agentic software, code-generation, task-completion, handoff, and evidence-boundary review",Core Agentic Workflow Diagnostic,High,unverified
 ElevenLabs,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Synthesia,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 HeyGen,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
@@ -233,10 +233,10 @@ Clever,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary
 Epic Systems,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Oracle Health,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Microsoft Nuance,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
-Abridge,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Abridge,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Nabla,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Ambience Healthcare,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
-Hippocratic AI,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Hippocratic AI,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Tempus,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Flatiron Health,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Komodo Health,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
@@ -249,7 +249,7 @@ Isomorphic Labs,Core AI / Enterprise,"Agentic workflow, evidence handling, scope
 Owkin,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 BenchSci,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Veeva Systems,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
-IQVIA,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+IQVIA,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Optum,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 UnitedHealth Group,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 CVS Health,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
@@ -257,7 +257,7 @@ Elevance Health,Insurance,"Claims intake, evidence handling, underwriting suppor
 Humana,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 GE HealthCare,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Siemens Healthineers,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
-Philips,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Philips,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Medtronic,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
 Alibaba Cloud,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
 Qwen,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
