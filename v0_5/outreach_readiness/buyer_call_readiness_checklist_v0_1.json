@@ -1,0 +1,40 @@
+{
+  "artifact_name": "Buyer Call Readiness Checklist v0.1",
+  "status": "internal operating checklist, not buyer-facing copy",
+  "purpose": "Give Ben a simple pre-call and during-call checklist for focused diagnostic pilot conversations.",
+  "before_call": [
+    "Open the website and confirm the focused diagnostic pilot language is visible.",
+    "Have the focused diagnostic pilot one-pager ready if asked.",
+    "Keep the standing boundary line visible.",
+    "Do not discuss upper-tier pricing, strategic license, certification, benchmark, runtime monitoring, compliance, security, or safety guarantees.",
+    "Aim to identify one concrete workflow, not sell the whole stack."
+  ],
+  "during_call": [
+    "Ask what AI-agent workflow they are considering, prototyping, or already testing.",
+    "Ask what systems or data sources the workflow touches.",
+    "Ask what inputs are treated as trusted.",
+    "Ask what actions the agent can recommend, initiate, or complete.",
+    "Ask where human approvals, handoffs, or review points exist.",
+    "Ask what happens when data is stale, incomplete, conflicting, or low-fidelity.",
+    "Ask how task completion is verified.",
+    "Ask what escalation, rollback, or recovery path exists."
+  ],
+  "fit_gate": {
+    "green": "One concrete workflow, meaningful downside if silent failure occurs, bounded context available, buyer understands diagnostic-only scope.",
+    "yellow": "Workflow exists but context, owner, or boundary is unclear.",
+    "red": "Buyer wants certification, compliance sign-off, runtime monitoring, security testing, deployment approval, legal/clinical/HR decision-making, free broad consulting, or guaranteed safety."
+  },
+  "after_email_is_collected": [
+    "Tell Ben to run: cd ~/specshift_terminal_intelligence && python3 v0_5/call_companion/specshift_call_companion.py",
+    "Choose mode 2 if call notes are being captured live.",
+    "Choose mode 3 if only a follow-up email draft is needed.",
+    "Generate Proton-ready draft and attachment list.",
+    "Review manually in Proton Mail from ben@specshiftlabs.com before sending."
+  ],
+  "default_attachment": "Focused diagnostic pilot one-pager PDF",
+  "deeper_interest_attachments": [
+    "Pilot scoping brief text",
+    "Pilot appendix guardrail checklist text"
+  ],
+  "failure_column": "This checklist fails if the call drifts into broad free consulting, unsupported pricing, certification, compliance approval, runtime monitoring, security tooling, legal/clinical/HR advice, deployment approval, or guaranteed safety."
+}

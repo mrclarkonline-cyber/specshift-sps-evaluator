@@ -1,0 +1,33 @@
+{
+  "artifact_name": "Outreach Readiness Freeze v0.1",
+  "status": "internal readiness checkpoint, not buyer-facing copy",
+  "purpose": "Freeze the current product state as outreach-ready and stop additional product building until buyer workflow evidence suggests a specific need.",
+  "company": "SpecShift Labs LLC",
+  "core_product": "SpecShift Architectural Logic Diagnostics",
+  "first_offer": "Focused Diagnostic Pilot",
+  "public_positioning": "Pre-deployment diagnostic review for one concrete AI-agent workflow before broader rollout.",
+  "standing_boundary_line": "SpecShift Architectural Logic Diagnostics is a pre-deployment diagnostic and architecture-stage review process. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.",
+  "ready_assets": [
+    "public website with focused diagnostic pilot framing",
+    "focused diagnostic pilot one-pager PDF",
+    "bounded paid pilot outreach email v0.2",
+    "role-specific outreach variants v0.2",
+    "20-minute scoping call script",
+    "Proton-ready follow-up draft generator",
+    "pilot scope outline generator",
+    "v0.5 case-selection helper",
+    "v0.5 internal adversarial suite and local validator",
+    "claim-language register for historical commit messages",
+    "five internal vertical diagnostic packs"
+  ],
+  "built_vertical_packs": [
+    "Finance/Reconciliation Agent Diagnostic Pack v0.1",
+    "Procurement Agent Diagnostic Pack v0.1",
+    "Customer Support Escalation Agent Diagnostic Pack v0.1",
+    "Healthcare Operations Agent Diagnostic Pack v0.1",
+    "Education/IEP Workflow Diagnostic Pack v0.1"
+  ],
+  "stop_building_rule": "Do not build additional vertical packs, new products, pricing pages, public benchmarks, certification language, runtime tools, or broad decks until a buyer conversation identifies a concrete workflow need.",
+  "next_action": "Begin focused outreach and use call companion when a buyer responds.",
+  "failure_column": "This readiness freeze fails if the company resumes building speculative product surfaces instead of pursuing buyer conversations, or if outreach materials begin implying certification, benchmark status, compliance approval, runtime monitoring, security tooling, deployment approval, or safety guarantees."
+}

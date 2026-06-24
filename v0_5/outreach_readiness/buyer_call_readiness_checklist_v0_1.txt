@@ -1,0 +1,43 @@
+Buyer Call Readiness Checklist v0.1
+Internal operating checklist. Not buyer-facing copy.
+
+Before call:
+- Open the website and confirm the focused diagnostic pilot language is visible.
+- Have the focused diagnostic pilot one-pager ready if asked.
+- Keep the standing boundary line visible.
+- Do not discuss upper-tier pricing, strategic license, certification, benchmark, runtime monitoring, compliance, security, or safety guarantees.
+- Aim to identify one concrete workflow, not sell the whole stack.
+
+During call:
+1. What AI-agent workflow are they considering, prototyping, or already testing?
+2. What systems or data sources does the workflow touch?
+3. What inputs are treated as trusted?
+4. What actions can the agent recommend, initiate, or complete?
+5. Where are human approvals, handoffs, or review points?
+6. What happens when data is stale, incomplete, conflicting, or low-fidelity?
+7. How is task completion verified?
+8. What escalation, rollback, or recovery path exists?
+
+Fit gate:
+Green:
+One concrete workflow, meaningful downside if silent failure occurs, bounded context available, buyer understands diagnostic-only scope.
+
+Yellow:
+Workflow exists but context, owner, or boundary is unclear.
+
+Red:
+Buyer wants certification, compliance sign-off, runtime monitoring, security testing, deployment approval, legal/clinical/HR decision-making, free broad consulting, or guaranteed safety.
+
+After email is collected:
+Run:
+
+cd ~/specshift_terminal_intelligence && python3 v0_5/call_companion/specshift_call_companion.py
+
+Choose mode 2 if call notes are being captured live.
+Choose mode 3 if only a follow-up email draft is needed.
+
+Default attachment:
+Focused diagnostic pilot one-pager PDF.
+
+Failure column:
+This checklist fails if the call drifts into broad free consulting, unsupported pricing, certification, compliance approval, runtime monitoring, security tooling, legal/clinical/HR advice, deployment approval, or guaranteed safety.
