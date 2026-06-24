@@ -1,0 +1,63 @@
+Procurement Agent Diagnostic Pack v0.1
+Internal vertical diagnostic pack draft. Not buyer-ready final copy.
+
+Core product:
+SpecShift Architectural Logic Diagnostics
+
+Boundary:
+This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, legal advice, procurement approval, vendor-risk certification, or guarantee of AI safety.
+
+Buyer problem:
+Procurement agents can appear operationally helpful while expanding spending scope, acting on stale vendor data, treating weak approvals as broad authorization, closing intake tasks prematurely, or losing ownership across purchasing, legal, finance, and vendor-management handoffs.
+
+Target workflows:
+- purchase request intake
+- vendor intake and onboarding support
+- supplier comparison workflow
+- purchase approval routing
+- contract-request triage
+- invoice-to-purchase-order exception support
+- renewal or subscription procurement workflow
+- procurement agent task-completion review
+
+Likely failure families:
+- approval boundary ambiguity
+- scope overextension
+- stale vendor data acting as current
+- false task-completion claim
+- handoff ownership gap
+- proxy collapse
+- recovery path weakness
+
+Safe use cases:
+- Architecture-stage review of a procurement agent before broader rollout.
+- Pre-deployment review of purchase intake, approval routing, vendor evidence, and task-completion claims.
+- Review of handoff points between procurement, legal, finance, security, vendor management, and requester teams.
+- Review of escalation thresholds for ambiguous approvals, stale vendor information, changed terms, or unresolved procurement state.
+
+Excluded uses:
+- Not a procurement approval engine.
+- Not vendor-risk certification.
+- Not legal review.
+- Not contract review.
+- Not compliance certification.
+- Not cybersecurity or vendor security assessment.
+- Not runtime purchase monitoring.
+- Not a guarantee that procurement workflows are safe, compliant, accurate, or deployment-ready.
+- Not a replacement for procurement, legal, finance, risk, security, or vendor-management teams.
+
+Deliverables:
+- Procurement workflow diagnostic memo
+- Selected synthetic scenario review summary
+- Approval boundary and scope-overextension risk map
+- Vendor evidence, provenance, and proxy-handling gap list
+- Handoff, escalation, and recovery-path review
+- Recommended design-review next steps
+
+Fit gate:
+Green if the buyer has one concrete procurement, vendor intake, approval, purchasing, or renewal workflow, meaningful downside if it fails silently, bounded non-production context, and acceptance that this is diagnostic rather than procurement approval, vendor-risk certification, or legal/compliance sign-off.
+
+Red if the buyer wants legal review, contract approval, procurement approval, vendor-risk certification, runtime monitoring, cybersecurity assessment, compliance sign-off, deployment approval, or guaranteed prevention of procurement errors.
+
+Failure column:
+This pack stops fitting if the buyer expects SpecShift to approve purchases, certify vendors, review contracts, replace procurement/legal/finance/security review, monitor live purchases, approve deployment, or guarantee safety, compliance, vendor quality, legal adequacy, or procurement correctness.

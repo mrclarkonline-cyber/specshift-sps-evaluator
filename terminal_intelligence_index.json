@@ -241,7 +241,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/finance_reconciliation_agent_diagnostic_pack_v0_1.txt",
       "description": "Finance/Reconciliation Agent Diagnostic Pack v0.1 text"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/procurement_agent_diagnostic_pack_v0_1.json",
+      "description": "Procurement Agent Diagnostic Pack v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/procurement_agent_diagnostic_pack_v0_1.txt",
+      "description": "Procurement Agent Diagnostic Pack v0.1 text"
     }
   ],
-  "next_action": "Next vertical build: Procurement Agent Diagnostic Pack. Keep Finance/Reconciliation pack internal until buyer workflow is known."
+  "next_action": "Next vertical build: Customer Support Escalation Agent Diagnostic Pack. Keep built vertical packs internal until buyer workflow is known."
 }
