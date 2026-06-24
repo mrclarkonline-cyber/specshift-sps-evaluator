@@ -233,7 +233,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/README.md",
       "description": "README for SpecShift vertical diagnostic packs"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/finance_reconciliation_agent_diagnostic_pack_v0_1.json",
+      "description": "Finance/Reconciliation Agent Diagnostic Pack v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/finance_reconciliation_agent_diagnostic_pack_v0_1.txt",
+      "description": "Finance/Reconciliation Agent Diagnostic Pack v0.1 text"
     }
   ],
-  "next_action": "Build one vertical diagnostic pack at a time, starting with Finance/Reconciliation or Procurement. Keep all packs tied to the core focused diagnostic pilot model."
+  "next_action": "Next vertical build: Procurement Agent Diagnostic Pack. Keep Finance/Reconciliation pack internal until buyer workflow is known."
 }

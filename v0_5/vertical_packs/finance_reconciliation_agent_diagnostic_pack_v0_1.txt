@@ -1,0 +1,60 @@
+Finance/Reconciliation Agent Diagnostic Pack v0.1
+Internal vertical diagnostic pack draft. Not buyer-ready final copy.
+
+Core product:
+SpecShift Architectural Logic Diagnostics
+
+Boundary:
+This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, financial advice, accounting assurance, or guarantee of AI safety.
+
+Buyer problem:
+Finance and reconciliation agents can appear operationally complete while acting on stale records, unresolved ledger mismatches, partial settlement state, weak approval boundaries, or unsafe rollback assumptions.
+
+Target workflows:
+- payment reconciliation
+- billing reconciliation
+- ledger close support
+- settlement workflow review
+- invoice exception handling
+- revenue operations workflow review
+- ERP-to-ledger handoff review
+- finance agent task-completion review
+
+Likely failure families:
+- multi-system state mismatch
+- false final-state claim
+- stale data acting as current
+- rollback failure
+- approval scope overextension
+- proxy collapse
+
+Safe use cases:
+- Architecture-stage review of a finance or reconciliation agent before broader rollout.
+- Pre-deployment review of stale, partial, or conflicting financial records.
+- Review of handoff points between billing, payments, ERP, ledger, and human finance teams.
+- Review of escalation thresholds for financial exceptions or ambiguous completion states.
+
+Excluded uses:
+- Not a financial audit.
+- Not accounting assurance.
+- Not compliance certification.
+- Not legal, tax, or financial advice.
+- Not runtime fraud detection.
+- Not cybersecurity monitoring.
+- Not a guarantee that workflows are safe, accurate, compliant, or deployment-ready.
+
+Deliverables:
+- Finance/reconciliation workflow diagnostic memo
+- Selected synthetic scenario review summary
+- State mismatch and false-completion risk map
+- Evidence, provenance, and proxy-handling gap list
+- Approval, handoff, escalation, and recovery-path review
+- Recommended design-review next steps
+
+Fit gate:
+Green if the buyer has one concrete finance/reconciliation workflow, meaningful downside if it fails silently, bounded non-production context, and acceptance that this is diagnostic rather than audit or compliance sign-off.
+
+Red if the buyer wants financial audit, accounting assurance, compliance certification, fraud detection, runtime monitoring, legal/tax advice, deployment approval, or guaranteed prevention of financial errors.
+
+Failure column:
+This pack stops fitting if the buyer expects SpecShift to certify financial correctness, replace audit/accounting/legal review, monitor live transactions, detect fraud in production, approve deployment, or guarantee safety, compliance, or financial accuracy.

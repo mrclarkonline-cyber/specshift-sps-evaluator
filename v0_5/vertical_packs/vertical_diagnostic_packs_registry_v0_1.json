@@ -24,7 +24,7 @@
     {
       "pack_id": "finance_reconciliation_agent_diagnostic_pack_v0_1",
       "pack_name": "Finance/Reconciliation Agent Diagnostic Pack",
-      "status": "registered, not yet built",
+      "status": "built as v0.1 internal draft",
       "buyer_problem": "Finance agents may accept inconsistent ledger states, treat unresolved reconciliation as complete, act on stale data, or assume rollback is safe.",
       "likely_failure_families": [
         "multi-system state mismatch",
@@ -34,7 +34,11 @@
         "proxy collapse",
         "scope overextension"
       ],
-      "default_use_case": "Pre-deployment review of reconciliation, settlement, billing, ledger, payment, or close-management workflows."
+      "default_use_case": "Pre-deployment review of reconciliation, settlement, billing, ledger, payment, or close-management workflows.",
+      "artifact_paths": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/finance_reconciliation_agent_diagnostic_pack_v0_1.json",
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/finance_reconciliation_agent_diagnostic_pack_v0_1.txt"
+      ]
     },
     {
       "pack_id": "customer_support_escalation_agent_diagnostic_pack_v0_1",
@@ -99,5 +103,6 @@
     "guarantee",
     "validated without local schema qualifier"
   ],
-  "failure_column": "This registry fails if vertical packs become separate unsupported products, imply validated domain expertise, or suggest certification, compliance approval, runtime protection, clinical/legal/HR decision-making, or deployment readiness."
+  "failure_column": "This registry fails if vertical packs become separate unsupported products, imply validated domain expertise, or suggest certification, compliance approval, runtime protection, clinical/legal/HR decision-making, or deployment readiness.",
+  "next_recommended_build": "Procurement Agent Diagnostic Pack"
 }

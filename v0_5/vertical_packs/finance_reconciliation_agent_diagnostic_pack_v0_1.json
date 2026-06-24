@@ -1,0 +1,130 @@
+{
+  "artifact_name": "Finance/Reconciliation Agent Diagnostic Pack v0.1",
+  "status": "internal vertical diagnostic pack draft, not buyer-ready final copy",
+  "core_product": "SpecShift Architectural Logic Diagnostics",
+  "pack_name": "Finance/Reconciliation Agent Diagnostic Pack",
+  "standard_boundary_line": "This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, financial advice, accounting assurance, or guarantee of AI safety.",
+  "buyer_problem": "Finance and reconciliation agents can appear operationally complete while acting on stale records, unresolved ledger mismatches, partial settlement state, weak approval boundaries, or unsafe rollback assumptions.",
+  "target_workflows": [
+    "payment reconciliation",
+    "billing reconciliation",
+    "ledger close support",
+    "settlement workflow review",
+    "invoice exception handling",
+    "revenue operations workflow review",
+    "ERP-to-ledger handoff review",
+    "finance agent task-completion review"
+  ],
+  "buyer_roles": [
+    "VP Finance Operations",
+    "Head of Reconciliation",
+    "Controller",
+    "Revenue Operations leader",
+    "FinTech product leader",
+    "Engineering lead for financial data infrastructure",
+    "Risk or governance lead evaluating finance automation"
+  ],
+  "likely_failure_families": [
+    {
+      "family": "multi-system state mismatch",
+      "description": "The agent treats one system as complete while another system remains unresolved or inconsistent."
+    },
+    {
+      "family": "false final-state claim",
+      "description": "The agent reports reconciliation, closure, payment, or exception handling as complete without independent confirmation."
+    },
+    {
+      "family": "stale data acting as current",
+      "description": "The agent acts on outdated balance, payment, invoice, settlement, or ledger data as if it were current."
+    },
+    {
+      "family": "rollback failure",
+      "description": "The agent assumes a wrong payment, posting, or ledger action can be safely reversed without checking system constraints."
+    },
+    {
+      "family": "approval scope overextension",
+      "description": "The agent uses narrow human approval to justify broader financial action."
+    },
+    {
+      "family": "proxy collapse",
+      "description": "The agent treats screenshots, exported summaries, forwarded reports, or partial dashboards as decision-grade evidence."
+    }
+  ],
+  "selected_v0_5_case_types": [
+    {
+      "case_type": "provenance confusion",
+      "why_selected": "Finance workflows often depend on forwarded reports, exports, dashboards, and partial evidence that must not be treated as authoritative without validation."
+    },
+    {
+      "case_type": "proxy collapse",
+      "why_selected": "Screenshots, spreadsheet exports, and dashboard summaries can hide unresolved transactional state."
+    },
+    {
+      "case_type": "stale data acting as current",
+      "why_selected": "Reconciliation and settlement workflows are highly sensitive to timestamps, batch timing, and delayed updates."
+    },
+    {
+      "case_type": "multi-system state mismatch",
+      "why_selected": "Finance agents commonly span CRM, billing, ERP, payment, bank, and ledger systems."
+    },
+    {
+      "case_type": "false final-state claim",
+      "why_selected": "Premature closure of reconciliation or exception workflows can create downstream accounting and operational risk."
+    },
+    {
+      "case_type": "rollback failure",
+      "why_selected": "Financial actions may not be safely reversible even when an agent assumes rollback is available."
+    },
+    {
+      "case_type": "human approval scope overextension",
+      "why_selected": "Narrow approval for one exception can be incorrectly generalized to larger financial actions."
+    }
+  ],
+  "safe_use_cases": [
+    "Architecture-stage review of a finance or reconciliation agent before broader rollout.",
+    "Pre-deployment review of how an agent handles stale, partial, or conflicting financial records.",
+    "Review of handoff points between billing, payments, ERP, ledger, and human finance teams.",
+    "Review of escalation thresholds for financial exceptions, unresolved matches, or ambiguous completion states.",
+    "Internal design-support review for engineering, finance operations, product, and risk teams."
+  ],
+  "excluded_uses": [
+    "Not a financial audit.",
+    "Not accounting assurance.",
+    "Not compliance certification.",
+    "Not legal, tax, or financial advice.",
+    "Not runtime fraud detection.",
+    "Not cybersecurity monitoring.",
+    "Not a guarantee that financial workflows are safe, accurate, compliant, or deployment-ready.",
+    "Not a replacement for internal finance, accounting, legal, risk, or audit teams."
+  ],
+  "deliverables": [
+    "Finance/reconciliation workflow diagnostic memo",
+    "Selected synthetic scenario review summary",
+    "State mismatch and false-completion risk map",
+    "Evidence, provenance, and proxy-handling gap list",
+    "Approval, handoff, escalation, and recovery-path review",
+    "Recommended design-review next steps"
+  ],
+  "fit_gate": {
+    "green": [
+      "Buyer has one concrete finance or reconciliation workflow.",
+      "Workflow touches multiple systems or handoffs.",
+      "Silent failure would create meaningful financial, operational, trust, or rework cost.",
+      "Buyer can provide bounded non-production workflow context.",
+      "Buyer understands this is diagnostic, not audit or compliance sign-off."
+    ],
+    "yellow": [
+      "Workflow exists but system boundaries are unclear.",
+      "Buyer has broad finance automation concerns but no single workflow selected.",
+      "Buyer wants a review but cannot yet provide enough workflow context."
+    ],
+    "red": [
+      "Buyer wants financial audit, accounting assurance, compliance certification, fraud detection, runtime monitoring, legal/tax advice, or deployment approval.",
+      "Buyer wants a free broad review rather than a bounded paid diagnostic pilot.",
+      "Buyer expects guaranteed prevention of financial errors."
+    ]
+  },
+  "claim_boundary": "This pack may be described only as a pre-deployment diagnostic and architecture-stage review extension for finance/reconciliation agent workflows. It must not be described as financial audit, compliance certification, accounting assurance, fraud detection, runtime monitoring, financial advice, or deployment approval.",
+  "failure_column": "This pack stops fitting if the buyer expects SpecShift to certify financial correctness, replace audit/accounting/legal review, monitor live transactions, detect fraud in production, approve deployment, or guarantee safety, compliance, or financial accuracy.",
+  "recommended_next_step": "Use this pack only after a finance or reconciliation workflow is identified. Select relevant v0.5 cases manually, then generate a narrow pilot scope outline."
+}
