@@ -104,3 +104,19 @@ Rules:
 - Repo stores company-level target intelligence only.
 - No bulk send.
 - No outreach unless independently verified.
+
+## Private outreach shortlist
+
+Build a private shortlist from repo company targets plus private contacts:
+
+python3 v0_5/outreach_pipeline/private_shortlist.py --limit 50
+
+Output stays outside repo:
+
+~/.specshift/private_outreach_shortlist.csv
+
+Rules:
+- Emails remain private.
+- Repo gets only company-level target intelligence.
+- No outreach unless a contact is independently verified.
+- No email is sent by this tool.

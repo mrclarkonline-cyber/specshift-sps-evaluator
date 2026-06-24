@@ -133,5 +133,10 @@
     "private_contacts_local": "/Users/benjaminjustinclark/.specshift/prospect_contacts_unverified.csv",
     "dashboard_command": "cd ~/specshift_terminal_intelligence && python3 v0_5/outreach_pipeline/private_contact_queue.py dashboard",
     "rule": "Reads private contacts outside repo; does not commit names/emails; verification required before outreach."
+  },
+  "private_outreach_shortlist": {
+    "script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/private_shortlist.py",
+    "private_output": "/Users/benjaminjustinclark/.specshift/private_outreach_shortlist.csv",
+    "rule": "Private shortlist only; emails do not enter repo; no outreach sent."
   }
 }

@@ -389,7 +389,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/private_contact_queue.py",
       "description": "Private contact queue manager for Choice C lead workflow"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/private_shortlist.py",
+      "description": "Builds private outreach shortlist from company targets and private contacts"
     }
   ],
-  "next_action": "Choice C lead workflow active. Use private_contact_queue.py to verify contacts one at a time, then use guarded email only with explicit confirmation."
+  "next_action": "Use private_shortlist.py to pick first verification targets, then verify contacts one at a time before guarded outreach."
 }
