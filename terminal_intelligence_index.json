@@ -301,7 +301,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/README.md",
       "description": "README for guarded Proton Bridge email workflow"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/proton_guarded_send.py",
+      "description": "Guarded one-email Proton SMTP sender with preview and exact typed confirmation"
     }
   ],
-  "next_action": "Configure Proton Mail Bridge locally if desired, then run proton_bridge_readiness_check.py. Do not build send mode until readiness passes and Ben confirms."
+  "next_action": "Email bridge now supports guarded one-email SMTP sending. Use only after preview and exact typed confirmation. No bulk send, no silent send, no secrets in repo."
 }
