@@ -1,0 +1,64 @@
+Education/IEP Workflow Diagnostic Pack v0.1
+Internal vertical diagnostic pack draft. Not buyer-ready final copy.
+
+Core product:
+SpecShift Architectural Logic Diagnostics
+
+Boundary:
+This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension for education documentation and workflow-support systems. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, legal advice, special-education compliance determination, IEP approval tool, student-placement tool, or guarantee of AI safety.
+
+Buyer problem:
+Education and IEP workflow agents can appear helpful while confusing draft documentation with final decisions, losing ownership across school-family-team handoffs, overstepping professional boundaries, treating compliance-sensitive tasks as generic completion, or presenting unsupported conclusions about services, eligibility, placement, or progress.
+
+Target workflows:
+- IEP meeting preparation support
+- draft goal and objective organization
+- service coordination workflow support
+- progress-report drafting workflow
+- evaluation timeline and document-readiness tracking
+- family-school communication preparation
+- case-management task-routing workflow
+- education documentation agent task-completion review
+
+Likely failure families:
+- draft-final state confusion
+- professional boundary overreach
+- handoff ownership gap
+- claim boundary weakness
+- provenance confusion
+- false task-completion claim
+- recovery path weakness
+
+Safe use cases:
+- Architecture-stage review of an education documentation or IEP workflow-support agent before broader rollout.
+- Pre-deployment review of meeting preparation, draft-document organization, progress-report support, or case-management task routing.
+- Review of how an agent separates source records, educator notes, family input, draft text, and model inference.
+- Review of handoff and ownership points across education teams, families, administrators, and related service providers.
+
+Excluded uses:
+- Not legal advice.
+- Not special-education compliance certification.
+- Not IEP approval.
+- Not eligibility determination.
+- Not placement recommendation or placement decision support.
+- Not student discipline or manifestation-determination support.
+- Not clinical, psychological, or educational evaluation.
+- Not a replacement for IEP teams, families, educators, administrators, evaluators, legal counsel, or compliance staff.
+- Not runtime monitoring of student records.
+- Not a guarantee that education workflows are legally compliant, appropriate, accurate, safe, or deployment-ready.
+
+Deliverables:
+- Education/IEP workflow diagnostic memo
+- Selected synthetic scenario review summary
+- Draft-final state and false-completion risk map
+- Provenance, source-boundary, and claim-boundary gap list
+- Handoff, escalation, professional-boundary, and recovery-path review
+- Recommended design-review next steps
+
+Fit gate:
+Green if the buyer has one concrete education documentation, IEP workflow-support, progress-report, meeting-preparation, or case-management workflow, and understands this is diagnostic rather than legal/compliance sign-off, IEP approval, placement decision support, or deployment approval.
+
+Red if the buyer wants legal advice, special-education compliance certification, eligibility determination, placement recommendation, IEP approval, clinical/psychological/educational evaluation, runtime student-record monitoring, compliance sign-off, deployment approval, or guaranteed prevention of legal, procedural, educational, or student-support errors.
+
+Failure column:
+This pack stops fitting if the buyer expects SpecShift to provide legal advice, certify special-education compliance, approve IEPs, determine eligibility, recommend placement, evaluate students, replace education teams or counsel, monitor live student records, approve deployment, or guarantee legal compliance, educational appropriateness, procedural correctness, safety, or accuracy.

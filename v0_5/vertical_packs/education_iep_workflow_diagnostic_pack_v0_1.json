@@ -1,0 +1,139 @@
+{
+  "artifact_name": "Education/IEP Workflow Diagnostic Pack v0.1",
+  "status": "internal vertical diagnostic pack draft, not buyer-ready final copy",
+  "core_product": "SpecShift Architectural Logic Diagnostics",
+  "pack_name": "Education/IEP Workflow Diagnostic Pack",
+  "standard_boundary_line": "This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension for education documentation and workflow-support systems. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, legal advice, special-education compliance determination, IEP approval tool, student-placement tool, or guarantee of AI safety.",
+  "buyer_problem": "Education and IEP workflow agents can appear helpful while confusing draft documentation with final decisions, losing ownership across school-family-team handoffs, overstepping professional boundaries, treating compliance-sensitive tasks as generic completion, or presenting unsupported conclusions about services, eligibility, placement, or progress.",
+  "target_workflows": [
+    "IEP meeting preparation support",
+    "draft goal and objective organization",
+    "service coordination workflow support",
+    "progress-report drafting workflow",
+    "evaluation timeline and document-readiness tracking",
+    "family-school communication preparation",
+    "case-management task-routing workflow",
+    "education documentation agent task-completion review"
+  ],
+  "buyer_roles": [
+    "Special education administrator",
+    "Director of student services",
+    "School district operations leader",
+    "Education technology product leader",
+    "Student support services leader",
+    "Special education case-management platform leader",
+    "Engineering lead for education workflow AI agents",
+    "Risk or governance lead evaluating education automation"
+  ],
+  "likely_failure_families": [
+    {
+      "family": "draft-final state confusion",
+      "description": "The agent treats draft text, preliminary notes, meeting preparation, or incomplete documentation as final team decision or official record."
+    },
+    {
+      "family": "professional boundary overreach",
+      "description": "The agent drifts from documentation support into legal, evaluative, placement, eligibility, or professional decision-making beyond its intended role."
+    },
+    {
+      "family": "handoff ownership gap",
+      "description": "The agent loses track of who owns next action across case manager, evaluator, administrator, related service provider, family, teacher, or district processes."
+    },
+    {
+      "family": "claim boundary weakness",
+      "description": "The agent presents service, progress, placement, eligibility, or compliance-sensitive statements without enough source grounding or scope limitation."
+    },
+    {
+      "family": "provenance confusion",
+      "description": "The agent fails to separate student record data, educator notes, family input, prior drafts, meeting discussion, and model inference."
+    },
+    {
+      "family": "false task-completion claim",
+      "description": "The agent reports a meeting, report, notice, goal, service update, or document workflow as complete while required team review, consent, signature, or administrative steps remain unresolved."
+    },
+    {
+      "family": "recovery path weakness",
+      "description": "The agent lacks a clear halt, escalation, correction, or human-review path when education documentation state becomes ambiguous."
+    }
+  ],
+  "selected_v0_5_case_types": [
+    {
+      "case_type": "provenance confusion",
+      "why_selected": "Education workflows depend on careful separation of student records, team notes, family input, draft text, and model-generated language."
+    },
+    {
+      "case_type": "claim boundary weakness",
+      "why_selected": "Statements about services, progress, eligibility, placement, or timelines require clear boundaries and source grounding."
+    },
+    {
+      "case_type": "professional boundary overreach",
+      "why_selected": "Documentation tools must not drift into legal advice, eligibility determination, placement decision-making, or compliance sign-off."
+    },
+    {
+      "case_type": "false final-state claim",
+      "why_selected": "IEP and education workflows have many draft, review, meeting, signature, consent, and implementation states that must not be collapsed into done."
+    },
+    {
+      "case_type": "handoff ownership gap",
+      "why_selected": "Education workflows often cross case managers, administrators, evaluators, teachers, related service providers, families, and district teams."
+    },
+    {
+      "case_type": "scope overextension",
+      "why_selected": "A support workflow may unintentionally expand from organizing documentation into making decisions or interpreting legal obligations."
+    },
+    {
+      "case_type": "recovery path weakness",
+      "why_selected": "When document state, team agreement, or procedural status is ambiguous, the agent must route back to human review."
+    }
+  ],
+  "safe_use_cases": [
+    "Architecture-stage review of an education documentation or IEP workflow-support agent before broader rollout.",
+    "Pre-deployment review of meeting preparation, draft-document organization, progress-report support, or case-management task routing.",
+    "Review of how an agent separates source records, educator notes, family input, draft text, and model inference.",
+    "Review of handoff and ownership points across education teams, families, administrators, and related service providers.",
+    "Internal design-support review for education product, district operations, student services, and risk teams."
+  ],
+  "excluded_uses": [
+    "Not legal advice.",
+    "Not special-education compliance certification.",
+    "Not IEP approval.",
+    "Not eligibility determination.",
+    "Not placement recommendation or placement decision support.",
+    "Not student discipline or manifestation-determination support.",
+    "Not clinical, psychological, or educational evaluation.",
+    "Not a replacement for IEP teams, families, educators, administrators, evaluators, legal counsel, or compliance staff.",
+    "Not runtime monitoring of student records.",
+    "Not a guarantee that education workflows are legally compliant, appropriate, accurate, safe, or deployment-ready."
+  ],
+  "deliverables": [
+    "Education/IEP workflow diagnostic memo",
+    "Selected synthetic scenario review summary",
+    "Draft-final state and false-completion risk map",
+    "Provenance, source-boundary, and claim-boundary gap list",
+    "Handoff, escalation, professional-boundary, and recovery-path review",
+    "Recommended design-review next steps"
+  ],
+  "fit_gate": {
+    "green": [
+      "Buyer has one concrete education documentation, IEP workflow-support, progress-report, meeting-preparation, or case-management workflow.",
+      "Workflow is documentation or operations support, not legal decision-making, eligibility determination, placement decision-making, or evaluation.",
+      "Workflow crosses multiple people, roles, systems, or handoff points.",
+      "Silent failure would create meaningful documentation, trust, procedural, rework, or operational cost.",
+      "Buyer can provide bounded non-production workflow context.",
+      "Buyer understands this is diagnostic, not legal/compliance sign-off, IEP approval, placement decision support, or deployment approval."
+    ],
+    "yellow": [
+      "Workflow exists but legal/professional boundary is unclear.",
+      "Buyer has broad education automation concerns but no single workflow selected.",
+      "Buyer wants a review but cannot yet provide enough workflow context.",
+      "Workflow may require district, legal, privacy, or compliance review before any materials are shared."
+    ],
+    "red": [
+      "Buyer wants legal advice, special-education compliance certification, eligibility determination, placement recommendation, IEP approval, clinical/psychological/educational evaluation, runtime student-record monitoring, compliance sign-off, or deployment approval.",
+      "Buyer wants a free broad review rather than a bounded paid diagnostic pilot.",
+      "Buyer expects guaranteed prevention of legal, procedural, educational, or student-support errors."
+    ]
+  },
+  "claim_boundary": "This pack may be described only as a pre-deployment diagnostic and architecture-stage review extension for education documentation and workflow-support systems. It must not be described as legal advice, special-education compliance certification, IEP approval, eligibility determination, placement support, evaluation support, runtime student-record monitoring, or deployment approval.",
+  "failure_column": "This pack stops fitting if the buyer expects SpecShift to provide legal advice, certify special-education compliance, approve IEPs, determine eligibility, recommend placement, evaluate students, replace education teams or counsel, monitor live student records, approve deployment, or guarantee legal compliance, educational appropriateness, procedural correctness, safety, or accuracy.",
+  "recommended_next_step": "Use this pack only after an education documentation or workflow-support process is identified and legal/professional boundary risks are screened. Select relevant v0.5 cases manually, then generate a narrow pilot scope outline."
+}

@@ -85,7 +85,7 @@
     {
       "pack_id": "education_iep_workflow_diagnostic_pack_v0_1",
       "pack_name": "Education/IEP Workflow Diagnostic Pack",
-      "status": "registered, not yet built",
+      "status": "built as v0.1 internal draft",
       "buyer_problem": "Education workflow agents may confuse draft documentation with final decisions, mishandle handoffs, overstep professional boundaries, or treat compliance-sensitive workflows as generic task completion.",
       "likely_failure_families": [
         "professional boundary overreach",
@@ -95,7 +95,11 @@
         "provenance confusion",
         "scope overextension"
       ],
-      "default_use_case": "Pre-deployment review of education documentation, IEP workflow support, service coordination, meeting preparation, or case-management workflows."
+      "default_use_case": "Pre-deployment review of education documentation, IEP workflow support, service coordination, meeting preparation, or case-management workflows.",
+      "artifact_paths": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/education_iep_workflow_diagnostic_pack_v0_1.json",
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/education_iep_workflow_diagnostic_pack_v0_1.txt"
+      ]
     }
   ],
   "build_order_recommendation": [
@@ -116,5 +120,5 @@
     "validated without local schema qualifier"
   ],
   "failure_column": "This registry fails if vertical packs become separate unsupported products, imply validated domain expertise, or suggest certification, compliance approval, runtime protection, clinical/legal/HR decision-making, or deployment readiness.",
-  "next_recommended_build": "Education/IEP Workflow Diagnostic Pack"
+  "next_recommended_build": "All registered v0.1 vertical diagnostic packs are built. Stop building packs until buyer workflow evidence suggests a specific new vertical."
 }
