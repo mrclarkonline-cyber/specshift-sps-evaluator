@@ -305,7 +305,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/proton_guarded_send.py",
       "description": "Guarded one-email Proton SMTP sender with preview and exact typed confirmation"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/ops/specshift_ops_dashboard.py",
+      "description": "One-command SpecShift ops dashboard for maintenance/readiness checks"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/ops/README.md",
+      "description": "README for SpecShift ops dashboard"
     }
   ],
-  "next_action": "Email bridge now supports guarded one-email SMTP sending. Use only after preview and exact typed confirmation. No bulk send, no silent send, no secrets in repo."
+  "next_action": "Use ops dashboard for maintenance checks. Stop building products; begin focused outreach or use buyer-call companion when someone responds."
 }
