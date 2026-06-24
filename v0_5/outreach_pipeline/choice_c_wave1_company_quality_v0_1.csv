@@ -1,0 +1,26 @@
+priority_rank,company,fit_score,fit_tier,quality_flags,manual_review,recommended_action
+1,Anysphere,100,A,none,no,verify_role_and_company_before_draft
+2,BlackLine,100,A,none,no,verify_role_and_company_before_draft
+3,Cognition AI,100,A,none,no,verify_role_and_company_before_draft
+4,Cursor,100,A,none,no,verify_role_and_company_before_draft
+5,Glean,100,A,none,no,verify_role_and_company_before_draft
+6,Harvey,100,A,none,no,verify_role_and_company_before_draft
+7,LangChain,100,A,none,no,verify_role_and_company_before_draft
+8,LangSmith,100,A,none,no,verify_role_and_company_before_draft
+9,LlamaIndex,100,A,none,no,verify_role_and_company_before_draft
+10,Modern Treasury,100,A,none,no,verify_role_and_company_before_draft
+11,Ramp,100,A,none,no,verify_role_and_company_before_draft
+12,Sierra,100,A,none,no,verify_role_and_company_before_draft
+13,Stripe,100,A,none,no,verify_role_and_company_before_draft
+14,Workiva,100,A,none,no,verify_role_and_company_before_draft
+15,Decagon,96,A,none,no,verify_role_and_company_before_draft
+16,Cresta,95,A,none,no,verify_role_and_company_before_draft
+17,Google / Alphabet,42,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+18,Intuit / QuickBooks,42,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+19,Oracle NetSuite,41,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+20,Target,40,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+21,Walmart,40,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+22,Zilliz / Milvus,39,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+23,LangChain / LangSmith,38,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+24,Alibaba,34,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact
+25,Huawei,29,Hold,manual_review;missing_or_invalid_email;missing_title;needs_contact,yes,find_verified_business_contact

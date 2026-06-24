@@ -1,0 +1,26 @@
+{
+  "artifact_name": "Choice C Wave Quality Summary v0.1",
+  "created_at": "2026-06-24T16:03:18.076423",
+  "rule": "Quality pass only. No email sent. Private verification queue remains local.",
+  "wave1_expected_companies": 25,
+  "wave1_private_companies": 25,
+  "wave1_ranked_companies": 25,
+  "missing_from_private_wave1": [],
+  "fit_tier_counts": {
+    "A": 16,
+    "Hold": 9
+  },
+  "recommended_action_counts": {
+    "verify_role_and_company_before_draft": 16,
+    "find_verified_business_contact": 9
+  },
+  "quality_flag_counts": {
+    "none": 16,
+    "manual_review": 9,
+    "missing_or_invalid_email": 9,
+    "missing_title": 9,
+    "needs_contact": 9
+  },
+  "private_verification_queue": "/Users/benjaminjustinclark/.specshift/private_wave1_verification_queue_v0_1.csv",
+  "repo_company_quality_file": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/choice_c_wave1_company_quality_v0_1.csv"
+}
