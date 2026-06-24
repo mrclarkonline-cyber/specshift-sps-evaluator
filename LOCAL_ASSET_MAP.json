@@ -115,5 +115,11 @@
     "script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/ops/specshift_asset_audit.py",
     "run_command": "cd ~/specshift_terminal_intelligence && python3 v0_5/ops/specshift_asset_audit.py",
     "rule": "Audits known SpecShift company assets only; does not crawl personal/local Ben files."
+  },
+  "unverified_company_target_sanitizer": {
+    "script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitize_gemini_targets.py",
+    "raw_input": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/gemini_raw_unverified_company_targets_v0_1.csv",
+    "sanitized_output": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
+    "rule": "Company targets only; all unverified; no outreach until independent contact verification."
   }
 }

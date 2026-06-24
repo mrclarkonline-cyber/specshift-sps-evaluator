@@ -369,7 +369,23 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/ops/specshift_asset_audit.py",
       "description": "Safe audit of known local SpecShift company assets"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitize_gemini_targets.py",
+      "description": "Sanitizer for unverified Gemini company target CSV"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/gemini_raw_unverified_company_targets_v0_1.csv",
+      "description": "Raw unverified Gemini company target CSV input, company-level only"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
+      "description": "Sanitized unverified company target CSV output"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_report_v0_1.json",
+      "description": "Report for sanitized company target output"
     }
   ],
-  "next_action": "Use ops dashboard and asset audit for maintenance checks. Stop building; begin outreach or use buyer-call companion when someone responds."
+  "next_action": "Paste Gemini company-level CSV into gemini_raw_unverified_company_targets_v0_1.csv, run sanitizer, then verify contacts independently before any outreach."
 }

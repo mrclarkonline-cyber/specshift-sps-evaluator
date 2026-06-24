@@ -1,0 +1,27 @@
+{
+  "artifact_name": "Sanitized Company Targets Report v0.1",
+  "created_at": "2026-06-24T12:22:02.935178",
+  "input_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/gemini_raw_unverified_company_targets_v0_1.csv",
+  "output_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
+  "input_rows": 0,
+  "deduplicated_company_rows": 0,
+  "rows_with_risky_terms": 0,
+  "hold_review_rows": 0,
+  "rule": "Company targets only. All contacts unverified. Outreach not allowed until independent contact verification.",
+  "approved_pack_skin_vocabulary": [
+    "Core Agentic Workflow Diagnostic",
+    "Customer Support Escalation Agent Diagnostic Pack",
+    "Education/IEP Workflow Diagnostic Pack",
+    "Finance/Reconciliation Agent Diagnostic Pack",
+    "Government Services Workflow Pack candidate skin",
+    "HR Operations Agent Diagnostic Pack candidate skin",
+    "Healthcare Operations Agent Diagnostic Pack",
+    "Incident Response Coordination Pack candidate skin",
+    "Insurance Claims Agent Diagnostic Pack candidate skin",
+    "Legal Operations Workflow Diagnostic Pack candidate skin",
+    "Procurement Agent Diagnostic Pack",
+    "Sales / CRM Agent Diagnostic Pack candidate skin",
+    "Supply Chain / Logistics Agent Diagnostic Pack candidate skin"
+  ],
+  "not_for_memory": true
+}
