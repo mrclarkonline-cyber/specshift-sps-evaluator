@@ -289,7 +289,19 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_readiness/buyer_call_readiness_checklist_v0_1.txt",
       "description": "Plain-text buyer call readiness checklist"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/proton_bridge_readiness_check.py",
+      "description": "Proton Bridge readiness checker; does not send email"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/proton_bridge_config.example.json",
+      "description": "Example non-secret Proton Bridge config template"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/README.md",
+      "description": "README for guarded Proton Bridge email workflow"
     }
   ],
-  "next_action": "Outreach-ready. Stop building products. Begin focused outreach. When a buyer replies or calls, use buyer call readiness checklist and call companion."
+  "next_action": "Configure Proton Mail Bridge locally if desired, then run proton_bridge_readiness_check.py. Do not build send mode until readiness passes and Ben confirms."
 }

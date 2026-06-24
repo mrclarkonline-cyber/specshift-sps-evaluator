@@ -1,0 +1,15 @@
+{
+  "from_email": "ben@specshiftlabs.com",
+  "smtp_host": "127.0.0.1",
+  "smtp_port": 1025,
+  "smtp_username": "PASTE_PROTON_BRIDGE_USERNAME_HERE",
+  "smtp_password_storage": "DO_NOT_STORE_PASSWORD_IN_REPO",
+  "mode": "readiness_only",
+  "send_requires_typed_confirmation": true,
+  "notes": [
+    "Copy this file to ~/.specshift/proton_bridge_config.json and edit there.",
+    "Do not commit ~/.specshift/proton_bridge_config.json.",
+    "Do not store the Proton Bridge SMTP password in the repo.",
+    "This v0.1 checker does not send mail."
+  ]
+}
