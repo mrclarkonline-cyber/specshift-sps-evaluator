@@ -1,11 +1,11 @@
 {
   "artifact_name": "Sanitized Company Targets Report v0.1",
-  "created_at": "2026-06-24T14:18:21.375548",
+  "created_at": "2026-06-24T15:20:08.084498",
   "input_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/gemini_raw_unverified_company_targets_v0_1.csv",
   "output_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
-  "input_rows": 954,
-  "deduplicated_company_rows": 942,
-  "rows_with_risky_terms": 9,
+  "input_rows": 997,
+  "deduplicated_company_rows": 985,
+  "rows_with_risky_terms": 14,
   "hold_review_rows": 0,
   "rule": "Company targets only. All contacts unverified. Outreach not allowed until independent contact verification.",
   "approved_pack_skin_vocabulary": [

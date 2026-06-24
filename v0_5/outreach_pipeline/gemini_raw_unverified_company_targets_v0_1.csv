@@ -953,3 +953,46 @@ Revolut Business,Finance,"Financial workflow, reconciliation, evidence handling,
 Rivian,Automotive / Mobility,"Autonomy, vehicle intelligence, fleet workflow, validation handoff, escalation, and recovery-path review",Autonomous Systems / Mobility Workflow Pack candidate skin,hold_review,unverified
 Volvo Cars,Automotive / Mobility,"Autonomy, vehicle intelligence, fleet workflow, validation handoff, escalation, and recovery-path review",Autonomous Systems / Mobility Workflow Pack candidate skin,hold_review,unverified
 Zoox,Automotive / Mobility,"Autonomy, vehicle intelligence, fleet workflow, validation handoff, escalation, and recovery-path review",Autonomous Systems / Mobility Workflow Pack candidate skin,hold_review,unverified
+AMD,Semiconductor / Hardware,"Advanced-process, production, quality, supply-chain, handoff, and recovery-path review",Core Agentic Workflow Diagnostic,High,unverified
+Appen,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+ASML,Semiconductor / Hardware,"Advanced-process, production, quality, supply-chain, handoff, and recovery-path review",Core Agentic Workflow Diagnostic,High,unverified
+AT&T,Telecom / Network Operations,"Network operations, edge/cloud infrastructure, incident routing, escalation, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+Barclays,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
+Bechtel,Construction / Real Estate Operations,"Construction, jobsite, asset, digital-twin, handoff, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,Medium,unverified
+CoStar,Construction / Real Estate Operations,"Construction, jobsite, asset, digital-twin, handoff, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,Medium,unverified
+Dragos,Security / Risk Operations,"Security operations, risk routing, incident coordination, handoff, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+Enel,Energy / Utilities,"Grid, energy operations, predictive-maintenance, escalation, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,High,unverified
+ExxonMobil,Semiconductor / Hardware,"Advanced-process, production, quality, supply-chain, handoff, and recovery-path review",Core Agentic Workflow Diagnostic,High,unverified
+GE Vernova,Energy / Utilities,"Grid, energy operations, predictive-maintenance, escalation, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,High,unverified
+Goldman Sachs,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
+HSBC,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Illumina,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
+iMerit,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+Intel,Semiconductor / Hardware,"Advanced-process, production, quality, supply-chain, handoff, and recovery-path review",Core Agentic Workflow Diagnostic,High,unverified
+Invisible Technologies,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+J.B. Hunt,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,High,unverified
+JPMorgan Chase,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
+Mandiant,Security / Risk Operations,"Security operations, risk routing, incident coordination, handoff, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+Mayo Clinic,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
+Micron,Semiconductor / Hardware,"Advanced-process, production, quality, supply-chain, handoff, and recovery-path review",Core Agentic Workflow Diagnostic,High,unverified
+Nubank,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
+Okta,Security / Risk Operations,"Security operations, risk routing, incident coordination, handoff, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+OneTrust,Security / Risk Operations,"Security operations, risk routing, incident coordination, handoff, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+Pfizer,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
+Procore,Construction / Real Estate Operations,"Construction, jobsite, asset, digital-twin, handoff, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,Medium,unverified
+Reliance Jio,Telecom / Network Operations,"Network operations, edge/cloud infrastructure, incident routing, escalation, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+Roche,Healthcare Operations,"Healthcare operations, intake, documentation, routing, escalation, and recovery-path review",Healthcare Operations Agent Diagnostic Pack,High,unverified
+Rubrik,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
+Saudi Aramco,Semiconductor / Hardware,"Advanced-process, production, quality, supply-chain, handoff, and recovery-path review",Core Agentic Workflow Diagnostic,High,unverified
+Shell,Energy / Utilities,"Grid, energy operations, predictive-maintenance, escalation, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,High,unverified
+Surge AI,Core AI / Enterprise,"Agentic workflow, evidence handling, scope boundary, handoff, escalation, and recovery-path review",Core Agentic Workflow Diagnostic,Medium,unverified
+TSMC,Semiconductor / Hardware,"Advanced-process, production, quality, supply-chain, handoff, and recovery-path review",Core Agentic Workflow Diagnostic,High,unverified
+Turner Construction,Construction / Real Estate Operations,"Construction, jobsite, asset, digital-twin, handoff, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,Medium,unverified
+UBS,Finance,"Financial workflow, reconciliation, evidence handling, escalation, and recovery-path review",Finance/Reconciliation Agent Diagnostic Pack,High,unverified
+Union Pacific,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,High,unverified
+Verizon,Telecom / Network Operations,"Network operations, edge/cloud infrastructure, incident routing, escalation, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+Vestas,Energy / Utilities,"Grid, energy operations, predictive-maintenance, escalation, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,High,unverified
+Vodafone,Telecom / Network Operations,"Network operations, edge/cloud infrastructure, incident routing, escalation, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified
+XPO,Supply Chain / Logistics,"Supply chain, logistics, inventory-state, handoff, and recovery-path review",Supply Chain / Logistics Agent Diagnostic Pack candidate skin,High,unverified
+Zillow,Construction / Real Estate Operations,"Construction, jobsite, asset, digital-twin, handoff, and recovery-path review",Infrastructure Operations Workflow Pack candidate skin,Medium,unverified
+Zscaler,Security / Risk Operations,"Security operations, risk routing, incident coordination, handoff, and recovery-path review",Incident Response Coordination Pack candidate skin,High,unverified

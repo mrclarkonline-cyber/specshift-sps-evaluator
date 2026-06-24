@@ -158,5 +158,12 @@
     "private_prep_queue": "/Users/benjaminjustinclark/.specshift/private_outreach_prep_queue.csv",
     "repo_company_targets": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
     "rule": "Append only. Prep only. No email sent."
+  },
+  "choice_c_industrial_finance_append": {
+    "private_source_file": "/Users/benjaminjustinclark/.specshift/incoming_lead_lists/gemini-code-1782328695547.txt",
+    "private_contacts_local": "/Users/benjaminjustinclark/.specshift/prospect_contacts_unverified.csv",
+    "private_prep_queue": "/Users/benjaminjustinclark/.specshift/private_outreach_prep_queue.csv",
+    "repo_company_targets": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/sanitized_company_targets_v0_1.csv",
+    "rule": "Append only. Prep only. No email sent."
   }
 }
