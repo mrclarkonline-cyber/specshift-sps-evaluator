@@ -1,0 +1,56 @@
+{
+  "artifact_name": "Vertical Pack Build Workflow v0.1",
+  "status": "internal build workflow, not buyer-facing copy",
+  "purpose": "Define the repeatable terminal workflow for building vertical diagnostic packs from the same SpecShift core engine.",
+  "workflow_steps": [
+    {
+      "step": 1,
+      "name": "Select vertical pack",
+      "description": "Choose one registered vertical pack from the registry. Do not build multiple packs in the same pass."
+    },
+    {
+      "step": 2,
+      "name": "Define buyer workflow",
+      "description": "State the concrete workflow, buyer role, decision owner, expected inputs, systems touched, and consequences of silent failure."
+    },
+    {
+      "step": 3,
+      "name": "Map relevant failure families",
+      "description": "Select only the v0.5 failure families that fit the workflow. Do not imply all 25 cases apply."
+    },
+    {
+      "step": 4,
+      "name": "Create vertical pack artifact",
+      "description": "Generate a JSON and TXT artifact with pack positioning, buyer pain, safe use cases, excluded uses, likely failure patterns, selected v0.5 cases, deliverables, fit gate, and failure column."
+    },
+    {
+      "step": 5,
+      "name": "Run claim-boundary review",
+      "description": "Check that the pack does not claim benchmark, certification, compliance, security, runtime, deployment, clinical/legal/HR decision-making, or safety guarantee status."
+    },
+    {
+      "step": 6,
+      "name": "Commit and index",
+      "description": "Validate JSON, update index, run claim scanner, and commit using claim-safe language."
+    }
+  ],
+  "required_pack_fields": [
+    "artifact_name",
+    "status",
+    "core_product",
+    "pack_name",
+    "buyer_problem",
+    "target_workflows",
+    "buyer_roles",
+    "likely_failure_families",
+    "selected_v0_5_case_types",
+    "safe_use_cases",
+    "excluded_uses",
+    "deliverables",
+    "fit_gate",
+    "claim_boundary",
+    "failure_column"
+  ],
+  "standard_boundary_line": "This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.",
+  "failure_column": "This workflow fails if it creates vertical packs that are disconnected from the core product, overclaim domain validation, or suggest professional/regulatory assurance."
+}

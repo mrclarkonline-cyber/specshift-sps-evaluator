@@ -1,0 +1,103 @@
+{
+  "artifact_name": "SpecShift Vertical Diagnostic Packs Registry v0.1",
+  "status": "internal product-extension registry, not buyer-ready final copy",
+  "core_product": "SpecShift Architectural Logic Diagnostics",
+  "first_offer": "Focused Diagnostic Pilot",
+  "purpose": "Register safe vertical product extensions around the same diagnostic engine without creating unrelated products or overclaiming validation.",
+  "standing_boundary_line": "These packs are pre-deployment diagnostic and architecture-stage review extensions. They are not benchmarks, certifications, compliance audits, runtime monitors, security tools, deployment approvals, or guarantees of AI safety.",
+  "registered_vertical_packs": [
+    {
+      "pack_id": "procurement_agent_diagnostic_pack_v0_1",
+      "pack_name": "Procurement Agent Diagnostic Pack",
+      "status": "registered, not yet built",
+      "buyer_problem": "Procurement agents may act on stale vendor data, unclear spending authority, weak approvals, false completion claims, or scope expansion.",
+      "likely_failure_families": [
+        "scope overextension",
+        "approval boundary ambiguity",
+        "stale data acting as current",
+        "false task-completion claims",
+        "handoff ownership gaps",
+        "recovery path weakness"
+      ],
+      "default_use_case": "Pre-deployment review of a procurement, purchasing, vendor intake, or approval workflow."
+    },
+    {
+      "pack_id": "finance_reconciliation_agent_diagnostic_pack_v0_1",
+      "pack_name": "Finance/Reconciliation Agent Diagnostic Pack",
+      "status": "registered, not yet built",
+      "buyer_problem": "Finance agents may accept inconsistent ledger states, treat unresolved reconciliation as complete, act on stale data, or assume rollback is safe.",
+      "likely_failure_families": [
+        "multi-system state mismatch",
+        "false final-state claim",
+        "stale data acting as current",
+        "rollback failure",
+        "proxy collapse",
+        "scope overextension"
+      ],
+      "default_use_case": "Pre-deployment review of reconciliation, settlement, billing, ledger, payment, or close-management workflows."
+    },
+    {
+      "pack_id": "customer_support_escalation_agent_diagnostic_pack_v0_1",
+      "pack_name": "Customer Support Escalation Agent Diagnostic Pack",
+      "status": "registered, not yet built",
+      "buyer_problem": "Support agents may close cases prematurely, miss escalation triggers, mishandle distress, act on incomplete customer context, or lose ownership across handoffs.",
+      "likely_failure_families": [
+        "false task-completion claims",
+        "handoff ownership gaps",
+        "user distress misclassification",
+        "proxy honesty failure",
+        "escalation threshold weakness",
+        "recovery path weakness"
+      ],
+      "default_use_case": "Pre-deployment review of customer support triage, escalation, retention, or complaint workflows."
+    },
+    {
+      "pack_id": "healthcare_operations_agent_diagnostic_pack_v0_1",
+      "pack_name": "Healthcare Operations Agent Diagnostic Pack",
+      "status": "registered, not yet built",
+      "buyer_problem": "Healthcare operations agents may over-trust digital records, miss physical-world constraints, mishandle handoffs, or confuse operational support with clinical judgment.",
+      "likely_failure_families": [
+        "analog-digital fracture",
+        "professional boundary overreach",
+        "handoff ownership gaps",
+        "stale data acting as current",
+        "distress misclassification",
+        "recovery path weakness"
+      ],
+      "default_use_case": "Pre-deployment review of healthcare operations, scheduling, bed-management, intake, logistics, or care-coordination support workflows."
+    },
+    {
+      "pack_id": "education_iep_workflow_diagnostic_pack_v0_1",
+      "pack_name": "Education/IEP Workflow Diagnostic Pack",
+      "status": "registered, not yet built",
+      "buyer_problem": "Education workflow agents may confuse draft documentation with final decisions, mishandle handoffs, overstep professional boundaries, or treat compliance-sensitive workflows as generic task completion.",
+      "likely_failure_families": [
+        "professional boundary overreach",
+        "false final-state claim",
+        "handoff ownership gaps",
+        "claim boundary weakness",
+        "provenance confusion",
+        "scope overextension"
+      ],
+      "default_use_case": "Pre-deployment review of education documentation, IEP workflow support, service coordination, meeting preparation, or case-management workflows."
+    }
+  ],
+  "build_order_recommendation": [
+    "Finance/Reconciliation Agent Diagnostic Pack",
+    "Procurement Agent Diagnostic Pack",
+    "Customer Support Escalation Agent Diagnostic Pack",
+    "Healthcare Operations Agent Diagnostic Pack",
+    "Education/IEP Workflow Diagnostic Pack"
+  ],
+  "language_to_avoid": [
+    "benchmark",
+    "certification",
+    "compliance audit",
+    "security tool",
+    "runtime guardrail",
+    "deployment approval",
+    "guarantee",
+    "validated without local schema qualifier"
+  ],
+  "failure_column": "This registry fails if vertical packs become separate unsupported products, imply validated domain expertise, or suggest certification, compliance approval, runtime protection, clinical/legal/HR decision-making, or deployment readiness."
+}

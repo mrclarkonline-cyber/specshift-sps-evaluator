@@ -1,0 +1,36 @@
+Vertical Pack Build Workflow v0.1
+Internal build workflow. Not buyer-facing copy.
+
+Purpose:
+Define the repeatable terminal workflow for building vertical diagnostic packs from the same SpecShift core engine.
+
+Workflow:
+1. Select one registered vertical pack.
+2. Define the concrete buyer workflow.
+3. Map only relevant v0.5 failure families.
+4. Create a JSON and TXT vertical pack artifact.
+5. Run claim-boundary review.
+6. Validate, index, claim-scan, and commit.
+
+Required pack fields:
+- artifact_name
+- status
+- core_product
+- pack_name
+- buyer_problem
+- target_workflows
+- buyer_roles
+- likely_failure_families
+- selected_v0_5_case_types
+- safe_use_cases
+- excluded_uses
+- deliverables
+- fit_gate
+- claim_boundary
+- failure_column
+
+Standard boundary line:
+This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, or guarantee of AI safety.
+
+Failure column:
+This workflow fails if it creates vertical packs that are disconnected from the core product, overclaim domain validation, or suggest professional/regulatory assurance.

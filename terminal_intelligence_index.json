@@ -213,7 +213,27 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/call_companion/README.md",
       "description": "README for SpecShift Proton-ready call companion with correct signature"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/vertical_diagnostic_packs_registry_v0_1.json",
+      "description": "Registry of safe SpecShift vertical diagnostic pack extensions"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/vertical_diagnostic_packs_registry_v0_1.txt",
+      "description": "Plain-text registry of safe SpecShift vertical diagnostic pack extensions"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/vertical_pack_build_workflow_v0_1.json",
+      "description": "Repeatable workflow for building vertical diagnostic packs"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/vertical_pack_build_workflow_v0_1.txt",
+      "description": "Plain-text workflow for building vertical diagnostic packs"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/README.md",
+      "description": "README for SpecShift vertical diagnostic packs"
     }
   ],
-  "next_action": "Use call companion after buyer calls to generate Proton-ready follow-up, pilot scope outline, and selected v0.5 candidate cases. Manually review selected cases before proposal."
+  "next_action": "Build one vertical diagnostic pack at a time, starting with Finance/Reconciliation or Procurement. Keep all packs tied to the core focused diagnostic pilot model."
 }
