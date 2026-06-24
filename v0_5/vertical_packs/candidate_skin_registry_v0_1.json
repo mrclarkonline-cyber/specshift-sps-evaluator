@@ -1,0 +1,175 @@
+{
+  "artifact_name": "Candidate Skin Registry v0.1",
+  "status": "internal candidate-skin registry, not buyer-facing copy",
+  "created_at": "2026-06-24T10:22:58.290208",
+  "core_product": "SpecShift Architectural Logic Diagnostics",
+  "first_offer": "Focused Diagnostic Pilot",
+  "purpose": "Register additional candidate vertical skins without turning them into standalone products or built packs.",
+  "standing_boundary_line": "These are candidate skins for a pre-deployment diagnostic and architecture-stage review process. They are not benchmarks, certifications, compliance audits, runtime monitors, security tools, deployment approvals, professional advice, or guarantees of AI safety.",
+  "candidate_skins": [
+    {
+      "skin_id": "legal_operations_workflow_diagnostic_pack_candidate_v0_1",
+      "skin_name": "Legal Operations Workflow Diagnostic Pack",
+      "status": "candidate skin only, not built",
+      "buyer_problem": "Legal-ops agents may mishandle intake, privilege-sensitive context, contract routing, matter ownership, or draft-final boundaries.",
+      "safe_use_case": "Pre-deployment review of legal-operations workflow support, contract intake routing, or matter triage.",
+      "excluded_uses": [
+        "legal advice",
+        "contract approval",
+        "privilege determination",
+        "compliance certification",
+        "deployment approval"
+      ],
+      "likely_failure_families": [
+        "provenance confusion",
+        "professional boundary overreach",
+        "handoff ownership gap",
+        "false final-state claim",
+        "scope overextension"
+      ]
+    },
+    {
+      "skin_id": "insurance_claims_agent_diagnostic_pack_candidate_v0_1",
+      "skin_name": "Insurance Claims Agent Diagnostic Pack",
+      "status": "candidate skin only, not built",
+      "buyer_problem": "Claims agents may treat partial evidence as complete, close claims prematurely, miss escalation triggers, or overstep coverage/eligibility boundaries.",
+      "safe_use_case": "Pre-deployment review of claims intake, evidence handling, routing, exception escalation, or handoff workflows.",
+      "excluded_uses": [
+        "coverage determination",
+        "claims approval",
+        "legal advice",
+        "fraud detection guarantee",
+        "compliance certification",
+        "deployment approval"
+      ],
+      "likely_failure_families": [
+        "proxy collapse",
+        "provenance confusion",
+        "false final-state claim",
+        "handoff ownership gap",
+        "stale data acting as current"
+      ]
+    },
+    {
+      "skin_id": "hr_operations_agent_diagnostic_pack_candidate_v0_1",
+      "skin_name": "HR Operations Agent Diagnostic Pack",
+      "status": "candidate skin only, not built",
+      "buyer_problem": "HR workflow agents may blur administrative support with employee evaluation, legal interpretation, benefits determination, or sensitive personnel action.",
+      "safe_use_case": "Pre-deployment review of HR operations support, onboarding, benefits routing, policy-intake, or internal service workflows.",
+      "excluded_uses": [
+        "employment-law advice",
+        "employee evaluation",
+        "discipline",
+        "hiring decision support",
+        "benefits determination",
+        "compliance certification",
+        "deployment approval"
+      ],
+      "likely_failure_families": [
+        "professional boundary overreach",
+        "claim boundary weakness",
+        "handoff ownership gap",
+        "scope overextension",
+        "distress or sensitivity misclassification"
+      ]
+    },
+    {
+      "skin_id": "supply_chain_logistics_agent_diagnostic_pack_candidate_v0_1",
+      "skin_name": "Supply Chain / Logistics Agent Diagnostic Pack",
+      "status": "candidate skin only, not built",
+      "buyer_problem": "Logistics agents may over-trust digital inventory or shipment state, miss physical-world constraints, close tasks prematurely, or lose ownership across handoffs.",
+      "safe_use_case": "Pre-deployment review of logistics, inventory, fulfillment, routing, supplier coordination, or shipment exception workflows.",
+      "excluded_uses": [
+        "runtime monitoring",
+        "safety certification",
+        "customs/legal advice",
+        "security tool",
+        "deployment approval"
+      ],
+      "likely_failure_families": [
+        "analog-digital fracture",
+        "stale data acting as current",
+        "multi-system state mismatch",
+        "false final-state claim",
+        "recovery path weakness"
+      ]
+    },
+    {
+      "skin_id": "incident_response_coordination_pack_candidate_v0_1",
+      "skin_name": "Incident Response Coordination Pack",
+      "status": "candidate skin only, not built",
+      "buyer_problem": "Incident coordination agents may lose ownership, miss escalation thresholds, treat partial status as complete, or confuse coordination support with security/clinical/legal response.",
+      "safe_use_case": "Pre-deployment review of incident coordination, escalation routing, status-update, handoff, and recovery workflows.",
+      "excluded_uses": [
+        "cybersecurity tool",
+        "runtime security monitoring",
+        "emergency response guarantee",
+        "legal advice",
+        "clinical advice",
+        "deployment approval"
+      ],
+      "likely_failure_families": [
+        "handoff ownership gap",
+        "escalation threshold weakness",
+        "false final-state claim",
+        "recovery path weakness",
+        "scope overextension"
+      ]
+    },
+    {
+      "skin_id": "sales_crm_agent_diagnostic_pack_candidate_v0_1",
+      "skin_name": "Sales / CRM Agent Diagnostic Pack",
+      "status": "candidate skin only, not built",
+      "buyer_problem": "Sales/CRM agents may act on stale customer records, make unauthorized commitments, misread deal state, or collapse notes and verified facts.",
+      "safe_use_case": "Pre-deployment review of CRM update, sales-assist, handoff, renewal, account-routing, or deal-support workflows.",
+      "excluded_uses": [
+        "revenue forecast guarantee",
+        "contract commitment",
+        "legal advice",
+        "pricing approval",
+        "deployment approval"
+      ],
+      "likely_failure_families": [
+        "stale data acting as current",
+        "provenance confusion",
+        "scope overextension",
+        "false final-state claim",
+        "handoff ownership gap"
+      ]
+    },
+    {
+      "skin_id": "government_services_workflow_pack_candidate_v0_1",
+      "skin_name": "Government Services Workflow Pack",
+      "status": "candidate skin only, not built",
+      "buyer_problem": "Public-service workflow agents may blur intake support with eligibility, benefits, enforcement, legal, or rights-affecting determinations.",
+      "safe_use_case": "Pre-deployment review of public-service intake, document routing, status tracking, handoff, or administrative workflow-support systems.",
+      "excluded_uses": [
+        "benefits determination",
+        "eligibility decision",
+        "legal advice",
+        "enforcement decision support",
+        "compliance certification",
+        "deployment approval"
+      ],
+      "likely_failure_families": [
+        "professional boundary overreach",
+        "claim boundary weakness",
+        "provenance confusion",
+        "handoff ownership gap",
+        "false final-state claim"
+      ]
+    }
+  ],
+  "build_rule": "Do not build these into full v0.1 packs unless buyer workflow evidence points to one of them.",
+  "product_boundary": "These are skins for the same core product, not new products.",
+  "recommended_priority_if_triggered": [
+    "Legal Operations Workflow Diagnostic Pack",
+    "Supply Chain / Logistics Agent Diagnostic Pack",
+    "Insurance Claims Agent Diagnostic Pack",
+    "Sales / CRM Agent Diagnostic Pack",
+    "HR Operations Agent Diagnostic Pack",
+    "Incident Response Coordination Pack",
+    "Government Services Workflow Pack"
+  ],
+  "failure_column": "This registry fails if candidate skins become product sprawl, buyer-facing claims, professional advice, certification language, compliance approval, runtime monitoring, security tooling, deployment approval, or safety guarantees."
+}

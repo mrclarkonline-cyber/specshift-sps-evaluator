@@ -337,7 +337,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/LOCAL_ASSET_MAP.md",
       "description": "Human-readable safe map of known local SpecShift assets"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/candidate_skin_registry_v0_1.json",
+      "description": "Candidate registry for additional SpecShift vertical skins"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/candidate_skin_registry_v0_1.txt",
+      "description": "Plain-text candidate registry for additional SpecShift vertical skins"
     }
   ],
-  "next_action": "Use LOCAL_ASSET_MAP.md, OPERATOR_QUICKSTART.md, and SPECSHIFT_COMMANDS.md to locate assets. Stop building; begin outreach or use buyer-call companion when someone responds."
+  "next_action": "Candidate skins registered. Do not build more packs unless buyer workflow evidence points to one. Begin outreach or use buyer-call companion when someone responds."
 }

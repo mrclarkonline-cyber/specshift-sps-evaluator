@@ -94,5 +94,10 @@
     "future live buyer data without explicit review"
   ],
   "standard_health_check": "cd ~/specshift_terminal_intelligence && python3 v0_5/ops/specshift_ops_dashboard.py && python3 v0_5/claim_scan_git_log.py && git status --short",
-  "failure_column": "This map fails if it becomes a secret store, claims total knowledge of the Mac, indexes unrelated personal files, or replaces actual health checks."
+  "failure_column": "This map fails if it becomes a secret store, claims total knowledge of the Mac, indexes unrelated personal files, or replaces actual health checks.",
+  "candidate_skins": {
+    "registry_json": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/candidate_skin_registry_v0_1.json",
+    "registry_txt": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/candidate_skin_registry_v0_1.txt",
+    "rule": "Registered only; do not build unless buyer workflow evidence points to one."
+  }
 }
