@@ -361,7 +361,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/README.md",
       "description": "SpecShift outreach pipeline README"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_pipeline_manager.py",
+      "description": "CLI helper for focused outreach target and touch tracking"
     }
   ],
-  "next_action": "Outreach pipeline tracker is ready. Add target rows, send bounded outreach one contact at a time, and use buyer-call companion when someone responds."
+  "next_action": "Outreach pipeline manager is ready. Add real target rows one at a time, send bounded outreach, and use buyer-call companion when someone responds."
 }

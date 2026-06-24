@@ -43,3 +43,32 @@ Status values:
 
 Failure column:
 This tracker fails if it becomes bulk-spam tooling, stores unnecessary personal data, weakens claim boundaries, or replaces actual buyer discovery.
+
+## Outreach Pipeline Manager
+
+Run:
+
+cd ~/specshift_terminal_intelligence
+python3 v0_5/outreach_pipeline/outreach_pipeline_manager.py dashboard
+
+Add a target:
+
+python3 v0_5/outreach_pipeline/outreach_pipeline_manager.py add-target --company "Company Name" --person "Name" --role "Role" --email "name@example.com" --workflow "one concrete workflow" --pack "Finance/Reconciliation Agent Diagnostic Pack" --priority high
+
+Log a touch:
+
+python3 v0_5/outreach_pipeline/outreach_pipeline_manager.py log-touch --target-id T001 --touch-type initial_email --subject "SpecShift focused diagnostic pilot" --response-status contacted --next-action "wait for reply"
+
+List targets:
+
+python3 v0_5/outreach_pipeline/outreach_pipeline_manager.py list-targets
+
+List touches:
+
+python3 v0_5/outreach_pipeline/outreach_pipeline_manager.py list-touches
+
+Rules:
+- Focused outreach only.
+- No bulk send.
+- No silent send.
+- One buyer/workflow at a time.

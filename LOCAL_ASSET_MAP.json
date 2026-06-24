@@ -105,5 +105,10 @@
     "targets_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_targets_v0_1.csv",
     "touch_log_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_touch_log_v0_1.csv",
     "rule": "Focused outreach only. No bulk send. One buyer/workflow at a time."
+  },
+  "outreach_pipeline_manager": {
+    "script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_pipeline_manager.py",
+    "dashboard_command": "cd ~/specshift_terminal_intelligence && python3 v0_5/outreach_pipeline/outreach_pipeline_manager.py dashboard",
+    "rule": "Focused outreach only. No bulk send. One buyer/workflow at a time."
   }
 }
