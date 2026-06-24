@@ -72,3 +72,35 @@ Rules:
 - No bulk send.
 - No silent send.
 - One buyer/workflow at a time.
+
+## Choice C private contact queue
+
+Private contacts are stored outside the repo:
+
+~/.specshift/prospect_contacts_unverified.csv
+
+Run dashboard:
+
+python3 v0_5/outreach_pipeline/private_contact_queue.py dashboard
+
+Search without dumping full email list:
+
+python3 v0_5/outreach_pipeline/private_contact_queue.py search "OpenAI"
+
+List company names:
+
+python3 v0_5/outreach_pipeline/private_contact_queue.py list-companies
+
+Mark one contact verified after independent verification:
+
+python3 v0_5/outreach_pipeline/private_contact_queue.py mark-verified --company "Company Name" --email "person@example.com"
+
+Mark verified and outreach allowed:
+
+python3 v0_5/outreach_pipeline/private_contact_queue.py mark-verified --company "Company Name" --email "person@example.com" --allow-outreach
+
+Rules:
+- Full contacts remain private local data.
+- Repo stores company-level target intelligence only.
+- No bulk send.
+- No outreach unless independently verified.
