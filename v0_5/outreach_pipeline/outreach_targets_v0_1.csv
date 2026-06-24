@@ -1,0 +1,2 @@
+target_id,company,target_person,role,email,source,buyer_category,likely_workflow,matched_pack_or_skin,priority,status,last_touch_date,next_action,notes
+T001,,,,,,agentic_ai_platform,,,high,not_contacted,,identify one concrete workflow,

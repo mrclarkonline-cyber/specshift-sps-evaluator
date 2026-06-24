@@ -345,7 +345,23 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/candidate_skin_registry_v0_1.txt",
       "description": "Plain-text candidate registry for additional SpecShift vertical skins"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_targets_v0_1.csv",
+      "description": "SpecShift focused outreach target tracker"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_touch_log_v0_1.csv",
+      "description": "SpecShift outreach touch log"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_pipeline_summary_v0_1.json",
+      "description": "SpecShift outreach pipeline summary"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/README.md",
+      "description": "SpecShift outreach pipeline README"
     }
   ],
-  "next_action": "Candidate skins registered. Do not build more packs unless buyer workflow evidence points to one. Begin outreach or use buyer-call companion when someone responds."
+  "next_action": "Outreach pipeline tracker is ready. Add target rows, send bounded outreach one contact at a time, and use buyer-call companion when someone responds."
 }

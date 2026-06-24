@@ -1,0 +1,2 @@
+touch_id,date,target_id,company,contact_email,touch_type,subject,artifact_sent,response_status,next_action,notes
+C001,,T001,,,initial_email,,focused diagnostic pilot one-pager,not_sent,,

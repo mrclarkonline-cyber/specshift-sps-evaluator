@@ -1,0 +1,10 @@
+{
+  "artifact_name": "SpecShift Outreach Pipeline Tracker v0.1",
+  "status": "internal outreach tracker, not a CRM, not bulk-email tooling",
+  "files": [
+    "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_targets_v0_1.csv",
+    "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_touch_log_v0_1.csv",
+    "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/README.md"
+  ],
+  "rule": "Track focused outreach one buyer/workflow at a time. No bulk send."
+}

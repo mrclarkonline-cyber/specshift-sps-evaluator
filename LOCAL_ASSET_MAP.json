@@ -99,5 +99,11 @@
     "registry_json": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/candidate_skin_registry_v0_1.json",
     "registry_txt": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/candidate_skin_registry_v0_1.txt",
     "rule": "Registered only; do not build unless buyer workflow evidence points to one."
+  },
+  "outreach_pipeline": {
+    "folder": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline",
+    "targets_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_targets_v0_1.csv",
+    "touch_log_csv": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_touch_log_v0_1.csv",
+    "rule": "Focused outreach only. No bulk send. One buyer/workflow at a time."
   }
 }
