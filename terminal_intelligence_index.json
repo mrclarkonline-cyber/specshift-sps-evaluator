@@ -321,7 +321,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/exports/specshift_outreach_ready_snapshot_20260624_094632/MANIFEST_SHA256.txt",
       "description": "SHA256 manifest for outreach-ready safe snapshot"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/OPERATOR_QUICKSTART.md",
+      "description": "Top-level SpecShift operator quickstart"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/SPECSHIFT_COMMANDS.md",
+      "description": "Top-level SpecShift command reference"
     }
   ],
-  "next_action": "Outreach-ready snapshot exported. Stop building products; begin focused outreach or use buyer-call companion when someone responds."
+  "next_action": "Use OPERATOR_QUICKSTART.md and SPECSHIFT_COMMANDS.md as the top-level operating guide. Stop building; begin outreach or use buyer-call companion when someone responds."
 }
