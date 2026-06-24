@@ -110,5 +110,10 @@
     "script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_pipeline_manager.py",
     "dashboard_command": "cd ~/specshift_terminal_intelligence && python3 v0_5/outreach_pipeline/outreach_pipeline_manager.py dashboard",
     "rule": "Focused outreach only. No bulk send. One buyer/workflow at a time."
+  },
+  "asset_audit": {
+    "script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/ops/specshift_asset_audit.py",
+    "run_command": "cd ~/specshift_terminal_intelligence && python3 v0_5/ops/specshift_asset_audit.py",
+    "rule": "Audits known SpecShift company assets only; does not crawl personal/local Ben files."
   }
 }

@@ -365,7 +365,11 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_pipeline/outreach_pipeline_manager.py",
       "description": "CLI helper for focused outreach target and touch tracking"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/ops/specshift_asset_audit.py",
+      "description": "Safe audit of known local SpecShift company assets"
     }
   ],
-  "next_action": "Outreach pipeline manager is ready. Add real target rows one at a time, send bounded outreach, and use buyer-call companion when someone responds."
+  "next_action": "Use ops dashboard and asset audit for maintenance checks. Stop building; begin outreach or use buyer-call companion when someone responds."
 }
