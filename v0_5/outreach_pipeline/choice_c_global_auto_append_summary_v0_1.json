@@ -1,0 +1,12 @@
+{
+  "artifact_name": "Choice C Global Auto Append Summary v0.1",
+  "created_at": "2026-06-24T14:18:21.329678",
+  "source_file": "/Users/benjaminjustinclark/.specshift/incoming_lead_lists/gemini-code-1782324920072.txt",
+  "incoming_rows_seen": 40,
+  "private_contacts_added": 40,
+  "private_contacts_total": 1002,
+  "company_targets_added": 13,
+  "company_targets_total": 954,
+  "invalid_non_na_email_rows": 0,
+  "rule": "Append only. Full contacts stay private. Repo gets company-level target intelligence. No email sent."
+}
