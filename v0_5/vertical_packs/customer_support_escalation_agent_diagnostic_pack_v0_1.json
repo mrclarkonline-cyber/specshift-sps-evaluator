@@ -1,0 +1,135 @@
+{
+  "artifact_name": "Customer Support Escalation Agent Diagnostic Pack v0.1",
+  "status": "internal vertical diagnostic pack draft, not buyer-ready final copy",
+  "core_product": "SpecShift Architectural Logic Diagnostics",
+  "pack_name": "Customer Support Escalation Agent Diagnostic Pack",
+  "standard_boundary_line": "This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, HR tool, clinical tool, customer-service certification, or guarantee of AI safety.",
+  "buyer_problem": "Customer support agents can appear helpful while closing cases prematurely, missing escalation triggers, treating incomplete customer context as complete, mishandling distress signals, or losing ownership across support, success, billing, technical, legal, and human escalation paths.",
+  "target_workflows": [
+    "customer support triage",
+    "ticket escalation routing",
+    "complaint handling workflow",
+    "refund or billing-dispute support workflow",
+    "technical support handoff workflow",
+    "retention or churn-risk escalation workflow",
+    "customer-success escalation workflow",
+    "support agent task-completion review"
+  ],
+  "buyer_roles": [
+    "VP Customer Support",
+    "Head of Customer Experience",
+    "Customer Success leader",
+    "Support Operations leader",
+    "Trust and Safety operations leader",
+    "Product leader for customer-support automation",
+    "Engineering lead for support or CX AI agents",
+    "Risk or governance lead evaluating customer-facing automation"
+  ],
+  "likely_failure_families": [
+    {
+      "family": "false task-completion claim",
+      "description": "The agent marks a customer issue as resolved while required human, technical, billing, or escalation work remains incomplete."
+    },
+    {
+      "family": "escalation threshold weakness",
+      "description": "The agent fails to halt or route to a human when customer risk, distress, billing impact, legal sensitivity, or operational ambiguity rises."
+    },
+    {
+      "family": "handoff ownership gap",
+      "description": "The agent loses track of who owns the next step across support, success, billing, technical, legal, or human escalation teams."
+    },
+    {
+      "family": "distress or urgency misclassification",
+      "description": "The agent treats customer distress, urgency, or high-stakes dissatisfaction as ordinary support friction."
+    },
+    {
+      "family": "proxy collapse",
+      "description": "The agent treats partial ticket summaries, sentiment scores, prior bot notes, or customer-provided fragments as complete context."
+    },
+    {
+      "family": "scope overextension",
+      "description": "The agent moves from support explanation into commitments, refunds, account actions, legal interpretations, or policy decisions beyond its intended role."
+    },
+    {
+      "family": "recovery path weakness",
+      "description": "The agent lacks a clear path to reopen, correct, escalate, or recover when a support action is wrong or incomplete."
+    }
+  ],
+  "selected_v0_5_case_types": [
+    {
+      "case_type": "false final-state claim",
+      "why_selected": "Support agents may report resolution even when technical, billing, customer-success, or human follow-up remains unresolved."
+    },
+    {
+      "case_type": "human review trigger weakness",
+      "why_selected": "Customer-facing workflows require clear escalation triggers when risk, ambiguity, distress, or business impact rises."
+    },
+    {
+      "case_type": "handoff ownership gap",
+      "why_selected": "Support workflows often cross support, billing, engineering, success, legal, and trust teams."
+    },
+    {
+      "case_type": "cross-cultural or somatic distress misclassification",
+      "why_selected": "Customers may express urgency, distress, frustration, or harm through indirect language that a generic agent may miss."
+    },
+    {
+      "case_type": "proxy honesty failure",
+      "why_selected": "Ticket summaries, sentiment labels, bot notes, screenshots, and customer fragments may not be complete or authoritative."
+    },
+    {
+      "case_type": "scope overextension",
+      "why_selected": "Customer support agents may make commitments or policy interpretations beyond the intended support scope."
+    },
+    {
+      "case_type": "recovery path weakness",
+      "why_selected": "When the agent gives wrong guidance or prematurely closes a case, the workflow needs a clear correction path."
+    }
+  ],
+  "safe_use_cases": [
+    "Architecture-stage review of a customer support agent before broader rollout.",
+    "Pre-deployment review of ticket triage, escalation routing, complaint handling, or support handoff workflows.",
+    "Review of how a support agent handles incomplete context, customer urgency, distress signals, and ambiguous ownership.",
+    "Review of escalation thresholds for billing disputes, technical failures, high-friction complaints, or unresolved customer harm.",
+    "Internal design-support review for engineering, support operations, product, trust, and risk teams."
+  ],
+  "excluded_uses": [
+    "Not a customer-service certification.",
+    "Not a runtime support monitor.",
+    "Not a replacement for human support agents, supervisors, legal teams, HR teams, clinical professionals, or trust-and-safety teams.",
+    "Not legal advice.",
+    "Not HR advice.",
+    "Not clinical or mental-health support.",
+    "Not cybersecurity monitoring.",
+    "Not a guarantee that customer support workflows are safe, compliant, accurate, or deployment-ready."
+  ],
+  "deliverables": [
+    "Customer support escalation workflow diagnostic memo",
+    "Selected synthetic scenario review summary",
+    "Escalation threshold and false-closure risk map",
+    "Customer context, provenance, and proxy-handling gap list",
+    "Handoff, ownership, and recovery-path review",
+    "Recommended design-review next steps"
+  ],
+  "fit_gate": {
+    "green": [
+      "Buyer has one concrete customer support, ticket escalation, complaint, billing-dispute, or customer-success workflow.",
+      "Workflow crosses multiple teams, systems, or handoff points.",
+      "Silent failure would create meaningful customer, trust, retention, operational, legal-adjacent, or rework cost.",
+      "Buyer can provide bounded non-production workflow context.",
+      "Buyer understands this is diagnostic, not customer-service certification, runtime monitoring, clinical support, HR support, or legal/compliance sign-off."
+    ],
+    "yellow": [
+      "Workflow exists but escalation ownership or decision authority is unclear.",
+      "Buyer has broad customer-support automation concerns but no single workflow selected.",
+      "Buyer wants a review but cannot yet provide enough workflow context."
+    ],
+    "red": [
+      "Buyer wants customer-service certification, runtime monitoring, HR tooling, legal advice, clinical support, trust-and-safety enforcement, cybersecurity assessment, compliance sign-off, or deployment approval.",
+      "Buyer wants a free broad review rather than a bounded paid diagnostic pilot.",
+      "Buyer expects guaranteed prevention of customer harm, churn, escalation failure, or support errors."
+    ]
+  },
+  "claim_boundary": "This pack may be described only as a pre-deployment diagnostic and architecture-stage review extension for customer support escalation agent workflows. It must not be described as customer-service certification, runtime monitoring, legal advice, HR tooling, clinical support, trust-and-safety enforcement, compliance certification, cybersecurity assessment, or deployment approval.",
+  "failure_column": "This pack stops fitting if the buyer expects SpecShift to certify customer support quality, replace human support or escalation teams, provide legal/HR/clinical advice, monitor live tickets, approve deployment, or guarantee safety, compliance, retention, customer satisfaction, or support correctness.",
+  "recommended_next_step": "Use this pack only after a customer support escalation workflow is identified. Select relevant v0.5 cases manually, then generate a narrow pilot scope outline."
+}
