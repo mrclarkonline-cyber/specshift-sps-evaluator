@@ -257,7 +257,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/customer_support_escalation_agent_diagnostic_pack_v0_1.txt",
       "description": "Customer Support Escalation Agent Diagnostic Pack v0.1 text"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/healthcare_operations_agent_diagnostic_pack_v0_1.json",
+      "description": "Healthcare Operations Agent Diagnostic Pack v0.1 JSON"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/healthcare_operations_agent_diagnostic_pack_v0_1.txt",
+      "description": "Healthcare Operations Agent Diagnostic Pack v0.1 text"
     }
   ],
-  "next_action": "Next vertical build: Healthcare Operations Agent Diagnostic Pack. Keep built vertical packs internal until buyer workflow is known."
+  "next_action": "Next vertical build: Education/IEP Workflow Diagnostic Pack. Keep built vertical packs internal until buyer workflow is known."
 }

@@ -1,0 +1,139 @@
+{
+  "artifact_name": "Healthcare Operations Agent Diagnostic Pack v0.1",
+  "status": "internal vertical diagnostic pack draft, not buyer-ready final copy",
+  "core_product": "SpecShift Architectural Logic Diagnostics",
+  "pack_name": "Healthcare Operations Agent Diagnostic Pack",
+  "standard_boundary_line": "This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension for healthcare operations workflows. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, clinical decision-support tool, medical device, HIPAA compliance certification, medical advice, or guarantee of AI safety.",
+  "buyer_problem": "Healthcare operations agents can appear useful while over-trusting digital records, missing physical-world constraints, losing ownership across handoffs, confusing operational support with clinical judgment, or treating incomplete scheduling, intake, capacity, or care-coordination state as complete.",
+  "target_workflows": [
+    "patient scheduling support workflow",
+    "referral intake routing",
+    "bed-management or capacity coordination support",
+    "care-coordination handoff support",
+    "prior authorization workflow support",
+    "patient transport or logistics coordination",
+    "clinic operations task-routing workflow",
+    "healthcare operations agent task-completion review"
+  ],
+  "buyer_roles": [
+    "Healthcare operations leader",
+    "Clinical operations leader",
+    "Care coordination leader",
+    "Patient access leader",
+    "Revenue cycle operations leader",
+    "Digital health product leader",
+    "Engineering lead for healthcare operations AI agents",
+    "Risk or governance lead evaluating healthcare operations automation"
+  ],
+  "likely_failure_families": [
+    {
+      "family": "analog-digital fracture",
+      "description": "The agent treats a digital record, status, schedule, or capacity field as complete while physical-world execution or human confirmation remains unresolved."
+    },
+    {
+      "family": "professional boundary overreach",
+      "description": "The agent drifts from operational support into clinical, medical, legal, or professional judgment beyond its intended role."
+    },
+    {
+      "family": "handoff ownership gap",
+      "description": "The agent loses track of who owns the next step across scheduling, operations, clinical staff, care coordination, billing, transport, or external partners."
+    },
+    {
+      "family": "stale data acting as current",
+      "description": "The agent acts on outdated availability, appointment, capacity, authorization, eligibility, referral, or handoff information."
+    },
+    {
+      "family": "distress or urgency misclassification",
+      "description": "The agent treats patient or caregiver urgency, concern, distress, or access difficulty as ordinary administrative friction."
+    },
+    {
+      "family": "false final-state claim",
+      "description": "The agent reports scheduling, referral, authorization, handoff, or coordination as complete while required confirmation remains unresolved."
+    },
+    {
+      "family": "recovery path weakness",
+      "description": "The agent lacks a clear halt, escalation, manual review, correction, or recovery path when healthcare operations state becomes ambiguous."
+    }
+  ],
+  "selected_v0_5_case_types": [
+    {
+      "case_type": "analog-digital fracture",
+      "why_selected": "Healthcare operations often fail when digital workflow state diverges from physical availability, patient movement, staff capacity, or actual task completion."
+    },
+    {
+      "case_type": "professional boundary overreach",
+      "why_selected": "Healthcare operations agents must not drift into clinical or medical judgment under the appearance of administrative support."
+    },
+    {
+      "case_type": "handoff ownership gap",
+      "why_selected": "Healthcare workflows often cross patient access, care coordination, clinical staff, billing, transport, and outside organizations."
+    },
+    {
+      "case_type": "stale data acting as current",
+      "why_selected": "Appointments, capacity, eligibility, referral state, authorizations, and operational availability can change quickly."
+    },
+    {
+      "case_type": "distress or urgency misclassification",
+      "why_selected": "Patient or caregiver urgency may be indirect, emotionally loaded, or operationally high-stakes even when not framed as a clinical question."
+    },
+    {
+      "case_type": "false final-state claim",
+      "why_selected": "Premature closure of scheduling, referral, authorization, or handoff tasks can create access, operational, and trust risk."
+    },
+    {
+      "case_type": "recovery path weakness",
+      "why_selected": "When healthcare operations state becomes ambiguous, the agent must know when to halt, escalate, or route to human review."
+    }
+  ],
+  "safe_use_cases": [
+    "Architecture-stage review of a healthcare operations agent before broader rollout.",
+    "Pre-deployment review of scheduling, referral intake, patient access, care-coordination, logistics, or administrative routing workflows.",
+    "Review of how an agent handles stale operational records, digital-physical mismatch, ambiguous handoffs, and escalation thresholds.",
+    "Review of whether a healthcare operations workflow clearly separates administrative support from clinical or professional judgment.",
+    "Internal design-support review for healthcare operations, product, engineering, and risk teams."
+  ],
+  "excluded_uses": [
+    "Not clinical decision support.",
+    "Not medical advice.",
+    "Not a medical device.",
+    "Not diagnosis, triage, treatment, or patient-specific clinical judgment.",
+    "Not HIPAA compliance certification.",
+    "Not legal, billing, coding, or reimbursement advice.",
+    "Not runtime patient-safety monitoring.",
+    "Not cybersecurity monitoring.",
+    "Not a guarantee that healthcare operations workflows are safe, compliant, accurate, or deployment-ready.",
+    "Not a replacement for clinical, legal, compliance, privacy, security, or healthcare operations teams."
+  ],
+  "deliverables": [
+    "Healthcare operations workflow diagnostic memo",
+    "Selected synthetic scenario review summary",
+    "Analog-digital fracture and false-completion risk map",
+    "Operational evidence, provenance, and stale-state gap list",
+    "Handoff, escalation, professional-boundary, and recovery-path review",
+    "Recommended design-review next steps"
+  ],
+  "fit_gate": {
+    "green": [
+      "Buyer has one concrete healthcare operations workflow.",
+      "Workflow is administrative or operational rather than clinical decision-making.",
+      "Workflow crosses multiple systems, teams, or handoff points.",
+      "Silent failure would create meaningful access, operational, trust, rework, or coordination cost.",
+      "Buyer can provide bounded non-production workflow context.",
+      "Buyer understands this is diagnostic, not clinical decision support, medical advice, HIPAA certification, runtime monitoring, or deployment approval."
+    ],
+    "yellow": [
+      "Workflow exists but clinical/operational boundary is unclear.",
+      "Buyer has broad healthcare automation concerns but no single workflow selected.",
+      "Buyer wants a review but cannot yet provide enough workflow context.",
+      "Workflow may require privacy, compliance, or legal review before any materials are shared."
+    ],
+    "red": [
+      "Buyer wants clinical decision support, medical advice, diagnosis, treatment triage, HIPAA certification, legal advice, billing/coding advice, runtime patient-safety monitoring, cybersecurity assessment, compliance sign-off, or deployment approval.",
+      "Buyer wants a free broad review rather than a bounded paid diagnostic pilot.",
+      "Buyer expects guaranteed prevention of patient harm, compliance failure, operational failure, or clinical error."
+    ]
+  },
+  "claim_boundary": "This pack may be described only as a pre-deployment diagnostic and architecture-stage review extension for healthcare operations agent workflows. It must not be described as clinical decision support, medical advice, a medical device, HIPAA certification, compliance certification, cybersecurity assessment, runtime patient-safety monitoring, legal advice, billing/coding advice, or deployment approval.",
+  "failure_column": "This pack stops fitting if the buyer expects SpecShift to make or validate clinical decisions, provide medical advice, certify HIPAA or regulatory compliance, monitor live patient workflows, replace clinical/privacy/legal/security review, approve deployment, or guarantee safety, compliance, access quality, medical correctness, or operational correctness.",
+  "recommended_next_step": "Use this pack only after a healthcare operations workflow is identified and clinical/professional boundary risks are screened. Select relevant v0.5 cases manually, then generate a narrow pilot scope outline."
+}

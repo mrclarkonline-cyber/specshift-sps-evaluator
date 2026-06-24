@@ -66,7 +66,7 @@
     {
       "pack_id": "healthcare_operations_agent_diagnostic_pack_v0_1",
       "pack_name": "Healthcare Operations Agent Diagnostic Pack",
-      "status": "registered, not yet built",
+      "status": "built as v0.1 internal draft",
       "buyer_problem": "Healthcare operations agents may over-trust digital records, miss physical-world constraints, mishandle handoffs, or confuse operational support with clinical judgment.",
       "likely_failure_families": [
         "analog-digital fracture",
@@ -76,7 +76,11 @@
         "distress misclassification",
         "recovery path weakness"
       ],
-      "default_use_case": "Pre-deployment review of healthcare operations, scheduling, bed-management, intake, logistics, or care-coordination support workflows."
+      "default_use_case": "Pre-deployment review of healthcare operations, scheduling, bed-management, intake, logistics, or care-coordination support workflows.",
+      "artifact_paths": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/healthcare_operations_agent_diagnostic_pack_v0_1.json",
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/healthcare_operations_agent_diagnostic_pack_v0_1.txt"
+      ]
     },
     {
       "pack_id": "education_iep_workflow_diagnostic_pack_v0_1",
@@ -112,5 +116,5 @@
     "validated without local schema qualifier"
   ],
   "failure_column": "This registry fails if vertical packs become separate unsupported products, imply validated domain expertise, or suggest certification, compliance approval, runtime protection, clinical/legal/HR decision-making, or deployment readiness.",
-  "next_recommended_build": "Healthcare Operations Agent Diagnostic Pack"
+  "next_recommended_build": "Education/IEP Workflow Diagnostic Pack"
 }

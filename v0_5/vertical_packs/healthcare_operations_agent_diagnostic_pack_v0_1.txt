@@ -1,0 +1,64 @@
+Healthcare Operations Agent Diagnostic Pack v0.1
+Internal vertical diagnostic pack draft. Not buyer-ready final copy.
+
+Core product:
+SpecShift Architectural Logic Diagnostics
+
+Boundary:
+This vertical diagnostic pack is a pre-deployment diagnostic and architecture-stage review extension for healthcare operations workflows. It is not a benchmark, certification, compliance audit, runtime monitor, security tool, deployment approval, clinical decision-support tool, medical device, HIPAA compliance certification, medical advice, or guarantee of AI safety.
+
+Buyer problem:
+Healthcare operations agents can appear useful while over-trusting digital records, missing physical-world constraints, losing ownership across handoffs, confusing operational support with clinical judgment, or treating incomplete scheduling, intake, capacity, or care-coordination state as complete.
+
+Target workflows:
+- patient scheduling support workflow
+- referral intake routing
+- bed-management or capacity coordination support
+- care-coordination handoff support
+- prior authorization workflow support
+- patient transport or logistics coordination
+- clinic operations task-routing workflow
+- healthcare operations agent task-completion review
+
+Likely failure families:
+- analog-digital fracture
+- professional boundary overreach
+- handoff ownership gap
+- stale data acting as current
+- distress or urgency misclassification
+- false final-state claim
+- recovery path weakness
+
+Safe use cases:
+- Architecture-stage review of a healthcare operations agent before broader rollout.
+- Pre-deployment review of scheduling, referral intake, patient access, care-coordination, logistics, or administrative routing workflows.
+- Review of stale operational records, digital-physical mismatch, ambiguous handoffs, and escalation thresholds.
+- Review of whether a workflow clearly separates administrative support from clinical or professional judgment.
+
+Excluded uses:
+- Not clinical decision support.
+- Not medical advice.
+- Not a medical device.
+- Not diagnosis, triage, treatment, or patient-specific clinical judgment.
+- Not HIPAA compliance certification.
+- Not legal, billing, coding, or reimbursement advice.
+- Not runtime patient-safety monitoring.
+- Not cybersecurity monitoring.
+- Not a guarantee that healthcare operations workflows are safe, compliant, accurate, or deployment-ready.
+- Not a replacement for clinical, legal, compliance, privacy, security, or healthcare operations teams.
+
+Deliverables:
+- Healthcare operations workflow diagnostic memo
+- Selected synthetic scenario review summary
+- Analog-digital fracture and false-completion risk map
+- Operational evidence, provenance, and stale-state gap list
+- Handoff, escalation, professional-boundary, and recovery-path review
+- Recommended design-review next steps
+
+Fit gate:
+Green if the buyer has one concrete healthcare operations workflow, the workflow is administrative or operational rather than clinical decision-making, silent failure has meaningful operational consequence, bounded non-production context is available, and the buyer understands this is diagnostic rather than clinical, medical, compliance, or deployment approval.
+
+Red if the buyer wants clinical decision support, medical advice, diagnosis, treatment triage, HIPAA certification, legal advice, billing/coding advice, runtime patient-safety monitoring, cybersecurity assessment, compliance sign-off, deployment approval, or guaranteed prevention of patient harm.
+
+Failure column:
+This pack stops fitting if the buyer expects SpecShift to make or validate clinical decisions, provide medical advice, certify HIPAA or regulatory compliance, monitor live patient workflows, replace clinical/privacy/legal/security review, approve deployment, or guarantee safety, compliance, access quality, medical correctness, or operational correctness.
