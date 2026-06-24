@@ -1,0 +1,98 @@
+{
+  "artifact_name": "SpecShift Local Asset Map v0.1",
+  "status": "internal local organization map, no secrets included",
+  "created_at": "2026-06-24T09:59:51.780818",
+  "purpose": "Document where known SpecShift assets live without crawling the whole Mac.",
+  "root_repo": "/Users/benjaminjustinclark/specshift_terminal_intelligence",
+  "start_here": [
+    "OPERATOR_QUICKSTART.md",
+    "SPECSHIFT_COMMANDS.md",
+    "terminal_intelligence_index.json",
+    "LOCAL_ASSET_MAP.json",
+    "LOCAL_ASSET_MAP.md"
+  ],
+  "core_engine": {
+    "suite": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/unknown_domain_adversarial_suite_v0_5.json",
+    "validator": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/validate_v0_5_suite.py",
+    "claim_scanner": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/claim_scan_git_log.py",
+    "claim_register": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/git_log_claim_language_register_v0_1.json"
+  },
+  "commercial_assets": {
+    "pilot_posture": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/focused_paid_pilot_posture_v0_1.json",
+    "outreach_email": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/bounded_paid_pilot_outreach_email_v0_2.json",
+    "role_variants": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/role_specific_outreach_variants_v0_2.json",
+    "scoping_script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/focused_diagnostic_pilot_scoping_call_script_v0_1.json",
+    "one_pager_pdf": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_focused_diagnostic_pilot_one_pager_v0_1.pdf",
+    "one_pager_text": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/specshift_focused_diagnostic_pilot_one_pager_v0_1.txt",
+    "outreach_readiness_folder": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/outreach_readiness"
+  },
+  "call_companion": {
+    "script": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/call_companion/specshift_call_companion.py",
+    "readme": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/call_companion/README.md",
+    "run_command": "cd ~/specshift_terminal_intelligence && python3 v0_5/call_companion/specshift_call_companion.py",
+    "use_when": [
+      "buyer call",
+      "company rep email captured",
+      "need Proton-ready follow-up",
+      "need scope outline",
+      "need selected v0.5 cases"
+    ]
+  },
+  "email_bridge": {
+    "readiness_check": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/proton_bridge_readiness_check.py",
+    "guarded_sender": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/proton_guarded_send.py",
+    "example_config": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/email_bridge/proton_bridge_config.example.json",
+    "local_config_not_committed": "/Users/benjaminjustinclark/.specshift/proton_bridge_config.json",
+    "smtp_host": "smtp.protonmail.ch",
+    "smtp_port": 587,
+    "from_email": "ben@specshiftlabs.com",
+    "keychain_service": "specshift_proton_smtp_token",
+    "keychain_account": "ben@specshiftlabs.com",
+    "safety_rules": [
+      "preview first",
+      "exact typed confirmation per email",
+      "no bulk send",
+      "no silent send",
+      "no Apple Mail",
+      "no secrets in repo"
+    ]
+  },
+  "vertical_packs": {
+    "folder": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs",
+    "registry": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/vertical_packs/vertical_diagnostic_packs_registry_v0_1.json",
+    "built_v0_1_packs": [
+      "finance_reconciliation_agent_diagnostic_pack_v0_1",
+      "procurement_agent_diagnostic_pack_v0_1",
+      "customer_support_escalation_agent_diagnostic_pack_v0_1",
+      "healthcare_operations_agent_diagnostic_pack_v0_1",
+      "education_iep_workflow_diagnostic_pack_v0_1"
+    ]
+  },
+  "ops": {
+    "dashboard": "/Users/benjaminjustinclark/specshift_terminal_intelligence/v0_5/ops/specshift_ops_dashboard.py",
+    "run_command": "cd ~/specshift_terminal_intelligence && python3 v0_5/ops/specshift_ops_dashboard.py"
+  },
+  "exports": {
+    "folder": "/Users/benjaminjustinclark/specshift_terminal_intelligence/exports",
+    "git_status": "ignored by git"
+  },
+  "stable_points": [
+    {
+      "tag": "outreach-ready-v0.1"
+    },
+    {
+      "commit": "5bcfcd1",
+      "description": "Add operator quickstart"
+    }
+  ],
+  "do_not_commit_or_expose": [
+    "SMTP passwords or tokens",
+    "macOS Keychain token value",
+    "private keys",
+    "buyer confidential materials",
+    "unrelated personal files",
+    "future live buyer data without explicit review"
+  ],
+  "standard_health_check": "cd ~/specshift_terminal_intelligence && python3 v0_5/ops/specshift_ops_dashboard.py && python3 v0_5/claim_scan_git_log.py && git status --short",
+  "failure_column": "This map fails if it becomes a secret store, claims total knowledge of the Mac, indexes unrelated personal files, or replaces actual health checks."
+}

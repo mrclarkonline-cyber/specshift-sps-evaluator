@@ -329,7 +329,15 @@
     {
       "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/SPECSHIFT_COMMANDS.md",
       "description": "Top-level SpecShift command reference"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/LOCAL_ASSET_MAP.json",
+      "description": "Machine-readable safe map of known local SpecShift assets"
+    },
+    {
+      "path": "/Users/benjaminjustinclark/specshift_terminal_intelligence/LOCAL_ASSET_MAP.md",
+      "description": "Human-readable safe map of known local SpecShift assets"
     }
   ],
-  "next_action": "Use OPERATOR_QUICKSTART.md and SPECSHIFT_COMMANDS.md as the top-level operating guide. Stop building; begin outreach or use buyer-call companion when someone responds."
+  "next_action": "Use LOCAL_ASSET_MAP.md, OPERATOR_QUICKSTART.md, and SPECSHIFT_COMMANDS.md to locate assets. Stop building; begin outreach or use buyer-call companion when someone responds."
 }
