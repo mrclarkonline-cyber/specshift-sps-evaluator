@@ -16,3 +16,17 @@ Summary:
 - UFT / warp / vacuum operational-seeming material remains archive-caution.
 - Authorship and priority materials are preserved as provenance.
 - SpecShift commercial boundary remains buyer-controlled, observable-only, human-adjudicated, and externally unvalidated until pilot evidence exists.
+
+## 2026-06-27 - ∆∆F corpus worklist added
+
+Added active worklist for converting the 18-document ∆∆F corpus into bounded wiki memory.
+
+Priority order:
+
+1. Public-safe diagnostic extraction.
+2. Theoretical continuity extraction.
+3. Physics-caution extraction.
+4. Safety / priority / provenance extraction.
+5. SpecShift boundary integration.
+
+Immediate next best action: create `ddf_public_safe_claims.md` from the diagnostic-core documents.

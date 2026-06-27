@@ -45,3 +45,4 @@ Promotion status: Operational
 - [∆∆F / SpecShift Document Corpus Index](indexes/ddf_document_corpus_index.md)
 - [18-Document Intake](operator_memory/ddf_18_document_intake_2026-06-27.md)
 - [∆∆F Canon Map](operator_memory/ddf_canon_map_2026-06-27.md)
+- [∆∆F Corpus Worklist](operator_memory/ddf_corpus_worklist_2026-06-27.md)
