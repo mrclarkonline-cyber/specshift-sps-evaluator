@@ -72,3 +72,10 @@ Promotion status: Operational
 - [Authorship Priority Register](operator_memory/ddf_safety_priority_provenance/authorship_priority_register.md)
 - [Non-Operational Boundary Register](operator_memory/ddf_safety_priority_provenance/non_operational_boundary_register.md)
 - [Reviewer Provenance Notes](operator_memory/ddf_safety_priority_provenance/reviewer_provenance_notes.md)
+
+### SpecShift Boundary Integration
+
+- [SpecShift: What It Is / Is Not](operator_memory/specshift_boundary_integration/specshift_what_it_is_is_not.md)
+- [SpecShift Diagnostic Origin Note](operator_memory/specshift_boundary_integration/specshift_diagnostic_origin_note.md)
+- [SpecShift Pilot Validation Boundary](operator_memory/specshift_boundary_integration/specshift_pilot_validation_boundary.md)
+- [SpecShift Claim Gauntlet Checklist](operator_memory/specshift_boundary_integration/specshift_claim_gauntlet_checklist.md)

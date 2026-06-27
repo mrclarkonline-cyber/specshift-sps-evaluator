@@ -128,10 +128,10 @@ Goal: connect the ∆∆F corpus to SpecShift without overclaiming.
 
 Outputs to create or update:
 
-- [ ] SpecShift public-safe “what it is / is not” page.
-- [ ] SpecShift buyer-safe diagnostic origin note.
-- [ ] SpecShift pilot validation boundary.
-- [ ] SpecShift claim gauntlet checklist.
+- [x] SpecShift public-safe “what it is / is not” page.
+- [x] SpecShift buyer-safe diagnostic origin note.
+- [x] SpecShift pilot validation boundary.
+- [x] SpecShift claim gauntlet checklist.
 
 Required boundary:
 

@@ -107,3 +107,22 @@ Boundary preserved:
 - high-risk or physics-adjacent material remains caution-routed
 
 Next best action: SpecShift boundary integration.
+
+## 2026-06-27 - SpecShift boundary integration
+
+Created Round 6 SpecShift boundary integration set:
+
+- `memory_layer/wiki/operator_memory/specshift_boundary_integration/specshift_what_it_is_is_not.md`
+- `memory_layer/wiki/operator_memory/specshift_boundary_integration/specshift_diagnostic_origin_note.md`
+- `memory_layer/wiki/operator_memory/specshift_boundary_integration/specshift_pilot_validation_boundary.md`
+- `memory_layer/wiki/operator_memory/specshift_boundary_integration/specshift_claim_gauntlet_checklist.md`
+
+Boundary preserved:
+
+- SpecShift is buyer-controlled and observable-only
+- ∆∆F is intellectual provenance, not commercial proof
+- outputs remain candidate-discrepancy memos for human adjudication
+- buyer validation remains required
+- no consciousness, intent, hidden-mechanism, physics-proof, or production-validation overclaim
+
+Next best action: final corpus completion audit.
