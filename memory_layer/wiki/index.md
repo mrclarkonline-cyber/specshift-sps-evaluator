@@ -32,3 +32,6 @@ Promotion status: Operational
 
 ## Core
 - [[core/protected-claim-index]]
+
+## Operator Memory
+- [[operator_memory/current-memory-snapshot]]
