@@ -38,3 +38,4 @@ Promotion status: Operational
 - [[outreach/outreach-lessons-current]]
 - [[outreach/outreach-wave-state-current]]
 - [[operator_memory/current-conversation-scrape]]
+- operator_memory/current-conversation-strategic-scrape-2026-06-26.md - consolidated scrape of current AI-test and audit lessons

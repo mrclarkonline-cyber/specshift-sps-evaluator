@@ -58,3 +58,4 @@ Added important-only scrape from current outreach conversation:
 - no-attachment first-contact rule
 - Proton SMTP guarded-send reminders
 - protected-core outreach boundaries
+- 2026-06-26 23:12:34: Added consolidated current-conversation strategic scrape to wiki operator memory.
