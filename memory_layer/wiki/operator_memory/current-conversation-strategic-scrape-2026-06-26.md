@@ -1684,3 +1684,147 @@ Current bidder-facing tools:
 
 Do not use patched old CLEAN runner for bidder artifacts.
 
+
+
+## Strategic scrape: ΔΔF diagnostic whitepaper, Grok boundary test, and archive posture
+
+Date added: 2026-06-26
+
+### Canonical whitepaper status
+
+A technical whitepaper was created and rebuilt as:
+
+- `ddF_Diagnostic_Whitepaper_v3.pdf`
+- Title: `ΔΔF as an Observational Diagnostic for State-Conditional Control`
+- Scope: observational diagnostic only
+- Contents: toy-suite statistics, robustness analysis, figures, math framing, and Appendix A Forward Test Note v1
+- Public posture: constraint-satisfaction evaluation, not mechanism paper
+
+Core claims are bounded to:
+
+- null silence under state-action independence
+- failure transparency under degraded authority
+- robustness under perturbation
+- context consistency across CartPole, GridWorld, and toy systems
+- forward test as the only appropriate next discriminator
+
+### Important whitepaper framing
+
+Use this language:
+
+> The diagnostic is strictly observational and constraint-based. It evaluates whether second-order trajectory structure remains sensitive to state-conditional coupling under perturbation, null controls, and degraded authority.
+
+Avoid claiming:
+
+- agency detection in a metaphysical sense
+- consciousness detection
+- cosmology
+- geometry
+- horizon effects
+- CMB / BAO / GW predictions
+- mechanism disclosure
+- universal validity
+
+### Grok interaction lesson
+
+Grok initially tried to expand the diagnostic into FRW/cosmology/GW/horizon mechanism claims. That was rejected as out of scope.
+
+Correct boundary response used:
+
+> This is outside the scope of what I’m publishing. The whitepaper is strictly an observational diagnostic with toy constraints and makes no claims about cosmology, geometry, horizons, or GW mechanisms. I’m not adopting any numerical projections. Please limit feedback to: (1) whether the forward test is clearly stated and falsifiable, and (2) whether the toy-suite statistics and figures support the stated constraints. Any claims beyond that would require independently reproducible pipelines and public data provenance.
+
+Grok then complied and confirmed:
+
+- the forward test is clear and falsifiable
+- toy-suite stats and figures support the stated constraints
+- no mechanism expansion is needed
+
+Lesson:
+
+> External models can be useful as bounded referees only. Do not invite synthesis, theoretical extension, or mechanism bridging.
+
+### Safe public reply after Grok validation
+
+Use:
+
+> Thanks. This matches the intended scope. I’m proceeding without expanding beyond the diagnostic and forward test.
+
+### Forward test posture
+
+Forward Test Note v1 should remain:
+
+- pre-stated observable
+- bounded time window
+- explicit pass/fail condition
+- failure is informative and acceptable
+- no mechanism inference from success or failure
+
+Do not expand the forward test into physical-domain predictions unless independently generated and reproducible from local pipeline outputs.
+
+### Archive / provenance lesson
+
+Attempted to copy and lock `ddF_Diagnostic_Whitepaper_v3.pdf` into:
+
+- `~/Documents/ΔΔF_Archive/01_PUBLIC/Papers/`
+- `~/Documents/ΔΔF_Archive/01_PUBLIC/LOCKED/`
+
+Terminal could not read Downloads or Desktop due to macOS privacy permissions.
+
+Conclusion:
+
+- no substantive problem
+- hash/lock is nice-to-have, not required for credibility
+- do not churn on filesystem permissions unless needed before public release or bidder sharing
+
+If locking later, first grant Terminal Full Disk Access or manually drag the PDF into the Archive using Finder.
+
+### To-do status
+
+Completed:
+
+- Toy A
+- Toy B
+- Toy C
+- math/science-forward whitepaper
+- toy statistics and figures integrated
+- Grok scope validation
+- public boundary language
+
+Remaining:
+
+1. Freeze/local archive/hash only if needed.
+2. Standalone Forward Test Note v1 if public timestamp is desired.
+3. Optional hostile-reader brief.
+4. No more toys unless a serious evaluator asks for replication or the forward test fails.
+
+Standing rule:
+
+> Stop adding demonstrations once the toy lane is closed. The next serious discriminator is forward testing, not more explanation.
+
+### Public-safe X/Substack framing
+
+Two-sentence Substack framing:
+
+> We rebuilt the ΔΔF whitepaper with full math, robustness analysis, toy statistics, and cross-environment figures, treating the diagnostic as a constraint-satisfaction test rather than a pattern claim. It now shows signal, silence, and graceful failure across CartPole and GridWorld, making a forward prediction the only remaining uncertainty.
+
+### Protected boundary
+
+Do not share:
+
+- core mechanism
+- implementation internals
+- proprietary scoring
+- buyer strategy
+- pilot specifics
+- hidden thresholds
+- unpublished pipeline details
+
+Allowed public discussion:
+
+- observational diagnostic
+- second-order trajectory structure
+- negative controls
+- null silence
+- graceful failure
+- robustness
+- forward-test falsifiability
