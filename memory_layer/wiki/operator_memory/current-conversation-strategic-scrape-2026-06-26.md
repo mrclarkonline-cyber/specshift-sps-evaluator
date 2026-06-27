@@ -1387,3 +1387,300 @@ This thread is public-facing communication, not method disclosure. It can point 
 Post 1 hooks emotionally.
 Post 3 is strongest for scientists, engineers, and systems thinkers.
 Consider using Post 3 as the anchor/pin if the thread performs well.
+
+
+## MM07 bidder-pack and X-thread scrape
+
+### Core decision
+
+User decided the work must be presented as science for bidders, not as forced perfection.
+
+Important framing:
+
+- not perfect science
+- not curve fitting
+- not post hoc patching
+- observation based on tests
+- honest limits are acceptable and expected
+- if the pack needs to be redone cleanly, redo it cleanly
+
+The user explicitly rejected continued patchwork once it began to look like “cooking the books.” Correct response was to separate evidence from toy behavior and rebuild clean bidder-facing artifacts.
+
+### MM07 packaging outcome
+
+Final bidder-facing folder:
+
+- `/Users/benjaminjustinclark/Documents/ΔΔF/Archive/MM-06_DeltaEVarControl/results/logs/bidderpack_MM07_damp090_FINAL`
+
+This is the current FINAL pack for MM07 damp090.
+
+Important files added:
+
+- `README_BIDDERS_MM07.md`
+- `FIGURE_CAPTIONS_MM07.md`
+- `NOTE_REDUCE_CENSORING_MM07.md`
+- `EXEC_BLURB_ONE_SENTENCE.txt`
+- `COMPARISON_SENTENCE.txt`
+- `RUN.txt`
+- `INPUTS_SHA256.txt`
+- `TOOLS_SHA256.txt`
+- `SHA256SUMS.txt`
+
+Evidence folder:
+
+- `evidence/phasemap_out.json`
+- `evidence/phasemap_certificate.md`
+
+Toy folder:
+
+- `toy/mediumtoy_v2_trace.csv`
+- `toy/mediumtoy_v2_lambda_vs_t.svg`
+- `toy/mediumtoy_v2_var_vs_t.svg`
+- `toy/mediumtoy_v2_shock_vs_t.svg`
+- `toy/mediumtoy_v2_summary.json`
+
+### Evidence result
+
+Evidence source:
+
+- `/Users/benjaminjustinclark/Documents/ΔΔF/Archive/MM-06_DeltaEVarControl/results/mm06_patchG_tap_v01_summary_damp090.csv`
+
+Evidence phase-map result:
+
+- tag: damp090
+- K_STABLE: 2
+- lambda_star_varCTRL: 0.002
+- med_varCTRL_at_star: 0.04998626515654053
+- lambda_floor: 0.002
+- LEFT_CENSORED: 1
+- PHASEMAP_STABLE: 1
+
+Interpretation:
+
+- λ* lands on the minimum tested λ in the frozen TAP summary grid.
+- This means the evidence is left-censored.
+- The true threshold could be below 0.002.
+- This is not a defect or curve fit. It is an honest limit of the tested grid.
+- To reduce censoring, future runs must extend λ below the current floor and densify near the suspected boundary.
+
+### Medium toy v2 result
+
+The medium toy was redone cleanly as a separate simulator.
+
+Important design decision:
+
+- old patched `run_MM07_medium_toy_controller_CLEAN.py` is kept for archaeology only
+- it is no longer bidder-facing
+- bidder-facing medium toy uses `mediumtoy_v2_sim.py`
+- toy is behavior-only
+- toy does not compute evidence λ*
+- toy uses the same TAP λ grid
+- toy computes its own toy λ*_toy from synthetic dynamics
+- toy is not claimed to equal evidence
+
+Toy v2 result:
+
+- grid_min: 0.002
+- grid_max: 10.0
+- grid_len: 19
+- T: 24
+- WIN: 5
+- HOLD: 2
+- seed: 7
+- K_STABLE: 2
+- lambda_star_toy: 3.0
+- TOY_STABLE: 1
+- LEFT_CENSORED_toy: 0
+
+Interpretation:
+
+- λ*_toy does not need to equal λ*_evidence.
+- Toy demonstrates threshold-like dynamics on the same grid.
+- Evidence is bounded by the minimum tested λ.
+- Divergence reflects censoring plus mechanism, not inconsistency.
+
+Standing comparison sentence:
+
+> λ*_toy need not equal λ*_evidence because the toy is a behavior-only simulator that explores dynamics on the same λ grid, while λ*_evidence is bounded by the minimum tested λ in the frozen TAP summary, so divergence reflects censoring and mechanism, not inconsistency.
+
+### Executive blurb
+
+Standing one-sentence email cover blurb:
+
+> Attached is a clean MM07 pack that separates evidence (λ* from the frozen TAP grid, transparently left-censored) from a grid-constrained toy that demonstrates how an interior threshold can emerge without re-analyzing or fitting the evidence.
+
+### Scientific framing
+
+Core public and bidder framing:
+
+- This is not optimization.
+- It is mapping where instability disappears.
+- λ behaves like a stability-margin knob.
+- λ* is where instability disappears, not where performance peaks.
+- Evidence and toy are separated on purpose.
+- Censoring is a grid limitation, not a weakness.
+- Do not claim toy and evidence numerically match.
+- Do not claim phase diagrams are literal thermodynamics.
+- Use control and metastability graphics as mental models only.
+
+### X thread status
+
+User prepared a 4-part X thread.
+
+Already posted / carrier framing:
+
+> We’re not optimizing performance.
+> We’re mapping where instability disappears.
+> Across damping regimes, there exists a sharp, reproducible λ* where variance flips sign and shocks collapse, exactly like a control margin crossing, or a phase boundary in a metastable landscape.
+> That boundary is the asset.
+
+Tweet 2 framing:
+
+> Control margins, not optimization
+> We’re not minimizing loss. We’re increasing stability margin.
+> λ plays the same role as gain/phase margin in classical control: a knob that pushes the system out of oscillatory regimes.
+> λ* is where instability disappears, not where performance peaks.
+
+Tweet 2 graphics were verified as appropriate:
+
+- Bode gain and phase margin diagrams
+- root locus stability regions
+- canonical control margin visuals
+- appropriate for bidders
+- not AI slop
+- safe because the claim is analogical, not literal
+
+Tweet 3 framing:
+
+> Workflow diagram from configurational landscapes to a metastable phase diagram with boundaries
+> This is the right mental model: metastable landscapes to phase diagram. We’re building the diagram, not tuning a point.
+> Our evidence pack makes censoring explicit: λ_evidence can land on the grid floor (LEFT_CENSORED=1) when the tested λ range doesn’t go lower. It is clean honesty, not curve-fitting.
+
+Tweet 3 graphics were conditionally approved:
+
+- metastable workflow is excellent
+- nonlinear dynamics and bifurcation visuals are acceptable only as mental models
+- do not imply quantitative correspondence
+- do not imply λ is literal thermodynamic free energy
+- text must keep “mental model” framing
+
+Tweet 3 alt text:
+
+Image 1:
+> Schematic showing how complex configurational energy landscapes map into a thermodynamic free-energy space and then into a metastable phase diagram with explicit phase boundaries. Emphasizes identifying regimes and transitions, not optimizing a single configuration.
+
+Image 2:
+> Phase-space illustration of system trajectories converging to or rotating around attractors as parameters change, highlighting how control parameters reshape stability structure rather than tune performance.
+
+Image 3:
+> Nonlinear dynamics diagram illustrating a saddle-type bifurcation where small parameter changes cause qualitative shifts in system behavior, serving as an analogy for regime boundaries rather than a quantitative model.
+
+Short fallback:
+> Conceptual figures illustrating how stability regimes emerge from landscapes and bifurcations, used as mental models, not data outputs.
+
+Tweet 4 framing:
+
+> Phase vs frequency curves showing sharper transitions with parameter changes
+> Toy λ* ≠ evidence λ* is expected: the toy demonstrates dynamics on the same λ grid, while λ_evidence is bounded by the minimum tested λ, so divergence reflects censoring plus mechanism, not a discrepancy.
+> Next obvious experiment to reduce censoring: extend the grid below the current λ_min and densify near the suspected boundary.
+
+Tweet 4 graphic was verified as safe:
+
+- classical underdamped response / control-theory schematic
+- supports threshold behavior and damping intuition
+- no quantitative claim
+- appropriate for publication
+
+Tweet 4 alt text:
+
+> Classical underdamped step response showing how system output oscillations, overshoot, decay ratio, and settling behavior depend on a control parameter. The figure illustrates how changing a single parameter sharpens or smooths the transition from oscillatory to stable behavior, serving as an analogy for identifying stability thresholds rather than optimizing steady-state performance.
+
+Short fallback:
+
+> Illustrative control-theory schematic showing how parameter changes alter oscillation decay and stability, used as a conceptual analogy for λ-dependent regime transitions.
+
+### Posting strategy
+
+Decision:
+
+- no @mentions at bidders
+- leave the posts untagged
+- public science, private signal
+- tagging bidders makes it look like a pitch
+- untagged keeps it neutral and credible
+
+Decision:
+
+- do not ask Grok before posting
+- Grok would add noise, not signal, at this stage
+- thread is internally coherent and ready
+
+### Confidence forecast for bidder contact
+
+Updated informal forecast after packaging and X readiness:
+
+- within 24 hours: 15 to 20 percent
+- within 1 week: 40 to 50 percent
+- within 1 month: 70 to 80 percent
+- within 6 months: 90 to 95 percent
+
+Expected first contact:
+
+- likely quiet
+- likely email or neutral DM
+- likely asks whether user is open to a technical conversation
+- fast replies mean curiosity
+- slow replies may mean internal seriousness
+
+### Standing guardrails
+
+Do not expose:
+
+- protected mechanism details
+- proprietary scoring
+- buyer strategy
+- pilot specifics
+- implementation internals
+- hidden runner details
+- code path churn
+
+Safe public concepts:
+
+- stability margin
+- phase boundary
+- LEFT_CENSORED
+- frozen grid
+- K_STABLE
+- evidence vs toy separation
+- threshold-like behavior
+- next experiment lowers λ floor and densifies boundary region
+
+### Workflow lessons from this exchange
+
+Important operational lesson:
+
+- when patching begins to look like cooking, stop and refactor
+- separate evidence from toy behavior
+- avoid single-script Frankenstein artifacts
+- bidder-facing tools should have explicit inputs and no hidden auto-selection
+- no convenience pickers in final artifacts
+- all final bidder-facing outputs should be reproducible, hashable, documented, and cleanly labeled
+
+Preferred structure:
+
+- evidence script
+- toy script
+- wrapper
+- README
+- figure captions
+- censoring note
+- hash files
+
+Current bidder-facing tools:
+
+- `bidderpack_tools/phasemap_from_summary.py`
+- `bidderpack_tools/mediumtoy_on_grid.py`
+- `bidderpack_tools/mediumtoy_v2_sim.py`
+
+Do not use patched old CLEAN runner for bidder artifacts.
+
