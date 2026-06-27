@@ -2688,3 +2688,85 @@ orchestra_probe "<question>"
 ~~~
 
 Do not let the user paste raw English into Terminal without a command. That creates the “Simon didn’t say” error.
+
+
+---
+
+## Beal detour lessons for SpecShift / ΔΔF work
+
+This conversation explored whether the Beal conjecture could be attacked through bounded compute, modular lane scans, valuation probes, and ΔΔF-style surprise reduction.
+
+### Core conclusion
+
+The Beal conjecture was not solved.
+
+The useful result was methodological: brute force, unit-only modular scans, and small local residue checks do not create theorem-level closure. They mainly show that local compatibility is dense and too permissive.
+
+### Transferable lesson
+
+Local compatibility is not global structural coherence.
+
+A system can pass many cheap first-order checks while still failing at the deeper synchronization layer required for true structure. In Beal, local mod-ell solvability is abundant, while exact perfect-power valuation alignment is extremely rigid.
+
+This maps directly to ΔΔF:
+
+- first-order compatibility is cheap and often misleading
+- second-order coherence is where real structure appears
+- useful diagnostics should pressure the layer where global synchronization is required
+
+### Specific Beal/number theory lessons
+
+- Unit-only modular scans killed zero exponent lanes up to tested bounds.
+- Primitive mod-ell compatibility is usually too dense to be useful at small scales.
+- Perfect-power structure requires every prime valuation to align modulo the target exponent.
+- The real mathematical bottleneck is universal valuation misalignment / anti-inflation.
+- “Bespoke valuation miracle” means relying on a custom p-adic lifting obstruction that is unlikely to appear by brute force or ad hoc search.
+- Compute can certify bounded absence but cannot replace a theorem.
+- The only meaningful proof path would require a structural theorem, not more sampling.
+
+### Reusable SpecShift architecture
+
+The useful artifact is the triage pattern:
+
+1. cheap invariants first
+2. structural filters second
+3. exact verification last
+4. log everything
+5. preserve hashes / reproducible scripts
+6. do not confuse bounded evidence with proof
+
+This is directly reusable for SpecShift diagnostics and buyer-safe demonstrations.
+
+### Product / public framing lesson
+
+Safe public claim:
+
+> We used a hard mathematical domain as a negative-control testbed for layered structural triage. The result reinforced a core diagnostic lesson: local compatibility is cheap, but global coherence is rare.
+
+Do not claim:
+
+- Beal was solved
+- Beal was nearly solved
+- bounded compute materially reduced Beal
+- ΔΔF proves number-theoretic conjectures
+
+### Strategic lesson
+
+When a domain does not yield theorem-level closure, preserve the transferable diagnostic lesson and pivot.
+
+The win is not the conjecture. The win is the reusable architecture:
+
+> compress search space, measure where coherence must synchronize, and escalate only when second-order structure survives nulls.
+
+### Standing phrase
+
+“Bespoke valuation miracle” is now part of the working lexicon. It means a fragile, over-custom local theorem someone hopes will rescue a proof, but which is unlikely to generalize or survive referee pressure without a real structural mechanism.
+
+### Standing rule
+
+For future hard-theorem detours:
+
+- stop once the bottleneck is isolated
+- do not keep running compute as emotional momentum
+- convert the result into a reusable diagnostic lesson
+- return to commercially relevant SpecShift work
