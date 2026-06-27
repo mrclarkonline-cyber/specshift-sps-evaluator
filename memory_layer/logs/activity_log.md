@@ -39,3 +39,11 @@ Seeded:
 - promotions/PROMOTION_TEMPLATE.md
 - archive/README.md
 - logs/lint_notes.md
+
+## 2026-06-26
+
+Added memory_layer/wiki.sh command runner for common wiki operations:
+- lint
+- status
+- log
+- index
