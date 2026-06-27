@@ -802,3 +802,83 @@ Keep DeepWriter outside the protected workstation stack unless a real local CLI/
 
 DeepWriter gets finished ingredients, not the recipe.
 
+
+---
+
+## Owned Continuity Expansion Paper update
+
+The consciousness / owned-continuity expansion paper has been reframed away from “measuring consciousness” and toward a bidder-safe diagnostic of real vs simulated adaptive behavior.
+
+### Core framing
+
+The paper now says the target is not consciousness itself. The target is whether observed behavior remains causally coupled to system state under perturbation.
+
+Use this wording:
+
+- It does not measure consciousness.
+- It measures behavioral authenticity under intervention.
+- It asks whether the system owns the process by which it succeeds.
+- First-order performance can persist after real adaptation has failed.
+- Mean performance can lie; second-order structure under perturbation is harder to fake.
+
+### Key technical structure
+
+Owned continuity is defined as joint persistence of:
+
+- curvature stability
+- endogenous organization
+- temporal recurrence
+- state-contingent / feedback-coupled guidance
+
+The important diagnostic distinction is:
+
+- real adaptive behavior: feedback-coupled, state-contingent correction
+- fake / simulated behavior: replay, forcing, equilibrium, structural mimicry, or externally imposed control
+
+### Horse-rider lesson
+
+The horse-rider toy clarified the missing variable.
+
+The horse responds to guidance, not weight. A person or AI controller can guide the horse if correction remains coupled to state. A rock can sit on the horse without generating guidance.
+
+The 1M-seed result showed that the current recurrence-only CT proxy does not separate rider-like and rock-like conditions, while state-contingent coupling does. This should be framed as isolating the missing term, not as failure of the framework.
+
+### Strategic bidder framing
+
+For bidders, the paper should read as:
+
+A domain-general diagnostic layer for separating genuine adaptive behavior from replayed, externally forced, or structurally simulated behavior.
+
+This is commercially relevant to:
+
+- AI evaluation
+- control systems
+- agent reliability
+- biological regulation
+- anesthesia-state transitions
+- any setting where apparent performance survives after real adaptation has failed
+
+### Public-safe X framing
+
+Use this style:
+
+Same output does not mean same system.
+
+A frozen policy, replayed sequence, or externally forced controller can look stable on first-order metrics. The question is whether the system still generates feedback-coupled correction when perturbed.
+
+The diagnostic is not asking whether a system is conscious. It asks whether behavior remains causally coupled to state, or whether the apparent success is just replay, forcing, equilibrium, or mimicry.
+
+### Guardrail
+
+Do not expose protected mechanism details, proprietary scoring, buyer strategy, pilot specifics, or implementation internals when discussing this publicly.
+
+Public framing may describe:
+
+- second-order trajectory structure
+- intervention testing
+- scrambled/replayed controls
+- behavioral authenticity
+- state-contingent coupling
+
+Keep the actual commercial method protected.
+
