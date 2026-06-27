@@ -2451,3 +2451,240 @@ For this EM paper:
 - No extra attachments
 
 The goal is to make reviewers evaluate it as a clean interpretive foundations note, not as an empirical or speculative physics package.
+
+---
+
+## Orchestra / Radar system build scrape
+
+Date: 2026-06-27
+
+### Core system built
+
+A custom Terminal-based Orchestra system was built for cross-domain signal analysis.
+
+Purpose:
+
+- answer important strategic questions indirectly
+- combine weak signals across many sources
+- avoid trusting any single pipeline
+- let Terminal collect/cluster signals while Kira interprets as conductor
+
+Core idea:
+
+> Individual pipelines are instruments. The board is the sheet music. Kira is the conductor.
+
+### Main commands
+
+- `probe_expand "<question>"` — expand natural-language question into a broader probe
+- `probe_show "<question>"` — show original question and expanded probe
+- `orchestra_probe "<question>"` — expand and run full orchestra
+- `orchestra_conduct "<query>"` — run orchestra directly on a query
+- `orchestra_board_open "<query>"` — open compact conductor board
+- `orchestra_evidence_open "<query>"` — open raw evidence trace
+- `radar_run` — run all watchlist topics once
+- `radar_status` — list latest radar boards
+- `radar_open "Topic name"` — open latest board for a radar topic
+
+### Architecture layers
+
+1. source adapters / retrieval
+2. raw orchestra report
+3. lightweight signal pass
+4. conductor board
+5. evidence trace
+6. probe expansion
+7. radar watchlist and delta comparison
+
+Canonical design map:
+
+- `~/WORK/pipelines/ARCHITECTURE_MAP.md`
+
+### Important rules
+
+- one canonical file per layer
+- no patch/fix/temp files left behind after merge
+- keep raw report, board, and evidence separate
+- new capability should be a new module
+- avoid patch-on-patch
+- after two failed fixes in one subsystem, redesign the layer
+- preserve stable board/evidence schema
+
+### Key files
+
+- `~/WORK/pipelines/guards/global_fusion_ops.zsh`
+- `~/WORK/pipelines/guards/orchestra_ops.zsh`
+- `~/WORK/pipelines/guards/orchestra_signal_ops.zsh`
+- `~/WORK/pipelines/guards/orchestra_board_ops.zsh`
+- `~/WORK/pipelines/guards/probe_expand_ops.zsh`
+- `~/WORK/pipelines/guards/radar_ops.zsh`
+- `~/WORK/pipelines/radar/watchlist.txt`
+- `~/WORK/pipelines/data/orchestra/`
+- `~/WORK/pipelines/data/radar/`
+
+### Board schema
+
+Stable board schema:
+
+~~~text
+QUERY|
+OBJECTS|
+CLUSTERS|
+CROSS_DOMAIN|
+CLUSTER|id=...|primary=...|spread=...|section_spread=...|depth=...|velocity=...|density=...|weight=...|concentration=...|items=...|sections=...|provenance=...|terms=...|entities=...
+REP|id=...|text=...
+~~~
+
+Stable evidence schema:
+
+~~~text
+QUERY|
+OBJECTS|
+CLUSTER|id=...|primary=...|spread=...|depth=...|velocity=...|sections=...|provenance=...|terms=...|entities=...
+EVIDENCE|id=...|section=...|provenance=...|trend=...|text=...
+~~~
+
+### Important design lessons
+
+The system should not try to produce polished prose. It should produce fast, structured, compact signal boards for Kira to interpret.
+
+Terminal should do retrieval, normalization, clustering, indexing, evidence preservation, and radar snapshots.
+
+Kira should do synthesis, contradiction handling, strategic interpretation, weighting meaning, and deciding what is real signal versus echo.
+
+Do not let Terminal become the intelligence bottleneck. Compress information, but do not impoverish it.
+
+### Problems discovered and fixed
+
+Problems found:
+
+- long query filenames caused macOS filename/path failures
+- section names were noisy
+- stack traces and local `/Users/...` paths leaked into clusters
+- news/patent-media echoes inflated cross-domain signal
+- labels included weak tokens
+- broad probes diluted the music
+- source independence was weaker than section-count independence
+
+Fixes added:
+
+- hash-based slugs
+- section normalization
+- traceback/path filtering
+- provenance typing
+- evidence-object clustering
+- spread/depth/velocity scoring
+- entity/concentration fields
+- primary-source gating
+- probe expansion
+- radar snapshots and deltas
+
+### Important operating lesson
+
+For big questions, do not use narrow single-keyword search. Build a probe envelope around observable mechanisms.
+
+Good probe design asks:
+
+- What would move first?
+- What institutions would touch it?
+- What financial signals would appear?
+- What infrastructure would be built?
+- What policy language would be used?
+- What technical vocabulary might describe the same thing differently?
+
+### Test questions and interpretations
+
+Arctic strategic importance:
+
+- strongest useful signal: Arctic shipping, transshipment hubs, military posture, geopolitics, Greenland, infrastructure
+- radar showed repeatable stable signal
+- strategic read: Arctic equals military posture + logistics + infrastructure + geopolitics
+
+Physical money going away globally:
+
+- signal: digital payments and CBDC infrastructure are growing
+- cash decline is real
+- no strong evidence of universal global cash abolition
+- read: transition music, not cash funeral music
+
+US East Coast flooding / mass migration:
+
+- strong signal: Norfolk/Miami flooding, subsidence, sea-level risk, insurance analysis
+- weak/no signal: coordinated federal mass relocation planning
+- read: coastal hazard and financial retreat music, not national migration-preparation music
+
+Stable isotopes:
+
+- broad probe was too diffuse
+- tighter probe surfaced better signal around silicon-28, isotope engineering, quantum computing materials
+- read: isotope-engineered materials are real, but retrieval still needs stronger primary academic/patent lanes
+
+Planet-wide defense system:
+
+- planetary-defense probe surfaced asteroid science/monitoring, not global weapons shield
+- read: observation/science music, not war drums
+
+### Radar watchlist
+
+Initial radar watchlist topics:
+
+- Arctic geopolitics
+- AI infrastructure
+- Stable isotopes
+- Climate migration
+
+Radar output is stored in:
+
+- `~/WORK/pipelines/data/radar/`
+
+Use:
+
+~~~bash
+radar_run
+radar_status
+radar_open "Arctic geopolitics"
+~~~
+
+### Current status
+
+System is operational and good enough to stop.
+
+Status:
+
+- architecture complete
+- probe expansion working
+- conductor board usable
+- radar layer operational
+- snapshots saved
+- deltas working
+- signal stability confirmed across repeated runs
+
+Future refinements, only if needed:
+
+- semantic persistence score across radar runs
+- momentum/convergence detector
+- better primary-source retrieval
+- improved phrase extraction
+- scheduled radar sweep
+- multi-probe fusion
+- better event/story deduplication
+
+### Standing usage rule
+
+If user asks for an “Orchestra” answer, do not answer from memory first.
+
+Correct workflow:
+
+1. design or expand the probe
+2. have user run `orchestra_probe` or `orchestra_conduct`
+3. read pasted board/evidence
+4. interpret as conductor
+
+### Standing command reminder
+
+If the user forgets the command, remind:
+
+~~~bash
+orchestra_probe "<question>"
+~~~
+
+Do not let the user paste raw English into Terminal without a command. That creates the “Simon didn’t say” error.
