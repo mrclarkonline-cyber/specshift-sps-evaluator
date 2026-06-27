@@ -51,3 +51,19 @@ Boundary preserved:
 - no SpecShift commercial proof claim
 
 Next best action: theoretical continuity extraction.
+
+## 2026-06-27 - ∆∆F theoretical continuity extraction
+
+Created the Round 3 theoretical continuity extraction set:
+
+- `memory_layer/wiki/operator_memory/ddf_theoretical_continuity_extraction/ddf_continuity_theory_notes.md`
+- `memory_layer/wiki/operator_memory/ddf_theoretical_continuity_extraction/performance_stability_continuity_separation.md`
+- `memory_layer/wiki/operator_memory/ddf_theoretical_continuity_extraction/owned_continuity_glossary.md`
+
+Boundary preserved:
+
+- performance, stability, and continuity are separable
+- owned continuity is a diagnostic / theoretical construct
+- no consciousness, personhood, moral-status, legal-status, or production-validation claims
+
+Next best action: physics-caution extraction.

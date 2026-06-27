@@ -71,9 +71,9 @@ Primary source group:
 
 Outputs to create:
 
-- [ ] `ddf_continuity_theory_notes.md`
-- [ ] `performance_stability_continuity_separation.md`
-- [ ] `owned_continuity_glossary.md`
+- [x] `ddf_continuity_theory_notes.md`
+- [x] `performance_stability_continuity_separation.md`
+- [x] `owned_continuity_glossary.md`
 
 Safe extraction target:
 

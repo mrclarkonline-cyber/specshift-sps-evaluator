@@ -53,3 +53,9 @@ Promotion status: Operational
 - [Falsification Conditions](operator_memory/ddf_public_safe_extraction/ddf_falsification_conditions.md)
 - [Negative Controls](operator_memory/ddf_public_safe_extraction/ddf_negative_controls.md)
 - [Non-Claims](operator_memory/ddf_public_safe_extraction/ddf_non_claims.md)
+
+### ∆∆F Theoretical Continuity Extraction
+
+- [Continuity Theory Notes](operator_memory/ddf_theoretical_continuity_extraction/ddf_continuity_theory_notes.md)
+- [Performance / Stability / Continuity Separation](operator_memory/ddf_theoretical_continuity_extraction/performance_stability_continuity_separation.md)
+- [Owned Continuity Glossary](operator_memory/ddf_theoretical_continuity_extraction/owned_continuity_glossary.md)
