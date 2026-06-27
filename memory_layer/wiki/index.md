@@ -59,3 +59,10 @@ Promotion status: Operational
 - [Continuity Theory Notes](operator_memory/ddf_theoretical_continuity_extraction/ddf_continuity_theory_notes.md)
 - [Performance / Stability / Continuity Separation](operator_memory/ddf_theoretical_continuity_extraction/performance_stability_continuity_separation.md)
 - [Owned Continuity Glossary](operator_memory/ddf_theoretical_continuity_extraction/owned_continuity_glossary.md)
+
+### ∆∆F Physics-Caution Extraction
+
+- [Physics-Adjacent Caution Notes](operator_memory/ddf_physics_caution_extraction/physics_adjacent_caution_notes.md)
+- [Physics Non-Claims](operator_memory/ddf_physics_caution_extraction/physics_non_claims.md)
+- [Archive-Caution Register](operator_memory/ddf_physics_caution_extraction/archive_caution_register.md)
+- [Terminal Visual Upgrade Plan](operator_memory/terminal_visual_upgrade_plan_2026-06-27.md)

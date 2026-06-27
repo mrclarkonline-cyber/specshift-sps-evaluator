@@ -67,3 +67,26 @@ Boundary preserved:
 - no consciousness, personhood, moral-status, legal-status, or production-validation claims
 
 Next best action: physics-caution extraction.
+
+## 2026-06-27 - ∆∆F physics-caution extraction
+
+Created the Round 4 physics-caution extraction set:
+
+- `memory_layer/wiki/operator_memory/ddf_physics_caution_extraction/physics_adjacent_caution_notes.md`
+- `memory_layer/wiki/operator_memory/ddf_physics_caution_extraction/physics_non_claims.md`
+- `memory_layer/wiki/operator_memory/ddf_physics_caution_extraction/archive_caution_register.md`
+
+Boundary preserved:
+
+- physics-adjacent documents are interpretive / phenomenological / archive-caution
+- no new-physics proof
+- no vacuum extraction
+- no warp feasibility
+- no operational control
+- no SpecShift commercial validation
+
+Also added:
+
+- `memory_layer/wiki/operator_memory/terminal_visual_upgrade_plan_2026-06-27.md`
+
+Next best action: safety / priority / provenance extraction.

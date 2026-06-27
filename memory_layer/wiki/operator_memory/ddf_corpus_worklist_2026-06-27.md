@@ -94,9 +94,9 @@ Primary source group:
 
 Outputs to create:
 
-- [ ] `physics_adjacent_caution_notes.md`
-- [ ] `physics_non_claims.md`
-- [ ] `archive_caution_register.md`
+- [x] `physics_adjacent_caution_notes.md`
+- [x] `physics_non_claims.md`
+- [x] `archive_caution_register.md`
 
 Safe extraction target:
 
