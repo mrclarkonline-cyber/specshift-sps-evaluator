@@ -882,3 +882,145 @@ Public framing may describe:
 
 Keep the actual commercial method protected.
 
+
+---
+
+## SDR / L-band experiment lessons
+
+### What happened
+
+A live SDR/L-band experiment was attempted using SDRconnect, an RSP device, and a small antenna setup.
+
+The working target was initially around the L-band / Iridium region:
+
+- Iridium baseline: 1616–1626.5 MHz
+- Practical fixed baseline target: 1625.8 MHz
+- SDRconnect saved IQ captures as WAV files, not raw `.iq`
+- The visible waterfall bursts around 1.626 GHz were consistent with known Iridium TDMA satellite bursts
+
+### Important correction
+
+The experiment did not establish:
+
+- a hidden signal
+- a novel signal class
+- a signal “no one else is picking up”
+- evidence that Symcore revealed something uniquely inaccessible to others
+
+What it did establish:
+
+- real RF signal was present
+- the setup could receive structured L-band traffic
+- the analysis pipeline could distinguish structured signal from noise
+- known periodic infrastructure can falsely look “interesting” unless periodicity filtering is added
+
+### Core methodological lesson
+
+Do not confuse:
+
+- detecting structure
+- detecting novelty
+
+Known engineered systems can be highly structured and persistent. A diagnostic must reject known periodic infrastructure before calling anything anomalous.
+
+Correct rule:
+
+> Interesting means structured, persistent, non-periodic, repeatable, and control-separated.
+
+### Hardware / storage lesson
+
+The current setup is not suitable for long unattended IQ captures.
+
+Reasons:
+
+- IQ recordings are extremely large
+- a 3-hour recording can fill the drive
+- the local machine ran out of disk space
+- processing long captures without external storage is not viable
+
+Standing rule:
+
+> Do not run long SDR IQ recordings on the internal drive.
+
+Use only short captures unless external storage and automated cleanup are available.
+
+### Experiment status
+
+The 5–7 day 1625.8 MHz overnight experiment was canceled.
+
+Reason:
+
+- insufficient storage and setup reliability
+- ambiguous data would waste time
+- the experiment would not produce clean, interpretable evidence
+
+This was the right decision.
+
+### Future restart conditions
+
+Only restart SDR work if all are true:
+
+1. External storage is connected and verified.
+2. Recording length is bounded.
+3. Files are auto-processed and auto-deleted or archived.
+4. Baseline and control captures are clearly separated.
+5. Known periodic signals are filtered before anomaly labeling.
+6. The goal is defined as method validation unless novelty survives controls.
+
+### Better v1 design
+
+If restarted, use short runs:
+
+- 10–15 minute control capture
+- 10–30 minute baseline capture
+- fixed frequency
+- fixed antenna placement
+- fixed gain
+- same time window if possible
+- process immediately
+- delete raw file after preserving summary
+
+### Useful fixed targets
+
+Use as known-signal baselines only:
+
+- 1625.8 MHz: Iridium burst baseline
+- 1541.450 MHz: Inmarsat STD-C candidate
+- 1545–1547 MHz: Inmarsat AERO region
+
+These are calibration targets, not discovery claims.
+
+### Symcore lesson
+
+Symcore/pipeline is valuable as a structure filter, not as proof of hidden content.
+
+Correct framing:
+
+> Symcore can help separate structure from noise. It cannot by itself prove novelty.
+
+### Public / strategic boundary
+
+Do not publicly claim the SDR work found anything new.
+
+Safe public claim if needed:
+
+> A small SDR experiment confirmed that known L-band satellite traffic produces strong structured signatures and that second-order filtering needs explicit known-periodic rejection before anomaly claims are meaningful.
+
+Do not imply:
+
+- “hidden signal”
+- “private frequency”
+- “non-human transmission”
+- “no one else is seeing it”
+- “confirmed anomaly”
+
+### Personal workflow lesson
+
+When an experiment becomes a time sink and produces only known outputs, stop.
+
+The correct move is not to keep sweeping. The correct move is to preserve the methodological lesson and pivot.
+
+Standing rule:
+
+> If the system cannot produce clean interpretable data, cancel early.
+
