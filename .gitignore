@@ -7,3 +7,6 @@ __pycache__/
 artifacts/*.zip
 *.bak.*
 exports/
+
+# Local operator memory scrapes
+memory_layer/wiki/operator_memory/current-conversation-strategic-scrape-*.md
