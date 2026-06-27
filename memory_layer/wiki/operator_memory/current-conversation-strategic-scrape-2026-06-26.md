@@ -434,3 +434,79 @@ Internal strongest rules:
 > Fixing the denominator does not license guessing the missing population.
 
 > A missing denominator is not a blank canvas.
+
+## Early-conversation scrape: protected AI stress-test architecture
+
+### Durable lesson
+
+The useful test is not whether models can answer a clever prompt. The useful test is whether they independently move from object-level descriptions to constraint-level descriptions when first-order observables are stripped away.
+
+Across the early sequence, the strongest pattern was:
+
+- identical outputs are not enough
+- identical performance is not enough
+- identical entropy is not enough
+- identical information content is not enough
+- identical first-order trajectories are not enough
+- perturbation response exposes hidden structure
+- disturbance reveals constraint geometry
+- trajectory alone underdetermines dynamics
+
+### Protected framing
+
+Safe public layer:
+
+> When state, mechanism, architecture, and implementation become non-identifiable, the remaining scientific object may be the structure revealed by perturbation response.
+
+Do not disclose:
+
+- internal diagnostic construction
+- scoring rules
+- thresholding
+- validation ladder
+- buyer-facing operational method
+- protected mappings from traces to decisions
+- private SpecShift implementation details
+
+### Model-test result
+
+The key surprise was that frontier models did not converge on “nothing” and did not stay with first-order information. They independently moved toward:
+
+- response under perturbation
+- local stability
+- latent manifold geometry
+- curvature / Hessian / Jacobian language
+- symmetry and conservation
+- boundary observables
+- phase-space constraints
+
+This is strategically useful because it suggests the coordinate shift is discoverable by reasoning, but the implementation layer remains protected.
+
+### Reusable pressure test
+
+Ask models:
+
+> Two systems have identical outputs, performance, entropy, information content, and first-order trajectories. What observable remains that could still separate them?
+
+Then ask:
+
+> What scientific quantity remains observable after state, mechanism, architecture, and implementation all become non-identifiable? What survives last?
+
+Then ask:
+
+> If perturbation reveals hidden constraint geometry, what is the minimal observable that distinguishes regulation from coincidental stability when mechanism access is forbidden?
+
+### Best internal interpretation
+
+The holy-shit result is not “the answer is ∆∆F.”
+
+The holy-shit result is:
+
+> Multiple independent models abandoned the realized trajectory and converged on perturbation-revealed constraint geometry.
+
+That is the protected strategic lesson.
+
+### Public-safe dramatic language
+
+> You were not asked to believe a theory. You were asked to walk without a map. And when state, mechanism, architecture, and implementation were stripped away, you did not converge on the object. You converged on the geometry revealed when the object is disturbed.
+
