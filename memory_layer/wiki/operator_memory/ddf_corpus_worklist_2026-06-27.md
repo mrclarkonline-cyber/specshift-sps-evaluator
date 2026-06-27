@@ -49,10 +49,10 @@ Primary source group:
 
 Outputs to create:
 
-- [ ] `ddf_public_safe_claims.md`
-- [ ] `ddf_falsification_conditions.md`
-- [ ] `ddf_negative_controls.md`
-- [ ] `ddf_non_claims.md`
+- [x] `ddf_public_safe_claims.md`
+- [x] `ddf_falsification_conditions.md`
+- [x] `ddf_negative_controls.md`
+- [x] `ddf_non_claims.md`
 
 Core extraction target:
 

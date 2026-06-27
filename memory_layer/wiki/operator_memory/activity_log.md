@@ -30,3 +30,24 @@ Priority order:
 5. SpecShift boundary integration.
 
 Immediate next best action: create `ddf_public_safe_claims.md` from the diagnostic-core documents.
+
+## 2026-06-27 - ∆∆F public-safe diagnostic extraction
+
+Created the Round 2 public-safe extraction set:
+
+- `memory_layer/wiki/operator_memory/ddf_public_safe_extraction/ddf_public_safe_claims.md`
+- `memory_layer/wiki/operator_memory/ddf_public_safe_extraction/ddf_falsification_conditions.md`
+- `memory_layer/wiki/operator_memory/ddf_public_safe_extraction/ddf_negative_controls.md`
+- `memory_layer/wiki/operator_memory/ddf_public_safe_extraction/ddf_non_claims.md`
+
+Boundary preserved:
+
+- observable-only
+- falsifiable
+- null-referenced
+- no consciousness / intent / moral status / hidden mechanism claims
+- no physics proof
+- no production-validation claim
+- no SpecShift commercial proof claim
+
+Next best action: theoretical continuity extraction.

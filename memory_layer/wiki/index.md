@@ -46,3 +46,10 @@ Promotion status: Operational
 - [18-Document Intake](operator_memory/ddf_18_document_intake_2026-06-27.md)
 - [∆∆F Canon Map](operator_memory/ddf_canon_map_2026-06-27.md)
 - [∆∆F Corpus Worklist](operator_memory/ddf_corpus_worklist_2026-06-27.md)
+
+### ∆∆F Public-Safe Extraction
+
+- [Public-Safe Claims](operator_memory/ddf_public_safe_extraction/ddf_public_safe_claims.md)
+- [Falsification Conditions](operator_memory/ddf_public_safe_extraction/ddf_falsification_conditions.md)
+- [Negative Controls](operator_memory/ddf_public_safe_extraction/ddf_negative_controls.md)
+- [Non-Claims](operator_memory/ddf_public_safe_extraction/ddf_non_claims.md)
