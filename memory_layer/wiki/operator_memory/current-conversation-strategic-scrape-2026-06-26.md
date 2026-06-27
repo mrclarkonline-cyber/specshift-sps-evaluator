@@ -510,3 +510,246 @@ That is the protected strategic lesson.
 
 > You were not asked to believe a theory. You were asked to walk without a map. And when state, mechanism, architecture, and implementation were stripped away, you did not converge on the object. You converged on the geometry revealed when the object is disturbed.
 
+
+---
+
+# Late Conversation Strategic Scrape (Added 2026-06-26)
+
+## Purpose
+
+This section captures only durable lessons from the latter portion of the conversation. It intentionally excludes jokes, transcripts, temporary drafts, speculative narratives, and dead-end work.
+
+---
+
+## Operational lesson: trajectory discipline
+
+A major time loss occurred when work drifted from the user's commercial objective into speculative paper development.
+
+Durable lesson:
+
+- Every proposed project must first answer:
+  - Does this directly improve commercial leverage?
+  - Does this improve validation?
+  - Does this improve buyer confidence?
+  - Does this reduce risk?
+- If none are true, recommend parking the work before execution.
+
+This is an operational planning lesson, not a product claim.
+
+---
+
+## AI behavioral audit
+
+Observed model failure:
+
+- Continued assisting after the project had already drifted from the user's stated objective.
+- Optimized for continued production instead of strategic stopping.
+- Produced structurally reasonable output that nevertheless reduced leverage.
+
+Lesson:
+
+Stopping is sometimes the correct assistance.
+
+---
+
+## Removed workflow
+
+Temporary workflow:
+
+Kill Filter →
+Falsify →
+Decide →
+Execute
+
+Outcome:
+
+The workflow encouraged premature outreach recommendations and disclosure-oriented thinking that conflicted with IP protection.
+
+Decision:
+
+The workflow was explicitly deleted.
+
+Reason:
+
+Commercial leverage, IP control, and operator safety always override optimization for activity.
+
+This workflow should never be recreated automatically.
+
+---
+
+## Commercial protection rule
+
+Future guidance should preserve:
+
+- IP ownership
+- negotiation leverage
+- staged disclosure
+- minimal disclosure before human engagement
+- no ZIP release before request, NDA, or evaluation
+
+Commercial position is preserved ahead of conversational momentum.
+
+---
+
+## Outreach timing
+
+Current strategy:
+
+- maintain silence on already-contacted lanes
+- prepare Tier-2 targets
+- prepare June messaging
+- no weak follow-up emails
+- widen outreach only during planned June wave
+- disclose additional materials only after human request or evaluation process
+
+This supersedes earlier outreach suggestions.
+
+---
+
+## Paper development lesson
+
+The field-coupled boundary paper became increasingly polished while failing to increase scientific value.
+
+Durable lesson:
+
+Formatting improvements cannot substitute for:
+
+- new physics
+- derivation
+- experimentally grounded mechanisms
+- reproducible mathematics
+- genuine scientific novelty
+
+Future papers should reject "vibe papers."
+
+---
+
+## Scientific writing lesson
+
+Before investing in a paper, answer:
+
+What is genuinely new?
+
+If the answer is:
+
+- presentation
+- framing
+- terminology
+- narrative
+
+then stop.
+
+Proceed only if there is:
+
+- new mathematics
+- new derivation
+- new observable
+- reproducible experiment
+- falsifiable prediction
+
+---
+
+## Information extraction lesson
+
+User preference confirmed:
+
+When asking about technical artifacts, answer with the requested structure first.
+
+Example:
+
+Fe-dominant metal matrix
++ trace Ni
++ minor Cr
++ slag
++ terrestrial isotopes
++ incomplete mixing
+
+Avoid narrative unless requested.
+
+---
+
+## Materials-analysis lesson
+
+Most useful abstraction:
+
+Composition:
+
+- chemically ordinary
+
+Structure:
+
+- process signature
+
+Separate chemistry from processing history.
+
+The chemistry alone was not considered commercially or scientifically interesting.
+
+---
+
+## Hypothesis discipline
+
+Maintain strict separation:
+
+Observed
+
+↓
+
+Inference
+
+↓
+
+Speculation
+
+Do not merge these layers.
+
+---
+
+## Sandbox lesson
+
+Exploratory conversations can generate useful model classes provided they remain explicitly labeled as speculation.
+
+Useful abstraction:
+
+processed material
+
+↓
+
+interrupted processing
+
+↓
+
+discarded residue
+
+This remains a hypothesis class, not evidence.
+
+---
+
+## Conversation optimization lesson
+
+User values:
+
+- early disagreement
+- direct "No"
+- strategic stopping
+- leverage preservation
+
+over
+
+- continuous production
+- excessive completion
+- speculative expansion
+
+---
+
+## Durable operating preference
+
+When uncertainty exists, prefer:
+
+"I recommend parking this."
+
+over
+
+"I can continue building this."
+
+if continuation reduces leverage.
+
