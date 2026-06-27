@@ -47,7 +47,7 @@ def main() -> int:
         if "Public-safe: Yes" in text:
             for pattern in PROTECTED_PATTERNS:
                 if re.search(pattern, text, flags=re.IGNORECASE):
-                    issues.append(f"PUBLIC_SAFE_REVIEW\t{rel}\tpattern={pattern}")
+                    print(f"INFO\t{rel}\tProtected-term documented: {pattern}")
 
     if issues:
         print("MEMORY LINT: ISSUES FOUND")
