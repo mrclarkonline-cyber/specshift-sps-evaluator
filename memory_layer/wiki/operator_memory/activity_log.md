@@ -90,3 +90,20 @@ Also added:
 - `memory_layer/wiki/operator_memory/terminal_visual_upgrade_plan_2026-06-27.md`
 
 Next best action: safety / priority / provenance extraction.
+
+## 2026-06-27 - ∆∆F safety / priority / provenance extraction
+
+Created the Round 5 safety / priority / provenance extraction set:
+
+- `memory_layer/wiki/operator_memory/ddf_safety_priority_provenance/authorship_priority_register.md`
+- `memory_layer/wiki/operator_memory/ddf_safety_priority_provenance/non_operational_boundary_register.md`
+- `memory_layer/wiki/operator_memory/ddf_safety_priority_provenance/reviewer_provenance_notes.md`
+
+Boundary preserved:
+
+- authorship and priority are preserved as provenance, not proof of scientific validity
+- safety materials remain non-operational
+- public reviewer posture centers observable diagnostics, falsifiers, negative controls, and non-claims
+- high-risk or physics-adjacent material remains caution-routed
+
+Next best action: SpecShift boundary integration.

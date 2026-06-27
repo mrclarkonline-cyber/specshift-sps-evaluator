@@ -114,9 +114,9 @@ Primary source group:
 
 Outputs to create:
 
-- [ ] `authorship_priority_register.md`
-- [ ] `non_operational_boundary_register.md`
-- [ ] `reviewer_provenance_notes.md`
+- [x] `authorship_priority_register.md`
+- [x] `non_operational_boundary_register.md`
+- [x] `reviewer_provenance_notes.md`
 
 Safe extraction target:
 

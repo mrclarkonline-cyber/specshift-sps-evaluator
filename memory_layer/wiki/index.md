@@ -66,3 +66,9 @@ Promotion status: Operational
 - [Physics Non-Claims](operator_memory/ddf_physics_caution_extraction/physics_non_claims.md)
 - [Archive-Caution Register](operator_memory/ddf_physics_caution_extraction/archive_caution_register.md)
 - [Terminal Visual Upgrade Plan](operator_memory/terminal_visual_upgrade_plan_2026-06-27.md)
+
+### ∆∆F Safety / Priority / Provenance
+
+- [Authorship Priority Register](operator_memory/ddf_safety_priority_provenance/authorship_priority_register.md)
+- [Non-Operational Boundary Register](operator_memory/ddf_safety_priority_provenance/non_operational_boundary_register.md)
+- [Reviewer Provenance Notes](operator_memory/ddf_safety_priority_provenance/reviewer_provenance_notes.md)
