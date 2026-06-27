@@ -39,3 +39,9 @@ Promotion status: Operational
 - [[outreach/outreach-wave-state-current]]
 - [[operator_memory/current-conversation-scrape]]
 - operator_memory/current-conversation-strategic-scrape-2026-06-26.md - consolidated scrape of current AI-test and audit lessons
+
+## ∆∆F / SpecShift Corpus
+
+- [∆∆F / SpecShift Document Corpus Index](indexes/ddf_document_corpus_index.md)
+- [18-Document Intake](operator_memory/ddf_18_document_intake_2026-06-27.md)
+- [∆∆F Canon Map](operator_memory/ddf_canon_map_2026-06-27.md)
