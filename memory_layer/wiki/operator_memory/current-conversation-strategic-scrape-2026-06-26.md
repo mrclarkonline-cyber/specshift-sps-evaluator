@@ -4340,3 +4340,312 @@ Strategic note:
 
 This should be treated as an open humanitarian knowledge contribution, not a SpecShift protected-IP lane. If pursued, keep it public-good, pilot-focused, and honest about limitations.
 
+
+
+---
+
+## Toy-suite and adaptive-authority paper scrape
+
+Timestamp: 2026-06-27T00:36:17.506294
+
+### Conversation scope
+
+This thread completed and packaged the toy-only validation lane for the ΔΔF / ddF diagnostic. The user explicitly separated this thread from whitepaper / forward-test prose and wanted this lane treated as toy-only: design, knobs, controls, failures, robustness, visuals, tables, and appendix-ready artifacts.
+
+### Final toy-run status
+
+Canonical run:
+
+- Run ID: `20260120_101316_RUN_PLAN_V1`
+- Location: `~/ddF_P0/runs/20260120_101316_RUN_PLAN_V1/`
+- Trusted interpreter: `~/ddF_P0/.venv/bin/python`
+- Core outputs verified:
+  - `raw/*.csv`
+  - `checkpoints/*.csv`
+  - `agg/*summary.csv`
+  - `figs/*.png`
+  - `manifest.json`
+
+Completed toy blocks:
+
+1. CartPole multi-shift perturbation
+2. CartPole policy injection negative control
+3. Env-B replication using MountainCar-v0
+4. CartPole dimensional scaling via observer-dimension/noise augmentation
+
+### Main scalar results to preserve
+
+CartPole multi-shift, final checkpoint 45:
+
+- Damped:
+  - mean return 500.000000
+  - return std 0.000000
+  - D = 0.001556
+  - D CI [0.001553, 0.001559]
+- Volatile:
+  - mean return 142.454667
+  - return std 111.206090
+  - D = 0.003326
+  - D CI [0.003296, 0.003355]
+- Derived:
+  - Δ return, Volatile minus Damped = -357.545333
+  - ΔD = +0.001770
+
+CartPole injection negative control, final checkpoint 45:
+
+- InjectedFrozen:
+  - mean return 45.794667
+  - return std 15.412128
+  - D = 0.002224
+  - D CI [0.002208, 0.002240]
+
+Env-B replication, MountainCar-v0, final checkpoint 20:
+
+- Damped:
+  - mean return -130.472000
+  - return std 31.705160
+  - D = 0.004067
+  - D CI [0.004029, 0.004104]
+- Scrambled:
+  - mean return -196.880000
+  - return std 7.491659
+  - D = 0.002538
+  - D CI [0.002515, 0.002562]
+- Volatile:
+  - mean return -160.448000
+  - return std 15.204390
+  - D = 0.004165
+  - D CI [0.004143, 0.004188]
+
+CartPole dimensional scaling:
+
+- Damped d=4:
+  - final mean 500.000
+  - final std 0.000
+  - final D 0.001541
+  - D CI [0.001530, 0.001553]
+- Damped d=8:
+  - final mean 500.000
+  - final std 0.000
+  - final D 0.001541
+  - D CI [0.001529, 0.001553]
+- Damped d=16:
+  - final mean 500.000
+  - final std 0.000
+  - final D 0.001534
+  - D CI [0.001520, 0.001549]
+- Damped d=32:
+  - final mean 500.000
+  - final std 0.000
+  - final D 0.001540
+  - D CI [0.001526, 0.001554]
+- Volatile d=4:
+  - final mean 123.520
+  - final std 99.321
+  - final D 0.003354
+  - D CI [0.003288, 0.003421]
+- Volatile d=8:
+  - final mean 129.370
+  - final std 97.550
+  - final D 0.003309
+  - D CI [0.003245, 0.003372]
+- Volatile d=16:
+  - final mean 123.336
+  - final std 101.635
+  - final D 0.003395
+  - D CI [0.003294, 0.003496]
+- Volatile d=32:
+  - final mean 124.286
+  - final std 97.184
+  - final D 0.003359
+  - D CI [0.003287, 0.003431]
+
+AUC status:
+
+- Current timeline anchor: AUC = 0.76.
+- Interpretation to preserve:
+  - real above-chance signal
+  - not production-grade classifier
+  - strongest when stated as AUC ≈ 0.76 across multi-shift, cross-environment, negative-control, and dimensional-scaling conditions
+  - do not oversell the number alone
+
+### Canonical figure set
+
+Minimal graphics set for appendix / public-safe technical package:
+
+- `figs/CARTPOLE_multishift_mean.png`
+- `figs/CARTPOLE_multishift_metric.png`
+- `figs/CARTPOLE_injection_mean.png`
+- `figs/CARTPOLE_injection_metric.png`
+- `figs/ENV_B_replication_mean.png`
+- `figs/ENV_B_replication_metric.png`
+- `figs/figDS_final_mean_vs_d.png`
+- `figs/figDS_final_metric_vs_d.png`
+
+Optional supporting figures:
+
+- `figs/CARTPOLE_multishift_var.png`
+- `figs/CARTPOLE_injection_var.png`
+- `figs/ENV_B_replication_var.png`
+- `figs/figDS_final_var_vs_d.png`
+
+Best one-image synthesis concept:
+
+- 2x2 Toy Suite composite:
+  1. multi-shift diagnostic D
+  2. injection negative-control diagnostic D
+  3. Env-B replication diagnostic D
+  4. dimensional-scaling diagnostic D
+
+### Appendix-ready document work completed
+
+Appendix-ready LaTeX tables and captions were drafted for:
+
+- Table A1: CartPole multi-shift final checkpoint
+- Table A2: CartPole policy injection final checkpoint
+- Table A3: MountainCar-v0 Env-B replication final checkpoint
+- Table A4: CartPole dimensional scaling final-by-dimension table
+
+Figure captions drafted for:
+
+- CartPole multi-shift mean
+- CartPole multi-shift diagnostic D
+- CartPole injection mean
+- CartPole injection diagnostic D
+- Env-B replication mean
+- Env-B replication diagnostic D
+- Dimensional scaling final mean vs d
+- Dimensional scaling final D vs d
+
+### Interpretive lock
+
+The toy suite now supports this bounded interpretation:
+
+- Diagnostic is selective.
+- Diagnostic survives perturbation.
+- Diagnostic generalizes across at least one second environment.
+- Diagnostic does not collapse under observer-dimension expansion.
+- Diagnostic behaves usefully under injected / scrambled / externally forced controls.
+- Remaining uncertainty is prospective, not retrospective.
+
+Safe key line:
+
+> Additional toy demonstrations are now mostly redundant. The remaining uncertainty is forward-looking: whether the diagnostic preserves this behavior under pre-specified, time-bound prediction.
+
+### Claims to avoid
+
+Do not claim from toys alone:
+
+- production readiness
+- universal agency detection
+- consciousness detection
+- mechanism identification
+- live deployment validation
+- buyer-ready predictive reliability
+- any secret mechanism disclosure
+
+Use bounded language:
+
+- toy-suite validation
+- retrospective controlled stress tests
+- outcome-only diagnostic behavior
+- above-chance separability
+- negative-control discipline
+- forward-test readiness
+
+### Uploaded / referenced paper state
+
+The entropy / adaptive-authority paper is titled:
+
+`Second-Order Diagnostic Identifiability of Adaptive Authority: Entropy, Variance Structure, and Nonstationary Control without Mechanism Access`
+
+Key posture:
+
+- strictly observational
+- outcome-only functional D
+- mechanism disclosure excluded
+- threshold tuning excluded
+- controller synthesis excluded
+- diagnostic, not prescriptive
+
+Important formal anchors from that document:
+
+- mean performance is insufficient under nonstationarity
+- authority-present, authority-removed, and null regimes must be separated operationally
+- admissible diagnostic requirements:
+  1. outcome-only invariance
+  2. reward-scale invariance
+  3. null collapse
+- ordering criterion:
+  - D(A) > D(not-A) >> D(0)
+- negative controls are required, not optional:
+  - scrambled actions
+  - frozen policy replay
+  - externally injected controllers
+  - observer expansion without authority
+
+### Relationship to older ΔΔF stack
+
+Older ΔΔF paper:
+
+- `Recursive Minimization of Variational Curvature in Active Inference Systems`
+- introduced ΔΔF as second-order surprise-reduction curvature
+- original agency language was broader and more speculative
+
+Current safe evolution:
+
+- shift public/technical framing from “agency / consciousness” toward:
+  - state-conditional control
+  - adaptive authority
+  - outcome-only diagnostic
+  - coupling sensitivity
+  - null-collapse behavior
+  - falsifiable ordering
+
+Authorship / priority declaration preserved:
+
+- Date: 2025-11-06 15:49:38 ET
+- Author: Benjamin J. Clark
+- Declares authorship and priority for:
+  1. recursive ΔΔF active-inference paper
+  2. UFT paper
+  3. coupling between informational and geometric curvature paper
+- Use as provenance, not as evidence of correctness.
+
+### Workflow lessons
+
+Terminal workflow rules reinforced:
+
+- Use `./.venv/bin/python`, not system Python.app.
+- If a run appears stuck, check:
+  - `ps aux | grep run_plan_v1.py`
+  - file timestamps in `runs/<RUN_ID>/figs`, `agg`, `raw`, `checkpoints`
+- Python icon bouncing on macOS may just mean plots / CSVs are being generated.
+- Always run from `~/ddF_P0` when using relative `runs/...` paths.
+- `open runs/...` fails from `~` because the actual path is `~/ddF_P0/runs/...`.
+
+### Public positioning
+
+If posting or briefing:
+
+Strong compact framing:
+
+> Same output does not mean same system. The question is whether behavior remains coupled to state under perturbation, or whether apparent stability is replay, forcing, equilibrium, or mimicry.
+
+Bidders / technical readers should hear:
+
+- The method is not a benchmark score.
+- It is a stress diagnostic.
+- It helps find hidden structural differences between systems that can look similar under first-order metrics.
+- AUC ≈ 0.76 is meaningful because it was preserved across stress conditions and checked against nulls.
+
+### Current state
+
+Toy lane is complete. Do not keep adding toys unless a specific reviewer objection requires it.
+
+Next meaningful move outside this toy-only thread:
+
+- forward-test preregistration
+- decision-grade external summary
+- appendix integration
+- buyer-safe diagnostic brief
