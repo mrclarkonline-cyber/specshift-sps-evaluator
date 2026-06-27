@@ -23,3 +23,19 @@ Initial pages seeded:
 - Five Eyes AI Warning
 - xAI / Grok
 - Protected Claim Index
+
+## 2026-06-26
+
+Added workflow control directories:
+- inbox/
+- promotions/
+- archive/
+
+Added claim lifecycle and promotion/archive rules to SCHEMA.md.
+
+Seeded:
+- inbox/README.md
+- promotions/README.md
+- promotions/PROMOTION_TEMPLATE.md
+- archive/README.md
+- logs/lint_notes.md
