@@ -47,3 +47,14 @@ Added memory_layer/wiki.sh command runner for common wiki operations:
 - status
 - log
 - index
+
+## 2026-06-26
+
+Added important-only scrape from current outreach conversation:
+- outreach lessons and contact-layer failure analysis
+- sales@ alias experiment rule
+- support@ Wave 7B reroute strategy
+- Wave 7 repair-hold semantics
+- no-attachment first-contact rule
+- Proton SMTP guarded-send reminders
+- protected-core outreach boundaries

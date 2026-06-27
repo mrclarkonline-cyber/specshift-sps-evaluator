@@ -35,3 +35,6 @@ Promotion status: Operational
 
 ## Operator Memory
 - [[operator_memory/current-memory-snapshot]]
+- [[outreach/outreach-lessons-current]]
+- [[outreach/outreach-wave-state-current]]
+- [[operator_memory/current-conversation-scrape]]
