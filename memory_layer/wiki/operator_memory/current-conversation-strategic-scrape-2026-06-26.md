@@ -753,3 +753,52 @@ over
 
 if continuation reduces leverage.
 
+
+---
+
+## DeepWriter workflow incorporation
+
+DeepWriter should be incorporated as a production and drafting layer only, not as the core reasoning, protected-IP, or mechanism layer.
+
+### Approved uses
+
+Use DeepWriter for public-facing and lower-risk writing:
+
+- Substack essays
+- Book expansion
+- Public explainers
+- Teaching-facing materials
+- Bidder-safe nontechnical briefs
+- Manuscript structure and long-form coherence
+- Public-facing versions of already-filtered ideas
+
+### Prohibited uses
+
+Do not feed DeepWriter:
+
+- Private ΔΔF mechanism details
+- Protected diagnostic internals
+- Valuation strategy
+- Negotiation strategy
+- Undisclosed code
+- Buyer or bidder correspondence
+- Pilot details not already public-safe
+- Anything that weakens IP control, leverage, or provenance
+
+### Correct workflow
+
+1. Kira/ChatGPT handles strategy, argument, outline, disclosure boundaries, and IP filtering.
+2. DeepWriter receives only cleaned public-safe ingredients.
+3. DeepWriter expands or structures the writing.
+4. Output comes back to Kira/ChatGPT for factual review, tone correction, and leakage review.
+
+### Terminal boundary
+
+DeepWriter does not need to be installed at the Terminal level.
+
+Keep DeepWriter outside the protected workstation stack unless a real local CLI/API becomes necessary later. Use it as a browser/app drafting layer. Terminal remains for protected work: archives, hashes, PDFs, code, provenance, validation, LaTeX, and symcore.
+
+### Standing rule
+
+DeepWriter gets finished ingredients, not the recipe.
+
