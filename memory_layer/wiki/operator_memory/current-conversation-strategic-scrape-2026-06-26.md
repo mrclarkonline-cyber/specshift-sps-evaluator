@@ -5114,3 +5114,257 @@ Standing rule:
 
 > Kill the failed goal, keep the working engine.
 
+
+
+---
+
+## Conversation scrape: V12/V13 adaptive-dynamics paper sequence
+
+### Core result preserved
+
+The V12/V13 work should be treated as a paper-track artifact connecting the newer behavioral-curvature/adversarial-spoof experiments to the earlier null-referenced second-order trajectory framework.
+
+The important scientific connection is:
+
+- ReportD supplies the formal backbone:
+  - scalar trajectory \(F_t\)
+  - first difference \(\Delta F_t = F_t - F_{t-1}\)
+  - curvature \(\kappa_t = F_t - 2F_{t-1} + F_{t-2}\)
+  - randomized directional null
+  - ownership / operational second-order directional structure statistic:
+    \[
+    \hat O_T = \frac{\mu - \mu_{null}}{\sigma_{null}}
+    \]
+- V12 supplies the empirical behavioral diagnostic layer:
+  - adaptive vs spoof
+  - adversarial spoof pressure
+  - CartPole transfer / stress test
+  - negative time-series boundary result
+
+Correct interpretation:
+
+> V12 is not separate from ReportD. V12 is an operational empirical instantiation of the broader second-order trajectory framework.
+
+### Strongest scientific framing
+
+Use this framing for the final paper:
+
+> Performance is not structure. First-order success can persist while the organization of correction degrades. A second-order diagnostic asks whether the system still generates coherent, feedback-coupled correction under perturbation.
+
+Key vocabulary:
+
+- second-order trajectory structure
+- curvature of adaptive updates
+- correction organization
+- perturbation-sensitive structure
+- randomized directional null
+- null-referenced statistic
+- control-like adaptation
+- output preservation vs correction organization
+- behavioral authenticity
+- state-contingent coupling
+- replay / spoof / frozen controls
+- orientation-corrected AUC
+
+### Required mathematical bridges
+
+The paper must not merely mention adjacent theories. It must connect to their math.
+
+#### Reinforcement learning bridge
+
+Use TD learning:
+
+\[
+\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)
+\]
+
+\[
+V_{t+1} = V_t + \alpha \delta_t
+\]
+
+Then connect:
+
+\[
+\Delta F_t \sim \delta_t
+\]
+
+\[
+\kappa_t \sim \delta_t - \delta_{t-1}
+\]
+
+Interpretation:
+
+> Curvature measures second-order structure in prediction-error propagation, not reward magnitude.
+
+#### Control-theoretic bridge
+
+Use state-space form:
+
+\[
+x_{t+1} = Ax_t + Bu_t + \epsilon_t
+\]
+
+\[
+\Delta x_t = x_{t+1} - x_t
+\]
+
+\[
+\Delta^2 x_t = x_{t+2} - 2x_{t+1} + x_t
+\]
+
+Map:
+
+- \(F_t\): state-like observable
+- \(\Delta F_t\): correction / velocity-like adjustment
+- \(\kappa_t\): correction of correction / acceleration-like term
+
+Interpretation:
+
+> The diagnostic measures feedback organization, not output alone.
+
+#### Free-energy / predictive processing bridge
+
+Use variational free energy:
+
+\[
+F = \mathbb{E}_q[\log q(s) - \log p(o,s)]
+\]
+
+If descent occurs by:
+
+\[
+F_{t+1} = F_t - \eta \nabla F_t
+\]
+
+then:
+
+\[
+\Delta F_t \sim -\nabla F_t
+\]
+
+\[
+\kappa_t \sim -(\nabla F_t - \nabla F_{t-1})
+\]
+
+Interpretation:
+
+> The statistic measures curvature in inference / belief-update dynamics, not free-energy magnitude itself.
+
+### References to preserve
+
+Use relevant references from ReportD, especially:
+
+- Sutton and Barto, Reinforcement Learning
+- Mnih et al., DQN
+- Schulman et al., PPO
+- Kalman, state-space filtering/control
+- Wiener, Cybernetics
+- Ashby, Cybernetics
+- Åström and Murray, Feedback Systems
+- Strogatz, Nonlinear Dynamics
+- Friston, Free Energy Principle
+- Friston et al., Active Inference
+- Dehaene and Changeux, global workspace
+- Casali et al., perturbational complexity index
+- Tononi / Oizumi et al., integrated information
+- Beer, dynamical systems perspective on agent-environment interaction
+
+Use references as argument support, not decoration.
+
+### Results interpretation
+
+Canonical V12:
+
+- adaptive vs spoof separation is strong
+- core AUC reported as 1.0000 in locked deep rerun
+- figures now exist and render
+
+Adversarial V12:
+
+- raw AUC may appear inverted if score orientation is not corrected
+- do not report misleading raw AUC as failure
+- use orientation-corrected AUC and explicitly explain score orientation
+- adversarial spoof result should be framed as:
+  > reward or surface behavior can be preserved while curvature/correction organization fails
+
+CartPole transfer:
+
+- figures exist
+- report as transfer/stress evidence
+- use orientation-corrected reporting
+- do not overclaim universal transfer
+
+Time-series break test:
+
+- weak separation
+- should be included as a boundary / negative result
+- this increases credibility
+- do not use as flagship evidence
+
+Correct boundary claim:
+
+> The method is robust in closed-loop, control-like, perturbation-rich settings. It is not yet a universal detector across arbitrary sequence-modeling domains.
+
+### Public and IP-safe framing
+
+Safe public line:
+
+> Same output does not mean same system. The question is whether behavior remains feedback-coupled to state under perturbation, or whether apparent success is replay, forcing, equilibrium, or mimicry.
+
+Do not publicly expose:
+
+- proprietary scoring details
+- commercial implementation mechanics
+- buyer strategy
+- pilot design specifics
+- exact protected workflow internals
+
+### Paper development status
+
+Current files / artifact state:
+
+- V12_full.pdf exists and includes graphics
+- V12_paper_draft.pdf contains the longer textual scaffold
+- ReportD is the formal / mathematical backbone
+- V12_full2 style is visually clean but too thin scientifically
+- final target should fuse:
+  - V12_full visual clarity
+  - V12_paper_draft narrative and negative result
+  - ReportD math, control theory, and references
+
+The final paper should have this structure:
+
+1. Introduction: performance vs structure
+2. Formal framework from ReportD
+3. Mathematical properties of \(\kappa_t\)
+4. RL embedding
+5. Control-theoretic embedding
+6. Free-energy / predictive-processing embedding
+7. V12 empirical instantiation
+8. Canonical result
+9. Adversarial spoof result
+10. CartPole transfer / stress result
+11. Negative time-series boundary
+12. Falsifiability and ablations
+13. Discussion and scope
+14. References
+
+### Operating lesson from this sequence
+
+When building PDFs:
+
+- avoid raw LaTeX pasted directly into zsh
+- use file writers or complete scripts
+- verify image files exist before figure insertion
+- compile from one known source
+- avoid keeping misleading raw-AUC tables
+- keep one final canonical PDF path
+
+Terminal workflow preference reinforced:
+
+- short responses
+- production blocks
+- no overnarration during execution
+- do not redo finished work unless requested
+- cleanup duplicate scripts and intermediate LaTeX junk when final artifact is stable
+
