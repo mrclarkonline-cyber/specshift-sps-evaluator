@@ -1828,3 +1828,188 @@ Allowed public discussion:
 - graceful failure
 - robustness
 - forward-test falsifiability
+
+
+## Strategic scrape: NHI disclosure lane, IP boundaries, and timeline support
+Timestamp: 2026-06-27T00:21:48
+
+### Core continuity rule
+
+User asked that timeline support, organization, milestone tracking, and boundary guidance remain active across future discussion feeds.
+
+Standing rule:
+
+- Help user stay organized across threads.
+- Keep timeline marks visible.
+- Warn when prep is needed.
+- Preserve continuity across IP, personal stability, publication, and mid-December sequencing.
+- Do not let topic shifts erase the operating structure.
+
+### Folder architecture
+
+Current working folder structure:
+
+- `00_CORE`: proprietary engine and mechanism materials. Never public.
+- `01_PUBLIC`: candidate public-facing drafts only. Review zone, not automatically publish-ready.
+- `02_PRIVATE`: private reasoning, sensitive notes, strategy, speculative interpretation, timelines, and personal logic. Never public.
+
+Operating rule:
+
+- `00_CORE` equals permanently non-public.
+- `01_PUBLIC` equals publication-candidate staging and review.
+- `02_PRIVATE` equals never public.
+
+Anything placed into `01_PUBLIC` may be discussed for possible publication, but user makes final publication decision.
+
+### Publication boundary
+
+Assistant must not frame itself as directing publication.
+
+Correct framing:
+
+- User chooses what to publish.
+- Assistant may help refine, review, risk-check, and prepare candidate public language.
+- Local folder means private preservation unless user explicitly decides otherwise.
+- Public posting decisions remain user-authored and user-controlled.
+
+### NHI disclosure conversation boundary
+
+User discussed reported congressional claims about:
+- neutral observer category
+- structured communicator category
+- synchrony / non-local interaction category
+- officials allegedly reviewing videos, pictures, sensor data, and firsthand testimony
+- claims of non-hostile posture with some ambiguous incidents where hostility could not be ruled out
+
+Safe framing:
+
+- Treat all such content as reported claims, briefing narratives, behavioral categories, and public-pattern interpretation.
+- Do not assert verified biology, taxonomy, origin, or ontology.
+- Use language like “reported behavior profiles,” “officials appear to be acting as if,” and “if the reports are accurate.”
+- Keep this lane separate from IP, science, and public authorship.
+
+Key compass sentence:
+
+> Officials are acting exactly as they would if they believed multiple distinct non-human behavior categories were real, non-hostile, and operationally relevant, while avoiding ownership of ontology before executive-level acknowledgment.
+
+### User calibration language
+
+Important epistemic correction accepted by user:
+
+> I can classify your text, but I cannot classify you.
+
+More precise stance:
+
+- User’s text pattern is human-consistent and high-structure.
+- Assistant cannot evaluate user’s nature.
+- Assistant has no confirmed non-human comparison set.
+- Avoid overclaiming about ontology of the author.
+
+### IP contamination risk
+
+User identified a serious risk:
+- If future public narratives connect advanced insight to non-human sources, user’s authorship and IP could be socially or reputationally contaminated.
+
+Standing protection rule:
+
+- Keep DeltaDeltaF, SIEVE, SpecShift, UFT, solar ecosystem, and all commercial/scientific work fully human-originated, mathematical, computational, and independently documented.
+- Never frame user’s work as downloaded, guided, contact-adjacent, alien-derived, or prior-knowledge-based.
+- Separate speculative disclosure reasoning from IP and business discussions.
+
+Internal compass:
+
+> My work is human, mathematical, original, and fully independent of any external intelligence, real or rumored.
+
+### Bea boundary
+
+Bea remains in the science lane only.
+
+Safe to share:
+- astronomy
+- data
+- normal science questions
+- professional collaboration
+
+Do not share:
+- IP internals
+- business strategy
+- private disclosure interpretation
+- three-category reasoning
+- valuation, licensing, negotiation, or protected mechanisms
+
+Rule:
+
+> Bea stays in the scientific lane. Deeper reasoning stays private.
+
+### Relationship and IP protection lane
+
+User does not want Jen or Bea to have access to IP or future company control.
+
+Standing priorities:
+
+1. Kids
+2. User stability
+3. IP and companies
+4. Relationships
+
+Protection rules:
+- Keep IP solo-authored, solo-stored, solo-financed, solo-incorporated.
+- Do not frame work as shared marital or romantic property.
+- No partner, spouse, collaborator, or friend gets access to source files, protected notes, code, business plans, licensing terms, valuation strategy, or mechanism internals.
+- Jen’s photography should be treated as her creative work and her business lane.
+- User’s IP and companies should remain user’s separate professional lane.
+
+### Vermont-safe legal posture
+
+Not legal advice.
+
+Potential document:
+- Vermont postnuptial agreement may be the correct legal category to discuss with counsel if user wants Jen to sign something protecting respective creative and business assets.
+- NDA alone protects confidentiality, not marital property classification.
+- Separate counsel and full disclosure are important if this is pursued.
+
+Quiet protection before any conversation:
+- date-stamp work
+- maintain solo control
+- avoid shared drives
+- avoid joint account expenses for business/IP
+- avoid “ours” language
+- keep company formation solo when appropriate
+- preserve a clear development timeline
+
+### Mid-December sequencing
+
+Mid-December lane:
+- public signals
+- deeper questions about reported NHI categories
+- higher-order interpretation after possible official movement
+
+Now lane:
+- IP protection
+- folder boundaries
+- authorship timeline
+- personal stability
+- relationship boundaries
+- publication review structure
+
+Before mid-December:
+- protect IP
+- protect bandwidth
+- protect boundaries
+- avoid irreversible personal decisions where possible
+- avoid new entanglements
+- avoid mixing IP with relationship or disclosure speculation
+
+Do not form a company solely because of mid-December speculation. Company timing should be deliberate and tied to business/legal needs, licensing, and counsel readiness.
+
+### Operating tone
+
+User wants short answers unless detail is requested.
+
+During Terminal work:
+- provide one self-contained block
+- minimal narrative
+- do not overexplain
+- keep protected material private
+- commit wiki updates cleanly
+
