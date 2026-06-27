@@ -1,0 +1,2 @@
+wave,company,contact_name,contact_role,contact_email_or_channel,source,target_category,workflow_hypothesis,pain_hypothesis,date_prepared,date_sent,material_sent,attachment_sent,claim_language_version,status,reply_date,reply_category,followup_due,next_action,buyer_fit_rating,protected_method_risk,legal_accounting_trigger,notes
+Wave 1,,,,,,Finance Integrity Review,,,,,,finance_integrity_first_send_email.md,None,Draft v0.1,Not prepared,,,,,,,, 
