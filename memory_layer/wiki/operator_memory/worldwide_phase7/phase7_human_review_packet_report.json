@@ -1,0 +1,23 @@
+{
+  "by_category": {
+    "earth_and_environment": 28,
+    "global_news": 1,
+    "government_and_policy": 3,
+    "health_and_biosecurity": 1,
+    "infrastructure_and_economics": 3
+  },
+  "by_source_type_diversity": {
+    "different_source_types": 18,
+    "same_source_type": 18
+  },
+  "claim_boundary": "Phase 7 creates human-review packet scaffolds only. It does not claim production monitoring, content validation, contradiction detection, agreement detection, corroboration, alert readiness, autonomous action, or truth resolution.",
+  "comparison_result_default": "not_evaluated",
+  "created_at_utc": "2026-06-28T09:30:56.866978+00:00",
+  "input_artifact": "memory_layer/wiki/operator_memory/worldwide_phase6/phase6_candidate_pair_inspection_records.jsonl",
+  "inspection_ready_pairs_loaded": 36,
+  "phase": "phase_7_worldwide_human_review_packet_scaffold",
+  "review_packets_artifact": "memory_layer/wiki/operator_memory/worldwide_phase7/phase7_human_review_packets.jsonl",
+  "review_packets_created": 36,
+  "review_packets_held": 0,
+  "status": "complete"
+}
