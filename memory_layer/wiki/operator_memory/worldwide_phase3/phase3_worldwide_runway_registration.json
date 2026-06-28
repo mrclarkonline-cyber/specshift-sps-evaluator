@@ -1,0 +1,28 @@
+{
+  "claim_boundary": "Phase 3 runway registration only. No live ingestion, content validation, alerting, production monitoring, autonomous action, or truth resolution claimed.",
+  "first_batch_recommendation": [
+    "GDACS",
+    "World Bank Open Data",
+    "IMF Data",
+    "BBC World Service RSS verification",
+    "Deutsche Welle RSS verification",
+    "Canada Open Government",
+    "data.gov.uk"
+  ],
+  "phase": "phase_3_worldwide_live_ingestion_runway",
+  "phase2_boundary": "Phase 2 validated repo-side registry/tracking artifacts only. It did not validate live ingestion, production monitoring, content truth, alert readiness, or autonomous action.",
+  "phase2_closure_artifact": "memory_layer/wiki/operator_memory/worldwide_validated/phase2_all_registry_closure_validated_records.jsonl",
+  "phase3_goal": "Validate bounded live-sample collection, parse normalization, provenance retention, failure handling, and claim-safety gates in small batches.",
+  "purpose": "Move from Phase 2 registry/tracking closure to bounded live-ingestion readiness without overstating production capability.",
+  "registered_at_utc": "2026-06-28T08:59:17.658492+00:00",
+  "required_gates": [
+    "Gate 1: select low-risk public endpoints only",
+    "Gate 2: fetch bounded samples with rate limits and user-agent",
+    "Gate 3: store raw sample metadata and parsed record separately",
+    "Gate 4: preserve original language and translated/derived fields separately",
+    "Gate 5: run claim-safety classification",
+    "Gate 6: no alerts or high-stakes conclusions without human review",
+    "Gate 7: blocked or unstable endpoints remain honestly blocked"
+  ],
+  "status": "registered"
+}
