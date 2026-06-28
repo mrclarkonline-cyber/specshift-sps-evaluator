@@ -238,3 +238,22 @@ Generate:
 
 python3 tools/pipelines/finance_integrity_watch.py
 
+### contradiction_detector.py
+
+Generates a local multi-source contradiction/friction report from generated source digests.
+
+Dry-run:
+
+python3 tools/pipelines/contradiction_detector.py --dry-run
+
+Generate:
+
+python3 tools/pipelines/contradiction_detector.py
+
+Safety boundary:
+
+- flags unresolved variance only
+- does not pick a winner
+- does not infer intent or cause
+- requires human review
+
