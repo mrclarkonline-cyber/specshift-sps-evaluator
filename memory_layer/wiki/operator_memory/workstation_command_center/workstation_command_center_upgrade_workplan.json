@@ -10,18 +10,24 @@
     "Git must be clean before celebration",
     "canonical landing remains wiki_landing"
   ],
+  "last_updated_at_utc": "2026-06-28T10:47:10.928311+00:00",
   "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
   "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
-  "status": "registered",
+  "status": "in_progress",
   "upgrade_phases": [
     {
+      "artifact": "tools/status/specshift_board.py",
       "boundary": "Dashboard only. No autonomous action.",
       "command_target": "specshift_board",
+      "completed_at_utc": "2026-06-28T10:47:10.928311+00:00",
+      "completion_note": "Read-only Mission Control dashboard created. It shows active workplan, Git state, recent commit, tracker output, open risks, and boundary language without replacing wiki_landing.",
       "done_when": "specshift_board displays active workplan, tracker status, Git status, recent commit, risk summary, and canonical progress value without duplicating wiki_landing fireworks.",
       "goal": "One command opens a full status board: active phase, Git, wiki health, next action, last commit, open risks, and progress fireworks.",
       "phase": "phase_17_mission_control_dashboard",
-      "upgrade": "Mission Control dashboard"
+      "status": "complete",
+      "upgrade": "Mission Control dashboard",
+      "wrapper": "~/WORK/tools/orchestra/bin/specshift_board"
     },
     {
       "boundary": "State tracking only. No guessing from stale hardcoded phases.",

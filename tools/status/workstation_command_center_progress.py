@@ -25,7 +25,7 @@ else:
     active_data = json.loads(ACTIVE.read_text(encoding="utf-8")) if ACTIVE.exists() else {}
     active_phase = active_data.get("active_phase", "")
 
-    completed = 0
+    completed = sum(1 for item in phases if item.get("status") == "complete")
     total = len(phases)
 
     print("Upgrade map:")
@@ -33,11 +33,24 @@ else:
         phase = item.get("phase", "")
         upgrade = item.get("upgrade", "")
         command = item.get("command_target", "")
-        icon = "🎯" if phase == active_phase else "🟡"
+        status = item.get("status", "registered")
+        if phase == active_phase:
+            icon = "🎯"
+        elif status == "complete":
+            icon = "✅"
+        elif status == "parked":
+            icon = "💤"
+        elif status == "protected":
+            icon = "🔒"
+        elif status == "caution":
+            icon = "⚠️"
+        else:
+            icon = "🟡"
         print(f"    {icon} {phase}: {upgrade} [{command}]")
 
-    progress = 10.0 if total else 0.0
+    progress = round((completed / total) * 100, 1) if total else 0.0
     print()
+    print(f"Completed phases: {completed}/{total}")
     print(f"Current active phase: {active_phase or 'unknown'}")
     print(f"Next action: {active_data.get('next_action', 'unknown')}")
 
