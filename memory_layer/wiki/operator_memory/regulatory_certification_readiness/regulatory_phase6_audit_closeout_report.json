@@ -1,0 +1,27 @@
+{
+  "audit_checks_held": 0,
+  "audit_checks_passed": 9,
+  "audit_checks_review": 1,
+  "audit_checks_run": 10,
+  "claim_boundary": "Regulatory Phase 6 audits and closes the regulatory readiness scaffold only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, professional audit, or truth validation.",
+  "completed_at_utc": "2026-06-28T13:18:17.766258+00:00",
+  "largest_gaps_preserved": [
+    "No formal certification or conformity assessment exists.",
+    "No ISO/IEC 42001 or equivalent management-system audit exists.",
+    "No formal security questionnaire/access-control packet exists.",
+    "No adopted lawyer-reviewed policies or customer contract terms exist.",
+    "No professional compliance, tax, accounting, valuation, or legal opinion exists."
+  ],
+  "phase": "regulatory_phase_6_audit_and_closeout",
+  "professional_review_ready": true,
+  "readiness_package_artifacts": {
+    "audit_records": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase6_audit_records.jsonl",
+    "certification_gap_analysis": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase5_certification_gap_analysis_report.json",
+    "control_evidence_inventory": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase2_control_evidence_inventory_report.json",
+    "governance_policy_scaffold": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase3_governance_policy_scaffold.json",
+    "procurement_due_diligence_packet": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase4_procurement_due_diligence_packet.json",
+    "scope_and_standards_map": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase1_scope_and_standards_map.json"
+  },
+  "safe_overall_claim": "SpecShift has a completed internal regulatory, certification, and procurement readiness scaffold. It organizes evidence, governance policies, procurement packet indexes, and gap analysis for future professional/procurement review. It is not certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+  "status": "complete"
+}
