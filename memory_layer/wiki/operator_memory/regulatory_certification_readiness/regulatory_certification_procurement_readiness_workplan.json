@@ -33,7 +33,7 @@
     "risk eliminated",
     "guaranteed safety"
   ],
-  "last_updated_at_utc": "2026-06-28T13:18:17.766258+00:00",
+  "last_updated_at_utc": "2026-06-28T22:11:53.674601+00:00",
   "likely_reference_categories": [
     {
       "category": "AI risk management frameworks",
@@ -80,6 +80,9 @@
       "safe_position": "Professional-readiness package exists; not a CPA audit or legal opinion."
     }
   ],
+  "next_workplan_registered_after_close": "specshift_buyer_safe_pilot_intake_delivery_lane",
+  "parked_at_utc": "2026-06-28T22:11:53.674601+00:00",
+  "parked_reason": "Completed at 100.0%; closed before registering next named workplan.",
   "phases": [
     {
       "goal": "Define scope, likely standards/regulatory reference categories, evidence categories, and prohibited claims.",
@@ -142,6 +145,6 @@
   "purpose": "Prepare SpecShift for future regulator, certification body, insurer, enterprise procurement, or standards-based diligence requests.",
   "registered_at_utc": "2026-06-28T13:10:34.965435+00:00",
   "safe_overall_claim": "SpecShift is building documentation and evidence scaffolds to support future professional, procurement, certification, or regulatory diligence. It is not certified, regulator-approved, procurement-approved, or compliance-certified.",
-  "status": "complete",
+  "status": "complete_parked",
   "workplan": "regulatory_certification_procurement_readiness"
 }

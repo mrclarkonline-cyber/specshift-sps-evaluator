@@ -1,0 +1,70 @@
+{
+  "claim_boundary": "This workplan builds a buyer-safe pilot intake and delivery lane only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, or autonomous client action.",
+  "core_question": "If a company says yes, what do they send us, where does it go, what do we return, and how do we avoid overclaiming?",
+  "expected_outputs": [
+    "client_intake_questionnaire.md",
+    "buyer_data_request_template.md",
+    "pilot_scope_and_boundaries.md",
+    "candidate_discrepancy_memo_template.md",
+    "pilot_delivery_checklist.md",
+    "client_project_folder_generator.py",
+    "client_delivery_playbook.md",
+    "pilot_success_failure_criteria.md",
+    "non_retention_and_boundary_statement.md"
+  ],
+  "follows": "regulatory_certification_procurement_readiness",
+  "phases": [
+    {
+      "goal": "Create pilot_scope_and_boundaries.md and non_retention_and_boundary_statement.md.",
+      "phase": "pilot_phase_1_scope_and_boundaries",
+      "status": "registered"
+    },
+    {
+      "goal": "Create client_intake_questionnaire.md and buyer_data_request_template.md.",
+      "phase": "pilot_phase_2_buyer_intake_and_data_request",
+      "status": "registered"
+    },
+    {
+      "goal": "Create client_project_folder_generator.py to initialize buyer-safe project folders.",
+      "phase": "pilot_phase_3_project_folder_generator",
+      "status": "registered"
+    },
+    {
+      "goal": "Create candidate_discrepancy_memo_template.md and pilot_success_failure_criteria.md.",
+      "phase": "pilot_phase_4_review_and_memo_templates",
+      "status": "registered"
+    },
+    {
+      "goal": "Create client_delivery_playbook.md and pilot_delivery_checklist.md.",
+      "phase": "pilot_phase_5_delivery_playbook_and_checklist",
+      "status": "registered"
+    },
+    {
+      "goal": "Audit the buyer-safe pilot lane for boundaries, professional threshold, claim safety, and artifact continuity.",
+      "phase": "pilot_phase_6_audit_and_closeout",
+      "status": "registered"
+    }
+  ],
+  "professional_threshold": "If procurement, contract terms, paid pilot, licensing, exclusivity, acquisition, IP assignment, data transfer, or money movement becomes real, engage qualified legal and CPA support before proceeding alone.",
+  "purpose": "Build a buyer-safe pilot intake and delivery lane so that if a company says yes, SpecShift knows what they send, where it goes, what SpecShift returns, and how to avoid overclaiming.",
+  "registered_at_utc": "2026-06-28T22:11:53.674601+00:00",
+  "required_pilot_boundaries": [
+    "buyer-controlled",
+    "observable-only",
+    "exported traces only",
+    "no model weights",
+    "no source code",
+    "no private prompts",
+    "no hidden activations",
+    "no private chain-of-thought",
+    "buyer retains labels",
+    "human adjudication retained",
+    "candidate-discrepancy memos only",
+    "no automated verdict",
+    "no production validation claim",
+    "no legal/compliance/certification claim",
+    "no free pilots"
+  ],
+  "status": "in_progress",
+  "workplan": "specshift_buyer_safe_pilot_intake_delivery_lane"
+}
