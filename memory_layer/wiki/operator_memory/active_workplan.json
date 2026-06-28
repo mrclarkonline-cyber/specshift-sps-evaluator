@@ -1,34 +1,10 @@
 {
-  "active_tracker": "tools/status/worldwide_phase3_progress.py",
-  "active_workplan": "worldwide_phase3_live_ingestion_runway",
-  "claim_boundary": "Phase 3 is bounded live-sample runway work only; no production monitoring, content validation, alert readiness, autonomous action, or truth resolution claimed.",
-  "display_rule": "wiki_landing should display Phase 3 as the active workplan once Phase 2 is closed at 100%. Phase 2 remains closure evidence, not the active landing workplan.",
-  "phase2_status": "closed_at_100_percent",
-
-# SPECSHIFT_ACTIVE_WORKPLAN_ROUTING
-ACTIVE_WORKPLAN_JSON="memory_layer/wiki/operator_memory/active_workplan.json"
-if [ -f "$ACTIVE_WORKPLAN_JSON" ] && command -v python3 >/dev/null 2>&1; then
-  ACTIVE_TRACKER="$(python3 - <<'PY2'
-import json
-from pathlib import Path
-path = Path("memory_layer/wiki/operator_memory/active_workplan.json")
-try:
-    data = json.loads(path.read_text(encoding="utf-8"))
-    print(data.get("active_tracker", ""))
-except Exception:
-    print("")
-PY2
-)"
-  if [ -n "$ACTIVE_TRACKER" ] && [ -f "$ACTIVE_TRACKER" ]; then
-    echo
-    echo "=== Active workplan ==="
-    python3 "$ACTIVE_TRACKER" || true
-    echo
-  fi
-fi
-# /SPECSHIFT_ACTIVE_WORKPLAN_ROUTING
-
-  "previous_tracker": "tools/status/worldwide_pipeline_progress.py",
-  "previous_workplan": "worldwide_phase2_registry_tracking_closure",
-  "registered_at_utc": "2026-06-28T09:07:34.878821+00:00"
+  "active_tracker": "tools/status/worldwide_phase4_progress.py",
+  "active_workplan": "worldwide_phase4_claim_safety_normalization",
+  "claim_boundary": "Phase 4 is bounded claim-safety and normalization work only; no production monitoring, content validation, alert readiness, autonomous action, or truth resolution claimed.",
+  "display_rule": "wiki_landing should show Phase 4 as the active workplan once Phase 3 is complete at 100%. Phase 3 remains closure evidence, not the active landing workplan.",
+  "phase3_status": "closed_at_100_percent",
+  "previous_tracker": "tools/status/worldwide_phase3_progress.py",
+  "previous_workplan": "worldwide_phase3_live_ingestion_runway",
+  "registered_at_utc": "2026-06-28T09:21:13.998069+00:00"
 }

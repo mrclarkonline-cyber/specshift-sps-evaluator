@@ -1,0 +1,23 @@
+{
+  "claim_boundary": "Phase 4 registration only. This does not claim production monitoring, content validation, alert readiness, autonomous action, or truth resolution.",
+  "phase": "phase_4_worldwide_claim_safety_normalization",
+  "phase4_goal": "For all Phase 3 parsed samples, verify normalized fields, source provenance, language separation, uncertainty labels, category routing, and claim-safety notes.",
+  "previous_phase": "phase_3_worldwide_live_ingestion_runway",
+  "previous_phase_artifacts": [
+    "memory_layer/wiki/operator_memory/worldwide_phase3/live_sample_batch1/phase3_batch1_summary.json",
+    "memory_layer/wiki/operator_memory/worldwide_phase3/live_sample_batch2/phase3_batch2_summary.json"
+  ],
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Move from bounded live-sample records to claim-safety labeling, normalized schema checks, and source-category routing without validating truth or enabling alerts.",
+  "registered_at_utc": "2026-06-28T09:21:13.998069+00:00",
+  "required_gates": [
+    "Gate 1: load Phase 3 parsed sample records only",
+    "Gate 2: verify every parsed record has source_url, retrieved_at, source_type, category, uncertainty_label, and claim_boundary",
+    "Gate 3: preserve original-language fields separately from translated fields",
+    "Gate 4: classify records as sample_only_not_content_validated",
+    "Gate 5: flag high-risk source categories without resolving truth",
+    "Gate 6: produce normalization report",
+    "Gate 7: do not create alerts, predictions, truth claims, or production monitoring claims"
+  ],
+  "status": "registered"
+}
