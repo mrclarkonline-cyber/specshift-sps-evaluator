@@ -1,0 +1,183 @@
+{
+  "audience_counts": {
+    "CPA": 7,
+    "lawyer": 7
+  },
+  "claim_boundary": "This packet index is preparation for lawyer/CPA review only. It does not disclose protected implementation by default and is not legal advice, financial advice, tax advice, valuation advice, compliance certification, or a commercial claim.",
+  "created_at_utc": "2026-06-28T13:05:31.614180+00:00",
+  "default_packet_rule": "Export indexes and summaries first. Do not export protected implementation, raw client artifacts, raw labels, source code, or buyer-confidential material by default.",
+  "exportable_items": [
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Export packet index item only. Sharing requires human/professional review and does not create legal, financial, tax, valuation, compliance, or commercial conclusions.",
+      "default_share_status": "share_after_professional_review",
+      "exists": true,
+      "packet_item": "professional_forensic_artifact_index",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_forensic_artifact_index.json",
+      "professional_review_required": true,
+      "protected_implementation_disclosed": false,
+      "reason": "Index of artifacts, hashes, classifications, and boundaries.",
+      "sha256": "81ec0ed6263d1ef4b92c067193af47af56721a9c43d350e2855a00b6f05bbb73",
+      "size_bytes": 22002
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Export packet index item only. Sharing requires human/professional review and does not create legal, financial, tax, valuation, compliance, or commercial conclusions.",
+      "default_share_status": "share_after_professional_review",
+      "exists": true,
+      "packet_item": "professional_viability_claim_matrix",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_viability_claim_matrix.json",
+      "professional_review_required": true,
+      "protected_implementation_disclosed": false,
+      "reason": "Conservative viable/scaffolded/unvalidated/professional-review matrix.",
+      "sha256": "b72c0908f543ab4b6b6884227301590dc06f1948e61f06be8e52d0c0f6d0e2c7",
+      "size_bytes": 10814
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Export packet index item only. Sharing requires human/professional review and does not create legal, financial, tax, valuation, compliance, or commercial conclusions.",
+      "default_share_status": "share_after_professional_review",
+      "exists": true,
+      "packet_item": "professional_financial_contract_thresholds",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_financial_contract_thresholds.json",
+      "professional_review_required": true,
+      "protected_implementation_disclosed": false,
+      "reason": "Trigger thresholds, no-free-pilot posture, paid-pilot handling, and professional questions.",
+      "sha256": "0b43b51da32d9d7ec3b728e75945498f6fa98cebcb8e6a9f77aaad4cd7cb51be",
+      "size_bytes": 5991
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Export packet index item only. Sharing requires human/professional review and does not create legal, financial, tax, valuation, compliance, or commercial conclusions.",
+      "default_share_status": "share_after_professional_review",
+      "exists": true,
+      "packet_item": "professional_viability_snapshot",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_viability_snapshot.json",
+      "professional_review_required": true,
+      "protected_implementation_disclosed": false,
+      "reason": "Conservative snapshot of what exists and what remains unvalidated.",
+      "sha256": "8b3b91247f82397ce7b4c92e8ea9b9a67a7bded88faa51ae2f6de920a0dfa75c",
+      "size_bytes": 3438
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Export packet index item only. Sharing requires human/professional review and does not create legal, financial, tax, valuation, compliance, or commercial conclusions.",
+      "default_share_status": "share_after_professional_review",
+      "exists": true,
+      "packet_item": "human_readable_professional_packet",
+      "path": "docs/workstation/professional_readiness_forensic_accounting_packet.md",
+      "professional_review_required": true,
+      "protected_implementation_disclosed": false,
+      "reason": "Readable overview for professional intake.",
+      "sha256": "65efa3ff853c87732f4a7c90a6c42fc4e54c316fcf0361bfc25574606d9259c1",
+      "size_bytes": 2041
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Export packet index item only. Sharing requires human/professional review and does not create legal, financial, tax, valuation, compliance, or commercial conclusions.",
+      "default_share_status": "share_after_professional_review",
+      "exists": true,
+      "packet_item": "professional_phase2_note",
+      "path": "docs/workstation/professional_phase2_viability_claim_matrix.md",
+      "professional_review_required": true,
+      "protected_implementation_disclosed": false,
+      "reason": "Readable summary of viability matrix.",
+      "sha256": "a952ab023e5600539da5a4c189babf3eaabc33a835740e1d8d8bc69284c939c6",
+      "size_bytes": 1217
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Export packet index item only. Sharing requires human/professional review and does not create legal, financial, tax, valuation, compliance, or commercial conclusions.",
+      "default_share_status": "share_after_professional_review",
+      "exists": true,
+      "packet_item": "professional_phase3_note",
+      "path": "docs/workstation/professional_phase3_financial_contract_thresholds.md",
+      "professional_review_required": true,
+      "protected_implementation_disclosed": false,
+      "reason": "Readable summary of financial and contract thresholds.",
+      "sha256": "a8daf13f1edd97f162231fa4152bdb5dd280e2563ea0f252e772fceaed6d1535",
+      "size_bytes": 1584
+    }
+  ],
+  "missing_items": [],
+  "package": "professional_phase_4_exportable_review_packet_index",
+  "professional_review_questions": {
+    "CPA": [
+      "Which records are sufficient for bookkeeping setup?",
+      "What revenue categories should be created?",
+      "What expenses should be tracked from these artifacts?",
+      "What records are needed before accepting paid pilot funds?"
+    ],
+    "lawyer": [
+      "Which indexed artifacts should be shared first?",
+      "Which artifacts require NDA before review?",
+      "Which artifacts should remain protected trade-secret material?",
+      "What public claim language is safe?",
+      "What client data terms and non-use provisions are needed?"
+    ]
+  },
+  "purpose": "Create a lawyer/CPA review packet index that identifies shareable professional-review artifacts without disclosing protected implementation by default.",
+  "records_artifact": "memory_layer/wiki/operator_memory/professional_readiness/professional_exportable_review_packet_index_records.jsonl",
+  "restricted_by_default": [
+    {
+      "category": "protected_implementation",
+      "default": "do_not_export_by_default",
+      "examples": [
+        "source code beyond index references",
+        "protected method details",
+        "client-specific private/protected artifacts",
+        "raw traces or labels",
+        "buyer-confidential material",
+        "operator-memory records not needed for professional review"
+      ],
+      "release_condition": "Share only if lawyer/CPA specifically requests and human approves the exact artifact."
+    },
+    {
+      "category": "public_or_buyer_facing_materials",
+      "default": "review_before_use",
+      "examples": [
+        "marketing copy",
+        "outreach packets",
+        "pilot descriptions",
+        "delivery package summaries"
+      ],
+      "release_condition": "Run Claim Gauntlet and Promotion Gate; then human/professional review."
+    },
+    {
+      "category": "financial_or_contract_terms",
+      "default": "not_binding",
+      "examples": [
+        "price anchors",
+        "pilot scope ideas",
+        "payment terms",
+        "exclusivity language"
+      ],
+      "release_condition": "Treat as planning notes only until lawyer/CPA review."
+    }
+  ],
+  "status": "complete",
+  "status_counts": {
+    "share_after_professional_review": 7
+  }
+}
