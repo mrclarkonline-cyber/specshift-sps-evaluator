@@ -2,13 +2,13 @@
 from pathlib import Path
 
 PIPELINES = [
-    ("01", "WHO Disease Outbreak News", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
-    ("02", "ReliefWeb / OCHA", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
-    ("03", "GDACS", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
-    ("04", "World Bank Open Data", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
-    ("05", "IMF Data", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
-    ("06", "EU Open Data Portal", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
-    ("07", "ECDC", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
+    ("01", "WHO Disease Outbreak News", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
+    ("02", "ReliefWeb / OCHA", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
+    ("03", "GDACS", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
+    ("04", "World Bank Open Data", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
+    ("05", "IMF Data", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
+    ("06", "EU Open Data Portal", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
+    ("07", "ECDC", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
     ("08", "BBC World Service RSS verification", "docs/workstation/worldwide_source_expansion_backlog.md", "registered"),
     ("09", "Deutsche Welle RSS verification", "docs/workstation/worldwide_source_expansion_backlog.md", "registered"),
     ("10", "Canada Open Government", "docs/workstation/worldwide_pipeline_expansion_registry.md", "registered"),

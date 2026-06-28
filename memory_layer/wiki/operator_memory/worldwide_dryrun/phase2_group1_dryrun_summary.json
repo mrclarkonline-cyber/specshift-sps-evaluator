@@ -1,0 +1,16 @@
+{
+  "boundary": "Dry-run records are normalized config artifacts only. They do not represent fetched or validated live source content.",
+  "generated_at_utc": "2026-06-28T08:19:22.249034+00:00",
+  "output_file": "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl",
+  "records_written": 7,
+  "sources": [
+    "WHO Disease Outbreak News",
+    "ReliefWeb / OCHA",
+    "GDACS",
+    "World Bank Open Data",
+    "IMF Data",
+    "EU Open Data Portal",
+    "ECDC"
+  ],
+  "status": "dry_run_records_written_not_live_ingestion"
+}
