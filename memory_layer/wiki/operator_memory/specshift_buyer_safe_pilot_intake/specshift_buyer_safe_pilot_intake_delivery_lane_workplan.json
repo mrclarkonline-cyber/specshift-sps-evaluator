@@ -13,11 +13,20 @@
     "non_retention_and_boundary_statement.md"
   ],
   "follows": "regulatory_certification_procurement_readiness",
+  "last_updated_at_utc": "2026-06-28T22:13:01.447267+00:00",
   "phases": [
     {
+      "artifacts": [
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase1_scope_and_boundaries.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase1_non_retention_and_boundary_statement.json",
+        "docs/workstation/buyer_safe_pilot/pilot_scope_and_boundaries.md",
+        "docs/workstation/buyer_safe_pilot/non_retention_and_boundary_statement.md"
+      ],
+      "completed_at_utc": "2026-06-28T22:13:01.447267+00:00",
+      "completion_note": "Pilot scope/boundaries and non-retention/boundary statement created.",
       "goal": "Create pilot_scope_and_boundaries.md and non_retention_and_boundary_statement.md.",
       "phase": "pilot_phase_1_scope_and_boundaries",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Create client_intake_questionnaire.md and buyer_data_request_template.md.",
