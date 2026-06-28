@@ -1,0 +1,7 @@
+buyer_label,candidate_flag,reconciliation_category,reconciliation_note,trace_id
+issue,yes,true_positive,buyer-label comparison after buyer-controlled reveal,t1
+no,yes,false_positive,buyer-label comparison after buyer-controlled reveal,t2
+no,no,true_negative,buyer-label comparison after buyer-controlled reveal,t3
+issue,no,false_negative,buyer-label comparison after buyer-controlled reveal,t4
+ambiguous,yes,ambiguous,buyer-label comparison after buyer-controlled reveal,t5
+,yes,label_unavailable,buyer-label comparison after buyer-controlled reveal,t6

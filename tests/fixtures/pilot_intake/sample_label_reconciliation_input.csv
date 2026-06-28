@@ -1,0 +1,7 @@
+trace_id,candidate_flag,buyer_label
+t1,yes,issue
+t2,yes,no
+t3,no,no
+t4,no,issue
+t5,yes,ambiguous
+t6,yes,

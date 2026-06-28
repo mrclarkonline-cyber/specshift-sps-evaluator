@@ -1,0 +1,17 @@
+{
+  "category_counts": {
+    "ambiguous": 1,
+    "false_negative": 1,
+    "false_positive": 1,
+    "label_unavailable": 1,
+    "out_of_scope": 0,
+    "true_negative": 1,
+    "true_positive": 1
+  },
+  "claim_boundary": "Label reconciliation only. It compares candidate-discrepancy memo categories against buyer-retained labels after buyer-controlled label reveal. It does not claim production validation, compliance certification, truth validation, automated verdicts, legal advice, financial advice, binding terms, or autonomous client action.",
+  "created_at_utc": "2026-06-28T22:52:50.203760+00:00",
+  "engine": "label_reconciliation_v1",
+  "input_path": "tests/fixtures/pilot_intake/sample_label_reconciliation_input.csv",
+  "output_path": "tests/fixtures/pilot_intake/sample_label_reconciliation_output.csv",
+  "rows": 6
+}

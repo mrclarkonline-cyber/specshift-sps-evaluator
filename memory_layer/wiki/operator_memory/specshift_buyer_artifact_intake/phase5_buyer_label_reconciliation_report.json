@@ -1,0 +1,24 @@
+{
+  "artifacts": [
+    "tools/pilot_intake/label_reconciliation.py",
+    "docs/workstation/buyer_artifact_intake/pilot_error_accounting_template.md",
+    "docs/workstation/buyer_artifact_intake/label_reveal_protocol.md",
+    "tests/fixtures/pilot_intake/sample_label_reconciliation_input.csv",
+    "tests/fixtures/pilot_intake/sample_label_reconciliation_output.csv",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase5_sample_label_reconciliation_report.json"
+  ],
+  "claim_boundary": "Phase 5 creates a buyer-label reconciliation scaffold only. It does not create production validation, compliance certification, truth validation, automated verdicts, legal advice, financial advice, binding terms, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-28T22:52:50.200919+00:00",
+  "phase": "phase_5_buyer_label_reconciliation",
+  "sample_category_counts": {
+    "ambiguous": 1,
+    "false_negative": 1,
+    "false_positive": 1,
+    "label_unavailable": 1,
+    "out_of_scope": 0,
+    "true_negative": 1,
+    "true_positive": 1
+  },
+  "sample_rows": 6,
+  "status": "complete"
+}
