@@ -1,0 +1,157 @@
+{
+  "schema_version": "2026-06-28.phase2.group1",
+  "status": "configured_not_live_ingested",
+  "purpose": "First worldwide source build group for public, lawful, provenance-preserving information intake.",
+  "global_guardrails": [
+    "Public APIs/RSS only.",
+    "No paywall bypass.",
+    "No private-person tracking.",
+    "No offensive cyber use.",
+    "No automated trading, legal, medical, or emergency decision-making.",
+    "Preserve source URL, retrieval timestamp, source country/region, source language, uncertainty label, and original text excerpt.",
+    "Machine-translated fields are derived fields and must never replace original-language fields.",
+    "Alerts require source provenance and uncertainty labels."
+  ],
+  "sources": [
+    {
+      "id": "who_don",
+      "name": "WHO Disease Outbreak News",
+      "category": "health_and_biosecurity",
+      "region_or_country": "global",
+      "priority": "high",
+      "status": "configured",
+      "source_type": "rss_or_web",
+      "candidate_urls": [
+        "https://www.who.int/emergencies/disease-outbreak-news",
+        "https://www.who.int/feeds/entity/don/en/rss.xml"
+      ],
+      "update_frequency": "daily_or_as_published",
+      "uncertainty_policy": "Official WHO reports are high-provenance observations but may lag member-state reporting.",
+      "guardrails": [
+        "Distinguish confirmed from suspected cases.",
+        "Do not create medical advice.",
+        "Do not store personal health data."
+      ]
+    },
+    {
+      "id": "reliefweb_ocha",
+      "name": "ReliefWeb / OCHA",
+      "category": "earth_and_environment",
+      "region_or_country": "global",
+      "priority": "high",
+      "status": "configured",
+      "source_type": "api",
+      "candidate_urls": [
+        "https://api.reliefweb.int/v1/reports",
+        "https://reliefweb.int/help/api"
+      ],
+      "update_frequency": "daily",
+      "uncertainty_policy": "ReliefWeb aggregates many contributors; preserve original contributing organization.",
+      "guardrails": [
+        "Track original source organization, not only ReliefWeb.",
+        "Treat field reports and casualty numbers as provisional unless confirmed by authoritative bodies.",
+        "Redact or avoid PII."
+      ]
+    },
+    {
+      "id": "gdacs",
+      "name": "GDACS",
+      "category": "earth_and_environment",
+      "region_or_country": "global",
+      "priority": "high",
+      "status": "configured",
+      "source_type": "rss_xml",
+      "candidate_urls": [
+        "https://www.gdacs.org/xml/rss.xml",
+        "https://www.gdacs.org/rss.aspx"
+      ],
+      "update_frequency": "near_real_time_or_hourly",
+      "uncertainty_policy": "GDACS alert levels are model-supported disaster alerts and may revise.",
+      "guardrails": [
+        "Use official alert levels as stated.",
+        "Do not overstate automated impact models.",
+        "Preserve originating hazard source where provided."
+      ]
+    },
+    {
+      "id": "world_bank",
+      "name": "World Bank Open Data",
+      "category": "infrastructure_and_economics",
+      "region_or_country": "global",
+      "priority": "high",
+      "status": "configured",
+      "source_type": "api",
+      "candidate_urls": [
+        "https://api.worldbank.org/v2/country/all/indicator",
+        "https://data.worldbank.org/developers"
+      ],
+      "update_frequency": "monthly_or_quarterly",
+      "uncertainty_policy": "Indicators are authoritative but often lag and may be revised.",
+      "guardrails": [
+        "Do not treat historical indicators as real-time telemetry.",
+        "Do not create investment advice.",
+        "Track indicator definitions and revision dates."
+      ]
+    },
+    {
+      "id": "imf",
+      "name": "IMF Data",
+      "category": "infrastructure_and_economics",
+      "region_or_country": "global",
+      "priority": "high",
+      "status": "configured",
+      "source_type": "api",
+      "candidate_urls": [
+        "https://www.imf.org/en/Data",
+        "https://dataservices.imf.org/REST/SDMX_JSON.svc"
+      ],
+      "update_frequency": "monthly_or_quarterly",
+      "uncertainty_policy": "IMF statistics are high-provenance macro indicators with revision risk.",
+      "guardrails": [
+        "Do not create investment advice.",
+        "Separate official statistics from interpretation.",
+        "Track data vintage when available."
+      ]
+    },
+    {
+      "id": "eu_open_data",
+      "name": "EU Open Data Portal",
+      "category": "government_and_policy",
+      "region_or_country": "European Union",
+      "priority": "high",
+      "status": "configured",
+      "source_type": "api",
+      "candidate_urls": [
+        "https://data.europa.eu/api/hub/search/datasets",
+        "https://data.europa.eu/en"
+      ],
+      "update_frequency": "daily",
+      "uncertainty_policy": "Official EU portal records are high-provenance but may include proposed or draft materials.",
+      "guardrails": [
+        "Distinguish proposed, draft, active, and repealed status.",
+        "Preserve multilingual original fields.",
+        "Flag translation limitations."
+      ]
+    },
+    {
+      "id": "ecdc",
+      "name": "ECDC",
+      "category": "health_and_biosecurity",
+      "region_or_country": "European Union",
+      "priority": "high",
+      "status": "configured",
+      "source_type": "dataset_or_rss",
+      "candidate_urls": [
+        "https://www.ecdc.europa.eu/en/publications-data",
+        "https://www.ecdc.europa.eu/en/rss-feeds"
+      ],
+      "update_frequency": "weekly_or_as_published",
+      "uncertainty_policy": "ECDC depends on member-state reporting; surveillance completeness varies.",
+      "guardrails": [
+        "Do not compare member states without noting reporting and testing differences.",
+        "Separate raw surveillance counts from modeled interpretation.",
+        "Do not create medical advice."
+      ]
+    }
+  ]
+}

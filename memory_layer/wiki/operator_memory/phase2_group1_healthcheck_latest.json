@@ -1,0 +1,196 @@
+{
+  "checked_at_utc": "2026-06-28T08:16:40.557388+00:00",
+  "config": "configs/worldwide_sources/phase2_group1_sources.json",
+  "sources": [
+    {
+      "any_ok": true,
+      "checks": [
+        {
+          "content_type": "text/html; charset=utf-8",
+          "error": null,
+          "host": "www.who.int",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://www.who.int/emergencies/disease-outbreak-news"
+        },
+        {
+          "error": "http_error:404",
+          "host": "www.who.int",
+          "ok": false,
+          "scheme": "https",
+          "status": 404,
+          "url": "https://www.who.int/feeds/entity/don/en/rss.xml"
+        }
+      ],
+      "id": "who_don",
+      "name": "WHO Disease Outbreak News",
+      "status": "configured"
+    },
+    {
+      "any_ok": true,
+      "checks": [
+        {
+          "error": "http_error:410",
+          "host": "api.reliefweb.int",
+          "ok": false,
+          "scheme": "https",
+          "status": 410,
+          "url": "https://api.reliefweb.int/v1/reports"
+        },
+        {
+          "content_type": "text/html; charset=UTF-8",
+          "error": null,
+          "host": "reliefweb.int",
+          "ok": true,
+          "sample_bytes": 0,
+          "scheme": "https",
+          "status": 202,
+          "url": "https://reliefweb.int/help/api"
+        }
+      ],
+      "id": "reliefweb_ocha",
+      "name": "ReliefWeb / OCHA",
+      "status": "configured"
+    },
+    {
+      "any_ok": true,
+      "checks": [
+        {
+          "content_type": "application/xml",
+          "error": null,
+          "host": "www.gdacs.org",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://www.gdacs.org/xml/rss.xml"
+        },
+        {
+          "content_type": "text/xml",
+          "error": null,
+          "host": "www.gdacs.org",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://www.gdacs.org/rss.aspx"
+        }
+      ],
+      "id": "gdacs",
+      "name": "GDACS",
+      "status": "configured"
+    },
+    {
+      "any_ok": true,
+      "checks": [
+        {
+          "content_type": "text/xml",
+          "error": null,
+          "host": "api.worldbank.org",
+          "ok": true,
+          "sample_bytes": 201,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://api.worldbank.org/v2/country/all/indicator"
+        },
+        {
+          "content_type": "text/html; charset=utf-8",
+          "error": null,
+          "host": "data.worldbank.org",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://data.worldbank.org/developers"
+        }
+      ],
+      "id": "world_bank",
+      "name": "World Bank Open Data",
+      "status": "configured"
+    },
+    {
+      "any_ok": true,
+      "checks": [
+        {
+          "content_type": "text/html; charset=utf-8",
+          "error": null,
+          "host": "www.imf.org",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://www.imf.org/en/Data"
+        },
+        {
+          "error": "url_error:[Errno 8] nodename nor servname provided, or not known",
+          "host": "dataservices.imf.org",
+          "ok": false,
+          "scheme": "https",
+          "status": null,
+          "url": "https://dataservices.imf.org/REST/SDMX_JSON.svc"
+        }
+      ],
+      "id": "imf",
+      "name": "IMF Data",
+      "status": "configured"
+    },
+    {
+      "any_ok": true,
+      "checks": [
+        {
+          "error": "http_error:400",
+          "host": "data.europa.eu",
+          "ok": false,
+          "scheme": "https",
+          "status": 400,
+          "url": "https://data.europa.eu/api/hub/search/datasets"
+        },
+        {
+          "content_type": "text/html; charset=UTF-8",
+          "error": null,
+          "host": "data.europa.eu",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://data.europa.eu/en"
+        }
+      ],
+      "id": "eu_open_data",
+      "name": "EU Open Data Portal",
+      "status": "configured"
+    },
+    {
+      "any_ok": true,
+      "checks": [
+        {
+          "content_type": "text/html; charset=UTF-8",
+          "error": null,
+          "host": "www.ecdc.europa.eu",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://www.ecdc.europa.eu/en/publications-data"
+        },
+        {
+          "content_type": "text/html; charset=UTF-8",
+          "error": null,
+          "host": "www.ecdc.europa.eu",
+          "ok": true,
+          "sample_bytes": 512,
+          "scheme": "https",
+          "status": 200,
+          "url": "https://www.ecdc.europa.eu/en/rss-feeds"
+        }
+      ],
+      "id": "ecdc",
+      "name": "ECDC",
+      "status": "configured"
+    }
+  ],
+  "sources_total": 7,
+  "status": "healthcheck_only_not_live_ingestion"
+}
