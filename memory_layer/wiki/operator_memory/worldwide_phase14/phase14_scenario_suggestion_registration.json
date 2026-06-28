@@ -1,0 +1,31 @@
+{
+  "allowed_outputs": [
+    "worth checking",
+    "needs more sources",
+    "possible coverage gap",
+    "human review recommended",
+    "park or discard candidate",
+    "safe next data pull suggestion",
+    "review batching suggestion",
+    "source-balance check suggestion"
+  ],
+  "claim_boundary": "Phase 14 creates bounded review suggestions only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution.",
+  "forbidden_outputs": [
+    "act-now alerts",
+    "truth conclusions",
+    "causal conclusions",
+    "prediction claims",
+    "financial recommendations",
+    "legal recommendations",
+    "medical recommendations",
+    "policy decisions",
+    "autonomous operational decisions"
+  ],
+  "phase": "phase_14_worldwide_bounded_scenario_suggestion_layer",
+  "phase14_goal": "Create practical, bounded review suggestions from analytical-core outputs without making truth, causality, prediction, alert, policy, financial, legal, medical, or autonomous-action claims.",
+  "previous_phase": "phase_13_worldwide_secondary_condition_math_overlay",
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Convert bounded pattern, negative-space, math, and secondary-condition candidates into review-only scenario suggestions.",
+  "registered_at_utc": "2026-06-28T09:44:27.598959+00:00",
+  "status": "registered"
+}
