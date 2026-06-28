@@ -1,0 +1,29 @@
+{
+  "allowed_methods": [
+    "category conditioned on source_type",
+    "source_type conditioned on category",
+    "pair density conditioned on category",
+    "review packet density conditioned on source_type_diversity",
+    "negative-space type conditioned on severity",
+    "pattern type conditioned on observed value",
+    "conditional concentration flags",
+    "secondary-condition review suggestions"
+  ],
+  "claim_boundary": "Phase 13 uses secondary-condition descriptive metadata math only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, validated anomaly detection, alert readiness, autonomous action, or truth resolution.",
+  "forbidden_outputs": [
+    "causal mechanism claims",
+    "prediction claims",
+    "validated hidden-structure claims",
+    "truth resolution",
+    "alert readiness",
+    "autonomous action recommendations",
+    "production monitoring claims"
+  ],
+  "phase": "phase_13_worldwide_secondary_condition_math_overlay",
+  "phase13_goal": "Compute conditional metadata summaries over worldwide artifacts while avoiding causal, predictive, truth, alert, or validated anomaly claims.",
+  "previous_phase": "phase_12_worldwide_advanced_math_overlay",
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Apply bounded secondary-condition math overlays to detect metadata patterns that appear only under another condition such as category, source type, source-type diversity, uncertainty label, or claim-safety label.",
+  "registered_at_utc": "2026-06-28T09:43:16.659200+00:00",
+  "status": "registered"
+}

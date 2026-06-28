@@ -1,9 +1,9 @@
 {
-  "active_tracker": "tools/status/worldwide_phase12_progress.py",
-  "active_workplan": "worldwide_phase12_advanced_math_overlay",
-  "claim_boundary": "Phase 12 uses descriptive metadata math only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, validated anomaly detection, alert readiness, autonomous action, or truth resolution.",
-  "phase11_status": "closed_at_100_percent",
-  "previous_tracker": "tools/status/worldwide_phase11_progress.py",
-  "previous_workplan": "worldwide_phase11_negative_space_pattern_layer",
-  "registered_at_utc": "2026-06-28T09:41:49.244855+00:00"
+  "active_tracker": "tools/status/worldwide_phase13_progress.py",
+  "active_workplan": "worldwide_phase13_secondary_condition_math_overlay",
+  "claim_boundary": "Phase 13 uses secondary-condition descriptive metadata math only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, validated anomaly detection, alert readiness, autonomous action, or truth resolution.",
+  "phase12_status": "closed_at_100_percent",
+  "previous_tracker": "tools/status/worldwide_phase12_progress.py",
+  "previous_workplan": "worldwide_phase12_advanced_math_overlay",
+  "registered_at_utc": "2026-06-28T09:43:16.659200+00:00"
 }

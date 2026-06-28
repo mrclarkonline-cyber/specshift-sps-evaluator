@@ -1,0 +1,26 @@
+{
+  "claim_boundary": "Phase 13 uses secondary-condition descriptive metadata math only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, validated anomaly detection, alert readiness, autonomous action, or truth resolution.",
+  "condition_type_counts": {
+    "candidate_pairs_given_category": 3,
+    "category_given_source_type": 2,
+    "metric_family_given_phase12_metrics": 1,
+    "negative_space_given_severity": 1,
+    "observed_value_given_pattern_type": 4,
+    "review_packets_given_source_type_diversity": 2,
+    "source_type_given_category": 6
+  },
+  "created_at_utc": "2026-06-28T09:43:16.659200+00:00",
+  "phase": "phase_13_worldwide_secondary_condition_math_overlay",
+  "records_analyzed": {
+    "phase10_candidate_patterns": 21,
+    "phase11_negative_space_candidates": 2,
+    "phase12_math_metrics": 20,
+    "phase4_normalized_records": 18,
+    "phase5_candidate_pairs": 36,
+    "phase6_inspection_records": 36,
+    "phase7_review_packets": 36
+  },
+  "secondary_condition_candidates": 19,
+  "secondary_condition_records_artifact": "memory_layer/wiki/operator_memory/worldwide_phase13/phase13_secondary_condition_candidate_records.jsonl",
+  "status": "complete"
+}
