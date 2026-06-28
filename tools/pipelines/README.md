@@ -90,3 +90,27 @@ Safety boundary:
 - no tactical mapping
 - no automated emergency action
 
+### federal_register_fetch.py
+
+Fetches Federal Register records for public policy/regulatory awareness.
+
+Dry-run:
+
+python3 tools/pipelines/federal_register_fetch.py --dry-run
+
+Live fetch:
+
+python3 tools/pipelines/federal_register_fetch.py --limit 10 --days 7
+
+Focused search:
+
+python3 tools/pipelines/federal_register_fetch.py --limit 10 --days 30 --search-term "artificial intelligence"
+
+Safety boundary:
+
+- policy awareness only
+- not legal advice
+- proposed is not final
+- primary source link required
+- no automated operational changes
+
