@@ -1,0 +1,279 @@
+{
+  "audience_counts": {
+    "CPA": 4,
+    "enterprise_buyer": 3,
+    "lawyer": 8,
+    "procurement": 4,
+    "security_reviewer": 4
+  },
+  "claim_boundary": "Regulatory Phase 4 creates a procurement due-diligence index only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+  "completed_at_utc": "2026-06-28T13:16:01.503700+00:00",
+  "default_external_position": "Provide summaries and indexes first. Do not disclose protected implementation, client-confidential materials, source code, raw labels, raw traces, or binding financial/contract terms by default.",
+  "missing_items": [],
+  "phase": "regulatory_phase_4_procurement_due_diligence_packet",
+  "procurement_questions": {
+    "claim_safety": [
+      "What wording is prohibited?",
+      "What gates exist before external-facing claims?",
+      "What does SpecShift not claim?"
+    ],
+    "data_handling": [
+      "What artifact classifications exist?",
+      "How are private/protected artifacts handled?",
+      "What is the retention/deletion posture?",
+      "What is not disclosed by default?"
+    ],
+    "governance": [
+      "What is the system used for and not used for?",
+      "Who has final decision authority?",
+      "What outputs require human review?",
+      "What prohibited uses are enforced?"
+    ],
+    "professional_review": [
+      "What requires lawyer review?",
+      "What requires CPA review?",
+      "What requires security/client review?",
+      "What happens before paid pilot or procurement response?"
+    ],
+    "security_and_confidentiality": [
+      "What artifacts are restricted by default?",
+      "What requires NDA or client authorization?",
+      "What source code/protected methods are not shared?"
+    ]
+  },
+  "purpose": "Create an enterprise/procurement-facing diligence index with safe artifacts, required reviews, and non-disclosure defaults.",
+  "records_artifact": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase4_procurement_due_diligence_packet_records.jsonl",
+  "restricted_by_default": [
+    {
+      "category": "protected_implementation",
+      "default_action": "do_not_disclose",
+      "examples": [
+        "source code beyond approved summaries",
+        "protected method details",
+        "private prompts or hidden methods",
+        "algorithmic implementation details",
+        "non-public repo internals not required for diligence"
+      ],
+      "release_condition": "Exact artifact request, human approval, and lawyer-reviewed NDA/non-use terms."
+    },
+    {
+      "category": "client_or_buyer_confidential_material",
+      "default_action": "do_not_disclose",
+      "examples": [
+        "raw client traces",
+        "labels",
+        "ground truth records",
+        "client documents",
+        "contracts",
+        "payment records"
+      ],
+      "release_condition": "Client authorization and lawyer-reviewed terms."
+    },
+    {
+      "category": "public_claim_or_marketing_material",
+      "default_action": "review_before_use",
+      "examples": [
+        "website language",
+        "sales decks",
+        "pilot claims",
+        "case studies",
+        "certification-readiness statements"
+      ],
+      "release_condition": "Claim Gauntlet, Promotion Gate, human review, and professional review where appropriate."
+    },
+    {
+      "category": "financial_or_contract_terms",
+      "default_action": "not_binding",
+      "examples": [
+        "price anchors",
+        "pilot ranges",
+        "payment terms",
+        "exclusivity options",
+        "procurement responses"
+      ],
+      "release_condition": "Lawyer/CPA review before use as terms or commitments."
+    }
+  ],
+  "safe_overall_claim": "SpecShift has internal documentation and evidence scaffolds that can support future procurement/professional diligence. SpecShift is not claiming certification, compliance, government approval, procurement approval, production monitoring, or truth validation.",
+  "safe_packet_items": [
+    {
+      "audience": [
+        "procurement",
+        "lawyer",
+        "security_reviewer",
+        "enterprise_buyer"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "regulatory_scope_and_standards_map",
+      "path": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase1_scope_and_standards_map.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Shows readiness scope, reference categories, evidence categories, and forbidden claims.",
+      "required_review_before_external_use": [
+        "human_review",
+        "claim_gauntlet",
+        "promotion_gate"
+      ],
+      "sha256": "ec152d5608c6724e118a22624236e4cfe7916dbae0f9b6594b807637944ce8fd",
+      "share_tier": "safe_summary_after_review",
+      "size_bytes": 3414
+    },
+    {
+      "audience": [
+        "procurement",
+        "lawyer",
+        "security_reviewer"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "control_evidence_inventory",
+      "path": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase2_control_evidence_inventory_report.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Summarizes existing control/evidence artifacts without exporting protected implementation.",
+      "required_review_before_external_use": [
+        "human_review",
+        "claim_gauntlet",
+        "promotion_gate"
+      ],
+      "sha256": "97330f49c23d675c36f231055d65389385e16357eb7996f40f14b3ae65b9268d",
+      "share_tier": "safe_summary_after_review",
+      "size_bytes": 1670
+    },
+    {
+      "audience": [
+        "procurement",
+        "lawyer",
+        "security_reviewer",
+        "enterprise_buyer"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "governance_policy_scaffold",
+      "path": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase3_governance_policy_scaffold.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Shows policy scaffolds for prohibited use, human review, data handling, retention, protected methods, and claim safety.",
+      "required_review_before_external_use": [
+        "human_review",
+        "lawyer_review",
+        "claim_gauntlet",
+        "promotion_gate"
+      ],
+      "sha256": "a1d29689aa9155607366cb9960aa0f48db08f65184f5ca0999ee6332530fa432",
+      "share_tier": "safe_summary_after_review",
+      "size_bytes": 6898
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "professional_readiness_closeout",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_phase5_audit_closeout_report.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Shows professional-readiness package status and professional-review boundary.",
+      "required_review_before_external_use": [
+        "lawyer_review",
+        "CPA_review_if_financial"
+      ],
+      "sha256": "14c7a97bd526b565efc78763dcaf679fffe60c043ffbdbf37d8df9adbb859675",
+      "share_tier": "lawyer_cpa_first",
+      "size_bytes": 1489
+    },
+    {
+      "audience": [
+        "procurement",
+        "lawyer",
+        "enterprise_buyer"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "client_delivery_scaffold_summary",
+      "path": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase6_closeout_audit_report.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Shows client intake/delivery workflow scaffold exists and remains human-review controlled.",
+      "required_review_before_external_use": [
+        "human_review",
+        "lawyer_review",
+        "claim_gauntlet",
+        "promotion_gate"
+      ],
+      "sha256": "0530b95b67455cafcc00a30cc9ee13d24055796ebea701ca0cdc8a0abc880f9f",
+      "share_tier": "safe_summary_after_review",
+      "size_bytes": 891
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA",
+        "security_reviewer"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "provenance_forensic_index",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_forensic_artifact_index.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Shows artifact hashes, paths, classifications, and professional-review boundaries.",
+      "required_review_before_external_use": [
+        "human_review",
+        "lawyer_review"
+      ],
+      "sha256": "81ec0ed6263d1ef4b92c067193af47af56721a9c43d350e2855a00b6f05bbb73",
+      "share_tier": "professional_review_first",
+      "size_bytes": 22002
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "viability_claim_matrix",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_viability_claim_matrix.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Separates internally implemented, scaffolded, unvalidated, and professional-review-required claims.",
+      "required_review_before_external_use": [
+        "lawyer_review",
+        "CPA_review_if_financial"
+      ],
+      "sha256": "b72c0908f543ab4b6b6884227301590dc06f1948e61f06be8e52d0c0f6d0e2c7",
+      "share_tier": "lawyer_cpa_first",
+      "size_bytes": 10814
+    },
+    {
+      "audience": [
+        "lawyer",
+        "CPA"
+      ],
+      "claim_boundary": "Procurement diligence packet item only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+      "exists": true,
+      "external_release_default": "not_released_until_reviewed",
+      "item": "financial_contract_thresholds",
+      "path": "memory_layer/wiki/operator_memory/professional_readiness/professional_financial_contract_thresholds.json",
+      "protected_implementation_disclosed": false,
+      "purpose": "Shows paid-pilot/procurement/contract/money triggers and no-free-pilot posture.",
+      "required_review_before_external_use": [
+        "lawyer_review",
+        "CPA_review"
+      ],
+      "sha256": "0b43b51da32d9d7ec3b728e75945498f6fa98cebcb8e6a9f77aaad4cd7cb51be",
+      "share_tier": "lawyer_cpa_first",
+      "size_bytes": 5991
+    }
+  ],
+  "share_tier_counts": {
+    "lawyer_cpa_first": 3,
+    "professional_review_first": 1,
+    "safe_summary_after_review": 4
+  },
+  "status": "complete"
+}
