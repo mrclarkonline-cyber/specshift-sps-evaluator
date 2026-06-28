@@ -1,0 +1,41 @@
+{
+  "claim_boundary": "Regulatory Phase 5 creates a gap analysis only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, professional audit, or truth validation.",
+  "completed_at_utc": "2026-06-28T13:17:12.448449+00:00",
+  "expectations_checked": 14,
+  "largest_current_gaps": [
+    "No formal certification or conformity assessment exists.",
+    "No ISO/IEC 42001 or equivalent management-system audit exists.",
+    "No formal security questionnaire/access-control packet exists.",
+    "No adopted lawyer-reviewed policies or customer contract terms exist.",
+    "No professional compliance, tax, accounting, valuation, or legal opinion exists."
+  ],
+  "phase": "regulatory_phase_5_certification_gap_analysis",
+  "priority_counts": {
+    "high": 8,
+    "low": 5,
+    "medium": 1
+  },
+  "records_artifact": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase5_certification_gap_analysis_records.jsonl",
+  "reference_category_counts": {
+    "AI governance / management system": 1,
+    "AI management system / enterprise diligence": 1,
+    "AI risk management / high-risk AI documentation": 1,
+    "AI risk management / marketing and procurement diligence": 1,
+    "CPA/legal readiness": 1,
+    "IP / trade secret / procurement diligence": 1,
+    "ISO/IEC 42001 style management-system readiness": 1,
+    "auditability / forensic readiness": 1,
+    "enterprise procurement": 1,
+    "enterprise procurement / security diligence": 1,
+    "enterprise procurement / service delivery diligence": 1,
+    "enterprise vendor/security diligence": 1,
+    "future regulatory certification / conformity assessment": 1,
+    "safety governance / procurement diligence": 1
+  },
+  "safe_overall_claim": "SpecShift has meaningful internal readiness scaffolding and evidence inventory. It is not certified, compliant, government-approved, procurement-approved, or professionally audited.",
+  "status": "complete",
+  "status_counts": {
+    "evidence_scaffold_present": 10,
+    "gap_or_future_professional_work": 4
+  }
+}
