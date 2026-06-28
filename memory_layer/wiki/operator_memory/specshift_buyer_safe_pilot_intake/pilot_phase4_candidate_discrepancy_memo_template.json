@@ -1,0 +1,94 @@
+{
+  "allowed_language": [
+    "candidate discrepancy",
+    "review prompt",
+    "possible mismatch",
+    "insufficient information",
+    "requires buyer human adjudication",
+    "observable trace suggests",
+    "bounded review note"
+  ],
+  "claim_boundary": "Candidate-discrepancy memo template only. It does not create automated verdicts, truth validation, compliance certification, production validation, legal advice, financial advice, binding terms, free-pilot commitments, or autonomous client action.",
+  "completed_at_utc": "2026-06-28T22:19:51.393179+00:00",
+  "forbidden_language": [
+    "verdict",
+    "confirmed failure",
+    "validated defect",
+    "truth determination",
+    "compliance finding",
+    "certification conclusion",
+    "production validation",
+    "automated alert",
+    "legal conclusion",
+    "financial conclusion"
+  ],
+  "memo_sections": [
+    {
+      "fields": [
+        "project_name",
+        "buyer_workflow",
+        "sample_window",
+        "trace_export_reference",
+        "review_date",
+        "reviewer",
+        "memo_status"
+      ],
+      "section": "memo_header"
+    },
+    {
+      "required_language": [
+        "This memo reviews buyer-exported observable traces only.",
+        "This memo does not evaluate model weights, source code, private prompts, hidden activations, private chain-of-thought, or internal architecture.",
+        "This memo is a candidate-discrepancy memo only and is not an automated verdict."
+      ],
+      "section": "scope_boundary"
+    },
+    {
+      "instruction": "Summarize only visible trace fields, visible sequence, claimed final state, and buyer-provided labels if available.",
+      "section": "observable_trace_summary"
+    },
+    {
+      "instruction": "List possible mismatch, incompleteness, ambiguity, stale-source, or boundary-risk prompts for human review.",
+      "section": "candidate_discrepancy_prompts"
+    },
+    {
+      "columns": [
+        "candidate_id",
+        "observable_event_or_record",
+        "claimed_state",
+        "candidate_discrepancy_prompt",
+        "supporting_trace_reference",
+        "limitation",
+        "buyer_human_review_needed"
+      ],
+      "section": "evidence_table"
+    },
+    {
+      "required_language": [
+        "This memo does not validate truth.",
+        "This memo does not certify compliance.",
+        "This memo does not provide legal, financial, or technical production approval.",
+        "This memo does not prove a defect.",
+        "This memo does not authorize automated action."
+      ],
+      "section": "limitations"
+    },
+    {
+      "instruction": "Leave final determination to buyer-controlled human adjudication.",
+      "section": "buyer_adjudication"
+    },
+    {
+      "allowed_options": [
+        "buyer human review",
+        "request one bounded additional observable export",
+        "park as insufficient information",
+        "carry forward as ambiguous",
+        "close with no further review"
+      ],
+      "section": "next_steps"
+    }
+  ],
+  "phase": "pilot_phase_4_review_and_memo_templates",
+  "purpose": "Create a candidate-discrepancy memo template for buyer-safe observable-only pilots.",
+  "status": "complete"
+}

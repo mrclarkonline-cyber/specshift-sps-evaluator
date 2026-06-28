@@ -13,7 +13,7 @@
     "non_retention_and_boundary_statement.md"
   ],
   "follows": "regulatory_certification_procurement_readiness",
-  "last_updated_at_utc": "2026-06-28T22:18:31.796413+00:00",
+  "last_updated_at_utc": "2026-06-28T22:19:51.393179+00:00",
   "phases": [
     {
       "artifacts": [
@@ -54,9 +54,18 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase4_candidate_discrepancy_memo_template.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase4_pilot_success_failure_criteria.json",
+        "docs/workstation/buyer_safe_pilot/candidate_discrepancy_memo_template.md",
+        "docs/workstation/buyer_safe_pilot/pilot_success_failure_criteria.md",
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase4_review_and_memo_templates_report.json"
+      ],
+      "completed_at_utc": "2026-06-28T22:19:51.393179+00:00",
+      "completion_note": "Candidate-discrepancy memo template and pilot success/failure criteria created.",
       "goal": "Create candidate_discrepancy_memo_template.md and pilot_success_failure_criteria.md.",
       "phase": "pilot_phase_4_review_and_memo_templates",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Create client_delivery_playbook.md and pilot_delivery_checklist.md.",

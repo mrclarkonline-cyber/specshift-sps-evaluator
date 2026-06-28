@@ -1,0 +1,77 @@
+{
+  "allowed_result_categories": [
+    "useful_review_prompt",
+    "ambiguous_review_prompt",
+    "insufficient_information",
+    "not_useful_for_this_workflow",
+    "requires_more_observable_context",
+    "pilot_not_in_scope"
+  ],
+  "claim_boundary": "Pilot success/failure criteria measure pilot usefulness and boundary fit only. They do not validate production performance, certify compliance, determine truth, create legal/financial conclusions, or authorize automated action.",
+  "completed_at_utc": "2026-06-28T22:19:51.393179+00:00",
+  "failure_or_stop_criteria": [
+    {
+      "criterion": "protected_internals_required",
+      "description": "Pilot cannot proceed if buyer requires review of model weights, source code, private prompts, hidden activations, private chain-of-thought, or internal architecture."
+    },
+    {
+      "criterion": "no_observable_export",
+      "description": "Pilot cannot proceed if buyer cannot provide observable exported traces."
+    },
+    {
+      "criterion": "no_human_adjudication",
+      "description": "Pilot should stop or park if no buyer-controlled human adjudication path exists."
+    },
+    {
+      "criterion": "production_validation_requested",
+      "description": "Pilot should stop or be rescoped if buyer asks for production validation, automated verdicts, compliance certification, or truth validation."
+    },
+    {
+      "criterion": "professional_threshold_triggered_without_support",
+      "description": "Pilot should pause if procurement, contract terms, paid pilot, licensing, exclusivity, acquisition, IP assignment, data transfer, or money movement becomes real without qualified legal/CPA support."
+    },
+    {
+      "criterion": "free_pilot_pressure",
+      "description": "Pilot should pause or decline if buyer expects a free pilot that transfers substantial value or protected method knowledge."
+    }
+  ],
+  "forbidden_result_categories": [
+    "validated_failure",
+    "automated_verdict",
+    "production_validated",
+    "compliance_certified",
+    "truth_validated",
+    "legal_finding",
+    "financial_finding"
+  ],
+  "phase": "pilot_phase_4_review_and_memo_templates",
+  "purpose": "Create buyer-safe pilot success/failure criteria that measure pilot usefulness without claiming production validation or automated verdict capability.",
+  "status": "complete",
+  "success_criteria": [
+    {
+      "criterion": "scope_fit",
+      "description": "Buyer can provide observable exported traces without protected internals.",
+      "measurement": "Trace export includes visible sequence, event/state fields, claimed final state if available, field dictionary, and scope memo."
+    },
+    {
+      "criterion": "label_or_adjudication_fit",
+      "description": "Buyer retains labels or can perform human adjudication.",
+      "measurement": "Buyer confirms label ownership and final adjudication process."
+    },
+    {
+      "criterion": "memo_usefulness",
+      "description": "Candidate-discrepancy memos are useful to human reviewers.",
+      "measurement": "Buyer reviewer can classify memo prompts as useful, ambiguous, insufficient, or not useful."
+    },
+    {
+      "criterion": "boundary_preservation",
+      "description": "Pilot stays observable-only and avoids overclaiming.",
+      "measurement": "No model weights, source code, private prompts, hidden activations, private chain-of-thought, automated verdicts, production validation, or compliance claims are used."
+    },
+    {
+      "criterion": "repeatable_delivery",
+      "description": "SpecShift can produce a bounded delivery packet consistently.",
+      "measurement": "Intake, provenance, memo, limitations, and delivery checklist are completed."
+    }
+  ]
+}
