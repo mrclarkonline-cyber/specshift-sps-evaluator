@@ -31,7 +31,7 @@
     "risk eliminated",
     "guaranteed safety"
   ],
-  "last_updated_at_utc": "2026-06-28T13:13:56.361945+00:00",
+  "last_updated_at_utc": "2026-06-28T13:14:55.169219+00:00",
   "likely_reference_categories": [
     {
       "category": "AI risk management frameworks",
@@ -94,9 +94,19 @@
       "status": "complete"
     },
     {
+      "artifact": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase3_governance_policy_scaffold.json",
+      "completed_at_utc": "2026-06-28T13:14:55.169219+00:00",
+      "completion_note": "Governance-policy scaffolds created for prohibited use, human review, data handling, retention, protected methods, claim safety, and professional review triggers.",
       "goal": "Create governance-policy scaffolds for prohibited use, human review, data handling, retention, protected methods, and claim safety.",
       "phase": "regulatory_phase_3_governance_and_policy_scaffold",
-      "status": "registered"
+      "policy_docs": [
+        "docs/workstation/regulatory_policy_prohibited_use.md",
+        "docs/workstation/regulatory_policy_human_review.md",
+        "docs/workstation/regulatory_policy_data_handling_retention.md",
+        "docs/workstation/regulatory_policy_protected_methods.md",
+        "docs/workstation/regulatory_policy_claim_safety.md"
+      ],
+      "status": "complete"
     },
     {
       "goal": "Create enterprise/procurement-facing diligence index with safe artifacts, required reviews, and non-disclosure defaults.",

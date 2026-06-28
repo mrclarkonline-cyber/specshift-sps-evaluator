@@ -1,0 +1,195 @@
+{
+  "claim_boundary": "Regulatory Phase 3 creates governance-policy scaffolds only. It does not create legally binding policies, legal advice, financial advice, tax advice, certification, compliance approval, procurement approval, production monitoring, or truth validation.",
+  "claim_safety_policy": {
+    "public_claim_rule": "No public-facing claim should be promoted without Claim Gauntlet, Promotion Gate, provenance, human review, and professional review where appropriate.",
+    "required_tools": [
+      "claim_gauntlet",
+      "promote_artifact",
+      "provenance_vault",
+      "professional readiness packet",
+      "human review"
+    ],
+    "safe_language": [
+      "candidate",
+      "review prompt",
+      "scaffold",
+      "bounded",
+      "human-review controlled",
+      "internally implemented",
+      "not externally validated",
+      "professional review required"
+    ],
+    "unsafe_language": [
+      "certified",
+      "compliant",
+      "government approved",
+      "procurement approved",
+      "enterprise ready",
+      "validated",
+      "proved",
+      "truth validation",
+      "production monitoring",
+      "autonomous",
+      "guaranteed"
+    ]
+  },
+  "completed_at_utc": "2026-06-28T13:14:55.169219+00:00",
+  "data_handling_policy": {
+    "default_classifications": [
+      "public",
+      "public_candidate",
+      "private",
+      "protected",
+      "archive_caution",
+      "do_not_send",
+      "do_not_first_send"
+    ],
+    "handling_rules": [
+      "Classify artifacts before use.",
+      "Preserve SHA-256, path, timestamp, and provenance where possible.",
+      "Do not promote private/protected artifacts to public use by default.",
+      "Do not include protected artifacts in first-send outreach.",
+      "Use Claim Gauntlet and Promotion Gate before external-facing use.",
+      "Client labels and final adjudication remain buyer-controlled.",
+      "Retain only what is needed for workflow provenance unless professional advice says otherwise."
+    ],
+    "restricted_materials": [
+      "raw client traces",
+      "buyer labels",
+      "protected method details",
+      "source code",
+      "security-sensitive materials",
+      "confidential client documents",
+      "contract drafts",
+      "financial/payment records"
+    ]
+  },
+  "governance_model": {
+    "decision_authority": "human_reviewer_only",
+    "owner": "SpecShift Labs LLC",
+    "required_review_points": [
+      "before client artifact intake",
+      "before interpreting review packets",
+      "before delivery package handoff",
+      "before public-facing wording",
+      "before procurement, contract, budget, paid pilot, or money movement",
+      "before protected implementation disclosure"
+    ],
+    "system_not_role": [
+      "autonomous decision-maker",
+      "production monitoring system",
+      "truth-validation system",
+      "compliance certification system",
+      "legal/financial/tax advisor",
+      "government-certified system"
+    ],
+    "system_role": "bounded review scaffold and documentation workflow"
+  },
+  "human_review_policy": {
+    "default": "Human review required for interpretation, delivery, client-facing claims, public-facing claims, and professional thresholds.",
+    "non_delegable_decisions": [
+      "final discrepancy interpretation",
+      "client delivery approval",
+      "public claim approval",
+      "contract acceptance",
+      "pricing/paid-pilot acceptance",
+      "protected-method disclosure",
+      "regulated-use approval"
+    ],
+    "system_outputs_are": [
+      "candidate",
+      "scaffold",
+      "review prompt",
+      "index",
+      "audit record",
+      "delivery structure"
+    ],
+    "system_outputs_are_not": [
+      "findings",
+      "truth determinations",
+      "certifications",
+      "legal conclusions",
+      "financial conclusions",
+      "autonomous instructions"
+    ]
+  },
+  "phase": "regulatory_phase_3_governance_and_policy_scaffold",
+  "professional_review_policy": {
+    "cpa_review": [
+      "revenue recognition",
+      "bookkeeping setup",
+      "tax reserves",
+      "expense classification",
+      "owner contributions/reimbursements",
+      "out-of-state or international client treatment"
+    ],
+    "lawyer_review": [
+      "NDA/MSA/SOW/pilot terms",
+      "IP and trade secret protection",
+      "liability/warranty/indemnity language",
+      "client data handling and retention",
+      "public claims",
+      "prohibited-use terms"
+    ],
+    "trigger": "procurement, paid pilot, contract terms, budget, money movement, regulated use, protected method disclosure, public marketing claims, or certification/compliance representation"
+  },
+  "prohibited_use_policy": {
+    "approval_requirement": "Human review and professional/legal review where needed before any sensitive or regulated use.",
+    "case_by_case_review": [
+      "civilian infrastructure protection",
+      "defensive reliability review",
+      "public-interest audit support",
+      "regulated workflow documentation"
+    ],
+    "civilian_safe_default": true,
+    "prohibited_uses": [
+      "weapons",
+      "targeting",
+      "lethal autonomy",
+      "kinetic operations",
+      "battlefield command",
+      "offensive cyber",
+      "rights-violating surveillance",
+      "identity targeting",
+      "autonomous client action",
+      "unreviewed high-stakes decisions",
+      "legal/financial/medical advice",
+      "compliance certification",
+      "truth validation claims",
+      "production monitoring claims"
+    ]
+  },
+  "protected_methods_policy": {
+    "default": "Do not disclose protected methods by default.",
+    "not_first_send": [
+      "source code",
+      "protected implementation details",
+      "private prompts or hidden methods",
+      "model internals",
+      "training rights",
+      "raw protected production workflow artifacts"
+    ],
+    "release_condition": "Only disclose exact protected artifacts after human approval and lawyer-reviewed confidentiality/non-use terms."
+  },
+  "purpose": "Create governance-policy scaffolds for prohibited use, human review, data handling, retention, protected methods, and claim safety.",
+  "retention_policy_scaffold": {
+    "default": "Retain internal scaffold artifacts for provenance; treat client-specific/protected data as restricted and subject to client terms and professional review.",
+    "deletion_or_return": "Client-specific deletion/return obligations must be set in written terms and reviewed professionally.",
+    "restrict_or_minimize": [
+      "client raw artifacts",
+      "client labels",
+      "protected implementation details",
+      "contract drafts",
+      "payment records",
+      "security-sensitive documentation"
+    ],
+    "retain": [
+      "workplan registrations",
+      "audit reports",
+      "hash/provenance records",
+      "claim-boundary records",
+      "professional-review packet indexes"
+    ]
+  },
+  "status": "complete"
+}
