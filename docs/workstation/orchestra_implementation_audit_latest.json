@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-28T01:34:25.154352Z",
+  "generated_at_utc": "2026-06-28T01:39:09.291075Z",
   "commands": [
     {
       "command": "orchestra_probe",
@@ -10,10 +10,10 @@
     },
     {
       "command": "orchestra_conduct",
-      "found": false,
-      "path": null,
-      "smoke_test_status": "missing",
-      "smoke_test_output": ""
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/orchestra_conduct",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "orchestra_conduct - Orchestra guarded command\n\nPurpose: Coordinate registered local Orchestra tasks without bypassing human review.\nLive status: guarded_registered\n\nAllowed safe modes:\n- --help\n- status"
     },
     {
       "command": "orchestra_signals",
@@ -24,31 +24,31 @@
     },
     {
       "command": "orchestra_board",
-      "found": false,
-      "path": null,
-      "smoke_test_status": "missing",
-      "smoke_test_output": ""
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/orchestra_board",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "orchestra_board - Orchestra guarded command\n\nPurpose: Display local Orchestra board/status view.\nLive status: guarded_registered\n\nAllowed safe modes:\n- --help\n- status"
     },
     {
       "command": "radar_run",
-      "found": false,
-      "path": null,
-      "smoke_test_status": "missing",
-      "smoke_test_output": ""
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/radar_run",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "radar_run - Orchestra guarded command\n\nPurpose: Prepare radar run scaffolds only; live run requires explicit future implementation.\nLive status: guarded_stub_no_live_collection\n\nAllowed safe modes:\n- --help\n- status"
     },
     {
       "command": "radar_status",
-      "found": false,
-      "path": null,
-      "smoke_test_status": "missing",
-      "smoke_test_output": ""
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/radar_status",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "=== radar_status ===\nmode: status\nlive_status: guarded_registered\nregistry_exists: True\nregistered_categories: 9\nstatus_report: /Users/benjaminjustinclark/WORK/research/global_observation/reports/radar_status_status_latest.md\nPASS guarded local command completed"
     },
     {
       "command": "radar_open",
-      "found": false,
-      "path": null,
-      "smoke_test_status": "missing",
-      "smoke_test_output": ""
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/radar_open",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "radar_open - Orchestra guarded command\n\nPurpose: Open or locate local radar reports; no network activity.\nLive status: guarded_registered\n\nAllowed safe modes:\n- --help\n- status"
     },
     {
       "command": "orchestra_sources",
