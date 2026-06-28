@@ -1,5 +1,5 @@
 {
-  "active_phase": "phase_21_claim_overstatement_detector",
+  "active_phase": "phase_22_artifact_promotion_gate",
   "active_tracker": "tools/status/workstation_command_center_progress.py",
   "active_workplan": "workstation_command_center_upgrade",
   "allowed_actions": [
@@ -30,9 +30,10 @@
     "hardcoded phase guessing inside landing helpers",
     "weapons, targeting, surveillance, or harmful operationalization"
   ],
-  "last_completed_phase": "phase_20_phil_morale_layer",
-  "last_updated_at_utc": "2026-06-28T10:51:25.556404+00:00",
-  "next_action": "Build claim_gauntlet to scan risky claim language and suggest safer replacements.",
+  "last_claim_gauntlet_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
+  "last_completed_phase": "phase_21_claim_overstatement_detector",
+  "last_updated_at_utc": "2026-06-28T10:56:41.859098+00:00",
+  "next_action": "Build promote_artifact gate requiring claim scan, provenance check, public/private boundary, buyer-safe wording, and clean Git before promotion.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
@@ -43,8 +44,8 @@
   "previous_workplan": "worldwide_phase16_analytical_audit_layer",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
   "risk_state": {
-    "boundary_risk": "low",
-    "claim_risk": "low",
+    "boundary_risk": "medium",
+    "claim_risk": "high",
     "external_action_risk": "none",
     "git_dirty": false,
     "missing_tracker": false

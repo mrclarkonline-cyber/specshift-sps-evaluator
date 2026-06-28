@@ -10,7 +10,7 @@
     "Git must be clean before celebration",
     "canonical landing remains wiki_landing"
   ],
-  "last_updated_at_utc": "2026-06-28T10:51:25.556404+00:00",
+  "last_updated_at_utc": "2026-06-28T10:56:41.859098+00:00",
   "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
   "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
@@ -79,8 +79,11 @@
       "wrapper": "~/WORK/tools/orchestra/bin/phil_summary"
     },
     {
+      "artifact": "tools/status/claim_gauntlet.py",
       "boundary": "Language safety scan only. No legal/compliance certification.",
       "command_target": "claim_gauntlet",
+      "completed_at_utc": "2026-06-28T10:56:41.859098+00:00",
+      "completion_note": "Claim Gauntlet created. It scans local text for risky overstatement terms, distinguishes allowlisted boundary context, and suggests safer bounded language.",
       "done_when": "claim_gauntlet scans docs/wiki/operator memory and returns risky terms with safer replacement suggestions.",
       "flag_terms": [
         "proves",
@@ -96,7 +99,11 @@
       ],
       "goal": "Local scanner flags risky words and suggests safer replacements.",
       "phase": "phase_21_claim_overstatement_detector",
-      "upgrade": "Claim-overstatement detector"
+      "records_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_hits.jsonl",
+      "report_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
+      "status": "complete",
+      "upgrade": "Claim-overstatement detector",
+      "wrapper": "~/WORK/tools/orchestra/bin/claim_gauntlet"
     },
     {
       "boundary": "Promotion gate only. Human review still required.",

@@ -66,6 +66,17 @@ def main() -> None:
     else:
         print("Kira engine missing")
 
+    section("Claim Gauntlet")
+    claim_report = Path("memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json")
+    if claim_report.exists():
+        data = load_json(claim_report)
+        print(f"status: {data.get('status', 'unknown')}")
+        print(f"risk level: {data.get('risk_level', 'unknown')}")
+        print(f"actionable hits: {data.get('actionable_hits', 'unknown')}")
+        print(f"report: {claim_report}")
+    else:
+        print("Claim Gauntlet report missing")
+
     section("Phil morale")
     phil_script = Path("tools/status/phil_morale_layer.py")
     if phil_script.exists():
