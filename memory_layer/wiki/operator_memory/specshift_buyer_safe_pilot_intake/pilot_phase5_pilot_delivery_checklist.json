@@ -1,0 +1,92 @@
+{
+  "checklist": [
+    {
+      "category": "scope",
+      "items": [
+        "buyer-controlled scope confirmed",
+        "observable-only scope confirmed",
+        "systems in scope listed",
+        "systems out of scope listed",
+        "no production-monitoring request",
+        "no automated-verdict request"
+      ]
+    },
+    {
+      "category": "artifact_intake",
+      "items": [
+        "observable trace export received",
+        "claimed final state received if applicable",
+        "field dictionary received",
+        "redaction/pseudonymization note received",
+        "scope memo received",
+        "buyer labels/adjudication sheet received if applicable",
+        "no model weights received",
+        "no source code received",
+        "no private prompts received",
+        "no hidden activations received",
+        "no private chain-of-thought received",
+        "no secrets/credentials received"
+      ]
+    },
+    {
+      "category": "review_outputs",
+      "items": [
+        "candidate-discrepancy memo drafted",
+        "memo uses allowed language",
+        "memo avoids forbidden language",
+        "limitations section included",
+        "buyer human adjudication note included",
+        "insufficient-information category available",
+        "no verdict language"
+      ]
+    },
+    {
+      "category": "claim_safety",
+      "items": [
+        "Claim Gauntlet run or manually reviewed",
+        "Promotion Gate considered before external-facing delivery",
+        "no production validation claim",
+        "no compliance/certification claim",
+        "no truth-validation claim",
+        "no legal/financial conclusion"
+      ]
+    },
+    {
+      "category": "professional_threshold",
+      "items": [
+        "procurement status checked",
+        "contract terms status checked",
+        "paid pilot status checked",
+        "licensing/exclusivity/acquisition status checked",
+        "IP assignment status checked",
+        "data transfer terms checked",
+        "money movement status checked",
+        "legal/CPA support engaged if threshold triggered"
+      ]
+    },
+    {
+      "category": "retention_closeout",
+      "items": [
+        "delivery package status recorded",
+        "retention/return/delete status recorded",
+        "minimal provenance record preserved where appropriate",
+        "client artifact retention follows written terms",
+        "no public use of client artifacts without written authorization",
+        "next-step options recorded"
+      ]
+    }
+  ],
+  "claim_boundary": "Pilot delivery checklist only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, or autonomous client action.",
+  "completed_at_utc": "2026-06-28T22:21:55.841748+00:00",
+  "delivery_decision_options": [
+    "deliver_bounded_package",
+    "request_one_bounded_observable_export",
+    "park_as_insufficient_information",
+    "pause_for_professional_review",
+    "decline_or_rescope",
+    "close_no_further_action"
+  ],
+  "phase": "pilot_phase_5_delivery_playbook_and_checklist",
+  "purpose": "Create a buyer-safe pilot delivery checklist.",
+  "status": "complete"
+}

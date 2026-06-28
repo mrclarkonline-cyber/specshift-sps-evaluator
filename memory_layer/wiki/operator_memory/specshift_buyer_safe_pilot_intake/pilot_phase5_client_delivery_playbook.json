@@ -1,0 +1,77 @@
+{
+  "approved_delivery_language": [
+    "candidate-discrepancy memo",
+    "review prompt",
+    "observable-only review",
+    "bounded review scaffold",
+    "buyer-controlled labels",
+    "human adjudication retained",
+    "insufficient information where applicable",
+    "not a verdict",
+    "not production validation",
+    "not compliance certification"
+  ],
+  "claim_boundary": "Client delivery playbook only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, or autonomous client action.",
+  "completed_at_utc": "2026-06-28T22:21:55.841748+00:00",
+  "delivery_package_sections": [
+    "cover note",
+    "scope boundary",
+    "artifact inventory",
+    "observable trace summary",
+    "candidate-discrepancy memo index",
+    "limitations",
+    "buyer human adjudication note",
+    "success/failure criteria status",
+    "retention/return/delete status",
+    "next-step options"
+  ],
+  "delivery_sequence": [
+    {
+      "description": "Confirm buyer-controlled observable-only scope and out-of-scope internals.",
+      "step": "confirm_scope"
+    },
+    {
+      "description": "Confirm only observable exports, field dictionary, redaction notes, scope memo, and optional buyer-controlled labels were received.",
+      "step": "confirm_artifacts"
+    },
+    {
+      "description": "Pause and route to qualified legal/CPA support if procurement, contract terms, paid pilot, licensing, exclusivity, acquisition, IP assignment, data transfer, or money movement is real.",
+      "step": "confirm_professional_threshold"
+    },
+    {
+      "description": "Prepare bounded review packet with trace summary, limitations, and candidate-discrepancy memo references.",
+      "step": "prepare_review_packet"
+    },
+    {
+      "description": "Prepare candidate-discrepancy memos as human-review prompts only.",
+      "step": "prepare_candidate_memos"
+    },
+    {
+      "description": "Run Claim Gauntlet and promotion checks before external-facing delivery language.",
+      "step": "run_claim_safety"
+    },
+    {
+      "description": "Deliver only approved bounded materials with limitations and human adjudication language.",
+      "step": "deliver_bounded_package"
+    },
+    {
+      "description": "Record delivery status, retention/return/delete status, unresolved risks, and next-step options.",
+      "step": "closeout"
+    }
+  ],
+  "forbidden_delivery_language": [
+    "validated defect",
+    "confirmed failure",
+    "automated verdict",
+    "production validation",
+    "truth validation",
+    "compliance certification",
+    "legal conclusion",
+    "financial conclusion",
+    "certification-ready conclusion",
+    "guaranteed detection"
+  ],
+  "phase": "pilot_phase_5_delivery_playbook_and_checklist",
+  "purpose": "Create a buyer-safe delivery playbook for observable-only pilots.",
+  "status": "complete"
+}
