@@ -1,0 +1,195 @@
+[
+  {
+    "allowed_recommendations": [
+      "NO_FIT",
+      "REPEAT_WITH_CLEANER_DATA",
+      "EXPAND_SAME_WORKFLOW",
+      "TEST_SECOND_WORKFLOW",
+      "PAID_STRATEGIC_PILOT",
+      "STOP_UNTIL_LEGAL_CPA_REVIEW"
+    ],
+    "case_id": "no_fit_no_trace",
+    "claim_boundary": "Delivery closeout recommender only. It recommends buyer-safe next steps from bounded pilot status fields. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "created_at_utc": "2026-06-28T22:54:50.746802+00:00",
+    "engine": "delivery_closeout_recommender_v1",
+    "expected_recommendation": "NO_FIT",
+    "reasons": [
+      "no observable trace available"
+    ],
+    "recommendation": "NO_FIT",
+    "required_next_controls": [
+      "preserve observable-only boundary",
+      "buyer retains labels and final adjudication",
+      "candidate-discrepancy memos only",
+      "no automated verdict",
+      "no production validation claim",
+      "no compliance/certification claim",
+      "close or park without further action"
+    ],
+    "reviewed": {
+      "artifacts_excluded": [],
+      "artifacts_reviewed": [],
+      "buyer_decisions_required": [],
+      "candidate_discrepancies": [],
+      "error_accounting_available": false,
+      "limitations": [],
+      "workflow_name": "missing trace workflow"
+    },
+    "test_passed": true
+  },
+  {
+    "allowed_recommendations": [
+      "NO_FIT",
+      "REPEAT_WITH_CLEANER_DATA",
+      "EXPAND_SAME_WORKFLOW",
+      "TEST_SECOND_WORKFLOW",
+      "PAID_STRATEGIC_PILOT",
+      "STOP_UNTIL_LEGAL_CPA_REVIEW"
+    ],
+    "case_id": "repeat_redaction",
+    "claim_boundary": "Delivery closeout recommender only. It recommends buyer-safe next steps from bounded pilot status fields. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "created_at_utc": "2026-06-28T22:54:50.746808+00:00",
+    "engine": "delivery_closeout_recommender_v1",
+    "expected_recommendation": "REPEAT_WITH_CLEANER_DATA",
+    "reasons": [
+      "redaction needed before useful repeat"
+    ],
+    "recommendation": "REPEAT_WITH_CLEANER_DATA",
+    "required_next_controls": [
+      "preserve observable-only boundary",
+      "buyer retains labels and final adjudication",
+      "candidate-discrepancy memos only",
+      "no automated verdict",
+      "no production validation claim",
+      "no compliance/certification claim",
+      "request redaction, cleaner observable export, or field dictionary"
+    ],
+    "reviewed": {
+      "artifacts_excluded": [],
+      "artifacts_reviewed": [],
+      "buyer_decisions_required": [],
+      "candidate_discrepancies": [],
+      "error_accounting_available": false,
+      "limitations": [],
+      "workflow_name": "needs cleaner data"
+    },
+    "test_passed": true
+  },
+  {
+    "allowed_recommendations": [
+      "NO_FIT",
+      "REPEAT_WITH_CLEANER_DATA",
+      "EXPAND_SAME_WORKFLOW",
+      "TEST_SECOND_WORKFLOW",
+      "PAID_STRATEGIC_PILOT",
+      "STOP_UNTIL_LEGAL_CPA_REVIEW"
+    ],
+    "case_id": "expand_same",
+    "claim_boundary": "Delivery closeout recommender only. It recommends buyer-safe next steps from bounded pilot status fields. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "created_at_utc": "2026-06-28T22:54:50.746812+00:00",
+    "engine": "delivery_closeout_recommender_v1",
+    "expected_recommendation": "EXPAND_SAME_WORKFLOW",
+    "reasons": [
+      "useful prompts present with bounded false-positive count"
+    ],
+    "recommendation": "EXPAND_SAME_WORKFLOW",
+    "required_next_controls": [
+      "preserve observable-only boundary",
+      "buyer retains labels and final adjudication",
+      "candidate-discrepancy memos only",
+      "no automated verdict",
+      "no production validation claim",
+      "no compliance/certification claim",
+      "new bounded scope memo required",
+      "risk gate all new artifacts"
+    ],
+    "reviewed": {
+      "artifacts_excluded": [],
+      "artifacts_reviewed": [],
+      "buyer_decisions_required": [],
+      "candidate_discrepancies": [],
+      "error_accounting_available": false,
+      "limitations": [],
+      "workflow_name": "useful workflow"
+    },
+    "test_passed": true
+  },
+  {
+    "allowed_recommendations": [
+      "NO_FIT",
+      "REPEAT_WITH_CLEANER_DATA",
+      "EXPAND_SAME_WORKFLOW",
+      "TEST_SECOND_WORKFLOW",
+      "PAID_STRATEGIC_PILOT",
+      "STOP_UNTIL_LEGAL_CPA_REVIEW"
+    ],
+    "case_id": "test_second",
+    "claim_boundary": "Delivery closeout recommender only. It recommends buyer-safe next steps from bounded pilot status fields. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "created_at_utc": "2026-06-28T22:54:50.746815+00:00",
+    "engine": "delivery_closeout_recommender_v1",
+    "expected_recommendation": "TEST_SECOND_WORKFLOW",
+    "reasons": [
+      "useful prompts present with bounded false-positive count",
+      "buyer requests second workflow"
+    ],
+    "recommendation": "TEST_SECOND_WORKFLOW",
+    "required_next_controls": [
+      "preserve observable-only boundary",
+      "buyer retains labels and final adjudication",
+      "candidate-discrepancy memos only",
+      "no automated verdict",
+      "no production validation claim",
+      "no compliance/certification claim",
+      "new bounded scope memo required",
+      "risk gate all new artifacts"
+    ],
+    "reviewed": {
+      "artifacts_excluded": [],
+      "artifacts_reviewed": [],
+      "buyer_decisions_required": [],
+      "candidate_discrepancies": [],
+      "error_accounting_available": false,
+      "limitations": [],
+      "workflow_name": "useful workflow second test"
+    },
+    "test_passed": true
+  },
+  {
+    "allowed_recommendations": [
+      "NO_FIT",
+      "REPEAT_WITH_CLEANER_DATA",
+      "EXPAND_SAME_WORKFLOW",
+      "TEST_SECOND_WORKFLOW",
+      "PAID_STRATEGIC_PILOT",
+      "STOP_UNTIL_LEGAL_CPA_REVIEW"
+    ],
+    "case_id": "stop_legal_cpa",
+    "claim_boundary": "Delivery closeout recommender only. It recommends buyer-safe next steps from bounded pilot status fields. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "created_at_utc": "2026-06-28T22:54:50.746817+00:00",
+    "engine": "delivery_closeout_recommender_v1",
+    "expected_recommendation": "STOP_UNTIL_LEGAL_CPA_REVIEW",
+    "reasons": [
+      "professional threshold triggered"
+    ],
+    "recommendation": "STOP_UNTIL_LEGAL_CPA_REVIEW",
+    "required_next_controls": [
+      "preserve observable-only boundary",
+      "buyer retains labels and final adjudication",
+      "candidate-discrepancy memos only",
+      "no automated verdict",
+      "no production validation claim",
+      "no compliance/certification claim",
+      "engage qualified legal and CPA support before proceeding"
+    ],
+    "reviewed": {
+      "artifacts_excluded": [],
+      "artifacts_reviewed": [],
+      "buyer_decisions_required": [],
+      "candidate_discrepancies": [],
+      "error_accounting_available": false,
+      "limitations": [],
+      "workflow_name": "paid pilot trigger"
+    },
+    "test_passed": true
+  }
+]

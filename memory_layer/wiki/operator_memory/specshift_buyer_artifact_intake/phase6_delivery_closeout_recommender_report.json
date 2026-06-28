@@ -1,0 +1,23 @@
+{
+  "allowed_recommendations": [
+    "NO_FIT",
+    "REPEAT_WITH_CLEANER_DATA",
+    "EXPAND_SAME_WORKFLOW",
+    "TEST_SECOND_WORKFLOW",
+    "PAID_STRATEGIC_PILOT",
+    "STOP_UNTIL_LEGAL_CPA_REVIEW"
+  ],
+  "artifacts": [
+    "tools/pilot_intake/delivery_closeout_recommender.py",
+    "docs/workstation/buyer_artifact_intake/pilot_closeout_report_template.md",
+    "docs/workstation/buyer_artifact_intake/next_step_decision_matrix.md",
+    "tests/fixtures/pilot_intake/delivery_closeout_recommender_cases.json",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase6_delivery_closeout_recommender_fixture_results.json"
+  ],
+  "claim_boundary": "Phase 6 creates a delivery closeout recommender scaffold only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-28T22:54:50.744781+00:00",
+  "phase": "phase_6_delivery_closeout_recommender",
+  "sample_cases": 5,
+  "sample_cases_passed": 5,
+  "status": "complete"
+}

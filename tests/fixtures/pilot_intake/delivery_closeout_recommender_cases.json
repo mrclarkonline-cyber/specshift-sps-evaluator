@@ -1,0 +1,46 @@
+[
+  {
+    "buyer_human_adjudication_available": true,
+    "case_id": "no_fit_no_trace",
+    "expected_recommendation": "NO_FIT",
+    "observable_trace_available": false,
+    "workflow_name": "missing trace workflow"
+  },
+  {
+    "buyer_human_adjudication_available": true,
+    "case_id": "repeat_redaction",
+    "expected_recommendation": "REPEAT_WITH_CLEANER_DATA",
+    "observable_trace_available": true,
+    "redaction_needed": true,
+    "useful_review_prompts": 3,
+    "workflow_name": "needs cleaner data"
+  },
+  {
+    "buyer_human_adjudication_available": true,
+    "case_id": "expand_same",
+    "expected_recommendation": "EXPAND_SAME_WORKFLOW",
+    "false_positive_count": 1,
+    "observable_trace_available": true,
+    "useful_review_prompts": 7,
+    "workflow_name": "useful workflow"
+  },
+  {
+    "buyer_human_adjudication_available": true,
+    "buyer_requests_second_workflow": true,
+    "case_id": "test_second",
+    "expected_recommendation": "TEST_SECOND_WORKFLOW",
+    "false_positive_count": 1,
+    "observable_trace_available": true,
+    "useful_review_prompts": 7,
+    "workflow_name": "useful workflow second test"
+  },
+  {
+    "buyer_human_adjudication_available": true,
+    "case_id": "stop_legal_cpa",
+    "expected_recommendation": "STOP_UNTIL_LEGAL_CPA_REVIEW",
+    "observable_trace_available": true,
+    "paid_pilot": true,
+    "useful_review_prompts": 12,
+    "workflow_name": "paid pilot trigger"
+  }
+]

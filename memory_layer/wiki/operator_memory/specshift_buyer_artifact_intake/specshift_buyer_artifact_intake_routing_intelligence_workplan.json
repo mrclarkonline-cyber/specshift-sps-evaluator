@@ -16,7 +16,7 @@
     "REJECT",
     "NEEDS_REDACTION"
   ],
-  "last_updated_at_utc": "2026-06-28T22:52:50.200919+00:00",
+  "last_updated_at_utc": "2026-06-28T22:54:50.744781+00:00",
   "phases": [
     {
       "artifacts": [
@@ -98,9 +98,19 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "tools/pilot_intake/delivery_closeout_recommender.py",
+        "docs/workstation/buyer_artifact_intake/pilot_closeout_report_template.md",
+        "docs/workstation/buyer_artifact_intake/next_step_decision_matrix.md",
+        "tests/fixtures/pilot_intake/delivery_closeout_recommender_cases.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase6_delivery_closeout_recommender_fixture_results.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase6_delivery_closeout_recommender_report.json"
+      ],
+      "completed_at_utc": "2026-06-28T22:54:50.744781+00:00",
+      "completion_note": "Delivery closeout recommender, pilot closeout report template, next-step decision matrix, and fixtures created.",
       "goal": "Create delivery_closeout_recommender.py, pilot_closeout_report_template.md, and next_step_decision_matrix.md.",
       "phase": "phase_6_delivery_closeout_recommender",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Audit artifact intake/routing intelligence for boundaries, classifier coverage, risk gates, routing, label-reveal controls, closeout recommendations, and claim safety.",

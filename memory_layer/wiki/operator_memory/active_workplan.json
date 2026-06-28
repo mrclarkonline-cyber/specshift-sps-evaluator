@@ -1,5 +1,5 @@
 {
-  "active_phase": "phase_6_delivery_closeout_recommender",
+  "active_phase": "phase_7_audit_and_closeout",
   "active_tracker": "tools/status/specshift_buyer_artifact_intake_progress.py",
   "active_workplan": "specshift_buyer_artifact_intake_routing_intelligence",
   "allowed_actions": [
@@ -48,8 +48,10 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "phase_5_buyer_label_reconciliation",
+  "last_completed_phase": "phase_6_delivery_closeout_recommender",
   "last_completed_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
+  "last_delivery_closeout_recommender": "tools/pilot_intake/delivery_closeout_recommender.py",
+  "last_delivery_closeout_recommender_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase6_delivery_closeout_recommender_report.json",
   "last_forecast_audit_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
   "last_forecast_candidate_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
   "last_forecast_negative_space_watchlist_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase3_negative_space_watchlist_report.json",
@@ -86,8 +88,8 @@
   "last_terminal_capability_map_doc": "docs/workstation/specshift_terminal_complete_capability_map.md",
   "last_trace_schema_normalizer": "tools/pilot_intake/trace_schema_normalizer.py",
   "last_trace_schema_normalizer_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase3_trace_schema_normalizer_report.json",
-  "last_updated_at_utc": "2026-06-28T22:52:50.200919+00:00",
-  "next_action": "Create delivery_closeout_recommender.py, pilot_closeout_report_template.md, and next_step_decision_matrix.md.",
+  "last_updated_at_utc": "2026-06-28T22:54:50.744781+00:00",
+  "next_action": "Audit artifact intake/routing intelligence for boundaries, classifier coverage, risk gates, routing, label-reveal controls, closeout recommendations, and claim safety.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
