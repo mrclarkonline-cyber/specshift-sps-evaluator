@@ -1,0 +1,155 @@
+{
+  "generated_at_utc": "2026-06-28T01:32:01.262027Z",
+  "commands": [
+    {
+      "command": "orchestra_probe",
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/orchestra_probe",
+      "smoke_test_status": "timeout",
+      "smoke_test_output": ""
+    },
+    {
+      "command": "orchestra_conduct",
+      "found": false,
+      "path": null,
+      "smoke_test_status": "missing",
+      "smoke_test_output": ""
+    },
+    {
+      "command": "orchestra_signals",
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/orchestra_signals",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "/Users/benjaminjustinclark/WORK/pipelines/data/orchestra/0bdbc8fb00a40fb6_signals.md"
+    },
+    {
+      "command": "orchestra_board",
+      "found": false,
+      "path": null,
+      "smoke_test_status": "missing",
+      "smoke_test_output": ""
+    },
+    {
+      "command": "radar_run",
+      "found": false,
+      "path": null,
+      "smoke_test_status": "missing",
+      "smoke_test_output": ""
+    },
+    {
+      "command": "radar_status",
+      "found": false,
+      "path": null,
+      "smoke_test_status": "missing",
+      "smoke_test_output": ""
+    },
+    {
+      "command": "radar_open",
+      "found": false,
+      "path": null,
+      "smoke_test_status": "missing",
+      "smoke_test_output": ""
+    },
+    {
+      "command": "orchestra_sources",
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/orchestra_sources",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "Usage:\n  orchestra_sources list\n  orchestra_sources domains\n  orchestra_sources show <domain>"
+    },
+    {
+      "command": "orchestra_fetch",
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/orchestra_fetch",
+      "smoke_test_status": "pass",
+      "smoke_test_output": "Usage:\n  orchestra_fetch list\n  orchestra_fetch run <adapter_name>\n  orchestra_fetch all"
+    },
+    {
+      "command": "orchestra_global_observation",
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/orchestra_global_observation",
+      "smoke_test_status": "timeout",
+      "smoke_test_output": ""
+    },
+    {
+      "command": "fetch_et",
+      "found": true,
+      "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin/fetch_et",
+      "smoke_test_status": "timeout",
+      "smoke_test_output": ""
+    }
+  ],
+  "paths": [
+    {
+      "label": "~/WORK/tools/orchestra/bin",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/tools/orchestra/bin",
+      "exists": true,
+      "kind": "directory"
+    },
+    {
+      "label": "~/WORK/tools/orchestra/adapters",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/tools/orchestra/adapters",
+      "exists": true,
+      "kind": "directory"
+    },
+    {
+      "label": "~/WORK/tools/orchestra/lib",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/tools/orchestra/lib",
+      "exists": true,
+      "kind": "directory"
+    },
+    {
+      "label": "~/WORK/tools/orchestra/config/global_observation_pipelines.json",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/tools/orchestra/config/global_observation_pipelines.json",
+      "exists": true,
+      "kind": "file"
+    },
+    {
+      "label": "~/WORK/research/global_observation",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/research/global_observation",
+      "exists": true,
+      "kind": "directory"
+    },
+    {
+      "label": "~/WORK/research/global_observation/reports",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/research/global_observation/reports",
+      "exists": true,
+      "kind": "directory"
+    },
+    {
+      "label": "~/WORK/WORKSTATION_CAPABILITY_MAP.txt",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/WORKSTATION_CAPABILITY_MAP.txt",
+      "exists": true,
+      "kind": "file"
+    },
+    {
+      "label": "~/WORK/tools/workstation/scripts/build_capability_map.py",
+      "expanded_path": "/Users/benjaminjustinclark/WORK/tools/workstation/scripts/build_capability_map.py",
+      "exists": false,
+      "kind": "missing"
+    }
+  ],
+  "registry": {
+    "path": "/Users/benjaminjustinclark/WORK/tools/orchestra/config/global_observation_pipelines.json",
+    "exists": true,
+    "valid_json": true,
+    "top_level_type": "dict",
+    "category_hits": {
+      "astronomy": true,
+      "earth_observation": true,
+      "aviation": true,
+      "space": true,
+      "geophysical": true,
+      "human": true,
+      "underwater_acoustic_networks": false,
+      "planetary_probes": false,
+      "news": false,
+      "cybersecurity": false,
+      "research_literature": false,
+      "policy": false,
+      "finance": false,
+      "infrastructure": false
+    },
+    "notes": []
+  }
+}
