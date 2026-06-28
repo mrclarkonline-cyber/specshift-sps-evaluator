@@ -1,10 +1,10 @@
 {
-  "active_tracker": "tools/status/worldwide_phase8_progress.py",
-  "active_workplan": "worldwide_phase8_review_packet_index_closeout",
-  "claim_boundary": "Phase 8 is bounded packet indexing and closeout only; no production monitoring, content validation, contradiction detection, agreement detection, corroboration, alert readiness, autonomous action, or truth resolution claimed.",
-  "display_rule": "wiki_landing should show Phase 8 as the active workplan once Phase 7 is complete at 100%. Phase 7 remains closure evidence, not the active landing workplan.",
-  "phase7_status": "closed_at_100_percent",
-  "previous_tracker": "tools/status/worldwide_phase7_progress.py",
-  "previous_workplan": "worldwide_phase7_human_review_packet_scaffold",
-  "registered_at_utc": "2026-06-28T09:31:41.812715+00:00"
+  "active_tracker": "tools/status/worldwide_phase9_progress.py",
+  "active_workplan": "worldwide_phase9_analytical_core_registration",
+  "claim_boundary": "Phase 9 is bounded analytical-core registration only; no production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution claimed.",
+  "display_rule": "wiki_landing should show Phase 9 as the active workplan once Phase 8 is complete at 100%. Phase 8 remains closure evidence, not the active landing workplan.",
+  "phase8_status": "closed_at_100_percent",
+  "previous_tracker": "tools/status/worldwide_phase8_progress.py",
+  "previous_workplan": "worldwide_phase8_review_packet_index_closeout",
+  "registered_at_utc": "2026-06-28T09:38:36.505710+00:00"
 }

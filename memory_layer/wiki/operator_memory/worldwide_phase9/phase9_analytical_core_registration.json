@@ -1,0 +1,123 @@
+{
+  "analysis_lanes": [
+    {
+      "allowed_outputs": [
+        "category recurrence",
+        "source-type clustering",
+        "timing concentration",
+        "regional/source coverage clusters",
+        "repeated uncertainty-label patterns",
+        "metadata-level repeated structures"
+      ],
+      "forbidden_outputs": [
+        "truth claims",
+        "causal claims",
+        "alert claims",
+        "automated contradiction conclusions"
+      ],
+      "lane": "pattern_detection_layer",
+      "purpose": "Detect repeated structures across normalized records and review packets."
+    },
+    {
+      "allowed_outputs": [
+        "missing regions",
+        "missing source classes",
+        "categories with no comparison partner",
+        "official-source silence flags",
+        "coverage gaps",
+        "underrepresented domains"
+      ],
+      "forbidden_outputs": [
+        "absence-as-proof claims",
+        "suppression claims without evidence",
+        "intent claims",
+        "truth resolution"
+      ],
+      "lane": "negative_space_pattern_layer",
+      "purpose": "Detect structured absence, silence, undercoverage, and asymmetric source presence."
+    },
+    {
+      "allowed_methods": [
+        "graph degree and connectedness",
+        "category/source-type entropy",
+        "coverage divergence",
+        "distance metrics",
+        "simple anomaly scoring",
+        "second-order change scaffolds",
+        "cluster-readiness labels"
+      ],
+      "forbidden_outputs": [
+        "black-box certainty",
+        "unreviewed high-stakes scoring",
+        "prediction claims",
+        "validated anomaly claims"
+      ],
+      "lane": "advanced_math_overlay",
+      "purpose": "Apply bounded mathematical summaries to normalized metadata and packet structures."
+    },
+    {
+      "allowed_outputs": [
+        "conditioned pattern candidates",
+        "secondary-condition dependency notes",
+        "conditional coverage gaps",
+        "review-worthy interaction candidates"
+      ],
+      "forbidden_outputs": [
+        "causal mechanisms",
+        "validated hidden structure claims",
+        "automated decision recommendations"
+      ],
+      "lane": "secondary_condition_math_overlay",
+      "purpose": "Model second-order or conditional structure: where a pattern appears only under a secondary condition such as source type, category, region, timing, or uncertainty label."
+    },
+    {
+      "allowed_outputs": [
+        "worth checking",
+        "needs more sources",
+        "possible coverage gap",
+        "human review recommended",
+        "discard or park candidate",
+        "safe next data pull suggestion"
+      ],
+      "forbidden_outputs": [
+        "act now alerts",
+        "policy decisions",
+        "financial/legal/medical recommendations",
+        "autonomous operational decisions"
+      ],
+      "lane": "scenario_suggestion_layer",
+      "purpose": "Translate bounded structural findings into real-world review suggestions."
+    }
+  ],
+  "claim_boundary": "Phase 9 registration only. This does not claim production monitoring, content validation, contradiction detection, agreement detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution.",
+  "phase": "phase_9_worldwide_analytical_core_registration",
+  "phase9_goal": "Define the analytical core workplan for pattern detection, negative-space analysis, advanced math overlay, secondary-condition overlay, and bounded real-world suggestion scaffolds without claiming truth, causality, prediction, alerts, or autonomous action.",
+  "phase_sequence": [
+    "Phase 9: analytical core registration",
+    "Phase 10: pattern detection layer",
+    "Phase 11: negative-space pattern layer",
+    "Phase 12: advanced math overlay",
+    "Phase 13: secondary-condition math overlay",
+    "Phase 14: bounded scenario suggestion layer",
+    "Phase 15: real-world implementation suggestion scaffold"
+  ],
+  "previous_phase": "phase_8_worldwide_review_packet_index_closeout",
+  "previous_phase_artifacts": [
+    "memory_layer/wiki/operator_memory/worldwide_phase8/phase8_review_packet_index.json",
+    "memory_layer/wiki/operator_memory/worldwide_phase8/phase8_review_packet_index_closeout_report.json"
+  ],
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Upgrade the terminal from bounded information intake and review packet indexing into bounded structural analysis scaffolding.",
+  "registered_at_utc": "2026-06-28T09:38:36.505710+00:00",
+  "required_gates": [
+    "Gate 1: load only Phase 4, Phase 5, Phase 6, Phase 7, and Phase 8 bounded artifacts",
+    "Gate 2: preserve provenance and claim boundaries",
+    "Gate 3: keep all pattern outputs at candidate/review tier",
+    "Gate 4: separate observed metadata from interpretation",
+    "Gate 5: label negative-space outputs as absence/coverage candidates only",
+    "Gate 6: keep math overlays descriptive unless separately validated",
+    "Gate 7: real-world suggestions must be bounded review suggestions, not action instructions",
+    "Gate 8: no production monitoring, content validation, contradiction detection, alert readiness, autonomous action, causal certainty, or truth resolution"
+  ],
+  "status": "registered"
+}
