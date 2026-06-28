@@ -1,5 +1,5 @@
 {
-  "active_phase": "pilot_phase_3_project_folder_generator",
+  "active_phase": "pilot_phase_4_review_and_memo_templates",
   "active_tracker": "tools/status/specshift_buyer_safe_pilot_progress.py",
   "active_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
   "allowed_actions": [
@@ -37,11 +37,12 @@
   "last_client_delivery_package_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase5_delivery_package_scaffold.json",
   "last_client_delivery_package_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase5_delivery_package_scaffold_report.json",
   "last_client_intake_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase2_intake_form_and_data_room_index.json",
+  "last_client_project_folder_generator": "tools/buyer_safe_pilot/client_project_folder_generator.py",
   "last_client_provenance_claim_gate_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase3_provenance_and_claim_gate_report.json",
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "pilot_phase_2_buyer_intake_and_data_request",
+  "last_completed_phase": "pilot_phase_3_project_folder_generator",
   "last_completed_workplan": "regulatory_certification_procurement_readiness",
   "last_forecast_audit_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
   "last_forecast_candidate_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
@@ -71,8 +72,8 @@
   "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
   "last_terminal_capability_map": "memory_layer/wiki/operator_memory/terminal_capabilities/specshift_terminal_complete_capability_map.json",
   "last_terminal_capability_map_doc": "docs/workstation/specshift_terminal_complete_capability_map.md",
-  "last_updated_at_utc": "2026-06-28T22:14:09.294136+00:00",
-  "next_action": "Create client_project_folder_generator.py to initialize buyer-safe project folders.",
+  "last_updated_at_utc": "2026-06-28T22:18:31.796413+00:00",
+  "next_action": "Create candidate_discrepancy_memo_template.md and pilot_success_failure_criteria.md.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",

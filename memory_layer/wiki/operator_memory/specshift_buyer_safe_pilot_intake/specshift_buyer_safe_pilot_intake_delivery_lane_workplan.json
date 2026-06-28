@@ -13,7 +13,7 @@
     "non_retention_and_boundary_statement.md"
   ],
   "follows": "regulatory_certification_procurement_readiness",
-  "last_updated_at_utc": "2026-06-28T22:14:09.294136+00:00",
+  "last_updated_at_utc": "2026-06-28T22:18:31.796413+00:00",
   "phases": [
     {
       "artifacts": [
@@ -42,9 +42,16 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "tools/buyer_safe_pilot/client_project_folder_generator.py",
+        "docs/workstation/buyer_safe_pilot/client_project_folder_generator.md",
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase3_project_folder_generator_report.json"
+      ],
+      "completed_at_utc": "2026-06-28T22:18:31.796413+00:00",
+      "completion_note": "Buyer-safe project folder generator created with protected folders, observable-only intake folders, provenance manifest, and boundary files.",
       "goal": "Create client_project_folder_generator.py to initialize buyer-safe project folders.",
       "phase": "pilot_phase_3_project_folder_generator",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Create candidate_discrepancy_memo_template.md and pilot_success_failure_criteria.md.",

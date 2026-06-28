@@ -1,0 +1,11 @@
+{
+  "artifacts": [
+    "tools/buyer_safe_pilot/client_project_folder_generator.py",
+    "docs/workstation/buyer_safe_pilot/client_project_folder_generator.md"
+  ],
+  "claim_boundary": "Project folder generator only. It does not authorize data transfer, retention, public use, legal/compliance claims, paid pilot terms, production validation, automated verdicts, or autonomous client action.",
+  "completed_at_utc": "2026-06-28T22:18:31.796413+00:00",
+  "phase": "pilot_phase_3_project_folder_generator",
+  "purpose": "Create a local buyer-safe pilot project folder generator.",
+  "status": "complete"
+}
