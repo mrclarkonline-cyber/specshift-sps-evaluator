@@ -1,0 +1,23 @@
+{
+  "claim_boundary": "Phase 5 registration only. This does not claim production monitoring, content validation, contradiction detection, alert readiness, autonomous action, or truth resolution.",
+  "phase": "phase_5_worldwide_cross_source_comparison_runway",
+  "phase5_goal": "Group normalized Phase 4 records by category/source type, identify possible comparison pairs, and label comparison readiness without claiming contradiction detection or factual resolution.",
+  "previous_phase": "phase_4_worldwide_claim_safety_normalization",
+  "previous_phase_artifacts": [
+    "memory_layer/wiki/operator_memory/worldwide_phase4/phase4_claim_safety_normalization_report.json",
+    "memory_layer/wiki/operator_memory/worldwide_phase4/phase4_claim_safety_normalized_records.jsonl"
+  ],
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Move from normalized bounded samples to cautious cross-source comparison scaffolding without resolving truth or creating alerts.",
+  "registered_at_utc": "2026-06-28T09:27:05.081450+00:00",
+  "required_gates": [
+    "Gate 1: load Phase 4 normalized records only",
+    "Gate 2: group records by category and source_type",
+    "Gate 3: identify possible comparison candidates without asserting agreement or contradiction",
+    "Gate 4: preserve all source provenance",
+    "Gate 5: keep all outputs hypothesis-tier",
+    "Gate 6: mark insufficient-pair categories honestly",
+    "Gate 7: no alerts, truth claims, production monitoring, or autonomous action"
+  ],
+  "status": "registered"
+}

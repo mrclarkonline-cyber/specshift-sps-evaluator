@@ -1,10 +1,10 @@
 {
-  "active_tracker": "tools/status/worldwide_phase4_progress.py",
-  "active_workplan": "worldwide_phase4_claim_safety_normalization",
-  "claim_boundary": "Phase 4 is bounded claim-safety and normalization work only; no production monitoring, content validation, alert readiness, autonomous action, or truth resolution claimed.",
-  "display_rule": "wiki_landing should show Phase 4 as the active workplan once Phase 3 is complete at 100%. Phase 3 remains closure evidence, not the active landing workplan.",
-  "phase3_status": "closed_at_100_percent",
-  "previous_tracker": "tools/status/worldwide_phase3_progress.py",
-  "previous_workplan": "worldwide_phase3_live_ingestion_runway",
-  "registered_at_utc": "2026-06-28T09:21:13.998069+00:00"
+  "active_tracker": "tools/status/worldwide_phase5_progress.py",
+  "active_workplan": "worldwide_phase5_cross_source_comparison_runway",
+  "claim_boundary": "Phase 5 is bounded cross-source comparison scaffolding only; no production monitoring, content validation, contradiction detection, alert readiness, autonomous action, or truth resolution claimed.",
+  "display_rule": "wiki_landing should show Phase 5 as the active workplan once Phase 4 is complete at 100%. Phase 4 remains closure evidence, not the active landing workplan.",
+  "phase4_status": "closed_at_100_percent",
+  "previous_tracker": "tools/status/worldwide_phase4_progress.py",
+  "previous_workplan": "worldwide_phase4_claim_safety_normalization",
+  "registered_at_utc": "2026-06-28T09:27:05.081450+00:00"
 }
