@@ -38,7 +38,7 @@ PIPELINES = [
     ("31", "INPE Brazil", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_batch29_42_source_access_checked_records.jsonl", "source-access-checked"),
     ("32", "SERNAGEOMIN Chile", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_batch29_42_source_access_checked_records.jsonl", "source-access-checked"),
     ("33", "CDEMA", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_remaining_source_access_fast_checked_records.jsonl", "source-access-checked"),
-    ("34", "SICA", "memory_layer/wiki/operator_memory/worldwide_implemented/phase2_all_implemented_records.jsonl", "implemented"),
+    ("34", "SICA", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_final_block_or_pass_source_access_records.jsonl", "source-access-blocked"),
     ("35", "Reuters verification", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_last5_source_access_repair_records.jsonl", "source-access-checked"),
     ("36", "AFP verification", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_batch29_42_source_access_checked_records.jsonl", "source-access-checked"),
     ("37", "Al Jazeera", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_batch29_42_source_access_checked_records.jsonl", "source-access-checked"),
@@ -51,7 +51,7 @@ PIPELINES = [
     ("44", "TASS", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_batch43_54_source_access_checked_records.jsonl", "source-access-checked"),
     ("45", "OECD", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_remaining_source_access_fast_checked_records.jsonl", "source-access-checked"),
     ("46", "BIS", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_batch43_54_source_access_checked_records.jsonl", "source-access-checked"),
-    ("47", "IEA", "memory_layer/wiki/operator_memory/worldwide_implemented/phase2_all_implemented_records.jsonl", "implemented"),
+    ("47", "IEA", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_final_block_or_pass_source_access_records.jsonl", "source-access-blocked"),
     ("48", "Global Fishing Watch", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_batch43_54_source_access_checked_records.jsonl", "source-access-checked"),
     ("49", "IMO", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_remaining_source_access_fast_checked_records.jsonl", "source-access-checked"),
     ("50", "NSIDC", "memory_layer/wiki/operator_memory/worldwide_validated/phase2_remaining_source_access_fast_checked_records.jsonl", "source-access-checked"),
@@ -69,6 +69,7 @@ STATUS_PROGRESS = {
     "configured": 60.0,
     "implemented": 80.0,
     "source-access-checked": 90.0,
+    "source-access-blocked": 90.0,
     "validated": 100.0,
 }
 
