@@ -36,12 +36,22 @@
       "status": "complete"
     },
     {
+      "artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
+      "completed_at_utc": "2026-06-28T12:27:56.346731+00:00",
+      "completion_note": "Descriptive forecast candidates created from negative-space watchlist, pattern concentrations, math metrics, secondary conditions, and prior scenario suggestions.",
       "goal": "Create bounded forecast-candidate records using descriptive trends and gaps only.",
-      "phase": "forecast_phase_4_descriptive_forecast_candidates"
+      "phase": "forecast_phase_4_descriptive_forecast_candidates",
+      "records_artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_records.jsonl",
+      "status": "complete"
     },
     {
+      "artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase5_scenario_review_queue_report.json",
+      "completed_at_utc": "2026-06-28T12:27:56.346731+00:00",
+      "completion_note": "Scenario review queue created from descriptive forecast candidates with human-review controls and no prediction or alert claims.",
       "goal": "Turn forecast candidates into human-review queues with claim boundaries.",
-      "phase": "forecast_phase_5_scenario_review_queue"
+      "phase": "forecast_phase_5_scenario_review_queue",
+      "records_artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase5_scenario_review_queue_records.jsonl",
+      "status": "complete"
     },
     {
       "goal": "Audit continuity, claim safety, reproducibility, and boundary preservation.",
@@ -60,7 +70,7 @@
     "causal certainty",
     "policy/medical/legal/financial decision recommendation"
   ],
-  "last_updated_at_utc": "2026-06-28T11:24:34.270009+00:00",
+  "last_updated_at_utc": "2026-06-28T12:27:56.346731+00:00",
   "purpose": "Upgrade the workstation from command-center visibility into forward-looking bounded forecast scaffolding, negative-space monitoring, and review-priority suggestions.",
   "queue_position": 1,
   "registered_at_utc": "2026-06-28T11:21:54.477735+00:00",
