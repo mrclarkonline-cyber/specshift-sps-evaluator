@@ -7,16 +7,11 @@ Date: 2026-06-28
 
 Bounded live-sample ingestion for Phase 3 Batch 2.
 
-## What this validates
+## Boundary
 
-- bounded public fetch attempt
-- raw sample metadata capture
-- sample hash capture
-- minimal parsed metadata record creation
-- claim-safety fields preserved
-- original and translated fields kept separate
+This validates only bounded sample fetching and minimal metadata parsing.
 
-## What this does not validate
+It does not claim:
 
 - production monitoring
 - full live ingestion
