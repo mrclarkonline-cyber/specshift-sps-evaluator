@@ -70,3 +70,23 @@ Safety boundary:
 - no active probing
 - no target-specific reconnaissance
 
+### usgs_earthquake_fetch.py
+
+Fetches the USGS Earthquake GeoJSON feed for public geophysical awareness.
+
+Dry-run:
+
+python3 tools/pipelines/usgs_earthquake_fetch.py --dry-run
+
+Live fetch:
+
+python3 tools/pipelines/usgs_earthquake_fetch.py --limit 10
+
+Safety boundary:
+
+- public geophysical awareness only
+- no aftershock prediction
+- no unsupported impact claims
+- no tactical mapping
+- no automated emergency action
+
