@@ -1,0 +1,465 @@
+{
+  "canonical_rules": [
+    "All Terminal/repo/wiki work ends with wiki_landing.",
+    "Do not hand-code custom fireworks.",
+    "Do not hardcode phase numbers inside wiki_landing.",
+    "active_workplan.json is the active state source.",
+    "Cockpit is read-only by default.",
+    "Claim Gauntlet and Promotion Gate are gates, not certifications.",
+    "Human review remains required.",
+    "Professional review is required before procurement, paid pilot, contract terms, budget, money movement, protected method disclosure, or regulated/certification claims."
+  ],
+  "capabilities": [
+    {
+      "area": "Mission Control / Command Center",
+      "capability": "Open a full local workstation status board.",
+      "command": "python3 tools/status/specshift_board.py",
+      "does": [
+        "shows active workplan",
+        "shows active phase",
+        "shows next action",
+        "shows Git status",
+        "shows last commit",
+        "shows tracker output",
+        "shows open risks",
+        "shows Kira, Phil, Claim Gauntlet, Promotion Gate, Provenance, Phase Map, Cockpit summaries when present"
+      ],
+      "does_not": [
+        "execute autonomous actions",
+        "replace wiki_landing",
+        "claim production monitoring",
+        "claim truth resolution"
+      ],
+      "optional_wrapper": "specshift_board",
+      "primary_artifacts": [
+        "tools/status/specshift_board.py",
+        "memory_layer/wiki/operator_memory/active_workplan.json"
+      ]
+    },
+    {
+      "area": "Active Workplan Brain",
+      "capability": "Keep the terminal oriented to one current workplan, phase, tracker, next action, blockers, risk state, and closure rule.",
+      "command": "cat memory_layer/wiki/operator_memory/active_workplan.json",
+      "does": [
+        "stores active workplan state",
+        "stores active tracker path",
+        "stores next action",
+        "stores closure rule",
+        "stores allowed/forbidden actions",
+        "prevents stale phase guessing when helpers read it"
+      ],
+      "does_not": [
+        "decide work autonomously",
+        "override human direction",
+        "replace professional review"
+      ],
+      "optional_wrapper": "",
+      "primary_artifacts": [
+        "memory_layer/wiki/operator_memory/active_workplan.json",
+        "tools/status/active_workplan_brain_check.py"
+      ]
+    },
+    {
+      "area": "Canonical Landing",
+      "capability": "End repo/wiki work with canonical Git, tracker, Kira, and fireworks check.",
+      "command": "wiki_landing",
+      "does": [
+        "checks Git status",
+        "shows recent commits",
+        "runs active tracker from active_workplan.json",
+        "prints Kira recommendation",
+        "prints fireworks only when Git is happy"
+      ],
+      "does_not": [
+        "hand-code phase-specific fireworks",
+        "replace actual commits",
+        "prove substantive correctness"
+      ],
+      "optional_wrapper": "wiki_landing",
+      "primary_artifacts": [
+        "~/.specshift_landing.zsh",
+        "memory_layer/wiki/operator_memory/active_workplan.json"
+      ]
+    },
+    {
+      "area": "Kira Recommendation Engine",
+      "capability": "Produce rule-based local next-action guidance.",
+      "command": "python3 tools/status/kira_recommendation_engine.py",
+      "does": [
+        "reads active_workplan.json",
+        "checks active tracker progress",
+        "checks Git dirty state",
+        "checks blockers",
+        "checks claim/boundary risk",
+        "recommends close/park/continue/claim scan"
+      ],
+      "does_not": [
+        "execute commands",
+        "route externally",
+        "replace human judgment"
+      ],
+      "optional_wrapper": "kira_recommend",
+      "primary_artifacts": [
+        "tools/status/kira_recommendation_engine.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/kira_recommendation_state.json"
+      ]
+    },
+    {
+      "area": "Phil Morale Layer",
+      "capability": "Give safe comic pacing feedback only after serious checks pass.",
+      "command": "python3 tools/status/phil_morale_layer.py",
+      "does": [
+        "holds if Git is dirty",
+        "holds if Kira severity is high",
+        "gives human-friendly pacing feedback",
+        "writes state for pass/held outcomes"
+      ],
+      "does_not": [
+        "override Kira",
+        "execute workflow",
+        "replace wiki_landing"
+      ],
+      "optional_wrapper": "phil_summary",
+      "primary_artifacts": [
+        "tools/status/phil_morale_layer.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/phil_morale_state.json"
+      ]
+    },
+    {
+      "area": "Claim Gauntlet",
+      "capability": "Scan local text for risky overstatement language and suggest safer wording.",
+      "command": "python3 tools/status/claim_gauntlet.py",
+      "does": [
+        "flags terms like proves, validates, predicts, autonomous, truth, production-ready",
+        "distinguishes some boundary/allowlisted contexts",
+        "suggests safer bounded wording",
+        "updates claim-risk state"
+      ],
+      "does_not": [
+        "certify legal/compliance/scientific correctness",
+        "guarantee buyer-safe language",
+        "replace human or lawyer review"
+      ],
+      "optional_wrapper": "claim_gauntlet",
+      "primary_artifacts": [
+        "tools/status/claim_gauntlet.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
+        "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_hits.jsonl"
+      ]
+    },
+    {
+      "area": "Artifact Promotion Gate",
+      "capability": "Gate artifacts before promotion to public/client-facing use.",
+      "command": "python3 tools/status/promote_artifact.py <artifact> --target public --dry-run",
+      "does": [
+        "checks Git cleanliness",
+        "references Claim Gauntlet status",
+        "records SHA-256 provenance",
+        "checks public/private/protected boundary",
+        "checks buyer-safe wording",
+        "writes gate report/history"
+      ],
+      "does_not": [
+        "publish automatically",
+        "certify legal/compliance readiness",
+        "allow protected artifacts to public by default"
+      ],
+      "optional_wrapper": "promote_artifact",
+      "primary_artifacts": [
+        "tools/status/promote_artifact.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json",
+        "memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_history.jsonl"
+      ]
+    },
+    {
+      "area": "Provenance Vault",
+      "capability": "Record artifact hashes, timestamps, status, path, wiki link, commit, and promotion history.",
+      "command": "python3 tools/status/provenance_vault.py --default-set",
+      "does": [
+        "records SHA-256",
+        "records timestamp",
+        "records artifact status",
+        "records linked wiki page",
+        "records commit reference",
+        "references promotion history"
+      ],
+      "does_not": [
+        "publish",
+        "certify",
+        "replace CPA/lawyer audit"
+      ],
+      "optional_wrapper": "provenance_vault",
+      "primary_artifacts": [
+        "tools/status/provenance_vault.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault.jsonl",
+        "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault_report.json"
+      ]
+    },
+    {
+      "area": "Visual Phase Map",
+      "capability": "Render a terminal map of registered phases and statuses.",
+      "command": "python3 tools/status/phase_map.py",
+      "does": [
+        "shows complete/active/parked/protected/caution statuses",
+        "reads registered workplan state",
+        "writes phase map state"
+      ],
+      "does_not": [
+        "execute phase work",
+        "alter source of truth beyond state output",
+        "replace tracker"
+      ],
+      "optional_wrapper": "phase_map",
+      "primary_artifacts": [
+        "tools/status/phase_map.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/phase_map_state.json"
+      ]
+    },
+    {
+      "area": "Cockpit Modes",
+      "capability": "Load local mission context for specific work modes.",
+      "command": "python3 tools/status/cockpit.py specshift",
+      "does": [
+        "loads specshift/orchestra/ddf/outreach/shutdown context",
+        "lists relevant commands",
+        "lists relevant paths",
+        "lists relevant wiki/docs",
+        "is read-only by default",
+        "writes state only with --write-state"
+      ],
+      "does_not": [
+        "execute autonomous work",
+        "route externally",
+        "dirty Git by default"
+      ],
+      "optional_wrapper": "cockpit specshift",
+      "primary_artifacts": [
+        "tools/status/cockpit.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json"
+      ]
+    },
+    {
+      "area": "Close Universe",
+      "capability": "Summarize shutdown state, landed work, parked work, and tomorrow's first task.",
+      "command": "python3 tools/status/close_universe.py",
+      "does": [
+        "shows active workplan",
+        "shows active phase",
+        "shows latest commit",
+        "shows Git dirty state",
+        "shows completed phases",
+        "shows parked phases",
+        "shows tomorrow's first task"
+      ],
+      "does_not": [
+        "lock the OS",
+        "replace wiki_landing",
+        "execute autonomous shutdown"
+      ],
+      "optional_wrapper": "close_universe",
+      "primary_artifacts": [
+        "tools/status/close_universe.py",
+        "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
+        "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_log.jsonl"
+      ]
+    },
+    {
+      "area": "Worldwide Intake + Analytical Core",
+      "capability": "Track the completed chain from intake through analysis, scenario suggestions, implementation scaffolds, and audit.",
+      "command": "python3 tools/status/worldwide_phase16_progress.py",
+      "does": [
+        "confirms analytical chain closeout",
+        "preserves claim boundaries",
+        "audits continuity/counts/runner presence",
+        "documents pattern, negative-space, math, secondary-condition, scenario, and implementation scaffold layers"
+      ],
+      "does_not": [
+        "claim live production value",
+        "claim prediction",
+        "claim alerting",
+        "claim truth validation"
+      ],
+      "optional_wrapper": "",
+      "primary_artifacts": [
+        "memory_layer/wiki/operator_memory/worldwide_phase16/phase16_analytical_audit_report.json",
+        "memory_layer/wiki/operator_memory/worldwide_phase15/phase15_implementation_suggestion_report.json",
+        "memory_layer/wiki/operator_memory/worldwide_phase14/phase14_bounded_scenario_suggestion_report.json"
+      ]
+    },
+    {
+      "area": "Forecast + Negative-Space Engine",
+      "capability": "Create bounded forecast candidates, negative-space watchlists, and human-review queues.",
+      "command": "python3 tools/status/workstation_forecast_negative_space_progress.py",
+      "does": [
+        "inventories usable signals",
+        "creates negative-space watchlists",
+        "creates descriptive forecast candidates",
+        "creates human-review queue items",
+        "audits output and boundaries"
+      ],
+      "does_not": [
+        "predict",
+        "alert",
+        "monitor production",
+        "infer causality",
+        "resolve truth"
+      ],
+      "optional_wrapper": "",
+      "primary_artifacts": [
+        "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
+        "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase5_scenario_review_queue_report.json",
+        "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json"
+      ]
+    },
+    {
+      "area": "SpecShift Client Intake + Delivery System",
+      "capability": "Run a client-safe intake, data-room, provenance gate, review packet, delivery scaffold, and closeout audit workflow.",
+      "command": "python3 tools/status/specshift_client_intake_delivery_progress.py",
+      "does": [
+        "defines client scope boundaries",
+        "creates intake checklist",
+        "creates data-room index",
+        "routes artifacts through provenance and claim gates",
+        "creates review packet scaffolds",
+        "creates candidate-discrepancy memo scaffolds",
+        "creates delivery package scaffold",
+        "audits human review, language, retention, classification"
+      ],
+      "does_not": [
+        "provide legal advice",
+        "provide financial advice",
+        "create binding contract terms",
+        "certify compliance",
+        "validate truth",
+        "authorize autonomous client action"
+      ],
+      "optional_wrapper": "",
+      "primary_artifacts": [
+        "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase6_closeout_audit_report.json",
+        "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase5_delivery_package_scaffold.json",
+        "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_data_room_index.json"
+      ]
+    },
+    {
+      "area": "Professional Readiness / Lawyer + CPA Package",
+      "capability": "Prepare forensic accounting and conservative viability documentation for lawyer/CPA review.",
+      "command": "python3 tools/status/professional_readiness_progress.py",
+      "does": [
+        "indexes artifacts with hashes",
+        "separates viable/scaffolded/unvalidated/professional-review-required claims",
+        "records financial/contract trigger thresholds",
+        "records no-free-pilot posture",
+        "prepares lawyer/CPA questions",
+        "builds exportable professional-review packet index"
+      ],
+      "does_not": [
+        "provide legal advice",
+        "provide tax advice",
+        "provide financial advice",
+        "provide valuation",
+        "certify compliance",
+        "guarantee commercial viability"
+      ],
+      "optional_wrapper": "",
+      "primary_artifacts": [
+        "memory_layer/wiki/operator_memory/professional_readiness/professional_phase5_audit_closeout_report.json",
+        "memory_layer/wiki/operator_memory/professional_readiness/professional_forensic_artifact_index.json",
+        "memory_layer/wiki/operator_memory/professional_readiness/professional_viability_claim_matrix.json",
+        "memory_layer/wiki/operator_memory/professional_readiness/professional_financial_contract_thresholds.json",
+        "memory_layer/wiki/operator_memory/professional_readiness/professional_exportable_review_packet_index.json"
+      ]
+    },
+    {
+      "area": "Regulatory, Certification, and Procurement Readiness",
+      "capability": "Prepare internal documentation scaffolds for future regulator/certification/procurement diligence.",
+      "command": "python3 tools/status/regulatory_certification_readiness_progress.py",
+      "does": [
+        "maps scope and likely standards/reference categories",
+        "inventories controls/evidence",
+        "creates governance-policy scaffolds",
+        "creates procurement diligence packet index",
+        "creates certification/procurement gap analysis",
+        "audits readiness boundaries"
+      ],
+      "does_not": [
+        "claim certification",
+        "claim compliance",
+        "claim government approval",
+        "claim procurement approval",
+        "claim legal sufficiency",
+        "claim financial/tax approval",
+        "claim production monitoring",
+        "claim truth validation"
+      ],
+      "optional_wrapper": "",
+      "primary_artifacts": [
+        "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase6_audit_closeout_report.json",
+        "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase5_certification_gap_analysis_report.json",
+        "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase4_procurement_due_diligence_packet.json",
+        "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase3_governance_policy_scaffold.json"
+      ]
+    }
+  ],
+  "capability_count": 16,
+  "claim_boundary": "This capability map documents local workstation capabilities only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, professional audit, production monitoring, prediction, autonomous action, or truth validation.",
+  "created_at_utc": "2026-06-28T13:22:36.390779+00:00",
+  "document": "specshift_terminal_complete_capability_map",
+  "latest_commit_before_update": "71de18d Close regulatory certification readiness package",
+  "quickstart": [
+    {
+      "command": "python3 tools/status/specshift_board.py",
+      "task": "See current state"
+    },
+    {
+      "command": "wiki_landing",
+      "task": "End repo/wiki work cleanly"
+    },
+    {
+      "command": "python3 tools/status/active_workplan_brain_check.py",
+      "task": "Check active workplan brain"
+    },
+    {
+      "command": "python3 tools/status/kira_recommendation_engine.py",
+      "task": "Ask Kira for next action"
+    },
+    {
+      "command": "python3 tools/status/claim_gauntlet.py",
+      "task": "Run claim language scan"
+    },
+    {
+      "command": "python3 tools/status/promote_artifact.py <artifact> --target public --dry-run",
+      "task": "Gate an artifact before public/client use"
+    },
+    {
+      "command": "python3 tools/status/provenance_vault.py --default-set",
+      "task": "Register provenance"
+    },
+    {
+      "command": "python3 tools/status/phase_map.py",
+      "task": "View phase map"
+    },
+    {
+      "command": "python3 tools/status/cockpit.py specshift",
+      "task": "Open cockpit"
+    },
+    {
+      "command": "python3 tools/status/close_universe.py",
+      "task": "Shutdown summary"
+    },
+    {
+      "command": "python3 tools/status/specshift_client_intake_delivery_progress.py",
+      "task": "Check client delivery package"
+    },
+    {
+      "command": "python3 tools/status/professional_readiness_progress.py",
+      "task": "Check lawyer/CPA readiness"
+    },
+    {
+      "command": "python3 tools/status/regulatory_certification_readiness_progress.py",
+      "task": "Check regulatory/procurement readiness"
+    }
+  ],
+  "repo": "~/specshift_terminal_intelligence",
+  "safe_overall_claim": "This terminal now supports a bounded SpecShift workstation: command center, active workplan brain, claim gates, promotion gates, provenance, cockpit modes, worldwide analytical scaffold, forecast/negative-space review scaffold, client intake/delivery scaffold, professional lawyer/CPA readiness, and regulatory/procurement readiness documentation.",
+  "status": "complete"
+}
