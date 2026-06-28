@@ -1,0 +1,49 @@
+{
+  "allowed_inputs": [
+    "active_workplan.json",
+    "workstation command-center workplan and generated state artifacts",
+    "worldwide intake artifacts from Phases 3 through 8",
+    "analytical-core artifacts from Phases 9 through 16",
+    "Claim Gauntlet reports",
+    "Provenance Vault reports",
+    "Promotion Gate reports",
+    "Phase Map state",
+    "Cockpit state"
+  ],
+  "allowed_outputs": [
+    "forecast candidate",
+    "negative-space review prompt",
+    "stale-source prompt",
+    "missing-signal prompt",
+    "needs-more-data suggestion",
+    "bounded next-source suggestion",
+    "human-review queue",
+    "audit report"
+  ],
+  "claim_boundary": "Forecast Phase 1 defines scope only. It does not claim prediction, alerts, production monitoring, causal inference, autonomous action, or truth resolution.",
+  "completed_at_utc": "2026-06-28T11:22:38.990525+00:00",
+  "forbidden_outputs": [
+    "prediction claim",
+    "truth claim",
+    "alert",
+    "production monitoring claim",
+    "causal certainty",
+    "autonomous action",
+    "policy decision recommendation",
+    "medical decision recommendation",
+    "legal decision recommendation",
+    "financial decision recommendation"
+  ],
+  "phase": "forecast_phase_1_scope_registration",
+  "purpose": "Define what the Forecast + Negative-Space Engine may read, what it may output, and what it must not claim.",
+  "scope_rules": [
+    "Observed metadata may become a candidate only, not a conclusion.",
+    "Negative space means missing or underrepresented signal, not proof of absence or suppression.",
+    "Forecast candidate means review-worthy possibility, not prediction.",
+    "Every real-world suggestion must preserve human-review control.",
+    "All public-facing wording must pass Claim Gauntlet and Promotion Gate before use.",
+    "All generated artifacts must be recordable in Provenance Vault."
+  ],
+  "status": "complete",
+  "workplan": "workstation_forecast_negative_space_engine"
+}

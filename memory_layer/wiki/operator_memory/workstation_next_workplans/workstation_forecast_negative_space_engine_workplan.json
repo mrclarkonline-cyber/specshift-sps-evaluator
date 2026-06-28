@@ -10,8 +10,12 @@
   ],
   "candidate_phases": [
     {
+      "artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase1_scope_registration.json",
+      "completed_at_utc": "2026-06-28T11:22:38.990525+00:00",
+      "completion_note": "Forecast engine scope registered with allowed inputs, allowed outputs, forbidden outputs, scope rules, and claim boundary.",
       "goal": "Define what the forecast engine is allowed to read and what it must not claim.",
-      "phase": "forecast_phase_1_scope_registration"
+      "phase": "forecast_phase_1_scope_registration",
+      "status": "complete"
     },
     {
       "goal": "Inventory usable signals from intake, pattern, negative-space, phase-map, cockpit, provenance, and audit artifacts.",
@@ -46,9 +50,10 @@
     "causal certainty",
     "policy/medical/legal/financial decision recommendation"
   ],
+  "last_updated_at_utc": "2026-06-28T11:22:38.990525+00:00",
   "purpose": "Upgrade the workstation from command-center visibility into forward-looking bounded forecast scaffolding, negative-space monitoring, and review-priority suggestions.",
   "queue_position": 1,
   "registered_at_utc": "2026-06-28T11:21:54.477735+00:00",
-  "status": "registered",
+  "status": "in_progress",
   "workplan": "workstation_forecast_negative_space_engine"
 }
