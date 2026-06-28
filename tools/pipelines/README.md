@@ -174,3 +174,43 @@ Live fetch:
 
 python3 tools/pipelines/sec_edgar_fetch.py --limit 10
 
+### world_news_rss_fetch.py
+
+Verifies and fetches initial public world-news RSS sources.
+
+Dry-run:
+
+python3 tools/pipelines/world_news_rss_fetch.py --dry-run
+
+Verify-only:
+
+python3 tools/pipelines/world_news_rss_fetch.py --verify-only
+
+Live fetch:
+
+python3 tools/pipelines/world_news_rss_fetch.py --limit 10
+
+### daily_digest.py
+
+Generates a local daily digest from generated source summaries.
+
+Dry-run:
+
+python3 tools/pipelines/daily_digest.py --dry-run
+
+Generate:
+
+python3 tools/pipelines/daily_digest.py
+
+### claim_safety_gate.py
+
+Runs a lightweight claim-safety scan on generated markdown digests.
+
+Dry-run:
+
+python3 tools/pipelines/claim_safety_gate.py --dry-run
+
+Scan:
+
+python3 tools/pipelines/claim_safety_gate.py --path reports/fast_relevance
+
