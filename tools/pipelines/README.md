@@ -138,3 +138,39 @@ Safety boundary:
 - no validated conclusion from one record
 - no medical/legal/commercial validation claims
 
+### noaa_alerts_fetch.py
+
+Fetches NOAA/NWS active alerts for official public alert awareness.
+
+Dry-run:
+
+python3 tools/pipelines/noaa_alerts_fetch.py --dry-run
+
+Live fetch:
+
+python3 tools/pipelines/noaa_alerts_fetch.py --limit 10
+
+### huggingface_metadata_fetch.py
+
+Fetches Hugging Face public model metadata only.
+
+Dry-run:
+
+python3 tools/pipelines/huggingface_metadata_fetch.py --dry-run
+
+Live fetch:
+
+python3 tools/pipelines/huggingface_metadata_fetch.py --limit 10
+
+### sec_edgar_fetch.py
+
+Fetches SEC public company ticker metadata.
+
+Dry-run:
+
+python3 tools/pipelines/sec_edgar_fetch.py --dry-run
+
+Live fetch:
+
+python3 tools/pipelines/sec_edgar_fetch.py --limit 10
+
