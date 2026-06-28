@@ -1,5 +1,7 @@
 {
   "claim_boundary": "This workplan registers workstation command-center upgrades only. It does not implement autonomous action, production monitoring, external routing, hidden escalation, surveillance, targeting, or truth-resolution systems.",
+  "closeout_note": "Workstation Command Center upgrade completed through all 10 registered phases.",
+  "completed_at_utc": "2026-06-28T11:02:32.499467+00:00",
   "core_principle": "The big upgrade is not more tools. It is less guessing: the machine should know what phase it is in, what it is allowed to say, what it is not allowed to touch, and when the user gets fireworks.",
   "global_boundaries": [
     "civilian-safe only",
@@ -10,11 +12,11 @@
     "Git must be clean before celebration",
     "canonical landing remains wiki_landing"
   ],
-  "last_updated_at_utc": "2026-06-28T11:01:27.120611+00:00",
+  "last_updated_at_utc": "2026-06-28T11:02:32.499467+00:00",
   "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
   "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
-  "status": "in_progress",
+  "status": "complete",
   "upgrade_phases": [
     {
       "artifact": "tools/status/specshift_board.py",
@@ -180,8 +182,11 @@
       "wrapper": "~/WORK/tools/orchestra/bin/phase_map"
     },
     {
+      "artifact": "tools/status/cockpit.py",
       "boundary": "Context loading only. No autonomous work or hidden routing.",
       "command_target": "cockpit",
+      "completed_at_utc": "2026-06-28T11:02:32.499467+00:00",
+      "completion_note": "cockpit created. It loads local mission context for specshift, orchestra, ddf, outreach, and shutdown modes without autonomous action.",
       "done_when": "cockpit mode loads relevant commands, paths, wiki pages, trackers, and next actions for the selected mission.",
       "goal": "Switch the machine into current mission mode.",
       "modes": [
@@ -192,7 +197,10 @@
         "cockpit shutdown"
       ],
       "phase": "phase_26_cockpit_mode",
-      "upgrade": "SpecShift cockpit mode"
+      "state_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
+      "status": "complete",
+      "upgrade": "SpecShift cockpit mode",
+      "wrapper": "~/WORK/tools/orchestra/bin/cockpit"
     }
   ],
   "voice_anchor": {

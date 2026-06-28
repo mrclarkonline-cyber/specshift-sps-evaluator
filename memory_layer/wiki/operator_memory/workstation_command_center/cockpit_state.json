@@ -1,0 +1,39 @@
+{
+  "active_phase": "workstation_command_center_complete",
+  "active_tracker": "tools/status/workstation_command_center_progress.py",
+  "active_workplan": "workstation_command_center_upgrade",
+  "boundary": "SpecShift cockpit is local workflow context only. No buyer claims, production monitoring, autonomous action, or truth resolution.",
+  "claim_boundary": "Cockpit mode is local context loading only. It does not execute autonomous work, route externally, monitor production, authorize actions, or resolve truth.",
+  "commands": [
+    "specshift_board",
+    "wiki_landing",
+    "claim_gauntlet",
+    "promote_artifact",
+    "provenance_vault",
+    "phase_map"
+  ],
+  "created_at_utc": "2026-06-28T11:02:32.601080+00:00",
+  "engine": "cockpit_mode_v1",
+  "mode": "specshift",
+  "next_actions": [
+    "Run specshift_board for current state.",
+    "Use claim_gauntlet before public-facing wording.",
+    "Use promote_artifact before moving anything public-facing.",
+    "End completed repo/wiki work with wiki_landing."
+  ],
+  "paths": [
+    "~/specshift_terminal_intelligence",
+    "memory_layer/wiki/operator_memory/active_workplan.json",
+    "memory_layer/wiki/operator_memory/workstation_command_center/",
+    "docs/workstation/",
+    "tools/status/"
+  ],
+  "purpose": "SpecShift command-center mode for product, audit, reliability, claim-safety, and buyer-safe workflow.",
+  "wiki_pages": [
+    "docs/workstation/workstation_command_center_upgrade_workplan.md",
+    "docs/workstation/phase21_claim_overstatement_detector.md",
+    "docs/workstation/phase22_artifact_promotion_gate.md",
+    "docs/workstation/phase24_local_provenance_vault.md"
+  ],
+  "workplan_status": "complete"
+}

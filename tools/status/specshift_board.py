@@ -66,6 +66,16 @@ def main() -> None:
     else:
         print("Kira engine missing")
 
+    section("Cockpit Mode")
+    cockpit_state = Path("memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json")
+    if cockpit_state.exists():
+        data = load_json(cockpit_state)
+        print(f"mode: {data.get('mode', 'unknown')}")
+        print(f"purpose: {data.get('purpose', 'unknown')}")
+        print(f"state: {cockpit_state}")
+    else:
+        print("Cockpit state missing")
+
     section("Visual Phase Map")
     phase_map_state = Path("memory_layer/wiki/operator_memory/workstation_command_center/phase_map_state.json")
     if phase_map_state.exists():
