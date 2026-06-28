@@ -1,0 +1,23 @@
+{
+  "claim_boundary": "Phase 7 registration only. This does not claim production monitoring, content validation, contradiction detection, agreement detection, corroboration, alert readiness, autonomous action, or truth resolution.",
+  "phase": "phase_7_worldwide_human_review_packet_scaffold",
+  "phase7_goal": "Create human-review packet records that preserve source provenance, category, source-type diversity, uncertainty labels, claim-safety labels, and review questions for each inspection-ready pair.",
+  "previous_phase": "phase_6_worldwide_candidate_pair_inspection_scaffold",
+  "previous_phase_artifacts": [
+    "memory_layer/wiki/operator_memory/worldwide_phase6/phase6_candidate_pair_inspection_report.json",
+    "memory_layer/wiki/operator_memory/worldwide_phase6/phase6_candidate_pair_inspection_records.jsonl"
+  ],
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Move from inspection-ready candidate pairs to a bounded human-review packet scaffold without making agreement, contradiction, corroboration, truth, or alert claims.",
+  "registered_at_utc": "2026-06-28T09:30:13.448444+00:00",
+  "required_gates": [
+    "Gate 1: load Phase 6 inspection-ready pairs only",
+    "Gate 2: preserve both source records and provenance",
+    "Gate 3: add neutral human-review questions",
+    "Gate 4: add reviewer caution labels",
+    "Gate 5: keep comparison_result as not_evaluated",
+    "Gate 6: produce packet index",
+    "Gate 7: no contradiction detection, agreement detection, corroboration, content validation, alerts, autonomous action, or truth resolution"
+  ],
+  "status": "registered"
+}
