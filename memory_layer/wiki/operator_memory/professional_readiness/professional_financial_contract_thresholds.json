@@ -1,0 +1,108 @@
+{
+  "claim_boundary": "Professional Phase 3 prepares internal thresholds and professional-review questions only. It is not legal advice, financial advice, tax advice, valuation advice, binding contract language, or an offer.",
+  "core_rule": "If procurement, paid pilot, contract terms, budget, or money movement becomes real, engage CPA/legal support before proceeding alone.",
+  "cpa_questions": [
+    "How should paid pilot revenue be recognized?",
+    "What bookkeeping system and chart of accounts should be used?",
+    "How should owner contributions, reimbursements, software/tooling costs, cloud/API costs, and professional fees be tracked?",
+    "What records should be retained for audit/tax readiness?",
+    "How should large first payments, retainers, deposits, or milestone payments be handled?",
+    "What tax issues arise for out-of-state or international clients?",
+    "Should payments be separated by pilot, license, consulting, reimbursement, or product revenue?",
+    "What reserves should be held for taxes and professional fees?",
+    "How should contractor/vendor costs be documented if used later?",
+    "What financial controls are needed before accepting client funds?"
+  ],
+  "created_at_utc": "2026-06-28T13:04:22.167486+00:00",
+  "forbidden_self_handling": [
+    "do not sign contracts alone",
+    "do not accept major payment without CPA/legal review",
+    "do not grant exclusivity without lawyer review",
+    "do not transfer code or protected methods without lawyer review",
+    "do not promise compliance, production monitoring, truth validation, or guaranteed outcomes",
+    "do not provide legal, financial, medical, or regulated advice to clients"
+  ],
+  "lawyer_questions": [
+    "What claims can SpecShift safely make publicly, privately, and in buyer scoping?",
+    "What should the standard NDA/MSA/SOW/pilot agreement include?",
+    "How should liability, warranty disclaimers, indemnity, and limitation-of-liability clauses be handled?",
+    "How should prohibited-use language be written and enforced?",
+    "How should protected methods, source code, trade secrets, and non-use be protected?",
+    "What client data retention, deletion, confidentiality, and security terms are needed?",
+    "What IP ownership language is needed for outputs, methods, reports, and derivative work?",
+    "What can be shared in a first-send packet versus after NDA?",
+    "What should be reviewed before any paid pilot, procurement step, or contract discussion?",
+    "What insurance, DPA, security, or compliance posture might buyers request?"
+  ],
+  "no_free_pilot_posture": {
+    "default": "No free pilots by default.",
+    "exceptions": [
+      "lawyer-approved strategic evaluation",
+      "public demonstration using synthetic or non-client data",
+      "short scoping call with no protected disclosure",
+      "text-only overview that does not transfer protected methods or artifacts"
+    ],
+    "reason": "Free pilots risk uncompensated value transfer, method leakage, ambiguous obligations, and weak buyer commitment.",
+    "safe_language": "I can discuss a bounded paid pilot with written scope, success criteria, data boundaries, and human-review controls."
+  },
+  "package": "professional_phase_3_financial_and_contract_thresholds",
+  "paid_pilot_handling": {
+    "boundary": "Prices are internal planning anchors only, not quotes, offers, legal terms, valuation, or tax advice.",
+    "minimum_before_accepting": [
+      "written scope",
+      "systems in scope and out of scope",
+      "artifact/data boundaries",
+      "human-review responsibility",
+      "buyer retains labels and final adjudication",
+      "acceptance criteria",
+      "timeline",
+      "fee/payment terms",
+      "confidentiality and non-use terms",
+      "IP/protected-method boundary",
+      "limitation of liability",
+      "no production monitoring claim",
+      "no truth-validation claim"
+    ],
+    "suggested_internal_price_memory": [
+      "entry pilot: $75k-$150k",
+      "serious pilot: $250k-$500k",
+      "strategic evaluation: $750k-$1.5M",
+      "strategic license or limited exclusivity: $3M-$5M+",
+      "broad control: 8 figures+"
+    ]
+  },
+  "purpose": "Prepare CPA/lawyer trigger thresholds, paid-pilot handling, no-free-pilot posture, and professional-review questions for SpecShift.",
+  "status": "complete",
+  "trigger_events": [
+    {
+      "description": "A buyer expresses interest in paying for a pilot, evaluation, proof of concept, or trial.",
+      "required_action": "Pause before accepting money or terms; prepare scope and ask lawyer/CPA what structure is appropriate.",
+      "trigger": "paid_pilot_interest"
+    },
+    {
+      "description": "A buyer asks for vendor onboarding, procurement paperwork, insurance, tax forms, security review, or contract review.",
+      "required_action": "Engage lawyer/CPA before responding substantively.",
+      "trigger": "procurement_contact"
+    },
+    {
+      "description": "A buyer sends MSA, NDA, SOW, DPA, security terms, IP terms, indemnity, warranties, or limitation-of-liability language.",
+      "required_action": "Do not sign alone; route to lawyer.",
+      "trigger": "contract_terms"
+    },
+    {
+      "description": "A buyer asks for price, budget range, payment terms, invoice handling, or pilot fee.",
+      "required_action": "Use non-binding range language only until CPA/lawyer review.",
+      "trigger": "budget_or_price_discussion"
+    },
+    {
+      "description": "Any payment, deposit, reimbursement, grant, award, wire, ACH, platform payment, or client-paid expense becomes likely.",
+      "required_action": "CPA review before receiving or moving funds.",
+      "trigger": "money_movement"
+    },
+    {
+      "description": "A buyer asks for source code, protected methods, implementation details, training rights, model internals, or exclusive access.",
+      "required_action": "Decline or defer until lawyer review.",
+      "trigger": "protected_method_request"
+    }
+  ]
+}
