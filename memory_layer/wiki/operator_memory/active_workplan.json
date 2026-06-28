@@ -1,5 +1,5 @@
 {
-  "active_phase": "phase_22_artifact_promotion_gate",
+  "active_phase": "phase_23_close_universe_shutdown",
   "active_tracker": "tools/status/workstation_command_center_progress.py",
   "active_workplan": "workstation_command_center_upgrade",
   "allowed_actions": [
@@ -31,9 +31,10 @@
     "weapons, targeting, surveillance, or harmful operationalization"
   ],
   "last_claim_gauntlet_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
-  "last_completed_phase": "phase_21_claim_overstatement_detector",
-  "last_updated_at_utc": "2026-06-28T10:56:41.859098+00:00",
-  "next_action": "Build promote_artifact gate requiring claim scan, provenance check, public/private boundary, buyer-safe wording, and clean Git before promotion.",
+  "last_completed_phase": "phase_22_artifact_promotion_gate",
+  "last_promotion_gate_report": "memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json",
+  "last_updated_at_utc": "2026-06-28T10:57:41.650975+00:00",
+  "next_action": "Build close_universe to summarize landed work, parked work, tomorrow's first task, and end with wiki_landing.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",

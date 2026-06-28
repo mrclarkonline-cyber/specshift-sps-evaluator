@@ -66,6 +66,18 @@ def main() -> None:
     else:
         print("Kira engine missing")
 
+    section("Promotion Gate")
+    promotion_report = Path("memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json")
+    if promotion_report.exists():
+        data = load_json(promotion_report)
+        print(f"status: {data.get('status', 'unknown')}")
+        print(f"promotion allowed: {data.get('promotion_allowed', 'unknown')}")
+        print(f"holds: {data.get('holds', 'unknown')}")
+        print(f"reviews: {data.get('reviews', 'unknown')}")
+        print(f"report: {promotion_report}")
+    else:
+        print("Promotion Gate report missing")
+
     section("Claim Gauntlet")
     claim_report = Path("memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json")
     if claim_report.exists():

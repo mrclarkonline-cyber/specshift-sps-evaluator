@@ -1,0 +1,97 @@
+{
+  "artifact": {
+    "artifact": "docs/workstation/phase22_artifact_promotion_gate.md",
+    "exists": true,
+    "path_classification": "public_candidate",
+    "sha256": "18965665a65576bef736740d8b796e42cdbda0d78ef80c24c7da6457b1113eb3",
+    "size_bytes": 919,
+    "target": "public"
+  },
+  "checks": [
+    {
+      "check": "git_clean_status",
+      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "detail": {
+        "dirty": true,
+        "status": "M memory_layer/wiki/operator_memory/active_workplan.json\n M memory_layer/wiki/operator_memory/workstation_command_center/workstation_command_center_upgrade_workplan.json\n M tools/status/specshift_board.py\n?? docs/workstation/phase22_artifact_promotion_gate.md\n?? memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json\n?? tools/status/promote_artifact.py"
+      },
+      "severity": "high",
+      "status": "hold"
+    },
+    {
+      "check": "claim_scan",
+      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "detail": {
+        "actionable_hits": 1783,
+        "claim_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
+        "note": "Promotion may proceed only with human review if claim scan is review; public promotion should require pass or explicit counsel/reviewer override.",
+        "risk_level": "high"
+      },
+      "severity": "medium",
+      "status": "review"
+    },
+    {
+      "check": "artifact_path",
+      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "detail": {
+        "artifact": "docs/workstation/phase22_artifact_promotion_gate.md",
+        "exists": true,
+        "path_classification": "public_candidate",
+        "sha256": "18965665a65576bef736740d8b796e42cdbda0d78ef80c24c7da6457b1113eb3",
+        "size_bytes": 919,
+        "target": "public"
+      },
+      "severity": "info",
+      "status": "pass"
+    },
+    {
+      "check": "public_private_boundary",
+      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "detail": "path_classification=public_candidate, target=public",
+      "severity": "info",
+      "status": "pass"
+    },
+    {
+      "check": "buyer_safe_wording",
+      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "detail": {
+        "risky_terms": []
+      },
+      "severity": "info",
+      "status": "pass"
+    },
+    {
+      "check": "boundary_language",
+      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "detail": {
+        "boundary_terms_found": [
+          "human review"
+        ]
+      },
+      "severity": "info",
+      "status": "pass"
+    },
+    {
+      "check": "provenance_check",
+      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "detail": {
+        "path": "docs/workstation/phase22_artifact_promotion_gate.md",
+        "sha256": "18965665a65576bef736740d8b796e42cdbda0d78ef80c24c7da6457b1113eb3",
+        "target": "public",
+        "timestamp_utc": "2026-06-28T10:57:41.755085+00:00"
+      },
+      "severity": "info",
+      "status": "pass"
+    }
+  ],
+  "claim_boundary": "Artifact promotion gate is a local workflow gate only. It does not certify legal, compliance, scientific, factual, production, or buyer readiness. Human review remains required for public-facing promotion.",
+  "created_at_utc": "2026-06-28T10:57:41.755085+00:00",
+  "dry_run": true,
+  "engine": "artifact_promotion_gate_v1",
+  "holds": 1,
+  "human_review_required": true,
+  "promotion_allowed": false,
+  "reviews": 1,
+  "status": "held",
+  "target": "public"
+}

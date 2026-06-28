@@ -1,0 +1,1 @@
+{"claim_boundary": "Promotion history records local gate checks only. It does not certify legal, compliance, scientific, factual, production, or buyer readiness.", "created_at_utc": "2026-06-28T10:58:10.169455+00:00", "event": "history_initialized", "reason": "Phase 22 promotion gate uses dry-run tests; initialize history artifact so staging is stable."}
