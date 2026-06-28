@@ -1,0 +1,38 @@
+{
+  "claim_boundary": "Regulatory Phase 2 inventories control evidence only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+  "completed_at_utc": "2026-06-28T13:13:56.361945+00:00",
+  "control_area_counts": {
+    "analytical_audit": 1,
+    "artifact_promotion": 1,
+    "claim_safety": 1,
+    "client_data_handling": 1,
+    "command_center": 1,
+    "delivery_scaffold": 1,
+    "export_boundaries": 1,
+    "financial_contract_thresholds": 1,
+    "forecast_negative_space": 1,
+    "governance_model": 1,
+    "human_review_delivery": 1,
+    "implementation_scaffolds": 1,
+    "professional_review": 3,
+    "provenance": 2,
+    "review_packet_index": 1
+  },
+  "controls_checked": 18,
+  "evidence_summary": {
+    "analytical_audit": "analytical audit closeout exists",
+    "claim_safety": "claim gauntlet and promotion gate records exist",
+    "client_delivery": "client intake/delivery closeout and delivery scaffold exist",
+    "forecast_negative_space": "forecast candidates remain review prompts only",
+    "governance": "active workplan and command-center records exist",
+    "professional_review": "lawyer/CPA readiness artifacts exist",
+    "provenance": "provenance vault and forensic index records exist"
+  },
+  "missing_artifacts": [],
+  "phase": "regulatory_phase_2_control_evidence_inventory",
+  "readiness_status_counts": {
+    "usable_evidence": 18
+  },
+  "records_artifact": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase2_control_evidence_inventory_records.jsonl",
+  "status": "complete"
+}

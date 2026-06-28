@@ -31,6 +31,7 @@
     "risk eliminated",
     "guaranteed safety"
   ],
+  "last_updated_at_utc": "2026-06-28T13:13:56.361945+00:00",
   "likely_reference_categories": [
     {
       "category": "AI risk management frameworks",
@@ -84,9 +85,13 @@
       "status": "complete"
     },
     {
+      "artifact": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase2_control_evidence_inventory_report.json",
+      "completed_at_utc": "2026-06-28T13:13:56.361945+00:00",
+      "completion_note": "Control evidence inventory completed across command center, claim gates, provenance, client delivery, professional readiness, forecast/negative-space, and analytical audit layers.",
       "goal": "Inventory existing controls and evidence artifacts across command center, claim gates, provenance, client delivery, professional readiness, and audit layers.",
       "phase": "regulatory_phase_2_control_evidence_inventory",
-      "status": "registered"
+      "records_artifact": "memory_layer/wiki/operator_memory/regulatory_certification_readiness/regulatory_phase2_control_evidence_inventory_records.jsonl",
+      "status": "complete"
     },
     {
       "goal": "Create governance-policy scaffolds for prohibited use, human review, data handling, retention, protected methods, and claim safety.",
