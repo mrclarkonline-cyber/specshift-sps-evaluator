@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-28T01:32:01.262027Z",
+  "generated_at_utc": "2026-06-28T01:34:25.154352Z",
   "commands": [
     {
       "command": "orchestra_probe",
@@ -125,8 +125,8 @@
     {
       "label": "~/WORK/tools/workstation/scripts/build_capability_map.py",
       "expanded_path": "/Users/benjaminjustinclark/WORK/tools/workstation/scripts/build_capability_map.py",
-      "exists": false,
-      "kind": "missing"
+      "exists": true,
+      "kind": "file"
     }
   ],
   "registry": {
@@ -141,14 +141,14 @@
       "space": true,
       "geophysical": true,
       "human": true,
-      "underwater_acoustic_networks": false,
-      "planetary_probes": false,
-      "news": false,
-      "cybersecurity": false,
-      "research_literature": false,
-      "policy": false,
-      "finance": false,
-      "infrastructure": false
+      "underwater_acoustic_networks": true,
+      "planetary_probes": true,
+      "news": true,
+      "cybersecurity": true,
+      "research_literature": true,
+      "policy": true,
+      "finance": true,
+      "infrastructure": true
     },
     "notes": []
   }

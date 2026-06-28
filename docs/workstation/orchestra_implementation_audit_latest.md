@@ -1,12 +1,12 @@
 # Orchestra Implementation Audit
 
-Generated at UTC: 2026-06-28T01:32:01.260913Z
+Generated at UTC: 2026-06-28T01:34:25.153244Z
 
 ## Summary
 
 - Expected commands found: 6/11
 - Safe smoke tests passed: 3/11
-- Expected paths found: 7/8
+- Expected paths found: 8/8
 - Registry exists: True
 - Registry valid JSON: True
 
@@ -126,9 +126,9 @@ Usage:
 - [PASS] ~/WORK/WORKSTATION_CAPABILITY_MAP.txt
   - expanded: /Users/benjaminjustinclark/WORK/WORKSTATION_CAPABILITY_MAP.txt
   - kind: file
-- [MISSING] ~/WORK/tools/workstation/scripts/build_capability_map.py
+- [PASS] ~/WORK/tools/workstation/scripts/build_capability_map.py
   - expanded: /Users/benjaminjustinclark/WORK/tools/workstation/scripts/build_capability_map.py
-  - kind: missing
+  - kind: file
 
 ## Registry Category Coverage
 
@@ -138,14 +138,14 @@ Usage:
 - [PRESENT] space
 - [PRESENT] geophysical
 - [PRESENT] human
-- [MISSING] underwater_acoustic_networks
-- [MISSING] planetary_probes
-- [MISSING] news
-- [MISSING] cybersecurity
-- [MISSING] research_literature
-- [MISSING] policy
-- [MISSING] finance
-- [MISSING] infrastructure
+- [PRESENT] underwater_acoustic_networks
+- [PRESENT] planetary_probes
+- [PRESENT] news
+- [PRESENT] cybersecurity
+- [PRESENT] research_literature
+- [PRESENT] policy
+- [PRESENT] finance
+- [PRESENT] infrastructure
 
 ## Implementation Gate
 
