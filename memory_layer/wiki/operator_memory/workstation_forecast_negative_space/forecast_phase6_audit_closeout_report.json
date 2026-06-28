@@ -1,0 +1,14 @@
+{
+  "audit_checks_held": 0,
+  "audit_checks_passed": 5,
+  "audit_checks_review": 2,
+  "audit_checks_run": 7,
+  "audit_records_artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_records.jsonl",
+  "claim_boundary": "Forecast Phase 6 audits and closes the Forecast + Negative-Space Engine only. It does not claim prediction, alerting, production monitoring, causal inference, autonomous action, or truth resolution.",
+  "completed_at_utc": "2026-06-28T12:29:45.142376+00:00",
+  "forecast_candidates_created": 33,
+  "phase": "forecast_phase_6_audit_and_closeout",
+  "queued_next_workplan": "specshift_client_intake_delivery_system",
+  "scenario_review_items_created": 33,
+  "status": "complete"
+}
