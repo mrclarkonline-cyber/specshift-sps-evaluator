@@ -1,5 +1,5 @@
 {
-  "active_phase": "pilot_phase_6_audit_and_closeout",
+  "active_phase": "specshift_buyer_safe_pilot_intake_delivery_lane_complete",
   "active_tracker": "tools/status/specshift_buyer_safe_pilot_progress.py",
   "active_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
   "allowed_actions": [
@@ -14,8 +14,8 @@
   ],
   "blockers": [],
   "canonical_landing_command": "wiki_landing",
-  "claim_boundary": "This workplan builds a buyer-safe pilot intake and delivery lane only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, or autonomous client action.",
-  "closure_rule": "Complete all six pilot-lane phases and audit before treating this as buyer-pilot ready.",
+  "claim_boundary": "Buyer-safe pilot lane is complete as an internal workflow scaffold only. It is not legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, or autonomous client action.",
+  "closure_rule": "Buyer-safe pilot lane complete. Register a new named workplan before additional capability work.",
   "command_center_metadata": {
     "board_command": "specshift_board",
     "house_rule": "Completed Terminal/repo/wiki Bash blocks end with wiki_landing.",
@@ -30,6 +30,7 @@
     "hardcoded phase guessing inside landing helpers",
     "weapons, targeting, surveillance, or harmful operationalization"
   ],
+  "last_buyer_safe_pilot_closeout_report": "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase6_audit_closeout_report.json",
   "last_buyer_safe_pilot_workplan": "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/specshift_buyer_safe_pilot_intake_delivery_lane_workplan.json",
   "last_candidate_discrepancy_memo_template": "docs/workstation/buyer_safe_pilot/candidate_discrepancy_memo_template.md",
   "last_claim_gauntlet_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
@@ -44,8 +45,8 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "pilot_phase_5_delivery_playbook_and_checklist",
-  "last_completed_workplan": "regulatory_certification_procurement_readiness",
+  "last_completed_phase": "pilot_phase_6_audit_and_closeout",
+  "last_completed_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
   "last_forecast_audit_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
   "last_forecast_candidate_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
   "last_forecast_negative_space_watchlist_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase3_negative_space_watchlist_report.json",
@@ -76,8 +77,8 @@
   "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
   "last_terminal_capability_map": "memory_layer/wiki/operator_memory/terminal_capabilities/specshift_terminal_complete_capability_map.json",
   "last_terminal_capability_map_doc": "docs/workstation/specshift_terminal_complete_capability_map.md",
-  "last_updated_at_utc": "2026-06-28T22:21:55.841748+00:00",
-  "next_action": "Audit the buyer-safe pilot lane for boundaries, professional threshold, claim safety, and artifact continuity.",
+  "last_updated_at_utc": "2026-06-28T22:22:56.348775+00:00",
+  "next_action": "Close or park this buyer-safe pilot work block before registering the next named workplan.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
