@@ -1,0 +1,17 @@
+{
+  "claim_boundary": "Forecast Phase 2 inventories usable local signals only. It does not claim prediction, alerting, production monitoring, causal inference, autonomous action, or truth resolution.",
+  "completed_at_utc": "2026-06-28T11:23:40.415468+00:00",
+  "missing_signals": 0,
+  "phase": "forecast_phase_2_signal_inventory",
+  "records_artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase2_signal_inventory_records.jsonl",
+  "review_needed_signals": 0,
+  "risk_counts": {
+    "low": 15
+  },
+  "signals_checked": 15,
+  "status": "complete",
+  "status_counts": {
+    "usable-signal": 15
+  },
+  "usable_signals": 15
+}

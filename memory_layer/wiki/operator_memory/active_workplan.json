@@ -1,5 +1,5 @@
 {
-  "active_phase": "forecast_phase_2_signal_inventory",
+  "active_phase": "forecast_phase_3_negative_space_watchlist",
   "active_tracker": "tools/status/workstation_forecast_negative_space_progress.py",
   "active_workplan": "workstation_forecast_negative_space_engine",
   "allowed_actions": [
@@ -32,15 +32,16 @@
   ],
   "last_claim_gauntlet_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "forecast_phase_1_scope_registration",
+  "last_completed_phase": "forecast_phase_2_signal_inventory",
   "last_completed_workplan": "workstation_command_center_upgrade",
   "last_forecast_scope_artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase1_scope_registration.json",
+  "last_forecast_signal_inventory_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase2_signal_inventory_report.json",
   "last_phase_map_state": "memory_layer/wiki/operator_memory/workstation_command_center/phase_map_state.json",
   "last_promotion_gate_report": "memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json",
   "last_provenance_vault_report": "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault_report.json",
   "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
-  "last_updated_at_utc": "2026-06-28T11:22:38.990525+00:00",
-  "next_action": "Inventory usable signals from intake, pattern, negative-space, phase-map, cockpit, provenance, and audit artifacts.",
+  "last_updated_at_utc": "2026-06-28T11:23:40.415468+00:00",
+  "next_action": "Create review-only watchlists for missing categories, missing source types, stale sources, and silent expected signals.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
