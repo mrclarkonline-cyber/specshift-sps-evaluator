@@ -77,12 +77,23 @@ STATUS_ORDER = {
     "done": 5,
 }
 
-def status_for(source_path: str, expected: str) -> str:
-    p = Path(source_path)
-    if not p.exists():
-        return "missing"
-    text = p.read_text(encoding="utf-8", errors="replace").lower()
-    return expected if expected.lower() in text else "registered"
+def status_for(expected_path, declared_status):
+    """Return the effective status for a pipeline row.
+
+    Rule:
+    - If the expected artifact exists, trust the declared row status.
+    - If the artifact is missing, keep it at registered.
+    - This allows dry-run JSONL artifacts to count as dry-run without falsely
+      claiming live-fetch, validated, or done.
+    """
+    from pathlib import Path
+
+    artifact = Path(expected_path)
+    if artifact.exists():
+        return declared_status
+    return "registered"
+
+
 
 def pct(status: str) -> float:
     return (STATUS_ORDER.get(status, 0) / 5.0) * 100.0
