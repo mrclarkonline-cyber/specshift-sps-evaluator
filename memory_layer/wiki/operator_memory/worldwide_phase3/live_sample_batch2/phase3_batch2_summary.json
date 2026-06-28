@@ -5,7 +5,8 @@
   "parsed_artifact": "memory_layer/wiki/operator_memory/worldwide_phase3/live_sample_batch2/phase3_batch2_parsed_sample_records.jsonl",
   "phase": "phase_3_worldwide_live_ingestion_runway",
   "raw_artifact": "memory_layer/wiki/operator_memory/worldwide_phase3/live_sample_batch2/phase3_batch2_raw_sample_metadata.jsonl",
-  "samples_parsed": 10,
+  "repaired_at_utc": "2026-06-28T09:19:19.517776+00:00",
+  "samples_parsed": 11,
   "sources_attempted": 11,
-  "sources_fetched": 10
+  "sources_fetched": 11
 }
