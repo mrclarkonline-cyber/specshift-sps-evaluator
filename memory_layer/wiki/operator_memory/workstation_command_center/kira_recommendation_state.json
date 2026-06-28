@@ -1,0 +1,21 @@
+{
+  "active_phase": "phase_20_phil_morale_layer",
+  "active_tracker": "tools/status/workstation_command_center_progress.py",
+  "active_workplan": "workstation_command_center_upgrade",
+  "blockers": [],
+  "claim_boundary": "Kira recommendations are local workflow guidance only. They do not execute commands, route externally, monitor production, validate truth, or authorize autonomous action.",
+  "engine": "kira_recommendation_engine_v1",
+  "generated_at_utc": "2026-06-28T10:49:52+00:00",
+  "git_dirty": true,
+  "progress_percent": 30.0,
+  "reason": "Dirty Git blocks fireworks and makes state ambiguous.",
+  "recommendation": "Git is dirty. Finish the current file changes, then commit, park, or restore before claiming a clean landing.",
+  "risk_state": {
+    "boundary_risk": "low",
+    "claim_risk": "low",
+    "external_action_risk": "none",
+    "git_dirty": false,
+    "missing_tracker": false
+  },
+  "severity": "high"
+}

@@ -10,7 +10,7 @@
     "Git must be clean before celebration",
     "canonical landing remains wiki_landing"
   ],
-  "last_updated_at_utc": "2026-06-28T10:48:19.213406+00:00",
+  "last_updated_at_utc": "2026-06-28T10:49:51.974549+00:00",
   "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
   "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
@@ -44,8 +44,11 @@
       "validator": "tools/status/active_workplan_brain_check.py"
     },
     {
+      "artifact": "tools/status/kira_recommendation_engine.py",
       "boundary": "Recommendation only. No command execution.",
       "command_target": "wiki_landing / kira_recommends",
+      "completed_at_utc": "2026-06-28T10:49:51.974549+00:00",
+      "completion_note": "Kira recommendation engine created. It reads active_workplan.json, active tracker progress, Git state, blockers, and risk state, then produces local workflow guidance only.",
       "done_when": "Kira recommendations are driven by active tracker output, active_workplan.json, Git state, and claim-risk state.",
       "goal": "Upgrade Kira from generic advice to rule-based recommendations.",
       "phase": "phase_19_kira_recommendation_engine",
@@ -56,7 +59,10 @@
         "if late night: stop recommendation",
         "if high-risk claim: run Claim Gauntlet"
       ],
-      "upgrade": "Kira recommendation engine"
+      "state_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/kira_recommendation_state.json",
+      "status": "complete",
+      "upgrade": "Kira recommendation engine",
+      "wrapper": "~/WORK/tools/orchestra/bin/kira_recommend"
     },
     {
       "boundary": "Human-friendly feedback only. No interference with commands.",

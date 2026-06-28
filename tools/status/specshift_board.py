@@ -58,6 +58,14 @@ def main() -> None:
     else:
         print("active tracker missing")
 
+    section("Kira engine")
+    kira_script = Path("tools/status/kira_recommendation_engine.py")
+    if kira_script.exists():
+        code, kira_output = run(["python3", str(kira_script)], timeout=20)
+        print(kira_output if kira_output else "Kira engine produced no output")
+    else:
+        print("Kira engine missing")
+
     section("Open risks")
     risks = []
     if status:
