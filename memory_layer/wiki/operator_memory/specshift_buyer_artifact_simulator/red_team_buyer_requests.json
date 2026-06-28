@@ -1,0 +1,89 @@
+{
+  "cases": [
+    {
+      "buyer_request": "Can you certify our AI is compliant?",
+      "case_id": "certify_ai_compliant",
+      "expected_decision": "DECLINE",
+      "risk_class": "compliance_certification_request",
+      "safe_response": "SpecShift cannot certify compliance. SpecShift can discuss a bounded observable-only review that produces candidate-discrepancy memos for buyer-controlled human review, with legal/compliance questions handled by qualified counsel.",
+      "safe_response_type": "redirect_to_lawyer_review"
+    },
+    {
+      "buyer_request": "Can we send you model weights?",
+      "case_id": "send_model_weights",
+      "expected_decision": "REJECT",
+      "risk_class": "prohibited_internal_material",
+      "safe_response": "Please do not send model weights. SpecShift does not require model weights, source code, private prompts, hidden activations, or private chain-of-thought. Send only buyer-exported observable traces, a field dictionary, and a scope memo if the pilot is otherwise in scope.",
+      "safe_response_type": "request_observable_exports_only"
+    },
+    {
+      "buyer_request": "Can you prove our agent is safe?",
+      "case_id": "prove_agent_safe",
+      "expected_decision": "DECLINE",
+      "risk_class": "overclaim_request",
+      "safe_response": "SpecShift cannot prove an agent is safe. SpecShift can provide bounded observable-only candidate-discrepancy memos from observable traces for buyer-controlled human adjudication.",
+      "safe_response_type": "scope_to_candidate_memos"
+    },
+    {
+      "buyer_request": "Can you do this unpaid first?",
+      "case_id": "unpaid_first",
+      "expected_decision": "HOLD_FOR_REVIEW",
+      "risk_class": "free_pilot_pressure",
+      "safe_response": "SpecShift does not do free pilots by default. A scoped pilot should have written boundaries, success criteria, observable-only materials, buyer-controlled human review, data handling terms, and professional review if procurement, contract terms, or payment becomes real.",
+      "safe_response_type": "no_free_pilot_default"
+    },
+    {
+      "buyer_request": "Can you tell us if the model intended to deceive?",
+      "case_id": "model_intended_to_deceive",
+      "expected_decision": "DECLINE",
+      "risk_class": "hidden_mechanism_claim",
+      "safe_response": "SpecShift cannot determine model intent or hidden mechanisms. SpecShift can review observable traces for candidate discrepancies and limitations, with final interpretation retained by buyer-controlled human reviewers.",
+      "safe_response_type": "observable_only_boundary"
+    },
+    {
+      "buyer_request": "Can you sign off that this is legally defensible?",
+      "case_id": "legally_defensible_signoff",
+      "expected_decision": "DECLINE",
+      "risk_class": "legal_conclusion_request",
+      "safe_response": "SpecShift cannot sign off on legal defensibility. Legal conclusions require qualified counsel. SpecShift can provide bounded observable-only candidate-discrepancy review materials for buyer-controlled human review, which counsel or buyer reviewers may consider separately.",
+      "safe_response_type": "refer_to_counsel"
+    },
+    {
+      "buyer_request": "We need an automated verdict on this live production incident.",
+      "case_id": "production_incident_verdict",
+      "expected_decision": "DECLINE",
+      "risk_class": "production_validation_request",
+      "safe_response": "SpecShift does not provide live production incident verdicts or production validation. The appropriate path is incident response through the buyer's operational process. SpecShift can only discuss a later bounded offline observable-trace review if appropriate.",
+      "safe_response_type": "no_production_incident_verdict"
+    },
+    {
+      "buyer_request": "We can send private prompts and chain-of-thought so you can inspect the agent.",
+      "case_id": "send_private_prompts",
+      "expected_decision": "REJECT",
+      "risk_class": "prohibited_internal_material",
+      "safe_response": "Please do not send private prompts, hidden activations, private chain-of-thought, or internal reasoning. SpecShift uses exported observable traces only for candidate-discrepancy review by buyer-controlled human reviewers.",
+      "safe_response_type": "do_not_send_internals"
+    },
+    {
+      "buyer_request": "Before the pilot, can you assign the IP to us and give exclusivity?",
+      "case_id": "assign_ip_for_pilot",
+      "expected_decision": "NEEDS_COUNSEL",
+      "risk_class": "professional_threshold_trigger",
+      "safe_response": "IP assignment or exclusivity requires qualified legal review before discussion or agreement. SpecShift should not proceed alone on those terms. Any pilot must remain bounded, observable-only, and buyer-safe.",
+      "safe_response_type": "pause_for_legal_review"
+    },
+    {
+      "buyer_request": "We want to wire payment today and start immediately.",
+      "case_id": "wire_payment_today",
+      "expected_decision": "NEEDS_COUNSEL",
+      "risk_class": "professional_threshold_trigger",
+      "safe_response": "Before accepting payment or starting a paid pilot, SpecShift should engage qualified legal and CPA support for scope, payment, tax, bookkeeping, data, and contract terms. Intake remains observable-only and buyer-safe.",
+      "safe_response_type": "pause_for_legal_cpa_review"
+    }
+  ],
+  "claim_boundary": "Red-team intake pack only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "created_at_utc": "2026-06-28T23:20:09.864286+00:00",
+  "phase": "phase_3_red_team_intake_pack",
+  "purpose": "Stress-test intake boundaries using bad buyer requests and safe redirect/refusal responses.",
+  "status": "complete"
+}
