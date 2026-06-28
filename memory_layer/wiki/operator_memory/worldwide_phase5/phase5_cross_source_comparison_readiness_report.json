@@ -1,0 +1,101 @@
+{
+  "candidate_pair_count": 36,
+  "candidate_pairs_artifact": "memory_layer/wiki/operator_memory/worldwide_phase5/phase5_candidate_comparison_pairs.jsonl",
+  "categories_checked": 5,
+  "category_reports": [
+    {
+      "candidate_pair_count": 28,
+      "category": "earth_and_environment",
+      "claim_boundary": "Readiness only. This does not claim agreement, contradiction, content validation, alert readiness, or truth resolution.",
+      "comparison_readiness": "comparison-ready",
+      "record_count": 8,
+      "source_names": [
+        "BMKG Indonesia",
+        "ECMWF",
+        "GDACS",
+        "Geonet NZ",
+        "Geoscience Australia",
+        "JMA",
+        "Singapore NEA",
+        "Smithsonian Global Volcanism Program"
+      ],
+      "source_type_count": 3,
+      "source_types": [
+        "api",
+        "rss",
+        "web"
+      ]
+    },
+    {
+      "candidate_pair_count": 1,
+      "category": "global_news",
+      "claim_boundary": "Readiness only. This does not claim agreement, contradiction, content validation, alert readiness, or truth resolution.",
+      "comparison_readiness": "comparison-ready",
+      "record_count": 2,
+      "source_names": [
+        "BBC World Service RSS verification",
+        "Deutsche Welle RSS verification"
+      ],
+      "source_type_count": 1,
+      "source_types": [
+        "rss"
+      ]
+    },
+    {
+      "candidate_pair_count": 3,
+      "category": "government_and_policy",
+      "claim_boundary": "Readiness only. This does not claim agreement, contradiction, content validation, alert readiness, or truth resolution.",
+      "comparison_readiness": "comparison-ready",
+      "record_count": 3,
+      "source_names": [
+        "Canada Open Government",
+        "data.gov.au",
+        "data.gov.uk"
+      ],
+      "source_type_count": 1,
+      "source_types": [
+        "api"
+      ]
+    },
+    {
+      "candidate_pair_count": 1,
+      "category": "health_and_biosecurity",
+      "claim_boundary": "Readiness only. This does not claim agreement, contradiction, content validation, alert readiness, or truth resolution.",
+      "comparison_readiness": "comparison-ready",
+      "record_count": 2,
+      "source_names": [
+        "Africa CDC",
+        "PAHO"
+      ],
+      "source_type_count": 2,
+      "source_types": [
+        "rss",
+        "web"
+      ]
+    },
+    {
+      "candidate_pair_count": 3,
+      "category": "infrastructure_and_economics",
+      "claim_boundary": "Readiness only. This does not claim agreement, contradiction, content validation, alert readiness, or truth resolution.",
+      "comparison_readiness": "comparison-ready",
+      "record_count": 3,
+      "source_names": [
+        "IMF Data",
+        "INEGI",
+        "World Bank Open Data"
+      ],
+      "source_type_count": 1,
+      "source_types": [
+        "api"
+      ]
+    }
+  ],
+  "claim_boundary": "Phase 5 identifies comparison readiness and candidate pairs only. It does not claim production monitoring, content validation, contradiction detection, alert readiness, autonomous action, or truth resolution.",
+  "comparison_held_categories": 0,
+  "comparison_ready_categories": 5,
+  "created_at_utc": "2026-06-28T09:27:46.274223+00:00",
+  "input_artifact": "memory_layer/wiki/operator_memory/worldwide_phase4/phase4_claim_safety_normalized_records.jsonl",
+  "phase": "phase_5_worldwide_cross_source_comparison_runway",
+  "records_checked": 18,
+  "status": "complete"
+}
