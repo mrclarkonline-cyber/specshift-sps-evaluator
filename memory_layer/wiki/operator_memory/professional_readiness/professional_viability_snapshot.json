@@ -1,0 +1,62 @@
+{
+  "claim_boundary": "This viability snapshot is a conservative internal summary for professional review. It is not a valuation, legal opinion, tax position, investment claim, or commercial guarantee.",
+  "conservative_summary": "SpecShift currently holds a completed local workstation and client-delivery scaffold: intake, provenance, claim-gating, review packet scaffolding, delivery scaffolding, forecast/negative-space review scaffolding, and audit layers. These are internal workflow assets, not externally validated commercial claims.",
+  "created_at_utc": "2026-06-28T13:02:03.381166+00:00",
+  "money_trigger": "If procurement, paid pilot, contract terms, budget, or money movement becomes real, engage CPA/legal support before proceeding alone.",
+  "package": "professional_readiness_viability_snapshot",
+  "professional_questions_for_cpa": [
+    "How should paid pilot revenue be recognized?",
+    "What expenses and development costs should be tracked separately?",
+    "What records are needed for tax and audit readiness?",
+    "How should owner contributions, reimbursements, and software/tooling costs be documented?",
+    "What bookkeeping system and chart of accounts should be used?",
+    "What tax issues arise if the first payment is large or from an out-of-state/international client?"
+  ],
+  "professional_questions_for_lawyer": [
+    "What claims can SpecShift safely make publicly versus privately?",
+    "What should be in the standard pilot agreement?",
+    "What liability limitations are needed?",
+    "How should prohibited-use language be written?",
+    "How should client data retention, confidentiality, and non-use be handled?",
+    "What IP/trademark/ownership protections should be tightened?",
+    "What must be reviewed before any paid pilot or procurement discussion?"
+  ],
+  "status": "draft_for_professional_review",
+  "what_is_not_yet_validated": [
+    "commercial buyer demand",
+    "paid-pilot conversion",
+    "external performance validation",
+    "legal defensibility of claims",
+    "tax/accounting treatment",
+    "valuation",
+    "contract templates",
+    "regulated-industry compliance posture",
+    "production reliability value"
+  ],
+  "what_we_hold_as_viable": [
+    {
+      "boundary": "Local workflow tooling only; not production monitoring.",
+      "evidence": "Workstation Command Center completed through cockpit mode and related reports.",
+      "item": "local command-center workflow",
+      "status": "internally implemented"
+    },
+    {
+      "boundary": "Review candidates only; not prediction, truth validation, or alerting.",
+      "evidence": "Worldwide intake, pattern, negative-space, math overlay, scenario suggestion, implementation scaffold, and audit reports.",
+      "item": "information intake and analytical review scaffold",
+      "status": "internally implemented"
+    },
+    {
+      "boundary": "Workflow scaffold only; not legal advice, financial advice, compliance certification, production monitoring, or findings.",
+      "evidence": "Client phase 1-6 closed at 100%.",
+      "item": "client intake and delivery scaffold",
+      "status": "internally implemented"
+    },
+    {
+      "boundary": "Language/provenance gates only; not professional certification.",
+      "evidence": "Claim Gauntlet, Promotion Gate, Provenance Vault artifacts.",
+      "item": "claim-safety and artifact promotion gates",
+      "status": "internally implemented"
+    }
+  ]
+}
