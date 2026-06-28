@@ -1,10 +1,10 @@
 {
-  "actionable_hits": 1783,
+  "actionable_hits": 1792,
   "actionable_terms": {
     "agreement detection": 12,
     "alert": 292,
     "alerts": 42,
-    "autonomous": 408,
+    "autonomous": 409,
     "causal": 23,
     "causality": 2,
     "confirms": 7,
@@ -20,22 +20,22 @@
     "production-ready": 3,
     "proof": 55,
     "proves": 20,
-    "truth": 497,
+    "truth": 505,
     "truth-resolution": 5,
     "validated": 80,
     "validates": 13,
     "validation": 119
   },
-  "active_phase": "phase_22_artifact_promotion_gate",
+  "active_phase": "workstation_command_center_complete",
   "active_workplan": "workstation_command_center_upgrade",
-  "allowlisted_hits": 2569,
+  "allowlisted_hits": 2580,
   "claim_boundary": "Claim Gauntlet scans local text for risky overstatement language and suggests safer wording. It does not certify legal, compliance, scientific, factual, or production readiness.",
-  "created_at_utc": "2026-06-28T10:56:41.958309+00:00",
+  "created_at_utc": "2026-06-28T11:12:26.489773+00:00",
   "engine": "claim_gauntlet_v1",
-  "files_scanned": 195,
+  "files_scanned": 209,
   "records_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_hits.jsonl",
   "risk_level": "high",
   "safer_language_rule": "Prefer candidate, bounded, review, scaffold, flags, supports, suggests, and human-review wording over proof, validation, detection, guarantees, predictions, autonomy, or truth-resolution wording.",
   "status": "review",
-  "total_hits": 4352
+  "total_hits": 4372
 }

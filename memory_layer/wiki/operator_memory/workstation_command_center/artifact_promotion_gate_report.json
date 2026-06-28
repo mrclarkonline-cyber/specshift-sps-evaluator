@@ -1,28 +1,28 @@
 {
   "artifact": {
-    "artifact": "docs/workstation/phase22_artifact_promotion_gate.md",
+    "artifact": "docs/workstation/wiki_landing_canonical_contract.md",
     "exists": true,
     "path_classification": "public_candidate",
-    "sha256": "18965665a65576bef736740d8b796e42cdbda0d78ef80c24c7da6457b1113eb3",
-    "size_bytes": 919,
+    "sha256": "300d6f16be5753a5ee32e0978ad8f15073f13931a34284296ff9bc8c29aa394f",
+    "size_bytes": 1133,
     "target": "public"
   },
   "checks": [
     {
       "check": "git_clean_status",
-      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "checked_at_utc": "2026-06-28T11:12:38.682586+00:00",
       "detail": {
         "dirty": true,
-        "status": "M memory_layer/wiki/operator_memory/active_workplan.json\n M memory_layer/wiki/operator_memory/workstation_command_center/workstation_command_center_upgrade_workplan.json\n M tools/status/specshift_board.py\n?? docs/workstation/phase22_artifact_promotion_gate.md\n?? memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json\n?? tools/status/promote_artifact.py"
+        "status": "M memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_hits.jsonl\n M memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json\n M memory_layer/wiki/operator_memory/workstation_command_center/kira_recommendation_state.json\n M memory_layer/wiki/operator_memory/workstation_command_center/phil_morale_state.json"
       },
       "severity": "high",
       "status": "hold"
     },
     {
       "check": "claim_scan",
-      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "checked_at_utc": "2026-06-28T11:12:38.682586+00:00",
       "detail": {
-        "actionable_hits": 1783,
+        "actionable_hits": 1792,
         "claim_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
         "note": "Promotion may proceed only with human review if claim scan is review; public promotion should require pass or explicit counsel/reviewer override.",
         "risk_level": "high"
@@ -32,13 +32,13 @@
     },
     {
       "check": "artifact_path",
-      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "checked_at_utc": "2026-06-28T11:12:38.682586+00:00",
       "detail": {
-        "artifact": "docs/workstation/phase22_artifact_promotion_gate.md",
+        "artifact": "docs/workstation/wiki_landing_canonical_contract.md",
         "exists": true,
         "path_classification": "public_candidate",
-        "sha256": "18965665a65576bef736740d8b796e42cdbda0d78ef80c24c7da6457b1113eb3",
-        "size_bytes": 919,
+        "sha256": "300d6f16be5753a5ee32e0978ad8f15073f13931a34284296ff9bc8c29aa394f",
+        "size_bytes": 1133,
         "target": "public"
       },
       "severity": "info",
@@ -46,14 +46,14 @@
     },
     {
       "check": "public_private_boundary",
-      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "checked_at_utc": "2026-06-28T11:12:38.682586+00:00",
       "detail": "path_classification=public_candidate, target=public",
       "severity": "info",
       "status": "pass"
     },
     {
       "check": "buyer_safe_wording",
-      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "checked_at_utc": "2026-06-28T11:12:38.682586+00:00",
       "detail": {
         "risky_terms": []
       },
@@ -62,36 +62,34 @@
     },
     {
       "check": "boundary_language",
-      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "checked_at_utc": "2026-06-28T11:12:38.682586+00:00",
       "detail": {
-        "boundary_terms_found": [
-          "human review"
-        ]
+        "boundary_terms_found": []
       },
-      "severity": "info",
-      "status": "pass"
+      "severity": "medium",
+      "status": "review"
     },
     {
       "check": "provenance_check",
-      "checked_at_utc": "2026-06-28T10:57:41.755085+00:00",
+      "checked_at_utc": "2026-06-28T11:12:38.682586+00:00",
       "detail": {
-        "path": "docs/workstation/phase22_artifact_promotion_gate.md",
-        "sha256": "18965665a65576bef736740d8b796e42cdbda0d78ef80c24c7da6457b1113eb3",
+        "path": "docs/workstation/wiki_landing_canonical_contract.md",
+        "sha256": "300d6f16be5753a5ee32e0978ad8f15073f13931a34284296ff9bc8c29aa394f",
         "target": "public",
-        "timestamp_utc": "2026-06-28T10:57:41.755085+00:00"
+        "timestamp_utc": "2026-06-28T11:12:38.682586+00:00"
       },
       "severity": "info",
       "status": "pass"
     }
   ],
   "claim_boundary": "Artifact promotion gate is a local workflow gate only. It does not certify legal, compliance, scientific, factual, production, or buyer readiness. Human review remains required for public-facing promotion.",
-  "created_at_utc": "2026-06-28T10:57:41.755085+00:00",
-  "dry_run": true,
+  "created_at_utc": "2026-06-28T11:12:38.682586+00:00",
+  "dry_run": false,
   "engine": "artifact_promotion_gate_v1",
   "holds": 1,
   "human_review_required": true,
   "promotion_allowed": false,
-  "reviews": 1,
+  "reviews": 2,
   "status": "held",
   "target": "public"
 }
