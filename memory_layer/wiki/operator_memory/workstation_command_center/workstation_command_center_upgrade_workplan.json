@@ -10,7 +10,7 @@
     "Git must be clean before celebration",
     "canonical landing remains wiki_landing"
   ],
-  "last_updated_at_utc": "2026-06-28T10:47:10.928311+00:00",
+  "last_updated_at_utc": "2026-06-28T10:48:19.213406+00:00",
   "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
   "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
@@ -30,12 +30,18 @@
       "wrapper": "~/WORK/tools/orchestra/bin/specshift_board"
     },
     {
+      "artifact": "memory_layer/wiki/operator_memory/active_workplan.json",
       "boundary": "State tracking only. No guessing from stale hardcoded phases.",
       "command_target": "active_workplan.json",
+      "completed_at_utc": "2026-06-28T10:48:19.213406+00:00",
+      "completion_note": "active_workplan.json upgraded into explicit shared state brain with schema, risk state, parked state, next action, blockers, closure rule, allowed/forbidden actions, and canonical landing command.",
       "done_when": "active_workplan.json schema includes active_tracker, next_action, blockers, closure_rule, risk_state, and parked_state fields.",
       "goal": "Every project gets phase, tracker, next action, blockers, and closure rule in active_workplan.json.",
       "phase": "phase_18_active_workplan_brain",
-      "upgrade": "Active workplan brain"
+      "schema_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/active_workplan_brain_schema_v1.json",
+      "status": "complete",
+      "upgrade": "Active workplan brain",
+      "validator": "tools/status/active_workplan_brain_check.py"
     },
     {
       "boundary": "Recommendation only. No command execution.",

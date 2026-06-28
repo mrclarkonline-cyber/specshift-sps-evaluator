@@ -1,0 +1,19 @@
+{
+  "purpose": "Make the workstation state explicit so wiki_landing, specshift_board, Kira recommendations, cockpit modes, and future gates read from one source of truth instead of guessing from hardcoded phases.",
+  "required_fields": [
+    "active_workplan",
+    "active_phase",
+    "active_tracker",
+    "next_action",
+    "blockers",
+    "closure_rule",
+    "risk_state",
+    "parked_state",
+    "last_completed_phase",
+    "allowed_actions",
+    "forbidden_actions",
+    "canonical_landing_command"
+  ],
+  "schema_name": "specshift_active_workplan_brain_v1",
+  "schema_version": "1.0"
+}
