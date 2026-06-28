@@ -1,0 +1,9 @@
+{
+  "artifact": "tools/pilot_intake/folder_policy_checker.py",
+  "claim_boundary": "Checker repair only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free-pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "fix": "Removed raw .js substring detection and added exact source-code suffix handling.",
+  "issue": "folder_policy_checker treated .json filenames as .js source-code hits because .js was matched as a substring.",
+  "phase": "phase_4_client_folder_lockdown_rules",
+  "repaired_at_utc": "2026-06-28T23:29:35.007602+00:00",
+  "status": "repair_applied"
+}

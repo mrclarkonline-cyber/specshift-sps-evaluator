@@ -2,7 +2,7 @@
   "claim_boundary": "This workplan remains an internal buyer-safe scaffold only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
   "core_goal": "Stress-test intake/routing with fake buyer submissions and score whether a real buyer pilot should proceed, be rescoped, require redaction, require counsel/CPA, or be declined.",
   "follows": "specshift_buyer_artifact_intake_routing_intelligence",
-  "last_updated_at_utc": "2026-06-28T23:20:09.864286+00:00",
+  "last_updated_at_utc": "2026-06-28T23:29:35.105039+00:00",
   "phases": [
     {
       "artifacts": [
@@ -49,9 +49,19 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "docs/workstation/buyer_artifact_simulator/client_folder_lockdown_rules.md",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/client_folder_lockdown_rules.json",
+        "tools/pilot_intake/folder_policy_checker.py",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/client_folder_policy_report.json",
+        "tests/fixtures/buyer_artifact_simulator/folder_policy/sample_client_project",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/phase4_client_folder_lockdown_rules_report.json"
+      ],
+      "completed_at_utc": "2026-06-28T23:29:35.105039+00:00",
+      "completion_note": "Client folder lockdown rules, folder policy checker, compliant fixture project, and policy report completed after exact suffix-matching repair.",
       "goal": "Define what can and cannot live in each client project folder.",
       "phase": "phase_4_client_folder_lockdown_rules",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Create an audit ledger for pilot artifacts and decisions.",

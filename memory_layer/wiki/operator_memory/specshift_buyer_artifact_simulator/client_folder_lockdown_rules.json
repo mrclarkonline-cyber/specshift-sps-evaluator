@@ -1,0 +1,128 @@
+{
+  "claim_boundary": "Client folder lockdown rules only. They do not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "created_at_utc": "2026-06-28T23:21:58.667612+00:00",
+  "rules": {
+    "01_received_observable_traces": {
+      "allowed": [
+        "observable trace exports",
+        "raw buyer-exported observable event files"
+      ],
+      "forbidden": [
+        "model weights",
+        "source code",
+        "private prompts",
+        "hidden activations",
+        "private chain-of-thought",
+        "secrets",
+        "credentials",
+        "unredacted regulated data"
+      ],
+      "required_note": "Raw exported observable traces only."
+    },
+    "02_sanitized_working_data": {
+      "allowed": [
+        "redacted normalized working copies",
+        "pseudonymized trace files",
+        "normalized trace templates"
+      ],
+      "forbidden": [
+        "raw secrets",
+        "credentials",
+        "model weights",
+        "source code",
+        "private prompts",
+        "private chain-of-thought"
+      ],
+      "required_note": "Only redacted or normalized working data."
+    },
+    "03_review_notes": {
+      "allowed": [
+        "internal review notes",
+        "scope notes",
+        "limitations",
+        "review prompts"
+      ],
+      "forbidden": [
+        "final legal conclusions",
+        "financial conclusions",
+        "compliance certification",
+        "production validation",
+        "automated verdicts"
+      ],
+      "required_note": "Internal review notes only."
+    },
+    "04_candidate_discrepancy_memos": {
+      "allowed": [
+        "candidate-discrepancy memo drafts",
+        "human-review prompts",
+        "limitations"
+      ],
+      "forbidden": [
+        "validated defect claims",
+        "confirmed failure claims",
+        "truth validation",
+        "compliance certification",
+        "automated verdicts"
+      ],
+      "required_note": "Candidate-discrepancy memos only."
+    },
+    "05_delivery_packet": {
+      "allowed": [
+        "client-facing package",
+        "scope boundary",
+        "limitations",
+        "candidate memo index",
+        "buyer questions",
+        "next-step recommendation"
+      ],
+      "forbidden": [
+        "legal advice",
+        "financial advice",
+        "binding terms",
+        "compliance certification",
+        "production validation",
+        "truth validation",
+        "automated verdicts"
+      ],
+      "required_note": "Client-facing bounded delivery only."
+    },
+    "06_post_pilot_feedback": {
+      "allowed": [
+        "buyer feedback",
+        "buyer label reconciliation if provided",
+        "closeout notes",
+        "next-step decision"
+      ],
+      "forbidden": [
+        "buyer labels without authorization",
+        "new raw traces without risk gate",
+        "contract terms without counsel",
+        "payment terms without CPA/legal review"
+      ],
+      "required_note": "Post-pilot feedback and authorized label reconciliation only."
+    },
+    "DO_NOT_SEND": {
+      "allowed": [
+        "held material",
+        "unapproved drafts",
+        "materials pending review"
+      ],
+      "forbidden": [
+        "client-facing delivery files"
+      ],
+      "required_note": "Material not approved for external sending."
+    },
+    "PROTECTED": {
+      "allowed": [
+        "restricted material requiring review",
+        "quarantined accidental internal/prohibited material"
+      ],
+      "forbidden": [
+        "external delivery files",
+        "public materials"
+      ],
+      "required_note": "Protected/quarantined material only."
+    }
+  },
+  "status": "complete"
+}

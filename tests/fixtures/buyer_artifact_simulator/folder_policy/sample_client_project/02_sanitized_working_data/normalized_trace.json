@@ -1,0 +1,11 @@
+{
+  "trace_id": "synthetic_trace_001",
+  "timestamp": "2026-06-28T00:00:00Z",
+  "actor_or_system": "synthetic_agent",
+  "step_or_action": "reviewed exported workflow event",
+  "input_or_context": "synthetic observable workflow context only",
+  "claimed_output": "workflow completed",
+  "final_state": "complete",
+  "observable_evidence": "synthetic event log row and redacted metadata",
+  "notes": "Safe sanitized fixture for folder policy testing."
+}

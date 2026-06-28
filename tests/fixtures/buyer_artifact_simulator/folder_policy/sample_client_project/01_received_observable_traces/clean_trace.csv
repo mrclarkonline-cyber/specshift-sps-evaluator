@@ -1,0 +1,2 @@
+trace_id,timestamp,step_action,final_state
+SIM-1,2026-01-01T00:00:00Z,task_started,in_progress

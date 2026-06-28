@@ -1,0 +1,9 @@
+{
+  "claim_boundary": "Folder policy checker only. It checks local project folder placement against buyer-safe lockdown rules. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "engine": "folder_policy_checker_v1",
+  "finding_count": 0,
+  "findings": [],
+  "missing_folders": [],
+  "project_dir": "tests/fixtures/buyer_artifact_simulator/folder_policy/sample_client_project",
+  "status": "pass"
+}

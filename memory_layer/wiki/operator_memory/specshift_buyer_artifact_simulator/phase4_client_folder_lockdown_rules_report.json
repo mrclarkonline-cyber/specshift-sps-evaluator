@@ -1,0 +1,15 @@
+{
+  "artifacts": [
+    "docs/workstation/buyer_artifact_simulator/client_folder_lockdown_rules.md",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/client_folder_lockdown_rules.json",
+    "tools/pilot_intake/folder_policy_checker.py",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/client_folder_policy_report.json",
+    "tests/fixtures/buyer_artifact_simulator/folder_policy/sample_client_project"
+  ],
+  "claim_boundary": "Phase 4 creates client folder lockdown rules and a folder policy checker only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "client_folder_policy_status": "pass",
+  "completed_at_utc": "2026-06-28T23:29:35.105039+00:00",
+  "phase": "phase_4_client_folder_lockdown_rules",
+  "status": "complete",
+  "test_before_complete_rule": "passed before workplan update"
+}
