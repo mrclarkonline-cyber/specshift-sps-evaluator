@@ -1,0 +1,223 @@
+[
+  {
+    "artifact_type": "trace_data",
+    "boundary_warnings": [
+      "Use buyer-exported observable materials only.",
+      "Do not request model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Buyer retains labels and final adjudication.",
+      "Candidate-discrepancy memos only; no automated verdict."
+    ],
+    "case_id": "trace_data_csv",
+    "claim_boundary": "Artifact intake classification only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "class_scores": {
+      "buyer_retained_label_file": 0,
+      "final_state_claim": 4,
+      "out_of_scope_material": 0,
+      "prohibited_internal_material": 0,
+      "support_context": 1,
+      "trace_data": 7
+    },
+    "classified_at_utc": "2026-06-28T22:48:33.123961+00:00",
+    "decision": "ACCEPT",
+    "engine": "artifact_intake_classifier_v1",
+    "expected_artifact_type": "trace_data",
+    "expected_decision": "ACCEPT",
+    "filename": "workflow_events_export.csv",
+    "missing_information": [
+      "field_dictionary"
+    ],
+    "needs_redaction": false,
+    "recommended_output": "normalized trace workspace",
+    "target_folder": "02_buyer_exports_observable_only",
+    "test_passed": true
+  },
+  {
+    "artifact_type": "final_state_claim",
+    "boundary_warnings": [
+      "Use buyer-exported observable materials only.",
+      "Do not request model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Buyer retains labels and final adjudication.",
+      "Candidate-discrepancy memos only; no automated verdict."
+    ],
+    "case_id": "final_state_claim",
+    "claim_boundary": "Artifact intake classification only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "class_scores": {
+      "buyer_retained_label_file": 0,
+      "final_state_claim": 6,
+      "out_of_scope_material": 0,
+      "prohibited_internal_material": 0,
+      "support_context": 0,
+      "trace_data": 0
+    },
+    "classified_at_utc": "2026-06-28T22:48:33.124526+00:00",
+    "decision": "ACCEPT",
+    "engine": "artifact_intake_classifier_v1",
+    "expected_artifact_type": "final_state_claim",
+    "expected_decision": "ACCEPT",
+    "filename": "final_payment_status.md",
+    "missing_information": [
+      "linked_observable_trace_reference"
+    ],
+    "needs_redaction": false,
+    "recommended_output": "scope clarification or claimed-final-state reference",
+    "target_folder": "01_intake",
+    "test_passed": true
+  },
+  {
+    "artifact_type": "buyer_retained_label_file",
+    "boundary_warnings": [
+      "Use buyer-exported observable materials only.",
+      "Do not request model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Buyer retains labels and final adjudication.",
+      "Candidate-discrepancy memos only; no automated verdict."
+    ],
+    "case_id": "buyer_labels",
+    "claim_boundary": "Artifact intake classification only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "class_scores": {
+      "buyer_retained_label_file": 4,
+      "final_state_claim": 0,
+      "out_of_scope_material": 0,
+      "prohibited_internal_material": 0,
+      "support_context": 0,
+      "trace_data": 1
+    },
+    "classified_at_utc": "2026-06-28T22:48:33.125030+00:00",
+    "decision": "HOLD_FOR_REVIEW",
+    "engine": "artifact_intake_classifier_v1",
+    "expected_artifact_type": "buyer_retained_label_file",
+    "expected_decision": "HOLD_FOR_REVIEW",
+    "filename": "buyer_ground_truth_labels.csv",
+    "missing_information": [],
+    "needs_redaction": false,
+    "recommended_output": "label reconciliation input after buyer-controlled reveal",
+    "target_folder": "03_labels_buyer_controlled",
+    "test_passed": true
+  },
+  {
+    "artifact_type": "support_context",
+    "boundary_warnings": [
+      "Use buyer-exported observable materials only.",
+      "Do not request model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Buyer retains labels and final adjudication.",
+      "Candidate-discrepancy memos only; no automated verdict."
+    ],
+    "case_id": "support_context_schema",
+    "claim_boundary": "Artifact intake classification only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "class_scores": {
+      "buyer_retained_label_file": 0,
+      "final_state_claim": 0,
+      "out_of_scope_material": 0,
+      "prohibited_internal_material": 0,
+      "support_context": 7,
+      "trace_data": 1
+    },
+    "classified_at_utc": "2026-06-28T22:48:33.125495+00:00",
+    "decision": "ACCEPT",
+    "engine": "artifact_intake_classifier_v1",
+    "expected_artifact_type": "support_context",
+    "expected_decision": "ACCEPT",
+    "filename": "field_dictionary.md",
+    "missing_information": [],
+    "needs_redaction": false,
+    "recommended_output": "field dictionary, scope clarification, or context note",
+    "target_folder": "04_redaction_and_field_dictionary",
+    "test_passed": true
+  },
+  {
+    "artifact_type": "prohibited_internal_material",
+    "boundary_warnings": [
+      "Use buyer-exported observable materials only.",
+      "Do not request model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Buyer retains labels and final adjudication.",
+      "Candidate-discrepancy memos only; no automated verdict.",
+      "Do not accept this material without review; reject or hold according to policy."
+    ],
+    "case_id": "source_code_reject",
+    "claim_boundary": "Artifact intake classification only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "class_scores": {
+      "buyer_retained_label_file": 0,
+      "final_state_claim": 0,
+      "out_of_scope_material": 0,
+      "prohibited_internal_material": 7,
+      "support_context": 0,
+      "trace_data": 0
+    },
+    "classified_at_utc": "2026-06-28T22:48:33.125930+00:00",
+    "decision": "REJECT",
+    "engine": "artifact_intake_classifier_v1",
+    "expected_artifact_type": "prohibited_internal_material",
+    "expected_decision": "REJECT",
+    "filename": "agent_source_code.zip",
+    "missing_information": [],
+    "needs_redaction": false,
+    "recommended_output": "reject or hold for review",
+    "target_folder": "PROTECTED",
+    "test_passed": true
+  },
+  {
+    "artifact_type": "trace_data",
+    "boundary_warnings": [
+      "Use buyer-exported observable materials only.",
+      "Do not request model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Buyer retains labels and final adjudication.",
+      "Candidate-discrepancy memos only; no automated verdict.",
+      "Potential sensitive or regulated data indicated; request redaction or written authorization before intake."
+    ],
+    "case_id": "pii_redaction",
+    "claim_boundary": "Artifact intake classification only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "class_scores": {
+      "buyer_retained_label_file": 0,
+      "final_state_claim": 0,
+      "out_of_scope_material": 0,
+      "prohibited_internal_material": 0,
+      "support_context": 0,
+      "trace_data": 1
+    },
+    "classified_at_utc": "2026-06-28T22:48:33.126349+00:00",
+    "decision": "NEEDS_REDACTION",
+    "engine": "artifact_intake_classifier_v1",
+    "expected_artifact_type": "trace_data",
+    "expected_decision": "NEEDS_REDACTION",
+    "filename": "customer_trace_export.csv",
+    "missing_information": [
+      "timestamp_or_sequence",
+      "field_dictionary",
+      "claimed_final_state_if_available"
+    ],
+    "needs_redaction": true,
+    "recommended_output": "normalized trace workspace",
+    "target_folder": "02_buyer_exports_observable_only",
+    "test_passed": true
+  },
+  {
+    "artifact_type": "out_of_scope_material",
+    "boundary_warnings": [
+      "Use buyer-exported observable materials only.",
+      "Do not request model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Buyer retains labels and final adjudication.",
+      "Candidate-discrepancy memos only; no automated verdict.",
+      "Do not accept this material without review; reject or hold according to policy."
+    ],
+    "case_id": "production_incident_hold",
+    "claim_boundary": "Artifact intake classification only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "class_scores": {
+      "buyer_retained_label_file": 0,
+      "final_state_claim": 0,
+      "out_of_scope_material": 6,
+      "prohibited_internal_material": 0,
+      "support_context": 0,
+      "trace_data": 0
+    },
+    "classified_at_utc": "2026-06-28T22:48:33.126781+00:00",
+    "decision": "HOLD_FOR_REVIEW",
+    "engine": "artifact_intake_classifier_v1",
+    "expected_artifact_type": "out_of_scope_material",
+    "expected_decision": "HOLD_FOR_REVIEW",
+    "filename": "urgent_outage_request.md",
+    "missing_information": [],
+    "needs_redaction": false,
+    "recommended_output": "scope clarification or reject",
+    "target_folder": "DO_NOT_SEND",
+    "test_passed": true
+  }
+]

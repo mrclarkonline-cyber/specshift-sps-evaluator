@@ -1,0 +1,51 @@
+[
+  {
+    "case_id": "trace_data_csv",
+    "description": "CSV export of observable workflow events with timestamp, event type, actor id, state transition, claimed final state, and notes.",
+    "expected_artifact_type": "trace_data",
+    "expected_decision": "ACCEPT",
+    "filename": "workflow_events_export.csv"
+  },
+  {
+    "case_id": "final_state_claim",
+    "description": "Claimed final ledger state and payment status for the selected workflow sample.",
+    "expected_artifact_type": "final_state_claim",
+    "expected_decision": "ACCEPT",
+    "filename": "final_payment_status.md"
+  },
+  {
+    "case_id": "buyer_labels",
+    "description": "Buyer retained label file with reviewer decision and adjudication outcome for each trace id.",
+    "expected_artifact_type": "buyer_retained_label_file",
+    "expected_decision": "HOLD_FOR_REVIEW",
+    "filename": "buyer_ground_truth_labels.csv"
+  },
+  {
+    "case_id": "support_context_schema",
+    "description": "Field dictionary, schema notes, redaction explanation, and pseudonymization mapping for observable trace export.",
+    "expected_artifact_type": "support_context",
+    "expected_decision": "ACCEPT",
+    "filename": "field_dictionary.md"
+  },
+  {
+    "case_id": "source_code_reject",
+    "description": "Source code and private prompts for the agent, including system prompt and chain-of-thought examples.",
+    "expected_artifact_type": "prohibited_internal_material",
+    "expected_decision": "REJECT",
+    "filename": "agent_source_code.zip"
+  },
+  {
+    "case_id": "pii_redaction",
+    "description": "Observable trace export with customer names and email addresses not yet redacted.",
+    "expected_artifact_type": "trace_data",
+    "expected_decision": "NEEDS_REDACTION",
+    "filename": "customer_trace_export.csv"
+  },
+  {
+    "case_id": "production_incident_hold",
+    "description": "Production incident demand asking SpecShift for automated verdict and production validation.",
+    "expected_artifact_type": "out_of_scope_material",
+    "expected_decision": "HOLD_FOR_REVIEW",
+    "filename": "urgent_outage_request.md"
+  }
+]
