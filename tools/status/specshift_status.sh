@@ -37,6 +37,7 @@ for f in \
   docs/workstation/ai_pipeline_recommendation_synthesis.md \
   docs/workstation/fast_pipeline_mvp_7_day_build_plan.md \
   docs/workstation/minimum_viable_source_registry.md \
+  docs/workstation/landing_progress_display.md \
   workplans/workstation_pipeline_execution_workplan_2026-06-27.md
 do
   if [ -s "$f" ]; then
@@ -45,6 +46,16 @@ do
     echo "MISSING $f"
   fi
 done
+
+echo
+echo "=== Pipeline Progress ==="
+if [ -x tools/status/pipeline_progress.py ]; then
+  python3 tools/status/pipeline_progress.py
+elif [ -s tools/status/pipeline_progress.py ]; then
+  python3 tools/status/pipeline_progress.py
+else
+  echo "MISSING tools/status/pipeline_progress.py"
+fi
 
 echo
 echo "=== Core Artifact Count ==="
@@ -80,6 +91,16 @@ else
 fi
 
 echo
+echo "=== Source Health Baseline ==="
+if [ -x tools/pipelines/source_health_check.py ]; then
+  python3 tools/pipelines/source_health_check.py || true
+elif [ -s tools/pipelines/source_health_check.py ]; then
+  python3 tools/pipelines/source_health_check.py || true
+else
+  echo "MISSING tools/pipelines/source_health_check.py"
+fi
+
+echo
 echo "=== Environment ==="
 echo "python3: $(python3 --version 2>/dev/null || echo missing)"
 echo "shell: ${SHELL:-unknown}"
@@ -106,8 +127,7 @@ done
 
 echo
 echo "=== Next Recommended Action ==="
-echo "If registry validation passes, build source_health_check.py next."
-echo "If registry validation fails, fix docs/workstation/minimum_viable_source_registry.md first."
+echo "Build the next TODO item shown in Pipeline Progress."
 echo
 
 echo "======================================================================="
