@@ -1,0 +1,25 @@
+{
+  "artifacts": [
+    "docs/workstation/buyer_artifact_simulator/evidence_ledger_schema.md",
+    "tools/pilot_intake/evidence_ledger.py",
+    "tests/fixtures/buyer_artifact_simulator/sample_evidence_ledger.jsonl",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/phase5_evidence_ledger_test_report.json"
+  ],
+  "claim_boundary": "Phase 5 creates an evidence ledger scaffold only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "completed_at_utc": "2026-06-28T23:37:09.752813+00:00",
+  "event_types_covered": [
+    "artifact_received",
+    "buyer_label_reveal_status",
+    "classification",
+    "closeout_recommendation",
+    "delivery_file",
+    "reviewer_output",
+    "risk_decision",
+    "route",
+    "validation_result"
+  ],
+  "phase": "phase_5_evidence_ledger",
+  "sample_records": 9,
+  "status": "complete",
+  "test_before_complete_rule": "passed before workplan update"
+}

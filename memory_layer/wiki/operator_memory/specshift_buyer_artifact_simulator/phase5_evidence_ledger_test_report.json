@@ -1,0 +1,18 @@
+{
+  "claim_boundary": "Evidence ledger only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "event_counts": {
+    "artifact_received": 1,
+    "buyer_label_reveal_status": 1,
+    "classification": 1,
+    "closeout_recommendation": 1,
+    "delivery_file": 1,
+    "reviewer_output": 1,
+    "risk_decision": 1,
+    "route": 1,
+    "validation_result": 1
+  },
+  "jsonl_repair": "sample ledger overwritten cleanly with one JSON object per line",
+  "missing_events": [],
+  "missing_fields": [],
+  "record_count": 9
+}
