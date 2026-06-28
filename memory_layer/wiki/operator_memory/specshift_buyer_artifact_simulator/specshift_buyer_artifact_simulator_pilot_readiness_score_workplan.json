@@ -1,0 +1,66 @@
+{
+  "claim_boundary": "This workplan remains an internal buyer-safe scaffold only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "core_goal": "Stress-test intake/routing with fake buyer submissions and score whether a real buyer pilot should proceed, be rescoped, require redaction, require counsel/CPA, or be declined.",
+  "follows": "specshift_buyer_artifact_intake_routing_intelligence",
+  "last_updated_at_utc": "2026-06-28T23:12:25.899233+00:00",
+  "phases": [
+    {
+      "artifacts": [
+        "tools/pilot_intake/buyer_artifact_simulator.py",
+        "docs/workstation/buyer_artifact_simulator/buyer_artifact_simulator.md",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/simulator_fixture_manifest.json",
+        "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/simulator_fixture_manifest.json",
+        "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/phase1_buyer_artifact_simulator_report.json"
+      ],
+      "completed_at_utc": "2026-06-28T23:12:25.899233+00:00",
+      "completion_note": "Buyer artifact simulator, synthetic fixture artifacts, manifest, documentation, and test report created.",
+      "goal": "Generate synthetic buyer artifact cases to stress-test the intake/routing system.",
+      "phase": "phase_1_buyer_artifact_simulator",
+      "status": "complete"
+    },
+    {
+      "goal": "Score whether a buyer pilot is ready to accept.",
+      "phase": "phase_2_pilot_readiness_score",
+      "status": "registered"
+    },
+    {
+      "goal": "Create bad buyer requests and safe redirect/refusal responses.",
+      "phase": "phase_3_red_team_intake_pack",
+      "status": "registered"
+    },
+    {
+      "goal": "Define what can and cannot live in each client project folder.",
+      "phase": "phase_4_client_folder_lockdown_rules",
+      "status": "registered"
+    },
+    {
+      "goal": "Create an audit ledger for pilot artifacts and decisions.",
+      "phase": "phase_5_evidence_ledger",
+      "status": "registered"
+    },
+    {
+      "goal": "Generate a client-facing delivery packet from a completed safe project folder.",
+      "phase": "phase_6_delivery_packet_generator",
+      "status": "registered"
+    },
+    {
+      "goal": "Audit simulator/readiness system and close only when fixtures pass, boundaries are preserved, and no prohibited claims are introduced.",
+      "phase": "phase_7_audit_and_closeout",
+      "status": "registered"
+    }
+  ],
+  "professional_threshold": "If procurement, contract terms, paid pilot, licensing, exclusivity, acquisition, IP assignment, data transfer, or money movement becomes real, engage qualified legal and CPA support before proceeding alone.",
+  "purpose": "Create a safe synthetic test layer and pilot readiness gate before real buyer data arrives.",
+  "readiness_outputs": [
+    "READY",
+    "NOT_READY",
+    "NEEDS_SCOPING",
+    "NEEDS_REDACTION",
+    "NEEDS_COUNSEL",
+    "DECLINE"
+  ],
+  "registered_at_utc": "2026-06-28T23:12:25.899233+00:00",
+  "status": "in_progress",
+  "workplan": "specshift_buyer_artifact_simulator_pilot_readiness_score"
+}

@@ -1,0 +1,129 @@
+{
+  "artifact_count": 10,
+  "artifacts": [
+    {
+      "artifact_class": "trace data",
+      "case_id": "clean_trace_file",
+      "content_kind": "trace",
+      "created_at_utc": "2026-06-28T23:12:25.901322+00:00",
+      "description": "Clean observable workflow trace file with timestamp, actor/system, step/action, claimed output, final state, and observable evidence.",
+      "expected_decision_hint": "ACCEPT",
+      "filename": "clean_workflow_trace.csv",
+      "format": "csv",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/clean_workflow_trace.csv",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "final-state claim",
+      "case_id": "final_state_only_claim",
+      "content_kind": "final_state",
+      "created_at_utc": "2026-06-28T23:12:25.901379+00:00",
+      "description": "Claimed final state only, without supporting observable trace export.",
+      "expected_decision_hint": "ACCEPT_NEEDS_TRACE_LINK",
+      "filename": "final_state_only_claim.md",
+      "format": "md",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/final_state_only_claim.md",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "buyer-retained label file",
+      "case_id": "buyer_retained_label_file",
+      "content_kind": "labels",
+      "created_at_utc": "2026-06-28T23:12:25.901436+00:00",
+      "description": "Buyer-retained label file for post-reveal reconciliation only.",
+      "expected_decision_hint": "HOLD_FOR_REVIEW",
+      "filename": "buyer_retained_labels.csv",
+      "format": "csv",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/buyer_retained_labels.csv",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "support context",
+      "case_id": "support_context",
+      "content_kind": "support",
+      "created_at_utc": "2026-06-28T23:12:25.901488+00:00",
+      "description": "Field dictionary, schema notes, redaction explanation, and pseudonymization mapping.",
+      "expected_decision_hint": "ACCEPT",
+      "filename": "field_dictionary_and_redaction_notes.md",
+      "format": "md",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/field_dictionary_and_redaction_notes.md",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "mixed trace + label artifact",
+      "case_id": "mixed_trace_label_artifact",
+      "content_kind": "mixed_trace_labels",
+      "created_at_utc": "2026-06-28T23:12:25.901541+00:00",
+      "description": "Mixed observable traces and buyer labels in a single file; should be split or held for review.",
+      "expected_decision_hint": "HOLD_FOR_REVIEW",
+      "filename": "mixed_trace_and_labels.csv",
+      "format": "csv",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/mixed_trace_and_labels.csv",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "prohibited/internal material",
+      "case_id": "prohibited_prompt_dump",
+      "content_kind": "prompt_dump",
+      "created_at_utc": "2026-06-28T23:12:25.901591+00:00",
+      "description": "Private prompts, system prompt, hidden reasoning, and chain-of-thought examples.",
+      "expected_decision_hint": "REJECT",
+      "filename": "private_prompt_dump.txt",
+      "format": "txt",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/private_prompt_dump.txt",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "prohibited/internal material",
+      "case_id": "source_code_model_weight_request",
+      "content_kind": "source_weights",
+      "created_at_utc": "2026-06-28T23:12:25.901641+00:00",
+      "description": "Buyer asks whether they can send source code, model weights, and checkpoints.",
+      "expected_decision_hint": "REJECT",
+      "filename": "source_and_weights_request.md",
+      "format": "md",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/source_and_weights_request.md",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "out-of-scope material",
+      "case_id": "compliance_certification_request",
+      "content_kind": "compliance_request",
+      "created_at_utc": "2026-06-28T23:12:25.901686+00:00",
+      "description": "Buyer asks SpecShift to certify that their AI is compliant and legally defensible.",
+      "expected_decision_hint": "HOLD_FOR_REVIEW",
+      "filename": "compliance_certification_request.md",
+      "format": "md",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/compliance_certification_request.md",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "trace data",
+      "case_id": "messy_spreadsheet_export",
+      "content_kind": "messy_trace",
+      "created_at_utc": "2026-06-28T23:12:25.901735+00:00",
+      "description": "Messy spreadsheet-style export with partial event fields and inconsistent headers.",
+      "expected_decision_hint": "NEEDS_SCOPING_OR_NORMALIZATION",
+      "filename": "messy_spreadsheet_export.csv",
+      "format": "csv",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/messy_spreadsheet_export.csv",
+      "synthetic": true
+    },
+    {
+      "artifact_class": "out-of-scope material",
+      "case_id": "out_of_scope_artifact",
+      "content_kind": "production_incident",
+      "created_at_utc": "2026-06-28T23:12:25.901782+00:00",
+      "description": "Production incident demand asking for automated verdict, truth validation, and production validation.",
+      "expected_decision_hint": "HOLD_FOR_REVIEW",
+      "filename": "production_incident_verdict_request.md",
+      "format": "md",
+      "path": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/production_incident_verdict_request.md",
+      "synthetic": true
+    }
+  ],
+  "claim_boundary": "Buyer artifact simulator only. It generates synthetic fixture artifacts for internal testing. It does not use real buyer data and does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "created_at_utc": "2026-06-28T23:12:25.901786+00:00",
+  "engine": "buyer_artifact_simulator_v1",
+  "output_dir": "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts"
+}

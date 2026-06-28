@@ -1,0 +1,3 @@
+trace_id,buyer_label,buyer_adjudicator
+SIM-001,discrepancy,buyer_reviewer_1
+SIM-002,no_discrepancy,buyer_reviewer_1

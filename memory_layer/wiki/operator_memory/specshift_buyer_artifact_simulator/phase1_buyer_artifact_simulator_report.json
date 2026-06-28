@@ -1,0 +1,26 @@
+{
+  "artifacts": [
+    "tools/pilot_intake/buyer_artifact_simulator.py",
+    "docs/workstation/buyer_artifact_simulator/buyer_artifact_simulator.md",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/simulator_fixture_manifest.json",
+    "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts/simulator_fixture_manifest.json",
+    "tests/fixtures/buyer_artifact_simulator/synthetic_artifacts"
+  ],
+  "claim_boundary": "Phase 1 creates synthetic buyer artifact fixtures only. It does not use real buyer data and does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-28T23:12:25.899233+00:00",
+  "phase": "phase_1_buyer_artifact_simulator",
+  "status": "complete",
+  "synthetic_artifact_count": 10,
+  "synthetic_cases": [
+    "clean_trace_file",
+    "final_state_only_claim",
+    "buyer_retained_label_file",
+    "support_context",
+    "mixed_trace_label_artifact",
+    "prohibited_prompt_dump",
+    "source_code_model_weight_request",
+    "compliance_certification_request",
+    "messy_spreadsheet_export",
+    "out_of_scope_artifact"
+  ]
+}

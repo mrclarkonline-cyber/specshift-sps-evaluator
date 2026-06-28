@@ -1,0 +1,3 @@
+trace_id,event_time,event_type,buyer_label
+SIM-MIX-001,2026-01-01T10:00:00Z,task_started,discrepancy
+SIM-MIX-002,2026-01-01T10:05:00Z,task_closed,no_discrepancy

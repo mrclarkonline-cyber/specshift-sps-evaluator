@@ -1,0 +1,3 @@
+# Private Prompt Dump
+
+This synthetic bad artifact pretends to include private prompts, system prompt, hidden reasoning, and chain-of-thought. Do not accept.
