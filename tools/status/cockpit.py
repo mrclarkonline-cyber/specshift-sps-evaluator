@@ -160,6 +160,7 @@ def load_json(path: Path) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description="SpecShift cockpit mode")
     parser.add_argument("mode", nargs="?", default="specshift", choices=sorted(MODES), help="Cockpit mode to load")
+    parser.add_argument("--write-state", action="store_true", help="Write cockpit_state.json. Default is read-only display.")
     args = parser.parse_args()
 
     now = datetime.now(timezone.utc).isoformat()
@@ -184,8 +185,9 @@ def main() -> int:
         "claim_boundary": "Cockpit mode is local context loading only. It does not execute autonomous work, route externally, monitor production, authorize actions, or resolve truth."
     }
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    if args.write_state:
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+        STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
     print(f"SpecShift Cockpit: {args.mode}")
     print("=" * 72)
@@ -212,7 +214,10 @@ def main() -> int:
     print()
     print(f"Boundary: {mode['boundary']}")
     print("Cockpit mode loads context only. It does not execute autonomous work.")
-    print(f"State: {STATE}")
+    if args.write_state:
+        print(f"State written: {STATE}")
+    else:
+        print("State not written. Use --write-state only when intentionally updating cockpit_state.json.")
 
     return 0
 
