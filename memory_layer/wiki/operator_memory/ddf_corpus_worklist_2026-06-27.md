@@ -142,3 +142,13 @@ Required boundary:
 Create the public-safe claims extraction page from the diagnostic-core documents.
 
 Do not touch physics claims yet.
+
+
+## Final Corpus Completion Audit
+
+- [x] Create final corpus completion audit.
+- [x] Confirm all major extraction rounds exist.
+- [x] Preserve public-safe boundary.
+- [x] Preserve SpecShift buyer-safe boundary.
+- [x] Preserve physics-caution / archive-caution boundary.
+- [x] Preserve authorship / priority / safety provenance boundary.

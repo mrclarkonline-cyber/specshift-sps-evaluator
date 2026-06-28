@@ -79,3 +79,7 @@ Promotion status: Operational
 - [SpecShift Diagnostic Origin Note](operator_memory/specshift_boundary_integration/specshift_diagnostic_origin_note.md)
 - [SpecShift Pilot Validation Boundary](operator_memory/specshift_boundary_integration/specshift_pilot_validation_boundary.md)
 - [SpecShift Claim Gauntlet Checklist](operator_memory/specshift_boundary_integration/specshift_claim_gauntlet_checklist.md)
+
+### ∆∆F Corpus Completion
+
+- [∆∆F Corpus Completion Audit](operator_memory/ddf_corpus_completion_audit_2026-06-27.md)
