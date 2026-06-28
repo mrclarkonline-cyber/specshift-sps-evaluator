@@ -1,0 +1,25 @@
+{
+  "claim_boundary": "Phase 11 detects negative-space candidates only. Absence is not proof. No production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution claimed.",
+  "created_at_utc": "2026-06-28T09:40:51.957443+00:00",
+  "missing_expected_categories": [
+    "science_and_research",
+    "space_and_astronomy"
+  ],
+  "missing_expected_source_types": [],
+  "negative_space_candidates": 2,
+  "negative_space_records_artifact": "memory_layer/wiki/operator_memory/worldwide_phase11/phase11_negative_space_candidate_records.jsonl",
+  "observed_categories": [
+    "earth_and_environment",
+    "global_news",
+    "government_and_policy",
+    "health_and_biosecurity",
+    "infrastructure_and_economics"
+  ],
+  "observed_source_types": [
+    "api",
+    "rss",
+    "web"
+  ],
+  "phase": "phase_11_worldwide_negative_space_pattern_layer",
+  "status": "complete"
+}

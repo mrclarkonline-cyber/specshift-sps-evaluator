@@ -1,0 +1,10 @@
+{
+  "claim_boundary": "Phase 11 detects negative-space candidates only. Absence is not proof. No production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution claimed.",
+  "phase": "phase_11_worldwide_negative_space_pattern_layer",
+  "phase11_goal": "Identify metadata-level absence and undercoverage candidates across the worldwide artifacts while preserving claim boundaries.",
+  "previous_phase": "phase_10_worldwide_pattern_detection_layer",
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Detect bounded negative-space patterns: missing categories, missing source-type diversity, underrepresented lanes, and review gaps without treating absence as proof.",
+  "registered_at_utc": "2026-06-28T09:40:51.957443+00:00",
+  "status": "registered"
+}

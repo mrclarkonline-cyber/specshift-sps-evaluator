@@ -1,10 +1,9 @@
 {
-  "active_tracker": "tools/status/worldwide_phase10_progress.py",
-  "active_workplan": "worldwide_phase10_pattern_detection_layer",
-  "claim_boundary": "Phase 10 is bounded metadata-level pattern detection only; no production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution claimed.",
-  "display_rule": "wiki_landing should show Phase 10 as the active workplan once Phase 9 is complete at 100%. Phase 9 remains closure evidence, not the active landing workplan.",
-  "phase9_status": "closed_at_100_percent",
-  "previous_tracker": "tools/status/worldwide_phase9_progress.py",
-  "previous_workplan": "worldwide_phase9_analytical_core_registration",
-  "registered_at_utc": "2026-06-28T09:39:55.592357+00:00"
+  "active_tracker": "tools/status/worldwide_phase11_progress.py",
+  "active_workplan": "worldwide_phase11_negative_space_pattern_layer",
+  "claim_boundary": "Phase 11 detects negative-space candidates only. Absence is not proof. No production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution claimed.",
+  "phase10_status": "closed_at_100_percent",
+  "previous_tracker": "tools/status/worldwide_phase10_progress.py",
+  "previous_workplan": "worldwide_phase10_pattern_detection_layer",
+  "registered_at_utc": "2026-06-28T09:40:51.957443+00:00"
 }
