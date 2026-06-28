@@ -20,6 +20,7 @@ The optional marker file is:
 Supported marker values:
 
 - `worldwide_phase2`
+- `worldwide_phase3`
 - `pipeline_implementation`
 
 If the marker is absent, `wiki_landing` should report no active workplan selected and recommend stopping or naming a new work block.
