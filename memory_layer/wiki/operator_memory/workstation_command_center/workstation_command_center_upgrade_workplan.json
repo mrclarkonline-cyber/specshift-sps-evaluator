@@ -1,0 +1,145 @@
+{
+  "claim_boundary": "This workplan registers workstation command-center upgrades only. It does not implement autonomous action, production monitoring, external routing, hidden escalation, surveillance, targeting, or truth-resolution systems.",
+  "core_principle": "The big upgrade is not more tools. It is less guessing: the machine should know what phase it is in, what it is allowed to say, what it is not allowed to touch, and when the user gets fireworks.",
+  "global_boundaries": [
+    "civilian-safe only",
+    "no weapons, targeting, surveillance, or harmful operationalization",
+    "no autonomous external actions",
+    "no production claims without validation",
+    "no custom fireworks outside wiki_landing",
+    "Git must be clean before celebration",
+    "canonical landing remains wiki_landing"
+  ],
+  "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
+  "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
+  "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
+  "status": "registered",
+  "upgrade_phases": [
+    {
+      "boundary": "Dashboard only. No autonomous action.",
+      "command_target": "specshift_board",
+      "done_when": "specshift_board displays active workplan, tracker status, Git status, recent commit, risk summary, and canonical progress value without duplicating wiki_landing fireworks.",
+      "goal": "One command opens a full status board: active phase, Git, wiki health, next action, last commit, open risks, and progress fireworks.",
+      "phase": "phase_17_mission_control_dashboard",
+      "upgrade": "Mission Control dashboard"
+    },
+    {
+      "boundary": "State tracking only. No guessing from stale hardcoded phases.",
+      "command_target": "active_workplan.json",
+      "done_when": "active_workplan.json schema includes active_tracker, next_action, blockers, closure_rule, risk_state, and parked_state fields.",
+      "goal": "Every project gets phase, tracker, next action, blockers, and closure rule in active_workplan.json.",
+      "phase": "phase_18_active_workplan_brain",
+      "upgrade": "Active workplan brain"
+    },
+    {
+      "boundary": "Recommendation only. No command execution.",
+      "command_target": "wiki_landing / kira_recommends",
+      "done_when": "Kira recommendations are driven by active tracker output, active_workplan.json, Git state, and claim-risk state.",
+      "goal": "Upgrade Kira from generic advice to rule-based recommendations.",
+      "phase": "phase_19_kira_recommendation_engine",
+      "rules": [
+        "if 100 percent complete: close or park",
+        "if dirty Git: commit, restore, or park",
+        "if partial: show next exact file or script",
+        "if late night: stop recommendation",
+        "if high-risk claim: run Claim Gauntlet"
+      ],
+      "upgrade": "Kira recommendation engine"
+    },
+    {
+      "boundary": "Human-friendly feedback only. No interference with commands.",
+      "command_target": "phil_summary",
+      "done_when": "Phil output appears only after Git is clean and audit/landing status passes.",
+      "goal": "A safe terminal stage manager that gives comic summaries only after serious audit passes.",
+      "phase": "phase_20_phil_morale_layer",
+      "upgrade": "Phil morale layer"
+    },
+    {
+      "boundary": "Language safety scan only. No legal/compliance certification.",
+      "command_target": "claim_gauntlet",
+      "done_when": "claim_gauntlet scans docs/wiki/operator memory and returns risky terms with safer replacement suggestions.",
+      "flag_terms": [
+        "proves",
+        "detects",
+        "guarantees",
+        "validates",
+        "consciousness",
+        "intent",
+        "production-ready",
+        "truth",
+        "prediction",
+        "autonomous"
+      ],
+      "goal": "Local scanner flags risky words and suggests safer replacements.",
+      "phase": "phase_21_claim_overstatement_detector",
+      "upgrade": "Claim-overstatement detector"
+    },
+    {
+      "boundary": "Promotion gate only. Human review still required.",
+      "command_target": "promote_artifact",
+      "done_when": "promote_artifact refuses unsafe promotion and writes a gate report.",
+      "goal": "Nothing moves from scratch/wiki/operator memory into public docs unless it passes gate checks.",
+      "phase": "phase_22_artifact_promotion_gate",
+      "required_checks": [
+        "claim scan",
+        "citation/provenance check",
+        "public/private boundary",
+        "buyer-safe wording",
+        "Git clean status"
+      ],
+      "upgrade": "Artifact promotion gate"
+    },
+    {
+      "boundary": "Workflow shutdown only. No OS-level lockout.",
+      "command_target": "close_universe",
+      "done_when": "close_universe writes a shutdown note, parks unfinished work, shows tomorrow first task, and ends with wiki_landing.",
+      "goal": "Show what landed, what is parked, tomorrow's first task, then lock into no-more-work mode with canonical landing.",
+      "phase": "phase_23_close_universe_shutdown",
+      "upgrade": "One-command nightly shutdown"
+    },
+    {
+      "boundary": "Local provenance record only. No public disclosure by default.",
+      "command_target": "provenance_vault",
+      "done_when": "provenance_vault records artifacts with hash, timestamp, path, public/private/protected/archive-caution status, wiki link, and promotion history.",
+      "goal": "Every PDF, note, packet, and release gets SHA-256, timestamp, file path, status, linked wiki page, and promotion history.",
+      "phase": "phase_24_local_provenance_vault",
+      "upgrade": "Local provenance vault"
+    },
+    {
+      "boundary": "Visualization only. Source of truth remains registered JSON and trackers.",
+      "command_target": "phase_map",
+      "done_when": "phase_map renders completed, active, parked, protected, and caution states from registered workplans.",
+      "goal": "Terminal-rendered map of phases with status icons.",
+      "phase": "phase_25_visual_phase_map",
+      "status_icons": {
+        "active": "🎯",
+        "caution": "⚠️",
+        "complete": "✅",
+        "parked": "💤",
+        "partial": "🟡",
+        "protected": "🔒"
+      },
+      "upgrade": "Visual phase map"
+    },
+    {
+      "boundary": "Context loading only. No autonomous work or hidden routing.",
+      "command_target": "cockpit",
+      "done_when": "cockpit mode loads relevant commands, paths, wiki pages, trackers, and next actions for the selected mission.",
+      "goal": "Switch the machine into current mission mode.",
+      "modes": [
+        "cockpit specshift",
+        "cockpit orchestra",
+        "cockpit ddf",
+        "cockpit outreach",
+        "cockpit shutdown"
+      ],
+      "phase": "phase_26_cockpit_mode",
+      "upgrade": "SpecShift cockpit mode"
+    }
+  ],
+  "voice_anchor": {
+    "kira": "Civilian-safe, but genuinely unusual. Not more chaos. More command center.",
+    "phil": "A workstation that feels like it has a bridge crew, not a folder problem."
+  },
+  "workplan": "workstation_command_center_upgrade"
+}

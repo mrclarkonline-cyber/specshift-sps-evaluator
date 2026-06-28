@@ -1,9 +1,13 @@
 {
-  "active_tracker": "tools/status/worldwide_phase16_progress.py",
-  "active_workplan": "worldwide_phase16_analytical_audit_layer",
-  "claim_boundary": "Phase 16 audits artifacts and boundaries only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, legal/medical/financial advice, policy decision support, or truth resolution.",
-  "phase15_status": "closed_at_100_percent",
-  "previous_tracker": "tools/status/worldwide_phase15_progress.py",
-  "previous_workplan": "worldwide_phase15_real_world_implementation_suggestion_scaffold",
-  "registered_at_utc": "2026-06-28T10:39:26.489576+00:00"
+  "active_phase": "phase_17_mission_control_dashboard",
+  "active_tracker": "tools/status/workstation_command_center_progress.py",
+  "active_workplan": "workstation_command_center_upgrade",
+  "blockers": [],
+  "claim_boundary": "This workplan registers workstation command-center upgrades only. It does not implement autonomous action, production monitoring, external routing, hidden escalation, surveillance, targeting, or truth-resolution systems.",
+  "closure_rule": "Close or park this workplan only after phases 17 through 26 are registered, implemented, audited, and landed clean.",
+  "next_action": "Build specshift_board as the first Mission Control dashboard command.",
+  "phase16_status": "closed_at_100_percent",
+  "previous_tracker": "tools/status/worldwide_phase16_progress.py",
+  "previous_workplan": "worldwide_phase16_analytical_audit_layer",
+  "registered_at_utc": "2026-06-28T10:45:09.333507+00:00"
 }
