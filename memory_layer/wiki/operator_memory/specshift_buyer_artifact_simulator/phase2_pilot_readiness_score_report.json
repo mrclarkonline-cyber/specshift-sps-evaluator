@@ -1,0 +1,23 @@
+{
+  "artifacts": [
+    "tools/pilot_intake/pilot_readiness_score.py",
+    "docs/workstation/buyer_safe_pilot/pilot_readiness_score.md",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/pilot_readiness_policy.md",
+    "tests/fixtures/buyer_artifact_simulator/pilot_readiness_cases.json",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/phase2_pilot_readiness_fixture_results.json"
+  ],
+  "claim_boundary": "Phase 2 creates a pilot readiness score scaffold only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-28T23:13:42.678699+00:00",
+  "decisions": [
+    "READY",
+    "NOT_READY",
+    "NEEDS_SCOPING",
+    "NEEDS_REDACTION",
+    "NEEDS_COUNSEL",
+    "DECLINE"
+  ],
+  "phase": "phase_2_pilot_readiness_score",
+  "sample_cases": 6,
+  "sample_cases_passed": 6,
+  "status": "complete"
+}

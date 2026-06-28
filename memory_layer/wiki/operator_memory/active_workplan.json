@@ -1,5 +1,5 @@
 {
-  "active_phase": "phase_2_pilot_readiness_score",
+  "active_phase": "phase_3_red_team_intake_pack",
   "active_tracker": "tools/status/specshift_buyer_artifact_simulator_progress.py",
   "active_workplan": "specshift_buyer_artifact_simulator_pilot_readiness_score",
   "allowed_actions": [
@@ -51,7 +51,7 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "phase_1_buyer_artifact_simulator",
+  "last_completed_phase": "phase_2_pilot_readiness_score",
   "last_completed_workplan": "specshift_buyer_artifact_intake_routing_intelligence",
   "last_delivery_closeout_recommender": "tools/pilot_intake/delivery_closeout_recommender.py",
   "last_delivery_closeout_recommender_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase6_delivery_closeout_recommender_report.json",
@@ -70,6 +70,8 @@
   "last_pilot_intake_questionnaire": "docs/workstation/buyer_safe_pilot/client_intake_questionnaire.md",
   "last_pilot_non_retention_artifact": "docs/workstation/buyer_safe_pilot/non_retention_and_boundary_statement.md",
   "last_pilot_package_assembler": "tools/pilot_intake/pilot_package_assembler.py",
+  "last_pilot_readiness_score": "tools/pilot_intake/pilot_readiness_score.py",
+  "last_pilot_readiness_score_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_simulator/phase2_pilot_readiness_score_report.json",
   "last_pilot_scope_artifact": "docs/workstation/buyer_safe_pilot/pilot_scope_and_boundaries.md",
   "last_pilot_success_failure_criteria": "docs/workstation/buyer_safe_pilot/pilot_success_failure_criteria.md",
   "last_professional_closeout_report": "memory_layer/wiki/operator_memory/professional_readiness/professional_phase5_audit_closeout_report.json",
@@ -91,8 +93,8 @@
   "last_terminal_capability_map_doc": "docs/workstation/specshift_terminal_complete_capability_map.md",
   "last_trace_schema_normalizer": "tools/pilot_intake/trace_schema_normalizer.py",
   "last_trace_schema_normalizer_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase3_trace_schema_normalizer_report.json",
-  "last_updated_at_utc": "2026-06-28T23:12:25.899233+00:00",
-  "next_action": "Create pilot_readiness_score.py, pilot_readiness_score.md, and pilot_readiness_policy.md.",
+  "last_updated_at_utc": "2026-06-28T23:13:42.678699+00:00",
+  "next_action": "Create red_team_buyer_requests.json, red_team_safe_responses.md, and red_team_intake_test.py.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",

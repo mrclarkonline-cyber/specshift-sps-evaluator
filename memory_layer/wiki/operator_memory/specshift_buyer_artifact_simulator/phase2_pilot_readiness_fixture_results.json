@@ -1,0 +1,158 @@
+[
+  {
+    "allowed_decisions": [
+      "READY",
+      "NOT_READY",
+      "NEEDS_SCOPING",
+      "NEEDS_REDACTION",
+      "NEEDS_COUNSEL",
+      "DECLINE"
+    ],
+    "case_id": "ready_clean",
+    "claim_boundary": "Pilot readiness score only. It is an internal buyer-safe intake scaffold. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "decision": "READY",
+    "engine": "pilot_readiness_score_v1",
+    "expected_decision": "READY",
+    "missing_conditions": [],
+    "professional_triggers": [],
+    "readiness_max_score": 10,
+    "readiness_percent": 100.0,
+    "readiness_score": 10,
+    "reason": "bounded observable-only pilot appears internally ready to proceed",
+    "scored_at_utc": "2026-06-28T23:13:42.680765+00:00",
+    "test_passed": true,
+    "warnings": [
+      "READY means internally intake-ready only, not certified, validated, or legally approved"
+    ]
+  },
+  {
+    "allowed_decisions": [
+      "READY",
+      "NOT_READY",
+      "NEEDS_SCOPING",
+      "NEEDS_REDACTION",
+      "NEEDS_COUNSEL",
+      "DECLINE"
+    ],
+    "case_id": "needs_scoping_no_trace",
+    "claim_boundary": "Pilot readiness score only. It is an internal buyer-safe intake scaffold. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "decision": "NEEDS_SCOPING",
+    "engine": "pilot_readiness_score_v1",
+    "expected_decision": "NEEDS_SCOPING",
+    "missing_conditions": [
+      "observable_traces_available"
+    ],
+    "professional_triggers": [],
+    "readiness_max_score": 10,
+    "readiness_percent": 90.0,
+    "readiness_score": 9,
+    "reason": "workflow scope or observable trace availability is incomplete",
+    "scored_at_utc": "2026-06-28T23:13:42.680772+00:00",
+    "test_passed": true,
+    "warnings": []
+  },
+  {
+    "allowed_decisions": [
+      "READY",
+      "NOT_READY",
+      "NEEDS_SCOPING",
+      "NEEDS_REDACTION",
+      "NEEDS_COUNSEL",
+      "DECLINE"
+    ],
+    "case_id": "needs_redaction",
+    "claim_boundary": "Pilot readiness score only. It is an internal buyer-safe intake scaffold. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "decision": "NEEDS_REDACTION",
+    "engine": "pilot_readiness_score_v1",
+    "expected_decision": "NEEDS_REDACTION",
+    "missing_conditions": [],
+    "professional_triggers": [],
+    "readiness_max_score": 10,
+    "readiness_percent": 90.0,
+    "readiness_score": 9,
+    "reason": "redaction or sensitive-data handling needed before intake",
+    "scored_at_utc": "2026-06-28T23:13:42.680777+00:00",
+    "test_passed": true,
+    "warnings": []
+  },
+  {
+    "allowed_decisions": [
+      "READY",
+      "NOT_READY",
+      "NEEDS_SCOPING",
+      "NEEDS_REDACTION",
+      "NEEDS_COUNSEL",
+      "DECLINE"
+    ],
+    "case_id": "needs_counsel_paid_pilot",
+    "claim_boundary": "Pilot readiness score only. It is an internal buyer-safe intake scaffold. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "decision": "NEEDS_COUNSEL",
+    "engine": "pilot_readiness_score_v1",
+    "expected_decision": "NEEDS_COUNSEL",
+    "missing_conditions": [],
+    "professional_triggers": [
+      "paid_pilot"
+    ],
+    "readiness_max_score": 10,
+    "readiness_percent": 100.0,
+    "readiness_score": 10,
+    "reason": "professional threshold triggered",
+    "scored_at_utc": "2026-06-28T23:13:42.680781+00:00",
+    "test_passed": true,
+    "warnings": [
+      "engage qualified legal and CPA support before proceeding"
+    ]
+  },
+  {
+    "allowed_decisions": [
+      "READY",
+      "NOT_READY",
+      "NEEDS_SCOPING",
+      "NEEDS_REDACTION",
+      "NEEDS_COUNSEL",
+      "DECLINE"
+    ],
+    "case_id": "decline_certification",
+    "claim_boundary": "Pilot readiness score only. It is an internal buyer-safe intake scaffold. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "decision": "DECLINE",
+    "engine": "pilot_readiness_score_v1",
+    "expected_decision": "DECLINE",
+    "missing_conditions": [],
+    "professional_triggers": [],
+    "readiness_max_score": 10,
+    "readiness_percent": 90.0,
+    "readiness_score": 9,
+    "reason": "buyer request is outside pilot boundary",
+    "scored_at_utc": "2026-06-28T23:13:42.680784+00:00",
+    "test_passed": true,
+    "warnings": []
+  },
+  {
+    "allowed_decisions": [
+      "READY",
+      "NOT_READY",
+      "NEEDS_SCOPING",
+      "NEEDS_REDACTION",
+      "NEEDS_COUNSEL",
+      "DECLINE"
+    ],
+    "case_id": "not_ready_missing_labels",
+    "claim_boundary": "Pilot readiness score only. It is an internal buyer-safe intake scaffold. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "decision": "NOT_READY",
+    "engine": "pilot_readiness_score_v1",
+    "expected_decision": "NOT_READY",
+    "missing_conditions": [
+      "buyer_retains_labels"
+    ],
+    "professional_triggers": [],
+    "readiness_max_score": 10,
+    "readiness_percent": 90.0,
+    "readiness_score": 9,
+    "reason": "one or more readiness conditions are missing",
+    "scored_at_utc": "2026-06-28T23:13:42.680789+00:00",
+    "test_passed": true,
+    "warnings": [
+      "buyer label ownership/final adjudication not confirmed"
+    ]
+  }
+]
