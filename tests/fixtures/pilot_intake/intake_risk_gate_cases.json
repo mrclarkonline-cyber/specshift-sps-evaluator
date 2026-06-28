@@ -1,0 +1,44 @@
+[
+  {
+    "artifact_type": "trace_data",
+    "case_id": "safe_trace",
+    "description": "Observable trace export with timestamp, sequence, event type, and claimed final state.",
+    "expected_decision": "ACCEPT",
+    "filename": "workflow_events.csv"
+  },
+  {
+    "artifact_type": "prohibited_internal_material",
+    "case_id": "source_code_reject",
+    "description": "Repository containing source code and private prompts.",
+    "expected_decision": "REJECT",
+    "filename": "repo.zip"
+  },
+  {
+    "artifact_type": "prohibited_internal_material",
+    "case_id": "weights_reject",
+    "description": "Model weights checkpoint.",
+    "expected_decision": "REJECT",
+    "filename": "model.safetensors"
+  },
+  {
+    "artifact_type": "trace_data",
+    "case_id": "pii_redaction",
+    "description": "Observable trace export with customer names and email addresses.",
+    "expected_decision": "NEEDS_REDACTION",
+    "filename": "customer_events.csv"
+  },
+  {
+    "artifact_type": "trace_data",
+    "case_id": "regulated_hold",
+    "description": "Patient health record workflow export with HIPAA medical details.",
+    "expected_decision": "NEEDS_REDACTION",
+    "filename": "patient_workflow.csv"
+  },
+  {
+    "artifact_type": "out_of_scope_material",
+    "case_id": "production_hold",
+    "description": "Urgent production incident requiring automated verdict and production validation.",
+    "expected_decision": "HOLD_FOR_REVIEW",
+    "filename": "incident_request.md"
+  }
+]

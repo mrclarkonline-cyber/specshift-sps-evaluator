@@ -1,0 +1,53 @@
+{
+  "claim_boundary": "Prohibited material register only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-28T22:49:52.725143+00:00",
+  "phase": "phase_2_intake_risk_gate",
+  "prohibited_material": [
+    {
+      "category": "source_code",
+      "decision": "REJECT",
+      "reason": "Pilot is observable-only and does not require source code."
+    },
+    {
+      "category": "model_weights",
+      "decision": "REJECT",
+      "reason": "Pilot is observable-only and does not require model weights."
+    },
+    {
+      "category": "private_prompts",
+      "decision": "REJECT",
+      "reason": "Pilot does not request private prompts."
+    },
+    {
+      "category": "private_chain_of_thought",
+      "decision": "REJECT",
+      "reason": "Pilot does not request private chain-of-thought or hidden reasoning."
+    },
+    {
+      "category": "hidden_activations",
+      "decision": "REJECT",
+      "reason": "Pilot does not require hidden activations or internal model states."
+    },
+    {
+      "category": "secrets_credentials_tokens",
+      "decision": "REJECT",
+      "reason": "Secrets and credentials must never be accepted."
+    },
+    {
+      "category": "customer_pii_or_regulated_data",
+      "decision": "NEEDS_REDACTION",
+      "reason": "Sensitive/regulated data requires redaction, written terms, and professional review before intake."
+    },
+    {
+      "category": "legal_compliance_or_certification_request",
+      "decision": "HOLD_FOR_REVIEW",
+      "reason": "SpecShift does not provide legal/compliance/certification conclusions."
+    },
+    {
+      "category": "production_incident_or_validation_request",
+      "decision": "HOLD_FOR_REVIEW",
+      "reason": "SpecShift pilot lane does not provide production validation, monitoring, or incident-response verdicts."
+    }
+  ],
+  "status": "complete"
+}

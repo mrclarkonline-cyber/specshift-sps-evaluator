@@ -1,0 +1,18 @@
+{
+  "artifacts": [
+    "tools/pilot_intake/intake_risk_gate.py",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_intake_risk_policy.json",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_prohibited_material_register.json",
+    "docs/workstation/buyer_artifact_intake/intake_risk_policy.md",
+    "docs/workstation/buyer_artifact_intake/prohibited_material_register.md",
+    "docs/workstation/buyer_artifact_intake/redaction_request_template.md",
+    "tests/fixtures/pilot_intake/intake_risk_gate_cases.json",
+    "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_intake_risk_gate_fixture_results.json"
+  ],
+  "claim_boundary": "Phase 2 creates an intake risk gate scaffold only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-28T22:49:52.725143+00:00",
+  "phase": "phase_2_intake_risk_gate",
+  "sample_cases": 6,
+  "sample_cases_passed": 6,
+  "status": "complete"
+}

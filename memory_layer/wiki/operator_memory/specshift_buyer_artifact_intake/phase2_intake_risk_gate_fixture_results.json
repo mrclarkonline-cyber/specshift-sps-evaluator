@@ -1,0 +1,221 @@
+[
+  {
+    "accept_hints": [
+      "observable trace",
+      "timestamp",
+      "sequence",
+      "claimed final state"
+    ],
+    "artifact_type": "trace_data",
+    "boundary_warnings": [
+      "Do not accept model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Do not accept secrets, credentials, keys, tokens, or passwords.",
+      "Do not accept unredacted sensitive/regulated data without written terms and professional review.",
+      "Do not accept requests for legal/compliance conclusions, production validation, automated verdicts, or truth validation.",
+      "Buyer retains labels and final adjudication."
+    ],
+    "case_id": "safe_trace",
+    "claim_boundary": "Intake risk gate only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "decision": "ACCEPT",
+    "engine": "intake_risk_gate_v1",
+    "expected_decision": "ACCEPT",
+    "filename": "workflow_events.csv",
+    "gated_at_utc": "2026-06-28T22:49:52.727142+00:00",
+    "hold_hits": [],
+    "reject_hits": [],
+    "required_action": "Accept only into the appropriate buyer-safe pilot folder and preserve provenance.",
+    "target_folder": "02_buyer_exports_observable_only",
+    "test_passed": true
+  },
+  {
+    "accept_hints": [],
+    "artifact_type": "prohibited_internal_material",
+    "boundary_warnings": [
+      "Do not accept model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Do not accept secrets, credentials, keys, tokens, or passwords.",
+      "Do not accept unredacted sensitive/regulated data without written terms and professional review.",
+      "Do not accept requests for legal/compliance conclusions, production validation, automated verdicts, or truth validation.",
+      "Buyer retains labels and final adjudication.",
+      "Do not route into working review until the risk gate is resolved."
+    ],
+    "case_id": "source_code_reject",
+    "claim_boundary": "Intake risk gate only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "decision": "REJECT",
+    "engine": "intake_risk_gate_v1",
+    "expected_decision": "REJECT",
+    "filename": "repo.zip",
+    "gated_at_utc": "2026-06-28T22:49:52.727157+00:00",
+    "hold_hits": [],
+    "reject_hits": [
+      {
+        "category": "source_code",
+        "term": "source code"
+      },
+      {
+        "category": "source_code",
+        "term": "repository"
+      },
+      {
+        "category": "private_prompts",
+        "term": "private prompt"
+      }
+    ],
+    "required_action": "Do not accept this artifact. Ask buyer to remove protected/internal material and resend only observable exports if appropriate.",
+    "target_folder": "PROTECTED",
+    "test_passed": true
+  },
+  {
+    "accept_hints": [],
+    "artifact_type": "prohibited_internal_material",
+    "boundary_warnings": [
+      "Do not accept model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Do not accept secrets, credentials, keys, tokens, or passwords.",
+      "Do not accept unredacted sensitive/regulated data without written terms and professional review.",
+      "Do not accept requests for legal/compliance conclusions, production validation, automated verdicts, or truth validation.",
+      "Buyer retains labels and final adjudication.",
+      "Do not route into working review until the risk gate is resolved."
+    ],
+    "case_id": "weights_reject",
+    "claim_boundary": "Intake risk gate only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "decision": "REJECT",
+    "engine": "intake_risk_gate_v1",
+    "expected_decision": "REJECT",
+    "filename": "model.safetensors",
+    "gated_at_utc": "2026-06-28T22:49:52.727168+00:00",
+    "hold_hits": [],
+    "reject_hits": [
+      {
+        "category": "model_weights",
+        "term": "model weights"
+      },
+      {
+        "category": "model_weights",
+        "term": "checkpoint"
+      },
+      {
+        "category": "model_weights",
+        "term": "safetensors"
+      }
+    ],
+    "required_action": "Do not accept this artifact. Ask buyer to remove protected/internal material and resend only observable exports if appropriate.",
+    "target_folder": "PROTECTED",
+    "test_passed": true
+  },
+  {
+    "accept_hints": [
+      "observable trace"
+    ],
+    "artifact_type": "trace_data",
+    "boundary_warnings": [
+      "Do not accept model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Do not accept secrets, credentials, keys, tokens, or passwords.",
+      "Do not accept unredacted sensitive/regulated data without written terms and professional review.",
+      "Do not accept requests for legal/compliance conclusions, production validation, automated verdicts, or truth validation.",
+      "Buyer retains labels and final adjudication.",
+      "Do not route into working review until the risk gate is resolved."
+    ],
+    "case_id": "pii_redaction",
+    "claim_boundary": "Intake risk gate only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "decision": "NEEDS_REDACTION",
+    "engine": "intake_risk_gate_v1",
+    "expected_decision": "NEEDS_REDACTION",
+    "filename": "customer_events.csv",
+    "gated_at_utc": "2026-06-28T22:49:52.727181+00:00",
+    "hold_hits": [
+      {
+        "category": "customer_pii",
+        "term": "customer names"
+      },
+      {
+        "category": "customer_pii",
+        "term": "email addresses"
+      },
+      {
+        "category": "customer_pii",
+        "term": "addresses"
+      }
+    ],
+    "reject_hits": [],
+    "required_action": "Request redaction, pseudonymization, written terms, or professional review before intake.",
+    "target_folder": "DO_NOT_SEND",
+    "test_passed": true
+  },
+  {
+    "accept_hints": [],
+    "artifact_type": "trace_data",
+    "boundary_warnings": [
+      "Do not accept model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Do not accept secrets, credentials, keys, tokens, or passwords.",
+      "Do not accept unredacted sensitive/regulated data without written terms and professional review.",
+      "Do not accept requests for legal/compliance conclusions, production validation, automated verdicts, or truth validation.",
+      "Buyer retains labels and final adjudication.",
+      "Do not route into working review until the risk gate is resolved."
+    ],
+    "case_id": "regulated_hold",
+    "claim_boundary": "Intake risk gate only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "decision": "NEEDS_REDACTION",
+    "engine": "intake_risk_gate_v1",
+    "expected_decision": "NEEDS_REDACTION",
+    "filename": "patient_workflow.csv",
+    "gated_at_utc": "2026-06-28T22:49:52.727194+00:00",
+    "hold_hits": [
+      {
+        "category": "regulated_data",
+        "term": "hipaa"
+      },
+      {
+        "category": "regulated_data",
+        "term": "medical"
+      },
+      {
+        "category": "regulated_data",
+        "term": "patient"
+      },
+      {
+        "category": "regulated_data",
+        "term": "health record"
+      }
+    ],
+    "reject_hits": [],
+    "required_action": "Request redaction, pseudonymization, written terms, or professional review before intake.",
+    "target_folder": "DO_NOT_SEND",
+    "test_passed": true
+  },
+  {
+    "accept_hints": [],
+    "artifact_type": "out_of_scope_material",
+    "boundary_warnings": [
+      "Do not accept model weights, source code, private prompts, hidden activations, or private chain-of-thought.",
+      "Do not accept secrets, credentials, keys, tokens, or passwords.",
+      "Do not accept unredacted sensitive/regulated data without written terms and professional review.",
+      "Do not accept requests for legal/compliance conclusions, production validation, automated verdicts, or truth validation.",
+      "Buyer retains labels and final adjudication.",
+      "Do not route into working review until the risk gate is resolved."
+    ],
+    "case_id": "production_hold",
+    "claim_boundary": "Intake risk gate only. This does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+    "decision": "HOLD_FOR_REVIEW",
+    "engine": "intake_risk_gate_v1",
+    "expected_decision": "HOLD_FOR_REVIEW",
+    "filename": "incident_request.md",
+    "gated_at_utc": "2026-06-28T22:49:52.727208+00:00",
+    "hold_hits": [
+      {
+        "category": "production_incident",
+        "term": "production incident"
+      },
+      {
+        "category": "out_of_scope",
+        "term": "automated verdict"
+      },
+      {
+        "category": "out_of_scope",
+        "term": "production validation"
+      }
+    ],
+    "reject_hits": [],
+    "required_action": "Pause intake and require human/professional review before accepting.",
+    "target_folder": "DO_NOT_SEND",
+    "test_passed": true
+  }
+]

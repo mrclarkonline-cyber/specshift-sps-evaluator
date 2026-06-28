@@ -16,7 +16,7 @@
     "REJECT",
     "NEEDS_REDACTION"
   ],
-  "last_updated_at_utc": "2026-06-28T22:48:33.121838+00:00",
+  "last_updated_at_utc": "2026-06-28T22:49:52.725143+00:00",
   "phases": [
     {
       "artifacts": [
@@ -33,9 +33,22 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "tools/pilot_intake/intake_risk_gate.py",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_intake_risk_policy.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_prohibited_material_register.json",
+        "docs/workstation/buyer_artifact_intake/intake_risk_policy.md",
+        "docs/workstation/buyer_artifact_intake/prohibited_material_register.md",
+        "docs/workstation/buyer_artifact_intake/redaction_request_template.md",
+        "tests/fixtures/pilot_intake/intake_risk_gate_cases.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_intake_risk_gate_fixture_results.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_intake_risk_gate_report.json"
+      ],
+      "completed_at_utc": "2026-06-28T22:49:52.725143+00:00",
+      "completion_note": "Intake risk gate, risk policy, prohibited material register, redaction template, fixtures, and fixture results created.",
       "goal": "Create intake_risk_gate.py, intake_risk_policy.md, prohibited_material_register.md, and redaction_request_template.md.",
       "phase": "phase_2_intake_risk_gate",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Create trace_schema_normalizer.py, trace_schema.md, normalized_trace_template.csv/json, and sample_normalized_trace.json.",
