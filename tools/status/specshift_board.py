@@ -66,6 +66,14 @@ def main() -> None:
     else:
         print("Kira engine missing")
 
+    section("Phil morale")
+    phil_script = Path("tools/status/phil_morale_layer.py")
+    if phil_script.exists():
+        code, phil_output = run(["python3", str(phil_script)], timeout=20)
+        print(phil_output if phil_output else "Phil morale layer produced no output")
+    else:
+        print("Phil morale layer missing")
+
     section("Open risks")
     risks = []
     if status:
