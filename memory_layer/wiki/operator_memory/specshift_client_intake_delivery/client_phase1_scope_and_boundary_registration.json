@@ -1,0 +1,73 @@
+{
+  "allowed_client_workflow": [
+    "initial scoping conversation",
+    "client workflow identification",
+    "artifact intake checklist",
+    "public/private/protected classification",
+    "bounded review packet creation",
+    "candidate-discrepancy memo drafting",
+    "human-review controlled delivery",
+    "closeout note with limitations and next-step options"
+  ],
+  "allowed_outputs": [
+    "client scope note",
+    "intake checklist",
+    "data-room index",
+    "artifact classification",
+    "provenance record",
+    "claim-safe review packet",
+    "candidate-discrepancy memo",
+    "delivery scaffold",
+    "closeout checklist"
+  ],
+  "claim_boundary": "Client Phase 1 registers workflow scope and safety boundaries only. It does not create legal advice, financial advice, binding contract terms, compliance certification, production monitoring, truth validation, or autonomous client action.",
+  "completed_at_utc": "2026-06-28T12:30:34.353705+00:00",
+  "forbidden_outputs": [
+    "legal advice",
+    "financial advice",
+    "binding contract terms",
+    "compliance certification",
+    "production monitoring claim",
+    "truth validation claim",
+    "autonomous client action",
+    "unreviewed public/buyer-facing claims"
+  ],
+  "no_free_pilot_guardrails": [
+    "No free pilots by default.",
+    "No protected method disclosure in scoping.",
+    "No code transfer.",
+    "No training rights.",
+    "No model internals required.",
+    "No buyer labels surrendered to SpecShift control.",
+    "Buyer retains labels and final adjudication.",
+    "Pilot must have written scope, boundaries, acceptance criteria, and payment terms."
+  ],
+  "phase": "client_phase_1_scope_and_boundary_registration",
+  "professional_support_threshold": {
+    "note": "This is a professional-support threshold, not legal advice.",
+    "required_action": "Engage CPA/legal support before proceeding alone.",
+    "trigger": "If procurement, paid pilot, contract terms, budget, or money movement becomes real."
+  },
+  "prohibited_uses": [
+    "weapons, targeting, lethal autonomy, kinetic operations, battlefield command, or offensive cyber",
+    "rights-violating surveillance or identity targeting",
+    "autonomous production monitoring",
+    "unreviewed compliance certification",
+    "truth validation claims",
+    "legal advice",
+    "financial advice",
+    "medical advice",
+    "binding contract terms",
+    "client action instructions without human review"
+  ],
+  "purpose": "Define the allowed client workflow, prohibited uses, required human review, no-free-pilot guardrails, and professional-support threshold for SpecShift client intake and delivery.",
+  "required_human_review": [
+    "client scope approval before artifact intake",
+    "human review before interpreting candidate discrepancies",
+    "human review before public-facing or buyer-facing language",
+    "human review before delivery package handoff",
+    "human review before any procurement, pilot, contract, or money discussion"
+  ],
+  "status": "complete",
+  "workplan": "specshift_client_intake_delivery_system"
+}
