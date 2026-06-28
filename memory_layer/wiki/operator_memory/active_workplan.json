@@ -1,5 +1,5 @@
 {
-  "active_phase": "pilot_phase_2_buyer_intake_and_data_request",
+  "active_phase": "pilot_phase_3_project_folder_generator",
   "active_tracker": "tools/status/specshift_buyer_safe_pilot_progress.py",
   "active_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
   "allowed_actions": [
@@ -41,7 +41,7 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "pilot_phase_1_scope_and_boundaries",
+  "last_completed_phase": "pilot_phase_2_buyer_intake_and_data_request",
   "last_completed_workplan": "regulatory_certification_procurement_readiness",
   "last_forecast_audit_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
   "last_forecast_candidate_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
@@ -50,6 +50,8 @@
   "last_forecast_scope_artifact": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase1_scope_registration.json",
   "last_forecast_signal_inventory_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase2_signal_inventory_report.json",
   "last_phase_map_state": "memory_layer/wiki/operator_memory/workstation_command_center/phase_map_state.json",
+  "last_pilot_data_request_template": "docs/workstation/buyer_safe_pilot/buyer_data_request_template.md",
+  "last_pilot_intake_questionnaire": "docs/workstation/buyer_safe_pilot/client_intake_questionnaire.md",
   "last_pilot_non_retention_artifact": "docs/workstation/buyer_safe_pilot/non_retention_and_boundary_statement.md",
   "last_pilot_scope_artifact": "docs/workstation/buyer_safe_pilot/pilot_scope_and_boundaries.md",
   "last_professional_closeout_report": "memory_layer/wiki/operator_memory/professional_readiness/professional_phase5_audit_closeout_report.json",
@@ -69,8 +71,8 @@
   "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
   "last_terminal_capability_map": "memory_layer/wiki/operator_memory/terminal_capabilities/specshift_terminal_complete_capability_map.json",
   "last_terminal_capability_map_doc": "docs/workstation/specshift_terminal_complete_capability_map.md",
-  "last_updated_at_utc": "2026-06-28T22:13:01.447267+00:00",
-  "next_action": "Create client_intake_questionnaire.md and buyer_data_request_template.md.",
+  "last_updated_at_utc": "2026-06-28T22:14:09.294136+00:00",
+  "next_action": "Create client_project_folder_generator.py to initialize buyer-safe project folders.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",

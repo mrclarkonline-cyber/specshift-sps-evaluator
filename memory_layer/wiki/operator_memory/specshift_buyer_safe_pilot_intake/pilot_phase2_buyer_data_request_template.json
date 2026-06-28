@@ -1,0 +1,71 @@
+{
+  "claim_boundary": "Buyer data request template only. It requests observable exported traces and scope materials only. It does not request protected internals and does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, or autonomous client action.",
+  "completed_at_utc": "2026-06-28T22:14:09.294136+00:00",
+  "do_not_send": [
+    "model weights",
+    "source code",
+    "private prompts",
+    "hidden activations",
+    "private chain-of-thought",
+    "internal architecture diagrams unless lawyer/security approved",
+    "training data",
+    "raw secrets, credentials, keys, tokens, or passwords",
+    "unredacted personal data unless written terms authorize it",
+    "regulated sensitive data unless written terms and professional review authorize it"
+  ],
+  "minimum_fields": [
+    "record_id",
+    "event_time_or_sequence",
+    "visible_event_type",
+    "visible_actor_or_system_id_pseudonymized",
+    "visible_input_or_trigger_summary_if_available",
+    "visible_output_or_state_summary",
+    "claimed_final_state_if_available",
+    "buyer_label_if_available",
+    "notes_if_available"
+  ],
+  "phase": "pilot_phase_2_buyer_intake_and_data_request",
+  "preferred_format": [
+    "CSV",
+    "JSONL",
+    "JSON",
+    "Parquet only if agreed",
+    "PDF scope memo",
+    "Markdown or text field dictionary"
+  ],
+  "purpose": "Define what a buyer may send for an observable-only pilot and what should not be sent.",
+  "request_only": [
+    {
+      "artifact": "observable_workflow_trace_export",
+      "description": "Visible time-ordered events, states, actions, outputs, claimed final states, or workflow milestones.",
+      "required": true
+    },
+    {
+      "artifact": "claimed_final_state_export",
+      "description": "Visible final status, ledger/payment state, task completion state, or other claimed endpoint.",
+      "required": true
+    },
+    {
+      "artifact": "buyer_retained_labels_or_adjudication_sheet",
+      "description": "Optional buyer-controlled labels or human adjudication outcomes.",
+      "required": false
+    },
+    {
+      "artifact": "scope_memo",
+      "description": "Plain-language scope memo identifying workflow, sample window, systems in scope/out of scope, and known limitations.",
+      "required": true
+    },
+    {
+      "artifact": "field_dictionary",
+      "description": "Data dictionary for exported observable fields.",
+      "required": true
+    },
+    {
+      "artifact": "redaction_or_pseudonymization_note",
+      "description": "Explanation of redactions, pseudonymization, or removed sensitive fields.",
+      "required": true
+    }
+  ],
+  "retention_default": "Do not retain raw client artifacts beyond the scoped review unless written terms say otherwise.",
+  "status": "complete"
+}

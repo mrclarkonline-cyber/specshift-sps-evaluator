@@ -13,7 +13,7 @@
     "non_retention_and_boundary_statement.md"
   ],
   "follows": "regulatory_certification_procurement_readiness",
-  "last_updated_at_utc": "2026-06-28T22:13:01.447267+00:00",
+  "last_updated_at_utc": "2026-06-28T22:14:09.294136+00:00",
   "phases": [
     {
       "artifacts": [
@@ -29,9 +29,17 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase2_client_intake_questionnaire.json",
+        "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase2_buyer_data_request_template.json",
+        "docs/workstation/buyer_safe_pilot/client_intake_questionnaire.md",
+        "docs/workstation/buyer_safe_pilot/buyer_data_request_template.md"
+      ],
+      "completed_at_utc": "2026-06-28T22:14:09.294136+00:00",
+      "completion_note": "Buyer intake questionnaire and observable-only data request template created.",
       "goal": "Create client_intake_questionnaire.md and buyer_data_request_template.md.",
       "phase": "pilot_phase_2_buyer_intake_and_data_request",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Create client_project_folder_generator.py to initialize buyer-safe project folders.",
