@@ -1,0 +1,56 @@
+{
+  "allowed_outputs": [
+    "client intake checklist",
+    "data-room index",
+    "artifact classification",
+    "provenance record",
+    "claim-safe review packet",
+    "candidate-discrepancy memo",
+    "delivery scaffold",
+    "closeout checklist"
+  ],
+  "candidate_phases": [
+    {
+      "goal": "Define allowed client workflow, prohibited uses, required human review, and no-free-pilot guardrails.",
+      "phase": "client_phase_1_scope_and_boundary_registration"
+    },
+    {
+      "goal": "Create client intake checklist, required artifacts, protected/private/public classifications, and data-room index.",
+      "phase": "client_phase_2_intake_form_and_data_room_index"
+    },
+    {
+      "goal": "Route client artifacts through provenance vault, claim gauntlet, and promotion gate.",
+      "phase": "client_phase_3_provenance_and_claim_gate"
+    },
+    {
+      "goal": "Create bounded review packets and candidate-discrepancy memos from approved client artifacts.",
+      "phase": "client_phase_4_review_packet_builder"
+    },
+    {
+      "goal": "Create delivery package structure with executive summary, methods boundary, findings tier, limitations, and next-step options.",
+      "phase": "client_phase_5_delivery_package_scaffold"
+    },
+    {
+      "goal": "Audit delivery boundaries, retention rules, human review, and client-safe language before handoff.",
+      "phase": "client_phase_6_closeout_and_audit"
+    }
+  ],
+  "claim_boundary": "This workplan registers a client intake and delivery scaffold only. It does not create legal advice, financial advice, binding contract terms, compliance certification, production monitoring, or truth validation.",
+  "core_goal": "Make client-facing workflow safer, repeatable, and bounded from first contact through intake, review, delivery, and closeout.",
+  "follows": "workstation_forecast_negative_space_engine",
+  "forbidden_outputs": [
+    "legal advice",
+    "financial advice",
+    "binding contract terms",
+    "unreviewed compliance claims",
+    "production monitoring claims",
+    "truth validation claims",
+    "autonomous client action"
+  ],
+  "professional_threshold": "If procurement, paid pilot, contract terms, budget, or money movement becomes real, engage CPA/legal support before proceeding alone.",
+  "purpose": "Create a buyer/client-safe intake and delivery system for SpecShift engagements, including scoping, artifact intake, provenance, review packets, delivery notes, claim boundaries, and handoff checklists.",
+  "queue_position": 2,
+  "registered_at_utc": "2026-06-28T11:21:54.477735+00:00",
+  "status": "queued",
+  "workplan": "specshift_client_intake_delivery_system"
+}

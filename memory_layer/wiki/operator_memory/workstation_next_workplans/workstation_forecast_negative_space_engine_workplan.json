@@ -1,0 +1,54 @@
+{
+  "allowed_outputs": [
+    "forecast candidate",
+    "negative-space review prompt",
+    "stale-source prompt",
+    "missing-signal prompt",
+    "needs-more-data suggestion",
+    "human-review queue",
+    "bounded next-source suggestion"
+  ],
+  "candidate_phases": [
+    {
+      "goal": "Define what the forecast engine is allowed to read and what it must not claim.",
+      "phase": "forecast_phase_1_scope_registration"
+    },
+    {
+      "goal": "Inventory usable signals from intake, pattern, negative-space, phase-map, cockpit, provenance, and audit artifacts.",
+      "phase": "forecast_phase_2_signal_inventory"
+    },
+    {
+      "goal": "Create review-only watchlists for missing categories, missing source types, stale sources, and silent expected signals.",
+      "phase": "forecast_phase_3_negative_space_watchlist"
+    },
+    {
+      "goal": "Create bounded forecast-candidate records using descriptive trends and gaps only.",
+      "phase": "forecast_phase_4_descriptive_forecast_candidates"
+    },
+    {
+      "goal": "Turn forecast candidates into human-review queues with claim boundaries.",
+      "phase": "forecast_phase_5_scenario_review_queue"
+    },
+    {
+      "goal": "Audit continuity, claim safety, reproducibility, and boundary preservation.",
+      "phase": "forecast_phase_6_audit_and_closeout"
+    }
+  ],
+  "claim_boundary": "This workplan registers a bounded forecast and negative-space review engine only. It does not claim prediction, production monitoring, alerts, autonomous action, causal inference, or truth resolution.",
+  "core_goal": "Use existing intake, pattern, negative-space, math-overlay, cockpit, claim-gauntlet, provenance, and audit layers to produce bounded forecast candidates and missing-signal review prompts without claiming prediction, truth, alerts, or autonomous action.",
+  "follows": "workstation_command_center_upgrade",
+  "forbidden_outputs": [
+    "prediction claim",
+    "truth claim",
+    "alert",
+    "autonomous action",
+    "production monitoring",
+    "causal certainty",
+    "policy/medical/legal/financial decision recommendation"
+  ],
+  "purpose": "Upgrade the workstation from command-center visibility into forward-looking bounded forecast scaffolding, negative-space monitoring, and review-priority suggestions.",
+  "queue_position": 1,
+  "registered_at_utc": "2026-06-28T11:21:54.477735+00:00",
+  "status": "registered",
+  "workplan": "workstation_forecast_negative_space_engine"
+}

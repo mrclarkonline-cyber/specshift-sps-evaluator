@@ -1,0 +1,22 @@
+{
+  "claim_boundary": "This queue records future local workstation workplans only. It does not execute actions, route externally, monitor production, or create buyer/legal/financial commitments.",
+  "completed_previous_workplan": "workstation_command_center_upgrade",
+  "next_active_workplan": "workstation_forecast_negative_space_engine",
+  "queued_after_next": [
+    "specshift_client_intake_delivery_system"
+  ],
+  "registered_at_utc": "2026-06-28T11:21:54.477735+00:00",
+  "status": "active_queue",
+  "workplans": [
+    {
+      "path": "memory_layer/wiki/operator_memory/workstation_next_workplans/workstation_forecast_negative_space_engine_workplan.json",
+      "status": "next_active",
+      "workplan": "workstation_forecast_negative_space_engine"
+    },
+    {
+      "path": "memory_layer/wiki/operator_memory/workstation_next_workplans/specshift_client_intake_delivery_system_workplan.json",
+      "status": "queued",
+      "workplan": "specshift_client_intake_delivery_system"
+    }
+  ]
+}
