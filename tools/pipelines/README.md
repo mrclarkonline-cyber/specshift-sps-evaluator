@@ -277,3 +277,23 @@ Safety boundary:
 - recommends bounded wording downgrades
 - human review required
 
+### low_frequency_anomaly_detector.py
+
+Generates a conservative low-frequency anomaly watch from local report history.
+
+Dry-run:
+
+python3 tools/pipelines/low_frequency_anomaly_detector.py --dry-run
+
+Generate:
+
+python3 tools/pipelines/low_frequency_anomaly_detector.py
+
+Safety boundary:
+
+- anomaly hypothesis scaffold only
+- requires baseline and null hypothesis
+- does not infer cause or intent
+- does not trigger automated action
+- human review required
+
