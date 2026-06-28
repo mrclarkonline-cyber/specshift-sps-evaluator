@@ -2,13 +2,13 @@
 from pathlib import Path
 
 PIPELINES = [
-    ("01", "WHO Disease Outbreak News", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
-    ("02", "ReliefWeb / OCHA", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
-    ("03", "GDACS", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
-    ("04", "World Bank Open Data", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
-    ("05", "IMF Data", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
-    ("06", "EU Open Data Portal", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
-    ("07", "ECDC", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group1_dryrun_records.jsonl", "dry-run"),
+    ("01", "WHO Disease Outbreak News", "memory_layer/wiki/operator_memory/worldwide_configured/phase2_group1_configured_records.jsonl", "configured"),
+    ("02", "ReliefWeb / OCHA", "memory_layer/wiki/operator_memory/worldwide_configured/phase2_group1_configured_records.jsonl", "configured"),
+    ("03", "GDACS", "memory_layer/wiki/operator_memory/worldwide_configured/phase2_group1_configured_records.jsonl", "configured"),
+    ("04", "World Bank Open Data", "memory_layer/wiki/operator_memory/worldwide_configured/phase2_group1_configured_records.jsonl", "configured"),
+    ("05", "IMF Data", "memory_layer/wiki/operator_memory/worldwide_configured/phase2_group1_configured_records.jsonl", "configured"),
+    ("06", "EU Open Data Portal", "memory_layer/wiki/operator_memory/worldwide_configured/phase2_group1_configured_records.jsonl", "configured"),
+    ("07", "ECDC", "memory_layer/wiki/operator_memory/worldwide_configured/phase2_group1_configured_records.jsonl", "configured"),
     ("08", "BBC World Service RSS verification", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group2_dryrun_records.jsonl", "dry-run"),
     ("09", "Deutsche Welle RSS verification", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group2_dryrun_records.jsonl", "dry-run"),
     ("10", "Canada Open Government", "memory_layer/wiki/operator_memory/worldwide_dryrun/phase2_group2_dryrun_records.jsonl", "dry-run"),
