@@ -66,6 +66,17 @@ def main() -> None:
     else:
         print("Kira engine missing")
 
+    section("Visual Phase Map")
+    phase_map_state = Path("memory_layer/wiki/operator_memory/workstation_command_center/phase_map_state.json")
+    if phase_map_state.exists():
+        data = load_json(phase_map_state)
+        print(f"active phase: {data.get('active_phase', 'unknown')}")
+        print(f"completed: {data.get('completed_phases', 'unknown')}/{data.get('total_phases', 'unknown')}")
+        print(f"progress: {data.get('progress_percent', 'unknown')}%")
+        print(f"state: {phase_map_state}")
+    else:
+        print("Phase Map state missing")
+
     section("Provenance Vault")
     provenance_report = Path("memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault_report.json")
     if provenance_report.exists():

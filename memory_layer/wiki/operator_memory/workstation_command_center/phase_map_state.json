@@ -1,0 +1,102 @@
+{
+  "active_phase": "phase_26_cockpit_mode",
+  "active_workplan": "workstation_command_center_upgrade",
+  "claim_boundary": "Phase Map is a read-only local visualization of registered workplan state. It does not execute commands, alter state, route externally, monitor production, or resolve truth.",
+  "completed_phases": 9,
+  "created_at_utc": "2026-06-28T11:01:27.218971+00:00",
+  "engine": "phase_map_v1",
+  "phase_records": [
+    {
+      "artifact": "tools/status/specshift_board.py",
+      "boundary": "Dashboard only. No autonomous action.",
+      "command_target": "specshift_board",
+      "icon": "✅",
+      "phase": "phase_17_mission_control_dashboard",
+      "status": "complete",
+      "upgrade": "Mission Control dashboard"
+    },
+    {
+      "artifact": "memory_layer/wiki/operator_memory/active_workplan.json",
+      "boundary": "State tracking only. No guessing from stale hardcoded phases.",
+      "command_target": "active_workplan.json",
+      "icon": "✅",
+      "phase": "phase_18_active_workplan_brain",
+      "status": "complete",
+      "upgrade": "Active workplan brain"
+    },
+    {
+      "artifact": "tools/status/kira_recommendation_engine.py",
+      "boundary": "Recommendation only. No command execution.",
+      "command_target": "wiki_landing / kira_recommends",
+      "icon": "✅",
+      "phase": "phase_19_kira_recommendation_engine",
+      "status": "complete",
+      "upgrade": "Kira recommendation engine"
+    },
+    {
+      "artifact": "tools/status/phil_morale_layer.py",
+      "boundary": "Human-friendly feedback only. No interference with commands.",
+      "command_target": "phil_summary",
+      "icon": "✅",
+      "phase": "phase_20_phil_morale_layer",
+      "status": "complete",
+      "upgrade": "Phil morale layer"
+    },
+    {
+      "artifact": "tools/status/claim_gauntlet.py",
+      "boundary": "Language safety scan only. No legal/compliance certification.",
+      "command_target": "claim_gauntlet",
+      "icon": "✅",
+      "phase": "phase_21_claim_overstatement_detector",
+      "status": "complete",
+      "upgrade": "Claim-overstatement detector"
+    },
+    {
+      "artifact": "tools/status/promote_artifact.py",
+      "boundary": "Promotion gate only. Human review still required.",
+      "command_target": "promote_artifact",
+      "icon": "✅",
+      "phase": "phase_22_artifact_promotion_gate",
+      "status": "complete",
+      "upgrade": "Artifact promotion gate"
+    },
+    {
+      "artifact": "tools/status/close_universe.py",
+      "boundary": "Workflow shutdown only. No OS-level lockout.",
+      "command_target": "close_universe",
+      "icon": "✅",
+      "phase": "phase_23_close_universe_shutdown",
+      "status": "complete",
+      "upgrade": "One-command nightly shutdown"
+    },
+    {
+      "artifact": "tools/status/provenance_vault.py",
+      "boundary": "Local provenance record only. No public disclosure by default.",
+      "command_target": "provenance_vault",
+      "icon": "✅",
+      "phase": "phase_24_local_provenance_vault",
+      "status": "complete",
+      "upgrade": "Local provenance vault"
+    },
+    {
+      "artifact": "tools/status/phase_map.py",
+      "boundary": "Visualization only. Source of truth remains registered JSON and trackers.",
+      "command_target": "phase_map",
+      "icon": "✅",
+      "phase": "phase_25_visual_phase_map",
+      "status": "complete",
+      "upgrade": "Visual phase map"
+    },
+    {
+      "artifact": "",
+      "boundary": "Context loading only. No autonomous work or hidden routing.",
+      "command_target": "cockpit",
+      "icon": "🎯",
+      "phase": "phase_26_cockpit_mode",
+      "status": "active",
+      "upgrade": "SpecShift cockpit mode"
+    }
+  ],
+  "progress_percent": 90.0,
+  "total_phases": 10
+}
