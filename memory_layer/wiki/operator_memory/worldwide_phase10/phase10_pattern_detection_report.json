@@ -1,0 +1,27 @@
+{
+  "artifacts_checked": 5,
+  "candidate_patterns_artifact": "memory_layer/wiki/operator_memory/worldwide_phase10/phase10_candidate_pattern_records.jsonl",
+  "candidate_patterns_detected": 21,
+  "claim_boundary": "Phase 10 detects metadata-level candidate patterns only. It does not claim production monitoring, content validation, contradiction detection, agreement detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution.",
+  "created_at_utc": "2026-06-28T09:39:55.690626+00:00",
+  "input_artifacts": {
+    "phase4_normalized_records": "memory_layer/wiki/operator_memory/worldwide_phase4/phase4_claim_safety_normalized_records.jsonl",
+    "phase5_candidate_pairs": "memory_layer/wiki/operator_memory/worldwide_phase5/phase5_candidate_comparison_pairs.jsonl",
+    "phase6_inspection_records": "memory_layer/wiki/operator_memory/worldwide_phase6/phase6_candidate_pair_inspection_records.jsonl",
+    "phase7_review_packets": "memory_layer/wiki/operator_memory/worldwide_phase7/phase7_human_review_packets.jsonl",
+    "phase8_packet_index": "memory_layer/wiki/operator_memory/worldwide_phase8/phase8_review_packet_index.json"
+  },
+  "pattern_type_counts": {
+    "candidate_pair_density_by_category": 3,
+    "category_recurrence": 5,
+    "claim_safety_label_recurrence": 1,
+    "indexed_packet_category_cluster": 3,
+    "review_packet_category_cluster": 3,
+    "source_type_diversity_cluster": 2,
+    "source_type_recurrence": 3,
+    "uncertainty_label_recurrence": 1
+  },
+  "patterns_held": 0,
+  "phase": "phase_10_worldwide_pattern_detection_layer",
+  "status": "complete"
+}

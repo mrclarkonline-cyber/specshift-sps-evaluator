@@ -1,0 +1,43 @@
+{
+  "allowed_pattern_outputs": [
+    "category recurrence",
+    "source-type recurrence",
+    "source-type diversity clusters",
+    "review-packet category clusters",
+    "repeated uncertainty-label patterns",
+    "repeated claim-safety labels",
+    "candidate pair density by category",
+    "metadata-level structural concentrations"
+  ],
+  "claim_boundary": "Phase 10 registration only. This does not claim production monitoring, content validation, contradiction detection, agreement detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution.",
+  "forbidden_outputs": [
+    "truth claims",
+    "causal claims",
+    "contradiction detection",
+    "agreement detection",
+    "corroboration claims",
+    "alert claims",
+    "prediction claims",
+    "autonomous action recommendations"
+  ],
+  "phase": "phase_10_worldwide_pattern_detection_layer",
+  "phase10_goal": "Detect repeated metadata structures across Phase 4 normalized records, Phase 5 candidate pairs, Phase 6 inspection records, Phase 7 review packets, and Phase 8 index artifacts without claiming truth, causality, contradiction, prediction, or alert readiness.",
+  "previous_phase": "phase_9_worldwide_analytical_core_registration",
+  "previous_phase_artifacts": [
+    "memory_layer/wiki/operator_memory/worldwide_phase9/phase9_analytical_core_registration.json",
+    "memory_layer/wiki/operator_memory/worldwide_phase9/phase9_analytical_core_validation_report.json"
+  ],
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Run the first bounded analytical-core layer over existing worldwide artifacts: metadata-level pattern detection.",
+  "registered_at_utc": "2026-06-28T09:39:55.592357+00:00",
+  "required_gates": [
+    "Gate 1: load only bounded existing artifacts",
+    "Gate 2: analyze metadata fields only",
+    "Gate 3: preserve source provenance and packet IDs",
+    "Gate 4: keep outputs at candidate-pattern tier",
+    "Gate 5: separate observed counts from interpretation",
+    "Gate 6: produce review suggestions only",
+    "Gate 7: no production monitoring, content validation, contradiction detection, causal inference, prediction, alert readiness, autonomous action, or truth resolution"
+  ],
+  "status": "registered"
+}
