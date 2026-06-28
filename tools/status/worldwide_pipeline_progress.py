@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
+import json
 from pathlib import Path
 
 PIPELINES = [
@@ -60,76 +63,111 @@ PIPELINES = [
     ("56", "Global anomaly flagger", "memory_layer/wiki/operator_memory/worldwide_implemented/phase2_all_implemented_records.jsonl", "implemented"),
 ]
 
-STATUS_ORDER = {
-    "missing": 0,
-    "registered": 1,
-    "configured": 1.625,
-    "verify-first": 1,
-    "bias-flag-required": 1,
-    "official-claim-only": 1,
-    "state-media-guarded": 1,
-    "privacy-guard-required": 1,
-    "per-country-only": 1,
-    "build-last": 1,
-    "dry-run": 2,
-    "live-fetch": 3,
-    "validated": 4,
-    "done": 5,
+STATUS_PROGRESS = {
+    "registered": 20.0,
+    "dry-run": 40.0,
+    "configured": 60.0,
+    "implemented": 80.0,
+    "validated": 100.0,
 }
 
-def status_for(expected_path, declared_status):
-    """Return the effective status for a pipeline row.
 
-    Rule:
-    - If the expected artifact exists, trust the declared row status.
-    - If the artifact is missing, keep it at registered.
-    - This allows dry-run JSONL artifacts to count as dry-run without falsely
-      claiming live-fetch, validated, or done.
-    """
-    from pathlib import Path
-
-    artifact = Path(expected_path)
-    if artifact.exists():
-        return declared_status
-    return "registered"
+def load_jsonl(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    records = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            records.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return records
 
 
+def norm_num(value: object) -> str:
+    try:
+        return f"{int(value):02d}"
+    except Exception:
+        return str(value).zfill(2)
 
-def pct(status: str) -> float:
-    return (STATUS_ORDER.get(status, 0) / 5.0) * 100.0
 
-rows = []
-for num, name, source_path, expected in PIPELINES:
-    status = status_for(source_path, expected)
-    rows.append((num, name, source_path, status, pct(status)))
+def find_record(num: str, name: str, source_path: str, expected: str) -> dict | None:
+    records = load_jsonl(Path(source_path))
+    target_num = norm_num(num)
+    target_name = name.strip().lower()
+    target_status = expected.strip().lower()
 
-total_pct = sum(row[4] for row in rows) / len(rows) if rows else 0.0
-done_count = sum(1 for row in rows if row[3] == "done")
-registered_or_better = sum(1 for row in rows if STATUS_ORDER.get(row[3], 0) >= 1)
+    for rec in records:
+        rec_num = norm_num(rec.get("pipeline_number", rec.get("pipeline_id", "")))
+        rec_name = str(rec.get("name", "")).strip().lower()
+        rec_status = str(rec.get("status", "")).strip().lower()
 
-print("=======================================================================")
-print("Worldwide Pipeline Expansion Progress")
-print("=======================================================================")
-print()
-for num, name, source_path, status, percent in rows:
-    label = status.upper()
-    print(f"{num}. [{label}] {name}")
-    print(f"    {source_path}")
-    print(f"    Phase progress: {percent:.1f}%")
-print()
-configured_count = sum(1 for row in rows if row[3] == "configured")
-print(f"Worldwide expansion registration progress: {registered_or_better}/{len(rows)} = {(registered_or_better/len(rows))*100:.1f}%")
-print(f"Worldwide expansion configuration progress: {configured_count}/{len(rows)} = {(configured_count/len(rows))*100:.1f}%")
-print(f"Worldwide expansion implementation progress: {done_count}/{len(rows)} = {(done_count/len(rows))*100:.1f}%")
-print(f"Overall Phase 2 progress score: {total_pct:.1f}%")
-print()
-print("Next worldwide build group:")
-print("1. WHO Disease Outbreak News")
-print("2. ReliefWeb / OCHA")
-print("3. GDACS")
-print("4. World Bank")
-print("5. IMF")
-print("6. EU Open Data Portal")
-print("7. ECDC")
-print()
-print("=======================================================================")
+        if rec_num == target_num and rec_name == target_name and rec_status == target_status:
+            return rec
+
+    return None
+
+
+def score_for_record(rec: dict | None, expected: str) -> float:
+    if not rec:
+        return 0.0
+
+    status = str(rec.get("status", expected)).strip().lower()
+    status_score = STATUS_PROGRESS.get(status, 0.0)
+
+    try:
+        record_score = float(rec.get("phase_progress", status_score))
+    except Exception:
+        record_score = status_score
+
+    return max(status_score, record_score)
+
+
+def main() -> None:
+    total = len(PIPELINES)
+    registered = 0
+    configured = 0
+    implemented = 0
+    score_sum = 0.0
+
+    print("Worldwide Phase 2 pipeline status")
+    print("=" * 71)
+    print()
+
+    for num, name, source_path, expected in PIPELINES:
+        rec = find_record(num, name, source_path, expected)
+        score = score_for_record(rec, expected)
+        score_sum += score
+
+        if score >= 20.0:
+            registered += 1
+        if score >= 60.0:
+            configured += 1
+        if score >= 80.0:
+            implemented += 1
+
+        print(f"{num}. [{expected.upper()}] {name}")
+        print(f"    {source_path}")
+        print(f"    Phase progress: {score:.1f}%")
+
+    overall = score_sum / total if total else 0.0
+
+    print()
+    print(f"Worldwide expansion registration progress: {registered}/{total} = {(registered / total * 100.0 if total else 0.0):.1f}%")
+    print(f"Worldwide expansion configuration progress: {configured}/{total} = {(configured / total * 100.0 if total else 0.0):.1f}%")
+    print(f"Worldwide expansion implementation progress: {implemented}/{total} = {(implemented / total * 100.0 if total else 0.0):.1f}%")
+    print(f"Overall Phase 2 progress score: {overall:.1f}%")
+    print()
+    print("Next worldwide build group:")
+    if implemented == total:
+        print("All worldwide Phase 2 pipelines are implemented at the registry/tracking layer.")
+        print("Next: validate adapters/source access in bounded batches before claiming live ingestion.")
+    else:
+        for num, name, _source_path, _expected in PIPELINES:
+            print(f"{int(num)}. {name}")
+
+
+if __name__ == "__main__":
+    main()
