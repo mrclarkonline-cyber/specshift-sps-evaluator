@@ -10,7 +10,7 @@
     "Git must be clean before celebration",
     "canonical landing remains wiki_landing"
   ],
-  "last_updated_at_utc": "2026-06-28T10:59:19.602677+00:00",
+  "last_updated_at_utc": "2026-06-28T11:00:32.304787+00:00",
   "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
   "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
@@ -143,12 +143,19 @@
       "wrapper": "~/WORK/tools/orchestra/bin/close_universe"
     },
     {
+      "artifact": "tools/status/provenance_vault.py",
       "boundary": "Local provenance record only. No public disclosure by default.",
       "command_target": "provenance_vault",
+      "completed_at_utc": "2026-06-28T11:00:32.304787+00:00",
+      "completion_note": "Provenance Vault created. It records local artifacts with SHA-256, timestamp, path, status, linked wiki page, git commit, and promotion history references.",
       "done_when": "provenance_vault records artifacts with hash, timestamp, path, public/private/protected/archive-caution status, wiki link, and promotion history.",
       "goal": "Every PDF, note, packet, and release gets SHA-256, timestamp, file path, status, linked wiki page, and promotion history.",
       "phase": "phase_24_local_provenance_vault",
-      "upgrade": "Local provenance vault"
+      "report_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault_report.json",
+      "status": "complete",
+      "upgrade": "Local provenance vault",
+      "vault_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault.jsonl",
+      "wrapper": "~/WORK/tools/orchestra/bin/provenance_vault"
     },
     {
       "boundary": "Visualization only. Source of truth remains registered JSON and trackers.",

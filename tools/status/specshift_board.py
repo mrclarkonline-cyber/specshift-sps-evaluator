@@ -66,6 +66,17 @@ def main() -> None:
     else:
         print("Kira engine missing")
 
+    section("Provenance Vault")
+    provenance_report = Path("memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault_report.json")
+    if provenance_report.exists():
+        data = load_json(provenance_report)
+        print(f"status: {data.get('status', 'unknown')}")
+        print(f"records created: {data.get('records_created', 'unknown')}")
+        print(f"vault: {data.get('vault_artifact', 'unknown')}")
+        print(f"report: {provenance_report}")
+    else:
+        print("Provenance Vault report missing")
+
     section("Close Universe")
     shutdown_state = Path("memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json")
     if shutdown_state.exists():

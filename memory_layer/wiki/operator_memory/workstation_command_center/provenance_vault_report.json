@@ -1,0 +1,12 @@
+{
+  "claim_boundary": "Provenance Vault records local artifact hashes, timestamps, paths, status, wiki links, and promotion references only. It does not publish, promote, certify, validate, or externally route artifacts.",
+  "created_at_utc": "2026-06-28T11:00:32.408203+00:00",
+  "engine": "provenance_vault_v1",
+  "missing_artifacts": [],
+  "records_created": 18,
+  "status": "complete",
+  "status_counts": {
+    "private": 18
+  },
+  "vault_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault.jsonl"
+}
