@@ -1,0 +1,25 @@
+{
+  "claim_boundary": "Data-room index is a local intake scaffold only. It does not publish, promote, certify, validate, or externally route client artifacts.",
+  "created_at_utc": "2026-06-28T12:32:23.907393+00:00",
+  "engine": "specshift_client_data_room_index_v1",
+  "records": [],
+  "schema": {
+    "fields": [
+      "index_id",
+      "artifact_name",
+      "artifact_class",
+      "classification",
+      "path_or_location",
+      "sha256",
+      "owner",
+      "received_at_utc",
+      "provenance_status",
+      "claim_gauntlet_status",
+      "promotion_gate_status",
+      "retention_status",
+      "linked_review_packet",
+      "notes"
+    ]
+  },
+  "status": "initialized"
+}

@@ -1,0 +1,151 @@
+{
+  "claim_boundary": "Client Phase 2 creates intake and data-room scaffolds only. It does not create legal advice, financial advice, binding contract terms, compliance certification, production monitoring, truth validation, or autonomous client action.",
+  "classification_rules": {
+    "archive_caution": "Preserved for provenance but not active use without review.",
+    "do_not_first_send": "Do not include in first outreach or early scoping packets.",
+    "do_not_send": "Do not send externally.",
+    "private": "Internal/client-confidential workflow artifact. Not public by default.",
+    "protected": "Sensitive or label-bearing artifact. No public promotion. Human/legal/security review may be required.",
+    "public": "Approved for public use only after Claim Gauntlet, Promotion Gate, provenance, and human review.",
+    "public_candidate": "May become public only after gate checks and human review."
+  },
+  "client_intake_checklist": [
+    {
+      "fields": [
+        "client_name",
+        "client_contact",
+        "organization",
+        "role",
+        "authorized_reviewer",
+        "decision_authority"
+      ],
+      "required": true,
+      "section": "client_identity"
+    },
+    {
+      "fields": [
+        "workflow_name",
+        "workflow_description",
+        "business_context",
+        "review_goal",
+        "known_failure_modes",
+        "human_reviewer_owner",
+        "systems_in_scope",
+        "systems_out_of_scope"
+      ],
+      "required": true,
+      "section": "workflow_scope"
+    },
+    {
+      "fields": [
+        "artifact_name",
+        "artifact_type",
+        "artifact_path_or_source",
+        "artifact_owner",
+        "collection_date",
+        "classification",
+        "retention_preference",
+        "redaction_status",
+        "provenance_notes"
+      ],
+      "required": true,
+      "section": "artifact_intake"
+    },
+    {
+      "fields": [
+        "buyer_retains_labels",
+        "label_owner",
+        "label_integrity_method",
+        "labels_available",
+        "ambiguous_category_allowed",
+        "human_adjudication_process"
+      ],
+      "required": true,
+      "section": "labels_and_ground_truth"
+    },
+    {
+      "fields": [
+        "delivery_format",
+        "deadline",
+        "reviewer_audience",
+        "public_facing_allowed",
+        "legal_review_required",
+        "security_review_required",
+        "procurement_or_payment_expected"
+      ],
+      "required": true,
+      "section": "delivery_constraints"
+    }
+  ],
+  "completed_at_utc": "2026-06-28T12:32:23.907393+00:00",
+  "data_room_index_schema": {
+    "fields": [
+      "index_id",
+      "artifact_name",
+      "artifact_class",
+      "classification",
+      "path_or_location",
+      "sha256",
+      "owner",
+      "received_at_utc",
+      "provenance_status",
+      "claim_gauntlet_status",
+      "promotion_gate_status",
+      "retention_status",
+      "linked_review_packet",
+      "notes"
+    ]
+  },
+  "data_room_index_seed": [],
+  "guardrails": [
+    "No protected method disclosure during intake.",
+    "No free pilot by default.",
+    "No code transfer.",
+    "No training rights.",
+    "No model internals required.",
+    "Buyer retains labels and final adjudication.",
+    "Use CPA/legal support if procurement, contract terms, budget, paid pilot, or money movement becomes real."
+  ],
+  "phase": "client_phase_2_intake_form_and_data_room_index",
+  "purpose": "Create client intake checklist, required artifacts, artifact classification rules, and a data-room index scaffold.",
+  "required_artifacts": [
+    {
+      "artifact_class": "observable_workflow_trace",
+      "classification_default": "private",
+      "description": "Visible sequence of workflow events, states, actions, or outputs.",
+      "required": true
+    },
+    {
+      "artifact_class": "claimed_final_state",
+      "classification_default": "private",
+      "description": "Claimed final ledger, workflow, task, payment, decision, or operational state.",
+      "required": true
+    },
+    {
+      "artifact_class": "review_labels",
+      "classification_default": "protected",
+      "description": "Buyer-retained labels or adjudication outcomes, if available.",
+      "required": false
+    },
+    {
+      "artifact_class": "scope_memo",
+      "classification_default": "private",
+      "description": "Written description of what is in and out of scope.",
+      "required": true
+    },
+    {
+      "artifact_class": "acceptance_criteria",
+      "classification_default": "private",
+      "description": "Pre-registered success criteria for any paid pilot or evaluation.",
+      "required": true
+    },
+    {
+      "artifact_class": "limitations_and_boundary_notes",
+      "classification_default": "public_candidate",
+      "description": "Known limitations, prohibited uses, and human-review requirements.",
+      "required": true
+    }
+  ],
+  "status": "complete",
+  "workplan": "specshift_client_intake_delivery_system"
+}

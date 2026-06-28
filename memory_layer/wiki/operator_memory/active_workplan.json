@@ -1,5 +1,5 @@
 {
-  "active_phase": "client_phase_2_intake_form_and_data_room_index",
+  "active_phase": "client_phase_3_provenance_and_claim_gate",
   "active_tracker": "tools/status/specshift_client_intake_delivery_progress.py",
   "active_workplan": "specshift_client_intake_delivery_system",
   "allowed_actions": [
@@ -31,9 +31,11 @@
     "weapons, targeting, surveillance, or harmful operationalization"
   ],
   "last_claim_gauntlet_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
+  "last_client_data_room_index": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_data_room_index.json",
+  "last_client_intake_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase2_intake_form_and_data_room_index.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "client_phase_1_scope_and_boundary_registration",
+  "last_completed_phase": "client_phase_2_intake_form_and_data_room_index",
   "last_completed_workplan": "workstation_forecast_negative_space_engine",
   "last_forecast_audit_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
   "last_forecast_candidate_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
@@ -45,8 +47,8 @@
   "last_promotion_gate_report": "memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json",
   "last_provenance_vault_report": "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault_report.json",
   "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
-  "last_updated_at_utc": "2026-06-28T12:30:34.353705+00:00",
-  "next_action": "Create client intake checklist, required artifacts, protected/private/public classifications, and data-room index.",
+  "last_updated_at_utc": "2026-06-28T12:32:23.907393+00:00",
+  "next_action": "Route client artifacts through provenance vault, claim gauntlet, and promotion gate.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
