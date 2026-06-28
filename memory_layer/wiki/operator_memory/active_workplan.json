@@ -1,5 +1,5 @@
 {
-  "active_phase": "professional_phase_2_viability_claim_matrix",
+  "active_phase": "professional_phase_3_financial_and_contract_thresholds",
   "active_tracker": "tools/status/professional_readiness_progress.py",
   "active_workplan": "professional_readiness_forensic_accounting_package",
   "allowed_actions": [
@@ -40,7 +40,7 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "professional_phase_1_forensic_index",
+  "last_completed_phase": "professional_phase_2_viability_claim_matrix",
   "last_completed_workplan": "specshift_client_intake_delivery_system",
   "last_forecast_audit_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
   "last_forecast_candidate_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
@@ -50,12 +50,13 @@
   "last_forecast_signal_inventory_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase2_signal_inventory_report.json",
   "last_phase_map_state": "memory_layer/wiki/operator_memory/workstation_command_center/phase_map_state.json",
   "last_professional_forensic_index": "memory_layer/wiki/operator_memory/professional_readiness/professional_forensic_artifact_index.json",
+  "last_professional_viability_claim_matrix": "memory_layer/wiki/operator_memory/professional_readiness/professional_viability_claim_matrix.json",
   "last_professional_viability_snapshot": "memory_layer/wiki/operator_memory/professional_readiness/professional_viability_snapshot.json",
   "last_promotion_gate_report": "memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json",
   "last_provenance_vault_report": "memory_layer/wiki/operator_memory/workstation_command_center/provenance_vault_report.json",
   "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
-  "last_updated_at_utc": "2026-06-28T13:02:03.381166+00:00",
-  "next_action": "Create a conservative viability claim matrix for lawyer/CPA review.",
+  "last_updated_at_utc": "2026-06-28T13:03:17.385768+00:00",
+  "next_action": "Prepare CPA/lawyer trigger thresholds, paid-pilot handling, no-free-pilot posture, and professional review questions.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
