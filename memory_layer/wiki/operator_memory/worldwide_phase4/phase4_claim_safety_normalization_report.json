@@ -1,0 +1,21 @@
+{
+  "by_category": {
+    "earth_and_environment": 8,
+    "global_news": 2,
+    "government_and_policy": 3,
+    "health_and_biosecurity": 2,
+    "infrastructure_and_economics": 3
+  },
+  "claim_boundary": "Phase 4 checks schema, provenance, language separation, uncertainty, category routing, and claim-safety labels only. It does not claim production monitoring, content validation, alert readiness, autonomous action, or truth resolution.",
+  "created_at_utc": "2026-06-28T09:26:15.280022+00:00",
+  "input_artifacts": [
+    "memory_layer/wiki/operator_memory/worldwide_phase3/live_sample_batch1/phase3_batch1_parsed_sample_records.jsonl",
+    "memory_layer/wiki/operator_memory/worldwide_phase3/live_sample_batch2/phase3_batch2_parsed_sample_records.jsonl"
+  ],
+  "normalized_records_artifact": "memory_layer/wiki/operator_memory/worldwide_phase4/phase4_claim_safety_normalized_records.jsonl",
+  "phase": "phase_4_worldwide_claim_safety_normalization",
+  "records_checked": 18,
+  "records_held": 0,
+  "records_passed": 18,
+  "status": "complete"
+}
