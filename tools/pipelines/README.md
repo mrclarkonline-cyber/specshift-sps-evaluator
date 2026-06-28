@@ -214,3 +214,27 @@ Scan:
 
 python3 tools/pipelines/claim_safety_gate.py --path reports/fast_relevance
 
+### specshift_buyer_trigger_watch.py
+
+Generates cautious SpecShift buyer-trigger triage from local source digests.
+
+Dry-run:
+
+python3 tools/pipelines/specshift_buyer_trigger_watch.py --dry-run
+
+Generate:
+
+python3 tools/pipelines/specshift_buyer_trigger_watch.py
+
+### finance_integrity_watch.py
+
+Generates finance-workflow relevance triage from local source digests.
+
+Dry-run:
+
+python3 tools/pipelines/finance_integrity_watch.py --dry-run
+
+Generate:
+
+python3 tools/pipelines/finance_integrity_watch.py
+
