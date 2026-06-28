@@ -66,6 +66,16 @@ def main() -> None:
     else:
         print("Kira engine missing")
 
+    section("Close Universe")
+    shutdown_state = Path("memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json")
+    if shutdown_state.exists():
+        data = load_json(shutdown_state)
+        print(f"status: {data.get('status', 'unknown')}")
+        print(f"tomorrow first task: {data.get('tomorrow_first_task', 'unknown')}")
+        print(f"state: {shutdown_state}")
+    else:
+        print("Close Universe state missing")
+
     section("Promotion Gate")
     promotion_report = Path("memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json")
     if promotion_report.exists():

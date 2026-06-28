@@ -10,7 +10,7 @@
     "Git must be clean before celebration",
     "canonical landing remains wiki_landing"
   ],
-  "last_updated_at_utc": "2026-06-28T10:57:41.650975+00:00",
+  "last_updated_at_utc": "2026-06-28T10:59:19.602677+00:00",
   "previous_completed_workplan": "worldwide_phase16_analytical_audit_layer",
   "purpose": "Upgrade the terminal from a repo/workflow runner into a civilian-safe command center with dashboarding, active workplan awareness, claim-safety gates, provenance vaulting, cockpit modes, and canonical landing behavior.",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
@@ -128,12 +128,19 @@
       "wrapper": "~/WORK/tools/orchestra/bin/promote_artifact"
     },
     {
+      "artifact": "tools/status/close_universe.py",
       "boundary": "Workflow shutdown only. No OS-level lockout.",
       "command_target": "close_universe",
+      "completed_at_utc": "2026-06-28T10:59:19.602677+00:00",
+      "completion_note": "close_universe created. It summarizes landed work, parked work, tomorrow's first task, and reminds that wiki_landing owns fireworks.",
       "done_when": "close_universe writes a shutdown note, parks unfinished work, shows tomorrow first task, and ends with wiki_landing.",
       "goal": "Show what landed, what is parked, tomorrow's first task, then lock into no-more-work mode with canonical landing.",
+      "log_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_log.jsonl",
       "phase": "phase_23_close_universe_shutdown",
-      "upgrade": "One-command nightly shutdown"
+      "state_artifact": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
+      "status": "complete",
+      "upgrade": "One-command nightly shutdown",
+      "wrapper": "~/WORK/tools/orchestra/bin/close_universe"
     },
     {
       "boundary": "Local provenance record only. No public disclosure by default.",

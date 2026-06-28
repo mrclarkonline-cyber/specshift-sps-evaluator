@@ -1,5 +1,5 @@
 {
-  "active_phase": "phase_23_close_universe_shutdown",
+  "active_phase": "phase_24_local_provenance_vault",
   "active_tracker": "tools/status/workstation_command_center_progress.py",
   "active_workplan": "workstation_command_center_upgrade",
   "allowed_actions": [
@@ -31,10 +31,11 @@
     "weapons, targeting, surveillance, or harmful operationalization"
   ],
   "last_claim_gauntlet_report": "memory_layer/wiki/operator_memory/workstation_command_center/claim_gauntlet_report.json",
-  "last_completed_phase": "phase_22_artifact_promotion_gate",
+  "last_completed_phase": "phase_23_close_universe_shutdown",
   "last_promotion_gate_report": "memory_layer/wiki/operator_memory/workstation_command_center/artifact_promotion_gate_report.json",
-  "last_updated_at_utc": "2026-06-28T10:57:41.650975+00:00",
-  "next_action": "Build close_universe to summarize landed work, parked work, tomorrow's first task, and end with wiki_landing.",
+  "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
+  "last_updated_at_utc": "2026-06-28T10:59:19.602677+00:00",
+  "next_action": "Build provenance_vault to record artifacts with SHA-256, timestamp, path, status, linked wiki page, and promotion history.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
