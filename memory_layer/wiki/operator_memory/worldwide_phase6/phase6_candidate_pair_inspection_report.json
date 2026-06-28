@@ -1,0 +1,22 @@
+{
+  "by_category": {
+    "earth_and_environment": 28,
+    "global_news": 1,
+    "government_and_policy": 3,
+    "health_and_biosecurity": 1,
+    "infrastructure_and_economics": 3
+  },
+  "by_source_type_diversity": {
+    "different_source_types": 18,
+    "same_source_type": 18
+  },
+  "claim_boundary": "Phase 6 inspects candidate-pair metadata only. It does not claim production monitoring, content validation, contradiction detection, agreement detection, corroboration, alert readiness, autonomous action, or truth resolution.",
+  "created_at_utc": "2026-06-28T09:29:17.244387+00:00",
+  "input_artifact": "memory_layer/wiki/operator_memory/worldwide_phase5/phase5_candidate_comparison_pairs.jsonl",
+  "inspection_held_pairs": 0,
+  "inspection_ready_pairs": 36,
+  "inspection_records_artifact": "memory_layer/wiki/operator_memory/worldwide_phase6/phase6_candidate_pair_inspection_records.jsonl",
+  "pairs_checked": 36,
+  "phase": "phase_6_worldwide_candidate_pair_inspection_scaffold",
+  "status": "complete"
+}
