@@ -1,0 +1,118 @@
+{
+  "claim_boundary": "This workplan prepares regulatory, certification, and procurement readiness scaffolding only. It does not claim certification, compliance, government approval, procurement approval, legal sufficiency, financial/tax approval, production monitoring, or truth validation.",
+  "core_goal": "Create a documentation and evidence scaffold showing governance, controls, boundaries, auditability, prohibited uses, human review, data handling, claim safety, and professional-review status without claiming certification, compliance, government approval, or procurement approval.",
+  "evidence_categories_to_prepare": [
+    "governance model",
+    "system boundary statement",
+    "allowed and prohibited uses",
+    "human review policy",
+    "data intake and retention policy",
+    "artifact provenance and hash inventory",
+    "claim safety and promotion gates",
+    "client delivery workflow",
+    "audit and closeout records",
+    "protected-method handling",
+    "professional-review trigger thresholds",
+    "incident/issue logging scaffold",
+    "versioning and change history"
+  ],
+  "follows": "professional_readiness_forensic_accounting_package",
+  "forbidden_claims": [
+    "government certified",
+    "regulator approved",
+    "compliant",
+    "procurement approved",
+    "enterprise ready",
+    "production monitoring certified",
+    "truth validation",
+    "automated compliance certification",
+    "legal sufficiency",
+    "financial/tax approval",
+    "risk eliminated",
+    "guaranteed safety"
+  ],
+  "likely_reference_categories": [
+    {
+      "category": "AI risk management frameworks",
+      "examples": [
+        "NIST AI Risk Management Framework",
+        "ISO/IEC 42001 AI management systems",
+        "enterprise AI governance controls"
+      ],
+      "safe_position": "Can map internal controls conceptually; not claiming certification or formal compliance."
+    },
+    {
+      "category": "high-risk AI documentation expectations",
+      "examples": [
+        "risk documentation",
+        "human oversight",
+        "traceability",
+        "data governance",
+        "post-market or post-deployment controls"
+      ],
+      "safe_position": "Can prepare documentation categories; not claiming regulator approval."
+    },
+    {
+      "category": "enterprise procurement diligence",
+      "examples": [
+        "security review",
+        "vendor onboarding",
+        "data handling",
+        "confidentiality",
+        "insurance",
+        "SOW/MSA/NDA review",
+        "audit trail"
+      ],
+      "safe_position": "Can prepare diligence packet index; lawyer/CPA/security review required before real submission."
+    },
+    {
+      "category": "professional audit and accounting readiness",
+      "examples": [
+        "artifact provenance",
+        "hashes",
+        "commit history",
+        "revenue/contract trigger thresholds",
+        "export packet index"
+      ],
+      "safe_position": "Professional-readiness package exists; not a CPA audit or legal opinion."
+    }
+  ],
+  "phases": [
+    {
+      "goal": "Define scope, likely standards/regulatory reference categories, evidence categories, and prohibited claims.",
+      "phase": "regulatory_phase_1_scope_and_standards_map",
+      "status": "complete"
+    },
+    {
+      "goal": "Inventory existing controls and evidence artifacts across command center, claim gates, provenance, client delivery, professional readiness, and audit layers.",
+      "phase": "regulatory_phase_2_control_evidence_inventory",
+      "status": "registered"
+    },
+    {
+      "goal": "Create governance-policy scaffolds for prohibited use, human review, data handling, retention, protected methods, and claim safety.",
+      "phase": "regulatory_phase_3_governance_and_policy_scaffold",
+      "status": "registered"
+    },
+    {
+      "goal": "Create enterprise/procurement-facing diligence index with safe artifacts, required reviews, and non-disclosure defaults.",
+      "phase": "regulatory_phase_4_procurement_due_diligence_packet",
+      "status": "registered"
+    },
+    {
+      "goal": "Create a gap analysis against likely certification/procurement expectations without claiming compliance.",
+      "phase": "regulatory_phase_5_certification_gap_analysis",
+      "status": "registered"
+    },
+    {
+      "goal": "Audit continuity, claim safety, export boundaries, and professional-review posture.",
+      "phase": "regulatory_phase_6_audit_and_closeout",
+      "status": "registered"
+    }
+  ],
+  "professional_review_boundary": "Any actual certification, procurement submission, compliance representation, legal claim, contract term, or money movement requires appropriate professional review.",
+  "purpose": "Prepare SpecShift for future regulator, certification body, insurer, enterprise procurement, or standards-based diligence requests.",
+  "registered_at_utc": "2026-06-28T13:10:34.965435+00:00",
+  "safe_overall_claim": "SpecShift is building documentation and evidence scaffolds to support future professional, procurement, certification, or regulatory diligence. It is not certified, regulator-approved, procurement-approved, or compliance-certified.",
+  "status": "in_progress",
+  "workplan": "regulatory_certification_procurement_readiness"
+}
