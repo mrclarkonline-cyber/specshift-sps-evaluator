@@ -1,7 +1,7 @@
 {
-  "active_phase": "specshift_buyer_safe_pilot_intake_delivery_lane_complete",
-  "active_tracker": "tools/status/specshift_buyer_safe_pilot_progress.py",
-  "active_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
+  "active_phase": "phase_1_artifact_intake_classifier",
+  "active_tracker": "tools/status/specshift_buyer_artifact_intake_progress.py",
+  "active_workplan": "specshift_buyer_artifact_intake_routing_intelligence",
   "allowed_actions": [
     "read active workplan state",
     "display tracker output",
@@ -14,8 +14,8 @@
   ],
   "blockers": [],
   "canonical_landing_command": "wiki_landing",
-  "claim_boundary": "Buyer-safe pilot lane is complete as an internal workflow scaffold only. It is not legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, or autonomous client action.",
-  "closure_rule": "Buyer-safe pilot lane complete. Register a new named workplan before additional capability work.",
+  "claim_boundary": "This workplan builds buyer artifact intake and routing intelligence only. It is a buyer-safe intake scaffold and does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, or hidden-mechanism claims.",
+  "closure_rule": "Complete all seven buyer artifact intake/routing phases and audit before treating the lane as intake-intelligence ready.",
   "command_center_metadata": {
     "board_command": "specshift_board",
     "house_rule": "Completed Terminal/repo/wiki Bash blocks end with wiki_landing.",
@@ -30,6 +30,7 @@
     "hardcoded phase guessing inside landing helpers",
     "weapons, targeting, surveillance, or harmful operationalization"
   ],
+  "last_buyer_artifact_intake_workplan": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/specshift_buyer_artifact_intake_routing_intelligence_workplan.json",
   "last_buyer_safe_pilot_closeout_report": "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/pilot_phase6_audit_closeout_report.json",
   "last_buyer_safe_pilot_workplan": "memory_layer/wiki/operator_memory/specshift_buyer_safe_pilot_intake/specshift_buyer_safe_pilot_intake_delivery_lane_workplan.json",
   "last_candidate_discrepancy_memo_template": "docs/workstation/buyer_safe_pilot/candidate_discrepancy_memo_template.md",
@@ -45,7 +46,7 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "pilot_phase_6_audit_and_closeout",
+  "last_completed_phase": "specshift_buyer_safe_pilot_intake_delivery_lane_complete",
   "last_completed_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
   "last_forecast_audit_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase6_audit_closeout_report.json",
   "last_forecast_candidate_report": "memory_layer/wiki/operator_memory/workstation_forecast_negative_space/forecast_phase4_descriptive_forecast_candidate_report.json",
@@ -77,16 +78,16 @@
   "last_shutdown_state": "memory_layer/wiki/operator_memory/workstation_command_center/close_universe_state.json",
   "last_terminal_capability_map": "memory_layer/wiki/operator_memory/terminal_capabilities/specshift_terminal_complete_capability_map.json",
   "last_terminal_capability_map_doc": "docs/workstation/specshift_terminal_complete_capability_map.md",
-  "last_updated_at_utc": "2026-06-28T22:22:56.348775+00:00",
-  "next_action": "Close or park this buyer-safe pilot work block before registering the next named workplan.",
+  "last_updated_at_utc": "2026-06-28T22:47:15.066627+00:00",
+  "next_action": "Create artifact_intake_classifier.py, artifact_intake_classifier.md, and sample fixtures for artifact classification.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
     "resume_action": ""
   },
   "phase16_status": "closed_at_100_percent",
-  "previous_tracker": "tools/status/regulatory_certification_readiness_progress.py",
-  "previous_workplan": "regulatory_certification_procurement_readiness",
+  "previous_tracker": "tools/status/specshift_buyer_safe_pilot_progress.py",
+  "previous_workplan": "specshift_buyer_safe_pilot_intake_delivery_lane",
   "queued_next_workplan": "specshift_client_intake_delivery_system",
   "registered_at_utc": "2026-06-28T10:45:09.333507+00:00",
   "risk_state": {
