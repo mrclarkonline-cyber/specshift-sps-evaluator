@@ -47,3 +47,26 @@ Planned:
 - arxiv_fetch.py
 - claim_safety_gate.py
 - daily_digest.py
+
+## Live-Capable Intake Tools
+
+### cisa_kev_fetch.py
+
+Fetches the CISA Known Exploited Vulnerabilities catalog for defensive awareness.
+
+Dry-run:
+
+python3 tools/pipelines/cisa_kev_fetch.py --dry-run
+
+Live fetch:
+
+python3 tools/pipelines/cisa_kev_fetch.py --limit 10
+
+Safety boundary:
+
+- defensive awareness only
+- no exploit generation
+- no attack chains
+- no active probing
+- no target-specific reconnaissance
+
