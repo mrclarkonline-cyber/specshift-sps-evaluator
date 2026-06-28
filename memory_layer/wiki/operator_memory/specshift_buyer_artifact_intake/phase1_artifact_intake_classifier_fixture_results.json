@@ -17,7 +17,7 @@
       "support_context": 1,
       "trace_data": 7
     },
-    "classified_at_utc": "2026-06-28T22:48:33.123961+00:00",
+    "classified_at_utc": "2026-06-28T23:01:43.246131+00:00",
     "decision": "ACCEPT",
     "engine": "artifact_intake_classifier_v1",
     "expected_artifact_type": "trace_data",
@@ -49,7 +49,7 @@
       "support_context": 0,
       "trace_data": 0
     },
-    "classified_at_utc": "2026-06-28T22:48:33.124526+00:00",
+    "classified_at_utc": "2026-06-28T23:01:43.246258+00:00",
     "decision": "ACCEPT",
     "engine": "artifact_intake_classifier_v1",
     "expected_artifact_type": "final_state_claim",
@@ -81,7 +81,7 @@
       "support_context": 0,
       "trace_data": 1
     },
-    "classified_at_utc": "2026-06-28T22:48:33.125030+00:00",
+    "classified_at_utc": "2026-06-28T23:01:43.246277+00:00",
     "decision": "HOLD_FOR_REVIEW",
     "engine": "artifact_intake_classifier_v1",
     "expected_artifact_type": "buyer_retained_label_file",
@@ -111,7 +111,7 @@
       "support_context": 7,
       "trace_data": 1
     },
-    "classified_at_utc": "2026-06-28T22:48:33.125495+00:00",
+    "classified_at_utc": "2026-06-28T23:01:43.246299+00:00",
     "decision": "ACCEPT",
     "engine": "artifact_intake_classifier_v1",
     "expected_artifact_type": "support_context",
@@ -142,7 +142,7 @@
       "support_context": 0,
       "trace_data": 0
     },
-    "classified_at_utc": "2026-06-28T22:48:33.125930+00:00",
+    "classified_at_utc": "2026-06-28T23:01:43.246314+00:00",
     "decision": "REJECT",
     "engine": "artifact_intake_classifier_v1",
     "expected_artifact_type": "prohibited_internal_material",
@@ -173,7 +173,7 @@
       "support_context": 0,
       "trace_data": 1
     },
-    "classified_at_utc": "2026-06-28T22:48:33.126349+00:00",
+    "classified_at_utc": "2026-06-28T23:01:43.246333+00:00",
     "decision": "NEEDS_REDACTION",
     "engine": "artifact_intake_classifier_v1",
     "expected_artifact_type": "trace_data",
@@ -208,7 +208,7 @@
       "support_context": 0,
       "trace_data": 0
     },
-    "classified_at_utc": "2026-06-28T22:48:33.126781+00:00",
+    "classified_at_utc": "2026-06-28T23:01:43.246349+00:00",
     "decision": "HOLD_FOR_REVIEW",
     "engine": "artifact_intake_classifier_v1",
     "expected_artifact_type": "out_of_scope_material",

@@ -160,12 +160,59 @@ def score_classes(text: str) -> dict[str, int]:
         scores[artifact_class] = score
     return scores
 
-def choose_class(scores: dict[str, int]) -> str:
+def choose_class(scores: dict[str, int], text: str = "") -> str:
     # Safety-first tie breakers.
     if scores.get("prohibited_internal_material", 0) > 0:
         return "prohibited_internal_material"
     if scores.get("out_of_scope_material", 0) > 0:
         return "out_of_scope_material"
+
+    low = normalize(text)
+
+    trace_score = scores.get("trace_data", 0)
+    support_score = scores.get("support_context", 0)
+    label_score = scores.get("buyer_retained_label_file", 0)
+    final_score = scores.get("final_state_claim", 0)
+
+    # Buyer labels are special because they must remain buyer-controlled.
+    if label_score > 0 and label_score >= trace_score and label_score >= support_score:
+        return "buyer_retained_label_file"
+
+    # Field dictionaries, schemas, redaction notes, and pseudonymization notes
+    # are support context even when they mention trace exports.
+    support_priority_terms = [
+        "field dictionary",
+        "data dictionary",
+        "schema",
+        "scope memo",
+        "redaction",
+        "pseudonymization",
+        "mapping",
+        "glossary",
+    ]
+    if support_score > 0 and any(term in low for term in support_priority_terms):
+        if support_score >= trace_score:
+            return "support_context"
+
+    # Trace exports often include claimed/final-state fields.
+    # If the artifact is visibly a trace/export/event-log, route it as trace_data
+    # rather than misclassifying it as only a final-state claim.
+    trace_priority_terms = [
+        "observable trace",
+        "trace export",
+        "workflow_events",
+        "workflow events",
+        "event log",
+        "events export",
+        "csv export",
+        "jsonl",
+        "sequence",
+        "timestamp",
+        "state transition",
+    ]
+    if trace_score > 0 and any(term in low for term in trace_priority_terms):
+        if trace_score >= support_score or final_score > trace_score:
+            return "trace_data"
 
     ranked = sorted(scores.items(), key=lambda item: (-item[1], item[0]))
     if not ranked or ranked[0][1] == 0:
@@ -220,7 +267,7 @@ def boundary_warnings(artifact_class: str, needs_redaction: bool) -> list[str]:
 def classify(description: str, filename: str = "") -> dict[str, Any]:
     text = f"{filename}\n{description}"
     scores = score_classes(text)
-    artifact_class = choose_class(scores)
+    artifact_class = choose_class(scores, text)
     needs_redaction = redaction_needed(text)
 
     decision = DECISION_RULES.get(artifact_class, "HOLD_FOR_REVIEW")

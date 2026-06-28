@@ -1,0 +1,9 @@
+{
+  "artifact": "tools/pilot_intake/artifact_intake_classifier.py",
+  "claim_boundary": "Classifier precedence repair only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "fix": "Added support-context precedence for field dictionary, schema, scope memo, redaction, pseudonymization, mapping, and glossary artifacts before trace-priority routing.",
+  "issue": "Support-context artifacts mentioning observable trace exports were classified as trace_data.",
+  "phase": "phase_7_audit_and_closeout",
+  "repaired_at_utc": "2026-06-28T23:01:43.102252+00:00",
+  "status": "repair_applied"
+}
