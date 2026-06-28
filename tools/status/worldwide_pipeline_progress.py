@@ -2,13 +2,13 @@
 from pathlib import Path
 
 PIPELINES = [
-    ("01", "WHO Disease Outbreak News", "docs/workstation/worldwide_source_expansion_backlog.md", "registered"),
-    ("02", "ReliefWeb / OCHA", "docs/workstation/worldwide_source_expansion_backlog.md", "registered"),
-    ("03", "GDACS", "docs/workstation/worldwide_source_expansion_backlog.md", "registered"),
-    ("04", "World Bank Open Data", "docs/workstation/worldwide_pipeline_expansion_registry.md", "registered"),
-    ("05", "IMF Data", "docs/workstation/worldwide_pipeline_expansion_registry.md", "registered"),
-    ("06", "EU Open Data Portal", "docs/workstation/worldwide_pipeline_expansion_registry.md", "registered"),
-    ("07", "ECDC", "docs/workstation/worldwide_pipeline_expansion_registry.md", "registered"),
+    ("01", "WHO Disease Outbreak News", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
+    ("02", "ReliefWeb / OCHA", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
+    ("03", "GDACS", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
+    ("04", "World Bank Open Data", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
+    ("05", "IMF Data", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
+    ("06", "EU Open Data Portal", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
+    ("07", "ECDC", "configs/worldwide_sources/phase2_group1_sources.json", "configured"),
     ("08", "BBC World Service RSS verification", "docs/workstation/worldwide_source_expansion_backlog.md", "registered"),
     ("09", "Deutsche Welle RSS verification", "docs/workstation/worldwide_source_expansion_backlog.md", "registered"),
     ("10", "Canada Open Government", "docs/workstation/worldwide_pipeline_expansion_registry.md", "registered"),
@@ -63,6 +63,7 @@ PIPELINES = [
 STATUS_ORDER = {
     "missing": 0,
     "registered": 1,
+    "configured": 1.625,
     "verify-first": 1,
     "bias-flag-required": 1,
     "official-claim-only": 1,
@@ -105,7 +106,9 @@ for num, name, source_path, status, percent in rows:
     print(f"    {source_path}")
     print(f"    Phase progress: {percent:.1f}%")
 print()
+configured_count = sum(1 for row in rows if row[3] == "configured")
 print(f"Worldwide expansion registration progress: {registered_or_better}/{len(rows)} = {(registered_or_better/len(rows))*100:.1f}%")
+print(f"Worldwide expansion configuration progress: {configured_count}/{len(rows)} = {(configured_count/len(rows))*100:.1f}%")
 print(f"Worldwide expansion implementation progress: {done_count}/{len(rows)} = {(done_count/len(rows))*100:.1f}%")
 print(f"Overall Phase 2 progress score: {total_pct:.1f}%")
 print()
