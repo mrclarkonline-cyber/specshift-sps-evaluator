@@ -1,6 +1,6 @@
 # Pipeline Tools
 
-Date created: 2026-06-27
+Date updated: 2026-06-27
 Status: Early implementation
 Scope: Local validation and status tools for the workstation pipeline plan.
 
@@ -18,6 +18,14 @@ It does not require credentials.
 
 It does not mutate source files.
 
+### source_health_check.py
+
+Reports local source-health readiness from the registry.
+
+This is also local-only.
+
+It reserves future live health fields but does not fetch network sources yet.
+
 ## Design Rule
 
 No harvesting before:
@@ -27,14 +35,15 @@ No harvesting before:
 3. unified schema exists
 4. safety guardrails exist
 5. workstation status command exists
+6. source health baseline passes
 
 ## Next Tools
 
 Planned:
 
-- source_health_check.py
-- claim_safety_gate.py
-- daily_digest.py
 - cisa_kev_fetch.py
 - usgs_earthquake_fetch.py
 - federal_register_fetch.py
+- arxiv_fetch.py
+- claim_safety_gate.py
+- daily_digest.py
