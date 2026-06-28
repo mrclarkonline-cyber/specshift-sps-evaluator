@@ -114,3 +114,27 @@ Safety boundary:
 - primary source link required
 - no automated operational changes
 
+### arxiv_fetch.py
+
+Fetches arXiv research records for public research awareness.
+
+Dry-run:
+
+python3 tools/pipelines/arxiv_fetch.py --dry-run
+
+Live fetch:
+
+python3 tools/pipelines/arxiv_fetch.py --limit 10
+
+Focused search:
+
+python3 tools/pipelines/arxiv_fetch.py --limit 10 --search-term "agent reliability"
+
+Safety boundary:
+
+- research awareness only
+- arXiv records are preprints / author-submitted records
+- not peer-reviewed by default
+- no validated conclusion from one record
+- no medical/legal/commercial validation claims
+
