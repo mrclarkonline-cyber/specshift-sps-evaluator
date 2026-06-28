@@ -1,0 +1,107 @@
+{
+  "category_counts": {
+    "earth_and_environment": 8,
+    "global_news": 2,
+    "government_and_policy": 3,
+    "health_and_biosecurity": 2,
+    "infrastructure_and_economics": 3
+  },
+  "category_density": {
+    "earth_and_environment": {
+      "candidate_pair_count": 28,
+      "pair_density_ratio": 1.0,
+      "possible_pair_count": 28.0,
+      "record_count": 8
+    },
+    "global_news": {
+      "candidate_pair_count": 1,
+      "pair_density_ratio": 1.0,
+      "possible_pair_count": 1.0,
+      "record_count": 2
+    },
+    "government_and_policy": {
+      "candidate_pair_count": 3,
+      "pair_density_ratio": 1.0,
+      "possible_pair_count": 3.0,
+      "record_count": 3
+    },
+    "health_and_biosecurity": {
+      "candidate_pair_count": 1,
+      "pair_density_ratio": 1.0,
+      "possible_pair_count": 1.0,
+      "record_count": 2
+    },
+    "infrastructure_and_economics": {
+      "candidate_pair_count": 3,
+      "pair_density_ratio": 1.0,
+      "possible_pair_count": 3.0,
+      "record_count": 3
+    }
+  },
+  "claim_boundary": "Phase 12 uses descriptive metadata math only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, validated anomaly detection, alert readiness, autonomous action, or truth resolution.",
+  "created_at_utc": "2026-06-28T09:41:49.244855+00:00",
+  "math_records_artifact": "memory_layer/wiki/operator_memory/worldwide_phase12/phase12_advanced_math_metric_records.jsonl",
+  "metrics_created": 20,
+  "negative_space_counts": {
+    "missing_expected_category": 2
+  },
+  "packet_category_counts": {
+    "earth_and_environment": 28,
+    "global_news": 1,
+    "government_and_policy": 3,
+    "health_and_biosecurity": 1,
+    "infrastructure_and_economics": 3
+  },
+  "pair_category_counts": {
+    "earth_and_environment": 28,
+    "global_news": 1,
+    "government_and_policy": 3,
+    "health_and_biosecurity": 1,
+    "infrastructure_and_economics": 3
+  },
+  "pattern_type_counts": {
+    "candidate_pair_density_by_category": 3,
+    "category_recurrence": 5,
+    "claim_safety_label_recurrence": 1,
+    "indexed_packet_category_cluster": 3,
+    "review_packet_category_cluster": 3,
+    "source_type_diversity_cluster": 2,
+    "source_type_recurrence": 3,
+    "uncertainty_label_recurrence": 1
+  },
+  "phase": "phase_12_worldwide_advanced_math_overlay",
+  "records_analyzed": {
+    "phase10_candidate_patterns": 21,
+    "phase11_negative_space_candidates": 2,
+    "phase4_normalized_records": 18,
+    "phase5_candidate_pairs": 36,
+    "phase6_inspection_records": 36,
+    "phase7_review_packets": 36
+  },
+  "source_graph_degree": {
+    "Africa CDC": 1,
+    "BBC World Service RSS verification": 1,
+    "BMKG Indonesia": 7,
+    "Canada Open Government": 2,
+    "Deutsche Welle RSS verification": 1,
+    "ECMWF": 7,
+    "GDACS": 7,
+    "Geonet NZ": 7,
+    "Geoscience Australia": 7,
+    "IMF Data": 2,
+    "INEGI": 2,
+    "JMA": 7,
+    "PAHO": 1,
+    "Singapore NEA": 7,
+    "Smithsonian Global Volcanism Program": 7,
+    "World Bank Open Data": 2,
+    "data.gov.au": 2,
+    "data.gov.uk": 2
+  },
+  "source_type_counts": {
+    "api": 11,
+    "rss": 5,
+    "web": 2
+  },
+  "status": "complete"
+}

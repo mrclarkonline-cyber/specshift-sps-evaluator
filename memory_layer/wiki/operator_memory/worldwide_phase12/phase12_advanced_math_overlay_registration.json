@@ -1,0 +1,29 @@
+{
+  "allowed_methods": [
+    "category/source count vectors",
+    "Shannon entropy",
+    "normalized entropy",
+    "pair-density ratios",
+    "source-type diversity ratios",
+    "simple graph degree summaries",
+    "metadata concentration flags",
+    "review-priority candidate labels"
+  ],
+  "claim_boundary": "Phase 12 uses descriptive metadata math only. It does not claim production monitoring, content validation, contradiction detection, causal inference, prediction, validated anomaly detection, alert readiness, autonomous action, or truth resolution.",
+  "forbidden_outputs": [
+    "prediction claims",
+    "causal inference",
+    "validated anomaly claims",
+    "truth resolution",
+    "alert readiness",
+    "autonomous action recommendations",
+    "production monitoring claims"
+  ],
+  "phase": "phase_12_worldwide_advanced_math_overlay",
+  "phase12_goal": "Compute graph, entropy, density, diversity, and concentration summaries over normalized records, candidate pairs, inspection records, review packets, Phase 10 patterns, and Phase 11 negative-space candidates.",
+  "previous_phase": "phase_11_worldwide_negative_space_pattern_layer",
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Apply bounded descriptive mathematical overlays to worldwide metadata artifacts without claiming prediction, causality, validated anomaly detection, or truth resolution.",
+  "registered_at_utc": "2026-06-28T09:41:49.244855+00:00",
+  "status": "registered"
+}
