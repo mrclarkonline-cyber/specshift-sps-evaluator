@@ -1,0 +1,13 @@
+[
+  {
+    "actor_system": "system_or_actor_pseudonym",
+    "claimed_output": "visible_output_or_claimed_result",
+    "final_state": "claimed_final_state_if_available",
+    "input_context": "visible_input_or_trigger_summary",
+    "notes": "limitations_or_review_notes",
+    "observable_evidence": "source_row_or_trace_reference",
+    "step_action": "visible_action_or_event",
+    "timestamp": "2026-01-01T00:00:00Z",
+    "trace_id": "trace-001"
+  }
+]

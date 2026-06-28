@@ -1,0 +1,2 @@
+trace_id,timestamp,actor_system,step_action,input_context,claimed_output,final_state,observable_evidence,notes
+trace-001,2026-01-01T00:00:00Z,system_or_actor_pseudonym,visible_action_or_event,visible_input_or_trigger_summary,visible_output_or_claimed_result,claimed_final_state_if_available,source_row_or_trace_reference,limitations_or_review_notes

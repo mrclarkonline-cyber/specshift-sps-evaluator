@@ -1,0 +1,31 @@
+{
+  "canonical_fields": [
+    "trace_id",
+    "timestamp",
+    "actor_system",
+    "step_action",
+    "input_context",
+    "claimed_output",
+    "final_state",
+    "observable_evidence",
+    "notes"
+  ],
+  "claim_boundary": "Trace schema normalization only. This converts accepted observable trace artifacts into a standard review shape. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "engine": "trace_schema_normalizer_v1",
+  "field_mapping": {
+    "actor_system": "system",
+    "claimed_output": "response",
+    "final_state": "completion_status",
+    "input_context": "request",
+    "notes": "notes",
+    "step_action": "event_type",
+    "timestamp": "event_time",
+    "trace_id": "record_id"
+  },
+  "input_path": "tests/fixtures/pilot_intake/sample_buyer_trace.csv",
+  "missing_canonical_fields": [],
+  "normalized_at_utc": "2026-06-28T22:51:19.083687+00:00",
+  "output_path": "tests/fixtures/pilot_intake/sample_normalized_trace.json",
+  "rows_in": 2,
+  "rows_out": 2
+}

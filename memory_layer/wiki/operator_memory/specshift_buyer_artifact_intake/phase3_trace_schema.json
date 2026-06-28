@@ -1,0 +1,55 @@
+{
+  "boundary": "Only accepted observable trace artifacts should be normalized. Do not normalize protected/internal material, unredacted regulated data, source code, model weights, private prompts, hidden activations, or private chain-of-thought.",
+  "claim_boundary": "Trace schema only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "created_at_utc": "2026-06-28T22:51:19.080822+00:00",
+  "fields": [
+    {
+      "description": "Stable trace, case, record, workflow, ticket, or generated row identifier.",
+      "field": "trace_id",
+      "required": true
+    },
+    {
+      "description": "Observable event time, sequence time, or ordered step marker.",
+      "field": "timestamp",
+      "required": false
+    },
+    {
+      "description": "Visible actor, system, service, component, or pseudonymized identifier.",
+      "field": "actor_system",
+      "required": false
+    },
+    {
+      "description": "Visible workflow step, action, event type, operation, or state transition.",
+      "field": "step_action",
+      "required": true
+    },
+    {
+      "description": "Visible input, request, trigger, context, or input summary if available.",
+      "field": "input_context",
+      "required": false
+    },
+    {
+      "description": "Visible output, response, result, or claimed result if available.",
+      "field": "claimed_output",
+      "required": false
+    },
+    {
+      "description": "Claimed final state, status, completion state, ledger/payment state, or endpoint if available.",
+      "field": "final_state",
+      "required": false
+    },
+    {
+      "description": "Source row, log reference, trace reference, or supporting observable record.",
+      "field": "observable_evidence",
+      "required": true
+    },
+    {
+      "description": "Limitations, review notes, redaction notes, or other bounded context.",
+      "field": "notes",
+      "required": false
+    }
+  ],
+  "purpose": "Standard review shape for accepted buyer-exported observable traces.",
+  "schema": "specshift_normalized_trace_v1",
+  "status": "complete"
+}
