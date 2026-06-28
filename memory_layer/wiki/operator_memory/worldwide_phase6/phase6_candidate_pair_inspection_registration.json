@@ -1,0 +1,23 @@
+{
+  "claim_boundary": "Phase 6 registration only. This does not claim production monitoring, content validation, contradiction detection, agreement detection, alert readiness, autonomous action, or truth resolution.",
+  "phase": "phase_6_worldwide_candidate_pair_inspection_scaffold",
+  "phase6_goal": "Inspect candidate pairs for metadata comparability: category match, source-type diversity, retrieval timestamp presence, uncertainty-label preservation, claim-boundary preservation, and whether later human review would be meaningful.",
+  "previous_phase": "phase_5_worldwide_cross_source_comparison_runway",
+  "previous_phase_artifacts": [
+    "memory_layer/wiki/operator_memory/worldwide_phase5/phase5_cross_source_comparison_readiness_report.json",
+    "memory_layer/wiki/operator_memory/worldwide_phase5/phase5_candidate_comparison_pairs.jsonl"
+  ],
+  "previous_phase_status": "complete_at_100_percent",
+  "purpose": "Move from candidate comparison pairs to bounded metadata-level pair inspection without claiming agreement, contradiction, corroboration, or truth.",
+  "registered_at_utc": "2026-06-28T09:28:33.969628+00:00",
+  "required_gates": [
+    "Gate 1: load Phase 5 candidate pairs only",
+    "Gate 2: verify both sides preserve source provenance",
+    "Gate 3: verify same-category pairing",
+    "Gate 4: label source-type diversity",
+    "Gate 5: preserve uncertainty and claim-safety labels",
+    "Gate 6: mark pair as inspection-ready or held",
+    "Gate 7: no contradiction detection, agreement detection, truth resolution, alerts, or production monitoring"
+  ],
+  "status": "registered"
+}
