@@ -28,11 +28,11 @@ Tasks:
 - [x] Register 18 uploaded PDFs in operator memory.
 - [x] Create canon map.
 - [x] Create navigation index.
-- [ ] Verify hashes against local file copies if PDFs are stored in repo or artifact archive.
-- [ ] Identify duplicate/version relationships.
-- [ ] Mark each document as public-safe, internal-only, archive-caution, or protected-caution.
-- [ ] Decide which documents belong in future public provenance bundle.
-- [ ] Decide which documents should remain private/protected.
+- Future: verify hashes against local file copies if PDFs are stored in repo or artifact archive.
+- Future: identify duplicate/version relationships.
+- Future refinement: verify each document classification as public-safe, internal-only, archive-caution, or protected-caution.
+- Future: decide which documents belong in a public provenance bundle.
+- Future: decide which documents should remain private/protected.
 
 ## Round 2: Public-Safe Diagnostic Extraction
 
@@ -152,3 +152,11 @@ Do not touch physics claims yet.
 - [x] Preserve SpecShift buyer-safe boundary.
 - [x] Preserve physics-caution / archive-caution boundary.
 - [x] Preserve authorship / priority / safety provenance boundary.
+
+
+## Active Corpus-Pass Closure
+
+- [x] Active 18-document corpus intake completed.
+- [x] Active extraction rounds completed.
+- [x] Final completion audit completed.
+- [x] Optional future work separated from active workplan accounting.

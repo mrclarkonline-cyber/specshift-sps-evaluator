@@ -146,3 +146,17 @@ Result:
 - SpecShift boundary integration complete
 
 Next optional action: outward-facing artifact cleanup only when needed for reviewer, buyer, or public release.
+
+## 2026-06-27 - ∆∆F corpus workplan closure
+
+Closed the active 18-document corpus-pass workplan.
+
+Created:
+
+- `memory_layer/wiki/operator_memory/ddf_corpus_workplan_closure_2026-06-27.md`
+
+Result:
+
+- active intake and extraction pass complete
+- optional future work preserved as backlog, not counted as unfinished active corpus-pass work
+- public/private and claim-safety boundaries preserved

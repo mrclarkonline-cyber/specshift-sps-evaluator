@@ -83,3 +83,7 @@ Promotion status: Operational
 ### ∆∆F Corpus Completion
 
 - [∆∆F Corpus Completion Audit](operator_memory/ddf_corpus_completion_audit_2026-06-27.md)
+
+### ∆∆F Corpus Closure
+
+- [∆∆F Corpus Workplan Closure](operator_memory/ddf_corpus_workplan_closure_2026-06-27.md)
