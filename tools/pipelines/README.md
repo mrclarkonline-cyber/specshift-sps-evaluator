@@ -257,3 +257,23 @@ Safety boundary:
 - does not infer intent or cause
 - requires human review
 
+### claim_overstatement_detector.py
+
+Generates a local claim-overstatement watch from generated source digests.
+
+Dry-run:
+
+python3 tools/pipelines/claim_overstatement_detector.py --dry-run
+
+Generate:
+
+python3 tools/pipelines/claim_overstatement_detector.py
+
+Safety boundary:
+
+- language-control guardrail only
+- does not adjudicate truth
+- does not infer cause or intent
+- recommends bounded wording downgrades
+- human review required
+
