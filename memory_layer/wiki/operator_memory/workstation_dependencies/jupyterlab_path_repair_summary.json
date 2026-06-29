@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "issue": "Plain jupyter-lab is shadowed by a user-local install.",
+  "repair": "Added tools/bin/specshift_jupyterlab launcher that directly runs Homebrew JupyterLab.",
+  "homebrew_jupyterlab_path": "/opt/homebrew/opt/jupyterlab/bin/jupyter-lab",
+  "launcher": "tools/bin/specshift_jupyterlab",
+  "rule": "Do not mutate global Python packages or delete user-local Jupyter files unless specifically needed.",
+  "claim_boundary": "Workstation path repair only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim."
+}

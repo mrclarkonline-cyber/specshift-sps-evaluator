@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+HB_JUPYTER="/opt/homebrew/opt/jupyterlab/bin/jupyter-lab"
+
+if [ ! -x "$HB_JUPYTER" ]; then
+  echo "Homebrew JupyterLab not found at: $HB_JUPYTER"
+  echo "Install or repair with: brew install jupyterlab"
+  exit 1
+fi
+
+exec "$HB_JUPYTER" "$@"
