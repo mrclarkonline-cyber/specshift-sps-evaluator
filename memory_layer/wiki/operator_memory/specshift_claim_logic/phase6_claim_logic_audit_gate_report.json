@@ -1,0 +1,19 @@
+{
+  "ambiguous_review_supported": true,
+  "artifacts": [
+    "tools/claim_logic/claim_logic_audit_gate.py",
+    "docs/workstation/claim_logic/claim_logic_audit_gate.md",
+    "tests/fixtures/claim_logic/audit_gate/safe_non_claims.md",
+    "tests/fixtures/claim_logic/audit_gate/unsafe_assertions.md",
+    "tests/fixtures/claim_logic/audit_gate/ambiguous_review.md",
+    "memory_layer/wiki/operator_memory/specshift_claim_logic/phase6_claim_logic_audit_gate_test_results.json"
+  ],
+  "claim_boundary": "Phase 6 integrates claim logic with audit gates only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-29T00:27:29.877169+00:00",
+  "fail_on_review_supported": true,
+  "phase": "phase_6_integrate_claim_logic_with_audit_gates",
+  "safe_fixture_passed": true,
+  "status": "complete",
+  "test_before_complete_rule": "passed before workplan update",
+  "unsafe_fixture_blocked": true
+}

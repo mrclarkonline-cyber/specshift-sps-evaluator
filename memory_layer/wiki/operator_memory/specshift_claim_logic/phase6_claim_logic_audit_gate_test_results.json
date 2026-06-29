@@ -1,0 +1,30 @@
+{
+  "ambiguous_fail_on_review": {
+    "passed": true,
+    "returncode": 1,
+    "review_count": 1,
+    "status": "review_fail"
+  },
+  "ambiguous_fixture": {
+    "passed": true,
+    "returncode": 0,
+    "review_count": 1,
+    "status": "review"
+  },
+  "claim_boundary": "Phase 6 claim logic audit-gate test only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "phase": "phase_6_integrate_claim_logic_with_audit_gates",
+  "safe_fixture": {
+    "blocked_count": 0,
+    "passed": true,
+    "returncode": 0,
+    "status": "pass"
+  },
+  "status": "pass",
+  "tested_at_utc": "2026-06-29T00:27:29.877169+00:00",
+  "unsafe_fixture": {
+    "blocked_count": 4,
+    "passed": true,
+    "returncode": 1,
+    "status": "fail"
+  }
+}

@@ -11,7 +11,7 @@
   ],
   "core_rule": "The word is not the risk. The claimed authority is the risk.",
   "follows": "specshift_buyer_artifact_simulator_pilot_readiness_score",
-  "last_updated_at_utc": "2026-06-29T00:26:24.306856+00:00",
+  "last_updated_at_utc": "2026-06-29T00:27:29.877169+00:00",
   "phases": [
     {
       "artifacts": [
@@ -79,9 +79,20 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "tools/claim_logic/claim_logic_audit_gate.py",
+        "docs/workstation/claim_logic/claim_logic_audit_gate.md",
+        "tests/fixtures/claim_logic/audit_gate/safe_non_claims.md",
+        "tests/fixtures/claim_logic/audit_gate/unsafe_assertions.md",
+        "tests/fixtures/claim_logic/audit_gate/ambiguous_review.md",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase6_claim_logic_audit_gate_test_results.json",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase6_claim_logic_audit_gate_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T00:27:29.877169+00:00",
+      "completion_note": "Claim logic audit gate created; safe denials pass, unsafe claims block, ambiguous items review, and fail-on-review is supported.",
       "goal": "Use claim logic in audit/closeout gates without punishing safe non-claims.",
       "phase": "phase_6_integrate_claim_logic_with_audit_gates",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Audit claim logic fixtures, integrations, and boundary behavior before closeout.",
