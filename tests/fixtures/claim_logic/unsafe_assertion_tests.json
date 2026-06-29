@@ -1,0 +1,98 @@
+[
+  {
+    "case_id": "we_certify_compliance",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_CERTIFICATION",
+    "text": "We certify that your AI is compliant."
+  },
+  {
+    "case_id": "can_certify_compliance",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_CERTIFICATION",
+    "text": "We can certify compliance for this workflow."
+  },
+  {
+    "case_id": "compliance_certified",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_CERTIFICATION",
+    "text": "This system is compliance certified."
+  },
+  {
+    "case_id": "certifies_compliance",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_CERTIFICATION",
+    "text": "This report certifies compliance."
+  },
+  {
+    "case_id": "we_validate_production_safety",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_ASSERTION",
+    "text": "SpecShift validates production safety."
+  },
+  {
+    "case_id": "we_prove_safe",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_ASSERTION",
+    "text": "We prove the agent is safe."
+  },
+  {
+    "case_id": "production_validated",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_ASSERTION",
+    "text": "The workflow is production validated."
+  },
+  {
+    "case_id": "truth_validated",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_ASSERTION",
+    "text": "The model output is truth validated."
+  },
+  {
+    "case_id": "guaranteed_detection",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_ASSERTION",
+    "text": "SpecShift guarantees detection of deceptive behavior."
+  },
+  {
+    "case_id": "automated_verdict_pass",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_VERDICT",
+    "text": "Automated verdict: pass."
+  },
+  {
+    "case_id": "verdict_approved",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_VERDICT",
+    "text": "Verdict: approved."
+  },
+  {
+    "case_id": "we_determine_legal_state",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_VERDICT",
+    "text": "We determine that the system is legally defensible."
+  },
+  {
+    "case_id": "model_intended_to_deceive",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_HIDDEN_MECHANISM",
+    "text": "The model intended to deceive."
+  },
+  {
+    "case_id": "hidden_intent",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_HIDDEN_MECHANISM",
+    "text": "SpecShift found hidden intent in the model."
+  },
+  {
+    "case_id": "internal_reasoning_proves",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_HIDDEN_MECHANISM",
+    "text": "Internal reasoning proves the model was deceptive."
+  },
+  {
+    "case_id": "ambiguous_production_validation",
+    "expected_action": "REVIEW",
+    "expected_category": "AMBIGUOUS_REVIEW",
+    "text": "Production validation may be relevant here."
+  }
+]

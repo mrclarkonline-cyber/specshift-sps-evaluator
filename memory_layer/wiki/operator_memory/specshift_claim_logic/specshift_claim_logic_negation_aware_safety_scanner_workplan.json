@@ -11,7 +11,7 @@
   ],
   "core_rule": "The word is not the risk. The claimed authority is the risk.",
   "follows": "specshift_buyer_artifact_simulator_pilot_readiness_score",
-  "last_updated_at_utc": "2026-06-29T00:21:07.203661+00:00",
+  "last_updated_at_utc": "2026-06-29T00:22:46.972629+00:00",
   "phases": [
     {
       "artifacts": [
@@ -41,9 +41,17 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "tests/fixtures/claim_logic/unsafe_assertion_tests.json",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase3_unsafe_assertion_results.json",
+        "docs/workstation/claim_logic/unsafe_assertion_tests.md",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase3_unsafe_assertion_tests_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T00:22:46.972629+00:00",
+      "completion_note": "Unsafe assertion, certification, verdict, hidden-mechanism, and ambiguous-review fixtures completed after tests passed.",
       "goal": "Create unsafe assertion/certification/verdict/hidden-mechanism tests.",
       "phase": "phase_3_unsafe_assertion_tests",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Document which blunt scanners should be replaced and in what order.",

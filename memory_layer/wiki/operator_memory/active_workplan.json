@@ -1,5 +1,5 @@
 {
-  "active_phase": "phase_3_unsafe_assertion_tests",
+  "active_phase": "phase_4_scanner_replacement_plan",
   "active_tracker": "tools/status/specshift_claim_logic_progress.py",
   "active_workplan": "specshift_claim_logic_negation_aware_safety_scanner",
   "allowed_actions": [
@@ -55,7 +55,7 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "phase_2_negation_safe_phrase_tests",
+  "last_completed_phase": "phase_3_unsafe_assertion_tests",
   "last_completed_workplan": "specshift_buyer_artifact_simulator_pilot_readiness_score",
   "last_delivery_closeout_recommender": "tools/pilot_intake/delivery_closeout_recommender.py",
   "last_delivery_closeout_recommender_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase6_delivery_closeout_recommender_report.json",
@@ -107,8 +107,10 @@
   "last_terminal_capability_map_doc": "docs/workstation/specshift_terminal_complete_capability_map.md",
   "last_trace_schema_normalizer": "tools/pilot_intake/trace_schema_normalizer.py",
   "last_trace_schema_normalizer_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase3_trace_schema_normalizer_report.json",
-  "last_updated_at_utc": "2026-06-29T00:21:07.203661+00:00",
-  "next_action": "Create unsafe assertion/certification/verdict/hidden-mechanism tests.",
+  "last_unsafe_assertion_results": "memory_layer/wiki/operator_memory/specshift_claim_logic/phase3_unsafe_assertion_results.json",
+  "last_unsafe_assertion_tests": "tests/fixtures/claim_logic/unsafe_assertion_tests.json",
+  "last_updated_at_utc": "2026-06-29T00:22:46.972629+00:00",
+  "next_action": "Document which blunt scanners should be replaced and in what order.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",
