@@ -1,0 +1,16 @@
+{
+  "artifacts": [
+    "tools/status/specshift_qa.py",
+    "tools/bin/specshift_qa",
+    "docs/workstation/qa/specshift_qa_command.md",
+    "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase2_specshift_qa_run_report.json"
+  ],
+  "claim_boundary": "Phase 2 creates a local QA command only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "completed_at_utc": "2026-06-29T12:46:11.865408+00:00",
+  "phase": "phase_2_specshift_qa_command",
+  "qa_check_count": 6,
+  "qa_failed_count": 0,
+  "qa_status": "pass",
+  "status": "complete",
+  "test_before_complete_rule": "specshift_qa passed before workplan update"
+}

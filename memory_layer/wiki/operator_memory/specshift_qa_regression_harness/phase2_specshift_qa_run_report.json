@@ -1,0 +1,114 @@
+{
+  "check_count": 6,
+  "checks": [
+    {
+      "cmd": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "expected_returncodes": [
+        0
+      ],
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": ".............                                                            [100%]\n13 passed in 0.04s\n"
+    },
+    {
+      "cmd": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+        "tools/claim_logic/claim_logic_classifier.py",
+        "--text",
+        "SpecShift does not provide production validation.",
+        "--json"
+      ],
+      "expected_returncodes": [
+        0
+      ],
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"action\": \"ALLOW\",\n  \"category\": \"SAFE_DENIAL\",\n  \"claim_boundary\": \"Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\",\n  \"classified_at_utc\": \"2026-06-29T12:46:12.142866+00:00\",\n  \"engine\": \"claim_logic_classifier_v1\",\n  \"matched_risk_terms\": [\n    \"production validation\"\n  ],\n  \"sentence\": \"SpecShift does not provide production validation.\"\n}\n"
+    },
+    {
+      "cmd": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+        "tools/claim_logic/claim_logic_audit_gate.py",
+        "--file",
+        "tests/fixtures/claim_logic/audit_gate/safe_non_claims.md",
+        "--output",
+        "/tmp/specshift_qa_safe_gate.json"
+      ],
+      "expected_returncodes": [
+        0
+      ],
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "Claim Logic Audit Gate\n========================================================================\nfile: tests/fixtures/claim_logic/audit_gate/safe_non_claims.md\nstatus: pass\nallowed: 10\nreview: 0\nblocked: 0\n\nBoundary: Claim logic audit gate only. It scans text artifacts for claim posture. It allows safe denial and boundary language, blocks unsafe affirmative authority claims, and can optionally fail on ambiguous review items. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\n"
+    },
+    {
+      "cmd": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+        "tools/claim_logic/claim_logic_audit_gate.py",
+        "--file",
+        "tests/fixtures/claim_logic/audit_gate/unsafe_assertions.md",
+        "--output",
+        "/tmp/specshift_qa_unsafe_gate.json"
+      ],
+      "expected_returncodes": [
+        1
+      ],
+      "passed": true,
+      "returncode": 1,
+      "stderr_tail": "",
+      "stdout_tail": "Claim Logic Audit Gate\n========================================================================\nfile: tests/fixtures/claim_logic/audit_gate/unsafe_assertions.md\nstatus: fail\nallowed: 0\nreview: 0\nblocked: 4\n\nBoundary: Claim logic audit gate only. It scans text artifacts for claim posture. It allows safe denial and boundary language, blocks unsafe affirmative authority claims, and can optionally fail on ambiguous review items. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\n"
+    },
+    {
+      "cmd": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+        "tools/pilot_intake/delivery_packet_generator.py",
+        "--project-dir",
+        "tests/fixtures/buyer_artifact_simulator/delivery_packet_sample_project",
+        "--output",
+        "/tmp/specshift_qa_delivery_packet.md",
+        "--recommendation",
+        "REPEAT_WITH_CLEANER_DATA",
+        "--report",
+        "/tmp/specshift_qa_delivery_packet_report.json"
+      ],
+      "expected_returncodes": [
+        0
+      ],
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "Delivery Packet Generator\n========================================================================\noutput: /tmp/specshift_qa_delivery_packet.md\nrecommendation: REPEAT_WITH_CLEANER_DATA\nblocked_claims: 0\nreview_claims: 0\n\nBoundary: Delivery packet generator only. It creates a client-facing bounded packet from approved project materials. It uses claim logic for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\n"
+    },
+    {
+      "cmd": [
+        "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+        "tools/pilot_intake/evidence_ledger.py",
+        "summary",
+        "--ledger",
+        "tests/fixtures/buyer_artifact_simulator/sample_evidence_ledger.jsonl",
+        "--output",
+        "/tmp/specshift_qa_evidence_ledger_summary.json"
+      ],
+      "expected_returncodes": [
+        0
+      ],
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"claim_boundary\": \"Evidence ledger only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\",\n  \"event_counts\": {\n    \"artifact_received\": 1,\n    \"buyer_label_reveal_status\": 1,\n    \"classification\": 1,\n    \"closeout_recommendation\": 1,\n    \"delivery_file\": 1,\n    \"reviewer_output\": 1,\n    \"risk_decision\": 1,\n    \"route\": 1,\n    \"validation_result\": 1\n  },\n  \"ledger\": \"tests/fixtures/buyer_artifact_simulator/sample_evidence_ledger.jsonl\",\n  \"record_count\": 9\n}\n"
+    }
+  ],
+  "claim_boundary": "SpecShift QA command only. It runs local regression and smoke checks. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "engine": "specshift_qa_v1",
+  "failed_count": 0,
+  "ran_at_utc": "2026-06-29T12:46:12.398676+00:00",
+  "status": "pass"
+}
