@@ -1,0 +1,325 @@
+abseil 20260107.1
+ada-url 3.4.4
+age 1.3.1
+aide 0.19.3
+aom 3.14.1 3.13.1
+apache-arrow 24.0.0_5 23.0.1_2
+asciinema 3.2.0
+aws-c-auth 0.10.3 0.10.1
+aws-c-cal 0.9.14 0.9.13
+aws-c-common 0.12.6 0.14.1
+aws-c-compression 0.3.2
+aws-c-event-stream 0.7.1 0.6.0
+aws-c-http 0.11.0 0.10.11
+aws-c-io 0.26.1 0.27.2
+aws-c-mqtt 0.16.0 0.14.0
+aws-c-s3 0.12.7 0.11.5
+aws-c-sdkutils 0.2.4 0.2.6
+aws-checksums 0.2.10
+aws-crt-cpp 0.40.1 0.37.4
+aws-sdk-cpp 1.11.750 1.11.825
+bash 5.3.9
+bat 0.26.1
+bazelisk 1.28.1
+boost 1.90.0_1
+borgbackup 1.4.3
+brotli 1.2.0
+btop 1.4.7
+c-ares 1.34.6
+c-blosc 1.21.6
+ca-certificates 2026-05-14 2026-03-19
+cairo 1.18.4
+certifi 2026.6.17 2026.2.25
+cffi 2.0.0_1
+cfitsio 4.6.4 4.6.3_1
+cgal 6.1.1
+cmake 4.3.2
+coreutils 9.11
+cryptography 46.0.5
+csvkit 2.2.0
+curl 8.18.0_2
+dav1d 1.5.3
+davix 0.8.10_1
+direnv 2.37.1
+docker 29.3.0
+docker-completion 29.3.0
+duckdb 1.5.4
+dust 1.2.4
+dvc 3.66.1_4
+dwarfutils 2.3.1
+eigen 5.0.1
+entr 5.8
+epsilon 0.9.2
+exiftool 13.50
+eza 0.23.4
+fd 10.4.2
+ffmpeg 8.0.1_4
+fftw 3.3.10_3
+findutils 4.10.0
+fmt 12.1.0 12.2.0
+fontconfig 2.17.1 2.18.1
+freetype 2.14.2 2.14.3
+freexl 2.0.0
+fribidi 1.0.16
+fswatch 1.18.3
+ftgl 2.1.3-rc5
+fzf 0.73.1
+gawk 5.4.0
+gcc 15.2.0_1
+gd 2.3.3_6
+gdal 3.13.1_1
+gdk-pixbuf 2.44.5
+geos 3.14.1
+gettext 1.0
+gh 2.95.0
+giflib 6.1.3 5.2.2
+gifsicle 1.96
+git 2.54.0
+git-delta 0.19.2
+git-lfs 3.7.1
+gl2ps 1.4.2
+glew 2.3.1
+glib 2.88.2 2.86.4
+glow 2.1.1
+gmp 6.3.0
+gnu-getopt 2.41.3
+gnu-sed 4.10
+gnupg 2.5.20
+gnutls 3.8.13_2 3.8.12
+gpgme 2.0.1 2.1.1
+gpgmepp 2.0.0 2.1.0
+graphite2 1.3.14
+graphviz 14.1.3
+grep 3.12
+grpc 1.78.1_1 1.81.1_1
+grype 0.109.0
+gsl 2.8
+gts 0.7.6_3
+gum 0.17.0
+harfbuzz 13.0.0
+hdf5 2.1.1 2.1.0
+hdrhistogram_c 0.11.9
+hf 1.9.0
+highway 1.3.0 1.4.0
+htop 3.4.1
+httpie 3.2.4_6
+hwloc 2.13.0
+hyperfine 1.20.0
+icu4c@78 78.3
+iftop 1.0pre4
+imagemagick 7.1.2-15_1
+imath 3.2.2
+ipython 9.11.0
+isl 0.27
+jansson 2.15.0
+jasper 4.2.9
+jpeg-turbo 3.1.3 3.1.4.1
+jpeg-xl 0.11.2
+jq 1.8.2
+json-c 0.18
+jupyterlab 4.6.0
+just 1.46.0
+krb5 1.22.2
+lame 3.100
+lazygit 0.62.2
+libaec 1.1.7 1.1.6
+libarchive 3.8.5_1 3.8.8
+libassuan 3.0.2
+libavif 1.4.0
+libb2 0.98.1
+libdatrie 0.2.14
+libde265 1.0.16 1.1.1
+libdeflate 1.25
+libev 4.33
+libevent 2.1.12_1
+libffi 3.6.0
+libgcrypt 1.12.1 1.12.2
+libgeotiff 1.7.4
+libgit2 1.9.2_1
+libgpg-error 1.59 1.61
+libheif 1.23.1 1.21.2
+libidn2 2.3.8
+libkml 1.3.0_1
+libksba 1.6.8 1.8.0
+liblerc 4.0.0 4.1.0
+liblinear 2.50
+libmagic 5.47
+libmaxminddb 1.13.3
+libmpc 1.3.1 1.4.1
+libnghttp2 1.69.0 1.68.0 1.68.1
+libnghttp3 1.15.0 1.17.0
+libngtcp2 1.24.0 1.22.0 1.21.0
+libomp 22.1.0 22.1.8
+libpng 1.6.55 1.6.58
+libpq 18.4 18.3
+librsvg 2.62.0
+librtlsdr 2.0.2
+librttopo 1.1.0
+libsmi 0.5.0
+libsodium 1.0.21 1.0.22
+libsolv 0.7.35
+libspatialite 5.1.0_4
+libssh 0.12.0_1
+libssh2 1.11.1_1
+libtasn1 4.21.0
+libthai 0.1.30
+libtiff 4.7.1_1
+libtool 2.5.4
+libunistring 1.4.2
+libusb 1.0.29 1.0.30
+libuv 1.52.1
+libvmaf 3.0.0 3.2.0
+libvpx 1.16.0
+libx11 1.8.13
+libxau 1.0.12
+libxcb 1.17.0
+libxdmcp 1.1.5
+libxext 1.3.7
+libxml2 2.15.2 2.15.3
+libxrender 0.9.12
+libyaml 0.2.5
+little-cms2 2.18 2.19
+llhttp 9.4.2
+llvm 22.1.2 22.1.8
+llvm@21 21.1.8
+lnav 0.13.2
+lpeg 1.1.0_2
+lua 5.5.0
+lua@5.4 5.4.8
+luajit 2.1.1772619647
+luv 1.51.0-2_1
+lz4 1.10.0
+lzo 2.10
+m4 1.4.21
+merve 1.2.2_1
+micromamba 2.5.0_2
+minisign 0.12
+minizip 1.3.2_1
+mkdocs 1.6.1_2
+mpdecimal 4.0.1
+mpfr 4.2.2
+mtr 0.96
+mypy 1.19.1
+nbytes 0.1.4
+ncdu 2.9.2
+ncurses 6.6
+neovim 0.11.6
+netcdf 4.10.0
+netpbm 11.02.22
+nettle 3.10.2 4.0
+nlohmann-json 3.12.0
+nmap 7.98_1
+node 25.9.0_1 26.4.0 25.8.0
+npth 1.8
+nspr 4.39 4.38.2
+nss 3.125 3.121
+numpy 2.4.6 2.4.2
+oniguruma 6.9.10
+open-mpi 5.0.9
+openblas 0.3.31_1 0.3.33
+openexr 3.4.6 3.4.13_1
+openjdk 25.0.2
+openjpeg 2.5.4
+openjph 0.26.3 0.30.1
+openssl@3 3.6.2
+opus 1.6.1
+p11-kit 0.26.2
+pandoc 3.10
+pango 1.57.0_2
+pass 1.7.4
+pcre2 10.47_1
+pdfgrep 2.2.0_3
+pinentry 1.3.2
+pinentry-mac 1.3.1.1
+pipx 1.8.0
+pixman 0.46.4
+pkgconf 2.5.1
+pmix 5.0.10_1
+podman 5.8.0
+poetry 2.3.2
+poppler 26.06.0
+popt 1.19
+pre-commit 4.6.0
+proj 9.8.0 9.8.1
+protobuf 35.1
+protobuf@33 33.5
+py-spy 0.4.1
+pycparser 3.0
+pydantic 2.12.5
+pygit2 1.19.1
+python@3.11 3.11.15
+python@3.12 3.12.13_1
+python@3.13 3.13.12_1
+python@3.14 3.14.6
+qhull 2020.2
+qpdf 12.3.2
+qrencode 4.1.1
+re2 2025-11-05
+readline 8.3.3
+reproc 14.2.5
+restic 0.18.1
+ripgrep 15.1.0
+root 6.38.02
+rpds-py 0.30.0 2026.5.1
+rpm 4.20.1_1
+rsync 3.4.1
+ruff 0.15.5
+s2n 1.7.5
+sdl2 2.32.10
+semgrep 1.154.0
+sfcgal 2.2.0_2
+shared-mime-info 2.4_1
+shellcheck 0.11.0
+shfmt 3.13.1
+simdjson 4.3.0 4.6.4 4.6.1
+simdutf 9.0.0
+slurm 0.4.4
+snappy 1.2.2
+soapyremote 0.5.2
+soapysdr 0.8.1_1
+sops 3.13.1
+speexdsp 1.2.1
+sphinx-doc 9.1.0_1
+sqlite 3.53.0 3.51.3 3.53.3
+starship 1.25.1
+svt-av1 4.0.1
+swig 4.4.1
+tbb 2022.3.0
+tectonic 0.15.0_5
+thrift 0.23.0 0.22.0_1
+tmux 3.7
+tree 2.3.2
+tree-sitter 0.26.6
+tree-sitter@0.25 0.25.10
+trivy 0.69.3
+unbound 1.24.2
+unibilium 2.1.2
+unixodbc 2.3.14
+uriparser 1.0.0 1.0.2
+utf8proc 2.11.3
+uv 0.10.8
+uvwasi 0.0.23
+visidata 3.3
+watch 4.0.6
+webp 1.6.0
+wget 1.25.0
+wireshark 4.6.4_1
+x264 r3222
+x265 4.2 4.1
+xerces-c 3.3.0
+xorgproto 2025.1
+xrootd 5.9.1
+xsv 0.13.0
+xxhash 0.8.3
+xz 5.8.3
+yaml-cpp 0.9.0
+yq 4.53.3
+z3 4.15.4 4.16.0
+zeromq 4.3.5_2
+zoxide 0.9.9
+zstd 1.5.7_1
+basictex 2026.0301
+osquery 5.21.0
+quarto 1.8.27
+wireshark-chmodbpf 4.6.4
+zotero 8.0.3

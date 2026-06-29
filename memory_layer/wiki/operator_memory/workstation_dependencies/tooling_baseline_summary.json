@@ -1,0 +1,9 @@
+{
+  "status": "recorded",
+  "purpose": "Durable SpecShift workstation tooling baseline",
+  "python_rule": "Use .venv_specshift_qa for SpecShift QA; do not use global pip3.",
+  "jupyterlab_note": "Homebrew JupyterLab is available at /opt/homebrew/opt/jupyterlab/bin/jupyter-lab; plain jupyter-lab may be shadowed.",
+  "tap_rule": "No random taps; Microsoft/foundry intentionally not used.",
+  "qa_command": "python3 tools/status/specshift_qa.py",
+  "claim_boundary": "Workstation tooling baseline only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim."
+}

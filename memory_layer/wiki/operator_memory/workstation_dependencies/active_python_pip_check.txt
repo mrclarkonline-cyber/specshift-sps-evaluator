@@ -1,0 +1,7 @@
+datasets 4.5.0 has requirement huggingface-hub<2.0,>=0.25.0, but you have huggingface-hub 0.23.4.
+langgraph-checkpoint 2.1.2 has requirement langchain-core>=0.2.38, but you have langchain-core 0.1.23.
+langgraph-prebuilt 0.6.5 has requirement langchain-core>=0.3.67, but you have langchain-core 0.1.23.
+multiprocess 0.70.18 has requirement dill>=0.4.0, but you have dill 0.3.8.
+virtualenv 21.5.1 has requirement typing-extensions>=4.13.2; python_version < "3.11", but you have typing-extensions 4.12.2.
+wheel 0.46.3 has requirement packaging>=24.0, but you have packaging 23.2.
+grpcio 1.80.0 is not supported on this platform
