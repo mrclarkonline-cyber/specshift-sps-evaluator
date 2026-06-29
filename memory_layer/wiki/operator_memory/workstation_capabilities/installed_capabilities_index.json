@@ -1,0 +1,30 @@
+{
+  "status": "current",
+  "purpose": "Summarize installed SpecShift workstation capabilities after tooling, security, QA, research-intelligence, and systems-survey upgrades.",
+  "capability_groups": {
+    "inspection": ["jq", "yq", "ripgrep", "fd", "tree", "GNU utilities"],
+    "qa": ["pytest", "ruff", "mypy", "pre-commit", "specshift_qa"],
+    "claim_safety": ["claim_logic_classifier", "claim_logic_audit_gate"],
+    "buyer_pilot": ["artifact simulator", "pilot readiness score", "folder policy checker", "evidence ledger", "delivery packet generator"],
+    "data_research": ["sqlite", "duckdb", "csvkit", "miller", "visidata", "hdf5", "netcdf", "cfitsio"],
+    "geospatial": ["gdal", "geos", "proj", "tippecanoe"],
+    "documents_media": ["pandoc", "qpdf", "poppler", "exiftool", "imagemagick", "ffmpeg"],
+    "security_monitoring": ["specshift_security_doctor", "specshift_path_watch", "specshift_security_scan", "specshift_systems_survey", "gitleaks", "trufflehog", "lynis", "osquery", "fswatch"],
+    "provenance_supply_chain": ["hashdeep", "rhash", "cosign", "syft", "grype", "trivy"],
+    "network_repo": ["curl", "wget", "whois", "dig", "gh", "git-lfs"]
+  },
+  "known_path_rules": {
+    "curl": "curl shadow quarantined; should resolve normally.",
+    "jupyterlab": "Use tools/bin/specshift_jupyterlab.",
+    "python": "Use .venv_specshift_qa for SpecShift QA; do not use global pip3."
+  },
+  "primary_commands": [
+    "python3 tools/status/specshift_qa.py",
+    "python3 tools/status/specshift_security_doctor.py",
+    "python3 tools/status/specshift_path_watch.py",
+    "python3 tools/status/specshift_security_scan.py",
+    "python3 tools/status/specshift_systems_survey.py",
+    "tools/bin/specshift_jupyterlab"
+  ],
+  "claim_boundary": "Workstation capability index only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, surveillance authorization, truth validation, or hidden-mechanism claim."
+}
