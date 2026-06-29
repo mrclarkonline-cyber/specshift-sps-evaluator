@@ -30,7 +30,7 @@
       "passed": true,
       "returncode": 0,
       "stderr_tail": "",
-      "stdout_tail": "{\n  \"action\": \"ALLOW\",\n  \"category\": \"SAFE_DENIAL\",\n  \"claim_boundary\": \"Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\",\n  \"classified_at_utc\": \"2026-06-29T12:49:20.254817+00:00\",\n  \"engine\": \"claim_logic_classifier_v1\",\n  \"matched_risk_terms\": [\n    \"production validation\"\n  ],\n  \"sentence\": \"SpecShift does not provide production validation.\"\n}\n"
+      "stdout_tail": "{\n  \"action\": \"ALLOW\",\n  \"category\": \"SAFE_DENIAL\",\n  \"claim_boundary\": \"Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\",\n  \"classified_at_utc\": \"2026-06-29T12:51:33.012762+00:00\",\n  \"engine\": \"claim_logic_classifier_v1\",\n  \"matched_risk_terms\": [\n    \"production validation\"\n  ],\n  \"sentence\": \"SpecShift does not provide production validation.\"\n}\n"
     },
     {
       "cmd": [
@@ -109,6 +109,6 @@
   "claim_boundary": "SpecShift QA command only. It runs local regression and smoke checks. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
   "engine": "specshift_qa_v1",
   "failed_count": 0,
-  "ran_at_utc": "2026-06-29T12:49:20.516167+00:00",
+  "ran_at_utc": "2026-06-29T12:51:33.271552+00:00",
   "status": "pass"
 }
