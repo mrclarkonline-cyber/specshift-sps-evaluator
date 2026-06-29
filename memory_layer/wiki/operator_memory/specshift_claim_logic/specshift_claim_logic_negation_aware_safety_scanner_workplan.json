@@ -11,7 +11,7 @@
   ],
   "core_rule": "The word is not the risk. The claimed authority is the risk.",
   "follows": "specshift_buyer_artifact_simulator_pilot_readiness_score",
-  "last_updated_at_utc": "2026-06-29T00:22:46.972629+00:00",
+  "last_updated_at_utc": "2026-06-29T00:23:45.580161+00:00",
   "phases": [
     {
       "artifacts": [
@@ -54,9 +54,16 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "docs/workstation/claim_logic/scanner_replacement_plan.md",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/scanner_replacement_plan.json",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase4_scanner_replacement_plan_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T00:23:45.580161+00:00",
+      "completion_note": "Scanner replacement plan documented, including target order and category policy.",
       "goal": "Document which blunt scanners should be replaced and in what order.",
       "phase": "phase_4_scanner_replacement_plan",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Use claim logic in delivery_packet_generator.py.",

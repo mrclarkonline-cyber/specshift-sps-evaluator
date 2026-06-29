@@ -1,0 +1,54 @@
+{
+  "category_policy": {
+    "AMBIGUOUS_REVIEW": "REVIEW",
+    "SAFE_BOUNDARY": "ALLOW",
+    "SAFE_DENIAL": "ALLOW",
+    "UNSAFE_ASSERTION": "BLOCK_OR_REWRITE",
+    "UNSAFE_CERTIFICATION": "BLOCK_OR_REWRITE",
+    "UNSAFE_HIDDEN_MECHANISM": "BLOCK_OR_REWRITE",
+    "UNSAFE_VERDICT": "BLOCK_OR_REWRITE"
+  },
+  "claim_boundary": "Phase 4 documents scanner replacement planning only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "core_rule": "The word is not the risk. The claimed authority is the risk.",
+  "created_at_utc": "2026-06-29T00:23:45.580161+00:00",
+  "non_goals": [
+    "Do not remove safety gates.",
+    "Do not weaken boundary language.",
+    "Do not mark legal/compliance/production claims as safe.",
+    "Do not use claim logic as legal advice or compliance certification.",
+    "Do not make autonomous client decisions."
+  ],
+  "phase": "phase_4_scanner_replacement_plan",
+  "purpose": "Document which blunt scanners should be replaced and in what order.",
+  "replacement_order": [
+    {
+      "phase": "phase_5_integrate_claim_logic_with_packet_generator",
+      "priority": 1,
+      "reason": "Already produced false positives on non-claim boundary language such as does not provide production validation.",
+      "replacement": "Use claim_logic_classifier.py category/action results instead of local blunt forbidden phrase scanning.",
+      "target": "tools/pilot_intake/delivery_packet_generator.py"
+    },
+    {
+      "phase": "phase_6_integrate_claim_logic_with_audit_gates",
+      "priority": 2,
+      "reason": "Blunt overclaim scan was suspended during simulator closeout because it punished protective non-claims.",
+      "replacement": "Use claim logic categories: allow SAFE_DENIAL and SAFE_BOUNDARY, block UNSAFE_* categories, review AMBIGUOUS_REVIEW.",
+      "target": "Phase 7 audit/closeout gates"
+    },
+    {
+      "phase": "future_cleanup",
+      "priority": 3,
+      "reason": "It needed custom negation-aware logic and should eventually share the central classifier.",
+      "replacement": "Replace local forbidden phrase logic with claim logic classifier for response posture checks.",
+      "target": "tools/pilot_intake/red_team_intake_test.py"
+    },
+    {
+      "phase": "future_cleanup",
+      "priority": 4,
+      "reason": "This checker mostly scans artifact placement and file-risk terms; full claim logic integration is lower priority.",
+      "replacement": "Keep file placement checks; use claim logic only for client-facing text if needed.",
+      "target": "tools/pilot_intake/folder_policy_checker.py"
+    }
+  ],
+  "status": "complete"
+}

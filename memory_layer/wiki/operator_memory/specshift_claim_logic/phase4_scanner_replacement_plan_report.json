@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    "docs/workstation/claim_logic/scanner_replacement_plan.md",
+    "memory_layer/wiki/operator_memory/specshift_claim_logic/scanner_replacement_plan.json"
+  ],
+  "category_policy_count": 7,
+  "claim_boundary": "Phase 4 documents scanner replacement planning only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "completed_at_utc": "2026-06-29T00:23:45.580161+00:00",
+  "phase": "phase_4_scanner_replacement_plan",
+  "replacement_targets": 4,
+  "status": "complete",
+  "test_before_complete_rule": "passed before workplan update"
+}
