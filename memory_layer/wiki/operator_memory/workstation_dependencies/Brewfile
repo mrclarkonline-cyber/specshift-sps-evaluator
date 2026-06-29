@@ -1,0 +1,248 @@
+# Simple, modern, secure file encryption
+brew "age"
+# File and directory integrity checker
+brew "aide"
+# Command-line interface for SQLite
+brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Record and share terminal sessions
+brew "asciinema"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# User-friendly launcher for Bazel
+brew "bazelisk"
+# Implementation of the DNS protocols
+brew "bind"
+# Deduplicating archiver with compression and authenticated encryption
+brew "borgbackup"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# C access to FITS data files with optional Fortran wrappers
+brew "cfitsio"
+# Cross-platform make
+brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Container Signing
+brew "cosign"
+# Suite of command-line tools for converting to and working with CSV
+brew "csvkit"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Embeddable SQL OLAP Database Management System
+brew "duckdb"
+# More intuitive version of du in rust
+brew "dust"
+# Git for data science projects
+brew "dvc"
+# Run arbitrary commands when files change
+brew "entr"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Monitor a directory for changes and run a shell command
+brew "fswatch"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU awk utility
+brew "gawk"
+# Geometry Engine
+brew "geos"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# File format designed to store large amounts of data
+brew "hdf5"
+# Cartographic Projections Library
+brew "proj"
+# Libraries and data formats for array-oriented scientific data
+brew "netcdf"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Geospatial Data Abstraction Library
+brew "gdal"
+# GitHub command-line tool
+brew "gh"
+# GIF image/animation creator/editor
+brew "gifsicle"
+# Distributed revision control system
+brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Git extension for versioning large files
+brew "git-lfs"
+# Render markdown on the CLI
+brew "glow"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# GNU grep, egrep and fgrep
+brew "grep"
+# Vulnerability scanner for container images and filesystems
+brew "grype"
+# Tool for glamorous shell scripts
+brew "gum"
+# Client library for huggingface.co hub
+brew "hf"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Command-line benchmarking tool
+brew "hyperfine"
+# Display an interface's bandwidth usage
+brew "iftop"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Interactive computing in Python
+brew "ipython"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Interactive environments for writing and running code
+brew "jupyterlab"
+# Handy way to save and run project-specific commands
+brew "just"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Use Realtek DVB-T dongles as a cheap SDR
+brew "librtlsdr"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Recursively compute digests on files/directories
+brew "md5deep"
+# Fast Cross-Platform Package Manager
+brew "micromamba"
+# Like sed, awk, cut, join & sort for name-indexed data such as CSV
+brew "miller"
+# Sign files & verify signatures. Works with signify in OpenBSD
+brew "minisign"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Project documentation with Markdown
+brew "mkdocs"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
+# Experimental optional static type checker for Python
+brew "mypy"
+# NCurses Disk Usage
+brew "ncdu"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Port scanning utility for large networks
+brew "nmap"
+# High performance message passing library
+brew "open-mpi"
+# Development kit for the Java programming language
+brew "openjdk"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Password manager
+brew "pass"
+# Search PDFs for strings matching a regular expression
+brew "pdfgrep"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Tool for managing OCI containers and pods
+brew "podman"
+# Python package management tool
+brew "poetry"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
+# Sampling profiler for Python programs
+brew "py-spy"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
+# Fast, efficient and secure backup program
+brew "restic"
+# Utility for computing and verifying hash sums of files
+brew "rhash"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Analyzing petabytes of data, scientifically
+brew "root"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
+# Incremental parsing library
+brew "tree-sitter"
+# Easily detect and prevent bugs and anti-patterns in your codebase
+brew "semgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
+# Yet another network load monitor
+brew "slurm"
+# Vendor and platform neutral SDR support library
+brew "soapysdr"
+# Use any Soapy SDR remotely
+brew "soapyremote"
+# Editor of encrypted files
+brew "sops"
+# Tool to create intelligent and beautiful documentation
+brew "sphinx-doc"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Generate scripting interfaces to C/C++ code
+brew "swig"
+# CLI for generating a Software Bill of Materials from container images
+brew "syft"
+# Modernized, complete, self-contained TeX/LaTeX engine
+brew "tectonic"
+# Build vector tilesets from collections of GeoJSON features
+brew "tippecanoe"
+# Terminal multiplexer
+brew "tmux"
+# Vulnerability scanner for container images, file systems, and Git repos
+brew "trivy"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Terminal spreadsheet multitool for discovering and arranging data
+brew "visidata"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Internet file retriever
+brew "wget"
+# Lookup tool for domain names and other internet resources
+brew "whois"
+# Network analyzer and capture tool - without graphical user interface
+brew "wireshark"
+# Fast CSV toolkit written in Rust
+brew "xsv"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
+cask "basictex"
+# SQL powered operating system instrumentation and analytics
+cask "osquery"
+# Scientific and technical publishing system built on Pandoc
+cask "quarto"
+# Network protocol analyzer
+cask "wireshark-chmodbpf"
+# Collect, organise, cite, and share research sources
+cask "zotero"

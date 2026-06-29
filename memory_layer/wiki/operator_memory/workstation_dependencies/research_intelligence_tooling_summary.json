@@ -1,0 +1,13 @@
+{
+  "status": "recorded",
+  "purpose": "Research, data, public-source investigation, provenance, and reproducibility tooling baseline.",
+  "rules": [
+    "Use Brewfile for reproducibility.",
+    "Use .venv_specshift_qa for SpecShift QA.",
+    "Avoid random taps.",
+    "Avoid default offensive tooling.",
+    "Keep research lawful, bounded, and provenance-recorded."
+  ],
+  "qa_command": "python3 tools/status/specshift_qa.py",
+  "claim_boundary": "Workstation tooling baseline only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, surveillance authorization, truth validation, or hidden-mechanism claim."
+}
