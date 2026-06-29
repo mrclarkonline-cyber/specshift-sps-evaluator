@@ -16,8 +16,12 @@ brew "bazelisk"
 brew "bind"
 # Deduplicating archiver with compression and authenticated encryption
 brew "borgbackup"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Object-file caching compiler wrapper
+brew "ccache"
 # C access to FITS data files with optional Fortran wrappers
 brew "cfitsio"
 # Cross-platform make
@@ -152,6 +156,8 @@ brew "nmap"
 brew "open-mpi"
 # Development kit for the Java programming language
 brew "openjdk"
+# Shell command parallelization utility
+brew "parallel"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Password manager
@@ -168,6 +174,8 @@ brew "podman"
 brew "poetry"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
+# Modern replacement for ps written in Rust
+brew "procs"
 # Sampling profiler for Python programs
 brew "py-spy"
 # Interpreted, interactive, object-oriented programming language
@@ -190,6 +198,10 @@ brew "root"
 brew "rsync"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
+# Used as a compiler wrapper and avoids compilation when possible
+brew "sccache"
+# Intuitive find & replace CLI
+brew "sd"
 # Incremental parsing library
 brew "tree-sitter"
 # Easily detect and prevent bugs and anti-patterns in your codebase

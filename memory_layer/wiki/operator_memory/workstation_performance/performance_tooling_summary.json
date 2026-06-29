@@ -1,0 +1,18 @@
+{
+  "status": "recorded",
+  "purpose": "Performance tooling baseline for measuring and speeding local SpecShift workstation functions.",
+  "tools": [
+    "uv",
+    "hyperfine",
+    "parallel",
+    "ccache",
+    "sccache",
+    "dust",
+    "bottom",
+    "procs",
+    "sd"
+  ],
+  "rule": "Do not replace .venv_specshift_qa yet; benchmark first.",
+  "hard_gate": "python3 tools/status/specshift_qa.py",
+  "claim_boundary": "Performance tooling baseline only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, surveillance authorization, truth validation, or hidden-mechanism claim."
+}
