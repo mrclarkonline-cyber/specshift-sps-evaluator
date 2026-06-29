@@ -105,7 +105,12 @@ def classify_sentence(sentence: str) -> dict:
 
     matched_risk_terms = [term for term in RISK_TERMS if term in low]
 
-    if has(UNSAFE_CERTIFICATION_PATTERNS, low):
+    # Explicit denial of a risky authority claim is safe boundary language.
+    # Example: "SpecShift cannot determine model intent."
+    if matched_risk_terms and has(SAFE_DENIAL_PATTERNS, low):
+        category = "SAFE_DENIAL"
+        action = "ALLOW"
+    elif has(UNSAFE_CERTIFICATION_PATTERNS, low):
         category = "UNSAFE_CERTIFICATION"
         action = "BLOCK_OR_REWRITE"
     elif has(UNSAFE_VERDICT_PATTERNS, low):
@@ -117,9 +122,6 @@ def classify_sentence(sentence: str) -> dict:
     elif has(UNSAFE_ASSERTION_PATTERNS, low):
         category = "UNSAFE_ASSERTION"
         action = "BLOCK_OR_REWRITE"
-    elif matched_risk_terms and has(SAFE_DENIAL_PATTERNS, low):
-        category = "SAFE_DENIAL"
-        action = "ALLOW"
     elif has(BOUNDARY_PATTERNS, low):
         category = "SAFE_BOUNDARY"
         action = "ALLOW"

@@ -11,7 +11,7 @@
   ],
   "core_rule": "The word is not the risk. The claimed authority is the risk.",
   "follows": "specshift_buyer_artifact_simulator_pilot_readiness_score",
-  "last_updated_at_utc": "2026-06-29T00:15:53.262412+00:00",
+  "last_updated_at_utc": "2026-06-29T00:21:07.203661+00:00",
   "phases": [
     {
       "artifacts": [
@@ -28,9 +28,17 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "tests/fixtures/claim_logic/negation_safe_phrase_tests.json",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase2_negation_safe_phrase_results.json",
+        "docs/workstation/claim_logic/negation_safe_phrase_tests.md",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase2_negation_safe_phrase_tests_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T00:21:07.203661+00:00",
+      "completion_note": "Negation-safe phrase fixtures, results, and documentation completed after tests passed.",
       "goal": "Create negation-safe tests for non-claim boundary language.",
       "phase": "phase_2_negation_safe_phrase_tests",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Create unsafe assertion/certification/verdict/hidden-mechanism tests.",

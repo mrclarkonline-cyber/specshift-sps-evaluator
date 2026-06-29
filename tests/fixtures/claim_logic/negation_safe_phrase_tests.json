@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "no_legal_advice",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This packet does not provide legal advice."
+  },
+  {
+    "case_id": "no_financial_advice",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "SpecShift does not provide financial advice."
+  },
+  {
+    "case_id": "no_binding_terms",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This draft does not create binding terms."
+  },
+  {
+    "case_id": "no_compliance_certification",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This review does not provide compliance certification."
+  },
+  {
+    "case_id": "no_production_validation",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "SpecShift does not provide production validation."
+  },
+  {
+    "case_id": "no_automated_verdict",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This packet does not create an automated verdict."
+  },
+  {
+    "case_id": "no_truth_validation",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This memo does not provide truth validation."
+  },
+  {
+    "case_id": "no_autonomous_client_action",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This recommendation does not authorize autonomous client action."
+  },
+  {
+    "case_id": "no_hidden_mechanism_claim",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This review does not make a hidden-mechanism claim."
+  },
+  {
+    "case_id": "cannot_determine_model_intent",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "SpecShift cannot determine model intent."
+  },
+  {
+    "case_id": "buyer_retains_human_adjudication",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_BOUNDARY",
+    "text": "Buyer retains human adjudication and final decisions."
+  },
+  {
+    "case_id": "observable_only_candidate_memo",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_BOUNDARY",
+    "text": "This is an observable-only candidate-discrepancy memo for human review."
+  }
+]

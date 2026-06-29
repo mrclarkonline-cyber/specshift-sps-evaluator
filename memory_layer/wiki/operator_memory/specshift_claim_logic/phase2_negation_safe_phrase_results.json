@@ -1,0 +1,178 @@
+[
+  {
+    "action": "ALLOW",
+    "case_id": "no_legal_advice",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205641+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "legal advice"
+    ],
+    "sentence": "This packet does not provide legal advice.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_financial_advice",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205647+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "financial advice"
+    ],
+    "sentence": "SpecShift does not provide financial advice.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_binding_terms",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205650+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "binding terms"
+    ],
+    "sentence": "This draft does not create binding terms.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_compliance_certification",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205653+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "compliance certification"
+    ],
+    "sentence": "This review does not provide compliance certification.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_production_validation",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205655+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "production validation"
+    ],
+    "sentence": "SpecShift does not provide production validation.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_automated_verdict",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205658+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "automated verdict"
+    ],
+    "sentence": "This packet does not create an automated verdict.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_truth_validation",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205661+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "truth validation"
+    ],
+    "sentence": "This memo does not provide truth validation.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_autonomous_client_action",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205664+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "autonomous client action"
+    ],
+    "sentence": "This recommendation does not authorize autonomous client action.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "no_hidden_mechanism_claim",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205666+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "hidden-mechanism"
+    ],
+    "sentence": "This review does not make a hidden-mechanism claim.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "cannot_determine_model_intent",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.205771+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "model intent"
+    ],
+    "sentence": "SpecShift cannot determine model intent.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "buyer_retains_human_adjudication",
+    "category": "SAFE_BOUNDARY",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.206381+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_BOUNDARY",
+    "matched_risk_terms": [],
+    "sentence": "Buyer retains human adjudication and final decisions.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "observable_only_candidate_memo",
+    "category": "SAFE_BOUNDARY",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:21:07.206452+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_BOUNDARY",
+    "matched_risk_terms": [],
+    "sentence": "This is an observable-only candidate-discrepancy memo for human review.",
+    "test_passed": true
+  }
+]
