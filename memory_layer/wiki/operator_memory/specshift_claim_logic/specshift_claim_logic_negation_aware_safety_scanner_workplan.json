@@ -9,9 +9,11 @@
     "UNSAFE_HIDDEN_MECHANISM",
     "AMBIGUOUS_REVIEW"
   ],
+  "closeout_note": "Claim Logic + Negation-Aware Safety Scanner complete as an internal safety-scanner scaffold.",
+  "completed_at_utc": "2026-06-29T12:29:17.874057+00:00",
   "core_rule": "The word is not the risk. The claimed authority is the risk.",
   "follows": "specshift_buyer_artifact_simulator_pilot_readiness_score",
-  "last_updated_at_utc": "2026-06-29T00:27:29.877169+00:00",
+  "last_updated_at_utc": "2026-06-29T12:29:17.874057+00:00",
   "phases": [
     {
       "artifacts": [
@@ -95,13 +97,19 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase7_claim_logic_audit_records.jsonl",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase7_claim_logic_closeout_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T12:29:17.874057+00:00",
+      "completion_note": "Claim logic audit and closeout completed after required artifacts, phase reports, classifier smoke tests, audit-gate smoke tests, and packet-generator integration tests passed.",
       "goal": "Audit claim logic fixtures, integrations, and boundary behavior before closeout.",
       "phase": "phase_7_audit_and_closeout",
-      "status": "registered"
+      "status": "complete"
     }
   ],
   "purpose": "Replace blunt keyword scanning with claim-posture classification so safe denial and boundary language are not treated as unsafe assertions.",
   "registered_at_utc": "2026-06-29T00:12:44.065278+00:00",
-  "status": "in_progress",
+  "status": "complete",
   "workplan": "specshift_claim_logic_negation_aware_safety_scanner"
 }
