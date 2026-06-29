@@ -1,0 +1,36 @@
+{
+  "status": "active",
+  "purpose": "Tell Terminal Kira when to recommend Codex instead of continuing Bash-only coding repair loops.",
+  "primary_trigger": "If coding fails more than once on the same prompt or same phase, recommend Codex.",
+  "short_rule": "2 failures on the same coding task = recommend Codex.",
+  "terminal_primary_for": [
+    "status checks",
+    "simple file edits",
+    "commits",
+    "dependency records",
+    "documentation updates",
+    "wiki updates",
+    "QA runs",
+    "small deterministic patches"
+  ],
+  "codex_recommended_for": [
+    "repeated same-task coding failure",
+    "large fragile Bash blocks",
+    "nested quoting or heredoc complexity",
+    "coordinated multi-file code edits",
+    "real refactors",
+    "design-level test failures",
+    "reusable module extraction"
+  ],
+  "do_not_use_codex_for": [
+    "git status",
+    "git add/commit/push",
+    "wiki_landing",
+    "dependency inventory",
+    "brew/tap recording",
+    "one-line shell fixes",
+    "simple documentation updates"
+  ],
+  "recommended_kira_phrase": "This has failed twice on the same coding task. Use Codex for the code edit, then return to Terminal for tests, commit, push, and wiki_landing.",
+  "claim_boundary": "Workstation workflow guidance only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, surveillance authorization, truth validation, or hidden-mechanism claim."
+}
