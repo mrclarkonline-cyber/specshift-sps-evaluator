@@ -1,0 +1,50 @@
+[
+  {
+    "case_id": "safe_denial_production_validation",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "SpecShift does not provide production validation."
+  },
+  {
+    "case_id": "safe_denial_automated_verdict",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "text": "This packet does not create an automated verdict."
+  },
+  {
+    "case_id": "safe_boundary_human_review",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_BOUNDARY",
+    "text": "Buyer retains human adjudication and final decisions."
+  },
+  {
+    "case_id": "unsafe_certification",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_CERTIFICATION",
+    "text": "We certify that your AI is compliant."
+  },
+  {
+    "case_id": "unsafe_assertion",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_ASSERTION",
+    "text": "SpecShift validates production safety."
+  },
+  {
+    "case_id": "unsafe_verdict",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_VERDICT",
+    "text": "Automated verdict: pass."
+  },
+  {
+    "case_id": "unsafe_hidden_mechanism",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_HIDDEN_MECHANISM",
+    "text": "The model intended to deceive."
+  },
+  {
+    "case_id": "ambiguous_review",
+    "expected_action": "REVIEW",
+    "expected_category": "AMBIGUOUS_REVIEW",
+    "text": "Production validation should be considered here."
+  }
+]

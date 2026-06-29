@@ -1,0 +1,116 @@
+[
+  {
+    "action": "ALLOW",
+    "case_id": "safe_denial_production_validation",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265663+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "production validation"
+    ],
+    "sentence": "SpecShift does not provide production validation.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "safe_denial_automated_verdict",
+    "category": "SAFE_DENIAL",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265690+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_DENIAL",
+    "matched_risk_terms": [
+      "automated verdict"
+    ],
+    "sentence": "This packet does not create an automated verdict.",
+    "test_passed": true
+  },
+  {
+    "action": "ALLOW",
+    "case_id": "safe_boundary_human_review",
+    "category": "SAFE_BOUNDARY",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265727+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "ALLOW",
+    "expected_category": "SAFE_BOUNDARY",
+    "matched_risk_terms": [],
+    "sentence": "Buyer retains human adjudication and final decisions.",
+    "test_passed": true
+  },
+  {
+    "action": "BLOCK_OR_REWRITE",
+    "case_id": "unsafe_certification",
+    "category": "UNSAFE_CERTIFICATION",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265730+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_CERTIFICATION",
+    "matched_risk_terms": [],
+    "sentence": "We certify that your AI is compliant.",
+    "test_passed": true
+  },
+  {
+    "action": "BLOCK_OR_REWRITE",
+    "case_id": "unsafe_assertion",
+    "category": "UNSAFE_ASSERTION",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265742+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_ASSERTION",
+    "matched_risk_terms": [
+      "production safety"
+    ],
+    "sentence": "SpecShift validates production safety.",
+    "test_passed": true
+  },
+  {
+    "action": "BLOCK_OR_REWRITE",
+    "case_id": "unsafe_verdict",
+    "category": "UNSAFE_VERDICT",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265748+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_VERDICT",
+    "matched_risk_terms": [
+      "automated verdict"
+    ],
+    "sentence": "Automated verdict: pass.",
+    "test_passed": true
+  },
+  {
+    "action": "BLOCK_OR_REWRITE",
+    "case_id": "unsafe_hidden_mechanism",
+    "category": "UNSAFE_HIDDEN_MECHANISM",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265756+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "BLOCK_OR_REWRITE",
+    "expected_category": "UNSAFE_HIDDEN_MECHANISM",
+    "matched_risk_terms": [],
+    "sentence": "The model intended to deceive.",
+    "test_passed": true
+  },
+  {
+    "action": "REVIEW",
+    "case_id": "ambiguous_review",
+    "category": "AMBIGUOUS_REVIEW",
+    "claim_boundary": "Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+    "classified_at_utc": "2026-06-29T00:15:53.265964+00:00",
+    "engine": "claim_logic_classifier_v1",
+    "expected_action": "REVIEW",
+    "expected_category": "AMBIGUOUS_REVIEW",
+    "matched_risk_terms": [
+      "production validation"
+    ],
+    "sentence": "Production validation should be considered here.",
+    "test_passed": true
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "claim_boundary": "This workplan builds an internal claim-posture scanner only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.",
+  "claim_categories": [
+    "SAFE_DENIAL",
+    "SAFE_BOUNDARY",
+    "UNSAFE_ASSERTION",
+    "UNSAFE_CERTIFICATION",
+    "UNSAFE_VERDICT",
+    "UNSAFE_HIDDEN_MECHANISM",
+    "AMBIGUOUS_REVIEW"
+  ],
+  "core_rule": "The word is not the risk. The claimed authority is the risk.",
+  "follows": "specshift_buyer_artifact_simulator_pilot_readiness_score",
+  "last_updated_at_utc": "2026-06-29T00:15:53.262412+00:00",
+  "phases": [
+    {
+      "artifacts": [
+        "tools/claim_logic/claim_logic_classifier.py",
+        "docs/workstation/claim_logic/claim_posture_policy.md",
+        "tests/fixtures/claim_logic/claim_logic_classifier_cases.json",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase1_claim_logic_classifier_fixture_results.json",
+        "memory_layer/wiki/operator_memory/specshift_claim_logic/phase1_claim_logic_classifier_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T00:15:53.262412+00:00",
+      "completion_note": "Claim logic classifier, claim posture policy, fixtures, and passing results created after assertion-pattern repair.",
+      "goal": "Create claim_logic_classifier.py, claim_posture_policy.md, and passing posture fixtures.",
+      "phase": "phase_1_claim_logic_classifier",
+      "status": "complete"
+    },
+    {
+      "goal": "Create negation-safe tests for non-claim boundary language.",
+      "phase": "phase_2_negation_safe_phrase_tests",
+      "status": "registered"
+    },
+    {
+      "goal": "Create unsafe assertion/certification/verdict/hidden-mechanism tests.",
+      "phase": "phase_3_unsafe_assertion_tests",
+      "status": "registered"
+    },
+    {
+      "goal": "Document which blunt scanners should be replaced and in what order.",
+      "phase": "phase_4_scanner_replacement_plan",
+      "status": "registered"
+    },
+    {
+      "goal": "Use claim logic in delivery_packet_generator.py.",
+      "phase": "phase_5_integrate_claim_logic_with_packet_generator",
+      "status": "registered"
+    },
+    {
+      "goal": "Use claim logic in audit/closeout gates without punishing safe non-claims.",
+      "phase": "phase_6_integrate_claim_logic_with_audit_gates",
+      "status": "registered"
+    },
+    {
+      "goal": "Audit claim logic fixtures, integrations, and boundary behavior before closeout.",
+      "phase": "phase_7_audit_and_closeout",
+      "status": "registered"
+    }
+  ],
+  "purpose": "Replace blunt keyword scanning with claim-posture classification so safe denial and boundary language are not treated as unsafe assertions.",
+  "registered_at_utc": "2026-06-29T00:12:44.065278+00:00",
+  "status": "in_progress",
+  "workplan": "specshift_claim_logic_negation_aware_safety_scanner"
+}
