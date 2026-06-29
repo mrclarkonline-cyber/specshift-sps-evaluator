@@ -1,0 +1,19 @@
+{
+  "artifacts": [
+    "docs/workstation/qa/lint_and_style_gate.md",
+    "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_lint_and_style_gate_report.json",
+    "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_ruff_report.txt",
+    "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_shellcheck_report.txt",
+    "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_specshift_qa_confirmation_report.json"
+  ],
+  "claim_boundary": "Phase 3 creates advisory lint/style QA guidance only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "completed_at_utc": "2026-06-29T12:48:23.838823+00:00",
+  "hard_gate": "specshift_qa",
+  "hard_gate_status": "pass",
+  "phase": "phase_3_lint_and_style_gate",
+  "ruff_returncode_advisory": 1,
+  "shellcheck_result_count": 1,
+  "status": "complete",
+  "style_gate_mode": "advisory_non_blocking",
+  "test_before_complete_rule": "specshift_qa passed before workplan update; lint reports recorded as advisory"
+}

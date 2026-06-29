@@ -1,0 +1,12 @@
+[
+  {
+    "cmd": [
+      "shellcheck",
+      "tools/bin/specshift_qa"
+    ],
+    "returncode": 0,
+    "script": "tools/bin/specshift_qa",
+    "stderr": "",
+    "stdout": ""
+  }
+]

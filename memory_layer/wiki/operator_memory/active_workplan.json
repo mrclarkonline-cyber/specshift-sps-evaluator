@@ -1,5 +1,5 @@
 {
-  "active_phase": "phase_3_lint_and_style_gate",
+  "active_phase": "phase_4_audit_and_closeout",
   "active_tracker": "tools/status/specshift_qa_regression_progress.py",
   "active_workplan": "specshift_qa_regression_harness",
   "allowed_actions": [
@@ -58,7 +58,7 @@
   "last_client_review_packet_builder_report": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase4_review_packet_builder_report.json",
   "last_client_scope_artifact": "memory_layer/wiki/operator_memory/specshift_client_intake_delivery/client_phase1_scope_and_boundary_registration.json",
   "last_cockpit_state": "memory_layer/wiki/operator_memory/workstation_command_center/cockpit_state.json",
-  "last_completed_phase": "phase_2_specshift_qa_command",
+  "last_completed_phase": "phase_3_lint_and_style_gate",
   "last_completed_workplan": "specshift_claim_logic_negation_aware_safety_scanner",
   "last_delivery_closeout_recommender": "tools/pilot_intake/delivery_closeout_recommender.py",
   "last_delivery_closeout_recommender_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase6_delivery_closeout_recommender_report.json",
@@ -74,6 +74,7 @@
   "last_intake_risk_gate": "tools/pilot_intake/intake_risk_gate.py",
   "last_intake_risk_gate_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase2_intake_risk_gate_report.json",
   "last_label_reconciliation": "tools/pilot_intake/label_reconciliation.py",
+  "last_lint_and_style_gate": "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_lint_and_style_gate_report.json",
   "last_negation_safe_results": "memory_layer/wiki/operator_memory/specshift_claim_logic/phase2_negation_safe_phrase_results.json",
   "last_negation_safe_tests": "tests/fixtures/claim_logic/negation_safe_phrase_tests.json",
   "last_packet_generator_claim_logic_report": "memory_layer/wiki/operator_memory/specshift_claim_logic/phase5_packet_generator_claim_logic_integration_report.json",
@@ -118,8 +119,8 @@
   "last_trace_schema_normalizer_report": "memory_layer/wiki/operator_memory/specshift_buyer_artifact_intake/phase3_trace_schema_normalizer_report.json",
   "last_unsafe_assertion_results": "memory_layer/wiki/operator_memory/specshift_claim_logic/phase3_unsafe_assertion_results.json",
   "last_unsafe_assertion_tests": "tests/fixtures/claim_logic/unsafe_assertion_tests.json",
-  "last_updated_at_utc": "2026-06-29T12:46:11.865408+00:00",
-  "next_action": "Add ruff/shellcheck-safe QA guidance without making style failures block business work too early.",
+  "last_updated_at_utc": "2026-06-29T12:48:23.838823+00:00",
+  "next_action": "Close only after pytest collects and passes real tests.",
   "parked_state": {
     "is_parked": false,
     "parked_reason": "",

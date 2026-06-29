@@ -1,7 +1,7 @@
 {
   "claim_boundary": "QA regression harness only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
   "follows": "specshift_claim_logic_negation_aware_safety_scanner",
-  "last_updated_at_utc": "2026-06-29T12:46:11.865408+00:00",
+  "last_updated_at_utc": "2026-06-29T12:48:23.838823+00:00",
   "phases": [
     {
       "artifacts": [
@@ -34,9 +34,18 @@
       "status": "complete"
     },
     {
+      "artifacts": [
+        "docs/workstation/qa/lint_and_style_gate.md",
+        "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_lint_and_style_gate_report.json",
+        "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_ruff_report.txt",
+        "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_shellcheck_report.txt",
+        "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase3_specshift_qa_confirmation_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T12:48:23.838823+00:00",
+      "completion_note": "Advisory lint/style gate documented and reports recorded after specshift_qa passed.",
       "goal": "Add ruff/shellcheck-safe QA guidance without making style failures block business work too early.",
       "phase": "phase_3_lint_and_style_gate",
-      "status": "registered"
+      "status": "complete"
     },
     {
       "goal": "Close only after pytest collects and passes real tests.",
