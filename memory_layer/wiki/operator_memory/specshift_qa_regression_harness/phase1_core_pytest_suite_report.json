@@ -1,0 +1,16 @@
+{
+  "artifacts": [
+    "tests/test_claim_logic.py",
+    "tests/test_claim_logic_audit_gate.py",
+    "tests/test_delivery_packet_generator.py",
+    "tests/test_evidence_ledger.py",
+    "docs/workstation/qa/qa_regression_harness.md",
+    "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase1_pytest_report.json"
+  ],
+  "claim_boundary": "Phase 1 creates a QA regression test suite only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "completed_at_utc": "2026-06-29T12:43:23.624748+00:00",
+  "phase": "phase_1_core_pytest_suite",
+  "pytest_status": "pass",
+  "status": "complete",
+  "test_before_complete_rule": "pytest passed before workplan update"
+}

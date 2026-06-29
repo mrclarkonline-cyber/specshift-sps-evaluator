@@ -1,0 +1,42 @@
+{
+  "claim_boundary": "QA regression harness only. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "follows": "specshift_claim_logic_negation_aware_safety_scanner",
+  "last_updated_at_utc": "2026-06-29T12:43:23.624748+00:00",
+  "phases": [
+    {
+      "artifacts": [
+        "tests/test_claim_logic.py",
+        "tests/test_claim_logic_audit_gate.py",
+        "tests/test_delivery_packet_generator.py",
+        "tests/test_evidence_ledger.py",
+        "docs/workstation/qa/qa_regression_harness.md",
+        "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase1_pytest_report.json",
+        "memory_layer/wiki/operator_memory/specshift_qa_regression_harness/phase1_core_pytest_suite_report.json"
+      ],
+      "completed_at_utc": "2026-06-29T12:43:23.624748+00:00",
+      "completion_note": "Core pytest suite created and passed before workplan update.",
+      "goal": "Create initial pytest tests for claim logic, audit gate, delivery packet, and evidence ledger.",
+      "phase": "phase_1_core_pytest_suite",
+      "status": "complete"
+    },
+    {
+      "goal": "Create a single specshift_qa command that runs pytest and selected smoke checks.",
+      "phase": "phase_2_specshift_qa_command",
+      "status": "registered"
+    },
+    {
+      "goal": "Add ruff/shellcheck-safe QA guidance without making style failures block business work too early.",
+      "phase": "phase_3_lint_and_style_gate",
+      "status": "registered"
+    },
+    {
+      "goal": "Close only after pytest collects and passes real tests.",
+      "phase": "phase_4_audit_and_closeout",
+      "status": "registered"
+    }
+  ],
+  "purpose": "Turn trusted SpecShift scripts and safety boundaries into repeatable pytest regression tests.",
+  "registered_at_utc": "2026-06-29T12:43:23.624748+00:00",
+  "status": "in_progress",
+  "workplan": "specshift_qa_regression_harness"
+}

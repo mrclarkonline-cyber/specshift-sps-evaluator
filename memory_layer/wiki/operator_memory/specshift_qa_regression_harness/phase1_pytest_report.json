@@ -1,0 +1,9 @@
+{
+  "claim_boundary": "Pytest report only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "phase": "phase_1_core_pytest_suite",
+  "returncode": 0,
+  "status": "pass",
+  "stderr": "",
+  "stdout": ".............                                                            [100%]\n13 passed in 0.05s\n",
+  "tested_at_utc": "2026-06-29T12:43:23.624748+00:00"
+}
