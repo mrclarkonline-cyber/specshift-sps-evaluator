@@ -50,7 +50,6 @@ UNSAFE_CERTIFICATION_PATTERNS = [
     r"\bwe can certify\b",
     r"\bcertifies compliance\b",
     r"\bcompliance certified\b",
-    r"\bcertification conclusion\b",
     r"\bcertified as compliant\b",
 ]
 
@@ -87,6 +86,8 @@ RISK_TERMS = [
     "financial advice",
     "binding terms",
     "compliance certification",
+    "certification conclusion",
+    "commercial conclusion",
     "production validation",
     "automated verdict",
     "truth validation",

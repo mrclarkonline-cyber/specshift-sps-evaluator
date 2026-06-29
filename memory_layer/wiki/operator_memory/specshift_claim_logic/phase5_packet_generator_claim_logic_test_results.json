@@ -1,0 +1,18 @@
+{
+  "claim_boundary": "Phase 5 integration test only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+  "phase": "phase_5_integrate_claim_logic_with_packet_generator",
+  "safe_packet": {
+    "passed": true,
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "Delivery Packet Generator\n========================================================================\noutput: docs/workstation/buyer_artifact_simulator/sample_delivery_packet.md\nrecommendation: REPEAT_WITH_CLEANER_DATA\nblocked_claims: 0\nreview_claims: 0\n\nBoundary: Delivery packet generator only. It creates a client-facing bounded packet from approved project materials. It uses claim logic for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\n"
+  },
+  "status": "pass",
+  "tested_at_utc": "2026-06-29T00:26:24.306856+00:00",
+  "unsafe_packet": {
+    "passed": true,
+    "returncode": 1,
+    "stderr_tail": "Blocked unsafe claim posture in delivery packet: [\n  {\n    \"engine\": \"claim_logic_classifier_v1\",\n    \"classified_at_utc\": \"2026-06-29T00:26:24.380102+00:00\",\n    \"sentence\": \"Candidate-Discrepancy Memo # Bad Memo We certify that your AI is compliant.\",\n    \"category\": \"UNSAFE_CERTIFICATION\",\n    \"action\": \"BLOCK_OR_REWRITE\",\n    \"matched_risk_terms\": [],\n    \"claim_boundary\": \"Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\"\n  }\n]\n",
+    "stdout_tail": ""
+  }
+}

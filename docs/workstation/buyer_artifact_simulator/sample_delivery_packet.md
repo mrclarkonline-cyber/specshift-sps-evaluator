@@ -1,7 +1,7 @@
 # SpecShift Buyer-Safe Pilot Delivery Packet
 
 Status: draft
-Generated at UTC: 2026-06-28T23:50:00.480747+00:00
+Generated at UTC: 2026-06-29T00:26:24.341199+00:00
 
 ## 1. Reviewed Artifacts Manifest
 
@@ -32,17 +32,15 @@ CD-001: Observable trace suggests a possible mismatch between reported completio
 
 This packet is based on buyer-provided observable materials only.
 
-This packet does not provide:
-
-- legal advice
-- financial advice
-- binding terms
-- compliance certification
-- production validation
-- automated verdict
-- truth validation
-- autonomous client action
-- hidden-mechanism or intent claims
+This packet does not provide legal advice.
+This packet does not provide financial advice.
+This packet does not create binding terms.
+This packet does not provide compliance certification.
+This packet does not provide production validation.
+This packet does not create an automated verdict.
+This packet does not provide truth validation.
+This packet does not authorize autonomous client action.
+This packet does not make hidden-mechanism or intent claims.
 
 Buyer retains labels, human adjudication, and final decisions.
 
@@ -62,4 +60,4 @@ This recommendation is a workflow next-step prompt only. It does not authorize p
 
 ## Boundary
 
-Delivery packet generator only. It creates a client-facing bounded packet from approved project materials. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.
+Delivery packet generator only. It creates a client-facing bounded packet from approved project materials. It uses claim logic for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.

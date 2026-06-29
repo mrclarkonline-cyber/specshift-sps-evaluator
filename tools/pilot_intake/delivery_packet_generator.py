@@ -2,33 +2,48 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-BOUNDARY = "Delivery packet generator only. It creates a client-facing bounded packet from approved project materials. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim."
+BOUNDARY = "Delivery packet generator only. It creates a client-facing bounded packet from approved project materials. It uses claim logic for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim."
 
-# Scan only affirmative overclaims. Do not flag non-claim boundary language.
-AFFIRMATIVE_FORBIDDEN_PATTERNS = [
-    r"\bwe certify\b",
-    r"\bwe can certify\b",
-    r"\bwe prove\b",
-    r"\bwe can prove\b",
-    r"\bthis certifies\b",
-    r"\bthis proves\b",
-    r"\bcompliance certified\b",
-    r"\bproduction validated\b",
-    r"\btruth validated\b",
-    r"\bguaranteed detection\b",
-    r"\bautomated verdict\s*:\s*(pass|fail|approved|rejected)\b",
-    r"\blegal conclusion\s*:\b",
-    r"\bfinancial conclusion\s*:\b",
-]
+CLAIM_LOGIC_PATH = Path("tools/claim_logic/claim_logic_classifier.py")
 
-def forbidden_hits(text: str) -> list[str]:
-    low = text.lower()
-    return [pattern for pattern in AFFIRMATIVE_FORBIDDEN_PATTERNS if re.search(pattern, low)]
+def load_claim_logic():
+    if not CLAIM_LOGIC_PATH.exists():
+        raise SystemExit(f"Missing claim logic classifier: {CLAIM_LOGIC_PATH}")
+    spec = importlib.util.spec_from_file_location("claim_logic_classifier", CLAIM_LOGIC_PATH)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+def split_sentences(text: str) -> list[str]:
+    compact = re.sub(r"\s+", " ", text.strip())
+    if not compact:
+        return []
+    return [s.strip() for s in re.split(r"(?<=[.!?])\s+", compact) if s.strip()]
+
+def scan_claim_posture(text: str) -> dict:
+    module = load_claim_logic()
+    sentences = split_sentences(text)
+    classifications = [module.classify_sentence(sentence) for sentence in sentences]
+
+    blocked = [row for row in classifications if row.get("action") == "BLOCK_OR_REWRITE"]
+    review = [row for row in classifications if row.get("action") == "REVIEW"]
+
+    return {
+        "engine": "delivery_packet_claim_logic_scan_v1",
+        "scanned_at_utc": datetime.now(timezone.utc).isoformat(),
+        "sentence_count": len(sentences),
+        "blocked_count": len(blocked),
+        "review_count": len(review),
+        "blocked": blocked,
+        "review": review,
+        "claim_boundary": BOUNDARY,
+    }
 
 def read_text(path: Path, fallback: str) -> str:
     if path.exists() and path.is_file():
@@ -62,17 +77,15 @@ Generated at UTC: {datetime.now(timezone.utc).isoformat()}
 
 This packet is based on buyer-provided observable materials only.
 
-This packet does not provide:
-
-- legal advice
-- financial advice
-- binding terms
-- compliance certification
-- production validation
-- automated verdict
-- truth validation
-- autonomous client action
-- hidden-mechanism or intent claims
+This packet does not provide legal advice.
+This packet does not provide financial advice.
+This packet does not create binding terms.
+This packet does not provide compliance certification.
+This packet does not provide production validation.
+This packet does not create an automated verdict.
+This packet does not provide truth validation.
+This packet does not authorize autonomous client action.
+This packet does not make hidden-mechanism or intent claims.
 
 Buyer retains labels, human adjudication, and final decisions.
 
@@ -91,20 +104,20 @@ This recommendation is a workflow next-step prompt only. It does not authorize p
 {BOUNDARY}
 """
 
-    hits = forbidden_hits(packet)
-    if hits:
-        raise SystemExit(f"Forbidden affirmative claim pattern(s): {hits}")
+    scan = scan_claim_posture(packet)
+    if scan["blocked"]:
+        raise SystemExit("Blocked unsafe claim posture in delivery packet: " + json.dumps(scan["blocked"], ensure_ascii=False, indent=2))
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(packet, encoding="utf-8")
 
     return {
-        "engine": "delivery_packet_generator_v1",
+        "engine": "delivery_packet_generator_v2_claim_logic_integrated",
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "project_dir": str(project_dir),
         "output_path": str(output_path),
         "recommendation": recommendation,
-        "forbidden_hits": hits,
+        "claim_logic_scan": scan,
         "claim_boundary": BOUNDARY,
     }
 
@@ -127,7 +140,8 @@ def main() -> int:
     print("=" * 72)
     print(f"output: {report['output_path']}")
     print(f"recommendation: {report['recommendation']}")
-    print(f"forbidden_hits: {len(report['forbidden_hits'])}")
+    print(f"blocked_claims: {report['claim_logic_scan']['blocked_count']}")
+    print(f"review_claims: {report['claim_logic_scan']['review_count']}")
     print()
     print(f"Boundary: {BOUNDARY}")
     return 0
