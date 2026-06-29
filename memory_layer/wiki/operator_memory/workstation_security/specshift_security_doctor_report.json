@@ -1,0 +1,349 @@
+{
+  "checks": {
+    "brew": {
+      "microsoft_taps": [],
+      "outdated_count": 72,
+      "outdated_tail": [
+        "asciinema",
+        "bash",
+        "bazelisk",
+        "borgbackup",
+        "cgal",
+        "cmake",
+        "cryptography",
+        "docker",
+        "docker-completion",
+        "dvc",
+        "fftw",
+        "fswatch",
+        "gcc",
+        "gdk-pixbuf",
+        "glow",
+        "gnu-getopt",
+        "graphite2",
+        "graphviz",
+        "harfbuzz",
+        "hf",
+        "htop",
+        "httpie",
+        "ipython",
+        "json-c",
+        "just",
+        "libavif",
+        "libgit2",
+        "libmagic",
+        "librsvg",
+        "libsolv",
+        "lnav",
+        "luajit",
+        "luv",
+        "micromamba",
+        "mypy",
+        "neovim",
+        "netpbm",
+        "nmap",
+        "openjdk",
+        "pango",
+        "pipx",
+        "pmix",
+        "podman",
+        "poetry",
+        "protobuf@33",
+        "py-spy",
+        "pydantic",
+        "pygit2",
+        "python@3.11",
+        "python@3.12"
+      ],
+      "status": "pass",
+      "tap_count": 0
+    },
+    "command_shadows": {
+      "findings": [
+        {
+          "command": "curl",
+          "expected_path_hints": [
+            "/usr/bin/curl",
+            "/opt/homebrew/bin/curl"
+          ],
+          "paths": [
+            "/usr/bin/curl"
+          ],
+          "status": "pass",
+          "suspicious_paths": []
+        },
+        {
+          "command": "wget",
+          "expected_path_hints": [],
+          "paths": [
+            "/opt/homebrew/bin/wget"
+          ],
+          "status": "pass",
+          "suspicious_paths": []
+        },
+        {
+          "command": "git",
+          "expected_path_hints": [
+            "/usr/bin/git",
+            "/opt/homebrew/bin/git"
+          ],
+          "paths": [
+            "/opt/homebrew/bin/git",
+            "/usr/bin/git"
+          ],
+          "status": "pass",
+          "suspicious_paths": []
+        },
+        {
+          "command": "python3",
+          "expected_path_hints": [],
+          "paths": [
+            "/Users/benjaminjustinclark/WORK/tools/symcore/terminal_security/bin/python3",
+            "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/python3",
+            "/opt/homebrew/bin/python3",
+            "/Users/benjaminjustinclark/WORK/envs/tools/bin/python3",
+            "/usr/bin/python3"
+          ],
+          "status": "review",
+          "suspicious_paths": [
+            "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/python3",
+            "/Users/benjaminjustinclark/WORK/envs/tools/bin/python3",
+            "/Users/benjaminjustinclark/WORK/tools/symcore/terminal_security/bin/python3"
+          ]
+        },
+        {
+          "command": "pip3",
+          "expected_path_hints": [],
+          "paths": [
+            "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/pip3",
+            "/opt/homebrew/bin/pip3",
+            "/Users/benjaminjustinclark/WORK/envs/tools/bin/pip3",
+            "/usr/bin/pip3"
+          ],
+          "status": "review",
+          "suspicious_paths": [
+            "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/pip3",
+            "/Users/benjaminjustinclark/WORK/envs/tools/bin/pip3"
+          ]
+        },
+        {
+          "command": "ssh",
+          "expected_path_hints": [
+            "/usr/bin/ssh"
+          ],
+          "paths": [
+            "/usr/bin/ssh"
+          ],
+          "status": "pass",
+          "suspicious_paths": []
+        },
+        {
+          "command": "gpg",
+          "expected_path_hints": [],
+          "paths": [
+            "/opt/homebrew/bin/gpg"
+          ],
+          "status": "pass",
+          "suspicious_paths": []
+        },
+        {
+          "command": "brew",
+          "expected_path_hints": [
+            "/opt/homebrew/bin/brew"
+          ],
+          "paths": [
+            "/opt/homebrew/bin/brew"
+          ],
+          "status": "pass",
+          "suspicious_paths": []
+        }
+      ],
+      "status": "review"
+    },
+    "git": {
+      "branch": "main",
+      "credential_helpers": [],
+      "remotes": [
+        "origin\thttps://github.com/mrclarkonline-cyber/specshift-sps-evaluator.git (fetch)",
+        "origin\thttps://github.com/mrclarkonline-cyber/specshift-sps-evaluator.git (push)"
+      ],
+      "status": "review",
+      "uncommitted": [
+        "?? docs/workstation/security/",
+        "?? memory_layer/wiki/operator_memory/workstation_security/",
+        "?? tools/status/specshift_security_doctor.py"
+      ]
+    },
+    "macos_security": {
+      "checks": {
+        "filevault": {
+          "cmd": [
+            "/usr/bin/fdesetup",
+            "status"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "FileVault is On."
+        },
+        "firewall": {
+          "cmd": [
+            "/usr/libexec/ApplicationFirewall/socketfilterfw",
+            "--getglobalstate"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "Firewall is enabled. (State = 1)"
+        },
+        "gatekeeper": {
+          "cmd": [
+            "/usr/sbin/spctl",
+            "--status"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "assessments enabled"
+        },
+        "sip": {
+          "cmd": [
+            "/usr/bin/csrutil",
+            "status"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "System Integrity Protection status: enabled."
+        }
+      },
+      "review": [],
+      "status": "pass"
+    },
+    "specshift_qa": {
+      "parsed": {
+        "check_count": 6,
+        "checks": [
+          {
+            "cmd": [
+              "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+              "-m",
+              "pytest",
+              "-q"
+            ],
+            "expected_returncodes": [
+              0
+            ],
+            "passed": true,
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_tail": ".............                                                            [100%]\n13 passed in 0.04s\n"
+          },
+          {
+            "cmd": [
+              "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+              "tools/claim_logic/claim_logic_classifier.py",
+              "--text",
+              "SpecShift does not provide production validation.",
+              "--json"
+            ],
+            "expected_returncodes": [
+              0
+            ],
+            "passed": true,
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_tail": "{\n  \"action\": \"ALLOW\",\n  \"category\": \"SAFE_DENIAL\",\n  \"claim_boundary\": \"Claim logic classifier only. It classifies claim posture for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\",\n  \"classified_at_utc\": \"2026-06-29T13:14:29.697804+00:00\",\n  \"engine\": \"claim_logic_classifier_v1\",\n  \"matched_risk_terms\": [\n    \"production validation\"\n  ],\n  \"sentence\": \"SpecShift does not provide production validation.\"\n}\n"
+          },
+          {
+            "cmd": [
+              "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+              "tools/claim_logic/claim_logic_audit_gate.py",
+              "--file",
+              "tests/fixtures/claim_logic/audit_gate/safe_non_claims.md",
+              "--output",
+              "/tmp/specshift_qa_safe_gate.json"
+            ],
+            "expected_returncodes": [
+              0
+            ],
+            "passed": true,
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_tail": "Claim Logic Audit Gate\n========================================================================\nfile: tests/fixtures/claim_logic/audit_gate/safe_non_claims.md\nstatus: pass\nallowed: 10\nreview: 0\nblocked: 0\n\nBoundary: Claim logic audit gate only. It scans text artifacts for claim posture. It allows safe denial and boundary language, blocks unsafe affirmative authority claims, and can optionally fail on ambiguous review items. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\n"
+          },
+          {
+            "cmd": [
+              "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+              "tools/claim_logic/claim_logic_audit_gate.py",
+              "--file",
+              "tests/fixtures/claim_logic/audit_gate/unsafe_assertions.md",
+              "--output",
+              "/tmp/specshift_qa_unsafe_gate.json"
+            ],
+            "expected_returncodes": [
+              1
+            ],
+            "passed": true,
+            "returncode": 1,
+            "stderr_tail": "",
+            "stdout_tail": "Claim Logic Audit Gate\n========================================================================\nfile: tests/fixtures/claim_logic/audit_gate/unsafe_assertions.md\nstatus: fail\nallowed: 0\nreview: 0\nblocked: 4\n\nBoundary: Claim logic audit gate only. It scans text artifacts for claim posture. It allows safe denial and boundary language, blocks unsafe affirmative authority claims, and can optionally fail on ambiguous review items. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdicts, free-pilot commitments, autonomous client action, truth validation, or hidden-mechanism claims.\n"
+          },
+          {
+            "cmd": [
+              "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+              "tools/pilot_intake/delivery_packet_generator.py",
+              "--project-dir",
+              "tests/fixtures/buyer_artifact_simulator/delivery_packet_sample_project",
+              "--output",
+              "/tmp/specshift_qa_delivery_packet.md",
+              "--recommendation",
+              "REPEAT_WITH_CLEANER_DATA",
+              "--report",
+              "/tmp/specshift_qa_delivery_packet_report.json"
+            ],
+            "expected_returncodes": [
+              0
+            ],
+            "passed": true,
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_tail": "Delivery Packet Generator\n========================================================================\noutput: /tmp/specshift_qa_delivery_packet.md\nrecommendation: REPEAT_WITH_CLEANER_DATA\nblocked_claims: 0\nreview_claims: 0\n\nBoundary: Delivery packet generator only. It creates a client-facing bounded packet from approved project materials. It uses claim logic for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\n"
+          },
+          {
+            "cmd": [
+              "/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python",
+              "tools/pilot_intake/evidence_ledger.py",
+              "summary",
+              "--ledger",
+              "tests/fixtures/buyer_artifact_simulator/sample_evidence_ledger.jsonl",
+              "--output",
+              "/tmp/specshift_qa_evidence_ledger_summary.json"
+            ],
+            "expected_returncodes": [
+              0
+            ],
+            "passed": true,
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_tail": "{\n  \"claim_boundary\": \"Evidence ledger only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\",\n  \"event_counts\": {\n    \"artifact_received\": 1,\n    \"buyer_label_reveal_status\": 1,\n    \"classification\": 1,\n    \"closeout_recommendation\": 1,\n    \"delivery_file\": 1,\n    \"reviewer_output\": 1,\n    \"risk_decision\": 1,\n    \"route\": 1,\n    \"validation_result\": 1\n  },\n  \"ledger\": \"tests/fixtures/buyer_artifact_simulator/sample_evidence_ledger.jsonl\",\n  \"record_count\": 9\n}\n"
+          }
+        ],
+        "claim_boundary": "SpecShift QA command only. It runs local regression and smoke checks. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.",
+        "engine": "specshift_qa_v1",
+        "failed_count": 0,
+        "ran_at_utc": "2026-06-29T13:14:29.810432+00:00",
+        "status": "pass"
+      },
+      "returncode": 0,
+      "status": "pass",
+      "stderr_tail": "",
+      "stdout_tail": "ient-facing bounded packet from approved project materials. It uses claim logic for internal safety scanning. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\\n\"\n    },\n    {\n      \"cmd\": [\n        \"/Users/benjaminjustinclark/specshift_terminal_intelligence/.venv_specshift_qa/bin/python\",\n        \"tools/pilot_intake/evidence_ledger.py\",\n        \"summary\",\n        \"--ledger\",\n        \"tests/fixtures/buyer_artifact_simulator/sample_evidence_ledger.jsonl\",\n        \"--output\",\n        \"/tmp/specshift_qa_evidence_ledger_summary.json\"\n      ],\n      \"expected_returncodes\": [\n        0\n      ],\n      \"passed\": true,\n      \"returncode\": 0,\n      \"stderr_tail\": \"\",\n      \"stdout_tail\": \"{\\n  \\\"claim_boundary\\\": \\\"Evidence ledger only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\\\",\\n  \\\"event_counts\\\": {\\n    \\\"artifact_received\\\": 1,\\n    \\\"buyer_label_reveal_status\\\": 1,\\n    \\\"classification\\\": 1,\\n    \\\"closeout_recommendation\\\": 1,\\n    \\\"delivery_file\\\": 1,\\n    \\\"reviewer_output\\\": 1,\\n    \\\"risk_decision\\\": 1,\\n    \\\"route\\\": 1,\\n    \\\"validation_result\\\": 1\\n  },\\n  \\\"ledger\\\": \\\"tests/fixtures/buyer_artifact_simulator/sample_evidence_ledger.jsonl\\\",\\n  \\\"record_count\\\": 9\\n}\\n\"\n    }\n  ],\n  \"claim_boundary\": \"SpecShift QA command only. It runs local regression and smoke checks. It does not create legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, truth validation, or hidden-mechanism claim.\",\n  \"engine\": \"specshift_qa_v1\",\n  \"failed_count\": 0,\n  \"ran_at_utc\": \"2026-06-29T13:14:29.810432+00:00\",\n  \"status\": \"pass\"\n}"
+    },
+    "ssh_permissions": {
+      "findings": [],
+      "status": "pass"
+    }
+  },
+  "claim_boundary": "SpecShift security doctor only. Defensive local workstation posture checks. No offensive tooling, surveillance, intrusion, credential collection, legal advice, compliance certification, or production validation.",
+  "engine": "specshift_security_doctor_v1",
+  "ran_at_utc": "2026-06-29T13:14:28.100885+00:00",
+  "repo": "/Users/benjaminjustinclark/specshift_terminal_intelligence",
+  "status": "review"
+}
