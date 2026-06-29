@@ -1,0 +1,92 @@
+{
+  "allowed_review_commands": [
+    "pip3",
+    "python3"
+  ],
+  "claim_boundary": "Defensive PATH monitoring only. No offensive tooling, surveillance authorization, credential collection, legal advice, compliance certification, or production validation.",
+  "engine": "specshift_path_watch_v1",
+  "findings": [
+    {
+      "command": "curl",
+      "paths": [
+        "/usr/bin/curl"
+      ],
+      "status": "pass",
+      "suspicious_paths": []
+    },
+    {
+      "command": "wget",
+      "paths": [
+        "/opt/homebrew/bin/wget"
+      ],
+      "status": "pass",
+      "suspicious_paths": []
+    },
+    {
+      "command": "git",
+      "paths": [
+        "/opt/homebrew/bin/git",
+        "/usr/bin/git"
+      ],
+      "status": "pass",
+      "suspicious_paths": []
+    },
+    {
+      "command": "python3",
+      "paths": [
+        "/Users/benjaminjustinclark/WORK/tools/symcore/terminal_security/bin/python3",
+        "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/python3",
+        "/opt/homebrew/bin/python3",
+        "/Users/benjaminjustinclark/WORK/envs/tools/bin/python3",
+        "/usr/bin/python3"
+      ],
+      "status": "review_allowed",
+      "suspicious_paths": [
+        "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/python3",
+        "/Users/benjaminjustinclark/WORK/envs/tools/bin/python3",
+        "/Users/benjaminjustinclark/WORK/tools/symcore/terminal_security/bin/python3"
+      ]
+    },
+    {
+      "command": "pip3",
+      "paths": [
+        "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/pip3",
+        "/opt/homebrew/bin/pip3",
+        "/Users/benjaminjustinclark/WORK/envs/tools/bin/pip3",
+        "/usr/bin/pip3"
+      ],
+      "status": "review_allowed",
+      "suspicious_paths": [
+        "/Users/benjaminjustinclark/WORK/data_pipelines/.venv/bin/pip3",
+        "/Users/benjaminjustinclark/WORK/envs/tools/bin/pip3"
+      ]
+    },
+    {
+      "command": "ssh",
+      "paths": [
+        "/usr/bin/ssh"
+      ],
+      "status": "pass",
+      "suspicious_paths": []
+    },
+    {
+      "command": "gpg",
+      "paths": [
+        "/opt/homebrew/bin/gpg"
+      ],
+      "status": "pass",
+      "suspicious_paths": []
+    },
+    {
+      "command": "brew",
+      "paths": [
+        "/opt/homebrew/bin/brew"
+      ],
+      "status": "pass",
+      "suspicious_paths": []
+    }
+  ],
+  "hard_review_count": 0,
+  "ran_at_utc": "2026-06-29T13:21:14.471872+00:00",
+  "status": "pass"
+}

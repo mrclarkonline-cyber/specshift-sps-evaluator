@@ -63,7 +63,7 @@ fontconfig 2.17.1 2.18.1
 freetype 2.14.2 2.14.3
 freexl 2.0.0
 fribidi 1.0.16
-fswatch 1.18.3
+fswatch 1.21.0
 ftgl 2.1.3-rc5
 fzf 0.73.1
 gawk 5.4.0
@@ -79,6 +79,7 @@ gifsicle 1.96
 git 2.54.0
 git-delta 0.19.2
 git-lfs 3.7.1
+gitleaks 8.30.1
 gl2ps 1.4.2
 glew 2.3.1
 glib 2.88.2 2.86.4
@@ -192,6 +193,7 @@ lua 5.5.0
 lua@5.4 5.4.8
 luajit 2.1.1772619647
 luv 1.51.0-2_1
+lynis 3.1.7
 lz4 1.10.0
 lzo 2.10
 m4 1.4.21
@@ -304,6 +306,7 @@ tree 2.3.2
 tree-sitter 0.26.6
 tree-sitter@0.25 0.25.10
 trivy 0.71.2
+trufflehog 3.95.6
 unbound 1.24.2
 unibilium 2.1.2
 unixodbc 2.3.14
@@ -334,7 +337,7 @@ zeromq 4.3.5_2
 zoxide 0.9.9
 zstd 1.5.7_1
 basictex 2026.0301
-osquery 5.21.0
+osquery 5.23.0
 quarto 1.8.27
 wireshark-chmodbpf 4.6.4
 zotero 8.0.3

@@ -82,6 +82,8 @@ brew "git"
 brew "git-delta"
 # Git extension for versioning large files
 brew "git-lfs"
+# Audit git repos for secrets
+brew "gitleaks"
 # Render markdown on the CLI
 brew "glow"
 # GNU implementation of the famous stream editor
@@ -122,6 +124,8 @@ brew "lazygit"
 brew "librtlsdr"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
+# Security and system auditing tool to harden systems
+brew "lynis"
 # Recursively compute digests on files/directories
 brew "md5deep"
 # Fast Cross-Platform Package Manager
@@ -218,6 +222,8 @@ brew "tippecanoe"
 brew "tmux"
 # Vulnerability scanner for container images, file systems, and Git repos
 brew "trivy"
+# Find and verify credentials
+brew "trufflehog"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Terminal spreadsheet multitool for discovering and arranging data
