@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "issue": "curl was shadowed by a SymCore terminal security wrapper.",
+  "repair": "Moved the SymCore curl shadow into QUARANTINED_PATH_SHADOWS rather than deleting it.",
+  "rule": "No undocumented command shadows for core network tools.",
+  "claim_boundary": "Workstation path hygiene only. No legal advice, financial advice, binding terms, compliance certification, production validation, automated verdict, free pilot commitment, autonomous client action, surveillance authorization, truth validation, or hidden-mechanism claim."
+}
